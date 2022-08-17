@@ -15,9 +15,10 @@
 \tableofcontents
 \clearpage
 
-\section{Introduction}
+\section{Background}
 
-test
+\subsection{Trichoderma}
+
 Crop resistance to environmental stressors is a necessity for crop
 health and overall crop yields. Current popular methods for crop
 protection involve the use of pesticides and genetically modified
@@ -43,61 +44,12 @@ products\cite{Trichoderma}\cite{Secretome}. In addition to these
 beneficial properties, the two strains mentioned above provide even
 further protection for plants in dry, salty soils and may also be
 considered as a bioremediation tool in soils contaminated with
-hydrocarbon contents. However, little is known about how these
+hydrocarbon content. However, little is known about how these
 mechanisms work in these new strains, so DC1 and Tsth20 were sequenced
 in an attempt to better understand the details of their genomes and
 secretomes.
 
-\section{Research Avenues}
-
-With this data, there are several possible research angles that could
-be approached. However, the first step is to assemble and annotate
-these genomes, which can act as deliverables for this project. There
-are currently two initial assemblies for both DC1 and Tsth20. One set
-of assemblies using only Illumina sequence data, and one hybrid
-assembly with Nanopore and Illumina reads. As expected, the
-hybrid asssemblies are more contiguous than assemblies with only
-Illumina data, although more testing and assembiles using other
-programs is required. One interesting observation noted when
-processing the input sequence data is a number of sections of low
-variability in nucelotide content, indicating potential repeat regions
-or simply just areas of interest for further research. One article
-mentions that avirulence and effector-like proteins in close proximity
-to AT-rich regions may promote mutations of said genes and proteins as
-repeat-induced-mutations may alter these genes frequently, although
-this is research targeted at pathogenic fungi.
-
-Following assembly, the genomes will be annotated using publicly
-available RNAseq data from several \textit{Trichoderma} strains and a
-gene calling tool such as Braker2\cite{Braker2} to train and call
-possible genes. Other gene calling tools may be considered as
-well. Annotated genes will then be processed using tools such as
-EffectorP\cite{EffectorP} and SignalP\cite{SignalP} in order to
-determine if gene products are involved in processes associated with
-host plants. Another tool has recently come to our attention
-AntiSmash\cite{AntiSmash}, which aids in determing membership of gene
-products in signalling pathways so we may also incorporate that. The
-combined use of these tools should provide a better understanding of
-the secretomes used by these new strains. This annotation process
-presents a possible research avenue which may contribute to the
-computer science aspect of this project. Currently, these tools
-(SignalP and EffectorP) determine membership of each group using
-different machine learning, statistical methods, and cutoffs, making
-the results difficult to compare and coalesce. An attempt could be
-made to produce a more unified approach to determing whether or not a
-gene product belongs to one of these categories. Should other
-opportunities for computational contributions present themselves
-during this process, they may also be pursued.
-
-Once suitable features of interest have been identified, a comparative
-analysis could be performed, including DC1, Tsth20 as well as other
-well established \textit{Trichoderma} assemblies. This analysis could
-also include the AT-rich regions discussed ealier for a comprehensive
-comparison and understanding of AT-rich regions as well as effector an
-signalling molecules in the context of multiple genomes. However, this
-may be beyond the scope of the project.
-
-\section{Genome Assembly}
+\subsection{Genome Assembly}
 
 Sequence assembly has been a long-standing issue in the field of
 computer science\cite{assembly}. Determining the correct order and
@@ -126,10 +78,7 @@ assembly protocols is essential to the further success of a project as
 downstream processing such as annotation depends on a high-quality
 assembly.
 
-\section{The Secretome}
-In progress...
-
-\section{Genome Annotation}
+\subsection{Genome Annotation}
 With the explosion of sequence data and genomes assemblies made
 available in recent years, genome annotation has become a crucial part
 of the sequence analyiss pipeline. Genome annotation can involve the
@@ -146,48 +95,39 @@ could potentially perform.
 \subsection{Gene Prediction}
 In progress... Braker2
 
-\subsection{Functional Annotation}
-In progress... InterProScan, EffectorP, SignalP and AntiSmash(?)
-
 \subsection{Repeat Identification and Masking}
 In progress...
 
 \subsection{Identification of AT-Rich Regions}
 In progress...
 
-\section{Deliverables}
+\section{Research problem}
 
-\begin{itemize}
-  \item Committee meeting: August 1st - 5th or August 8th - 12th
-  \item Genome assemblies of Tsth20 and DC1: August 31st
-  \item Gene annotation of assemblies: September 30th
-  \item Identify potential effectors and siganlling proteins along with AT-rich regions of assemblies: October 31st
-  \item Identify computational research problem and solve: November - January
-  \item Start thesis: January - February 2023
-  \item Finish thesis: April - May 2023
-\end{itemize}
+Genome annotation, in the case of gene finding here, has been a
+popular computational problem for decades. The identification of
+possible genes provides other researchers with a valuable resource for
+future research avenues. 
 
 \section{References}
 
 \begin{thebibliography}{99}
-\bibitem{Trichoderma} Hermosa, R., Viterbo, A., Chet, I. \& Monte,
+\bibitem{Trichoderma} Hermosa, R., Viterbo, A., Chet, I., Monte,
   E. (2012). Plant-beneficial effects of \textit{Trichoderma} and of
   its genes. \textit{Microbiology}. \textit{38},
   17-25. 
 
 \bibitem{AntiSmash} Medema, M. H., Blin, K., Cimermancic, P., de
-  Jager, V., Zakrzewski, P., Fischbach, M. A., Weber, T., Takano,
-  E., \& Breitling, R. (2011). antiSMASH: rapid identification,
-  annotation and analysis of secondary metabolite biosynthesis
-  gene clusters in bacterial and fungal genome sequences. Nucleic
-  acids research, 39(Web Server issue),
-  W339–W346.
+  Jager, V., Zakrzewski, P., Fischbach, M. A., Weber, T., Takano, E.,
+  Breitling, R. (2011). antiSMASH: rapid identification, annotation
+  and analysis of secondary metabolite biosynthesis gene clusters in
+  bacterial and fungal genome sequences. \textit{Nucleic acids
+    research}. \textit{39}, 339–346.
 
 \bibitem{Secretome} Ramirez-Valdespino, C., Casas-Flores, S.,
   Olmedo-Monfil, V. (2019). \textit{Trichoderma} as a Model to Study
   Effector-Like Molecules. \textit{Frontiers in Microbiology} \textit{15}.
 
-\bibitem{Braker2} Hoff, K. J., Lomsadze, A., Borodovsky, M., \&
+\bibitem{Braker2} Hoff, K. J., Lomsadze, A., Borodovsky, M., 
   Stanke, M. (2019). Whole-Genome Annotation with
   BRAKER. \textit{Methods Mol Biol.}, \textit{1962}, 65-95.
 
