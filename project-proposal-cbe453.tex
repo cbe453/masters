@@ -92,15 +92,26 @@ products of these genes can then be annotated for functional
 properties to determine what functions these genes and gene products
 could potentially perform.
 
-\subsection{Gene Prediction}
-In progress... Braker2, HMMs, evidence-based vs. \textit{ab initio}
-methods
-
 \subsection{Repeat Identification and Masking}
-In progress...
+In addition to gene finding, repeat identification within assembled
+genomes is another long-standing computational problem. Regions with
+long repeats can have a significant impact on genome assembly as well
+as gene finding due to the limitation of short reads used in some
+assemblies. Short reads may be unable to bridge or cover entire repeat
+regions within a genome, so it is important to consider the use of
+long reads such as Nanopore or PacBio when pursuing a new genome
+assembly project. It is also possible for these repetitive regions to
+contain genes as well, making for an interesting investigation in
+regards to \textit{Trichoderma}, as fungal genomes have been shown to
+contain many repeat regions with a high concentration of A and T
+nucleotides (citation).
 
 \subsection{Identification of AT-Rich Regions}
 In progress...
+
+\subsection{Gene Prediction}
+In progress... Braker2, HMMs, evidence-based vs. \textit{ab initio}
+methods
 
 \section{Research problem}
 
@@ -111,7 +122,7 @@ future research avenues. Due to the importance and popularity of this
 topic, there have been a variety of gene finding tools that have been
 developed. This raises questions such as which tool is better, do
 different tools provide drastically different results and how much
-overlap exists between gene finding programs Comparative studies of
+overlap exists between gene finding programs. Comparative studies of
 gene finding tools have been performed before, however most of these
 studies are in reference to popular eukaryotic subjects of study such
 as humans, mice and in the case of plants, \textit{Arabidopsis}. Few
@@ -131,8 +142,8 @@ nuclotide diversity, or the AT-rich regions common to
 \textit{Trichoderma} and other fungi. It is possible that gene finding
 programs may have difficulty with these regions of genomes, as they
 may contain repeat regions and as mentioned before, have low
-nucleotide diversity, making it unlikely for genes to be found in
-these regions.
+nucleotide diversity, making it unlikely but not impossible for genes
+to be found in these regions.
 
 \section{Deliverables}
 \begin{itemize}
