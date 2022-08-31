@@ -97,18 +97,38 @@ In addition to gene finding, repeat identification within assembled
 genomes is another long-standing computational problem. Regions with
 long repeats can have a significant impact on genome assembly as well
 as gene finding due to the limitation of short reads used in some
-assemblies. Short reads may be unable to bridge or cover entire repeat
-regions within a genome, so it is important to consider the use of
-long reads such as Nanopore or PacBio when pursuing a new genome
-assembly project. It is also possible for these repetitive regions to
-contain genes as well, making for an interesting investigation in
-regards to \textit{Trichoderma}, as fungal genomes have been shown to
-contain many repeat regions with a high concentration of A and T
-nucleotides (citation).
+assemblies\cite{Repeats}. Short reads may be unable to bridge or cover
+entire repeat regions within a genome, so it is important to consider
+the use of long reads such as Nanopore or PacBio when pursuing a new
+genome assembly project. It is also possible for these repetitive
+regions to contain genes as well, making for an interesting
+investigation in regards to \textit{Trichoderma}, as fungal genomes
+have been shown to contain many repeat regions with a high
+concentration of A and T nucleotides (citation).
 
 \subsection{Gene Prediction}
-In progress... Braker2, HMMs, evidence-based vs. \textit{ab initio}
-methods
+Gene finding is another long standing computational problem in
+bioinformatics, which concerns itself with identifying potential genes
+within genomes based on patterns or evidence considered by the gene
+finding program. These two methods are called \textit{ab initio} for
+programs that search for patterns and gene structure, while similarity
+or evidence-based searches use prior information such as RNAseq data,
+expressed sequence tags and protein sequences to identify gene within
+a new genome\cite{GeneFinding}. Complicating the process more are the
+introduction of introns and alternative splicing in Eukaryotes, making
+it possible for one 'gene' to have several differing versions at the
+same locus. As mentioned in the repeat finding section of this
+proposal, long repeats and transpoable elements can cause issues for
+gene finding programs, making this an interesting area of research, at
+least for fungal genomes such as \textit{Trichoderma}. Fungal genomes
+are also interesting in the topic of gene finding as there are few
+programs targeted directly at gene finding in fungal genomes while
+organisms such as human, mouse, and \textit{Arabidopsis} benefit from
+having many tools tested on them as they are model organisms in the
+field, at least according to table 1 in \cite{GeneFinding}. How these
+different methods and tools perform when applied to fungal genomes is
+an important consideration as fungi have features that can benefit
+plant growth as mentioned earlier.
 
 \section{Research problem}
 
@@ -147,16 +167,17 @@ to be found in these regions.
 \item Lists of genes for each \textit{Trichoderma} assembly considered
 \item Consenus or 'core' genome for each genome considered based on
   different gene finding tools
-\item Comparison of gene finding tools in AT-rich and repetitive regions
+\item Repeat regions identified in assembled \textit{Trichoderma}
+  genomes.
 \item A potential list of true positive based on genes which have
   supporting RNAseq eveidence
 \end{itemize}
 
 \section{Timeline}
 \begin{itemize}
-\item Initial genome assemblies: September 30th
-\item Gene finding and annotation results: November 30th
-\item Analysis of gene finding results: December 31st - January 31st
+\item Initial genome assemblies: 
+\item Gene finding and annotation results: 
+\item Analysis of gene finding results: 
 \end{itemize}
 
 \section{References}
@@ -203,6 +224,15 @@ to be found in these regions.
 \bibitem{SignalP} Teufel, F., et al. (2022). SignalP 6.0 predicts all
   five types of signal peptides using protein language
   models. \textit{Nature Biotechnology}. \textit{40}, 1023-1025.
+
+\bibitem{Repeats} Lerat., E. (2009). Identifying repeats and
+  transposable elements in sequences genomes: how to find your way
+  through the dense forest of programs. \textit{Nature
+    Heredity}. \textit{104}, 520-533.
+
+\bibitem{GeneFinding} Wang, Z., Chen, Yazhu., Li, Y. (2016). A Brief
+  Review of Computational Gene Prediction Methods. \textit{Genomics
+    Proteomics Bioinformatics}. \textit{2}4, 216-221.
   
 \end{thebibliography}
 
