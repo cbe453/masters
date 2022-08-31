@@ -94,7 +94,7 @@ could potentially perform.
 
 \subsection{Repeat Identificatio/Masking and Identification of AT-rich Genomic regions}
 In addition to gene finding, repeat identification within assembled
-genomes is another long-standing computational problem. Regions with
+genomes is another problem that needs to be considered. Regions with
 long repeats can have a significant impact on genome assembly as well
 as gene finding due to the limitation of short reads used in some
 assemblies\cite{Repeats}. Short reads may be unable to bridge or cover
@@ -104,7 +104,13 @@ genome assembly project. It is also possible for these repetitive
 regions to contain genes as well, making for an interesting
 investigation in regards to \textit{Trichoderma}, as fungal genomes
 have been shown to contain many repeat regions with a high
-concentration of A and T nucleotides\cite{fungalrepeats}.
+concentration of A and T nucleotides\cite{fungalrepeats}. Once these
+repetitive regions have been identified (by any number of existing
+programs), the genome can be masked to exlude these regions in
+downstream processing if desired. This may affect the gene finding
+process described later and may be an interesting topic to look into
+considering the large number of available gene finding programs
+available.
 
 \subsection{Gene Prediction}
 Gene finding is another long standing computational problem in
