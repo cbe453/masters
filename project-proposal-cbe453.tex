@@ -104,7 +104,7 @@ genome assembly project. It is also possible for these repetitive
 regions to contain genes as well, making for an interesting
 investigation in regards to \textit{Trichoderma}, as fungal genomes
 have been shown to contain many repeat regions with a high
-concentration of A and T nucleotides (citation).
+concentration of A and T nucleotides\cite{fungalrepeats}.
 
 \subsection{Gene Prediction}
 Gene finding is another long standing computational problem in
@@ -139,31 +139,39 @@ Genome annotation, in the case of gene finding in this work, has been
 a popular computational problem for decades. The identification of
 possible genes provides other researchers with a valuable resource for
 future research avenues. Due to the importance and popularity of this
-topic, there have been a variety of gene finding tools that have been
-developed. This raises questions such as which tool is better, do
-different tools provide drastically different results and how much
-overlap exists between gene finding programs. Comparative studies of
-gene finding tools have been performed before, however most of these
-studies are in reference to popular eukaryotic subjects of study such
-as humans, mice and in the case of plants, \textit{Arabidopsis}. Few
-if any comparative studies have been performed in fungal genomes, and
-even fewer in the case of \textit{Trichoderma}.
+topic, there have been a variety of gene finding tools developed, each
+with their own implementation for certain applications or use
+cases. The abundance of gene finding tools raises questions such as
+which tool is better? Do different tools provide drastically different
+results? How much overlap exists between gene finding programs? Are
+there stark differences between \textit{ab initio} methods and
+similarity-based methods?  Comparative studies of gene finding tools
+have been performed before, however most of these studies are in
+reference to popular eukaryotic subjects of study such as humans, mice
+and \textit{Arabidopsis}. Few if any comparative studies have been
+performed in fungal genomes, and even fewer in the case of
+\textit{Trichoderma}.
 
 This lack of comparative analysis in fungal genomes provides a
 research avenue to compare results from the application of different
 gene finding tools to new and existing \textit{Trichoderma}
 assemblies. Results from using different annotation tools will allow
 us to identify a 'core' genome along with genes that are not predicted
-by all tools in all genomes (outliers). This analysis will also allow
-us to compare results from both evidence-based gene finding methods as
-well as \textit{ab-initio} gene finding methods. One interesting area
-to investigate between these methods would be in regions of low
-nuclotide diversity, or the AT-rich regions common to
+by all tools in all genomes, or outliers. This analysis will also
+allow us to compare results from both evidence-based gene finding
+methods as well as \textit{ab-initio} gene finding methods. One
+interesting area to investigate between these methods would be in
+regions of low nuclotide diversity, or the AT-rich regions common to
 \textit{Trichoderma} and other fungi. It is possible that gene finding
 programs may have difficulty with these regions of genomes, as they
 may contain repeat regions and as mentioned before, have low
 nucleotide diversity, making it unlikely but not impossible for genes
-to be found in these regions.
+to be found in these regions. Results from this work will provide
+insight into the use of different gene finding tools in the context of
+\textit{Trichoderma}. This work will also provide a large set of
+called genes spanning at minimum two \textit{Trichoderma} genomes,
+along with two new assemblies which have been analyzed for repeat and
+AT-rich regions.
 
 \section{Deliverables}
 \begin{itemize}
@@ -218,6 +226,11 @@ to be found in these regions.
   through the dense forest of programs. \textit{Nature
     Heredity}. \textit{104}, 520-533.
 
+\bibitem{fungalrepeats} Li, WC., Huang, CH., Chen, CL. et
+  al. (2017). Trichoderma reesei complete genome sequence,
+  repeat-induced point mutation, and partitioning of CAZyme gene
+  clusters. \textit{Biotechnol Biofuels}. \textit{10}, 170.
+  
 \bibitem{GeneFinding} Wang, Z., Chen, Yazhu., Li, Y. (2016). A Brief
   Review of Computational Gene Prediction Methods. \textit{Genomics
     Proteomics Bioinformatics}. \textit{2}4, 216-221.
