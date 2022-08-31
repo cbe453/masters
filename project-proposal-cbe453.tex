@@ -117,18 +117,21 @@ expressed sequence tags and protein sequences to identify gene within
 a new genome\cite{GeneFinding}. Complicating the process more are the
 introduction of introns and alternative splicing in Eukaryotes, making
 it possible for one 'gene' to have several differing versions at the
-same locus. As mentioned in the repeat finding section of this
-proposal, long repeats and transpoable elements can cause issues for
-gene finding programs, making this an interesting area of research, at
-least for fungal genomes such as \textit{Trichoderma}. Fungal genomes
-are also interesting in the topic of gene finding as there are few
-programs targeted directly at gene finding in fungal genomes while
-organisms such as human, mouse, and \textit{Arabidopsis} benefit from
-having many tools tested on them as they are model organisms in the
-field, at least according to table 1 in \cite{GeneFinding}. How these
-different methods and tools perform when applied to fungal genomes is
-an important consideration as fungi have features that can benefit
-plant growth as mentioned earlier.
+same locus. Examples of \textit{ab initio} methods include tools such
+as GeneMark-ES and AUGUSTUS, while evidence based methods include
+tools such as Braker2, which can incorporate existing data such as
+RNAseq etc. in gene prediction models. As mentioned in the repeat
+finding section of this proposal, long repeats and transpoable
+elements can cause issues for gene finding programs, making this an
+interesting area of research, at least for fungal genomes such as
+\textit{Trichoderma}. Fungal genomes are also interesting in the topic
+of gene finding as there are few programs targeted directly at gene
+finding in fungal genomes while organisms such as human, mouse, and
+\textit{Arabidopsis} benefit from having many tools tested on them as
+they are model organisms in the field, at least according to table 1
+in \cite{GeneFinding}. How these different methods and tools perform
+when applied to fungal genomes is an important consideration as fungi
+have features that can benefit plant growth as mentioned earlier.
 
 \section{Research problem}
 
@@ -165,8 +168,8 @@ to be found in these regions.
 \section{Deliverables}
 \begin{itemize}
 \item Lists of genes for each \textit{Trichoderma} assembly considered
-\item Consenus or 'core' genome for each genome considered based on
-  different gene finding tools
+\item A consenus or 'core' gene set shared by each genome considered
+  based on different gene finding tools
 \item Repeat regions identified in assembled \textit{Trichoderma}
   genomes.
 \item A potential list of true positive based on genes which have
@@ -187,13 +190,6 @@ to be found in these regions.
   E. (2012). Plant-beneficial effects of \textit{Trichoderma} and of
   its genes. \textit{Microbiology}. \textit{38},
   17-25. 
-
-\bibitem{AntiSmash} Medema, M. H., Blin, K., Cimermancic, P., de
-  Jager, V., Zakrzewski, P., Fischbach, M. A., Weber, T., Takano, E.,
-  Breitling, R. (2011). antiSMASH: rapid identification, annotation
-  and analysis of secondary metabolite biosynthesis gene clusters in
-  bacterial and fungal genome sequences. \textit{Nucleic acids
-    research}. \textit{39}, 339–346.
 
 \bibitem{Secretome} Ramirez-Valdespino, C., Casas-Flores, S.,
   Olmedo-Monfil, V. (2019). \textit{Trichoderma} as a Model to Study
@@ -216,14 +212,6 @@ to be found in these regions.
 \bibitem{assembly} Sohn, J., Nam, J. (2016) The present and future of
   \textit{de novo} whole-genome assembly. \textit{Briefings in
     Bioinformatics}. \textit{19}1, 23-40.
-
-\bibitem{EffectorP} Sperschneider, J., et al. (2016) EffectorP:
-  predicting fungal effector proteins from secretomes using machine
-  learning. \textit{New Phytologist}. \textit{210}2, 743-761.
-
-\bibitem{SignalP} Teufel, F., et al. (2022). SignalP 6.0 predicts all
-  five types of signal peptides using protein language
-  models. \textit{Nature Biotechnology}. \textit{40}, 1023-1025.
 
 \bibitem{Repeats} Lerat., E. (2009). Identifying repeats and
   transposable elements in sequences genomes: how to find your way
