@@ -24,124 +24,118 @@ health and overall crop yields. Current popular methods for crop
 protection involve the use of pesticides and genetically modified
 organisms, which can be expensive and potentially politically dividing
 in the case of GMOs (citation needed). In addition, crops will suffer
-when soils are not sufficient for crop growth and health. These soil
-insufficiencies can include drought stress, nutrient stress and can
-also include solis that have been contaminated with hydrocarbons,
-making it difficult to grow crops in those regions and provides an
-opportunity for new bioremediation processes. Recently, two strains of
-\textit{Trichoderma} have been identified in the prairie regions of
-Alberta and Saskatchewan. These two strains, named Tsth20 and DC1,
-have been found to have unique properties when incoluated in plants in
-the soils mentioned before.
+when soils are not sufficient for crop growth and health. Soil
+insufficiencies can result in drought stress as well as nutrient
+stress, leading to poor overall yields.
 
 \textit{Trichoderma} is a type of fungi that can colonize the roots of
 plants in a non-toxic, non-lethal, opportunistic symbiotic
-relationship.\cite{Trichoderma} Many strains of \textit{Trichoderma}
+relationship\cite{Trichoderma}. Many strains of \textit{Trichoderma}
 have been shown to provide resistance to bacteria and other fungi in
 soils through the use of polyketides, non-ribosomal peptide
 synthetases and other antibiotic
-products\cite{Trichoderma}\cite{Secretome}. In addition to these
-beneficial properties, the two strains mentioned above provide even
-further protection for plants in dry, salty soils and may also be
-considered as a bioremediation tool in soils contaminated with
-hydrocarbon content. However, little is known about how these
-mechanisms work in these new strains, so DC1 and Tsth20 were sequenced
-in an attempt to better understand the details of their genomes and
-secretomes.
+products\cite{Trichoderma}\cite{Secretome}. Recently, two strains of
+\textit{Trichoderma} have been identified in the prairie regions of
+Alberta and Saskatchewan. These two strains, named Tsth20 and DC1,
+have been found to have beneficial properties when used as an
+inoculant for plants in the soils mentioned before. In addition to
+these beneficial properties, the two strains mentioned previously
+provide even further protection for plants in dry, salty soils and one
+strain also has potential for use as a bioremediation tool in soils
+contaminated with hydrocarbon content. However, little is known about
+the mechanisms at work in these new strains, so DC1 and Tsth20 were
+sequenced by the Global Institute for Food Security (no publication
+yet so no reference?) in an initial attempt to better understand the
+details of these genomes and secretomes.
 
 \subsection{Genome Assembly}
 
-Sequence assembly has been a long-standing issue in the field of
-computer science\cite{assembly}. Determining the correct order and
-combination of smaller subsequences into an accurate sequence assembly
-is also computationally difficult in terms of compute resources such
-as memory, CPU count and storage required for input
+Sequence assembly has been a long-standing application problem in the
+field of bioinformatics\cite{assembly}. Determining the correct order
+and combination of smaller subsequences into an accurate sequence
+assembly is also computationally difficult in terms of compute
+resources such as memory, CPU cycles and storage required for input
 sequences\cite{assembly}. In addition to these difficulties, there can
-be difficulties encountered during asssembly due to the nature of the
-data or genomes themselves. Insufficient data used in an assembly may
-result in short, fragmented assemblies, depending on the size of the
-genomes while sequence data that is not long enough can fail to fully
-capture repetitive regions in an assembly. To solve this problem, a
-wide range of assembly tools have been developed with their own unique
-approaches to genome assembly problems, so it is important to use an
-appropriate assembler for the task at hand, and important to evaluate
-the assembly thoroughly. One approach to aid in the issue of genome
-coverage during assembly, is to use a combination of long and short
-reads in what is known as a hybrid assembly. Combining both highly
-accurate short reads with deep coverage along with less accurate but
-much longer reads can produce high quality genome assemblies that
-capture long repetitive regions. Assemblies must also be evaluated
-with measures such as N50, L50, coverage, average contig length and
-total assembled length to ensure that the genomes assemble well at
-least based on those metrics\cite{assembly}. Following appropriate
-assembly protocols is essential to the further success of a project as
-downstream processing such as annotation depends on a high-quality
-assembly.
-
-\subsection{Genome Annotation}
-With the explosion of sequence data and genomes assemblies made
-available in recent years, genome annotation has become a crucial part
-of the sequence analyiss pipeline. Genome annotation can involve the
-annotation of genes as well as the annotation of structures within a
-genome. These annotations can be performed using either evidence
-oriented homology-based annotation programs or \textit{ab-initio}
-statistical methods which do not consider existing
-evidence\cite{AnnotationSummary}. It may also be possible to use a
-combination of both in some circumstances. Furthermore, the downstream
-products of these genes can then be annotated for functional
-properties to determine what functions these genes and gene products
-could potentially perform.
+be other issues encountered during asssembly due to the nature of
+the data or genomes themselves, such as low quality base calls for
+long read data or the inherent content of genomes themselves with
+repetitive regions as an example. Insufficient data used in an
+assembly may result in short, fragmented assemblies, depending on the
+size of the genomes, while sequence data that is not long enough can
+fail to fully capture repetitive regions in an assembly. To solve this
+problem, a wide range of assembly tools have been developed with their
+own unique approaches to genome assembly problems, so it is important
+to use an appropriate assembler for the task at hand, and important to
+evaluate the assembly thoroughly. One approach to aid in the
+previously mentioned issue of assembly correctness, is to use a
+combination of long and short reads in what is known as a hybrid
+assembly. Combining both highly accurate short reads with deep
+coverage along with less accurate but much longer reads can produce
+high quality genome assemblies that capture long repetitive
+regions. Assemblies must also be evaluated with measures such as N50,
+L50, coverage, average contig length and total assembled length to
+ensure that the genomes are well assembled, at least based on these
+metrics\cite{assembly}. Following appropriate assembly protocols is
+essential to the further success of a project as downstream processing
+such as annotation depends on a high-quality assembly.
 
 \subsection{Repeat Identification/Masking and Identification of AT-rich Genomic regions}
-In addition to gene finding, repeat identification within assembled
-genomes is another problem that needs to be considered. Regions with
-long repeats can have a significant impact on genome assembly as well
-as gene finding due to the limitation of short reads used in some
+Repeat identification within assembled genomes is a problem that
+needs to be considered during the genome annotation process. Regions
+with long repeats can have a significant impact on genome assembly as
+well as gene finding due to the limitation of short reads used in some
 assemblies\cite{Repeats}. Short reads may be unable to bridge or cover
 entire repeat regions within a genome, so it is important to consider
-the use of long reads such as Nanopore or PacBio when pursuing a new
-genome assembly project. It is also possible for these repetitive
-regions to contain genes as well, making for an interesting
-investigation in regards to \textit{Trichoderma}, as fungal genomes
-have been shown to contain many repeat regions with a high
-concentration of A and T nucleotides\cite{fungalrepeats}. Once these
-repetitive regions have been identified (by any number of existing
-programs), the genome can be masked to exlude these regions in
-downstream processing if desired. This may affect the gene finding
-process described later and may be an interesting topic to look into
+the use of long reads such as Nanopore or PacBio to provide a complete
+picture of these regions when pursuing a new genome assembly
+project. It is also possible for these repetitive regions to contain
+genes as well, making for an interesting investigation in regards to
+\textit{Trichoderma}, as fungal genomes have been shown to contain
+many repeat regions with a high concentration of A and T
+nucleotides\cite{fungalrepeats}. Once these repetitive regions have
+been identified (by any number of existing programs), the genome could
+be masked to exlude these regions in downstream processing if desired,
+as these regions may be poorly assembled and may result in found genes
+that may not truly exist in those regions. However, this may not be as
+common today\cite{dontMask}. This may affect the gene finding process
+described later and may be an interesting topic to look into
 considering the large number of available gene finding programs
 available.
 
-\subsection{Gene Prediction}
+\subsection{Gene Finding}
 Gene finding is another long standing computational problem in
 bioinformatics, which concerns itself with identifying potential genes
 within genomes based on patterns or evidence considered by the gene
-finding program. These two methods are called \textit{ab initio} for
-programs that search for patterns and gene structure, while similarity
-or evidence-based searches use prior information such as RNAseq data,
-expressed sequence tags and protein sequences to identify gene within
-a new genome\cite{GeneFinding}. Complicating the process more are the
-introduction of introns and alternative splicing in Eukaryotes, making
-it possible for one 'gene' to have several differing versions at the
+finding program. There are two common methods for gene finding, those
+methods being \textit{ab initio} methods where programs search for
+patterns and gene structures, while similarity or evidence-based
+searches use prior information such as RNAseq data, expressed sequence
+tags and protein sequences to identify genes within a new
+genome\cite{GeneFinding}. Complicating the process more is the
+introduction of introns and alternative splicing in eukaryotes, making
+it possible for one gene to have several possible transcripts at the
 same locus. Examples of \textit{ab initio} methods include tools such
 as GeneMark-ES\cite{GeneMarkES} and AUGUSTUS\cite{AUGUSTUS}, while
 evidence based methods include tools such as Braker2\cite{Braker2},
-which can incorporate existing data such as RNAseq, protein sequences
-etc. in gene prediction models. As mentioned in the repeat finding
-section of this proposal, long repeats and transpoable elements can
-cause issues for gene finding programs, making this an interesting
-area of research, at least for fungal genomes such as
-\textit{Trichoderma}. Fungal genomes are also interesting in the topic
-of gene finding as there are few programs targeted directly at gene
-finding in fungal genomes while organisms such as human, mouse, and
-\textit{Arabidopsis} benefit from having many tools tested on them as
-they are model organisms in the field, at least according to table 1
-in \cite{GeneFinding}. How these different methods and tools perform
-when applied to fungal genomes is an important consideration as fungi
-have features that can benefit plant growth as mentioned earlier.
+which can incorporate existing data such as RNAseq, protein sequences, 
+etc. in gene prediction models.
+
+As mentioned in the repeat finding section of this proposal, long
+repeats and transposable elements can cause issues for gene finding
+programs, making this an interesting area of research, at least for
+fungal genomes such as \textit{Trichoderma}. Fungal genomes are also
+interesting in the topic of gene finding as there are few programs
+targeted directly at gene finding in fungal genomes while organisms
+such as human, mouse, and \textit{Arabidopsis} benefit from having
+many tools tested on them as they are model organisms in the field, at
+least according to table 1 in (Wang, Z \textit{et
+  al})\cite{GeneFinding}. How these different methods and tools
+perform when applied to fungal genomes is an important consideration
+as fungi have features that can benefit plant growth as mentioned
+earlier.
+
 
 \section{Research problem}
-
 Genome annotation, in the case of gene finding in this work, has been
 a popular computational problem for decades. The identification of
 possible genes provides other researchers with a valuable resource for
@@ -150,20 +144,20 @@ topic, there have been a variety of gene finding tools developed, each
 with their own implementation for certain applications or use
 cases. The abundance of gene finding tools raises questions such as
 which tool is better? Do different tools provide drastically different
-results? How much overlap exists between gene finding programs? Are
-there stark differences between \textit{ab initio} methods and
-similarity-based methods?  Comparative studies of gene finding tools
-have been performed before, however most of these studies are in
-reference to popular eukaryotic subjects of study such as humans, mice
-and \textit{Arabidopsis}. Few if any comparative studies have been
-performed in fungal genomes, and even fewer in the case of
-\textit{Trichoderma}.
+results? Are there differences in the number and/or of accuracy
+predicted genes in repetitive genomic regions between \textit{ab
+  initio} methods and similarity-based methods?  Comparative studies
+of gene finding tools have been performed before, however most of
+these studies are in reference to popular eukaryotic subjects of study
+such as humans, mice and \textit{Arabidopsis}. Few if any comparative
+studies have been performed in fungal genomes, and even fewer in the
+case of \textit{Trichoderma}.
 
 This lack of comparative analysis in fungal genomes provides a
 research avenue to compare results from the application of different
 gene finding tools to new and existing \textit{Trichoderma}
 assemblies. Results from using different annotation tools will allow
-us to identify a 'core' genome along with genes that are not predicted
+us to identify a core genome along with genes that are not predicted
 by all tools in all genomes, or outliers. This analysis will also
 allow us to compare results from both evidence-based gene finding
 methods as well as \textit{ab-initio} gene finding methods. One
@@ -176,26 +170,28 @@ nucleotide diversity, making it unlikely but not impossible for genes
 to be found in these regions. Results from this work will provide
 insight into the use of different gene finding tools in the context of
 \textit{Trichoderma}. This work will also provide a large set of
-called genes spanning at minimum two \textit{Trichoderma} genomes,
-along with two new assemblies which have been analyzed for repeat and
-AT-rich regions.
+called genes spanning at minimum two newly assembled
+\textit{Trichoderma} genomes, those being DC1 and Tsth20, as well as
+other previously assembled \textit{Trichoderma} genomes from NCBI or
+other sources.
 
 \section{Deliverables}
 \begin{itemize}
-\item Lists of genes for each \textit{Trichoderma} assembly considered
-\item A consenus or 'core' gene set shared by each genome considered
+\item Lists of genes for each \textit{Trichoderma} assembly and gene
+  finding tool combination considered
+\item A consenus or core gene set shared by all genomes considered
   based on different gene finding tools
 \item Repeat regions identified in assembled \textit{Trichoderma}
   genomes.
-\item A potential list of true positive based on genes which have
+\item A potential list of true positives based on genes which have
   supporting RNAseq eveidence
 \end{itemize}
 
 \section{Timeline}
 \begin{itemize}
-\item Initial genome assemblies: 
-\item Gene finding and annotation results: 
-\item Analysis of gene finding results: 
+\item Initial genome assemblies: Collection of existing assemblies (1 week), Assembly of DC1/Tsth20 (2-4 weeks)
+\item Gene finding and annotation results: Identification of gene finding tools (1-2 weeks), Gene finding analysis on selected genomes (1-2 months)
+\item Downstream analysis of gene finding results (1-2 months)
 \end{itemize}
 
 \section{References}
@@ -246,6 +242,9 @@ AT-rich regions.
   al. (2017). Trichoderma reesei complete genome sequence,
   repeat-induced point mutation, and partitioning of CAZyme gene
   clusters. \textit{Biotechnol Biofuels}. \textit{10}, 170.
+
+\bibitem{dontMask} Slotkin, R.K. (2018). The case for not masking away
+  repetitive DNA. \textit{Mobile DNA}. \textit{9}(1), 15.
   
 \bibitem{GeneFinding} Wang, Z., Chen, Yazhu., Li, Y. (2016). A Brief
   Review of Computational Gene Prediction Methods. \textit{Genomics
