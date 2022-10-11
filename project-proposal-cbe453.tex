@@ -115,9 +115,9 @@ genome\cite{GeneFinding}. Complicating the process more is the
 introduction of introns and alternative splicing in eukaryotes, making
 it possible for one gene to have several possible transcripts at the
 same locus. Examples of \textit{ab initio} methods include tools such
-as GeneMark-ES\cite{GeneMarkES} and AUGUSTUS\cite{AUGUSTUS}, while
+as GeneMark-ES\cite{GeneMarkES} and GlimmerHMM(citation needed), while
 evidence based methods include tools such as Braker2\cite{Braker2},
-which can incorporate existing data such as RNAseq, protein sequences, 
+which can incorporate existing data such as RNAseq, protein sequences,
 etc. in gene prediction models.
 
 As mentioned in the repeat finding section of this proposal, long
@@ -169,7 +169,7 @@ assemblies. Results from using different annotation tools will allow
 us to identify a core genome along with genes that are not predicted
 by all tools in all genomes, or outliers. This analysis will also
 allow us to compare results from both evidence-based gene finding
-methods as well as \textit{ab-initio} gene finding methods. One
+methods as well as \textit{ab initio} gene finding methods. One
 interesting area to investigate between these methods would be in
 regions of low nuclotide diversity, or the AT-rich regions common to
 \textit{Trichoderma} and other fungi. It is possible that gene finding
@@ -181,17 +181,46 @@ to be found in these regions.
 As mentioned previously, it is important to understand the features of
 these gene finders prior to developing an approach for comparing their
 outputs. With this in mind, the tools selected for this research
-should cover both ab-initio and evidence-based methods as well as the
-identification of other features such as small RNAs and untranslated
-regions as they may be useful for GIFS researchers working with this
-data in the future.
+should cover both \textit{ab initio} and evidence-based methods as
+well as the identification of other features such as small RNAs and
+untranslated regions as it is possible that some gene finders may
+identify features such as small RNAs without explicitly stating that
+they do. This information may also be useful for GIFS researchers
+working with this data in the future. To cover several of these areas
+of interest, the following tools are proposed for this project. Note
+that other tools are also available for consideration and this set
+does not have to be final.
 
-Results from this work will provide insight into the use of different
-gene finding tools in the context of \textit{Trichoderma}. This work
-will also provide a large set of called genes spanning at minimum two
-newly assembled \textit{Trichoderma} genomes, those being DC1 and
-Tsth20, as well as other previously assembled \textit{Trichoderma}
-genomes from NCBI or other sources.
+\begin{itemize}
+
+\item ReatMasker\cite{RepeatMasker}: a tool used to identify
+  repetititve regions within a genomic sequence.
+\item Infernal/Rfam\cite{Infernal}: a tool used in combination with a database to
+  analyze genomic sequences for non-coding RNAs. Useful to compare
+  against gene callsfrom the tools proposed below.
+\item GeneMark-ES\cite{GeneMarkES}: an \textit{ab initio} HMM-based
+  gene finding tool with an option for specific to fungal genomes,
+\item GenomeThreader\cite{GenomeThreader}: an evidence-based gene finding
+  tool that uses dynamic programming to efficiently identify splice
+  candidates for genes using splice-aware RNASeq alignments as input.
+\item Braker2: a gene finding tool that uses a hybrid approach
+  combining information from \textit{ab initio} and evidence-based
+  methods. In addition, Braker2 also has the ability to identify UTR
+  regions as well
+
+\end{itemize}
+
+A comparative approach or pipeline will then be developed to compare
+outputs and performance of these gene finding tools. Possible points
+of comparison include true positives as compared to aligned sequence
+data, identification of genes in repetitive regions and identification
+of potential small RNAs. Results from this work will provide insight
+into the use of different gene finding tools in the context of
+\textit{Trichoderma}. This work will also provide a large set of
+called genes spanning at minimum two newly assembled
+\textit{Trichoderma} genomes, those being DC1 and Tsth20, as well as
+other previously assembled \textit{Trichoderma} genomes from NCBI or
+other sources.
 
 \section{Deliverables}
 \begin{itemize}
@@ -267,6 +296,18 @@ genomes from NCBI or other sources.
 \bibitem{GeneFinding} Wang, Z., Chen, Yazhu., Li, Y. (2016). A Brief
   Review of Computational Gene Prediction Methods. \textit{Genomics
     Proteomics Bioinformatics}. \textit{2}4, 216-221.
+
+\bibitem{RepeatMasker} Smit, A., Hubley, R., Green, P. (2013-2015)
+  RepeatMasker Open-4.0. https://www.repeeatmasker.org
+
+\bibitem{Infernal} Nawrocki, E.P., Eddy, S.R. (2013). Infernal 1.1:
+  100-fold faster RNA homology
+  searches. \textit{Bioinformatics}. \textit{29}, 2933-2935.
+
+\bibitem{GenomeThreader} Gremme, G., Brendel, V., Sparks, M.E., Kurtz,
+  S. (2005) Engineering a software tool for gene structure prediction
+  in higher organisms. \textit{Information and Software
+    Technology}. \textit{47}, 965-978.
   
 \end{thebibliography}
 
