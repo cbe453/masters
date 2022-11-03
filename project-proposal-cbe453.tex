@@ -41,11 +41,13 @@ inoculant for plants in the soils mentioned before. In addition to
 these beneficial properties, the two strains mentioned previously
 provide even further protection for plants in dry, salty soils and one
 strain also has potential for use as a bioremediation tool in soils
-contaminated with hydrocarbon content. However, little is known about
-the mechanisms at work in these strains, so DC1 and Tsth20 were
+contaminated with hydrocarbon content. Bioremediation and resistance
+to drought tolerance has also been investigated in other strains of
+\textit{Trichoderma} as well\cite{Drought}\cite{Kaminskyj}. However, little is known
+about the mechanisms at work in these strains, so DC1 and Tsth20 were
 sequenced by the Global Institute for Food Security (no publication
-yet so no reference) in an initial attempt to better understand the
-details of these genomes and secretomes.
+yet) in an initial attempt to better understand the details of these
+genomes and secretomes.
 
 \subsection{Genome Assembly}
 
@@ -70,13 +72,17 @@ assembly correctness is to use a combination of long and short reads
 in what is known as a hybrid assembly. Combining both highly accurate
 short reads with deep coverage along with less accurate but much
 longer reads can produce high quality genome assemblies that capture
-long repetitive regions. Assemblies must also be evaluated with
-measures such as N50, L50, coverage, average contig length and total
-assembled length to ensure that the genomes are well assembled, at
-least based on these metrics\cite{assembly}. Following appropriate
-assembly protocols is essential to the further success of a project as
-downstream processing such as annotation depends on a high-quality
-assembly.
+long repetitive regions. A hybrid assembly approach will likely be
+used for the assembly of theses \textit{Trichoderma} genomes. However,
+this is subject to the performance of available genome assembly
+tools. Genome assembly tools to be considered will include
+SPAdes(ref), MaSuRCA(ref), and Flye + Pilon(ref).  Assemblies must
+also be evaluated with measures such as N50, L50, coverage, average
+contig length and total assembled length to ensure that the genomes
+are well assembled, at least based on these
+metrics\cite{assembly}. Following appropriate assembly protocols is
+essential to the further success of a project as downstream processing
+such as annotation depends on a high-quality assembly.
 
 \subsection{Repeat Identification/Masking and Identification of AT-rich Genomic regions}
 Repeat identification within assembled genomes is a problem that needs
@@ -213,13 +219,15 @@ comparison will include gene finding features (proficiencies and
 deficiencies), efficiency of selected tools (runtimes, memory
 requirements), requirements of select tools (operating system,
 additional databases, required librairies etc.), ease of installation,
-called genes as compared to aligned RNA sequence data, identification
-of genes in repetitive regions, identification of small RNAs,
-distributions of gene lengths along with maximum/minimum gene lengths
-and performance of gene finders in AT-rich regions. Results from this
-work will provide insight into the use of different gene finding tools
-in the context of \textit{Trichoderma}. This work will also provide a
-large set of called genes spanning at minimum two newly assembled
+called genes as compared to aligned RNA sequence data, comparison of
+called genes to previously validated subsets of
+genes\cite{Validation}, identification of genes in repetitive regions,
+identification of small RNAs, distributions of gene lengths along with
+maximum/minimum gene lengths and performance of gene finders in
+AT-rich regions. Results from this work will provide insight into the
+use of different gene finding tools in the context of
+\textit{Trichoderma}. This work will also provide a large set of
+called genes spanning at minimum two newly assembled
 \textit{Trichoderma} genomes, those being DC1 and Tsth20, as well as
 other previously assembled \textit{Trichoderma} genomes from NCBI or
 other sources.
@@ -262,9 +270,18 @@ other sources.
   Olmedo-Monfil, V. (2019). \textit{Trichoderma} as a Model to Study
   Effector-Like Molecules. \textit{Frontiers in Microbiology}, \textit{15}.
 
-\bibitem{Braker2} Hoff, K. J., Lomsadze, A., Borodovsky, M., 
-  Stanke, M. (2019). Whole-Genome Annotation with
-  BRAKER. \textit{Methods Mol Biol.}, \textit{1962}, 65-95.
+\bibitem{Drought} Repas, T.S., Gillis, D.M., Boubakir, Z., Bao,
+  Xioahui., Samuels, G.J., Kaminskyj, S.G.W. (2017). Growing plants on
+  oily, nutrient-poor soil using a native symbitoic
+  fungus. \textit{PLOS ONE}, \textit{12}(10).
+
+\bibitem{Kaminskyj} Kaminskyj et al. (2012). Method for increasing
+  plant growth using the fungus \textit{Trichoderma harzianum} (United
+  States PCT/CA2O1O/OO1454). https://patentimages.storage.googleapis.com/57/4f/7f/5ff60c47045f01/US20120178624A1.pdf
+  
+\bibitem{Braker2} Hoff, K. J., Lomsadze, A., Borodovsky, M., Stanke,
+  M. (2019). Whole-Genome Annotation with BRAKER. \textit{Methods Mol
+    Biol.}, \textit{1962}, 65-95.
 
 \bibitem{GeneMarkES} Borodovsky, M., Lomsadze, A. (2011). Eukaryotic
   Gene Prodeiction using GeneMark.hmm-E and
@@ -321,6 +338,10 @@ other sources.
   S. (2005) Engineering a software tool for gene structure prediction
   in higher organisms. \textit{Information and Software
     Technology}. \textit{47}, 965-978.
+
+\bibitem{Validation} Adav, S.S., Sze, S.K. (2014). Chapter 8 -
+  \textit{TRichoderma} Secretome: An Overview. \textit{Biotechnology
+    and Biology of Trichoderma}. 103-104. 
   
 \end{thebibliography}
 
