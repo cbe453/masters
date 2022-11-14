@@ -1,0 +1,200 @@
+\documentclass{beamer}
+
+\title{Committee meeting for Connor Burbridge}
+\subtitle{Committee members: Dave Schneider, Tony Kusalik, Matthew Links, Leon Kochian}
+\author{Connor Burbridge}
+\date{\today}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Project Proposal Outline}
+  \begin{itemize}
+  \item Background
+  \item Research Problem
+  \item Current Progress
+  \item Timeline
+  \item Deliverables
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Background: \textit{Trichoderma}}
+  What is \textit{Trichoderma}?
+  \begin{itemize}
+  \item \textit{Trichoderma} is an opportunistic symbiotic fungi, which
+    can colonize the roots of plants
+  \item \textit{Trichoderma} strains have been shown to provide
+    several benefits to the host plant it colonizes, those generally
+    being:
+    \begin{itemize}
+      \item Increased resistance to abiotic and biotic stressors
+      \item Facilitating nutrient uptake
+      \item Increased germination rates
+    \end{itemize}
+  \item Because of \textit{Trichoderma's} potential to produce
+    materials which aid in resistance to bacteria and other fungi in
+    soil, several \textit{Trichoderma} strains have been well studied
+    and are employed in the use of manufacturing antibiotics and other
+    materials
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Background: Previous GIFS Work}
+  Two strains have been sequenced in previous work within GIFS:
+  \begin{itemize}
+  \item DC1 and Tsth20
+  \item Strains from the prairie regions of Canada, including Alberta
+    and Saskatchewan
+  \item One strain has been shown to provide resistance for plants
+    growing in soils with high salt content, the other has potential
+    for use as a bioremediation agent in soils contaminated with
+    hydrocarbons
+  \item How exactly do these processes work? Which genes are included
+    in these processes?
+  \item To lay groundwork for better understanding, we must identify
+    potential genes in these strains
+  \item To answer these questions, both strains were sequenced with
+    Illumina and Nanopore technologies
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Research Problem} These sequenced strains offer an
+  opportunity to assemble and annotate them:
+  \begin{itemize}
+  \item Genome assembly is 'relatively' straight-forward
+  \item However, the choice of a tool for gene finding or annotation
+    is uncertain
+  \item There has been relatively little comparative analysis for gene
+    finding tools in fungi, and even fewer for \textit{Trichoderma}
+  \item This raises questions. How do different gene finding tools
+    perform in fungi and \textit{Trichoderma} in particular?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Project Goal} This project aims to evaluate several
+  different gene finding tools in the context of \textit{Trichoderma}
+  genomes
+  \begin{itemize}
+    \item Gene finding tools currently selected are GeneMark-ES,
+      GenomeThreader, and Braker2
+    \item These tools include a mix of \textit{ab initio},
+      evidence-based and hybrid gene finding methods
+    \item This list is not final and may include more tools if
+      desired or necessary
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Evaluation of Gene Finding Tools} A methodology for
+  evaluating and comparing the selected tools needs to be
+  developed. Metrics for comparison will include:
+  \begin{itemize}
+  \item Gene finding features
+  \item Efficiency of selected gene finding tools (i.e. runtimes,
+    memory requirements)
+  \item Requirements of selected gene finding tools and ease of
+    installation
+  \item Comparison ('validation') of called genes with existing RNASeq data if
+    available
+  \item Identification of small RNAs and genes in repetitive and
+    AT-rich regions
+  \item Distribution of lengths of called genes (particularly in the
+    case of \textit{ab initio} gene finders)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Current Progress}
+  Preliminary assemblies for both DC1 and Tsth20 are ready
+  \begin{itemize}
+  \item Two assemblies for each strain using both SPAdes and MaSuRCA
+  \item Both assemblers use a hybrid assembly approach
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Assembly Metrics}
+  SPAdes
+  \begin{center}
+  \resizebox{\textwidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      Strain & Total Contigs & Total Length & Largest Contig & GC\% & N50 & L50 \\ \hline
+      Tsth20 & 611 & 41.88 Mb & 2.44 Mb & 47.28 & 1.17 Mb & 14 \\ \hline
+      DC1 & 181 & 38.60 Mb & 1.85 Mb & 47.95 & 807.44 Kb & 17 \\ \hline 
+    \end{tabular}
+    }
+    \label{table1} \vspace{0.5cm}
+  \end{center}
+  MaSuRCA
+  \begin{center}
+  \resizebox{\textwidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      Strain & Total Contigs & Total Length & Largest Contig & GC\% & N50 & L50 \\ \hline
+      Tsth20 & 8 & 41.52 Mb & 9.97 Mb & 47.36 & 4.96 Mb & 3 \\ \hline
+      DC1 & 13 & 38.60 Mb & 7.36 Mb & 47.96 & 4.06 Mb & 4 \\ \hline 
+    \end{tabular}
+    }
+  \label{table1} \vspace{0.5cm}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Existing Progress Cont.}
+  Place images of genome alignments and GC content here
+\end{frame}
+
+\begin{frame}
+  \frametitle{Next Steps}
+  \begin{itemize}
+  \item Finish assemblies of DC1 and Tsth20
+  \item Identify repetititve regions of selected assemblies
+  \item Identify non-coding RNAs in selected assemblies
+  \item Apply gene finders to selected assemblies and evaluate
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Deliverables}
+  \begin{itemize}
+  \item Assemblies of both Tsth20 and DC1
+  \item Lists of potential genes for each \textit{Trichoderma}
+    assembly considered
+  \item A consensus or 'core' genome for genes called by all gene
+    finders
+  \item Repetitive regions identified in all \textit{Trichoderma}
+    genomes considered
+  \item Potential true positives supported by RNAseq evidence and
+    existing annotations
+  \item Final comparative tables including the evaluation metrics
+    described previously
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Timeline}
+  \begin{itemize}
+  \item Finishing assemblies of DC1 and Tsth20 assemblies (2 weeks)
+  \item Collection of existing genome assemblies (1 week)
+  \item Application of gene finding tools to selected genomes (1-2
+    months)
+  \item Downstream analysis of gene finding results (1-2 months)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Fun Time}
+  \begin{center}
+    Questions and/or comments?
+  \end{center}
+\end{frame}
+
+\end{document}
