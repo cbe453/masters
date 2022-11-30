@@ -1,0 +1,42 @@
+Initial file for description of methods used for MASuRcA
+
+2022-11-29
+
+MASuRcA 4.0.3 was run using the Compute Canada software stack available on Copernicus.
+Prior to loading the MASuRcA environment, the GCC/9.0 and StdEnv/2020 modules
+must be loaded first. This version of the software is not ideal, but the Anaconda
+installation of versino 4.0.9 consistently failed, even in a fresh environment.
+Building the software from scratch is a potential option. In addition to this difficulty,
+the assemblies were performed in the p2irc_rsmi scratch space on Copernicus as I was
+encountering permissions issues when trying to run the assembly in the Roots datastore.
+I don't know exactly why (microsoft permissions problems from datastore?, but there
+were permission issues associated with scripts being copied to datastore as part of the
+assembly process. All assembly materials were copied back to datastore after assembly.
+
+Initially, a configuration file must be generated to run MASuRcA with the optimal
+combination of assembly tools for the data supplied (Flye + polishing). Running
+MASuRcA from the commandline tool utilizes the CABOG celera-based assembler, which
+is noted as being slower and results in an assembly with similar or worse quality
+than one using Flye.
+
+To generate the config file, run the following:
+masurca -g config.txt
+
+The config file was then altered to provide input file, options and allowable number
+of threads for assembly. All other assembly parameters were left untouched. Insert
+lengths for the Illumina read data used the recommended values (stated to work for
+most Illumina reads), although these could be modified with input from Brendan. The
+config files for both assemblies are available in the assebly directories.
+
+To generate the assembly.sh script, run:
+masurca config.txt
+
+Once the assembly.sh script is generated, execute the assembly using:
+./assemble.sh
+
+Final assemblies are placed in directories with the prefix flye.mr.*
+Quast analysis of the genomes was also performed, with the output being placed in
+directories named quast within the assembly directory.
+
+To run Quast:
+quast -o ./ -t 16 assembly-file.fasta

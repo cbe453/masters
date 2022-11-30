@@ -1,0 +1,13 @@
+Initial file for description of methods used for SPAdes
+
+2022-11-29
+
+SPAdes version () was used for hybrid assemblies of Tsth30 and DC1. This assembler
+was installed using Anaconda and the bioinformatcs environment managed by myself and
+others in the p2irc_rsmi storage space in scratch on Copernicus. The assembly process
+straightforward, following the standard protocol from their manual for a hybrid
+assembly of Nanopore and Illumina read data.
+
+To run SPAdes, use the following command structure:
+
+spades --pe1-1 input-R1.fastq --pe1-2 input-R2.fastq --nanopore input-nanopore.fastq -t 48 -o assembly.fasta
