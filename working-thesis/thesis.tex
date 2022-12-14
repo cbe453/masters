@@ -16,6 +16,23 @@
 
 \section{Pre-work}
 
+\subsection{Existing selection of Genome Assemblies}
+
+Comparison of several different \textit{Trichoderma} genomes is
+important in the context of gene finding tools as different gene
+finding tools will find different genes and understanding how these
+tools behave in the context of different \textit{Trichoderma} genomes
+could prove useful for those looking to find genes in similar fungal
+genomes in the future. To accent the processing for genomes of
+interest, those being DC1 and Tsht20, we should include other
+previously assembled \textit{Trichoderma} assemblies. Currently
+selected genomes include \textit{Trichoderma reesei},
+\textit{Trichoderma harzianum}, and \textit{Trichoderma virens?}, with
+\textit{Trichoderma reesei} being the 'reference' in this case, as it
+is well studied and there are several patents involving it's use a
+organsim for production of compounds such as antibiotics in industrial
+applications.
+
 \subsection{Assembly}
 
 The foundation of this project is base ond the sequencing of two novel
@@ -32,7 +49,7 @@ the GCC/9.0 and StdEnv/2020 modules must be loaded first. This version
 of the software is not ideal, but the Anaconda installation of versino
 4.0.9 consistently failed, even in a fresh environment.  Building the
 software from scratch is a potential option. In addition to this
-difficulty, the assemblies were performed in the p2irc_rsmi scratch
+difficulty, the assemblies were performed in the p2irc\_rsmi scratch
 space on Copernicus as I was encountering permissions issues when
 trying to run the assembly in the Roots datastore.  I don't know
 exactly why (microsoft permissions problems from datastore?, but there
@@ -97,5 +114,7 @@ General command for running RepeatMasker:
 -pa 10 -a -small -species fungi -html -gff -dir ./
 path-to-genome/genome.fasta
 
+
+\section{}
 
 \end{document}
