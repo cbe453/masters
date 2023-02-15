@@ -88,6 +88,27 @@ being placed in directories named quast within the assembly directory.
 To run Quast:
 quast -o ./ -t 16 assembly-file.fasta
 
+In an attempt to produce higher quality assemblies of DC1 and Tsth20,
+It has been suggested that I try a set of tools call NextDenovo and
+NextPolish as they have produced excellent assemblies based on
+previous experience from supervisors.
+
+Installation of NextDenovo was straightforward. Simply download the
+compressed tar file from their website and unpack it. NextDenovo
+requires Python versions 2 and 3 along with a package called parallel
+to aid in parallel processing of datasets. I installed parallel using
+pip in the bioinformatics conda environment in the scracth space of
+Copernicus.
+
+Initial attempts to run the example dataset resulted in some
+permissions errors, which I have encountered with other tools in the
+past. Thank you datastore. To remedy this, I copied the installation
+to RSMI's scratch space on Copernicus. Once the approriate permissions
+were given to run nextDenovo, I was able to run the example dataset
+assembly without issue. Future assemblies of DC1 and Tsth20 will be
+performed in this scratch space to avoid permissiions issues and
+results will be copied to datastore.
+
 \subsection{Repeat Masking}
 
 In order to evaluate the performance of gene finding tools in
@@ -122,5 +143,16 @@ have not been successfully installed yet.
 
 GenomeThreader installed successfully via Anaconda in the
 bioinformatics environments on cnic-gifs-aio-18001 (rsmi01).
+
+\section{Gene Finding}
+
+Now that we have covered information about assembling and installation
+of these tools, we can cover the gene finding portion of this work.
+
+To begin, I ran GeneMark-ES as it requires no prior information or
+alignments in order to run. In this case GeneMark-ES has an option
+specifically for fungal genomes, which I chose to use in this case.
+
+
 
 \end{document}
