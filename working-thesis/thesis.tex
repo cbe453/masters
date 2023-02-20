@@ -154,5 +154,16 @@ alignments in order to run. In this case GeneMark-ES has an option
 specifically for fungal genomes, which I chose to use in this case.
 
 
+GenomeThreader is currently undergoind a test run with only two cDNA
+files for the SRA accession SRR5229930. The command itself was
+straightforward to run, although I am waiting for a successful run to
+finish to confirm that. The only other thing to mention was that
+GenomeThreader seems to only accept FASTA files as input. FastQ files
+were not accepted and failed with an illegal character error for the @
+headers on the FastQ files. To rectify this, I used seqret to convert
+the FastQ files to FastA files.
+
+Seqret basic syntax:
+\textbf{seqret -fastq seqfile.fastq -fasta seqfile.fasta}
 
 \end{document}
