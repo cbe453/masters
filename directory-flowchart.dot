@@ -18,4 +18,7 @@ digraph {
   "gene-finding" -> braker2;
   "gene-finding" -> genemark;
   "gene-finding" -> "rnaseq-alignments";
+  refseqs -> "trichoderma-1...N";
+  "trichoderma-1...N" -> "NCBI assembly and RNAseq";
+
 }
