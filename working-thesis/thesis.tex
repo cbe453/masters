@@ -154,7 +154,7 @@ alignments in order to run. In this case GeneMark-ES has an option
 specifically for fungal genomes, which I chose to use in this case.
 
 
-GenomeThreader is currently undergoind a test run with only two cDNA
+GenomeThreader is currently undergoing a test run with only two cDNA
 files for the SRA accession SRR5229930. The command itself was
 straightforward to run, although I am waiting for a successful run to
 finish to confirm that. The only other thing to mention was that
@@ -163,7 +163,42 @@ were not accepted and failed with an illegal character error for the @
 headers on the FastQ files. To rectify this, I used seqret to convert
 the FastQ files to FastA files.
 
+GenomeThreader update: GenomeTHreader was running for over 1000 hours,
+so I eventually ended the task. Unsure on whether ot not this is my
+fault or an issue with the program or installation. The program was
+using 250+ GB of memory while running so I assume something was
+happening, but it could be a memory leak or just a really slow
+program. Either way, I don't think it is an appropriate option for
+this project.
+
 Seqret basic syntax:
 \textbf{seqret -fastq seqfile.fastq -fasta seqfile.fasta}
+
+
+Braker2 has been successfully run on the RSMI box with the help of
+Brook from Research Computing. Issues with Anaconda and glibc
+incompatibilities have been frustrating and difficult to deal
+with. Brook has set up several modules including an initialization
+script to get things up and running AND create a reloadable
+environment for reuse. Once the environment has been loaded, one must
+load the Hisat2 module from compute canada as well as an htslib module
+(more detail to come). Once all modules are loaded, there are a few
+environemnt variables that need to be set. Alternatively, these
+variables can be set within the braker2.pl command, which have higher
+priority over environment variables and probably makes things easier
+to track.
+
+The variables that need to be set are AUGUSTUS_CONFIG_PATH and
+TSEBRA_PATH. Augustus, by defuault, tries to write species information
+to the location where the software is installed. In this case, we
+don'thave write permissions to the compute canada software stack
+hosted byt Research Computing, so the AUGUSTUS_CONFIG_PATH variable
+must be set in order to create a writeable directory. As long as that
+path has a directory within it called braker, and a species directory
+within the braker directory, things should go smoothly. TSEBRA is a
+set of scripts also made by the creators of Braker and is required to
+merge results from the various gene prediction tools involved in the
+Braker2 pipeline. Both Brakers2 and TSEBRA can be cloned directly from
+GitHub (links to come)
 
 \end{document}
