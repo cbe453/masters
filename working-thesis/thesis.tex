@@ -188,17 +188,18 @@ variables can be set within the braker2.pl command, which have higher
 priority over environment variables and probably makes things easier
 to track.
 
-The variables that need to be set are AUGUSTUS_CONFIG_PATH and
-TSEBRA_PATH. Augustus, by defuault, tries to write species information
-to the location where the software is installed. In this case, we
-don'thave write permissions to the compute canada software stack
-hosted byt Research Computing, so the AUGUSTUS_CONFIG_PATH variable
-must be set in order to create a writeable directory. As long as that
-path has a directory within it called braker, and a species directory
-within the braker directory, things should go smoothly. TSEBRA is a
-set of scripts also made by the creators of Braker and is required to
-merge results from the various gene prediction tools involved in the
-Braker2 pipeline. Both Brakers2 and TSEBRA can be cloned directly from
-GitHub (links to come)
+The variables that need to be set are AUGUSTUS\_CONFIG\_PATH and
+TSEBRA\_PATH. Augustus, by defuault, tries to write species
+information to the location where the software is installed. In this
+case, we don'thave write permissions to the compute canada software
+stack hosted byt Research Computing, so the AUGUSTUS\_CONFIG\_PATH
+variable must be set in order to create a writeable directory. As long
+as that path has a directory within it called braker, and a species
+directory within the braker directory, things should go
+smoothly. TSEBRA is a set of scripts also made by the creators of
+Braker and is required to merge results from the various gene
+prediction tools involved in the Braker2 pipeline. The TSEBRA\_PATH
+simply points to the directory where TSEBRA is located Both Braker2
+and TSEBRA can be cloned directly from GitHub (links to come)
 
 \end{document}
