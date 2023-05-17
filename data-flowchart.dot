@@ -1,0 +1,22 @@
+digraph {
+	Illumina -> Filtering;
+	Nanopore -> Filtering;
+	Annotation -> Braker2;
+	Annotation -> GeneMark
+	Filtering -> NextDenovo;
+	NextDenovo -> Annotation;
+	RefSeqs -> Annotation;
+	Annotation -> "...";
+	"..." -> DownstreamProcessing;
+	RNAseq -> Braker2;
+	RefSeqs -> RepeatAnnotation;
+	NextDenovo -> RepeatAnnotation;
+	GeneMark -> DownstreamProcessing;
+	Braker2 -> DownstreamProcessing;
+	RepeatAnnotation -> DownstreamProcessing;
+	RefSeqs -> Quast;
+	NextDenovo -> Quast;
+	DownstreamProcessing -> GenesInRepeats;
+	DownstreamProcessing -> TotalGenes;
+	DownstreamProcessing -> OverlappingGenes;
+}
