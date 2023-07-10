@@ -206,4 +206,55 @@ prediction tools involved in the Braker2 pipeline. The TSEBRA\_PATH
 simply points to the directory where TSEBRA is located Both Braker2
 and TSEBRA can be cloned directly from GitHub (links to come)
 
+\section{Downstream Analysis}
+
+After completion of the processing portion of this work, the results
+must be processed in a useful way, which includes both the biological
+implications of the gene calls as well as the computational, or gene
+finding features, of the the selected programs. To better understand
+how gene finders perform in these two classes, we must define an
+appropriate plan for analysis of the results produced so
+far. Currently, downstream analysis plan has been broken down into
+several sections.
+
+\subsection{Basic Analysis}
+
+Basic analysis of gene finding results is an important part of this
+research. Total gene, transcript and protein counts will be identified
+for each genome and gene finding tool combination. Comparing the
+general outputs of these programs will provide an idea of their
+performance in different \textit{Trichoderma} genomes. Analysis for
+these results can performed through simple shell scripting with grep
+and other unix tools, although processing through Python might provide
+results that are easier to reproduce with proper programming. Having
+one script with several modules that can be rerun at will would be
+easier to handle than multiple shell scripts. This thinking for
+processing will be applied to subsequent sections of this as well. 
+
+\subsection{Distribution of Gene Lengths}
+
+One important aspect of gene finding tools to consider is the
+distribution of gene lengths predicted by each individual
+tool. Certain tools, such as GeneMark are based on pre-defined models,
+which may limit the length of predicted genes, while tools such as
+Braker2, which incorporate RNAseq data, may predict a wider
+distribution of gene lengths depending on the input dataset
+used. Regardless, the ability of a gene finding tool to predict a
+wider range of gene lengths can be usefull if users are looking for
+short or larger genes. To help determine whether or not these tools
+find shorter genes, or small RNAs, the genomes of interest have been
+annotated using Infernal along with the Rfam database. These
+annotation results will also be included with results from other
+annotation processes further down the line. Again, these results can
+be produced with a Python script. The resulting data could then be
+used as input to violin plots for each genome and set of tools
+considered in this analysis process. Violin plots should provide a
+good visualization of gene lengths as well as the number of genes
+found with specific lengths. Means could also be compared
+staatistically for genomes and the mutliple tools considered as well.
+
+\subsection{Intersection of Gene Calls, smallRNAs and Repetitive Regions}
+
+poop
+
 \end{document}
