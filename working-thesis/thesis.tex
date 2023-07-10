@@ -114,9 +114,9 @@ results will be copied to datastore.
 In order to evaluate the performance of gene finding tools in
 repetitive or low complexity regions in the context of
 \textit{Trichoderma} genomes, we must first identify said regions in
-the genomes considered. To do this, RepeaatMasker has been selected as
+the genomes considered. To do this, RepeatMasker has been selected as
 a tool to identify repeat regions based on a fungal subset of the Dfam
-database by specifying the fungo species tag to RepeatMasker when
+database by specifying the fungi species tag to RepeatMasker when
 running the program. The program was configured with options to
 produce several output formats for each genome considered, which will
 allow for more informative downstream analysis of results. All
@@ -255,6 +255,31 @@ staatistically for genomes and the mutliple tools considered as well.
 
 \subsection{Intersection of Gene Calls, smallRNAs and Repetitive Regions}
 
-To
+Annotation of all three features in the title are important in
+assessing the ability of gene finding tools. Even more important, is
+the potential for for overlap between gene calls and small RNAS as
+well as repetitive regions the genomes. As discussed in the previous
+subsection, the distribution of gene lengths predicted by a gene
+finding tool can be an important metric for users. Overlapping
+predicted genes from tools alongside the output from Infernal and the
+Rfam database may provide insight into whether or not these gene
+finding tools are able to predict RNAs of very short length. In
+addition to small RNAs, repetitive regions in \textit{Trichoderma}
+genomes hold potential for recombination and gene content, although
+the inherent nature of these repetitive regions (low nucleotide
+diveristy) suggests that gene content should be low, based on the
+nucleotides required for start and stop codons. Analysis of these
+intersections can be perfomed via bedtools or through biopython (I
+believe). Again, having all processing steps included in one script as
+separate functions that can be called at whim will make further
+processing easier if changes need to be made.
+
+\subsection{Shared Gene Content with Yeast}
+
+While considering novel gene calls can be useful, comparing those
+calls to a well-studied close relative can provide a rudimentary
+validation of the calls as a ground truth. In this case, a comparison
+to Yeast will be made. The agreed upon number for successful
+gene-finding as compared to Yeast is roughly 80-85\% of gene content.
 
 \end{document}
