@@ -150,6 +150,50 @@ underlying models used for gene finding. These features and others can
 influence a user's decision on which gene finding tool to consider and
 will complicate comparative analysis of multiple gene finding tools.
 
+\section{Software Installation}
+(Possibly supporting materials or discussion)
+
+\subsection{NextDenovo and NextPolish Installation}
+Installation of nextDenovo was straightforward. Simply download the
+compressed tar file from their website and unpack it. NextDenovo
+requires Python versions 2 and 3 along with a package called parallel
+to aid in parallel processing of datasets. The parallel package was
+installed using pip in the bioinformatics conda environment in the
+scratch space of Copernicus. NextPolish was installed in a Python
+environment by a member of the research computing team that manages of
+our system. (more details need to be included)
+
+\subsection{RepeatMasker Installation}
+
+The installation procedure was somewhat indepth, requiring
+RepeatMasker configuration, which itself requires downloading an
+appropriate repeat database (Dfam in this case, included with
+RepeatMasker), installation of Tandem Repeat Finder (TRFM) and
+installation of a sequence search tool, for which I chose HMMER from
+the list of potential tools as we were generally familiar with its
+use. The path to the installation of TRFM is required during
+configuration along with the search tool of choice, a simple selection
+of 4 tools that will have an autocompleted path in this case, since
+HMMER is installed via anaconda.
+
+\subsection{GeneMark-ES Installation}
+GeneMark-ES was successfully installed by downloading and unpacking
+the package from their website along with a key required for use.
+
+\subsection{Braker2 Installation}
+Braker2 was also successfully installed by a member of the research
+computing team who has set up several modules including an
+initialization script to get things up and running as well as create a
+reloadable environment for use again in the future. Once the
+environment has been loaded, one must load the Hisat2 module from
+Compute Canada as well as an htslib module (more detail to come). Once
+all modules are loaded, there are a few environemnt variables that
+need to be set. In addition, a software package named TSEBRA from the
+same developers as Braker2 must be installed for consolidating gene
+calls. The variables can be set within the braker2.pl command, which
+have higher priority over environment variables and probably makes
+things easier to track.
+
 \section{Methodology}
 
 \subsection{Selection of Existing \textit{Trichoderma} Genome Assemblies}
@@ -172,13 +216,6 @@ In an attempt to produce high quality assemblies of DC1 and Tsth20, We
 decided on a set of tools named NextDenovo and NextPolish as they have
 produced excellent assemblies based on previous experience. (should
 find a citation to confirm this)
-
-Installation of NextDenovo was straightforward. Simply download the
-compressed tar file from their website and unpack it. NextDenovo
-requires Python versions 2 and 3 along with a package called parallel
-to aid in parallel processing of datasets. The parallel package was
-installed using pip in the bioinformatics conda environment in the
-scratch space of Copernicus.
 
 (Might be better for discussion or omitted since it is specific to our
 setup) Initial attempts to run the example dataset resulted in
@@ -207,46 +244,11 @@ allow for more informative downstream analysis of results. All
 commands for repeat masking are located withing the processing
 directory for each strain/genome.
 
-The installation procedure was somewhat indepth, requiring
-RepeatMasker configuration, which itself requires downloading an
-appropriate repeat database (Dfam in this case, included with
-RepeatMasker), installation of Tandem Repeat Finder (TRFM) and
-installation of a sequence search tool, for which I chose HMMER from
-the list of potential tools as we were generally familiar with its
-use. The path to the installation of TRFM is required during
-configuration along with the search tool of choice, a simple selection
-of 4 tools that will have an autocompleted path in this case, since
-HMMER is installed via anaconda.
-
 (probably more suited for additional materials at the end?)
 General command for running RepeatMasker:
 /datastore/Roots/Connor/masters/software/repeatmasker/RepeatMasker/RepeatMasker
 -pa 10 -a -small -species fungi -html -gff -dir ./
 path-to-genome/genome.fasta
-
-
-\section{Software Installation}
-
-Currently, GeneMark-ES and Braker2 have been difficult to install and
-have not been successfully installed yet.
-
-Braker2 was successfully installed by a member of the research
-computing team who has set up several modules including an
-initialization script to get things up and running as well as create a
-reloadable environment for use again in the future. Once the
-environment has been loaded, one must load the Hisat2 module from
-Compute Canada as well as an htslib module (more detail to come). Once
-all modules are loaded, there are a few environemnt variables that
-need to be set. In addition, a software package named TSEBRA from the
-same developers as Braker2 must be installed for consolidating gene
-calls. The variables can be set within the braker2.pl command, which
-have higher priority over environment variables and probably makes
-things easier to track.
-
-\section{Gene Finding}
-
-Now that we have covered information about assembling and installation
-of these tools, we can cover the gene finding portion of this work.
 
 \subsection{GeneMark-ES}
 
@@ -380,10 +382,10 @@ into this process further.
 \subsection{Comparative Genomics}
 
 With the data produced by this research, it is possible to perform som
-commparative genomics, mostly related to the assemblies generated
-during this work along with the RefSeq genomes included from
-NCBI. Mummer is a potential tool to use for all to all genome
-alignments, although there may be difficulty in the ordering of
+commparative genomics (time permitted), mostly related to the
+assemblies generated during this work along with the RefSeq genomes
+included from NCBI. Mummer is a potential tool to use for all to all
+genome alignments, although there may be difficulty in the ordering of
 contigs/scaffolds/chromosomes when performing thes alignments. This
 work is not necessarily required but would be interesting from a
 biological perspective to identify rearrangements, inversions and
