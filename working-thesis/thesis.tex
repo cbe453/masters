@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage[noblocks]{authblk}
+\usepackage{graphicx}
 
 \title{Comparative analysis of Gene Finding tools                                                                         
   when applied to \textit{Trichoderma} genomes} \author{Connor
@@ -129,8 +130,8 @@ evidence based methods include tools such as \\ Braker2\cite{Braker2},
 which can incorporate existing data such as RNAseq, protein sequences,
 etc. in gene prediction models.
 
-As mentioned in the previously, long repeats and transposable elements
-can cause issues for gene finding programs, making this an interesting
+As mentioned previously, long repeats and transposable elements can
+cause issues for gene finding programs, making this an interesting
 area of research, at least for fungal genomes such as
 \textit{Trichoderma}. Fungal genomes are also interesting in the topic
 of gene finding as there are few programs targeted directly at gene
@@ -210,6 +211,16 @@ the 'reference' in this case, as it is well studied and there are
 several patents involving it's use a organsim for production of
 compounds such as antibiotics in industrial applications.
 
+\subsection{Methodology Overview}
+
+The general methodology for this work is described in the figure
+below. Each portion of this figure is discussed in detail in this
+section.
+
+\begin{center}
+  \makebox[\textwidth][c]{\includegraphics[width=1.4\textwidth]{/Users/cbe453/Desktop/masters/masters/masters/data-flowchart.pdf}}%
+\end{center}
+
 \subsection{Assembly}
 
 In an attempt to produce high quality assemblies of DC1 and Tsth20, We
@@ -246,6 +257,7 @@ directory for each strain/genome.
 
 (probably more suited for additional materials at the end?)
 General command for running RepeatMasker:
+
 /datastore/Roots/Connor/masters/software/repeatmasker/RepeatMasker/RepeatMasker
 -pa 10 -a -small -species fungi -html -gff -dir ./
 path-to-genome/genome.fasta
@@ -258,7 +270,9 @@ specifically for fungal genomes, which was used in this case. Apart
 from the fungal option, the only additional options supplied were for
 output format of GFF3 and number of cores for reduced processing time.
 
-General command structure for GeneMark-ES gmes\_petap.pl --ES --fungus
+General command structure for GeneMark-ES:
+
+gmes\_petap.pl --ES --fungus
 --format gff3 --cores 48 --sequence /path/to/sequence
 
 \subsection{Braker2}
@@ -285,6 +299,7 @@ simply points to the directory where TSEBRA is located Both Braker2
 and TSEBRA can be cloned directly from GitHub (links to come)
 
 Example command for braker2:
+
 /scratch/p2irc/p2irc\_rsmi/cbe453/masters/software/braker2/BRAKER/scripts/braker.pl
 --gff3 --threads 60
 --TSEBRA\_PATH=/scratch/p2irc/p2irc\_rsmi/cbe453/masters/software/braker2/tsebra/TSEBRA/bin/
@@ -390,6 +405,28 @@ contigs/scaffolds/chromosomes when performing thes alignments. This
 work is not necessarily required but would be interesting from a
 biological perspective to identify rearrangements, inversions and
 such.
+
+\section{Results}
+
+\subsection{Assemblies of DC1 and Tsth20}
+
+
+\textbf{NextDenovo + NextPolish}
+\begin{center}
+  \resizebox{\textwidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      Strain & Total Contigs & Total Length & Largest Contig & GC\% & N50 & L50 \\ \hline
+      DC1 & 8 & 38.6 Mb & 11.49 Mb & 47.97 & 5.69 Mb & 3 \\ \hline
+      Tsth20 & 7 & 41.58 Mb & 8.02 Mb & 47.33 & 6.52 Mb & 3 \\ \hline
+      \textit{T. harzianum} & 532 & 40.98 Mb & 4.08 Mb & 47.61 & 2.41 Mb & 7 \\ \hline
+      \textit{T. virens} & 93 & 39.02 Mb & 3.45 Mb & 49.25 & 1.83 Mb & 8 \\ \hline
+      \textit{T. reesei} & 77 & 33.39 Mb & 3.75 Mb & 52.82 & 1.21 Mb & 9 \\ \hline
+    \end{tabular}
+  }
+  \label{table1} \vspace{0.5cm}
+\end{center}
+
 
 \begin{thebibliography}{99}
 \bibitem{GMO} Zhang, C., Wohlhueter, R., Zhang, H. (2016). Genetically
