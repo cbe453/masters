@@ -197,6 +197,21 @@ things easier to track.
 
 \section{Methodology}
 
+\subsection{Methodology Overview}
+
+The general methodology for this work is described in figure 1. Each
+portion of this figure is discussed in detail in this section.
+
+\begin{figure}
+  \begin{center}
+    \makebox[\textwidth][c]{\includegraphics[width=1.4\textwidth]{/Users/cbe453/Desktop/masters/masters/masters/data-flowchart.pdf}}%
+  \end{center}
+  \caption{A flowchart of the methodology followed for this
+    research. Sections are separated based the general process they
+    are associated with (i.e. input data, assembly, gene finding and
+    downstream analysis).}
+\end{figure}
+
 \subsection{Selection of Existing \textit{Trichoderma} Genome Assemblies}
 
 Comparing the performance and features, of gene finding tools, both
@@ -210,16 +225,6 @@ DC1 and Tsht20, we should include other previously assembled
 the 'reference' in this case, as it is well studied and there are
 several patents involving it's use a organsim for production of
 compounds such as antibiotics in industrial applications.
-
-\subsection{Methodology Overview}
-
-The general methodology for this work is described in the figure
-below. Each portion of this figure is discussed in detail in this
-section.
-
-\begin{center}
-  \makebox[\textwidth][c]{\includegraphics[width=1.4\textwidth]{/Users/cbe453/Desktop/masters/masters/masters/data-flowchart.pdf}}%
-\end{center}
 
 \subsection{Assembly}
 
@@ -410,10 +415,15 @@ such.
 
 \subsection{Assemblies of DC1 and Tsth20}
 
+The table below displays results from the assembly process using
+nextDenovo and nextPolish in comparison to existing assemblies for
+other \textit{Trichoderma} genome assemblies. \\
 
-\textbf{NextDenovo + NextPolish}
-\begin{center}
-  \resizebox{\textwidth}{!}{
+
+\textbf{NextDenovo + NextPolish} \\
+
+\begin{figure}
+  \makebox[\textwidth][c]{
     \begin{tabular}{|c|c|c|c|c|c|c|}
       \hline
       Strain & Total Contigs & Total Length & Largest Contig & GC\% & N50 & L50 \\ \hline
@@ -424,9 +434,22 @@ such.
       \textit{T. reesei} & 77 & 33.39 Mb & 3.75 Mb & 52.82 & 1.21 Mb & 9 \\ \hline
     \end{tabular}
   }
+  \caption{Table of general assembly metrics produced by QUAST (a
+    genome quality assement tool).}
   \label{table1} \vspace{0.5cm}
-\end{center}
+\end{figure}
 
+\subsection{Initial Gene Finding Results}
+
+\begin{figure}
+  \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{./figures/nextpolish-gene-finding.png}}%
+  \caption{Figure 3 shows the counts of genes and mRNAs found by each
+    gene finding tool for each genome assembly considered.}
+\end{figure}
+
+\section{Discussion}
+
+\newpage
 
 \begin{thebibliography}{99}
 \bibitem{GMO} Zhang, C., Wohlhueter, R., Zhang, H. (2016). Genetically
@@ -487,10 +510,6 @@ such.
   al. (2012). SPAdes: a new genome assembly algorithm and its
   applications to single-cell sequencing. \textit{Joural of
     Computational Biology}. \textit{19}(5), 455-477. 
-  
-\bibitem{masurca} Zimin, A.V., Marcias, G., Puiu, D., Roberts, M.,
-  Salzberg, S.L., Yorke, J.A. (2013). The MaSuRCA genome
-  assembler. \textit{Bioinformatics}. \textit{29}(21), 2669-2677.
   
 \bibitem{Repeats} Lerat., E. (2009). Identifying repeats and
   transposable elements in sequences genomes: how to find your way
