@@ -12,9 +12,18 @@
 \maketitle
 
 \clearpage
-\tableofcontents
-\clearpage
+\section{Permission stuff}
 
+\clearpage
+\section{Abstract}
+
+\clearpage
+\section{Acknowledgements}
+
+\clearpage
+\tableofcontents
+
+\clearpage
 \section{Background}
 
 \subsection{Trichoderma}
@@ -151,8 +160,15 @@ underlying models used for gene finding. These features and others can
 influence a user's decision on which gene finding tool to consider and
 will complicate comparative analysis of multiple gene finding tools.
 
-\section{Software Installation}
+\section{Platform and Software Installation}
 (Possibly supporting materials or discussion)
+
+\subsection{Platform}
+All analysis was performed on the RSMI server hosted on Copercius at
+the University of Saskatchewan. This server is equipped with 64 cores
+in addition to 1.5 TB of memory. The server is running RedHat
+Enterprise Linux 7 as of writing this thesis. All data is stored
+either on datastore, or in the RSMI scratch space.
 
 \subsection{NextDenovo and NextPolish Installation}
 Installation of nextDenovo was straightforward. Simply download the
@@ -162,7 +178,9 @@ to aid in parallel processing of datasets. The parallel package was
 installed using pip in the bioinformatics conda environment in the
 scratch space of Copernicus. NextPolish was installed in a Python
 environment by a member of the research computing team that manages of
-our system. (more details need to be included)
+our system. Assistance was required for this as the version of RHEL
+used by the server introduces glibc version conflicts with Anaconda
+when trying to install nextPolish. 
 
 \subsection{RepeatMasker Installation}
 
@@ -189,11 +207,12 @@ reloadable environment for use again in the future. Once the
 environment has been loaded, one must load the Hisat2 module from
 Compute Canada as well as an htslib module (more detail to come). Once
 all modules are loaded, there are a few environemnt variables that
-need to be set. In addition, a software package named TSEBRA from the
-same developers as Braker2 must be installed for consolidating gene
-calls. The variables can be set within the braker2.pl command, which
-have higher priority over environment variables and probably makes
-things easier to track.
+need to be set, those being AUGUSTUS\_CONFIG\_PATH and
+TSERBA\_CONFIG(?figure this out). In addition, a software package named
+TSEBRA from the same developers as Braker2 must be installed for
+consolidating gene calls. The variables can be set within the
+braker2.pl command, which have higher priority over environment
+variables and probably makes things easier to track.
 
 \section{Methodology}
 
@@ -204,7 +223,7 @@ portion of this figure is discussed in detail in this section.
 
 \begin{figure}
   \begin{center}
-    \makebox[\textwidth][c]{\includegraphics[width=1.4\textwidth]{/Users/cbe453/Desktop/masters/masters/masters/data-flowchart.pdf}}%
+    \makebox[\textwidth][c]{\includegraphics[width=1.4\textwidth]{./figures/data-flowchart.pdf}}%
   \end{center}
   \caption{A flowchart of the methodology followed for this
     research. Sections are separated based the general process they
@@ -419,9 +438,6 @@ The table below displays results from the assembly process using
 nextDenovo and nextPolish in comparison to existing assemblies for
 other \textit{Trichoderma} genome assemblies. \\
 
-
-\textbf{NextDenovo + NextPolish} \\
-
 \begin{figure}
   \makebox[\textwidth][c]{
     \begin{tabular}{|c|c|c|c|c|c|c|}
@@ -449,8 +465,11 @@ other \textit{Trichoderma} genome assemblies. \\
 
 \section{Discussion}
 
-\newpage
+\section{Conclusions}
 
+\clearpage
+
+\section{References}
 \begin{thebibliography}{99}
 \bibitem{GMO} Zhang, C., Wohlhueter, R., Zhang, H. (2016). Genetically
   modified foods: A critical review of their promise and
