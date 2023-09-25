@@ -382,6 +382,25 @@ the number of genes found with specific lengths. Means could also be
 compared staatistically for genomes and the mutliple tools considered
 as well.
 
+Analysis of gene lengths was performed using a Python script. Combined
+predicted CDS sequences for each predicted gene were used as input for
+the total gene length. CDS sequences predicted by Braker2, were
+directly available in the output directories when the program was
+run. CDS sequences from GeneMark required extraction of the CDS
+sequences from the genome FASTA files. This process was performed
+using the gffread tool from the Cufflinks package. Predicted CDS
+sequences were loaded into Python using Biopython's SeqIO
+package. Sequence lengths were then placed in a list and analyzed
+using a combination of pandas and numpy. A log10 transformation was
+applied to the sequence lengths as the original distribution was
+heavily skewed due to long outlier CDS sequences. After
+transformation, the CDS length distribution appears as a normal
+distribution, although there are interesting troughs that occur in
+several of the peaks for several of the genomes considered. These
+troughs did not appear in a comparable Yeast reference dataset,
+although the log transformed data still appears to be a normal
+distribution.
+
 \subsection{Intersection of Gene Calls, smallRNAs and Repetitive Regions}
 
 Annotation of all three features in the title are important in
