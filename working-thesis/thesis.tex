@@ -322,6 +322,34 @@ prediction tools involved in the Braker2 pipeline. The TSEBRA\_PATH
 simply points to the directory where TSEBRA is located Both Braker2
 and TSEBRA can be cloned directly from GitHub (links to come)
 
+<<<<<<< HEAD
+\section{Identification of Overlapping Features and Regions}
+
+Feature Identification: To first undertand how gene prediction tools
+perform in comparison to other gene prediction tools, we must identify
+features. This identification of features will help us descirbe the
+similarities, and differences between gene finding tools. A feature,
+in this context, is any feature stated within a Genomic Feature Format
+file (GFF) provided to the program, in which mutliple GFF files can be
+provided. The definition of a feature, for this application, is an
+object that contains a contig ID, a start position, an end position
+and a strand property. In the context of features on different
+strands, start and stop positions of features are sorted based on left
+and right positions of the feature in respect to the reference
+sequence.
+
+Region Identification: In addition to feature creation, we will also
+identify regions of overlapping features based on the precitions from
+each gene finding tool. These regions will help identify the
+agreements, or disagreements, between different gene-finding tools. A
+region, in this context, is a set of overlapping features, all of
+which overlap at least one other feature in the region. With each
+overlap, there will be an overlap type. These types can be defined
+based on Allen's Interval Calculus (reference), with the exception of
+features that start beyond the end point of the current region.
+
+
+=======
 Example command for braker2:
 
 /scratch/p2irc/p2irc\_rsmi/cbe453/masters/software/braker2/BRAKER/scripts/braker.pl
@@ -613,5 +641,6 @@ other \textit{Trichoderma} genome assemblies. \\
     and Biology of Trichoderma}. 103-104. 
   
 \end{thebibliography}
+>>>>>>> b715090053dedb063b1eacf591f238315062ce83
 
 \end{document}
