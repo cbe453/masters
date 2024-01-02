@@ -1,0 +1,67 @@
+digraph G{
+
+	subgraph cluster_0 {
+		 style=filled;
+		 color=darkolivegreen1;	
+		 Illumina [shape = diamond];
+        	 Nanopore [shape = diamond];
+		 Illumina -> "Trimmomatic/Filtering";
+		 Nanopore -> "Trimmomatic/Filtering";
+		 RefSeqs [shape = diamond];
+		 RNAseq [shape = diamond];
+		 Rfam [shape = diamond];
+		 FilteredReads [shape = diamond];
+		 label = "Initial Data and Filtering";
+	}
+
+	subgraph cluster_1 {
+		 style=filled;
+		 color=aquamarine;	
+		 NextDenovo;
+		 RepeatMasker;
+		 AssemblyMetrics [shape = diamond];
+		 Assemblies [shape = diamond];
+		 Assemblies -> Quast;
+		 RepeatRegions [shape = diamond];
+		 label = "Genome Assembly and Processing";
+	}
+
+	subgraph cluster_2 {
+		 style=filled;
+		 color=darkslategray3;
+		 Infernal;
+		 SmallRNAs [shape = diamond];
+		 "GeneMarkCalls" [shape = diamond];
+		 "Braker2Calls" [shape = diamond];
+		 GeneMark -> "GeneMarkCalls";
+		 Braker2 -> "Braker2Calls";
+		 label = "Genome Annotation";
+	}
+
+	subgraph cluster_3 {
+		 style=filled;
+		 color=lightcoral;
+		 DownstreamProcessing;
+	}
+	
+	"Trimmomatic/Filtering" -> FilteredReads;
+	FilteredReads -> NextDenovo;
+	NextDenovo -> Assemblies;
+	Assemblies -> GeneMark;
+	Assemblies -> Braker2;
+	Assemblies -> Infernal;
+	Assemblies -> RepeatMasker;
+	Infernal -> SmallRNAs -> DownstreamProcessing;
+	RefSeqs -> Infernal;
+	RefSeqs -> GeneMark;
+	RefSeqs -> Braker2;
+	RNAseq -> Braker2;
+	RefSeqs -> RepeatMasker;
+	"GeneMarkCalls" -> DownstreamProcessing;
+	"Braker2Calls" -> DownstreamProcessing;
+	RepeatMasker -> RepeatRegions;
+	RepeatRegions -> DownstreamProcessing;
+	RefSeqs -> Quast;
+	Quast -> AssemblyMetrics;
+	Rfam -> Infernal;
+}
