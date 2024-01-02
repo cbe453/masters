@@ -422,6 +422,36 @@ believe). Again, having all processing steps included in one script as
 separate functions that can be called at whim will make further
 processing easier if changes need to be made.
 
+\subsection{Methodology for Indetifying Overlapping Features}
+
+To analyze the results from multiple gene-finding tools, we must first
+define two conceptual topics.
+
+Definition of a Feature: First, a feature, in the context of this
+research, is any item contained within a Genomic Feature Formated file
+(GFF). Each feature contains a contig ID, a start position, end
+position, and a feature ID based on the information from the GFF
+file. These features will be used in the process of identifying
+regions, or overlapping features from prediction tools.
+
+Definition of a Region: Secondly, a region is defined as any overlap
+between features relative to the reference sequence being
+considered. To identify regions, every feature from each GFF file
+being considered, is sorted by start position. For clarification, the
+start position is based on the left most position in the GFF file,
+regardless of the strand that the feature is predicted on. Once the
+features have been sorted by left position, the sorted features are
+iterated over to identify regions, as long as the left position of the
+next feature is consistent with the left position , within the left
+and right position, or equal to the right position of the current
+region. One drawback to this approach is that ideally, identification
+of overlap types based on Allen's interval algebra would be performed
+at this point. However, the methodology of initially sorting features
+based on left position somewhat prevents this process from
+happening. This implementation requires further processing of
+identified regions late on the process, simplifying the all to all
+comparison that would occurr if all features were considered at once.
+
 \subsection{Shared Gene Content with Yeast}
 
 While considering novel gene calls can be useful, comparing those
