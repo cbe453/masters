@@ -106,7 +106,8 @@ def findRegion(features):
             currentStart = item.startPos
             currentEnd = item.endPos
             featureList.append(item)
-        # check to see if a new region should be started.
+        # check to see if a new region should be started relative to the 
+        # previous region
         elif (item.startPos > currentEnd):
             regionID += 1
             newRegion = region(regionID, currentStart, currentEnd, featureList)
