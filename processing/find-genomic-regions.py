@@ -88,9 +88,9 @@ def findRegion(features):
     firstStart = firstFeature.startPos
     finalStart = finalFeature.startPos
 
-    # Iterate over sorted features for one contig, and identify
-    # regions. Lots of unnecessary overlap type detection for the
-    # approach that I am taking. Can certainly be simplified later...
+    # iterate over sorted features for one contig, and identify
+    # regions. lots of unnecessary overlap type detection for the
+    # approach that I am taking. can certainly be simplified later...
     for item in sortedFeatures:
         # end feature condition. completes the final region for a contig
         if item.startPos == finalStart:
