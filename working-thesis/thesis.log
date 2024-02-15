@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  3 MAY 2023 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 FEB 2024 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -31,86 +31,297 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@authors=\count89
 \c@affil=\count90
 )
-(./thesis.aux)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip45
+\subfigcapskip=\skip46
+\subfigcaptopadj=\dimen105
+\subfigbottomskip=\skip47
+\subfigcapmargin=\dimen106
+\subfiglabelskip=\skip48
+\c@subfigure=\count91
+\c@lofdepth=\count92
+\c@subtable=\count93
+\c@lotdepth=\count94
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip49
+\subfig@bottom=\skip50
+)
+(./thesis.aux
+
+LaTeX Warning: Label `fig:a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:a' multiply defined.
+
+
+LaTeX Warning: Label `fig:a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:a' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 11.
- [1
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count95
+\scratchdimen=\dimen107
+\scratchbox=\box26
+\nofMPsegments=\count96
+\nofMParguments=\count97
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen108
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
+\everyMPtoPDFconversion=\toks16
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./thes
-is.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 13.
+
+[1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2
+
+] [3
+
+] [4
+
+] (./thesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+ [5
+
+])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [2
+ [6] [7
 
-]
-Overfull \hbox (8.14413pt too wide) in paragraph at lines 46--59
-\OT1/cmr/m/n/12 able on Coper-ni-cus. Prior to load-ing the MA-SuRcA en-vi-ron-
-ment, the GCC/9.0
- []
-
-[3
-
-] [4]
-Overfull \hbox (3.28218pt too wide) in paragraph at lines 126--132
-[]\OT1/cmr/m/n/12 The In-stal-la-tion pro-ce-dure was some-what in-depth, re-qu
-ir-ing Re-peat-Masker
- []
-
-
-Overfull \hbox (9.6264pt too wide) in paragraph at lines 126--132
+] [8] [9]
+Overfull \hbox (9.6264pt too wide) in paragraph at lines 188--198
 \OT1/cmr/m/n/12 con-fig-u-ra-tion, which it-self re-quires down-load-ing an ap-
 pro-pri-ate re-peat database
  []
 
-
-Overfull \hbox (317.89006pt too wide) in paragraph at lines 133--137
-[]\OT1/cmr/m/n/12 General com-mand for run-ning Re-peat-Masker: /data-s-tore/Ro
-ots/Connor/masters/software/repeatmasker/RepeatMasker/RepeatMasker
+[10]
+<./figures/data-flowchart.pdf, id=39, 1077.02374pt x 688.5725pt>
+File: ./figures/data-flowchart.pdf Graphic file (type pdf)
+<use ./figures/data-flowchart.pdf>
+Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 227.
+(pdftex.def)             Requested size: 545.99762pt x 349.07648pt.
+ [11] [12 <./figures/data-flowchart.pdf>] [13]
+Overfull \hbox (82.91609pt too wide) in paragraph at lines 286--289
+[]\OT1/cmr/m/n/12 /datastore/Roots/Connor/masters/software/repeatmasker/RepeatM
+asker/RepeatMasker
  []
 
-[5] [6] (./thesis.aux) ) 
+
+Overfull \hbox (25.60092pt too wide) in paragraph at lines 300--302
+[]\OT1/cmr/m/n/12 gmes[]petap.pl --ES --fungus --format gff3 --cores 48 --seque
+nce /path/to/sequence 
+ []
+
+
+Overfull \hbox (18.98042pt too wide) in paragraph at lines 305--311
+\OT1/cmr/m/n/12 As men-tioned pre-vi-ously, \OT1/cmr/m/it/12 Tri-cho-derma ree-
+sei \OT1/cmr/m/n/12 was se-lected as the ^^Sreference^^Sgenome
+ []
+
+[14]
+Overfull \hbox (82.01971pt too wide) in paragraph at lines 356--361
+[]\OT1/cmr/m/n/12 /scratch/p2irc/p2irc[]rsmi/cbe453/masters/software/braker2/BR
+AKER/scripts/braker.pl
+ []
+
+
+Overfull \hbox (227.7578pt too wide) in paragraph at lines 356--361
+\OT1/cmr/m/n/12 --gff3 --threads 60 --TSEBRA[]PATH=/scratch/p2irc/p2irc[]rsmi/c
+be453/masters/software/braker2/tsebra/TSEBRA/bin/
+ []
+
+[15] [16] [17] [18] [19]
+<./figures/nextpolish-gene-finding.png, id=76, 999.735pt x 559.983pt>
+File: ./figures/nextpolish-gene-finding.png Graphic file (type png)
+<use ./figures/nextpolish-gene-finding.png>
+Package pdftex.def Info: ./figures/nextpolish-gene-finding.png  used on input l
+ine 567.
+(pdftex.def)             Requested size: 467.99881pt x 262.14105pt.
+ [20] [21 <./figures/nextpolish-gene-finding.png>]
+<figures/t-reesei-regions-venn3.png, id=85, 462.528pt x 346.896pt>
+File: figures/t-reesei-regions-venn3.png Graphic file (type png)
+<use figures/t-reesei-regions-venn3.png>
+Package pdftex.def Info: figures/t-reesei-regions-venn3.png  used on input line
+ 635.
+(pdftex.def)             Requested size: 175.49881pt x 131.62599pt.
+<figures/t-virens-regions-venn.png, id=86, 462.528pt x 346.896pt>
+File: figures/t-virens-regions-venn.png Graphic file (type png)
+<use figures/t-virens-regions-venn.png>
+Package pdftex.def Info: figures/t-virens-regions-venn.png  used on input line 
+636.
+(pdftex.def)             Requested size: 175.49881pt x 131.62599pt.
+<figures/t-harzianum-regions-venn.png, id=87, 462.528pt x 346.896pt>
+File: figures/t-harzianum-regions-venn.png Graphic file (type png)
+<use figures/t-harzianum-regions-venn.png>
+Package pdftex.def Info: figures/t-harzianum-regions-venn.png  used on input li
+ne 637.
+(pdftex.def)             Requested size: 175.49881pt x 131.62599pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--648
+
+ []
+
+[22] [23 <./figures/t-reesei-regions-venn3.png> <./figures/t-virens-regions-ven
+n.png> <./figures/t-harzianum-regions-venn.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 675--678
+[]\OT1/cmr/m/n/12 Kaminskyj et al. (2012). Method for in-creas-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--678
+\OT1/cmr/m/n/12 ing plant growth us-ing the fun-gus \OT1/cmr/m/it/12 Tri-cho-de
+rma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--678
+\OT1/cmr/m/it/12 harzianum \OT1/cmr/m/n/12 (United States PCT/CA2O1O/OO1454).
+ []
+
+
+Overfull \hbox (112.56006pt too wide) in paragraph at lines 675--678
+\OT1/cmr/m/n/12 https://patentimages.storage.googleapis.com/57/4f/7f/5ff60c4704
+5f01/US20120178624A1.pdf 
+ []
+
+[24
+
+] [25] (./thesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 312 strings out of 492649
- 3433 string characters out of 6129622
- 63580 words of memory out of 5000000
- 4262 multiletter control sequences out of 15000+600000
- 9502 words of font info for 33 fonts, out of 8000000 for 9000
+ 1733 strings out of 492649
+ 25232 string characters out of 6129622
+ 90383 words of memory out of 5000000
+ 5604 multiletter control sequences out of 15000+600000
+ 9861 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 24i,4n,19p,153b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti12.pfb>
-Output written on thesis.pdf (6 pages, 76059 bytes).
+ 41i,8n,25p,311b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (25 pages, 566358 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
