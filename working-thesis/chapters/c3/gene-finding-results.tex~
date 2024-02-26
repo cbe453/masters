@@ -1,0 +1,40 @@
+\subsection{Initial Gene Finding Results} 
+
+In figure~\ref{genecounts}, we see a summary of total genes and mRNAs
+predicted by each of the selected tools. An immediate trend can be
+seen in this data. The total predicted features for Braker2 are
+significantly lower than those from GeneMark in all assemblies except
+for \textit{T. reesei}. This may be due to Braker2 using RNAseq data
+from \textit{T. reesei} during its training process, which we will
+cover in the discussion section. Another observation can be seen when
+comparing the predicted genes and predicted RNAs for the same tool
+when applied to the assemblies. GeneMark does not appear to identify
+any additional isoforms, only reporting the entire gene
+structure. Braker2 does identify isoforms, although very few of
+them. This may be related to the training set provided to the training
+process, although this is not yet confirmed. Overall, it appears that
+GeneMark regularly predicts a higher number of features when applied
+to these assemblies.
+
+\begin{figure}
+  \makebox[\textwidth][c]{\includegraphics[width=\textwidth]{./figures/nextpolish-gene-finding.png}}%
+  \caption{Shows the counts of genes and mRNAs found by each gene
+    finding tool for each genome assembly considered.}
+  \label{genecounts}
+\end{figure}
+
+One important ascpect to consider when looking at the output of
+different gene prediction tools is the distribution of sequence
+lengths predicted by any given tool. Lengths of possible sequences can
+vary widely, ranging from small non-coding RNAs, which can be less
+than 200 nucleotides in length, up to the largest genes which cover
+more than two kilobases. Due to this wide variation in possible
+sequence lengths, it is possible that different prediction tools could
+produce different distributions of predicted sequence lengths. This is
+important if researchers are interested in small non-coding RNAs or
+atypically large genes. This section will investigate the coding
+sequence lengths predicted by Braker and GeneMark for DC1 and Tsth20
+while the RefSeq assemblies will also include the RefSeq annotation.
+
+
+Figures here (discuss bar plots)

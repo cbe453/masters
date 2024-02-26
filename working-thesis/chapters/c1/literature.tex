@@ -1,0 +1,142 @@
+\section{Relevant Literature}
+
+\subsection{Gene Finding}
+\subsubsection{Overview}
+Gene finding (or gene annotation) has been a long standing
+computational problem in bioinformatics, which concerns itself with
+identifying potential genes within assemblies based on patterns or
+pre-existing experimental evidence evidence considered by the gene
+finding program. This process is critical for unraveling and
+understanding the complex processes occurring in all forms of life
+with applications in medical science, agriculture, biomanufacturing,
+environmental studies and many others. In a general sense, gene
+finding programs operate by searching for patters or indicators
+showing that a gene of feature may be present. The most basic
+indicators being start and stop codons, with introns and exons in
+between should the sequence match the applied model. The results
+produced by gene finding tools can vary considerably for a number of
+reasons, including quality of the assembly, the intrinsic model used
+by the gene finder, filtering criteria, and even the nature of the
+organism and assembly itself. Given the broad applications, choice of
+gene finding tools, and the variability of assemblies being
+considered, it is important that we gain a deeper understanding of
+these tools prior to putting them to use
+
+\subsubsection{Gene Finding Methods}
+There are two common methods for gene finding, those methods being
+\textit{ab initio} methods, where programs search for patterns and
+gene structures, and similarity or evidence-based searches, which use
+prior information such as RNAseq data, expressed sequence tags and
+expressd protein sequences to identify genes within a new
+genome\cite{GeneFinding}. Complicating the process more is the
+introduction of introns and alternative splicing in eukaryotes, making
+it possible for one gene to have several possible transcripts at the
+same locus. An example of an \textit{ab initio} method would be
+GeneMark-ES\cite{GeneMarkES}, while an evidence based tool would be
+Braker2\cite{Braker2}.
+
+\textit{Ab initio} gene finders typically base predicted genes on a
+Hidden Markov Model (HMM). 
+
+There are also other aspects of gene finding tools that are important
+to consider. These include features such as whether or not the gene
+finders find non-coding RNAs, annotation of 5' and 3' UTR regions, and
+in the case of ab-initio methods, the assumptions made by the
+underlying models used for gene finding. These features and others can
+influence a user's decision on which gene finding tool to consider and
+will complicate comparative analysis of multiple gene finding tools.
+
+\subsubsection{Trichoderma}
+
+Crop resistance to environmental stressors is a necessity for crop
+health and overall crop yields. Current popular methods for crop
+protection involve the use of pesticides and genetically modified
+organisms, which can be expensive and potentially politically dividing
+in the case of GMOs\cite{GMO}. In addition, crops suffer when soils
+are not sufficient for crop growth and health. Soil insufficiencies
+can result in drought stress as well as nutrient stress, leading to
+poor overall yields.
+
+\textit{Trichoderma} is a type of fungi that can colonize the roots of
+plants in a non-toxic, non-lethal, opportunistic symbiotic
+relationship\cite{Trichoderma}. Many strains of \textit{Trichoderma}
+have been shown to provide resistance to bacteria and other fungi in
+soils through the use of polyketides, non-ribosomal peptide
+synthetases and other antibiotic
+products\cite{Trichoderma}\cite{Secretome}. Recently, two strains of
+\textit{Trichoderma} have been identified in the prairie regions of
+Alberta and Saskatchewan. These two strains, named Tsth20 and DC1,
+have been found to have beneficial properties when used as an
+inoculant for plants in the soils mentioned before. In addition to
+these beneficial properties, the two strains mentioned previously
+provide even further protection for plants in dry, salty soils and one
+strain also has potential for use as a bioremediation tool in soils
+contaminated with hydrocarbon content. Bioremediation and resistance
+to drought tolerance has also been investigated in other strains of
+\textit{Trichoderma} as well\cite{Drought}\cite{Kaminskyj}. However,
+little is known about the mechanisms at work in these strains, so DC1
+and Tsth20 were sequenced by the Global Institute for Food Security
+(no publication yet) in an initial attempt to better understand the
+details of these genomes. While this research does not directly
+identify genomic elements related to the secretome of these genomes,
+it may serve as a foundation for future research of
+\textit{Trichoderma}.
+
+\subsection{Genome Assembly}
+
+Sequence assembly has been a long-standing application problem in the
+field of bioinformatics\cite{assembly}. Determining the correct order
+and combination of smaller subsequences into an accurate complete
+sequence assembly is computationally difficult in terms of compute
+resources such as memory, CPU cycles and storage required for input
+sequences\cite{assembly}. In addition to these difficulties, there can
+be other issues encountered during asssembly due to the nature of the
+data or genomes themselves, such as low quality base calls for long
+read data or the inherent content of genomes themselves using
+repetitive regions as an example. Insufficient data used in an
+assembly may result in short, fragmented assemblies, depending on the
+size of the genomes, while sequence data that is not long enough can
+fail to fully capture repetitive regions in an assembly. To solve this
+problem, a wide range of assembly tools have been developed with their
+own unique approaches to the genome assembly problem, so it is
+important to use an appropriate assembler for the task at hand, and
+also important to evaluate the assembly thoroughly. One approach to
+aid in the previously mentioned issue of assembly correctness is to
+use a combination of long and short reads in what is known as a hybrid
+assembly. Combining both highly accurate short reads with deep
+coverage along with less accurate but much longer reads can produce
+high quality genome assemblies that capture long repetitive
+regions. Hybrid assembly approaches have been shown to produce high
+quality assemblies in a wide variety of organisms as the combine long
+read data with short data to produce assemblies that properly
+represent long repetetive regions with additionaly high quality
+Illumina sequences for correction. Once assembled, the sequences must
+also be evaluated with measures such as N50, L50, coverage, average
+contig length and total assembled length to ensure that the genomes
+are well assembled, at least based on these
+metrics\cite{assembly}. Following appropriate assembly protocols is
+essential to the further success of a project as downstream processing
+such as annotation depends on a high-quality assembly.
+
+\subsection{Repeat Identification/Masking and Identification of AT-rich Genomic regions}
+Repeat identification within assembled genomes is a problem that needs
+to be considered during the genome annotation process. Regions with
+long repeats can have a significant impact on genome assembly as well
+as gene finding due to the limitation of short reads used in some
+assemblies\cite{Repeats}. Short reads may be unable to bridge or cover
+entire repeat regions within a genome, so it is important to consider
+the use of long reads from technologies such as Nanopore or PacBio to
+provide a complete picture of these regions when pursuing a new genome
+assembly project. It is also possible for repetitive regions to
+contain genes as well, making for an interesting investigation in
+regards to \textit{Trichoderma}, as fungal genomes have been shown to
+contain many repeat regions with a high concentration of A and T
+nucleotides\cite{fungalrepeats}. Once these repetitive regions have
+been identified, the genome could be masked to exlude these regions in
+downstream processing if desired, as these regions may be poorly
+assembled and may result in found genes that do not truly exist in
+those regions. However, this may not be as common today, as repetetive
+regions have been shown to contain genes as well\cite{dontMask}. This
+may affect the gene finding process described later and may be an
+interesting topic to look into considering the large number of
+available gene finding programs.

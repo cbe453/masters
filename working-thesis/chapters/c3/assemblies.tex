@@ -1,0 +1,35 @@
+\section{Assemblies of DC1 and Tsth20}
+
+From figure~\ref{assemblies}, we can make several observations, the
+first of which is total contig counts for each assembly. For DC1 and
+Tsth20, the total contig counts are an order of magnitude smaller when
+compared to the other NCBI RefSeq assemblies, inidicating highly
+contiguous assemblies from nextDenovo and nextPolish. This is likely
+due to the use of long-read sequencing used in the assemblies of DC1
+and Tsth20. For all assemblies, the total assembly lengths are
+similar, hovering around the 38-42Mb range, except for
+\textit{T. reesei}, which is known to have a significantly smaller
+genome length (ref) at roughly 33Mb. The largest contig size for each
+assembly vary greatly. DC1 and Tsth20 have the largest contigs of all
+assemblies being considered, which is again likely due to the
+inclusion of long-read sequencing data in the assembly process. The
+N50 values for all assemblies are above 1Mb, with DC1 and Tsth20 N50s
+being at minimum three times larger than others assemblies.
+
+\begin{figure}
+  \centering
+  \makebox[0.8\textwidth][c]{
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      Strain & Total Contigs & Total Length & Largest Contig & GC\% & N50 & L50 \\ \hline
+      DC1 & 8 & 38.6 Mb & 11.49 Mb & 47.97 & 5.69 Mb & 3 \\ \hline
+      Tsth20 & 7 & 41.58 Mb & 8.02 Mb & 47.33 & 6.52 Mb & 3 \\ \hline
+      \textit{T. harzianum} & 532 & 40.98 Mb & 4.08 Mb & 47.61 & 2.41 Mb & 7 \\ \hline
+      \textit{T. virens} & 93 & 39.02 Mb & 3.45 Mb & 49.25 & 1.83 Mb & 8 \\ \hline
+      \textit{T. reesei} & 77 & 33.39 Mb & 3.75 Mb & 52.82 & 1.21 Mb & 9 \\ \hline
+    \end{tabular}
+  }
+  \caption{General assembly metrics produced by QUAST (a
+    genome quality assement tool).}
+  \label{assemblies}
+\end{figure}

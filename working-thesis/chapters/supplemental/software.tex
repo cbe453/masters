@@ -1,0 +1,53 @@
+\section{Platform and Software Installation}
+(Possibly supporting materials or discussion)
+
+\subsection{Platform}
+All analysis was performed on the RSMI server hosted on Copercius at
+the University of Saskatchewan. This server is equipped with 64 cores
+in addition to 1.5 TB of memory. The server is running RedHat
+Enterprise Linux 7 as of writing this thesis. All data is stored
+either on datastore, or in the RSMI scratch space.
+
+\subsection{NextDenovo and NextPolish Installation}
+Installation of nextDenovo was straightforward. Simply download the
+compressed tar file from their website and unpack it. NextDenovo
+requires Python versions 2 and 3 along with a package called parallel
+to aid in parallel processing of datasets. The parallel package was
+installed using pip in the bioinformatics conda environment in the
+scratch space of Copernicus. NextPolish was installed in a Python
+environment by a member of the research computing team that manages of
+our system. Assistance was required for this as the version of RHEL
+used by the server introduces glibc version conflicts with Anaconda
+when trying to install nextPolish. 
+
+\subsection{RepeatMasker Installation}
+
+The installation procedure was somewhat indepth, requiring
+RepeatMasker configuration, which itself requires downloading an
+appropriate repeat database (Dfam in this case, included with
+RepeatMasker), installation of Tandem Repeat Finder (TRFM) and
+installation of a sequence search tool, for which I chose HMMER from
+the list of potential tools as we were generally familiar with its
+use. The path to the installation of TRFM is required during
+configuration along with the search tool of choice, a simple selection
+of 4 tools that will have an autocompleted path in this case, since
+HMMER is installed via anaconda.
+
+\subsection{GeneMark-ES Installation}
+GeneMark-ES was successfully installed by downloading and unpacking
+the package from their website along with a key required for use.
+
+\subsection{Braker2 Installation}
+Braker2 was also successfully installed by a member of the research
+computing team who has set up several modules including an
+initialization script to get things up and running as well as create a
+reloadable environment for use again in the future. Once the
+environment has been loaded, one must load the Hisat2 module from
+Compute Canada as well as an htslib module (more detail to come). Once
+all modules are loaded, there are a few environemnt variables that
+need to be set, those being AUGUSTUS\_CONFIG\_PATH and
+TSERBA\_CONFIG(?figure this out). In addition, a software package named
+TSEBRA from the same developers as Braker2 must be installed for
+consolidating gene calls. The variables can be set within the
+braker2.pl command, which have higher priority over environment
+variables and probably makes things easier to track.
