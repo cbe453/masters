@@ -1,0 +1,65 @@
+PMID- 32962098
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20201027
+IS  - 2079-7737 (Print)
+IS  - 2079-7737 (Electronic)
+IS  - 2079-7737 (Linking)
+VI  - 9
+IP  - 9
+DP  - 2020 Sep 18
+TI  - Review on the Computational Genome Annotation of Sequences Obtained by 
+      Next-Generation Sequencing.
+LID - 10.3390/biology9090295 [doi]
+LID - 295
+AB  - Next-Generation Sequencing (NGS) has made it easier to obtain genome-wide 
+      sequence data and it has shifted the research focus into genome annotation. The 
+      challenging tasks involved in annotation rely on the currently available tools 
+      and techniques to decode the information contained in nucleotide sequences. This 
+      information will improve our understanding of general aspects of life and 
+      evolution and improve our ability to diagnose genetic disorders. Here, we present 
+      a summary of both structural and functional annotations, as well as the 
+      associated comparative annotation tools and pipelines. We highlight visualization 
+      tools that immensely aid the annotation process and the contributions of the 
+      scientific community to the annotation. Further, we discuss quality-control 
+      practices and the need for re-annotation, and highlight the future of annotation.
+FAU - Ejigu, Girum Fitihamlak
+AU  - Ejigu GF
+AUID- ORCID: 0000-0002-1080-653X
+AD  - Department of Information and Communication Engineering, Myongji University, 
+      Yongin-si 17058, Gyeonggi-do, Korea.
+FAU - Jung, Jaehee
+AU  - Jung J
+AUID- ORCID: 0000-0002-0932-3039
+AD  - Department of Information and Communication Engineering, Myongji University, 
+      Yongin-si 17058, Gyeonggi-do, Korea.
+LA  - eng
+GR  - NRF-2019R1A2C1084308/National Research Foundation of Korea(NRF)/
+PT  - Journal Article
+PT  - Review
+DEP - 20200918
+PL  - Switzerland
+TA  - Biology (Basel)
+JT  - Biology
+JID - 101587988
+PMC - PMC7565776
+OTO - NOTNLM
+OT  - ab initio annotation
+OT  - functional annotation
+OT  - homology-based annotation
+OT  - structural annotation
+COIS- The authors declare no conflict of interest.
+EDAT- 2020/09/24 06:00
+MHDA- 2020/09/24 06:01
+CRDT- 2020/09/23 01:03
+PHST- 2020/08/21 00:00 [received]
+PHST- 2020/09/13 00:00 [revised]
+PHST- 2020/09/16 00:00 [accepted]
+PHST- 2020/09/23 01:03 [entrez]
+PHST- 2020/09/24 06:00 [pubmed]
+PHST- 2020/09/24 06:01 [medline]
+AID - biology9090295 [pii]
+AID - biology-09-00295 [pii]
+AID - 10.3390/biology9090295 [doi]
+PST - epublish
+SO  - Biology (Basel). 2020 Sep 18;9(9):295. doi: 10.3390/biology9090295.

@@ -1,0 +1,80 @@
+PMID- 22124482
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20120618
+LR  - 20240109
+IS  - 1471-0064 (Electronic)
+IS  - 1471-0056 (Print)
+IS  - 1471-0056 (Linking)
+VI  - 13
+IP  - 1
+DP  - 2011 Nov 29
+TI  - Repetitive DNA and next-generation sequencing: computational challenges and 
+      solutions.
+PG  - 36-46
+LID - 10.1038/nrg3117 [doi]
+AB  - Repetitive DNA sequences are abundant in a broad range of species, from bacteria 
+      to mammals, and they cover nearly half of the human genome. Repeats have always 
+      presented technical challenges for sequence alignment and assembly programs. 
+      Next-generation sequencing projects, with their short read lengths and high data 
+      volumes, have made these challenges more difficult. From a computational 
+      perspective, repeats create ambiguities in alignment and assembly, which, in 
+      turn, can produce biases and errors when interpreting results. Simply ignoring 
+      repeats is not an option, as this creates problems of its own and may mean that 
+      important biological phenomena are missed. We discuss the computational problems 
+      surrounding repeats and describe strategies used by current bioinformatics 
+      systems to solve them.
+FAU - Treangen, Todd J
+AU  - Treangen TJ
+AD  - McKusick-Nathans Institute for Genetic Medicine, Johns Hopkins University School 
+      of Medicine, Baltimore, Maryland 21205, USA.
+FAU - Salzberg, Steven L
+AU  - Salzberg SL
+LA  - eng
+GR  - R01 HG006677/HG/NHGRI NIH HHS/United States
+GR  - R01 HG006102-02/HG/NHGRI NIH HHS/United States
+GR  - R01 HG006677-12/HG/NHGRI NIH HHS/United States
+GR  - R01 HG006102/HG/NHGRI NIH HHS/United States
+GR  - R01 HG006677-13/HG/NHGRI NIH HHS/United States
+GR  - R01 GM083873/GM/NIGMS NIH HHS/United States
+GR  - R01 HG006102-01/HG/NHGRI NIH HHS/United States
+PT  - Journal Article
+PT  - Review
+DEP - 20111129
+PL  - England
+TA  - Nat Rev Genet
+JT  - Nature reviews. Genetics
+JID - 100962779
+RN  - 63231-63-0 (RNA)
+RN  - 9007-49-2 (DNA)
+SB  - IM
+EIN - Nat Rev Genet. 2012 Feb;13(2):146
+MH  - Algorithms
+MH  - Animals
+MH  - Computational Biology/*methods
+MH  - DNA/genetics
+MH  - Genome/genetics
+MH  - Humans
+MH  - Molecular Sequence Data
+MH  - Plants
+MH  - RNA/genetics
+MH  - *Repetitive Sequences, Nucleic Acid/genetics
+MH  - Reproducibility of Results
+MH  - Sequence Alignment/*methods
+MH  - *Sequence Analysis, DNA/methods/trends
+MH  - *Sequence Analysis, RNA/methods/trends
+MH  - *Software
+PMC - PMC3324860
+MID - NIHMS366744
+COIS- Competing interests statement The authors declare no competing financial 
+      interests.
+EDAT- 2011/11/30 06:00
+MHDA- 2012/06/19 06:00
+CRDT- 2011/11/30 06:00
+PHST- 2011/11/30 06:00 [entrez]
+PHST- 2011/11/30 06:00 [pubmed]
+PHST- 2012/06/19 06:00 [medline]
+AID - nrg3117 [pii]
+AID - 10.1038/nrg3117 [doi]
+PST - epublish
+SO  - Nat Rev Genet. 2011 Nov 29;13(1):36-46. doi: 10.1038/nrg3117.

@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+
+\bibitem{Bruna2021}
+Tom{\'{a}}{\v{s}} Brůna, Katharina~J Hoff, Alexandre Lomsadze, Mario Stanke,
+  and Mark Borodovsky.
+\newblock {BRAKER2: automatic eukaryotic genome annotation with GeneMark-EP+
+  and AUGUSTUS supported by a protein database.}
+\newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, mar 2021.
+
+\bibitem{Ejigu2020}
+Girum~Fitihamlak Ejigu and Jaehee Jung.
+\newblock {Review on the Computational Genome Annotation of Sequences Obtained
+  by Next-Generation Sequencing.}
+\newblock {\em Biology}, 9(9), sep 2020.
+
+\bibitem{10.1093/nar/gki937}
+Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
+  Borodovsky.
+\newblock {Gene identification in novel eukaryotic genomes by self-training
+  algorithm}.
+\newblock {\em Nucleic Acids Research}, 33(20):6494--6506, 2005.
+
+\bibitem{Nagarajan2013}
+Niranjan Nagarajan and Mihai Pop.
+\newblock {Sequence assembly demystified}.
+\newblock {\em Nature Reviews Genetics}, 14(3):157--167, 2013.
+
+\bibitem{10.3389/fpls.2023.1190304}
+Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
+  and Luigi Lucini.
+\newblock {Trichoderma spp.-mediated mitigation of heat, drought, and their
+  combination on the Arabidopsis thaliana holobiont: a metabolomics and
+  metabarcoding approach}.
+\newblock {\em Frontiers in Plant Science}, 14, 2023.
+
+\bibitem{Slotkin2018}
+R~Keith Slotkin.
+\newblock {The case for not masking away repetitive DNA}.
+\newblock {\em Mobile DNA}, 9(1):15, 2018.
+
+\bibitem{doi:10.1080/10408390600762696}
+Ioannis S~Arvanitoyannis {Theodoros H. Varzakas} and Haralambos Baltas.
+\newblock {The Politics and Science Behind GMO Acceptance}.
+\newblock {\em Critical Reviews in Food Science and Nutrition}, 47(4):335--361,
+  2007.
+
+\bibitem{Treangen2011}
+Todd~J Treangen and Steven~L Salzberg.
+\newblock {Repetitive DNA and next-generation sequencing: computational
+  challenges and solutions.}
+\newblock {\em Nature reviews. Genetics}, 13(1):36--46, nov 2011.
+
+\bibitem{10.1371/journal.pgen.1007467}
+David~J Winter, Austen R~D Ganley, Carolyn~A Young, Ivan Liachko, Christopher~L
+  Schardl, Pierre-Yves Dupont, Daniel Berry, Arvina Ram, Barry Scott, and
+  Murray~P Cox.
+\newblock {Repeat elements organise 3D genome structure and mediate
+  transcription in the filamentous fungus Epichlo{\"{e}} festucae}.
+\newblock {\em PLOS Genetics}, 14(10):1--29, 2018.
+
+\bibitem{Woo2023}
+Sheridan~L Woo, Rosa Hermosa, Matteo Lorito, and Enrique Monte.
+\newblock {Trichoderma: a multipurpose, plant-beneficial microorganism for
+  eco-sustainable agriculture}.
+\newblock {\em Nature Reviews Microbiology}, 21(5):312--326, 2023.
+
+\end{thebibliography}

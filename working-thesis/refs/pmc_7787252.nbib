@@ -1,0 +1,79 @@
+PMID- 33575650
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20231024
+IS  - 2631-9268 (Electronic)
+IS  - 2631-9268 (Linking)
+VI  - 3
+IP  - 1
+DP  - 2021 Mar
+TI  - BRAKER2: automatic eukaryotic genome annotation with GeneMark-EP+ and AUGUSTUS 
+      supported by a protein database.
+PG  - lqaa108
+LID - 10.1093/nargab/lqaa108 [doi]
+LID - lqaa108
+AB  - The task of eukaryotic genome annotation remains challenging. Only a few genomes 
+      could serve as standards of annotation achieved through a tremendous investment 
+      of human curation efforts. Still, the correctness of all alternative isoforms, 
+      even in the best-annotated genomes, could be a good subject for further 
+      investigation. The new BRAKER2 pipeline generates and integrates external protein 
+      support into the iterative process of training and gene prediction by 
+      GeneMark-EP+ and AUGUSTUS. BRAKER2 continues the line started by BRAKER1 where 
+      self-training GeneMark-ET and AUGUSTUS made gene predictions supported by 
+      transcriptomic data. Among the challenges addressed by the new pipeline was a 
+      generation of reliable hints to protein-coding exon boundaries from likely 
+      homologous but evolutionarily distant proteins. In comparison with other 
+      pipelines for eukaryotic genome annotation, BRAKER2 is fully automatic. It is 
+      favorably compared under equal conditions with other pipelines, e.g. MAKER2, in 
+      terms of accuracy and performance. Development of BRAKER2 should facilitate 
+      solving the task of harmonization of annotation of protein-coding genes in 
+      genomes of different eukaryotic species. However, we fully understand that 
+      several more innovations are needed in transcriptomic and proteomic technologies 
+      as well as in algorithmic development to reach the goal of highly accurate 
+      annotation of eukaryotic genomes.
+CI  - © The Author(s) 2021. Published by Oxford University Press on behalf of NAR 
+      Genomics and Bioinformatics.
+FAU - Brůna, Tomáš
+AU  - Brůna T
+AD  - School of Biological Sciences, Georgia Institute of Technology, Atlanta, GA 
+      30332, USA.
+FAU - Hoff, Katharina J
+AU  - Hoff KJ
+AD  - Institute of Mathematics and Computer Science, University of Greifswald, 17489 
+      Greifswald, Germany.
+FAU - Lomsadze, Alexandre
+AU  - Lomsadze A
+AD  - Wallace H. Coulter Department of Biomedical Engineering, Georgia Institute of 
+      Technology, Atlanta, GA 30332, USA.
+FAU - Stanke, Mario
+AU  - Stanke M
+AD  - Institute of Mathematics and Computer Science, University of Greifswald, 17489 
+      Greifswald, Germany.
+FAU - Borodovsky, Mark
+AU  - Borodovsky M
+AUID- ORCID: 0000-0002-1401-4046
+AD  - Wallace H. Coulter Department of Biomedical Engineering, Georgia Institute of 
+      Technology, Atlanta, GA 30332, USA.
+LA  - eng
+GR  - R01 GM128145/GM/NIGMS NIH HHS/United States
+PT  - Journal Article
+DEP - 20210106
+PL  - England
+TA  - NAR Genom Bioinform
+JT  - NAR genomics and bioinformatics
+JID - 101756213
+PMC - PMC7787252
+EDAT- 2021/02/13 06:00
+MHDA- 2021/02/13 06:01
+CRDT- 2021/02/12 06:10
+PHST- 2020/08/10 00:00 [received]
+PHST- 2020/11/26 00:00 [revised]
+PHST- 2020/12/20 00:00 [accepted]
+PHST- 2021/02/12 06:10 [entrez]
+PHST- 2021/02/13 06:00 [pubmed]
+PHST- 2021/02/13 06:01 [medline]
+AID - lqaa108 [pii]
+AID - 10.1093/nargab/lqaa108 [doi]
+PST - epublish
+SO  - NAR Genom Bioinform. 2021 Jan 6;3(1):lqaa108. doi: 10.1093/nargab/lqaa108. 
+      eCollection 2021 Mar.

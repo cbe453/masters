@@ -1,0 +1,24 @@
+digraph {
+  rankdir = "TB";
+  masters -> data;
+  masters -> processing;
+  masters -> software;
+  data -> illumina;
+  data -> nanopore;
+  data -> "previous-assemblies";
+  data -> refseqs;
+  data -> scripts;
+  processing -> dc1;
+  processing -> "t-harzianum";
+  processing -> "t-reesei";
+  processing -> tsth20;
+  processing -> "t-virens"
+  "t-reesei" -> "gene-finding";
+  "t-reesei" -> "repeat-masking"
+  "gene-finding" -> braker2;
+  "gene-finding" -> genemark;
+  "gene-finding" -> "rnaseq-alignments";
+  refseqs -> "trichoderma-1...N";
+  "trichoderma-1...N" -> "NCBI assembly and RNAseq";
+
+}
