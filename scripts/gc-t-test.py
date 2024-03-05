@@ -10,6 +10,7 @@ def Ttest(data, toolCount):
     normalGC = []
     lowGC = []
     
+    # Iterate over contigs from supplied GFF file
     for contig in GFF.parse(gffHandle):
         geneCount = 0
         genes = 0
@@ -18,19 +19,23 @@ def Ttest(data, toolCount):
         currentFlag = None
         skip = None
 
+        # Iterate over features (regions) from each contig
         for feature in contig.features:
             genes = int(feature.qualifiers['geneCount'][0])
             rsmiList = ["'AUGUSTUS'", 'GeneMark']
             #refseqList = ['AUGUSTUS', 'GeneMark', 'RefSeq']
             currentFlag = feature.qualifiers['lowGC'][0]
             skip = 'False'
-            
+
+            # Check if all tools in region agree.
             if int(feature.qualifiers['toolCount'][0]) == toolCount:
                 skip = 'True'
                 continue
-            elif int(feature.qualifiers['toolCount'][0]) == (toolCount -1 ) and 'isochore' not in str(feature.qualifiers['tools']):
+            # Check if all gene finers in region agree.
+            elif int(feature.qualifiers['toolCount'][0]) == (toolCount -1 ) and ('isochore' not in str(feature.qualifiers['tools'])):
                 skip = 'True'
                 continue
+            # Check GC content flags from GFF file in next chunks.
             elif (currentFlag == 'False'):
                 if previousFlag == 'True':
                     lowGC.append(geneCount)
@@ -47,12 +52,15 @@ def Ttest(data, toolCount):
                 else:
                     geneCount += genes
                     previousFlag = currentFlag
-                    
+
+        # End condition where final region is a complete agreement case from
+        # from above.
         if (skip == 'True'):
             if (previousFlag == 'True'):
                 lowGC.append(geneCount)
             else:
                 normalGC.append(geneCount)
+        # If final region has disagreement, append gene counts appropriately.
         else:
             if (currentFlag == previousFlag):
                 if (currentFlag == 'True'):
@@ -76,6 +84,8 @@ def Ttest(data, toolCount):
     print('Anomalous genes: ' + str(lowGC))
     return(normalGC, lowGC)
 
+# Code taken from StackExchange to fit distribution of gene counts in regions
+# to known distributions. Results are kind of funky. 
 def distTest(data):
     dist_names = ["norm", "exponweib", "weibull_max", "weibull_min", "pareto", "genextreme"]
     dist_results = []
