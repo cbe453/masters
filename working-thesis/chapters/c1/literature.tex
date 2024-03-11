@@ -1,4 +1,3 @@
-\section{Gene Finding}
 \section{Genomics}
 Genomics is a wide area of study focusing on the genomes of organisms
 from all varieties of life. A genome is the fundamental set of 'rules'
@@ -54,67 +53,6 @@ finally identifying each fragment's sequence of nucleotides using
 fluorescently-labeled nucleotides that bind to the fragments.
 
 \section{3rd Generation Sequencing - Nanopore}
-
-\section{Gene Finding Methods}
-Gene finding (or gene annotation) has been a long standing
-computational problem in bioinformatics, which concerns itself with
-identifying potential genes within assemblies based on patterns or
-pre-existing experimental evidence evidence considered by the gene
-finding program. This process is critical for unraveling and
-understanding the complex processes occurring in all forms of life
-with applications in medical science, agriculture, biomanufacturing,
-environmental studies and many others. In a general sense, gene
-finding programs operate by searching for patters or indicators
-showing that a gene of feature may be present. The most basic
-indicators being start and stop codons, with introns and exons in
-between should the sequence match the applied model. The results
-produced by gene finding tools can vary considerably for a number of
-reasons, including quality of the assembly, the intrinsic model used
-by the gene finder, filtering criteria, and even the nature of the
-organism and assembly itself. Given the broad applications, choice of
-gene finding tools, and the variability of assemblies being
-considered, it is important that we gain a deeper understanding of
-these tools prior to putting them to use.
-
-There are two common methods for gene finding, those methods being
-\textit{ab initio} methods, where programs search for patterns and
-gene structures, and similarity or evidence-based searches, which use
-prior information such as RNAseq data, expressed sequence tags and
-expressd protein sequences to identify genes within a new
-genome\cite{Ejigu2020}. Complicating the process more is the
-introduction of introns and alternative splicing in eukaryotes, making
-it possible for one gene to have several possible transcripts at the
-same locus. An example of an \textit{ab initio} method would be
-GeneMark-ES\cite{10.1093/nar/gki937}, while an evidence based tool
-would be Braker2\cite{Bruna2021}.
-\textit{Ab initio} gene finders typically predict genes using a Hidden
-Markov Model (HMM)\cite{Ejigu2020}. These predictions are based on
-'signals' or features associated with a gene, such as the usual start,
-stop, exon and intron portions of a gene as well as upstream promoter
-sequences and more. In this case, these signals would be considered
-states in the terminology associated with HMMs. Gene finders wish to
-predict these states based on observations, or sequences presented to
-the model. HMMs in gene finding tools are trained beforehand and then
-applied to a sequence. This means that a gene finding program may not
-be trained in the context of any assembly provided to it, and thus may
-miss genes that are unique to the assembly in question.
-On the other hand, while still relying on HMMs for a 'base' set of
-predictions, evidence-based gene finding tools leverage new evidence
-that may be outside the scope of the pre-existing
-model\cite{Keller2011}.  As an example, an evidence-based model would
-be useful in a situation where you are interested in annotating a new
-assembly for a non-model organism. The addition of experimental data
-provides context specific to your assembly of interest while still
-retaining the predictions from existing HMM models.
-
-There are also other aspects of gene finding tools that are important
-to consider. These include features such as whether or not the gene
-finders find non-coding RNAs, annotation of 5' and 3' UTR regions, and
-in the case of ab-initio methods, the assumptions made by the
-underlying models used for gene finding. These features and others can
-influence a user's decision on which gene finding tool to consider and
-will complicate comparative analysis of multiple gene finding
-tools. (citation needed somewhere in here)
 
 \section{Trichoderma}
 
@@ -240,7 +178,66 @@ well\cite{Slotkin2018}. This may affect the gene finding process
 described later and may be an interesting topic to look into
 considering the large number of available gene finding programs.
 
+\section{Gene Finding Methods}
+Gene finding (or gene annotation) has been a long standing
+computational problem in bioinformatics, which concerns itself with
+identifying potential genes within assemblies based on patterns or
+pre-existing experimental evidence evidence considered by the gene
+finding program. This process is critical for unraveling and
+understanding the complex processes occurring in all forms of life
+with applications in medical science, agriculture, biomanufacturing,
+environmental studies and many others. In a general sense, gene
+finding programs operate by searching for patters or indicators
+showing that a gene of feature may be present. The most basic
+indicators being start and stop codons, with introns and exons in
+between should the sequence match the applied model. The results
+produced by gene finding tools can vary considerably for a number of
+reasons, including quality of the assembly, the intrinsic model used
+by the gene finder, filtering criteria, and even the nature of the
+organism and assembly itself. Given the broad applications, choice of
+gene finding tools, and the variability of assemblies being
+considered, it is important that we gain a deeper understanding of
+these tools prior to putting them to use.
 
+There are two common methods for gene finding, those methods being
+\textit{ab initio} methods, where programs search for patterns and
+gene structures, and similarity or evidence-based searches, which use
+prior information such as RNAseq data, expressed sequence tags and
+expressd protein sequences to identify genes within a new
+genome\cite{Ejigu2020}. Complicating the process more is the
+introduction of introns and alternative splicing in eukaryotes, making
+it possible for one gene to have several possible transcripts at the
+same locus. An example of an \textit{ab initio} method would be
+GeneMark-ES\cite{10.1093/nar/gki937}, while an evidence based tool
+would be Braker2\cite{Bruna2021}.
+\textit{Ab initio} gene finders typically predict genes using a Hidden
+Markov Model (HMM)\cite{Ejigu2020}. These predictions are based on
+'signals' or features associated with a gene, such as the usual start,
+stop, exon and intron portions of a gene as well as upstream promoter
+sequences and more. In this case, these signals would be considered
+states in the terminology associated with HMMs. Gene finders wish to
+predict these states based on observations, or sequences presented to
+the model. HMMs in gene finding tools are trained beforehand and then
+applied to a sequence. This means that a gene finding program may not
+be trained in the context of any assembly provided to it, and thus may
+miss genes that are unique to the assembly in question.
+On the other hand, while still relying on HMMs for a 'base' set of
+predictions, evidence-based gene finding tools leverage new evidence
+that may be outside the scope of the pre-existing
+model\cite{Keller2011}.  As an example, an evidence-based model would
+be useful in a situation where you are interested in annotating a new
+assembly for a non-model organism. The addition of experimental data
+provides context specific to your assembly of interest while still
+retaining the predictions from existing HMM models.
+
+There are also other aspects of gene finding tools that are important
+to consider. These include features such as whether or not the gene
+finders find non-coding RNAs, annotation of 5' and 3' UTR regions, and
+in the case of ab-initio methods, the assumptions made by the
+underlying models used for gene finding. These features and others can
+influence a user's decision on which gene finding tool to consider and
+will complicate comparative analysis of multiple gene finding
+tools. (citation needed somewhere in here)
 
 \section{File Formats}
 

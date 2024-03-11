@@ -4,38 +4,41 @@
 \BOOKMARK [0][-]{section*.8}{Contents}{}% 4
 \BOOKMARK [0][-]{section*.9}{List of Tables}{}% 5
 \BOOKMARK [0][-]{section*.10}{List of Figures}{}% 6
-\BOOKMARK [0][-]{chapter.1}{Background}{}% 7
-\BOOKMARK [1][-]{section.1.1}{Gene Finding}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.2}{Genomics}{chapter.1}% 9
-\BOOKMARK [2][-]{subsection.1.2.1}{Sequencing}{section.1.2}% 10
-\BOOKMARK [1][-]{section.1.3}{Whole Genome Shotgun Sequencing}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.4}{Next Generation Sequencing - Illumina}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.5}{3rd Generation Sequencing - Nanopore}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.6}{Gene Finding Methods}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.7}{Trichoderma}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.8}{Genome Assembly}{chapter.1}% 16
-\BOOKMARK [1][-]{section.1.9}{Identification of AT-rich Genomic regions}{chapter.1}% 17
-\BOOKMARK [1][-]{section.1.10}{Repeat Identification and Masking}{chapter.1}% 18
-\BOOKMARK [1][-]{section.1.11}{File Formats}{chapter.1}% 19
-\BOOKMARK [2][-]{subsection.1.11.1}{FASTA}{section.1.11}% 20
-\BOOKMARK [0][-]{chapter.2}{Data and Methodology}{}% 21
-\BOOKMARK [1][-]{section.2.1}{Methodology}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.2}{Assembly and Processing Overview}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.1}{Data}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.2}{Assembly}{section.2.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.3}{Repeat Masking}{section.2.2}% 26
-\BOOKMARK [2][-]{subsection.2.2.4}{GeneMark-ES}{section.2.2}% 27
-\BOOKMARK [2][-]{subsection.2.2.5}{Braker2}{section.2.2}% 28
-\BOOKMARK [1][-]{section.2.3}{Identification of Overlapping Features and Regions}{chapter.2}% 29
-\BOOKMARK [1][-]{section.2.4}{Analysis of Results}{chapter.2}% 30
-\BOOKMARK [2][-]{subsection.2.4.1}{Basic Analysis}{section.2.4}% 31
-\BOOKMARK [2][-]{subsection.2.4.2}{Distribution of Gene Lengths}{section.2.4}% 32
-\BOOKMARK [2][-]{subsection.2.4.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.2.4}% 33
-\BOOKMARK [2][-]{subsection.2.4.4}{Methodology for Indetifying Overlapping Features}{section.2.4}% 34
-\BOOKMARK [2][-]{subsection.2.4.5}{Shared Gene Content with Yeast}{section.2.4}% 35
-\BOOKMARK [2][-]{subsection.2.4.6}{Comparative Genomics}{section.2.4}% 36
-\BOOKMARK [0][-]{chapter.3}{Results}{}% 37
-\BOOKMARK [1][-]{section.3.1}{Assemblies of DC1 and Tsth20}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.2}{Discussion}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.3}{Conclusions}{chapter.3}% 40
-\BOOKMARK [0][-]{section*.13}{References}{}% 41
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
+\BOOKMARK [0][-]{chapter.2}{Background}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Genomics}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.1.1}{Sequencing}{section.2.1}% 10
+\BOOKMARK [1][-]{section.2.2}{Whole Genome Shotgun Sequencing}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Next Generation Sequencing - Illumina}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{3rd Generation Sequencing - Nanopore}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.5}{Trichoderma}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.6}{Genome Assembly}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.7}{Identification of AT-rich Genomic regions}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.8}{Repeat Identification and Masking}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.9}{Gene Finding Methods}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.10}{File Formats}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.10.1}{FASTA}{section.2.10}% 20
+\BOOKMARK [0][-]{chapter.3}{Data and Methodology}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Methodology}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Data and Processing Overview}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{Data}{section.3.2}% 24
+\BOOKMARK [1][-]{section.3.3}{Assembly and Annotation}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.1}{Repeat Masking}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.2}{GeneMark-ES}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.3}{Braker2}{section.3.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Identification of Overlapping Features and Regions}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{Analysis of Results}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.5.1}{Basic Analysis}{section.3.5}% 31
+\BOOKMARK [2][-]{subsection.3.5.2}{Distribution of Gene Lengths}{section.3.5}% 32
+\BOOKMARK [2][-]{subsection.3.5.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.3.5}% 33
+\BOOKMARK [2][-]{subsection.3.5.4}{Methodology for Indetifying Overlapping Features}{section.3.5}% 34
+\BOOKMARK [2][-]{subsection.3.5.5}{Shared Gene Content with Yeast}{section.3.5}% 35
+\BOOKMARK [2][-]{subsection.3.5.6}{Comparative Genomics}{section.3.5}% 36
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 37
+\BOOKMARK [1][-]{section.4.1}{Assemblies of DC1 and Tsth20}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.2}{Initial Gene Finding Results}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.3}{Dsitribution of Predicted Gene Lengths}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.4}{Region Identification}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.6}{Conclusions}{chapter.4}% 43
+\BOOKMARK [0][-]{section*.16}{References}{}% 44

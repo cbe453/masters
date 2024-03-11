@@ -2,40 +2,43 @@
 \contentsline {chapter}{Abstract}{ii}{section*.4}
 \contentsline {chapter}{Acknowledgements}{iii}{section*.6}
 \contentsline {chapter}{Contents}{iv}{section*.8}
-\contentsline {chapter}{List of Tables}{v}{section*.9}
-\contentsline {chapter}{List of Figures}{vi}{section*.10}
-\contentsline {chapter}{\numberline {1}Background}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Gene Finding}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Genomics}{1}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Sequencing}{1}{subsection.1.2.1}
-\contentsline {section}{\numberline {1.3}Whole Genome Shotgun Sequencing}{1}{section.1.3}
-\contentsline {section}{\numberline {1.4}Next Generation Sequencing - Illumina}{2}{section.1.4}
-\contentsline {section}{\numberline {1.5}3rd Generation Sequencing - Nanopore}{2}{section.1.5}
-\contentsline {section}{\numberline {1.6}Gene Finding Methods}{2}{section.1.6}
-\contentsline {section}{\numberline {1.7}Trichoderma}{3}{section.1.7}
-\contentsline {section}{\numberline {1.8}Genome Assembly}{4}{section.1.8}
-\contentsline {section}{\numberline {1.9}Identification of AT-rich Genomic regions}{5}{section.1.9}
-\contentsline {section}{\numberline {1.10}Repeat Identification and Masking}{5}{section.1.10}
-\contentsline {section}{\numberline {1.11}File Formats}{5}{section.1.11}
-\contentsline {subsection}{\numberline {1.11.1}FASTA}{5}{subsection.1.11.1}
-\contentsline {chapter}{\numberline {2}Data and Methodology}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}Methodology}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Assembly and Processing Overview}{6}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Data}{6}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Assembly}{6}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Repeat Masking}{8}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}GeneMark-ES}{8}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Braker2}{8}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Identification of Overlapping Features and Regions}{9}{section.2.3}
-\contentsline {section}{\numberline {2.4}Analysis of Results}{9}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Basic Analysis}{9}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Distribution of Gene Lengths}{10}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Intersection of Gene Calls, smallRNAs and Repetitive Regions}{10}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Methodology for Indetifying Overlapping Features}{11}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Shared Gene Content with Yeast}{11}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Comparative Genomics}{11}{subsection.2.4.6}
-\contentsline {chapter}{\numberline {3}Results}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Assemblies of DC1 and Tsth20}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Discussion}{14}{section.3.2}
-\contentsline {section}{\numberline {3.3}Conclusions}{14}{section.3.3}
-\contentsline {chapter}{References}{15}{section*.13}
+\contentsline {chapter}{List of Tables}{vi}{section*.9}
+\contentsline {chapter}{List of Figures}{vii}{section*.10}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Background}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Genomics}{2}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Sequencing}{2}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Whole Genome Shotgun Sequencing}{2}{section.2.2}
+\contentsline {section}{\numberline {2.3}Next Generation Sequencing - Illumina}{3}{section.2.3}
+\contentsline {section}{\numberline {2.4}3rd Generation Sequencing - Nanopore}{3}{section.2.4}
+\contentsline {section}{\numberline {2.5}Trichoderma}{3}{section.2.5}
+\contentsline {section}{\numberline {2.6}Genome Assembly}{4}{section.2.6}
+\contentsline {section}{\numberline {2.7}Identification of AT-rich Genomic regions}{5}{section.2.7}
+\contentsline {section}{\numberline {2.8}Repeat Identification and Masking}{5}{section.2.8}
+\contentsline {section}{\numberline {2.9}Gene Finding Methods}{5}{section.2.9}
+\contentsline {section}{\numberline {2.10}File Formats}{6}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}FASTA}{6}{subsection.2.10.1}
+\contentsline {chapter}{\numberline {3}Data and Methodology}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Methodology}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Data and Processing Overview}{7}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Data}{7}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Assembly and Annotation}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Repeat Masking}{9}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}GeneMark-ES}{9}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Braker2}{9}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Identification of Overlapping Features and Regions}{10}{section.3.4}
+\contentsline {section}{\numberline {3.5}Analysis of Results}{10}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Basic Analysis}{10}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Distribution of Gene Lengths}{11}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Intersection of Gene Calls, smallRNAs and Repetitive Regions}{11}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Methodology for Indetifying Overlapping Features}{12}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Shared Gene Content with Yeast}{12}{subsection.3.5.5}
+\contentsline {subsection}{\numberline {3.5.6}Comparative Genomics}{12}{subsection.3.5.6}
+\contentsline {chapter}{\numberline {4}Results}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Assemblies of DC1 and Tsth20}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Initial Gene Finding Results}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Dsitribution of Predicted Gene Lengths}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}Region Identification}{16}{section.4.4}
+\contentsline {section}{\numberline {4.5}Discussion}{18}{section.4.5}
+\contentsline {section}{\numberline {4.6}Conclusions}{18}{section.4.6}
+\contentsline {chapter}{References}{19}{section*.16}

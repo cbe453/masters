@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  27 FEB 2024 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  11 MAR 2024 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -340,7 +340,21 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(./thesis.aux (./chapter-1.aux) (./chapter-2.aux) (./chapter-3.aux))
+(./thesis.aux (./intro.aux) (./chapter-1.aux) (./chapter-2.aux)
+(./chapter-3.aux
+
+LaTeX Warning: Label `fig:a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:a' multiply defined.
+
+
+LaTeX Warning: Label `fig:a' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:a' multiply defined.
+
+))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -360,8 +374,7 @@ LaTeX Font Info:    ... okay on input line 25.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: subfigure package is loaded.
@@ -473,104 +486,153 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 (./thesis.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 1.
-)
+ [4])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4] (./thesis.lot)
+ [5] (./thesis.lot)
 \tf@lot=\write5
 \openout5 = `thesis.lot'.
 
- [5] (./thesis.lof)
+ [6] (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [6]
+ [7]
 (/usr/local/texlive/2018/texmf-dist/tex/latex/titlesec/block.tss
 File: block.tss 2016/03/15
 )
-\openout2 = `chapter-1.aux'.
+\openout2 = `intro.aux'.
 
-
-(./chapter-1.tex
+ (./intro.tex
 Chapter 1.
-(./chapters/c1/literature.texpdfTeX warning (ext4): destination with the same i
-dentifier (name{page.1}) has been already used, duplicate ignored
+(./chapters/intro/introduction.tex))pdfTeX warning (ext4): destination with the
+ same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 
-      [1
+l.29 \include{intro}
+                     [1
 
 
 ]
+\openout2 = `chapter-1.aux'.
 
-LaTeX Warning: Citation `Keller2011' on page 2 undefined on input line 104.
+ (./chapter-1.tex
+Chapter 2.
+(./chapters/c1/literature.tex
+Underfull \vbox (badness 3029) has occurred while \output is active []
 
-[2] [3] [4])) [5]
+ [2
+
+
+
+]
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+
+LaTeX Warning: Citation `Keller2011' on page 5 undefined on input line 227.
+
+[5])) [6]
 \openout2 = `chapter-2.aux'.
 
  (./chapter-2.tex
-Chapter 2.
+Chapter 3.
 (./chapters/c2/methodology.tex
-<./figures/data-flowchart.pdf, id=302, 1077.02374pt x 688.5725pt>
+<./figures/data-flowchart.pdf, id=332, 1077.02374pt x 688.5725pt>
 File: ./figures/data-flowchart.pdf Graphic file (type pdf)
 <use ./figures/data-flowchart.pdf>
-Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 10.
+Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 24.
 (pdftex.def)             Requested size: 472.03123pt x 301.78557pt.
- [6
+ [7
 
 
 
-] [7 <./figures/data-flowchart.pdf>] [8])
-(./chapters/c2/analysis.tex [9] [10])) [11] [12]
+] [8 <./figures/data-flowchart.pdf>] [9])
+(./chapters/c2/analysis.tex [10] [11])) [12] [13]
 \openout2 = `chapter-3.aux'.
 
  (./chapter-3.tex
-Chapter 3.
-(./chapters/c3/assemblies.tex)) [13
+Chapter 4.
+(./chapters/c3/assemblies.tex) (./chapters/c3/gene-finding-results.tex [14
 
 
-
-] [14
-
-] (./thesis.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
- [15
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
- (./thesis.aux
-(./chapter-1.aux) (./chapter-2.aux) (./chapter-3.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
+<./figures/nextpolish-gene-finding.png, id=374, 999.735pt x 559.983pt>
+File: ./figures/nextpolish-gene-finding.png Graphic file (type png)
+<use ./figures/nextpolish-gene-finding.png>
+Package pdftex.def Info: ./figures/nextpolish-gene-finding.png  used on input l
+ine 20.
+(pdftex.def)             Requested size: 472.03123pt x 264.39684pt.
+)
+(./chapters/c3/regions.tex [15 <./figures/nextpolish-gene-finding.png>]
+<figures/t-reesei-regions-venn3.png, id=383, 462.528pt x 346.896pt>
+File: figures/t-reesei-regions-venn3.png Graphic file (type png)
+<use figures/t-reesei-regions-venn3.png>
+Package pdftex.def Info: figures/t-reesei-regions-venn3.png  used on input line
+ 48.
+(pdftex.def)             Requested size: 212.41261pt x 159.30943pt.
+<figures/t-virens-regions-venn.png, id=384, 462.528pt x 346.896pt>
+File: figures/t-virens-regions-venn.png Graphic file (type png)
+<use figures/t-virens-regions-venn.png>
+Package pdftex.def Info: figures/t-virens-regions-venn.png  used on input line 
+49.
+(pdftex.def)             Requested size: 212.41261pt x 159.30943pt.
+<figures/t-harzianum-regions-venn.png, id=385, 462.528pt x 346.896pt>
+File: figures/t-harzianum-regions-venn.png Graphic file (type png)
+<use figures/t-harzianum-regions-venn.png>
+Package pdftex.def Info: figures/t-harzianum-regions-venn.png  used on input li
+ne 50.
+(pdftex.def)             Requested size: 212.41261pt x 159.30943pt.
+))
+[16] [17 <./figures/t-reesei-regions-venn3.png> <./figures/t-virens-regions-ven
+n.png> <./figures/t-harzianum-regions-venn.png>] [18
+
+] (./thesis.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+ [19
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+
+(./thesis.aux (./intro.aux) (./chapter-1.aux) (./chapter-2.aux)
+(./chapter-3.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 46A501EA15E16684CDF02D073E6836EF;2713.
+(rerunfilecheck)             Checksum: A9F5E636C2BDE8524A661F76A30F6AEB;2933.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 7790 strings out of 492649
- 118460 string characters out of 6129622
- 219053 words of memory out of 5000000
- 11472 multiletter control sequences out of 15000+600000
- 7373 words of font info for 26 fonts, out of 8000000 for 9000
+ 7853 strings out of 492649
+ 119776 string characters out of 6129622
+ 221016 words of memory out of 5000000
+ 11497 multiletter control sequences out of 15000+600000
+ 7672 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,9n,41p,930b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,41p,930b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (22 pages, 187655 bytes).
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (27 pages, 620296 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 362 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
- 334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 378 words of extra memory for PDF output out of 10000 (max. 10000000)
 

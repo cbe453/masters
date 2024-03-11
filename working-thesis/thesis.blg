@@ -1,6 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: chapter-1.aux
 A level-1 auxiliary file: chapter-2.aux
 A level-1 auxiliary file: chapter-3.aux
@@ -9,7 +10,7 @@ Database file #1: ./refs/full-bib.bib
 Warning--I didn't find a database entry for "Keller2011"
 You've used 10 entries,
             2118 wiz_defined-function locations,
-            575 strings with 6311 characters,
+            576 strings with 6320 characters,
 and the built_in function-call counts, 3640 in all, are:
 = -- 347
 > -- 219
