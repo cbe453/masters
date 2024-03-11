@@ -1,0 +1,14 @@
+tsth20
+
+low GC content
+Length of low GC regions: 2778400 
+Length of low GC regions (100kb): 27.78  
+Low GC regions with genes: 34
+Proportion: 1.22 low GC regions with genes per 100kb
+
+normal GC content
+Length of genome: 41588851  
+Length of regular GC content (length - low GC): 38810451
+Length of regular GC regions (100kb): 388.10
+Regular GC content regions with genes: 12253
+Porportion: 31.57 normal GC regions with genes per 100kb

@@ -1,0 +1,14 @@
+T. reesei
+
+low GC content
+Length of low GC regions: 1268658
+Length of low GC regions (100kb): 12.68
+Low GC regions with genes: 97
+Proportion: 7.64 low GC regions with genes per 100kb
+
+normal GC content
+Length of genome: 33395713
+Length of regular GC content (length - low GC): 32137055
+Length of regular GC regions (100kb): 321.27
+Regular GC content regions with genes: 9734
+Porportion: 30.2 normal GC regions with genes per 100kb

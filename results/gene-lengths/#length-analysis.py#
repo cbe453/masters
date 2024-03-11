@@ -1,0 +1,67 @@
+#!/usr/bin/env/ python
+
+import argparse
+import pandas as pd
+from Bio import SeqIO
+from Bio.SeqIO import FastaIO
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy import stats
+import random
+
+def main(args):
+    print(args)
+
+    braker = parseData(args.braker)
+    refseq = parseData(args.refseq)
+    genemark = parseData(args.genemark)
+
+    tools = ['Braker2', 'RefSeq', 'GeneMark']
+    cds = []
+    cds.append(braker)
+    cds.append(refseq)
+    cds.append(genemark)
+    pvalues = []
+    
+    for i in range(0, len(cds)):
+        for j in range(i+1, len(cds)):
+            print(tools[i] + ' ' + tools[j])
+            pvalues.append(stats.ks_2samp(cds[i], cds[j]).pvalue)
+
+    fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
+    axes = [ax1, ax2, ax3]
+
+    for i in range(0, len(axes)):
+        axes[i].hist(cds[i], bins=1000)
+        axes[i].set_xlim(0,5000)
+        axes[i].set_ylim(0, 500)
+        axes[i].set_xlabel(tools[i])
+
+    ax2.set_yticks([])
+    ax3.set_yticks([])
+    plt.suptitle(args.strain)
+    plt.ylim(0, 500)
+    plt.tight_layout()
+    plt.show()
+    print(pvalues)
+
+    
+def parseData(cdsPath):
+    cdsArray = []
+    for cds in SeqIO.parse(cdsPath, "fasta"):
+        #print(cds.id + '\t' + str(len(cds.seq)))
+        cdsArray.append(len(cds.seq))
+
+    return(cdsArray)
+
+        
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Analysis of gene lengths from gene finding tools')
+    parser.add_argument('-b', type=str, dest='braker', help='Path to CDS from Braker2')
+    parser.add_argument('-r', type=str, dest='refseq', help='Path to CDS from RefSeq annotation')
+    parser.add_argument('-g', type=str, dest='genemark', help='Path to CDS from GeneMark')
+    parser.add_argument('-s', type=str, dest='strain', help='Nmae of Trichoderma strain')
+    args = parser.parse_args()
+    
+    
+    exit(main(args))

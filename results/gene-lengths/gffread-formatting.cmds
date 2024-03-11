@@ -1,0 +1,7 @@
+(python3.6) Connors-MacBook-Pro:genemark connorburbridge$ sed 's/ Trichoderma.*sequence /\t/' genemark.gff > genemark-gffread-fmt.gff
+
+(python3.6) Connors-MacBook-Pro:genemark connorburbridge$ head -n 1 /Volumes/Roots/Connor/masters/data/refseqs/trichoderma-harzianum/ncbi-genomes-2022-11-13/GCF_003025095.1_Triha_v1.0_genomic.fna | sed 's/ Trichoderma.*/\t/'
+>NW_020209249.1	
+(python3.6) Connors-MacBook-Pro:genemark connorburbridge$ head -n 1 /Volumes/Roots/Connor/masters/data/refseqs/trichoderma-harzianum/ncbi-genomes-2022-11-13/GCF_003025095.1_Triha_v1.0_genomic.fna | sed 's/ Trichoderma.*//'
+>NW_020209249.1
+(python3.6) Connors-MacBook-Pro:genemark connorburbridge$ sed 's/ Trichoderma.*//' /Volumes/Roots/Connor/masters/data/refseqs/trichoderma-harzianum/ncbi-genomes-2022-11-13/GCF_003025095.1_Triha_v1.0_genomic.fna > /Volumes/Roots/Connor/masters/data/refseqs/trichoderma-harzianum/ncbi-genomes-2022-11-13/GCF_003025095.1_Triha_v1.0_genomic-gffread-fmt.fna

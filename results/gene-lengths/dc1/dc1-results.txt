@@ -1,0 +1,2 @@
+['genemark-cds.fa', 'braker.codingseq']
+KstestResult(statistic=0.004009147114996489, pvalue=0.9999474995369315, statistic_location=336, statistic_sign=1)

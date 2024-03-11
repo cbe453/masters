@@ -1,0 +1,7 @@
+refseq	631
+braker	0
+refseq-braker	1
+genemark	165
+refseq-genemark	3695
+braker-genemark	16
+all	7537

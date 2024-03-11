@@ -1,0 +1,2 @@
+# example isochore command
+for contig in `cat dc1-contig-ids.txt`; do echo $contig; outfile=`echo $contig | sed 's/$/.out/'`; isochore -sequence ../../IGV/dc1-igv/dc1-genome.nextpolish.fmt.fasta:$contig -outfile $outfile -graph png -goutfile $contig -window 250 -shift 50; done

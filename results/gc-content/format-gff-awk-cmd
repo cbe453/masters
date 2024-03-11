@@ -1,0 +1,1 @@
+for file in `cat dc1-contig-ids.txt`; do awk -v infile=$file -v id=1 '{if ($2 < 0.28) {print infile, "isochore\tAT-rich", ($1 - 124), $1, ".\t-\t.", "ID=lowGC-" id++ ";percent=" $2}}' OFS='\t' $file.out ; done > dc1-atRich-windows.gff

@@ -1,0 +1,20 @@
+T. virens
+
+Total genes: 32061
+
+low GC content
+Length of low GC regions: 857087 
+Length of low GC regions (100kb): 8.57  
+Low GC regions with genes: 19
+Genes in low GC regions: 49
+Percent genes in low GC regions: 49/32061 x 100 = 0.15%
+Proportion: 10.73 low GC regions with genes per 100kb
+
+normal GC content
+Length of genome: 39022666  
+Length of regular GC content (length - low GC): 38165579 
+Length of regular GC regions (100kb): 381.65
+Regular GC content regions with genes: 11964
+Genes in normal GC regions: 32012
+Percent of genes in normal GC regions: 32012/32061 x 100 = 99.65%
+Porportion: 31.34 normal GC regions with genes per 100kb

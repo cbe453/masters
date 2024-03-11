@@ -1,0 +1,14 @@
+T. harzianum
+
+low GC content
+Length of low GC regions: 2524679
+Length of low GC regions (100kb): 25.24 
+Low GC regions with genes: 137
+Proportion: 5.42 low GC regions with genes per 100kb
+
+normal GC content
+Length of genome: 40980648
+Length of regular GC content (length - low GC): 38455969
+Length of regular GC regions (100kb): 384.55
+Regular GC content regions with genes: 13302
+Porportion: 34.59 normal GC regions with genes per 100kb

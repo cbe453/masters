@@ -1,0 +1,7 @@
+(Abc, aBc, ABc, abC, AbC, aBC, ABC)
+refseq	9116
+braker	9659
+refseq-braker	8978
+genemark	9196
+refseq-genemark	8889
+braker-genemark	9059

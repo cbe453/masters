@@ -1,0 +1,8 @@
+(Abc, aBc, ABc, abC, AbC, aBC, ABC)
+refseq	   1843
+braker	   2
+refseq-braker	3
+genemark	215
+refseq-genemark	3268
+braker-genemark	38
+all

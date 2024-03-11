@@ -1,0 +1,6 @@
+['genemark-cds.fa', 'braker.codingseq']
+KstestResult(statistic=0.00912122919630376, pvalue=0.63538552663909, statistic_location=1431, statistic_sign=-1)
+['refseq-genes.cds', 'braker.codingseq']
+KstestResult(statistic=0.039098407221883624, pvalue=1.7943617947732026e-09, statistic_location=1107, statistic_sign=1)
+['refseq-genes.cds', 'genemark-cds.fa']
+KstestResult(statistic=0.04655163920156402, pvalue=7.352389438516714e-12, statistic_location=1485, statistic_sign=1)

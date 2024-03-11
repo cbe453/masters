@@ -1,0 +1,18 @@
+dc1
+
+low GC content
+Length of low GC regions: 2064693
+Length of low GC regions (100kb): 20.64 
+Low GC regions with genes: 31
+Genes in low GC regions: 42
+Proportion: 1.5 low GC regions with genes per 100kb
+Percent of genes in low GC regions: 42/19900 x 100 = 0.21%
+
+normal GC content
+Length of genome: 38616239  
+Length of regular GC content (length - low GC): 36551546
+Length of regular GC regions (100kb): 365.51
+Regular GC content regions with genes: 11244
+Genes in normal GC regions: 19858
+Porportion: 30.76 normal GC regions with genes per 100kb
+Percent of genes in normal GC regions: 19858/19900 x 100 = 99.78
