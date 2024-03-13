@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\renewcommand{\Pr}[1]{\ensuremath{\mathbb{P}\left[#1\right]}}
+
+\title{Binomial test of random placement\\
+  of gene calls}
+\author{Dave Schneider}
+
+\begin{document}
+
+\maketitle
+
+Let $q$ be the length fraction of the genome assigned the low GC
+content class and $N$ be the total number of gene calls.  If the gene
+calls are ``random distributed'' between regions of normal and low GC
+content then one would expect that the proportions of gene calls in
+the two classes would more or less follow the proportions of total
+lengths of the two classes.  Let $k$ be the number of gene calls in
+regions of low GC content.
+
+Consider a single gene call (i.e., $N=1$).  If it is randomly placed
+on the genome then it will be assigned to a low GC content region with
+probability $q$ and, correspondingly, probability $1-q$ for occurrence in a region of normal GC content.  In other words
+\begin{align}
+  \Pr{k=0\mid N=1} & = 1 - q \\
+  \Pr{k=1\mid N=1} & = 1  
+\end{align}
+Now consider the outcomes for $N=2$ \emph{independent} gene calls
+sampled from the same distribution.  There is one way to get either
+zero or two ``hits''
+\begin{align}
+  \Pr{k=0\mid N=2} & = \left(1 - q\right)^2 \\
+  \Pr{k=2\mid N=2} & = q^2
+\end{align}
+but two ways to get exactly one hit
+\begin{equation}
+  \Pr{k=1\mid N=2} = 2\left(1-q\right)q 
+\end{equation}
+the first hit could be to a low GC content region and the second to a
+normal region, or \emph{vice versa}.
+
+In general, the number of ways that the outcomes can be partitioned
+into two classes is given by the well known binomial coefficients.
+So, the general formula is for finding $k=n$ out of $N$ hits in
+regions of low GC content is
+\begin{equation}
+  \Pr{k=n \mid N} = \binom{n}{N} q^{n}\left(1-q\right)^{N-n}
+  \label{eq:binomial_mass}
+\end{equation}
+
+The binomial test (e.g., \texttt{scipy.stats.binomtest}) can be used
+to determine whether the observation of $k=n$ out of $N$ hits
+occurring regions of low GC content is consistent with the null
+hypothesis that the the calls are random assigned to regions of low GC
+content with probability $q$.  In other words, the null hypothesis
+implies that true probability mass function for $k$ is given by
+Equation~\ref{eq:binomial_mass}). This function is peaked in the
+vicinity of $n=Nq$.  Note, you may want to use the
+\texttt{scipy.stats.binom} package to graph this function.  The peaked
+nature of this function suggests that if $k$ is very different than
+$Nq$ then it is unlikely that the true probability mass function is
+given by Equation~\ref{eq:binomial_mass}.
+
+The question is how close do $k$ and $Nq$ have to be in order for
+Equation~\ref{eq:binomial_mass} to provide a plausible explanation of the
+observed data.  The call
+\begin{verbatim}
+result = scipy.stats.binomtest(k, N, q, alternative='two-sided')
+\end{verbatim}
+provides the answer.  The \texttt{alternative=two-sided} argument
+implies that the test should consider the possibility that the true
+proportion is either greater or less than \texttt{q}.  You can
+retrieve the so-called $p$-value
+\begin{verbatim}
+print('p-value: {}'.format(result.pvalue)
+\end{verbatim}
+as well as the confidence interval (see documentation for details).
+
+%------------------------------
+
+\end{document}
