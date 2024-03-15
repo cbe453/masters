@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1710364021.81101 "binomial.tex" "binomial.pdf" "binomial" 1710364022.44173 0
+["pdflatex"] 1710517094.62811 "binomial.tex" "binomial.pdf" "binomial" 1710517095.37961 0
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -46,8 +46,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1710095134.26027 5467645 7844745587c65c737e58770674a077d1 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1710095423 8221318 8f8c0c0ab70250ec3dc88ad42041eb4e ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "binomial.aux" 1710364022.35723 74 52bbc6fd64a0e86de7dc59fb3b1dcac5 "pdflatex"
-  "binomial.tex" 1710364014.94643 3302 03839e6b1e35a05e34f3150e52ff8229 ""
+  "binomial.aux" 1710517095.29353 74 52bbc6fd64a0e86de7dc59fb3b1dcac5 "pdflatex"
+  "binomial.tex" 1710517089.3689 3298 eb089a1f8df2bd71cec2c0a4a26aa83b ""
   (generated)
   "binomial.aux"
   "binomial.log"
