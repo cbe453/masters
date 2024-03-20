@@ -1,0 +1,22 @@
+assembly length: 38616239
+low GC length: 2064693
+percent low GC: 5.34%
+
+braker
+total genes: 8546
+grep -v 'isochore' gc-stats.gff | grep -oh 'g[0-9]*:' | wc -l
+genes in normal GC: 8535
+grep 'isochore' gc-stats.gff | grep -oh 'g[0-9]*:' | wc -l
+genes in low GC: 11
+expected genes in normal GC: 8546 * 0.947 = 8093.1
+expected genes in low GC: 8546 * 0.053 = 452.9
+
+
+genemark
+total genes: 11354
+grep -v 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]*:' | wc -l
+genes in normal GC: 11323
+grep 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]*:' | wc -l
+genes in low GC: 31
+expected genes in normal GC: 11354 * 0.947 = 10752.24
+expected genes in low GC: 11354 * 0.053 = 601.76

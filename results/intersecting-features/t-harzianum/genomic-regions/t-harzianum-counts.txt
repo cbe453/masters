@@ -1,0 +1,33 @@
+assembly length: 40980648
+low GC length: 2524679
+lowGC percent: 0.062
+
+braker
+total genes: 8314
+grep -v 'isochore' gc-stats.gff | grep -oh 'g[0-9]' | wc -l
+genes in normal GC: 8284
+grep 'isochore' gc-stats.gff | grep -oh 'g[0-9]' | wc -l
+genes in low GC: 30
+expected genes in normal GC: 8314 * 0.939 = 7806.85
+expected genes in low GC: 8314 * 0.061 = 507.15
+binomial test: BinomTestResult(k=8248, n=8314, alternative='two-sided', statistic=0.9920615828722636, pvalue=4.051086276571155e-140)
+
+genemark
+total genes: 12164
+grep -v 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]' | wc -l
+genes in normal GC: 12083
+grep 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]' | wc -l
+genes in low GC: 81
+expected genes in normal GC: 12164 * 0.939 = 11422
+expected genes in low GC: 12164 * 0.061 = 742
+binomial test: BinomTestResult(k=12083, n=12164, alternative='two-sided', statistic=0.9933410062479447, pvalue=5.378676739233234e-219)
+
+refseq
+total genes: 14269
+grep -v 'isochore' gc-stats.gff | grep -oh | grep 'gene-M431' | wc -l
+genes in normal GC: 14115
+grep 'isochore' gc-stats.gff | grep -oh 'gene-M431' | wc -l
+genes low GC: 154
+expected genes in normal GC: 14269 * 0.939 = 13398.59
+expected genes in low GC: 14269 * 0.061 = 870.41 
+binomial test: BinomTestResult(k=14115, n=14269, alternative='two-sided', statistic=0.9892073726259724, pvalue=2.445984122021039e-205)

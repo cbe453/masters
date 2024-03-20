@@ -15,7 +15,7 @@ import seaborn as sns
 #                  '#f781bf', '#a65628', '#984ea3',
 #                  '#999999', '#e41a1c', '#dede00']
 
-def main(args):
+def histPlot(args):
     print(args)
 
     braker = parseData(args.braker)
@@ -57,6 +57,28 @@ def main(args):
     plt.savefig(args.output)
     plt.show()
     
+def cumDist(args):
+    tools = ['Braker2', 'RefSeq', 'GeneMark']
+    for i in range(0, len(args.input)):
+        data = parseData(args.input[i])
+        sortedData = np.sort(data)
+        finalSum = sum(data)
+        curSum = 0
+        x = []
+        y = []
+        for cdsLen in sortedData:
+            curSum = cdsLen + curSum
+            plotVal = (curSum / finalSum)
+            y.append(plotVal)
+            x.append(curSum)
+        #sortedData = np.sort(finalData)
+        print(curSum)
+        print(finalSum)
+        #plt.step(finalData, np.arange(0, len(finalData)))
+        #sns.histplot(finalData, kde=True, color='#dede00', label=tools[2])
+        plt.plot(y, x)
+    plt.show()
+        
 def parseData(cdsPath):
     cdsArray = []
     for cds in SeqIO.parse(cdsPath, "fasta"):
@@ -64,12 +86,12 @@ def parseData(cdsPath):
 
     return(cdsArray)
 
+def main(args):
+    cumDist(args)
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Analysis of gene lengths from gene finding tools')
-    parser.add_argument('-b', type=str, dest='braker', help='Path to CDS from Braker2')
-    parser.add_argument('-r', type=str, dest='refseq', help='Path to CDS from RefSeq annotation')
-    parser.add_argument('-g', type=str, dest='genemark', help='Path to CDS from GeneMark')
+    parser.add_argument('-i', type=str, dest='input', nargs='+', help='List of CDS sequence files to be plotted.')
     parser.add_argument('-o', type=str, dest='output', help='Output file name')
     args = parser.parse_args()
     

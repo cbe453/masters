@@ -1,0 +1,22 @@
+tsth20
+assembly length: 41588851
+low GC length: 2778400
+low GC percent: 0.067
+
+braker
+total genes: 8784
+grep -v 'isochore' gc-stats.gff | grep -oh 'g[0-9]*:' | wc -l
+genes in normal GC: 8782
+grep 'isochore' gc-stats.gff | grep -oh 'g[0-9]*:' | wc -l
+genes in low GC: 2
+expected genes in normal GC: 8784 * 0.933 = 8195.47
+expected genes in low GC: 588.53
+
+genemark
+total genes: 12373
+grep -v 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]*:' | wc -l
+genes in low GC: 12362
+grep 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]*:' | wc -l
+genes in normal GC: 11
+expected genes in normal GC: 12373 * 0.933 = 11544
+expected genes in low GC: 12373 * 0.067 = 829

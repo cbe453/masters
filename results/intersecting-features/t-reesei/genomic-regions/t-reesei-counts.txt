@@ -1,0 +1,33 @@
+assembly length: 33395713
+low GC length: 1268658
+low GC percent: 0.037
+
+braker
+total genes: 9659
+grep -v 'isochore' gc-stats.gff | grep -oh 'g[0-9]*:' | wc -l
+genes in normal GC: 9611
+grep 'isochore' gc-stats.gff | grep -oh 'g[0-9]*:' | wc -l
+genes in low GC: 48
+expected genes in normal GC: 9659 * 0.963 = 9301.6
+expected genes in low GC: 9659 * 0.037 = 357.4
+binomial test: BinomTestResult(k=9611, n=9659, alternative='two-sided', statistic=0.9950305414639197, pvalue=2.6827797841898047e-96)
+
+genemark
+total genes: 9196
+grep -v 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]*:' | wc -l
+genes in normal GC: 9157
+grep 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]*:' | wc -l
+genes in low GC: 39
+expected genes in normal GC: 9196 * 0.963 = 8855.75
+expected genes in low GC: 9196 * 0.037 = 340.25
+binomial test: BinomTestResult(k=9157, n=9196, alternative='two-sided', statistic=0.9957590256633319, pvalue=5.666375191621218e-98)
+
+refseq
+total genes: 9116
+grep -v 'isochore' gc-stats.gff | grep -oh 'gene-TRIREDRAFT' | wc -l
+genes in normal GC: 9009
+grep 'isochore' gc-stats.gff | grep -oh 'gene-TRIREDRAFT' | wc -l
+genes in low GC: 107
+expected genes in normal GC: 9116 * 0.963 = 8778.7
+expected genes in low GC: 9116 * 0.037 = 340.3
+binomial test: BinomTestResult(k=9009, n=9116, alternative='two-sided', statistic=0.9882623957876262, pvalue=1.2912743377948754e-49)

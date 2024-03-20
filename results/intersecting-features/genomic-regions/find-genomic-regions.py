@@ -136,6 +136,10 @@ def findRegion(features):
             currentEnd = item.endPos
             featureList.append(item)
             programSet.add(item.tool)
+            if (item == finalFeature):
+                regionID += 1
+                regionList.append(region(regionID, currentStart, currentEnd, featureList, \
+                                         programSet))
         elif (item.startPos == finalStart):
             if (item == finalFeature):
                 if first == True:

@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-def Ttest(data, toolCount):
+def countGenes(data, toolCount):
     gffHandle = open(data)
     normalGC = []
     lowGC = []
@@ -82,62 +82,58 @@ def Ttest(data, toolCount):
             #print(str(geneCount))
         
                     
-    print('Normal genes: ' + str(normalGC))
-    print('Anomalous genes: ' + str(lowGC))
+    #print('Normal genes: ' + str(normalGC))
+    #print('Anomalous genes: ' + str(lowGC))
     return(normalGC, lowGC)
 
-# Code taken from StackExchange to fit distribution of gene counts in regions
-# to known distributions. Results are kind of funky. 
-def distTest(data):
-    dist_names = ["norm", "exponweib", "weibull_max", "weibull_min", "pareto", "genextreme"]
-    dist_results = []
-    params = {}
-    for dist_name in dist_names:
-        dist = getattr(stats, dist_name)
-        param = dist.fit(data)
+def dc1Chi2():
+    normal, low = (countGenes('/Users/cbe453/Desktop/masters/masters/masters/results/intersecting-features/dc1/genomic-regions/gc-stats.gff', 3))
+    totalLength = 38616239
+    lowGcLength = 2064693
+    lowGcFraction = ((lowGcLength / totalLength))
+    totalGenes = (sum(normal) + sum(low))
+    expLowGcGenes = int(totalGenes * lowGcFraction)
+    expNormGcGenes = totalGenes - expLowGcGenes
 
-        params[dist_name] = param
-        # Applying the Kolmogorov-Smirnov test
-        D, p = stats.kstest(data, dist_name, args=param)
-        print("p value for "+dist_name+" = "+str(p))
-        dist_results.append((dist_name, p))
+    print('Normal Genes: ' + str(sum(normal)))
+    print('% assembly low GC: ' + str(lowGcFraction))
+    print('Total Gene: ' + str(totalGenes))
+    print('Expected Low GC genes: ' + str(expLowGcGenes))
+    print('Expected Normal GC genes: ' + str(expNormGcGenes))
 
-    # select the best fitted distribution
-    best_dist, best_p = (max(dist_results, key=lambda item: item[1]))
-    # store the name of the best fit and its p value
-
-    print("Best fitting distribution: "+str(best_dist))
-    print("Best p value: "+ str(best_p))
-    print("Parameters for the best fit: "+ str(params[best_dist]))
-
-    return best_dist, best_p, params[best_dist]
-
+    #chisquare
+    
 def main(args):
-    for gff in args.gffFiles:
-        normal, low = Ttest(gff, args.toolCount)
-        df = pd.DataFrame(normal)
-        print(df.describe())
-        print('Variance normal: ' + str(np.var(normal)))
-        print('Mean normal: ' + str(sum(normal) / len(normal)))
-        print('Variance low: ' + str(np.var(low)))
-        print('Mean low: ' + str(sum(low) / len(low)))
-        print(stats.ttest_ind(normal, low, alternative='two-sided'))
-        fig, (ax1, ax2) = plt.subplots(2, 1)
-        ax1.hist(normal)
-        ax1.set_title('# of genes in normal GC content regions')
-        ax2.hist(low)
-        ax2.set_title('# of genes in low GC content regions')
-        fig.tight_layout()
-        plt.show()
+    
+    dc1Chi2()
+    #for gff in args.gffFiles:
+        #normal, low = Ttest(gff, args.toolCount)
+        
+
+
+        #df = pd.DataFrame(normal)
+        #print(df.describe())
+        #print('Variance normal: ' + str(np.var(normal)))
+        #print('Mean normal: ' + str(sum(normal) / len(normal)))
+        #print('Variance low: ' + str(np.var(low)))
+        #print('Mean low: ' + str(sum(low) / len(low)))
+        #print(stats.ttest_ind(normal, low, alternative='two-sided'))
+        #fig, (ax1, ax2) = plt.subplots(2, 1)
+        #ax1.hist(normal)
+        #ax1.set_title('# of genes in normal GC content regions')
+        #ax2.hist(low)
+        #ax2.set_title('# of genes in low GC content regions')
+        #fig.tight_layout()
+        #plt.show()
         #distTest(normal)
         #distTest(low)
     return(0)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Run T-tests on regions \
+    parser = argparse.ArgumentParser(description='Run stats on regions \
     identified by find-genomic-regions.py.')
-    parser.add_argument('-f', type=str, dest='gffFiles', nargs='+', \
-                        help='List of spaced GFF files for analysis', required=True)
+    #parser.add_argument('-f', type=str, dest='gffFiles', nargs='+', \
+    #                    help='List of spaced GFF files for analysis', required=True)
     parser.add_argument('-n', type=int, dest='toolCount', help='Number of tools considered in input to region identification. (Gene finders, gc content, repeat regions, etc.)', required=True)
     args = parser.parse_args()
     main(args)

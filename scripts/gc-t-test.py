@@ -22,8 +22,6 @@ def Ttest(data, toolCount):
         # Iterate over features (regions) from each contig
         for feature in contig.features:
             genes = int(feature.qualifiers['geneCount'][0])
-            rsmiList = ["'AUGUSTUS'", 'GeneMark']
-            #refseqList = ['AUGUSTUS', 'GeneMark', 'RefSeq']
             currentFlag = feature.qualifiers['lowGC'][0]
             skip = 'False'
 
@@ -60,7 +58,8 @@ def Ttest(data, toolCount):
                 lowGC.append(geneCount)
             else:
                 normalGC.append(geneCount)
-        # If final region has disagreement, append gene counts appropriately.
+        # If final region has disagreement, append gene counts appropriately
+        # in relationship to previous/current GC regino status.
         else:
             if (currentFlag == previousFlag):
                 if (currentFlag == 'True'):
@@ -74,11 +73,6 @@ def Ttest(data, toolCount):
                 else:
                     lowGC.append(geneCount)
                     normalGC.append(genes)
-
-            print(contig)
-            print(feature)
-            print(str(geneCount))
-        
                     
     print('Normal genes: ' + str(normalGC))
     print('Anomalous genes: ' + str(lowGC))

@@ -16,3 +16,8 @@ Regular GC content regions with genes: 11244
 Genes in normal GC regions: 19858
 Porportion: 30.76 normal GC regions with genes per 100kb
 Percent of genes in normal GC regions: 19858/19900 x 100 = 99.78
+
+Chi2 test input:
+% of assembly low GC: 5.34
+% of assembly normal GC: 94.66
+Expected genes at 5.34%: 

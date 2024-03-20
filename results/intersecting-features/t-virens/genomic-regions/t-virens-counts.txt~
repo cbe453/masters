@@ -1,0 +1,30 @@
+assembly length: 39022666
+low GC length: 857087
+low GC percent: 0.0219
+
+braker
+total genes: 7801
+grep -v 'isochore' gc-stats.gff | grep -oh 'g[0-9]' | wc -l
+genes in normal GC: 7767
+grep 'isochore' gc-stats.gff | grep -oh 'g[0-9]' | wc -l
+genes in low GC: 34
+expected genes in normal GC: 7801 * 0.9781 = 7630.16
+expected genes in low GC: 7801 * 0.0219 = 170.84
+
+genemark
+total genes: 11866
+grep -v 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]' | wc -l
+genes in normal GC: 11777 
+grep 'isochore' gc-stats.gff | grep -oh 'gene_[0-9]' | wc -l
+genes in low GC: 89
+expected genes in normal GC: 11866 * 0.9781 = 11606.13
+expected genes in low GC: 11866 * 0.0219 = 259.87
+
+refseq - anomalous
+total genes: 12405
+grep -v 'isochore' gc-stats.gff | grep -oh 'gene-TRIVI' | wc -l
+genes in normal GC: 12304
+grep 'isochore' gc-stats.gff | grep -oh 'gene-TRIVI' | wc -l
+genes in low GC: 101
+expected genes in normal GC: 12405 * 0.9781 = 12133.33
+expected genes in low GC: 12405 * 0.0219 = 271.67
