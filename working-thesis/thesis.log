@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 MAR 2024 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 MAR 2024 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -545,22 +545,22 @@ Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 23.
 Chapter 4.
 (./chapters/c3/assemblies.tex
 </Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/dc1-low-g
-c-quast.png, id=370, 803.0pt x 602.25pt>
+c-fastqc.png, id=370, 803.0pt x 602.25pt>
 File: /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/dc1-
-low-gc-quast.png Graphic file (type png)
+low-gc-fastqc.png Graphic file (type png)
 <use /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/dc1-l
-ow-gc-quast.png>
+ow-gc-fastqc.png>
 Package pdftex.def Info: /Users/cbe453/Desktop/masters/masters/masters/working-
-thesis/figures/dc1-low-gc-quast.png  used on input line 17.
+thesis/figures/dc1-low-gc-fastqc.png  used on input line 17.
 (pdftex.def)             Requested size: 377.62642pt x 283.22295pt.
 </Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/tsth20-lo
-w-gc-quast.png, id=371, 803.0pt x 602.25pt>
+w-gc-fastqc.png, id=371, 803.0pt x 602.25pt>
 File: /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/tsth
-20-low-gc-quast.png Graphic file (type png)
+20-low-gc-fastqc.png Graphic file (type png)
 <use /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/tsth2
-0-low-gc-quast.png>
+0-low-gc-fastqc.png>
 Package pdftex.def Info: /Users/cbe453/Desktop/masters/masters/masters/working-
-thesis/figures/tsth20-low-gc-quast.png  used on input line 23.
+thesis/figures/tsth20-low-gc-fastqc.png  used on input line 23.
 (pdftex.def)             Requested size: 377.62642pt x 283.22295pt.
 ) (./chapters/c3/gene-finding-results.tex [14
 
@@ -568,8 +568,8 @@ thesis/figures/tsth20-low-gc-quast.png  used on input line 23.
 
 ]
 [15 </Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/dc1-l
-ow-gc-quast.png (PNG copy)> </Users/cbe453/Desktop/masters/masters/masters/work
-ing-thesis/figures/tsth20-low-gc-quast.png (PNG copy)>]
+ow-gc-fastqc.png (PNG copy)> </Users/cbe453/Desktop/masters/masters/masters/wor
+king-thesis/figures/tsth20-low-gc-fastqc.png (PNG copy)>]
 <./figures/nextpolish-gene-finding.png, id=384, 999.735pt x 559.983pt>
 File: ./figures/nextpolish-gene-finding.png Graphic file (type png)
 <use ./figures/nextpolish-gene-finding.png>
@@ -600,7 +600,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
  7833 strings out of 492649
- 119917 string characters out of 6129622
+ 119932 string characters out of 6129622
  222769 words of memory out of 5000000
  11479 multiletter control sequences out of 15000+600000
  7980 words of font info for 28 fonts, out of 8000000 for 9000
