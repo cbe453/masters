@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  11 MAR 2024 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 MAR 2024 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -59,23 +59,19 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip69
 \cftfigindent=\skip70
 \cftfignumwidth=\skip71
+\c@lofdepth=\count89
+\c@lotdepth=\count90
 \cftbeforelottitleskip=\skip72
 \cftafterlottitleskip=\skip73
 \cftbeforetabskip=\skip74
 \cfttabindent=\skip75
 \cfttabnumwidth=\skip76
-\cftbeforesubfigskip=\skip77
-\cftsubfigindent=\skip78
-\cftsubfignumwidth=\skip79
-\cftbeforesubtabskip=\skip80
-\cftsubtabindent=\skip81
-\cftsubtabnumwidth=\skip82
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box26
-\beforetitleunit=\skip83
-\aftertitleunit=\skip84
+\beforetitleunit=\skip77
+\aftertitleunit=\skip78
 \ttl@plus=\dimen103
 \ttl@minus=\dimen104
 \ttl@toksa=\toks14
@@ -102,7 +98,7 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \caption@parindent=\dimen113
 \caption@hangindent=\dimen114
 )
-\c@ContinuedFloat=\count89
+\c@ContinuedFloat=\count91
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/03/24 v5.7 Page Geometry
@@ -117,9 +113,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count90
-\Gm@cntv=\count91
-\c@Gm@tempcnt=\count92
+\Gm@cnth=\count92
+\Gm@cntv=\count93
+\c@Gm@tempcnt=\count94
 \Gm@bindingoffset=\dimen115
 \Gm@wd@mp=\dimen116
 \Gm@odd@mp=\dimen117
@@ -139,8 +135,8 @@ Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \ar@mcellbox=\box27
 \extrarowheight=\dimen124
 \NC@list=\toks17
-\extratabsurround=\skip85
-\backup@length=\skip86
+\extratabsurround=\skip79
+\backup@length=\skip80
 \ar@cellbox=\box28
 )
 \TX@col@width=\dimen125
@@ -148,7 +144,7 @@ Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \TX@old@col=\dimen127
 \TX@target=\dimen128
 \TX@delta=\dimen129
-\TX@cols=\count93
+\TX@cols=\count95
 \TX@ftn=\toks18
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ltablex/ltablex.sty
@@ -156,20 +152,20 @@ Package: ltablex 2014/08/13 v1.1 Modified tabularx
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip87
-\LTright=\skip88
-\LTpre=\skip89
-\LTpost=\skip90
-\LTchunksize=\count94
+\LTleft=\skip81
+\LTright=\skip82
+\LTpre=\skip83
+\LTpost=\skip84
+\LTchunksize=\count96
 \LTcapwidth=\dimen130
 \LT@head=\box29
 \LT@firsthead=\box30
 \LT@foot=\box31
 \LT@lastfoot=\box32
-\LT@cols=\count95
-\LT@rows=\count96
-\c@LT@tables=\count97
-\c@LT@chunks=\count98
+\LT@cols=\count97
+\LT@rows=\count98
+\c@LT@tables=\count99
+\c@LT@chunks=\count100
 \LT@p@ftn=\toks19
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -225,15 +221,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen131
-\Hy@linkcounter=\count99
-\Hy@pagecounter=\count100
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count101
+\Hy@SavedSpaceFactor=\count103
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -245,7 +241,7 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count102
+\c@Hy@tempcnt=\count104
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
@@ -253,7 +249,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen132
-\Fld@menulength=\count103
+\Fld@menulength=\count105
 \Field@Width=\dimen133
 \Fld@charsize=\dimen134
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -265,37 +261,37 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count104
-\c@Item=\count105
-\c@Hfootnote=\count106
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count107
-\c@bookmark@seq@number=\count108
+\Fld@listcount=\count109
+\c@bookmark@seq@number=\count110
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip91
+\Hy@SectionHShift=\skip85
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count109
-\c@@ppsavesec=\count110
-\c@@ppsaveapp=\count111
+\c@@pps=\count111
+\c@@ppsavesec=\count112
+\c@@ppsaveapp=\count113
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/preprint/authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
-\affilsep=\skip92
-\@affilsep=\skip93
-\c@Maxaffil=\count112
-\c@authors=\count113
-\c@affil=\count114
+\affilsep=\skip86
+\@affilsep=\skip87
+\c@Maxaffil=\count114
+\c@authors=\count115
+\c@affil=\count116
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -317,67 +313,59 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip94
-\subfigcapskip=\skip95
-\subfigcaptopadj=\dimen137
-\subfigbottomskip=\skip96
-\subfigcapmargin=\dimen138
-\subfiglabelskip=\skip97
-\c@subfigure=\count115
-\c@lofdepth=\count116
-\c@subtable=\count117
-\c@lotdepth=\count118
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip98
-\subfig@bottom=\skip99
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count117
+\c@subtable=\count118
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen137
+\lightrulewidth=\dimen138
+\cmidrulewidth=\dimen139
+\belowrulesep=\dimen140
+\belowbottomsep=\dimen141
+\aboverulesep=\dimen142
+\abovetopsep=\dimen143
+\cmidrulesep=\dimen144
+\cmidrulekern=\dimen145
+\defaultaddspace=\dimen146
+\@cmidla=\count119
+\@cmidlb=\count120
+\@aboverulesep=\dimen147
+\@belowrulesep=\dimen148
+\@thisruleclass=\count121
+\@lastruleclass=\count122
+\@thisrulewidth=\dimen149
+)
 (./thesis.aux (./intro.aux) (./chapter-1.aux) (./chapter-2.aux)
-(./chapter-3.aux
-
-LaTeX Warning: Label `fig:a' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:a' multiply defined.
-
-
-LaTeX Warning: Label `fig:a' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:a' multiply defined.
-
-))
+(./chapter-3.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
-Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
@@ -415,18 +403,18 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 27.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count119
+\c@section@level=\count123
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
@@ -435,16 +423,16 @@ LaTeX Info: Redefining \nameref on input line 25.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen139
+\scratchcounter=\count124
+\scratchdimen=\dimen150
 \scratchbox=\box34
-\nofMPsegments=\count121
-\nofMParguments=\count122
+\nofMPsegments=\count125
+\nofMParguments=\count126
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen140
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen151
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -464,16 +452,16 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 26.
+(Font)              <14.4> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 26.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
+(Font)              <7> on input line 28.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
  [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1
@@ -510,7 +498,7 @@ Chapter 1.
  same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 \include{intro}
+l.31 \include{intro}
                      [1
 
 
@@ -540,10 +528,10 @@ LaTeX Warning: Citation `Keller2011' on page 5 undefined on input line 227.
  (./chapter-2.tex
 Chapter 3.
 (./chapters/c2/methodology.tex
-<./figures/data-flowchart.pdf, id=332, 1077.02374pt x 688.5725pt>
+<./figures/data-flowchart.pdf, id=334, 1077.02374pt x 688.5725pt>
 File: ./figures/data-flowchart.pdf Graphic file (type pdf)
 <use ./figures/data-flowchart.pdf>
-Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 24.
+Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 23.
 (pdftex.def)             Requested size: 472.03123pt x 301.78557pt.
  [7
 
@@ -555,84 +543,83 @@ Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 24.
 
  (./chapter-3.tex
 Chapter 4.
-(./chapters/c3/assemblies.tex) (./chapters/c3/gene-finding-results.tex [14
+(./chapters/c3/assemblies.tex
+</Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/dc1-low-g
+c-quast.png, id=370, 803.0pt x 602.25pt>
+File: /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/dc1-
+low-gc-quast.png Graphic file (type png)
+<use /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/dc1-l
+ow-gc-quast.png>
+Package pdftex.def Info: /Users/cbe453/Desktop/masters/masters/masters/working-
+thesis/figures/dc1-low-gc-quast.png  used on input line 17.
+(pdftex.def)             Requested size: 377.62642pt x 283.22295pt.
+</Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/tsth20-lo
+w-gc-quast.png, id=371, 803.0pt x 602.25pt>
+File: /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/tsth
+20-low-gc-quast.png Graphic file (type png)
+<use /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/tsth2
+0-low-gc-quast.png>
+Package pdftex.def Info: /Users/cbe453/Desktop/masters/masters/masters/working-
+thesis/figures/tsth20-low-gc-quast.png  used on input line 23.
+(pdftex.def)             Requested size: 377.62642pt x 283.22295pt.
+) (./chapters/c3/gene-finding-results.tex [14
 
 
 
 ]
-<./figures/nextpolish-gene-finding.png, id=374, 999.735pt x 559.983pt>
+[15 </Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/dc1-l
+ow-gc-quast.png (PNG copy)> </Users/cbe453/Desktop/masters/masters/masters/work
+ing-thesis/figures/tsth20-low-gc-quast.png (PNG copy)>]
+<./figures/nextpolish-gene-finding.png, id=384, 999.735pt x 559.983pt>
 File: ./figures/nextpolish-gene-finding.png Graphic file (type png)
 <use ./figures/nextpolish-gene-finding.png>
 Package pdftex.def Info: ./figures/nextpolish-gene-finding.png  used on input l
 ine 20.
 (pdftex.def)             Requested size: 472.03123pt x 264.39684pt.
-)
-(./chapters/c3/regions.tex [15 <./figures/nextpolish-gene-finding.png>]
-<figures/t-reesei-regions-venn3.png, id=383, 462.528pt x 346.896pt>
-File: figures/t-reesei-regions-venn3.png Graphic file (type png)
-<use figures/t-reesei-regions-venn3.png>
-Package pdftex.def Info: figures/t-reesei-regions-venn3.png  used on input line
- 48.
-(pdftex.def)             Requested size: 212.41261pt x 159.30943pt.
-<figures/t-virens-regions-venn.png, id=384, 462.528pt x 346.896pt>
-File: figures/t-virens-regions-venn.png Graphic file (type png)
-<use figures/t-virens-regions-venn.png>
-Package pdftex.def Info: figures/t-virens-regions-venn.png  used on input line 
-49.
-(pdftex.def)             Requested size: 212.41261pt x 159.30943pt.
-<figures/t-harzianum-regions-venn.png, id=385, 462.528pt x 346.896pt>
-File: figures/t-harzianum-regions-venn.png Graphic file (type png)
-<use figures/t-harzianum-regions-venn.png>
-Package pdftex.def Info: figures/t-harzianum-regions-venn.png  used on input li
-ne 50.
-(pdftex.def)             Requested size: 212.41261pt x 159.30943pt.
-))
-[16] [17 <./figures/t-reesei-regions-venn3.png> <./figures/t-virens-regions-ven
-n.png> <./figures/t-harzianum-regions-venn.png>] [18
-
-] (./thesis.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
- [19
+ [16 <./figures/nextpolish-gene-finding.png>]) (./chapters/c3/regions.tex)) [17
+] [18] [19
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+(./thesis.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+ [20
 
-(./thesis.aux (./intro.aux) (./chapter-1.aux) (./chapter-2.aux)
-(./chapter-3.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+ (./thesis.aux (./intro.aux) (./chapter-1.aux)
+(./chapter-2.aux) (./chapter-3.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: A9F5E636C2BDE8524A661F76A30F6AEB;2933.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 7853 strings out of 492649
- 119776 string characters out of 6129622
- 221016 words of memory out of 5000000
- 11497 multiletter control sequences out of 15000+600000
- 7672 words of font info for 27 fonts, out of 8000000 for 9000
+ 7833 strings out of 492649
+ 119917 string characters out of 6129622
+ 222769 words of memory out of 5000000
+ 11479 multiletter control sequences out of 15000+600000
+ 7980 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,9n,41p,930b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,8n,41p,930b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (27 pages, 620296 bytes).
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (28 pages, 629331 bytes).
 PDF statistics:
- 466 PDF objects out of 1000 (max. 8388607)
- 412 compressed objects within 5 object streams
- 94 named destinations out of 1000 (max. 500000)
- 378 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 373 words of extra memory for PDF output out of 10000 (max. 10000000)
 

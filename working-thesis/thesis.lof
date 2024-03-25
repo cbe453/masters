@@ -3,9 +3,5 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces A flowchart of the methodology followed for this research. Sections are separated based the general process they are associated with (i.e. input data, assembly, gene finding and downstream analysis).\relax }}{8}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces General assembly metrics produced by QUAST (a genome quality assement tool).\relax }}{14}{figure.caption.12}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Shows the counts of genes and mRNAs found by each gene finding tool for each genome assembly considered.\relax }}{15}{figure.caption.13}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Counts of regions identified in total and total number of regions where a prediction from each individual tool was found.\relax }}{16}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{17}{subfigure.4.4.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{17}{subfigure.4.4.3}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{17}{subfigure.4.4.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Plots showing the distribution of GC content in Illumina sequences.\relax }}{15}{figure.caption.12}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Shows the counts of genes and mRNAs found by each gene finding tool for each genome assembly considered.\relax }}{16}{figure.caption.14}
