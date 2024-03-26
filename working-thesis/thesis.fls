@@ -170,6 +170,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/tsth20-low-gc-fastqc.png
 INPUT /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/tsth20-low-gc-fastqc.png
 INPUT /Users/cbe453/Desktop/masters/masters/masters/working-thesis/figures/tsth20-low-gc-fastqc.png
+INPUT figures/gc-plot.pdf
+INPUT ./figures/gc-plot.pdf
+INPUT ./figures/gc-plot.pdf
 INPUT chapters/c3/gene-finding-results.tex
 INPUT chapters/c3/gene-finding-results.tex
 INPUT ./figures/nextpolish-gene-finding.png
