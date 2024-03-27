@@ -64,14 +64,18 @@ def cumDist(args):
         sortedData = np.sort(data)
         finalSum = sum(data)
         curSum = 0
+        i = 0
         x = []
         y = []
         for cdsLen in sortedData:
             curSum = cdsLen + curSum
             plotVal = (curSum / finalSum)
+            i += 1
             y.append(plotVal)
-            x.append(curSum)
+            x.append(i)
         #sortedData = np.sort(finalData)
+        print(x[-5::1])
+        print(y[-5::1])
         print(curSum)
         print(finalSum)
         #plt.step(finalData, np.arange(0, len(finalData)))

@@ -44,4 +44,41 @@ agreement of tools in regards to identified regions, Venn diagrams
 were generated showing agreement of predictions in a region for each tool.
 
 
-blah blah
+\section{Genes in Regions of Anomalous GC Content}
+
+Evaluating gene finder performance in regions of anomalous GC content
+is one of the key topics of this research. One simple way to evaluate
+performance is whether or not gene finding tools predict genes
+uniformly throughout a given sequence. Biologically, we know that
+regions of anomalous nucleotide composition are less likely to contain
+coding sequences than typical genomic regions, leading us to the
+problem of first identifying predicted genes in standard and anomalous
+regions. After identifying low GC segments within each assembly, we
+can include them in the region identification method. From this
+result, we classified predicted genes into two classes; genes in
+regions with normal GC content, and genes in regions with anomalous
+content. In this case, anomalous content is defined as a window of
+genomic sequence containing a percent GC composition of 28\% or
+lower. This number was chosen based on the plots of GC content
+presented in the assembly section of the results. After classifying
+predicted genes, two-sided binomial tests were performed with the null
+hypothesis being that predicted genes are distributed uniformly
+throughout an assembly. Framed differently, we expect the sum of genes
+predicted in both regular and irregular regions to be proportional to
+the sum of lengths of those regions, respectively. This is not the
+case as demonstrated in table~\ref{table:gc-binomial}.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      Tool & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens} \\ \hline
+      Braker2 & $9.56^-181$ & $1.14^-259$ & $2.68^-96$ & $4.05^-140$ & $1.35^-35$ \\ \hline
+      GeneMark & $5.12^-216$ & $0.0$ & $5.66^-49$ & $5.37^-219$ & $5.31^-35$ \\ \hline
+      RefSeq & N/A & N/A & $1.29^-49$ & $2.44^-205$ & $7.40^-33$ \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption{\textit{p} values produced from a two-sided binomial test
+    for each combination of tool and assembly.}
+  \label{table:gc-binomial}
+\end{table}

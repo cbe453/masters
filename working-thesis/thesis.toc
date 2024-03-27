@@ -39,6 +39,7 @@
 \contentsline {section}{\numberline {4.2}Initial Gene Finding Results}{14}{section.4.2}
 \contentsline {section}{\numberline {4.3}Dsitribution of Predicted Gene Lengths}{17}{section.4.3}
 \contentsline {section}{\numberline {4.4}Region Identification}{18}{section.4.4}
-\contentsline {section}{\numberline {4.5}Discussion}{19}{section.4.5}
-\contentsline {section}{\numberline {4.6}Conclusions}{19}{section.4.6}
-\contentsline {chapter}{References}{20}{section*.17}
+\contentsline {section}{\numberline {4.5}Genes in Regions of Anomalous GC Content}{18}{section.4.5}
+\contentsline {section}{\numberline {4.6}Discussion}{20}{section.4.6}
+\contentsline {section}{\numberline {4.7}Conclusions}{20}{section.4.7}
+\contentsline {chapter}{References}{21}{section*.18}
