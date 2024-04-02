@@ -178,6 +178,22 @@ INPUT chapters/c3/gene-finding-results.tex
 INPUT ./figures/nextpolish-gene-finding.png
 INPUT ./figures/nextpolish-gene-finding.png
 INPUT ./figures/nextpolish-gene-finding.png
+INPUT figures/dc1-cumulative-gene-lengths.pdf
+INPUT ./figures/dc1-cumulative-gene-lengths.pdf
+INPUT ./figures/dc1-cumulative-gene-lengths.pdf
+INPUT figures/tsth20-cumulative-gene-lengths.pdf
+INPUT ./figures/tsth20-cumulative-gene-lengths.pdf
+INPUT ./figures/tsth20-cumulative-gene-lengths.pdf
+INPUT figures/t-reesei-cumulative-gene-lengths.pdf
+INPUT ./figures/t-reesei-cumulative-gene-lengths.pdf
+INPUT ./figures/t-reesei-cumulative-gene-lengths.pdf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
+INPUT figures/t-harzianum-cumulative-gene-lengths.pdf
+INPUT ./figures/t-harzianum-cumulative-gene-lengths.pdf
+INPUT ./figures/t-harzianum-cumulative-gene-lengths.pdf
+INPUT figures/t-virens-cumulative-gene-lengths.pdf
+INPUT ./figures/t-virens-cumulative-gene-lengths.pdf
+INPUT ./figures/t-virens-cumulative-gene-lengths.pdf
 INPUT chapters/c3/regions.tex
 INPUT chapters/c3/regions.tex
 INPUT thesis.bbl
@@ -205,3 +221,4 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb

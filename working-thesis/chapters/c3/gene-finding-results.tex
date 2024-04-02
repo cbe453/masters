@@ -38,11 +38,51 @@ while the RefSeq assemblies will also include the RefSeq annotation.
 
 \section{Dsitribution of Predicted Gene Lengths}
 
-As expected, gene finding tools will predict genes of different
-lengths within a genome. To better understand the output produced by
-each gene finder, we inspected the distributions of lengths predicted
-by each gene finding tool for each assembly. Stacked histograms
-(curves?)  of gene lengths produced by each tools for each assembly
-are shown in figure \_. While genes of lengths greater than 10 Kb are
-predicted by these tools, the lengths were truncated to 10 Kb to
-better illustrate trends of particular interest.
+In, gene finding tools will predict genes of different lengths within
+a genome. To better understand the output produced by each gene
+finder, we inspected the distributions of CDS lengths predicted by
+each gene finding tool for each assembly. To better understand the
+distribution of coding sequence (CDS) lengths produced by each gene
+finding tool, running sums of CDS lengths proportional to the total
+sum of CDS lengths were plotted and are visible in
+figure~\ref{fig:cds-lengths}
+
+\begin{figure}
+  \centering
+    \begin{subfigure}{0.8\textwidth}
+      \includegraphics[width=\textwidth]{figures/dc1-cumulative-gene-lengths.pdf}
+      \label{fig:dc1-lengths}
+      \caption{DC1}
+    \end{subfigure}
+    \begin{subfigure}{0.8\textwidth}
+      \includegraphics[width=\textwidth]{figures/tsth20-cumulative-gene-lengths.pdf}
+      \label{fig:tsth20-lengths}
+      \caption{Tsth20}
+    \end{subfigure}
+\end{figure}
+\begin{figure}[ht]
+  \ContinuedFloat
+  \centering
+    \begin{subfigure}{0.8\textwidth}
+      \includegraphics[width=\textwidth]{figures/t-reesei-cumulative-gene-lengths.pdf}
+      \label{fig:treesei-lengths}
+      \caption{\textit{T. reesei}}
+    \end{subfigure}
+    \begin{subfigure}{0.8\textwidth}
+      \includegraphics[width=\textwidth]{figures/t-harzianum-cumulative-gene-lengths.pdf}
+      \label{fig:tharzianum-lengths}
+      \caption{\textit{T. harzianum}}
+    \end{subfigure}
+\end{figure}
+\begin{figure}[ht]
+  \ContinuedFloat
+  \centering
+    \begin{subfigure}{0.8\textwidth}
+      \includegraphics[width=\textwidth]{figures/t-virens-cumulative-gene-lengths.pdf}
+      \label{fig:tvirens-lengths}
+      \caption{\textit{T. virens}}
+    \end{subfigure}
+  \label{fig:cds-lengths}
+  \caption{Running sums of CDS lengths proportional to total CDS
+    length for each gene finding tool and assembly.}
+\end{figure}
