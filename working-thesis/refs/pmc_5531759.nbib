@@ -1,0 +1,59 @@
+PMID- 22068540
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20120305
+LR  - 20220318
+IS  - 1546-1696 (Electronic)
+IS  - 1087-0156 (Print)
+IS  - 1087-0156 (Linking)
+VI  - 29
+IP  - 11
+DP  - 2011 Nov 8
+TI  - How to apply de Bruijn graphs to genome assembly.
+PG  - 987-91
+LID - 10.1038/nbt.2023 [doi]
+FAU - Compeau, Phillip E C
+AU  - Compeau PE
+AD  - Department of Mathematics, University of California San Diego, La Jolla, 
+      California, USA.
+FAU - Pevzner, Pavel A
+AU  - Pevzner PA
+FAU - Tesler, Glenn
+AU  - Tesler G
+LA  - eng
+GR  - 3P41RR024851-02S1/RR/NCRR NIH HHS/United States
+GR  - P41 GM103484/GM/NIGMS NIH HHS/United States
+GR  - 52005726/HHMI/Howard Hughes Medical Institute/United States
+GR  - P41 RR008605/RR/NCRR NIH HHS/United States
+GR  - P41 RR024851/RR/NCRR NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
+DEP - 20111108
+PL  - United States
+TA  - Nat Biotechnol
+JT  - Nature biotechnology
+JID - 9604648
+SB  - IM
+MH  - *Algorithms
+MH  - Contig Mapping/*methods
+MH  - Genome Components/*genetics
+MH  - *Models, Theoretical
+MH  - Repetitive Sequences, Nucleic Acid
+MH  - *Sequence Alignment
+MH  - Sequence Analysis, DNA
+PMC - PMC5531759
+MID - NIHMS329513
+EDAT- 2011/11/10 06:00
+MHDA- 2012/03/06 06:00
+PMCR- 2017/07/27
+CRDT- 2011/11/10 06:00
+PHST- 2011/11/10 06:00 [entrez]
+PHST- 2011/11/10 06:00 [pubmed]
+PHST- 2012/03/06 06:00 [medline]
+PHST- 2017/07/27 00:00 [pmc-release]
+AID - nbt.2023 [pii]
+AID - 10.1038/nbt.2023 [doi]
+PST - epublish
+SO  - Nat Biotechnol. 2011 Nov 8;29(11):987-91. doi: 10.1038/nbt.2023.

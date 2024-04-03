@@ -2,6 +2,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces General assembly metrics produced by QUAST (a genome quality assement tool).\relax }}{16}{table.caption.14}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Counts of regions identified in total and total number of regions where a prediction from each individual tool was found.\relax }}{18}{table.caption.19}
-\contentsline {table}{\numberline {4.3}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{20}{table.caption.20}
+\contentsline {table}{\numberline {4.1}{\ignorespaces General assembly metrics produced by QUAST (a genome quality assement tool).\relax }}{17}{table.caption.14}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Counts of regions identified in total and total number of regions where a prediction from each individual tool was found.\relax }}{19}{table.caption.19}
+\contentsline {table}{\numberline {4.3}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{21}{table.caption.20}

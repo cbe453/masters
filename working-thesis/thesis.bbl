@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{Adams2008}
+Jill Adams.
+\newblock {Complex Genomes: Shotgun Sequencing}.
+\newblock {\em Nature Education}, 1(1):186, 2008.
+
 \bibitem{Bruna2021}
 Tom{\'{a}}{\v{s}} Brůna, Katharina~J Hoff, Alexandre Lomsadze, Mario Stanke,
   and Mark Borodovsky.
@@ -7,11 +12,22 @@ Tom{\'{a}}{\v{s}} Brůna, Katharina~J Hoff, Alexandre Lomsadze, Mario Stanke,
   and AUGUSTUS supported by a protein database.}
 \newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, mar 2021.
 
+\bibitem{Compeau2011}
+Phillip E~C Compeau, Pavel~A Pevzner, and Glenn Tesler.
+\newblock {How to apply de Bruijn graphs to genome assembly.}
+\newblock {\em Nature biotechnology}, 29(11):987--991, nov 2011.
+
 \bibitem{Ejigu2020}
 Girum~Fitihamlak Ejigu and Jaehee Jung.
 \newblock {Review on the Computational Genome Annotation of Sequences Obtained
   by Next-Generation Sequencing.}
 \newblock {\em Biology}, 9(9), sep 2020.
+
+\bibitem{Goodwin2016}
+Sara Goodwin, John~D McPherson, and W~Richard McCombie.
+\newblock {Coming of age: ten years of next-generation sequencing
+  technologies}.
+\newblock {\em Nature Reviews Genetics}, 17(6):333--351, 2016.
 
 \bibitem{10.1093/nar/gki937}
 Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
@@ -19,6 +35,11 @@ Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
 \newblock {Gene identification in novel eukaryotic genomes by self-training
   algorithm}.
 \newblock {\em Nucleic Acids Research}, 33(20):6494--6506, 2005.
+
+\bibitem{Marx2023}
+Vivien Marx.
+\newblock {Method of the year: long-read sequencing}.
+\newblock {\em Nature Methods}, 20(1):6--11, 2023.
 
 \bibitem{Nagarajan2013}
 Niranjan Nagarajan and Mihai Pop.
