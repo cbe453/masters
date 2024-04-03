@@ -267,6 +267,44 @@ entries containing two or more lines. The first line of an entry is
 the ID line, which must begin with a greater-than ('>') character,
 followed by an ID and any other pertinent inormation for the following
 sequence. The greater-than character is the indicator that a new
-sequence has begun. The following line(s) contain the actual sequence
+sequence has begun. The following line(s) contain the actual sequenced
 nucleotides or amino acids, which can be contained on one line or
-split across many lines.
+split across many lines. An example of multiple FASTA entries are
+shown in figure~\ref{fig:fasta-example}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/fasta-example.png}
+  \label{fig:fasta-example}
+  \caption{Example of two FASTA sequence entries. One example with
+    sequence characters split across multiple lines, and one showing
+    all sequence characters on the same line.}
+\end{figure}
+
+\subsection{FASTQ}
+Another popular sequencing format is the FASTQ format. This format is
+very similar to the FASTA format but with the addition of two more
+lines per sequence entry and a change to the character indicating the
+beginning of a new sequence entry. An example of a FASTQ entry is
+shown in figure~\ref{fig:fastq-example}. In FASTQ formatted entries,
+the greater-than ('>') character is swapped with the at ('@')
+character. The IDs for the sequence also follow a specific format,
+which provide information about the sequencing run and flowcell that
+the read was sequenced on. This information can then be traced back to
+the sequencing experiment in the case that there were errors or
+anomalies in the output from the experiment. Following the ID is the
+string of base calls. The third line in a FASTQ entry is a plus ('+')
+character, which indicates that the sequences character line has
+finished. Following the plus ('+') character is another sequence of
+characters, this time indicatintg the quality of basecall for the
+corresponding nucleotide base calls in the second line. The quality
+information included in FASTQ files are used to assess the quality of
+a sequencing run and extensively used in downstream processing steps,
+most notably in alignments.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/fastq-example.png}
+  \label{fig:fastq-example}
+  \caption{Example of the four lines in a FASTQ entry.}
+\end{figure}
