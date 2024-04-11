@@ -5,48 +5,49 @@ A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: chapter-1.aux
 A level-1 auxiliary file: chapter-2.aux
 A level-1 auxiliary file: chapter-3.aux
+A level-1 auxiliary file: chapter-4.aux
 The style file: plain.bst
 Database file #1: ./refs/full-bib.bib
 Warning--I didn't find a database entry for "Keller2011"
-You've used 14 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            605 strings with 6827 characters,
-and the built_in function-call counts, 4888 in all, are:
-= -- 474
-> -- 269
+            622 strings with 7528 characters,
+and the built_in function-call counts, 6003 in all, are:
+= -- 568
+> -- 375
 < -- 0
-+ -- 106
-- -- 92
-* -- 412
-:= -- 853
-add.period$ -- 42
-call.type$ -- 14
-change.case$ -- 88
++ -- 148
+- -- 132
+* -- 527
+:= -- 1054
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 114
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 152
-empty$ -- 345
-format.name$ -- 92
-if$ -- 964
+cite$ -- 16
+duplicate$ -- 174
+empty$ -- 395
+format.name$ -- 132
+if$ -- 1170
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 14
-newline$ -- 73
-num.names$ -- 28
-pop$ -- 60
+int.to.str$ -- 16
+missing$ -- 16
+newline$ -- 83
+num.names$ -- 32
+pop$ -- 82
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 98
 quote$ -- 0
-skip$ -- 103
+skip$ -- 117
 stack$ -- 0
-substring$ -- 313
-swap$ -- 14
+substring$ -- 357
+swap$ -- 16
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
+type$ -- 64
 warning$ -- 0
-while$ -- 49
-width$ -- 16
-write$ -- 156
+while$ -- 56
+width$ -- 18
+write$ -- 178
 (There was 1 warning)

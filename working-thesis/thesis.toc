@@ -15,10 +15,12 @@
 \contentsline {section}{\numberline {2.6}Genome Assembly}{4}{section.2.6}
 \contentsline {section}{\numberline {2.7}Identification of AT-rich Genomic regions}{5}{section.2.7}
 \contentsline {section}{\numberline {2.8}Repeat Identification and Masking}{5}{section.2.8}
-\contentsline {section}{\numberline {2.9}Gene Finding Methods}{6}{section.2.9}
-\contentsline {section}{\numberline {2.10}File Formats}{7}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}FASTA}{7}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}FASTQ}{7}{subsection.2.10.2}
+\contentsline {section}{\numberline {2.9}Centromere Identification}{6}{section.2.9}
+\contentsline {section}{\numberline {2.10}Gene Finding Methods}{6}{section.2.10}
+\contentsline {section}{\numberline {2.11}File Formats}{7}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}FASTA}{7}{subsection.2.11.1}
+\contentsline {subsection}{\numberline {2.11.2}FASTQ}{7}{subsection.2.11.2}
+\contentsline {subsection}{\numberline {2.11.3}General Feature Format - GFF}{8}{subsection.2.11.3}
 \contentsline {chapter}{\numberline {3}Data and Methodology}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Methodology}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Data and Processing Overview}{9}{section.3.2}
@@ -41,6 +43,8 @@
 \contentsline {section}{\numberline {4.3}Dsitribution of Predicted Gene Lengths}{19}{section.4.3}
 \contentsline {section}{\numberline {4.4}Region Identification}{20}{section.4.4}
 \contentsline {section}{\numberline {4.5}Genes in Regions of Anomalous GC Content}{20}{section.4.5}
-\contentsline {section}{\numberline {4.6}Discussion}{25}{section.4.6}
-\contentsline {section}{\numberline {4.7}Conclusions}{25}{section.4.7}
-\contentsline {chapter}{References}{26}{section*.23}
+\contentsline {chapter}{\numberline {5}Discussion}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Assemblies of DC1 and Tsth20}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}Initial Gene Counts}{25}{section.5.2}
+\contentsline {section}{\numberline {5.3}Conclusions}{27}{section.5.3}
+\contentsline {chapter}{References}{28}{section*.24}

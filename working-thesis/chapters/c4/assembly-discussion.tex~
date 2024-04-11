@@ -1,0 +1,21 @@
+\section{Assemblies of DC1 and Tsth20}
+Overall, the assemblies of DC1 and Tsth20 resulted in what can be
+described as sequences suitable for further downstream
+processing. Assembled lengths for both samples are similar to closely
+related \textit{Trichoderma} accessions, indicating that the
+assemblies are of appropriate length, but this could be confirmed with
+further wetlab experiments in the future. The assembly of DC1 resulted
+in 8 contigs, with two sequences, ctg000000 and ctg000050 being
+significantly shorter than their counterparts, which deviates from the
+expected 7 chromosome-scale contigs expected from a
+\textit{Trichoderma} assembly\cite{Kubicek2019}. Why these sequences
+are significantly shorter than other contigs is unclear, but could
+arise for several reasons. The most obvious reason would be a
+mis-assembly, which could arise from complications caused by both the
+anomolous GC content reginos as well as highly repetitive
+regions. Even with the inclusion of Nanopore sequencing data, it is
+possible that there was insufficient support for connection between
+these contigs and others. This highlights the complexity of assembling
+sequences with anomolous content and supports the idea that multiple
+rounds and forms of sequencing data may be required to produce
+scaffold and reference level assemblies of non-model organisms.

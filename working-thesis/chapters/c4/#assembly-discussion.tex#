@@ -1,0 +1,32 @@
+\section{Assemblies of DC1 and Tsth20}
+Overall, the assemblies of DC1 and Tsth20 resulted in what can be
+described as sequences suitable for further downstream
+processing. Assembled lengths for both samples are similar to closely
+related \textit{Trichoderma} accessions, indicating that the
+assemblies are of appropriate length, but this could be confirmed with
+further wetlab experiments in the future. The assembly of DC1 resulted
+in eight contigs, with two sequences, ctg000040 being significantly
+shorter at 65Kb than it's counterparts, which deviates from the
+expected 7 chromosome-scale contigs expected from a
+\textit{Trichoderma} assembly\cite{Kubicek2019}. Why this sequence is
+significantly shorter than other contigs is unclear, but could arise
+for several reasons. The most obvious reason would be mis-assembly,
+which could arise from complications caused by both the anomolous GC
+content reginos as well as highly repetitive regions. Even with the
+inclusion of Nanopore sequencing data, it is possible that there was
+insufficient support for connection between these contigs and
+others. This highlights the complexity of assembling sequences with
+anomolous content and supports the idea that multiple rounds and forms
+of sequencing data may be required to produce scaffold and reference
+level assemblies of non-model organisms. Another possible explanation
+for an unaccounted for contig could be the assembly of a mitochondrial
+genome, although this appears somewhat unlikely due to the length of
+the ctg000040, it is not entirely out of the question. Previous work
+focusing on mitochondrial genomes in \textit{Trichoderma} shows the
+lengths of mitochondrial assemblies from six \textit{Trichoderma}
+samples to be between 27Kb and 42Kb.
+
+The assembly of Tsth20 resulted in seven contigs, matching that of the
+expected seven chromosomes detected in most \textit{Trichoderma}
+strains. The total assembled length of Tsth20 is again similar but
+slightly larger than existing \textit{Trichoderma} assemblies.

@@ -1,0 +1,37 @@
+\section{Initial Gene Counts}
+Initial gene counts from Braker2 and Genemark show a similar trend in
+all assemblies included in this analysis. Braker tends to predict
+fewer genes in comparison to GeneMark and RefSeq results except in the
+case of \textit{T. reesei}. The cause of this difference is likely
+two-fold in nature. Most importantly, Braker2 was trained on an RNAseq
+dataset derived from \textit{T. reesei}. This additional information
+in the gene finding model is likely why Braker2 finds more genes and
+transcripts than GeneMark. The effects of this training set may also
+be why Braker2 tends to predict fewer genes and transcripts in other
+assemblies when compared to results from GeneMark and RefSeq. The
+nature of gene models in \textit{T. reesei} likely differs than those
+of other genomes, resulting in 'poorer' relative performance than in
+\textit{T. reesei}. This highlights the fact that users should choose
+training sets carefully when planning to use a hybrid gene finding
+approach. Choosing a dataset that is inappropriate will end with
+results that are skewed or biased towards the training set of
+interest, although they will likely be of higher confidence. This is
+an important trade-off to consider when preparing for a hybrid gene
+finding approach.
+
+Another potential explanation of Braker2's low gene count trend could
+again be due to the reference training set used in training. However
+in this case, not necessarily due to the RNAseq data itself, but the
+nature and size of the genome from whih the RNAseq data was gathered
+from. The \textit{T. reesei} genome is significantly smaller than
+other assemblies considered as shown in figure (blah), resulting in
+less physical space for coding sequences to be found. This would
+explain why GeneMark predicts a similar number of genes as Braker2 in
+\textit{T. reesei} but not in any of the other assemblies. In theory,
+it would make sense that after training, Braker2 would predict a
+fraction of all possible genes in a larger assembly, since it was
+trained with RNAseq data from a genome that is a fraction of the
+size. Again, this shows that the choice of training data is paramount
+when planning a hybrid assembly approach to gene finding.
+
+

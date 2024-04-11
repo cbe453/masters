@@ -1,4 +1,4 @@
-PWD /Users/connorburbridge/Desktop/masters/thesis/masters/working-thesis
+PWD /Users/cbe453/Desktop/masters/masters/masters/working-thesis
 INPUT /usr/local/texlive/2018/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -87,6 +87,8 @@ INPUT chapter-2.aux
 INPUT chapter-2.aux
 INPUT chapter-3.aux
 INPUT chapter-3.aux
+INPUT chapter-4.aux
+INPUT chapter-4.aux
 OUTPUT thesis.aux
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -153,6 +155,9 @@ INPUT ./figures/fasta-example.png
 INPUT figures/fastq-example.png
 INPUT ./figures/fastq-example.png
 INPUT ./figures/fastq-example.png
+INPUT figures/gff-example.png
+INPUT ./figures/gff-example.png
+INPUT ./figures/gff-example.png
 OUTPUT chapter-2.aux
 INPUT chapter-2.tex
 INPUT chapter-2.tex
@@ -202,6 +207,13 @@ INPUT ./figures/t-virens-cumulative-gene-lengths.pdf
 INPUT ./figures/t-virens-cumulative-gene-lengths.pdf
 INPUT chapters/c3/regions.tex
 INPUT chapters/c3/regions.tex
+OUTPUT chapter-4.aux
+INPUT chapter-4.tex
+INPUT chapter-4.tex
+INPUT chapters/c4/assembly-discussion.tex
+INPUT chapters/c4/assembly-discussion.tex
+INPUT chapters/c4/gene-finding-discussion.tex
+INPUT chapters/c4/gene-finding-discussion.tex
 INPUT thesis.bbl
 INPUT thesis.bbl
 INPUT thesis.aux
@@ -213,6 +225,8 @@ INPUT chapter-2.aux
 INPUT chapter-2.aux
 INPUT chapter-3.aux
 INPUT chapter-3.aux
+INPUT chapter-4.aux
+INPUT chapter-4.aux
 INPUT ./thesis.out
 INPUT ./thesis.out
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb

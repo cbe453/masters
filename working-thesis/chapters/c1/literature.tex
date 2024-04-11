@@ -197,6 +197,24 @@ well\cite{Slotkin2018}. This may affect the gene finding process
 described later and may be an interesting topic to look into
 considering the large number of available gene finding programs.
 
+\section{Centromere Identification}
+A centromere is a region of a chromosome that is crucial for the
+proper cell division. These regions are the main anchor for
+microtubules, which are a cellular structures used that attach to
+centromeres to separate chromosomes during both mitosis and
+meiosis. Centromeres are critical to the survival of an organism, with
+malfunctions in the process of cell division usually resulting in
+potential disease and fatal outcomes\cite{Plohl2014}. Centromeric
+sequences can be comprised of several different genetic components,
+with repetititve regions being the most prevalent in the forms of
+satellite DNA and transposable elements. In addition to centromeric
+regions, there are flanking pericentric regions with their own
+properties, including potential candidates for small-interfering
+RNAs\cite{Plohl2014}. Identification and consideration of centromeric
+regions may prove useful when comparing the outputs of gene finding
+tools, as the underlying properties and structure of the genetic
+sequence differ in comparison to typical coding regions of DNA.
+
 \section{Gene Finding Methods}
 Gene finding (or gene annotation) has been a long standing
 computational problem in bioinformatics, which concerns itself with
@@ -275,10 +293,10 @@ shown in figure~\ref{fig:fasta-example}.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{figures/fasta-example.png}
-  \label{fig:fasta-example}
   \caption{Example of two FASTA sequence entries. One example with
     sequence characters split across multiple lines, and one showing
     all sequence characters on the same line.}
+  \label{fig:fasta-example}
 \end{figure}
 
 \subsection{FASTQ}
@@ -305,6 +323,33 @@ most notably in alignments.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{figures/fastq-example.png}
-  \label{fig:fastq-example}
   \caption{Example of the four lines in a FASTQ entry.}
+  \label{fig:fastq-example}
+\end{figure}
+
+\subsection{General Feature Format - GFF}
+General feature format (GFF) is a popular format for storing
+information about features relative to a position on an genetic
+sequence, and comprises a large portion of annotation results from
+this work. These features can be whatever the user desires, as long as
+the feature entry follows the required GFF guidelines. Relative to a
+reference sequence, each GFF entry contains the following
+tab-delimited columns: sequence ID, source, feature type, start
+position, end position, score, strand, phase, and a semi-colon
+delimited list of attributes. GFF files are widely supported accorss
+bioinformatics tools, making them highly versatile while also
+remaining relatively simple in nature but also allowing for storage of
+more complicated items via the attributes column. One significatn
+useage of GFF files is in visualization of features against the
+reference sequence from which they were derived. Most genome viewers
+(or browsers) support GFF files as input, allowing intuitive
+visualization of many features when overlayed on a reference
+sequence. An example of a GFF entry can be seen in
+figure~\ref{fig:gff-example}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/gff-example.png}
+  \caption{An example of GFF entries for a sinlge gene.}
+  \label{fig:gff-example}
 \end{figure}

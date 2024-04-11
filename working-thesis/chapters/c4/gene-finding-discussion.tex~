@@ -1,0 +1,5 @@
+\section{Initial Gene Counts}
+Initial gene counts from Braker2 and Genemark show a similar trend in
+all assemblies included in this analysis. Braker tends to predict
+fewer genes in comparison to GeneMark and RefSeq results except in the
+case of \textit{T. reesei}.
