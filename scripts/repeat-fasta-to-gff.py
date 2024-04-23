@@ -5,7 +5,7 @@ from Bio import SeqIO
 
 def main(args):
     
-    fileTypes = ['imperfect', 'perfect', 'perfect.spacer']
+    fileTypes = ['perfect', 'perfect.spacer']
     
     
     gffEntries = []
@@ -17,7 +17,7 @@ def main(args):
                 splitStr = record.id.split(':')
                 count += 1
                 lineID = (fileType + '.' + str(count))
-                outStr = str("%s\tGRF\tTIR\t%s\t%s\t\t.\t.\t%s;type=%s:match=%s\n" % (splitStr[0], splitStr[1], splitStr[2], lineID, fileType, splitStr[3]))
+                outStr = str("%s\tGRF\tTIR\t%s\t%s\t.\t.\t.\t%s;type=%s:match=%s\n" % (splitStr[0], splitStr[1], splitStr[2], lineID, fileType, splitStr[3]))
                 gffEntries.append(outStr)
 
         print(str(len(gffEntries)))
