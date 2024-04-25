@@ -49,21 +49,12 @@ modification of the parallel option to reduce processing times.
 In order to evaluate the performance of gene finding tools in
 repetitive or low complexity regions in the context of
 \textit{Trichoderma} genomes, we must first identify said regions in
-the genomes considered. To do this, RepeatMasker has been selected as
-a tool to identify repeat regions based on a fungal subset of the Dfam
-database by specifying the fungi species tag to RepeatMasker when
-running the program. The program was configured with options to
-produce several output formats for each genome considered, which will
-allow for more informative downstream analysis of results. All
-commands for repeat masking are located withing the processing
-directory for each strain/genome.
-
-(probably more suited for additional materials at the end?)
-General command for running RepeatMasker:
-
-/datastore/Roots/Connor/masters/software/repeatmasker/RepeatMasker/RepeatMasker
--pa 10 -a -small -species fungi -html -gff -dir ./
-path-to-genome/genome.fasta
+the genomes considered. To do this, the GenericRepeatFinder tool was
+used, which is a \textit{de novo} repeat detection tool
+\cite{10.1104/pp.19.00386}. GenerifRepeatFinder detects three
+different types of repeats, those being MITEs, TDRs and TIRs. Commands
+used for this program follow the example commands provided on the
+GitHub page for the GenericRepeatFinder project.
 
 \subsection{GeneMark-ES}
 
