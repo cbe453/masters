@@ -9,45 +9,47 @@ A level-1 auxiliary file: chapter-4.aux
 The style file: plain.bst
 Database file #1: ./refs/full-bib.bib
 Warning--I didn't find a database entry for "Keller2011"
-You've used 18 entries,
+Warning--I didn't find a database entry for "10.1093/nar/gkac993"
+Warning--I didn't find a database entry for "10.1104/pp.19.00386"
+You've used 17 entries,
             2118 wiz_defined-function locations,
-            635 strings with 8295 characters,
-and the built_in function-call counts, 7449 in all, are:
-= -- 690
-> -- 521
+            630 strings with 7897 characters,
+and the built_in function-call counts, 6447 in all, are:
+= -- 611
+> -- 403
 < -- 0
-+ -- 206
-- -- 188
-* -- 680
-:= -- 1312
-add.period$ -- 54
-call.type$ -- 18
-change.case$ -- 148
++ -- 159
+- -- 142
+* -- 568
+:= -- 1129
+add.period$ -- 51
+call.type$ -- 17
+change.case$ -- 122
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 196
-empty$ -- 453
-format.name$ -- 188
-if$ -- 1434
+cite$ -- 17
+duplicate$ -- 185
+empty$ -- 424
+format.name$ -- 142
+if$ -- 1257
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 18
-newline$ -- 93
-num.names$ -- 36
-pop$ -- 112
+int.to.str$ -- 17
+missing$ -- 17
+newline$ -- 88
+num.names$ -- 34
+pop$ -- 88
 preamble$ -- 1
-purify$ -- 130
+purify$ -- 105
 quote$ -- 0
-skip$ -- 132
+skip$ -- 124
 stack$ -- 0
-substring$ -- 429
-swap$ -- 18
+substring$ -- 393
+swap$ -- 17
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 68
 warning$ -- 0
-while$ -- 64
-width$ -- 20
-write$ -- 200
-(There was 1 warning)
+while$ -- 60
+width$ -- 19
+write$ -- 189
+(There were 3 warnings)

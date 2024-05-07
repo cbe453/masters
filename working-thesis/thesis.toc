@@ -37,7 +37,8 @@
 \contentsline {subsection}{\numberline {3.5.3}Intersection of Gene Calls, smallRNAs and Repetitive Regions}{14}{subsection.3.5.3}
 \contentsline {subsection}{\numberline {3.5.4}Methodology for Indetifying Overlapping Features}{15}{subsection.3.5.4}
 \contentsline {subsection}{\numberline {3.5.5}Shared Gene Content with Yeast}{15}{subsection.3.5.5}
-\contentsline {subsection}{\numberline {3.5.6}Comparative Genomics}{15}{subsection.3.5.6}
+\contentsline {subsection}{\numberline {3.5.6}BUSCO Analysis}{15}{subsection.3.5.6}
+\contentsline {subsection}{\numberline {3.5.7}Comparative Genomics}{16}{subsection.3.5.7}
 \contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Assemblies of DC1 and Tsth20}{17}{section.4.1}
 \contentsline {section}{\numberline {4.2}Initial Gene Finding Results}{17}{section.4.2}

@@ -46,6 +46,14 @@ Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
   algorithm}.
 \newblock {\em Nucleic Acids Research}, 33(20):6494--6506, 2005.
 
+\bibitem{10.1093/molbev/msab199}
+Mos{\`{e}} Manni, Matthew~R Berkeley, Mathieu Seppey, Felipe~A Sim{\~{a}}o, and
+  Evgeny~M Zdobnov.
+\newblock {BUSCO Update: Novel and Streamlined Workflows along with Broader and
+  Deeper Phylogenetic Coverage for Scoring of Eukaryotic, Prokaryotic, and
+  Viral Genomes}.
+\newblock {\em Molecular Biology and Evolution}, 38(10):4647--4654, 2021.
+
 \bibitem{Marx2023}
 Vivien Marx.
 \newblock {Method of the year: long-read sequencing}.
@@ -55,16 +63,6 @@ Vivien Marx.
 Niranjan Nagarajan and Mihai Pop.
 \newblock {Sequence assembly demystified}.
 \newblock {\em Nature Reviews Genetics}, 14(3):157--167, 2013.
-
-\bibitem{10.1093/nar/gkac993}
-Typhaine Paysan-Lafosse, Matthias Blum, Sara Chuguransky, Tiago Grego,
-  Beatriz~L{\'{a}}zaro Pinto, Gustavo~A Salazar, Maxwell~L Bileschi, Peer Bork,
-  Alan Bridge, Lucy Colwell, Julian Gough, Daniel~H Haft, Ivica Letuni{\'{c}},
-  Aron Marchler-Bauer, Huaiyu Mi, Darren~A Natale, Christine~A Orengo, Arun~P
-  Pandurangan, Catherine Rivoire, Christian J~A Sigrist, Ian Sillitoe, Narmada
-  Thanki, Paul~D Thomas, Silvio C~E Tosatto, Cathy~H Wu, and Alex Bateman.
-\newblock {InterPro in 2022}.
-\newblock {\em Nucleic Acids Research}, 51(D1):D418--D427, 2022.
 
 \bibitem{Plohl2014}
 Miroslav Plohl, Nevenka Me{\v{s}}trovi{\'{c}}, and Brankica Mravinac.
@@ -78,12 +76,6 @@ Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
   combination on the Arabidopsis thaliana holobiont: a metabolomics and
   metabarcoding approach}.
 \newblock {\em Frontiers in Plant Science}, 14, 2023.
-
-\bibitem{10.1104/pp.19.00386}
-Jieming Shi and Chun Liang.
-\newblock {Generic Repeat Finder: A High-Sensitivity Tool for Genome-Wide De
-  Novo Repeat Detection}.
-\newblock {\em Plant Physiology}, 180(4):1803--1815, 2019.
 
 \bibitem{Slotkin2018}
 R~Keith Slotkin.

@@ -135,6 +135,24 @@ coverage, percent nucelotide identity, E-score, etc.). Other tools for
 evaluation will certainly be considered, although I will need to look
 into this process further.
 
+\subsection{BUSCO Analysis}
+Another method for assessing the completeness of a set of predicted
+genes is Benchmarking Universal Single-Copy Orthologue (BUSCO)
+analysis\cite{10.1093/molbev/msab199}. BUSCO analysis is similar to
+analysis of overlapping or shared gene content with a close relative
+in that we are comparing the predicted gene sets to an existing
+standard or reference. With BUSCO analysis, the reference set has a
+far more strict definition. The datasets used for BUSCO analysis are
+based on single-copy orthologs generally found in an genome of
+interest. What this means is that BUSCO searches for single-copy genes
+that should be present in an organism based on the database selected
+for analysis. As an example in fungi, if one were interested in
+assessing the completeness of their annotated genes in a similarly
+related fungi, there should be a set, or subset, of single-copy genes
+present in the new annotation that are expected to be present after
+evolutionary divergence(...). This can be thought of as similar to a
+'core' gene set.
+
 \subsection{Comparative Genomics}
 
 With the data produced by this research, it is possible to perform som
