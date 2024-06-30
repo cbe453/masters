@@ -9,5 +9,5 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Plots showing the distribution of GC content in Illumina sequences.\relax }}{18}{figure.caption.15}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Plots showing the frequency of GC values calculated from sliding windows for each assembly.\relax }}{19}{figure.caption.16}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Shows the counts of genes and mRNAs found by each gene finding tool for each genome assembly considered.\relax }}{20}{figure.caption.18}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Running sums of CDS lengths proportional to total CDS length for each gene finding tool and assembly.\relax }}{25}{figure.caption.21}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Running sums of CDS lengths proportional to total CDS length for each gene finding tool and assembly.\relax }}{26}{figure.caption.21}
 \addvspace {10\p@ }

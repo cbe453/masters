@@ -36,8 +36,8 @@
 \contentsline {subsection}{\numberline {3.5.2}Distribution of Gene Lengths}{14}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Intersection of Gene Calls, smallRNAs and Repetitive Regions}{14}{subsection.3.5.3}
 \contentsline {subsection}{\numberline {3.5.4}Methodology for Indetifying Overlapping Features}{15}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Shared Gene Content with Yeast}{15}{subsection.3.5.5}
-\contentsline {subsection}{\numberline {3.5.6}BUSCO Analysis}{15}{subsection.3.5.6}
+\contentsline {subsection}{\numberline {3.5.5}Shared Gene Content with Closely Related Organisms}{15}{subsection.3.5.5}
+\contentsline {subsection}{\numberline {3.5.6}BUSCO Analysis}{16}{subsection.3.5.6}
 \contentsline {subsection}{\numberline {3.5.7}Comparative Genomics}{16}{subsection.3.5.7}
 \contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Assemblies of DC1 and Tsth20}{17}{section.4.1}
@@ -45,8 +45,9 @@
 \contentsline {section}{\numberline {4.3}Dsitribution of Predicted Gene Lengths}{20}{section.4.3}
 \contentsline {section}{\numberline {4.4}Region Identification}{21}{section.4.4}
 \contentsline {section}{\numberline {4.5}Genes in Regions of Anomalous GC Content}{21}{section.4.5}
-\contentsline {chapter}{\numberline {5}Discussion}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Assemblies of DC1 and Tsth20}{26}{section.5.1}
-\contentsline {section}{\numberline {5.2}Initial Gene Counts}{26}{section.5.2}
-\contentsline {section}{\numberline {5.3}Conclusions}{28}{section.5.3}
-\contentsline {chapter}{References}{29}{section*.24}
+\contentsline {section}{\numberline {4.6}BUSCO Results}{23}{section.4.6}
+\contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Assemblies of DC1 and Tsth20}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Initial Gene Counts}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}Conclusions}{29}{section.5.3}
+\contentsline {chapter}{References}{30}{section*.25}

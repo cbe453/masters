@@ -120,20 +120,43 @@ happening. This implementation requires further processing of
 identified regions late on the process, simplifying the all to all
 comparison that would occurr if all features were considered at once.
 
-\subsection{Shared Gene Content with Yeast}
+\subsection{Shared Gene Content with Closely Related Organisms}
 
 While considering novel gene calls can be useful, comparing those
 calls to a well-studied close relative can provide a rudimentary
-validation of the calls as a ground truth. In this case, a comparison
-to Yeast will be made. The agreed upon number for successful
-gene-finding as compared to Yeast is roughly 80-85 percent of gene
-content. This will confirm that at least most of a closely related
-fungal genome's content is predicted and shared by the gene calls for
+validation of the calls as a ground truth. This process will confirm
+that at least most of a closely related fungal genome's coding
+sequences are predicted and shared by the gene calls for
 \textit{Trichoderma}. Results for this processing can be produced with
 a simple BLAST search and apropriate cutoff values (i.e. query
-coverage, percent nucelotide identity, E-score, etc.). Other tools for
-evaluation will certainly be considered, although I will need to look
-into this process further.
+coverage, percent identity, E-score, etc.). While running BLAST is a
+simple process, the selection of a closely related organism is more
+difficult. One initial choice would be to work with
+\textit{Saccharomyces cerevisiae}, or bakers yeast, as it is extremely
+well studied and would be considered a model organism, similar to
+\textit{Arabidopsis} and \textit{Mus musculus}. However,
+\textit{Saccharomyces cerevisiae} diverged evolutionarily millions of
+years ago, which may make it a poor candidate for a comparative
+analysis. The second candidate considered for comparison is
+\textit{Fusarium avenaceum}, as it is also well studied an more
+closely related to \textit{Trichoderma} than yeast, and has a genome
+similar in size to that of \textit{Trichoderma} species, at roughly
+40Mb. Finally, comparison of assemblies and predicted genes to another
+\textit{Trichoderma} strain is a reasonable approach. In this case,
+\textit{Trichoerma atroviride} was selected as it is not included in
+the species used in the gene prediction portion of this analysis. From
+these assemblies, the RefSeq proteins (queries) from NCBI will be used
+in a tblastn search against each genome sequence from DC1, Tsth20,
+\textit{T.reesei}, \textit{T. harzianum}, and \textit{T. virens}
+(subjects). Resulting BLAST hits will then be filtered based on
+suitable alignment coverage and identity, which will be determined by
+the reference sequence being considered. Total number of BLAST hits
+reported for each organism will provde information about completeness
+of assemblies and overall coverage of the gene/coding sequence space
+in the query sequences (need to be clear with language used for blast
+subjects and query). In addition, BLAST hits will be analysed with the
+region identification approach to identify coverage of protein and coding
+sequences in relation to gene predictions generated previously.
 
 \subsection{BUSCO Analysis}
 Another method for assessing the completeness of a set of predicted
@@ -151,7 +174,12 @@ assessing the completeness of their annotated genes in a similarly
 related fungi, there should be a set, or subset, of single-copy genes
 present in the new annotation that are expected to be present after
 evolutionary divergence(...). This can be thought of as similar to a
-'core' gene set.
+'core' gene set. Results from BUSCO analysis are typically reported in
+a percentage of the gene set included in the BUSCO
+dataset. Percentages of single and duplicated hits are reported as
+well. While a high reported coverage of the BUSCO dataset is
+considered good, it is not fully indicative of excellent gene finding
+performance
 
 \subsection{Comparative Genomics}
 
