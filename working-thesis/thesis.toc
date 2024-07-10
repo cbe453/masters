@@ -49,5 +49,6 @@
 \contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}Assemblies of DC1 and Tsth20}{27}{section.5.1}
 \contentsline {section}{\numberline {5.2}Initial Gene Counts}{27}{section.5.2}
-\contentsline {section}{\numberline {5.3}Conclusions}{29}{section.5.3}
+\contentsline {section}{\numberline {5.3}BUSCO Analysis}{28}{section.5.3}
+\contentsline {section}{\numberline {5.4}Conclusions}{29}{section.5.4}
 \contentsline {chapter}{References}{30}{section*.25}

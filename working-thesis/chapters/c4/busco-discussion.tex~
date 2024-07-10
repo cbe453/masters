@@ -1,0 +1,15 @@
+\section{BUSCO Analysis}
+
+The results from BUSCO analysis of the gene sets produced by each
+prediction method prove promising. With all gene sets being 99.2\%
+complete or higher based on the fungal dataset provided to BUSCO. This
+higher number indicates that these gene finding tools capture nearly
+completely the set of evolutionarily conserved single-copy orthologs
+pre-defined by BUSCO curators. In the case of the fungal dataset,
+there are 758 genes considered during analysis.
+
+The most glaring observation from this analysis is the duplication
+level found in the gene sets produced by Braker in comparison to the
+GeneMark and RefSeq datasets. The Braker gene sets show a single-copy
+match for roughly 80-85\% of the total gene call set with duplicates
+making up the other 15-20\% of the set. 

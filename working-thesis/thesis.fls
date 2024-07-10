@@ -216,6 +216,8 @@ INPUT chapters/c4/assembly-discussion.tex
 INPUT chapters/c4/assembly-discussion.tex
 INPUT chapters/c4/gene-finding-discussion.tex
 INPUT chapters/c4/gene-finding-discussion.tex
+INPUT chapters/c4/busco-discussion.tex
+INPUT chapters/c4/busco-discussion.tex
 INPUT thesis.bbl
 INPUT thesis.bbl
 INPUT thesis.aux

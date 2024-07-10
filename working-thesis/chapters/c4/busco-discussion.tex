@@ -1,0 +1,31 @@
+\section{BUSCO Analysis}
+
+The results from BUSCO analysis of the gene sets produced by each
+prediction method prove promising. With all gene sets being 99.2\%
+complete or higher based on the fungal dataset provided to BUSCO. This
+higher number indicates that these gene finding tools capture nearly
+completely the set of evolutionarily conserved single-copy orthologs
+pre-defined by BUSCO curators. In the case of the fungal dataset,
+there are 758 genes considered during analysis.
+
+The most glaring observation from this analysis is the duplication
+level found in the gene sets produced by Braker2 in comparison to the
+GeneMark and RefSeq datasets. The Braker gene sets show a single-copy
+match for roughly 80-85\% of the total gene call set with duplicates
+making up the other 15-20\% of the set. The likliest reason for this
+difference is the presence of isoforms in gene sets produced by
+Braker. As shown in figure \ref{fig:genecounts}, Braker2 does produce
+isoforms in it's output, which would be identified as duplicates in
+the BUSCO process. However, the number of isoforms predicted per gene
+does not make up 20\% of the total set of gene calls. It is possible
+that the BUSCO dataset contains a large fraction of the Braker2 gene
+calls with isoforms, but that is unlikely and warrants further
+investigation into the genes matching the BUSCO dataset.  Another
+possible explanation is that Braker2 is predicting genes that are
+actually isoforms as separate genes. BUSCO also makes note of isoforms
+of a gene being the cause of high number of duplicates, and recommends
+users remove isoforms prior to running BUSCO, although that step was
+not performed for this work.
+
+
+
