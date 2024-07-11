@@ -205,10 +205,12 @@ INPUT ./figures/t-harzianum-cumulative-gene-lengths.pdf
 INPUT figures/t-virens-cumulative-gene-lengths.pdf
 INPUT ./figures/t-virens-cumulative-gene-lengths.pdf
 INPUT ./figures/t-virens-cumulative-gene-lengths.pdf
-INPUT chapters/c3/regions.tex
-INPUT chapters/c3/regions.tex
+INPUT chapters/c3/blast-results.tex
+INPUT chapters/c3/blast-results.tex
 INPUT chapters/c3/busco-results.tex
 INPUT chapters/c3/busco-results.tex
+INPUT chapters/c3/regions.tex
+INPUT chapters/c3/regions.tex
 OUTPUT chapter-4.aux
 INPUT chapter-4.tex
 INPUT chapter-4.tex

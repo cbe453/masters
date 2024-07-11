@@ -43,12 +43,13 @@
 \contentsline {section}{\numberline {4.1}Assemblies of DC1 and Tsth20}{17}{section.4.1}
 \contentsline {section}{\numberline {4.2}Initial Gene Finding Results}{17}{section.4.2}
 \contentsline {section}{\numberline {4.3}Dsitribution of Predicted Gene Lengths}{20}{section.4.3}
-\contentsline {section}{\numberline {4.4}Region Identification}{21}{section.4.4}
-\contentsline {section}{\numberline {4.5}Genes in Regions of Anomalous GC Content}{21}{section.4.5}
-\contentsline {section}{\numberline {4.6}BUSCO Results}{23}{section.4.6}
-\contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Assemblies of DC1 and Tsth20}{27}{section.5.1}
-\contentsline {section}{\numberline {5.2}Initial Gene Counts}{27}{section.5.2}
-\contentsline {section}{\numberline {5.3}BUSCO Analysis}{28}{section.5.3}
-\contentsline {section}{\numberline {5.4}Conclusions}{29}{section.5.4}
-\contentsline {chapter}{References}{30}{section*.25}
+\contentsline {section}{\numberline {4.4}BLAST Results}{21}{section.4.4}
+\contentsline {section}{\numberline {4.5}BUSCO Results}{21}{section.4.5}
+\contentsline {section}{\numberline {4.6}Region Identification}{21}{section.4.6}
+\contentsline {section}{\numberline {4.7}Genes in Regions of Anomalous GC Content}{24}{section.4.7}
+\contentsline {chapter}{\numberline {5}Discussion}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Assemblies of DC1 and Tsth20}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Initial Gene Counts}{28}{section.5.2}
+\contentsline {section}{\numberline {5.3}BUSCO Analysis}{29}{section.5.3}
+\contentsline {section}{\numberline {5.4}Conclusions}{30}{section.5.4}
+\contentsline {chapter}{References}{31}{section*.26}
