@@ -1,47 +1,42 @@
 \section{Region Identification}
 
-Based on the methodology described earlier, we have identified
-sections of contigs with one or more overlapping predicted sequences
-(features). The result of this processing is a GFF formatted file with
-each entry containing information about a region on a specific
-contig. Also contained in each entry, is a list of all features
-included in that region with start/stop position and strand, the tools
-used to predict the features, and a count of how many prediction tools
-that were included in said region. Initial analysis of the output is
-discussed in this section.
-
-With our results, the first interesting area to look at is simply the
-total number of regions identified for any given assembly as well as
-number of regions that each tool was a member(weird wording) of. In
-figure~\ref{regioncounts}, we see that Braker2 deviates from both the
-RefSeq and GeneMark predictions greatly, except in the case of
-\textit{T.reesei}. As speculated earlier, this may be due to the
-training dataset supplied to Braker2 as it happens to be present in a
-similar number of regions when compared to RefSeq and GeneMark in
-\textit{T. reesei}. In general, it appears that the RefSeq predictions
-are present in more regions than both Braker2 and GeneMark. 
+The region identification process begins with identification of
+regions sharing gene calls from each tool. For this project, we have
+classified regions as complete, partial or singleton. A complete
+region is a set of overlaps which contains a feature from each tool
+considered in the region finding process. A partial region is a set of
+overlaps which includes more than one but not all tools considered. A
+singleton is a region in which a feature from only one tool is
+present. Table \ref{table:regioncounts} displays the results from the
+region finding process when applied to only the features of type
+'gene' predicted by each tool.
 
 \begin{table}
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|c|c|}
       \hline
-      Assembly & Regions (total) & RefSeq & Braker2 & GeneMark \\ \hline
-      DC1 & 11268 & NA & 8485 & 11265 \\ \hline
-      Tsth20 & 12285 & NA & 8747 & 12279 \\ \hline
-      \textit{T. harzianum} & 13377 & 13122 & 8051 & 11529 \\ \hline
-      \textit{T. virens} & 12045 & 11864 & 7554 & 11413 \\ \hline
-      \textit{T. reesei} & 9818 & 8836 & 9202 & 8897\\ \hline
+      Assembly & Regions (total) & Complete Agreement & Partial Agreement & Singletons\\ \hline
+      DC1 & 11269 & 8483 & N/A & 2786  \\ \hline
+      Tsth20 & 12272 & 8737 & N/A & 3535  \\ \hline
+      \textit{T. reesei} & 9823 & 8282 & 557 & 984  \\ \hline
+      \textit{T. harzianum} & 13388 & 8009 & 3314 & 2065  \\ \hline
+      \textit{T. virens} & 12045 & 7537 & 3715 & 793  \\ \hline
     \end{tabular}
   \end{center}
   \caption{Counts of regions identified in total and total number of
-    regions where a prediction from each individual tool was found.}
-  \label{regioncounts}
+    regions where a prediction from each individual tool was
+    found. Partial agreement values for DC1 and Tsth20 are set as N/A
+    as there were only two tools in consideration.}
+  \label{table:regioncounts}
 \end{table}
 
-Figure~\ref{regioncounts} demonstrates that the composition of regions
-can differ significantly based on the tools used. To illustrate
-agreement of tools in regards to identified regions, Venn diagrams
-were generated showing agreement of predictions in a region for each tool.
+The results of the region finding process when applied to gene calls
+show a mix of agreement and disagreement between the tools considered
+here. While regions of complete agreement make up the majority of
+regions in all assemblies, there are more partial agreements and
+singletons than one would expect under the assumption that gene
+finding tools are equal. Both DC1 and Tsth20 have a large number of
+singleton regions present in comparison to the RefSeq datasets.
 
 
 \section{Genes in Regions of Anomalous GC Content}
