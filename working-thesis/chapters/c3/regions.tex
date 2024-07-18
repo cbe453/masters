@@ -49,7 +49,25 @@ regions of anomalous nucleotide composition are less likely to contain
 coding sequences than typical genomic regions, leading us to the
 problem of first identifying predicted genes in standard and anomalous
 regions. After identifying low GC segments within each assembly, we
-can include them in the region identification method. From this
+can include them in the region identification method. Counts from
+region identification with the inclusion of anomolous GC content are
+presented in table \ref{table:gc-regions}.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+      Assembly & Total Regions & Complete Agreement & Partial Agreement & Singletons \\ \hline
+      DC1 & 11856 & 10 & N/A & 20  \\ \hline
+      Tsth20 & 12507 & 2 & N/A & 9  \\ \hline
+      \textit{T. reesei} & 10428 & 25 & 19 & 115  \\ \hline
+      \textit{T. harzianum} & 14622 & 26 & 45 & 548  \\ \hline
+      \textit{T. virens} & 12121 & 8 & 11 & 17  \\ \hline
+    \end{tabular}
+  \end{center}
+  \label{table:gc-regions}
+\end{table}
+
+From this
 result, we classified predicted genes into two classes; genes in
 regions with normal GC content, and genes in regions with anomalous
 content. In this case, anomalous content is defined as a window of

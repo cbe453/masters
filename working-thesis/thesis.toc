@@ -52,4 +52,4 @@
 \contentsline {section}{\numberline {5.2}Initial Gene Counts}{28}{section.5.2}
 \contentsline {section}{\numberline {5.3}BUSCO Analysis}{29}{section.5.3}
 \contentsline {section}{\numberline {5.4}Conclusions}{30}{section.5.4}
-\contentsline {chapter}{References}{31}{section*.26}
+\contentsline {chapter}{References}{31}{section*.27}
