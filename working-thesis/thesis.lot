@@ -6,5 +6,5 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces tBLASTn hits from reference protein sequences to selected assemblies of intereset. Hits are reported if the alignment length is greater than 30\% of the reference protein length and if 30\% of the aligned length have identical matches.\relax }}{21}{table.caption.22}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Results from BUSCO using the fungal analysis option organized by gene finding tool.\relax }}{23}{table.caption.23}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Counts of regions identified in total and total number of regions where a prediction from each individual tool was found. Partial agreement values for DC1 and Tsth20 are set as N/A as there were only two tools in consideration.\relax }}{24}{table.caption.24}
-\contentsline {table}{\numberline {4.5}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{25}{table.caption.26}
+\contentsline {table}{\numberline {4.5}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{25}{table.caption.27}
 \addvspace {10\p@ }

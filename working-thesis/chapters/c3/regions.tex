@@ -38,6 +38,34 @@ singletons than one would expect under the assumption that gene
 finding tools are equal. Both DC1 and Tsth20 have a large number of
 singleton regions present in comparison to the RefSeq datasets.
 
+The composition of gene calls from partial and singleton regions will
+help provide an understanding of each tools performance when looking
+for unqiue gene predictions. Table \ref{table:uniquegenes} displays
+counts of genes for each gene finding tool that are 'unique', or are
+not shared in a complete region.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      Assembly & Braker Partial & Braker Single & GeneMark Partial & GeneMark Single & RefSeq Partial & RefSeq Single \\ \hline
+      DC1 & N/A & 3 & N/A & 2783 & N/A & N/A \\ \hline
+      Tsth20 & N/A & 6 & N/A & 3529 & N/A & N/A \\ \hline
+      \textit{T. reesei} & 387 & 533 & 423 & 175 & 304 & 276 \\ \hline
+      \textit{T. harzianum} & 38 & 2 & 3309 & 209 & 3281 & 1854 \\ \hline
+      \textit{T. virens} & 30 & 0 & 3700 & 162 & 3700 & 631 \\ \hline
+    \end{tabular}
+  \end{center}
+  \label{table:uniquegenes}
+\end{table}
+
+From table \ref{table:uniquegenes}, we can see that Braker's ability
+to predict unique or semi-unique genes is weaker than that of GeneMark
+and RefSeq in all assemblies except in the case
+\textit{T. reesei}. GeneMark predicts significantly more unique genes
+than Braker for the assemblies of DC1 and Tsth20 and a similar number
+of semi-unique and unique genes as RefSeq except in the case of
+\textit{T. harzianum} where RefSeq predicts far more unique genes.
 
 \section{Genes in Regions of Anomalous GC Content}
 
@@ -67,12 +95,22 @@ presented in table \ref{table:gc-regions}.
   \label{table:gc-regions}
 \end{table}
 
-From this
-result, we classified predicted genes into two classes; genes in
-regions with normal GC content, and genes in regions with anomalous
-content. In this case, anomalous content is defined as a window of
-genomic sequence containing a percent GC composition of 28\% or
-lower. This number was chosen based on the plots of GC content
+To better understand the performance of each tool in identifying genes
+in repetitive sequences, we will investigate the composition of the
+partial and singleton regions. Table \ref{table:gc-tools} shows the
+the number of genes identified by each tool in those regions.
+
+%\begin{table}
+%  \begin{center}
+
+%  \end{center}
+%\end{table}
+
+From this result, we classified predicted genes into two classes;
+genes in regions with normal GC content, and genes in regions with
+anomalous content. In this case, anomalous content is defined as a
+window of genomic sequence containing a percent GC composition of 28\%
+or lower. This number was chosen based on the plots of GC content
 presented in the assembly section of the results. After classifying
 predicted genes, two-sided binomial tests were performed with the null
 hypothesis being that predicted genes are distributed uniformly

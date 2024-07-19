@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 JUL 2024 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 JUL 2024 21:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,16 +647,45 @@ input line 81.
 rs/c3/regions.tex [21] [22 <./figures/dc1-cumulative-gene-lengths.pdf> <./figur
 es/tsth20-cumulative-gene-lengths.pdf>] [23]
 
-Package caption Warning: \label without proper reference on input line 67.
+Package caption Warning: \label without proper reference on input line 59.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `table:uniquegenes' on page 24 undefined on input line
+ 43.
+
+
+Overfull \hbox (73.91403pt too wide) in paragraph at lines 49--58
+ [] 
+ []
+
+
+Package caption Warning: \label without proper reference on input line 59.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `table:uniquegenes' on page 24 undefined on input line
+ 62.
+
+
+Package caption Warning: \label without proper reference on input line 95.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `table:gc-regions' on page 24 undefined on input line 
-54.
+82.
 
-[24])) [25] [26 <./figures/t-reesei-cumulative-gene-lengths.pdf> <./figures/t-h
-arzianum-cumulative-gene-lengths.pdf>] [27 <./figures/t-virens-cumulative-gene-
-lengths.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+
+LaTeX Warning: Reference `table:gc-tools' on page 25 undefined on input line 10
+0.
+
+)) [25] [26 <./figures/t-reesei-cumulative-gene-lengths.pdf> <./figures/t-harzi
+anum-cumulative-gene-lengths.pdf>] [27 <./figures/t-virens-cumulative-gene-leng
+ths.pdf>]
 \openout2 = `chapter-4.aux'.
 
  (./chapter-4.tex
@@ -681,7 +710,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 405CDBAA01CDC8393796C51D5052A8B3;3697.
+(rerunfilecheck)             Checksum: 4AD00FBA8F4F0E551941C776EFBF5C5E;3697.
 
 
 LaTeX Warning: There were undefined references.
@@ -689,10 +718,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 7988 strings out of 492649
- 122998 string characters out of 6129622
- 230601 words of memory out of 5000000
- 11560 multiletter control sequences out of 15000+600000
+ 7991 strings out of 492649
+ 123049 string characters out of 6129622
+ 230691 words of memory out of 5000000
+ 11562 multiletter control sequences out of 15000+600000
  8325 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,41p,930b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -709,10 +738,10 @@ l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (40 pages, 888620 bytes).
+Output written on thesis.pdf (40 pages, 890422 bytes).
 PDF statistics:
- 889 PDF objects out of 1000 (max. 8388607)
- 607 compressed objects within 7 object streams
- 133 named destinations out of 1000 (max. 500000)
+ 892 PDF objects out of 1000 (max. 8388607)
+ 610 compressed objects within 7 object streams
+ 134 named destinations out of 1000 (max. 500000)
  506 words of extra memory for PDF output out of 10000 (max. 10000000)
 
