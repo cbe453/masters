@@ -22,34 +22,34 @@
 \BOOKMARK [2][-]{subsection.2.12.1}{FASTA}{section.2.12}% 22
 \BOOKMARK [2][-]{subsection.2.12.2}{FASTQ}{section.2.12}% 23
 \BOOKMARK [2][-]{subsection.2.12.3}{General Feature Format - GFF}{section.2.12}% 24
-\BOOKMARK [0][-]{chapter.3}{Data and Methodology}{}% 25
-\BOOKMARK [1][-]{section.3.1}{Methodology}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.2}{Data and Processing Overview}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.2.1}{Data}{section.3.2}% 28
-\BOOKMARK [1][-]{section.3.3}{Assembly and Annotation}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.1}{Repeat Masking}{section.3.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.2}{GeneMark-ES}{section.3.3}% 31
-\BOOKMARK [2][-]{subsection.3.3.3}{Braker2}{section.3.3}% 32
-\BOOKMARK [1][-]{section.3.4}{Identification of Overlapping Features and Regions}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.5}{Analysis of Results}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.5.1}{Basic Analysis}{section.3.5}% 35
-\BOOKMARK [2][-]{subsection.3.5.2}{Distribution of Gene Lengths}{section.3.5}% 36
-\BOOKMARK [2][-]{subsection.3.5.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.3.5}% 37
-\BOOKMARK [2][-]{subsection.3.5.4}{Methodology for Indetifying Overlapping Features}{section.3.5}% 38
-\BOOKMARK [2][-]{subsection.3.5.5}{Shared Gene Content with Closely Related Organisms}{section.3.5}% 39
-\BOOKMARK [2][-]{subsection.3.5.6}{BUSCO Analysis}{section.3.5}% 40
-\BOOKMARK [2][-]{subsection.3.5.7}{Comparative Genomics}{section.3.5}% 41
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 42
-\BOOKMARK [1][-]{section.4.1}{Assemblies of DC1 and Tsth20}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.2}{Initial Gene Finding Results}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.3}{Dsitribution of Predicted Gene Lengths}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.4}{BLAST Results}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.5}{BUSCO Results}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.6}{Region Identification}{chapter.4}% 48
-\BOOKMARK [1][-]{section.4.7}{Genes in Regions of Anomalous GC Content}{chapter.4}% 49
-\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 50
-\BOOKMARK [1][-]{section.5.1}{Assemblies of DC1 and Tsth20}{chapter.5}% 51
-\BOOKMARK [1][-]{section.5.2}{Initial Gene Counts}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.3}{BUSCO Analysis}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.4}{Conclusions}{chapter.5}% 54
-\BOOKMARK [0][-]{section*.28}{References}{}% 55
+\BOOKMARK [0][-]{chapter.3}{Research Questions}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Research Questions}{chapter.3}% 26
+\BOOKMARK [0][-]{chapter.4}{Data and Methodology}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Region Identification}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{Genes in Regions of Anomalous GC Content}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{Methodology}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.4}{Data and Processing Overview}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.4.1}{Data}{section.4.4}% 32
+\BOOKMARK [1][-]{section.4.5}{Assembly and Annotation}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.5.1}{Repeat Masking}{section.4.5}% 34
+\BOOKMARK [2][-]{subsection.4.5.2}{GeneMark-ES}{section.4.5}% 35
+\BOOKMARK [2][-]{subsection.4.5.3}{Braker2}{section.4.5}% 36
+\BOOKMARK [1][-]{section.4.6}{Identification of Overlapping Features and Regions}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.7}{Analysis of Results}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.7.1}{Basic Analysis}{section.4.7}% 39
+\BOOKMARK [2][-]{subsection.4.7.2}{Distribution of Gene Lengths}{section.4.7}% 40
+\BOOKMARK [2][-]{subsection.4.7.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.4.7}% 41
+\BOOKMARK [2][-]{subsection.4.7.4}{Methodology for Indetifying Overlapping Features}{section.4.7}% 42
+\BOOKMARK [2][-]{subsection.4.7.5}{Shared Gene Content with Closely Related Organisms}{section.4.7}% 43
+\BOOKMARK [2][-]{subsection.4.7.6}{BUSCO Analysis}{section.4.7}% 44
+\BOOKMARK [2][-]{subsection.4.7.7}{Comparative Genomics}{section.4.7}% 45
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 46
+\BOOKMARK [1][-]{section.5.1}{Assemblies of DC1 and Tsth20}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.2}{Initial Gene Finding Results}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.3}{Dsitribution of Predicted Gene Lengths}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.4}{BLAST Results}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.5}{BUSCO Results}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.6}{Region Identification}{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.7}{Genes in Regions of Anomalous GC Content}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.8}{Conclusions}{chapter.5}% 54
+\BOOKMARK [0][-]{section*.32}{References}{}% 55

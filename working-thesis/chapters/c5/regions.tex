@@ -1,0 +1,135 @@
+\section{Region Identification}
+
+The region identification process begins with identification of
+regions sharing gene calls from each tool. For this project, we have
+classified regions as complete, partial or singleton. A complete
+region is a set of overlaps which contains a feature from each tool
+considered in the region finding process. A partial region is a set of
+overlaps which includes more than one but not all tools considered. A
+singleton is a region in which a feature from only one tool is
+present. Table \ref{table:regioncounts} displays the results from the
+region finding process when applied to only the features of type
+'gene' predicted by each tool.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      Assembly & Regions (total) & Complete Agreement & Partial Agreement & Singletons\\ \hline
+      DC1 & 11269 & 8483 & N/A & 2786  \\ \hline
+      Tsth20 & 12272 & 8737 & N/A & 3535  \\ \hline
+      \textit{T. reesei} & 9823 & 8282 & 557 & 984  \\ \hline
+      \textit{T. harzianum} & 13388 & 8009 & 3314 & 2065  \\ \hline
+      \textit{T. virens} & 12045 & 7537 & 3715 & 793  \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption{Counts of regions identified in total and total number of
+    regions where a prediction from each individual tool was
+    found. Partial agreement values for DC1 and Tsth20 are set as N/A
+    as there were only two tools in consideration.}
+  \label{table:regioncounts}
+\end{table}
+
+The results of the region finding process when applied to gene calls
+show a mix of agreement and disagreement between the tools considered
+here. While regions of complete agreement make up the majority of
+regions in all assemblies, there are more partial agreements and
+singletons than one would expect under the assumption that gene
+finding tools are equal. Both DC1 and Tsth20 have a large number of
+singleton regions present in comparison to the RefSeq datasets.
+
+The composition of gene calls from partial and singleton regions will
+help provide an understanding of each tools performance when looking
+for unqiue gene predictions. Table \ref{table:uniquegenes} displays
+counts of genes for each gene finding tool that are 'unique', or are
+not shared in a complete region.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      Assembly & Braker Partial & Braker Single & GeneMark Partial & GeneMark Single & RefSeq Partial & RefSeq Single \\ \hline
+      DC1 & N/A & 3 & N/A & 2783 & N/A & N/A \\ \hline
+      Tsth20 & N/A & 6 & N/A & 3529 & N/A & N/A \\ \hline
+      \textit{T. reesei} & 387 & 533 & 423 & 175 & 304 & 276 \\ \hline
+      \textit{T. harzianum} & 38 & 2 & 3309 & 209 & 3281 & 1854 \\ \hline
+      \textit{T. virens} & 30 & 0 & 3700 & 162 & 3700 & 631 \\ \hline
+    \end{tabular}
+  \end{center}
+  \label{table:uniquegenes}
+\end{table}
+
+From table \ref{table:uniquegenes}, we can see that Braker's ability
+to predict unique or semi-unique genes is weaker than that of GeneMark
+and RefSeq in all assemblies except in the case
+\textit{T. reesei}. GeneMark predicts significantly more unique genes
+than Braker for the assemblies of DC1 and Tsth20 and a similar number
+of semi-unique and unique genes as RefSeq except in the case of
+\textit{T. harzianum} where RefSeq predicts far more unique genes.
+
+\section{Genes in Regions of Anomalous GC Content}
+
+Evaluating gene finder performance in regions of anomalous GC content
+is one of the key topics of this research. One simple way to evaluate
+performance is whether or not gene finding tools predict genes
+uniformly throughout a given sequence. Biologically, we know that
+regions of anomalous nucleotide composition are less likely to contain
+coding sequences than typical genomic regions, leading us to the
+problem of first identifying predicted genes in standard and anomalous
+regions. After identifying low GC segments within each assembly, we
+can include them in the region identification method. Counts from
+region identification with the inclusion of anomolous GC content are
+presented in table \ref{table:gc-regions}.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+      Assembly & Total Regions & Complete Agreement & Partial Agreement & Singletons \\ \hline
+      DC1 & 11856 & 10 & N/A & 20  \\ \hline
+      Tsth20 & 12507 & 2 & N/A & 9  \\ \hline
+      \textit{T. reesei} & 10428 & 25 & 19 & 115  \\ \hline
+      \textit{T. harzianum} & 14622 & 26 & 45 & 548  \\ \hline
+      \textit{T. virens} & 12121 & 8 & 11 & 17  \\ \hline
+    \end{tabular}
+  \end{center}
+  \label{table:gc-regions}
+\end{table}
+
+To better understand the performance of each tool in identifying genes
+in repetitive sequences, we will investigate the composition of the
+partial and singleton regions. Table \ref{table:gc-tools} shows the
+the number of genes identified by each tool in those regions.
+
+%\begin{table}
+%  \begin{center}
+
+%  \end{center}
+%\end{table}
+
+From this result, we classified predicted genes into two classes;
+genes in regions with normal GC content, and genes in regions with
+anomalous content. In this case, anomalous content is defined as a
+window of genomic sequence containing a percent GC composition of 28\%
+or lower. This number was chosen based on the plots of GC content
+presented in the assembly section of the results. After classifying
+predicted genes, two-sided binomial tests were performed with the null
+hypothesis being that predicted genes are distributed uniformly
+throughout an assembly. Framed differently, we expect the sum of genes
+predicted in both regular and irregular regions to be proportional to
+the sum of lengths of those regions, respectively. This is not the
+case as demonstrated in table~\ref{table:gc-binomial}.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      Tool & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens} \\ \hline
+      Braker2 & $9.56^-181$ & $1.14^-259$ & $2.68^-96$ & $4.05^-140$ & $1.35^-35$ \\ \hline
+      GeneMark & $5.12^-216$ & $0.0$ & $5.66^-49$ & $5.37^-219$ & $5.31^-35$ \\ \hline
+      RefSeq & N/A & N/A & $1.29^-49$ & $2.44^-205$ & $7.40^-33$ \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption{\textit{p} values produced from a two-sided binomial test
+    for each combination of tool and assembly.}
+  \label{table:gc-binomial}
+\end{table}

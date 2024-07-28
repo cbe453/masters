@@ -1,0 +1,6 @@
+\chapter{Results}
+\input{chapters/c3/assemblies.tex}
+\input{chapters/c3/gene-finding-results}
+\input{chapters/c3/blast-results}
+\input{chapters/c3/busco-results}
+\input{chapters/c3/regions}

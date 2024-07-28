@@ -22,34 +22,34 @@
 \contentsline {subsection}{\numberline {2.12.1}FASTA}{7}{subsection.2.12.1}
 \contentsline {subsection}{\numberline {2.12.2}FASTQ}{8}{subsection.2.12.2}
 \contentsline {subsection}{\numberline {2.12.3}General Feature Format - GFF}{8}{subsection.2.12.3}
-\contentsline {chapter}{\numberline {3}Data and Methodology}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Methodology}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}Data and Processing Overview}{10}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Data}{10}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Assembly and Annotation}{10}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Repeat Masking}{12}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}GeneMark-ES}{12}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Braker2}{12}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Identification of Overlapping Features and Regions}{12}{section.3.4}
-\contentsline {section}{\numberline {3.5}Analysis of Results}{13}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Basic Analysis}{13}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Distribution of Gene Lengths}{14}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Intersection of Gene Calls, smallRNAs and Repetitive Regions}{14}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Methodology for Indetifying Overlapping Features}{15}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Shared Gene Content with Closely Related Organisms}{15}{subsection.3.5.5}
-\contentsline {subsection}{\numberline {3.5.6}BUSCO Analysis}{16}{subsection.3.5.6}
-\contentsline {subsection}{\numberline {3.5.7}Comparative Genomics}{16}{subsection.3.5.7}
-\contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Assemblies of DC1 and Tsth20}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Initial Gene Finding Results}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Dsitribution of Predicted Gene Lengths}{20}{section.4.3}
-\contentsline {section}{\numberline {4.4}BLAST Results}{21}{section.4.4}
-\contentsline {section}{\numberline {4.5}BUSCO Results}{21}{section.4.5}
-\contentsline {section}{\numberline {4.6}Region Identification}{21}{section.4.6}
-\contentsline {section}{\numberline {4.7}Genes in Regions of Anomalous GC Content}{25}{section.4.7}
-\contentsline {chapter}{\numberline {5}Discussion}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Assemblies of DC1 and Tsth20}{28}{section.5.1}
-\contentsline {section}{\numberline {5.2}Initial Gene Counts}{28}{section.5.2}
-\contentsline {section}{\numberline {5.3}BUSCO Analysis}{29}{section.5.3}
-\contentsline {section}{\numberline {5.4}Conclusions}{30}{section.5.4}
-\contentsline {chapter}{References}{31}{section*.28}
+\contentsline {chapter}{\numberline {3}Research Questions}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Research Questions}{10}{section.3.1}
+\contentsline {chapter}{\numberline {4}Data and Methodology}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Region Identification}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}Genes in Regions of Anomalous GC Content}{12}{section.4.2}
+\contentsline {section}{\numberline {4.3}Methodology}{13}{section.4.3}
+\contentsline {section}{\numberline {4.4}Data and Processing Overview}{13}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Data}{13}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Assembly and Annotation}{13}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Repeat Masking}{15}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}GeneMark-ES}{15}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Braker2}{15}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Identification of Overlapping Features and Regions}{16}{section.4.6}
+\contentsline {section}{\numberline {4.7}Analysis of Results}{16}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Basic Analysis}{16}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Distribution of Gene Lengths}{17}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Intersection of Gene Calls, smallRNAs and Repetitive Regions}{17}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}Methodology for Indetifying Overlapping Features}{18}{subsection.4.7.4}
+\contentsline {subsection}{\numberline {4.7.5}Shared Gene Content with Closely Related Organisms}{18}{subsection.4.7.5}
+\contentsline {subsection}{\numberline {4.7.6}BUSCO Analysis}{19}{subsection.4.7.6}
+\contentsline {subsection}{\numberline {4.7.7}Comparative Genomics}{19}{subsection.4.7.7}
+\contentsline {chapter}{\numberline {5}Results}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Assemblies of DC1 and Tsth20}{20}{section.5.1}
+\contentsline {section}{\numberline {5.2}Initial Gene Finding Results}{20}{section.5.2}
+\contentsline {section}{\numberline {5.3}Dsitribution of Predicted Gene Lengths}{23}{section.5.3}
+\contentsline {section}{\numberline {5.4}BLAST Results}{24}{section.5.4}
+\contentsline {section}{\numberline {5.5}BUSCO Results}{24}{section.5.5}
+\contentsline {section}{\numberline {5.6}Region Identification}{24}{section.5.6}
+\contentsline {section}{\numberline {5.7}Genes in Regions of Anomalous GC Content}{28}{section.5.7}
+\contentsline {section}{\numberline {5.8}Conclusions}{31}{section.5.8}
+\contentsline {chapter}{References}{32}{section*.32}
