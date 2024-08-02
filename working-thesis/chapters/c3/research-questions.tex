@@ -1,3 +1,114 @@
 \section{Research Questions}
 
-Hello.
+With an ever-increasing number of gene prediction tools available to
+users, it is important to assess and understand their behaviour and
+performance in the context, particularly in the context of new genome
+assemblies of lesser studied organisms, where a reference prediction
+set may not be available. To assess behaviour and performance in these
+cases, we have defined X problems to profile the selected gene finding
+tools. In addition to applying gene finders to existing assemblies of
+\textit{Trichoderma}, we will also be considering two newly assembled
+\textit{Trichoderma} genomes for which we will be including assembly
+metrics in the results as well.
+
+\subsection{\textit{Trichoderma} Assembly Results}
+
+The main purpose of this research is to evaluate and compare gene
+finding tools in the context of \textit{Trichoderma} assemblies where
+a gold standard set of gene predictions does not exist. While we do
+include genome assemblies from NCBI and their RefSeq annotation, we
+will also be applying gene finding tools to two newly assembled
+\textit{Trichoderma} assemblies to see if observations from reference
+sets extend to the new assemblies. To demonstrate successful
+assemblies of the new strains, we will present general assembly
+metrics typically shown for new assemblies. These metrics include,
+total assembly length, number of contigs, N50, L50, GC content and
+repeat content.
+
+\section{Number of Features Predicted}
+
+One common method for evaluating gene finding tools is by looking at
+the number of features predicted by each tool. The term 'feature' here
+is somewhat ambiguous, referring to many possible categories of
+genomic feature. This makes an obvious point of comparison for
+selected gene finding tools. We will identify the number of features
+predicted by each gene finding tool and perform tests of statistical
+significance to see if different gene finding tools predict different
+numbers of features. This workflow will be applied to several
+different classes of features. To test the hypothesis that tools
+predict the same number of features, a Chi2 goodness of fit test will
+be applied to the following categories of feature with the null
+hypothesis being that gene finding tools predict the same number of
+features.
+
+\subsection{Gene Prediction}
+
+The main feature predicted by gene finding tools is a gene. This class
+of feature on it's own marks the presence of a potential gene along
+with it's start and stop points. Identifying and comparing the number
+of genes predicted by each gene finding tool is a good general metric
+for for predicitive performance with general agreement that more is
+better in most cases.
+
+\subsection{Transcript Prediction}
+
+While genes mark the general presence of a gene or gene product,
+transcripts mark a more detailed structure within a gene. Genes may
+contain more than one transcript, so the ability of a gene finding
+tool to identify multiple transcripts for potential genes can be
+considered a good performance metric to compare between tools.
+
+\subsection{Coding Sequences}
+
+From transcripts, we identify coding sequences. The number of coding
+sequences is another important metric that we can compare between gene
+finding tools.
+
+\subsection{Small RNAs and Non-ribosomal Peptide Synthetases}
+
+In addition to standard genes predicted, we can extend the definition
+of features beyond a standard.... Should this and BLAST/InterProScan
+be in another section?
+
+\section{Lengths of Predicted Genes}
+
+Genome assemblies can contain a wide range of gene lengths. For some
+users, genes of a specific length may be a key point of interest, so
+the ability of a gene prediction tool to capture the broad range of
+possible gene lengths is another important metric for comparison. The
+first statistical tool to be applied is ANOVA (analysis of variance)
+to compare the mean lengths genes predicted by each gene finding tool
+with the null hypothesis being that the mean of predicted gene lengths
+should be the same across all tools considered. In addition to ANOVA,
+pairwise comparisons of the distributions using a Kolmogorov–Smirnov
+test is appropriate. The null hypothesis in this test would be that
+the gene lengths are sample from the same distribution.
+
+\section{Performance in A-typical Genomic Sequence}
+
+One of the inspirations for this research is the unique composition of
+genomic sequence in \textit{Trichoderma}. Results from the assembly
+process show that GC content in \textit{Trichoderma} strains is
+abnormal throughout most assemblies. These regions of assemblies
+present an interesting opportunity to assess gene finding performance
+in regions of anomalous GC content. To do this, a binomial test will
+be used, with the null hypothesis being that the number of genes
+predicted in regions of normal and abnormal GC content should be
+proportional to the length of normal and abnormal GC content regions
+in the assembly. For example, if 30 percent of the genome is comprised
+of anomalous GC content, then we would expect 30 percent of predicted
+genes to be present in those regions. In addition to anomalous GC
+content, this test can be applied to repetitive content in assemblies
+as well.
+
+\section{BUSCO Completeness}
+
+As more and more genomes are assembled for new organisms, a tool was
+developed to evaulate assemblies and subsequent annotations from the
+pserpective of gene orthology. As genomes diverge evolutionarily, it
+is expected that some genes will be conserved. The BUSCO (Benchmarking
+Universal Single-Copy Orthologs) tool and datasets were developed to
+assess completeness of an annotation in comparison to evolutionarily
+conserved genes. The BUSCO method was applied using two BUSCO subsets,
+one generally applicable for fungi, and another targeting an
+evolutionary branch more closely related to \textit{Trichoderma}.
