@@ -24,15 +24,15 @@
 \BOOKMARK [2][-]{subsection.2.12.3}{General Feature Format - GFF}{section.2.12}% 24
 \BOOKMARK [0][-]{chapter.3}{Research Questions}{}% 25
 \BOOKMARK [1][-]{section.3.1}{Research Questions}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.1.1}{Trichoderma Assembly Results}{section.3.1}% 27
-\BOOKMARK [1][-]{section.3.2}{Number of Features Predicted}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.2.1}{Gene Prediction}{section.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.2.2}{Transcript Prediction}{section.3.2}% 30
-\BOOKMARK [2][-]{subsection.3.2.3}{Coding Sequences}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.4}{Small RNAs and Non-ribosomal Peptide Synthetases}{section.3.2}% 32
-\BOOKMARK [1][-]{section.3.3}{Lengths of Predicted Genes}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.4}{Performance in A-typical Genomic Sequence}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.5}{BUSCO Completeness}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.2}{Trichoderma Assembly Results}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{Number of Features Predicted}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.1}{Gene Prediction}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.2}{Transcript Prediction}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.3}{Coding Sequences}{section.3.3}% 31
+\BOOKMARK [1][-]{section.3.4}{Lengths of Predicted Genes}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.5}{Performance in A-typical Genomic Sequence}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.6}{BUSCO Completeness}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.7}{Identifying Regions of Agreement and Disagreement}{chapter.3}% 35
 \BOOKMARK [0][-]{chapter.4}{Data and Methodology}{}% 36
 \BOOKMARK [1][-]{section.4.1}{Region Identification}{chapter.4}% 37
 \BOOKMARK [1][-]{section.4.2}{Genes in Regions of Anomalous GC Content}{chapter.4}% 38

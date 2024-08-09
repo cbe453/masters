@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  1 AUG 2024 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 AUG 2024 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -750,7 +750,7 @@ ux) (./chapter-5.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B00B51F4F855DB9AEBA11178550E6E43;4422.
+(rerunfilecheck)             Checksum: E6DF259D8EE377182BA7C528A92C4BF2;4409.
 
 
 LaTeX Warning: There were undefined references.
@@ -762,8 +762,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
  8011 strings out of 492649
- 123248 string characters out of 6129622
- 230702 words of memory out of 5000000
+ 123230 string characters out of 6129622
+ 230699 words of memory out of 5000000
  11571 multiletter control sequences out of 15000+600000
  8684 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -782,7 +782,7 @@ l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (42 pages, 906774 bytes).
+Output written on thesis.pdf (42 pages, 907627 bytes).
 PDF statistics:
  962 PDF objects out of 1000 (max. 8388607)
  677 compressed objects within 7 object streams

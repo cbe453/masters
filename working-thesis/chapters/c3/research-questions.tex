@@ -11,7 +11,7 @@ tools. In addition to applying gene finders to existing assemblies of
 \textit{Trichoderma} genomes for which we will be including assembly
 metrics in the results as well.
 
-\subsection{\textit{Trichoderma} Assembly Results}
+\section{\textit{Trichoderma} Assembly Results}
 
 The main purpose of this research is to evaluate and compare gene
 finding tools in the context of \textit{Trichoderma} assemblies where
@@ -19,11 +19,16 @@ a gold standard set of gene predictions does not exist. While we do
 include genome assemblies from NCBI and their RefSeq annotation, we
 will also be applying gene finding tools to two newly assembled
 \textit{Trichoderma} assemblies to see if observations from reference
-sets extend to the new assemblies. To demonstrate successful
-assemblies of the new strains, we will present general assembly
-metrics typically shown for new assemblies. These metrics include,
-total assembly length, number of contigs, N50, L50, GC content and
-repeat content.
+sets extend to the new assemblies. Since gene finding tools operate on
+an assembled genomic sequence, it must follow that the results will be
+influenced by the supplied assembly. With that said, before applying
+gene finders to the new assemblies, we should first investigate the
+new assemblies, by generating general assembly metrics for the new
+assemblies to contrast and compare with existing assemblies. These
+metrics include, total assembly length, number of contigs, N50, L50,
+GC content and repeat content. With these assemblies being
+\textit{Trichoderma}, we expect assembly metrics to be similar in
+nature to existing assemblies from NCBI.
 
 \section{Number of Features Predicted}
 
@@ -63,12 +68,6 @@ considered a good performance metric to compare between tools.
 From transcripts, we identify coding sequences. The number of coding
 sequences is another important metric that we can compare between gene
 finding tools.
-
-\subsection{Small RNAs and Non-ribosomal Peptide Synthetases}
-
-In addition to standard genes predicted, we can extend the definition
-of features beyond a standard.... Should this and BLAST/InterProScan
-be in another section?
 
 \section{Lengths of Predicted Genes}
 
@@ -112,3 +111,22 @@ assess completeness of an annotation in comparison to evolutionarily
 conserved genes. The BUSCO method was applied using two BUSCO subsets,
 one generally applicable for fungi, and another targeting an
 evolutionary branch more closely related to \textit{Trichoderma}.
+
+
+\section{Identifying Regions of Agreement and Disagreement}
+
+With predicted genes from several tools available, the question we
+would like to ask is whether or not the gene finders agree with one
+another for any given prediction. To answer this question, we will
+identify 'regions' of overlapping predictions. A region can be defined
+as a start and stop position of a set of individual or overlapping
+features from one or more gene finding tools and external
+sources. With regions identified, we can determine agreement, or more
+importantly, disagreement in predictions between gene finding
+tools. From these results, Venn diagrams will be generated with
+Jaccard index calculated for each combination of gene finding
+tools. The region identification process can also be extended to
+include features identified by other tools, such as BLAST hits to
+validated gene models from other organisms and small RNAs. Chi2
+goodness of fit tests can then be applied to counts of 'validated'
+gene predictions or other features.
