@@ -4,113 +4,67 @@ With an ever-increasing number of gene prediction tools available to
 users, it is important to assess and understand their behaviour and
 performance in the context, particularly in the context of new genome
 assemblies of lesser studied organisms, where a reference prediction
-set may not be available. To assess behaviour and performance in these
-cases, we have defined X problems to profile the selected gene finding
-tools. In addition to applying gene finders to existing assemblies of
-\textit{Trichoderma}, we will also be considering two newly assembled
-\textit{Trichoderma} genomes for which we will be including assembly
-metrics in the results as well.
+set may not be available. The main purpose of this research is to
+evaluate and compare gene finding tools in the context of
+\textit{Trichoderma} assemblies where a gold standard set of gene
+predictions does not exist. To assess behaviour and performance in
+these contexts, we have defined X problems to profile the selected
+gene finding tools. In addition to applying selected gene finding
+tools to novel \textit{Trichoderma} isolates, Tsht20 and DC1, we also
+applied selected gene finding tools to existing \textit{Trichoderma}
+assemblies from the National Center for Biotechnology Information
+(NCBI).
 
 \section{\textit{Trichoderma} Assembly Results}
 
-The main purpose of this research is to evaluate and compare gene
-finding tools in the context of \textit{Trichoderma} assemblies where
-a gold standard set of gene predictions does not exist. While we do
-include genome assemblies from NCBI and their RefSeq annotation, we
-will also be applying gene finding tools to two newly assembled
-\textit{Trichoderma} assemblies to see if observations from reference
-sets extend to the new assemblies. Since gene finding tools operate on
-an assembled genomic sequence, it must follow that the results will be
-influenced by the supplied assembly. With that said, before applying
-gene finders to the new assemblies, we should first investigate the
-new assemblies, by generating general assembly metrics for the new
-assemblies to contrast and compare with existing assemblies. These
-metrics include, total assembly length, number of contigs, N50, L50,
-GC content and repeat content. With these assemblies being individuals
-from \textit{Trichoderma} family, we expect assembly metrics to be
-similar in nature to existing assemblies from NCBI.
+\textbf{How do assemblies of DC1 and Tsth20 compare to existing
+  \textit{Trichoderma} assemblies?} Since gene finding tools operate
+on an assembled genomic sequence, it must follow that the results will
+be influenced by the supplied assembly. With that said, before
+applying gene finders to the new assemblies, we should first
+investigate the new assemblies, by generating general assembly metrics
+for the new assemblies to contrast and compare with existing
+assemblies. These metrics include, total assembly length, number of
+contigs, N50, L50, GC content and repeat content. With these
+assemblies being individuals from \textit{Trichoderma} family, we
+expect assembly metrics to be similar in nature to existing assemblies
+from NCBI.
 
 \section{Number of Features Predicted}
 
-One common method for evaluating gene finding tools is by looking at
-the number of features predicted by each tool. The term 'feature' here
-is somewhat ambiguous, referring to many possible categories of
-genomic feature. This makes an obvious point of comparison for
-selected gene finding tools. We will identify the number of features
-predicted by each gene finding tool and perform tests of statistical
-significance to see if different gene finding tools predict different
-numbers of features. This workflow will be applied to several
-different classes of features. To test the hypothesis that tools
-predict the same number of features, a Chi2 goodness of fit test will
-be applied to the following categories of feature with the null
-hypothesis being that gene finding tools predict the same number of
-features.
-
-\subsection{Gene Prediction}
-
-The main feature predicted by gene finding tools is a gene. This class
-of feature on it's own marks the presence of a potential gene along
-with it's start and stop points. Identifying and comparing the number
-of genes predicted by each gene finding tool is a good general metric
-for for predicitive performance with general agreement that more is
-better in most cases.
-
-\subsection{Transcript Prediction}
-
-While genes mark the general presence of a gene or gene product,
-transcripts mark a more detailed structure within a gene. Genes may
-contain more than one transcript, so the ability of a gene finding
-tool to identify multiple transcripts for potential genes can be
-considered a good performance metric to compare between tools.
-
-\subsection{Coding Sequences}
-
-From transcripts, we identify coding sequences. The number of coding
-sequences is another important metric that we can compare between gene
-finding tools.
+\textbf{Do gene finders predict similar numbers of features in the
+  context of \textit{Trichoderma} genomes?} One common method for
+evaluating gene finding tools is by looking at the number of features
+predicted by each tool. The term 'feature' here is somewhat ambiguous,
+referring to many possible categories of genomic feature. These
+features make an obvious point of comparison for selected gene finding
+tools. For each gene finding tool, we can compare the counts for
+predicted genes, transcripts, and coding sequences.
 
 \section{Lengths of Predicted Genes}
 
 Genome assemblies can contain a wide range of gene lengths. For some
 users, genes of a specific length may be a key point of interest, so
 the ability of a gene prediction tool to capture the broad range of
-possible gene lengths is another important metric for comparison. The
-first statistical tool to be applied is ANOVA (analysis of variance)
-to compare the mean lengths genes predicted by each gene finding tool
-with the null hypothesis being that the mean of predicted gene lengths
-should be the same across all tools considered. In addition to ANOVA,
-pairwise comparisons of the distributions using a Kolmogorov–Smirnov
-test is appropriate. The null hypothesis in this test would be that
-the gene lengths are sample from the same distribution.
+possible gene lengths is another important metric for comparison. Thus
+we ask the question; \textbf{Do gene different finders predict genes
+  of similar lengths in \textit{Trichoderma}?}
 
-\section{Performance in A-typical Genomic Sequence}
+\section{Performance in Regions of Anomalous Sequence Content}
 
 One of the inspirations for this research is the unique composition of
 genomic sequence in \textit{Trichoderma}. Results from the assembly
 process show that GC content in \textit{Trichoderma} strains is
 abnormal throughout most assemblies. These regions of assemblies
 present an interesting opportunity to assess gene finding performance
-in regions of anomalous GC content. To do this, a binomial test will
-be used, with the null hypothesis being that the number of genes
-predicted in regions of normal and abnormal GC content should be
-proportional to the length of normal and abnormal GC content regions
-in the assembly. For example, if 30 percent of the genome is comprised
-of anomalous GC content, then we would expect 30 percent of predicted
-genes to be present in those regions. In addition to anomalous GC
-content, this test can be applied to repetitive content in assemblies
-as well.
+in regions of anomalous GC content. The question follows; \textbf{do
+  gene finders behave differently in regions of anomalous sequence
+  content?}
 
 \section{BUSCO Completeness}
 
-As more and more genomes are assembled for new organisms, a tool was
-developed to evaulate assemblies and subsequent annotations from the
-pserpective of gene orthology. As genomes diverge evolutionarily, it
-is expected that some genes will be conserved. The BUSCO (Benchmarking
-Universal Single-Copy Orthologs) tool and datasets were developed to
-assess completeness of an annotation in comparison to evolutionarily
-conserved genes. The BUSCO method was applied using two BUSCO subsets,
-one generally applicable for fungi, and another targeting an
-evolutionary branch more closely related to \textit{Trichoderma}.
+\textbf{Do gene finders correctly predict conserved single-copy
+  orthologs expected in fungal genomes?}
 
 
 \section{Identifying Regions of Agreement and Disagreement}
@@ -122,12 +76,6 @@ identify 'regions' of overlapping predictions. A region can be defined
 as a start and stop position of a set of individual or overlapping
 features from one or more gene finding tools and external
 sources. With regions identified, we can determine agreement, or more
-importantly, disagreement in predictions between gene finding
-tools. From these results, Venn diagrams will be generated with
-Jaccard index calculated for each combination of gene finding
-tools. The region identification process can also be extended to
-include features identified by other tools, such as BLAST hits to
-validated gene models from other organisms and small RNAs. Chi2
-goodness of fit tests can then be applied to counts of 'validated'
-gene predictions or other features with the same null hypothesis that
-gene finders should predict the same number of features.
+importantly, disagreement in predictions between gene finding tools
+from which we can ask the question; \textbf{do gene finders agree on
+  their predictions?}

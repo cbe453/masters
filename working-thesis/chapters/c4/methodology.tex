@@ -126,3 +126,38 @@ Example command for braker2:
 --TSEBRA\_PATH=/scratch/p2irc/p2irc\_rsmi/cbe453/masters/software/braker2/tsebra/TSEBRA/bin/
 --genome /path/to/sequence --species=TreeseiFungal --fungus
 --useexisting
+
+BUSCO methodology (from research questions)
+The BUSCO method was applied using two BUSCO subsets,
+one generally applicable for fungi, and another targeting an
+evolutionary branch more closely related to \textit{Trichoderma}.
+
+Stats for length analysis (from research questions)
+The first statistical tool to be applied is ANOVA (analysis of
+variance) to compare the mean lengths genes predicted by each gene
+finding tool with the null hypothesis being that the mean of predicted
+gene lengths should be the same across all tools considered. In
+addition to ANOVA, pairwise comparisons of the distributions using a
+Kolmogorov–Smirnov test is appropriate. The null hypothesis in this
+test would be that the gene lengths are sample from the same
+distribution.
+
+Stats for binomial tests (from research questions)
+To do this, a binomial test will be used, with the null hypothesis
+being that the number of genes predicted in regions of normal and
+abnormal GC content should be proportional to the length of normal and
+abnormal GC content regions in the assembly. For example, if 30
+percent of the genome is comprised of anomalous GC content, then we
+would expect 30 percent of predicted genes to be present in those
+regions. In addition to anomalous GC content, this test can be applied
+to repetitive content in assemblies as well.
+
+Stats for regions (from research questions)
+From these results, Venn diagrams will be generated with
+Jaccard index calculated for each combination of gene finding
+tools. The region identification process can also be extended to
+include features identified by other tools, such as BLAST hits to
+validated gene models from other organisms and small RNAs. Chi2
+goodness of fit tests can then be applied to counts of 'validated'
+gene predictions or other features with the same null hypothesis that
+gene finders should predict the same number of features.

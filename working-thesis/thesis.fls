@@ -164,6 +164,7 @@ INPUT chapter-3.tex
 INPUT chapters/c3/research-questions.tex
 INPUT chapters/c3/research-questions.tex
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 OUTPUT chapter-4.aux
 INPUT chapter-4.tex
 INPUT chapter-4.tex
