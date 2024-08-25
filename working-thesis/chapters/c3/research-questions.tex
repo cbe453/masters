@@ -17,18 +17,29 @@ assemblies from the National Center for Biotechnology Information
 
 \section{\textit{Trichoderma} Assembly Results}
 
-\textbf{How do assemblies of DC1 and Tsth20 compare to existing
-  \textit{Trichoderma} assemblies?} Since gene finding tools operate
-on an assembled genomic sequence, it must follow that the results will
-be influenced by the supplied assembly. With that said, before
-applying gene finders to the new assemblies, we should first
-investigate the new assemblies, by generating general assembly metrics
-for the new assemblies to contrast and compare with existing
-assemblies. These metrics include, total assembly length, number of
-contigs, N50, L50, GC content and repeat content. With these
-assemblies being individuals from \textit{Trichoderma} family, we
-expect assembly metrics to be similar in nature to existing assemblies
-from NCBI.
+Since gene finding tools operate on an assembled genomic sequence, it
+must follow that the results will be influenced by the supplied
+assembly. Before applying gene finders to the new assemblies, we
+should first investigate the new assemblies, by generating general
+assembly metrics for the new assemblies to contrast and compare with
+existing assemblies. We ask: \textbf{how do assemblies of DC1 and
+  Tsth20 compare to existing \textit{Trichoderma} assemblies?} With
+these isolates being from the \textit{Trichoderma} family, we expect
+assembly metrics to be similar in nature to existing assemblies from
+NCBI.
+
+\section{Profiling of Gene Finding Tools}
+
+Different gene finding tools may predict different types of features
+associated with gene structures. The question arises: \textbf{which
+  (if any) gene finders predict additional features outside of the
+  standard gene model?} In addition, different gene finding tools
+employ differing programming languages and algorithms which raises
+several questions. \textbf{How are these gene finding tools
+  implemented? Is the software straightforward to install? Are the
+  tools user-friendly? What is the processing time and memory
+  consumption of different gene finding tools in the context of
+  \textit{Trichoderma}?}
 
 \section{Number of Features Predicted}
 
@@ -47,7 +58,7 @@ Genome assemblies can contain a wide range of gene lengths. For some
 users, genes of a specific length may be a key point of interest, so
 the ability of a gene prediction tool to capture the broad range of
 possible gene lengths is another important metric for comparison. Thus
-we ask the question; \textbf{Do gene different finders predict genes
+we ask the question: \textbf{do gene different finders predict genes
   of similar lengths in \textit{Trichoderma}?}
 
 \section{Performance in Regions of Anomalous Sequence Content}
@@ -57,14 +68,17 @@ genomic sequence in \textit{Trichoderma}. Results from the assembly
 process show that GC content in \textit{Trichoderma} strains is
 abnormal throughout most assemblies. These regions of assemblies
 present an interesting opportunity to assess gene finding performance
-in regions of anomalous GC content. The question follows; \textbf{do
+in regions of anomalous GC content. The question follows: \textbf{do
   gene finders behave differently in regions of anomalous sequence
   content?}
 
 \section{BUSCO Completeness}
 
-\textbf{Do gene finders correctly predict conserved single-copy
-  orthologs expected in fungal genomes?}
+The use of existing benchmarks for gene finding performance is useful
+when assessing performance of gene finding tools, particularly in the
+case of genes that should be evolutionarily conserved. \textbf{Do gene
+  finders predict conserved single-copy orthologs expected in fungal
+  genomes?}
 
 
 \section{Identifying Regions of Agreement and Disagreement}
@@ -77,5 +91,24 @@ as a start and stop position of a set of individual or overlapping
 features from one or more gene finding tools and external
 sources. With regions identified, we can determine agreement, or more
 importantly, disagreement in predictions between gene finding tools
-from which we can ask the question; \textbf{do gene finders agree on
-  their predictions?}
+from which we can ask: \textbf{do gene finders agree on their
+  predictions?}
+
+\section{Validation of Predicted Genes by RNAseq Alignment}
+
+**** Placeholder for future discussion. Selection of RNAseq data could
+bias validation process. Should RNAseq data be selected from multiple
+isolates/strains? Should RNAseq data exclude the data used in the
+BRAKER training process?
+
+\section{Identification of a Core \textit{Trichoderma} Gene Set.}
+
+**** I'm putting this here as another placeholder for future
+discussion. Is it valid to say predictions from 2 (or three) sources
+consititues a core gene set? I'd need to figure out a process for this
+as well. Unsure of amount of time it would add.
+
+\section{Selection of a Gene Finding Tool}
+
+With all the results generated, we can provide insight to the
+question: \textbf{which gene finding tool should one choose?}

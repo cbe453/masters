@@ -25,37 +25,41 @@
 \BOOKMARK [0][-]{chapter.3}{Research Questions}{}% 25
 \BOOKMARK [1][-]{section.3.1}{Research Questions}{chapter.3}% 26
 \BOOKMARK [1][-]{section.3.2}{Trichoderma Assembly Results}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.3}{Number of Features Predicted}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.4}{Lengths of Predicted Genes}{chapter.3}% 29
-\BOOKMARK [1][-]{section.3.5}{Performance in Regions of Anomalous Sequence Content}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.6}{BUSCO Completeness}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.7}{Identifying Regions of Agreement and Disagreement}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{Data and Methodology}{}% 33
-\BOOKMARK [1][-]{section.4.1}{Region Identification}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.2}{Genes in Regions of Anomalous GC Content}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.3}{Methodology}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.4}{Data and Processing Overview}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.4.1}{Data}{section.4.4}% 38
-\BOOKMARK [1][-]{section.4.5}{Assembly and Annotation}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.5.1}{Repeat Masking}{section.4.5}% 40
-\BOOKMARK [2][-]{subsection.4.5.2}{GeneMark-ES}{section.4.5}% 41
-\BOOKMARK [2][-]{subsection.4.5.3}{Braker2}{section.4.5}% 42
-\BOOKMARK [1][-]{section.4.6}{Identification of Overlapping Features and Regions}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.7}{Analysis of Results}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.7.1}{Basic Analysis}{section.4.7}% 45
-\BOOKMARK [2][-]{subsection.4.7.2}{Distribution of Gene Lengths}{section.4.7}% 46
-\BOOKMARK [2][-]{subsection.4.7.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.4.7}% 47
-\BOOKMARK [2][-]{subsection.4.7.4}{Methodology for Indetifying Overlapping Features}{section.4.7}% 48
-\BOOKMARK [2][-]{subsection.4.7.5}{Shared Gene Content with Closely Related Organisms}{section.4.7}% 49
-\BOOKMARK [2][-]{subsection.4.7.6}{BUSCO Analysis}{section.4.7}% 50
-\BOOKMARK [2][-]{subsection.4.7.7}{Comparative Genomics}{section.4.7}% 51
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 52
-\BOOKMARK [1][-]{section.5.1}{Assemblies of DC1 and Tsth20}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.2}{Initial Gene Finding Results}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.3}{Dsitribution of Predicted Gene Lengths}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.4}{BLAST Results}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.5}{BUSCO Results}{chapter.5}% 57
-\BOOKMARK [1][-]{section.5.6}{Region Identification}{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.7}{Genes in Regions of Anomalous GC Content}{chapter.5}% 59
-\BOOKMARK [1][-]{section.5.8}{Conclusions}{chapter.5}% 60
-\BOOKMARK [0][-]{section*.32}{References}{}% 61
+\BOOKMARK [1][-]{section.3.3}{Profiling of Gene Finding Tools}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Number of Features Predicted}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{Lengths of Predicted Genes}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.6}{Performance in Regions of Anomalous Sequence Content}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.7}{BUSCO Completeness}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.8}{Identifying Regions of Agreement and Disagreement}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.9}{Validation of Predicted Genes by RNAseq Alignment}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.10}{Identification of a Core Trichoderma Gene Set.}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.11}{Selection of a Gene Finding Tool}{chapter.3}% 36
+\BOOKMARK [0][-]{chapter.4}{Data and Methodology}{}% 37
+\BOOKMARK [1][-]{section.4.1}{Region Identification}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.2}{Genes in Regions of Anomalous GC Content}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.3}{Methodology}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.4}{Data and Processing Overview}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.4.1}{Data}{section.4.4}% 42
+\BOOKMARK [1][-]{section.4.5}{Assembly and Annotation}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.5.1}{Repeat Masking}{section.4.5}% 44
+\BOOKMARK [2][-]{subsection.4.5.2}{GeneMark-ES}{section.4.5}% 45
+\BOOKMARK [2][-]{subsection.4.5.3}{Braker2}{section.4.5}% 46
+\BOOKMARK [1][-]{section.4.6}{Identification of Overlapping Features and Regions}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.7}{Analysis of Results}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.7.1}{Basic Analysis}{section.4.7}% 49
+\BOOKMARK [2][-]{subsection.4.7.2}{Distribution of Gene Lengths}{section.4.7}% 50
+\BOOKMARK [2][-]{subsection.4.7.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.4.7}% 51
+\BOOKMARK [2][-]{subsection.4.7.4}{Methodology for Indetifying Overlapping Features}{section.4.7}% 52
+\BOOKMARK [2][-]{subsection.4.7.5}{Shared Gene Content with Closely Related Organisms}{section.4.7}% 53
+\BOOKMARK [2][-]{subsection.4.7.6}{BUSCO Analysis}{section.4.7}% 54
+\BOOKMARK [2][-]{subsection.4.7.7}{Comparative Genomics}{section.4.7}% 55
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 56
+\BOOKMARK [1][-]{section.5.1}{Assemblies of DC1 and Tsth20}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.2}{Initial Gene Finding Results}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.3}{Dsitribution of Predicted Gene Lengths}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.4}{BLAST Results}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.5}{BUSCO Results}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.6}{Region Identification}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.7}{Genes in Regions of Anomalous GC Content}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.8}{Conclusions}{chapter.5}% 64
+\BOOKMARK [0][-]{section*.32}{References}{}% 65
