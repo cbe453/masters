@@ -82,7 +82,7 @@ case of genes that should be evolutionarily conserved. \textbf{Do gene
   finders predict conserved single-copy orthologs expected in fungal
   genomes?}
 
-\section{Identifying Regions of Agreement and Disagreement}
+\section{Identifying Regions of Agreement and Disagreement} \label{identify-regions}
 
 With predicted genes from several tools available, the question we
 would like to ask is whether or not the gene finders agree with one
@@ -97,23 +97,25 @@ from which we can ask: \textbf{do gene finders agree on their
   there genomic regions where agreement or disagreement are more
   prevalent?}
 
-\section{Validation of Predicted Genes by RNAseq Alignment}
+\section{Validation of Predicted Genes via InterProScan}
 
-**** Placeholder for future discussion. Selection of RNAseq data could
-bias validation process. Should RNAseq data be selected from multiple
-isolates/strains? Should RNAseq data exclude the data used in the
-BRAKER training process?
-
-The availability of public RNAseq data allows for another method for
-validation of gene predictions. The presence (or absence) of aligned
-RNAseq data 
+In an effort to validate, or at least provide supporting evidence for
+any given gene prediction we will apply InterProScan to coding
+sequences predicted by each of the gene finders to identify features
+associated with protein function. Genes will be considered as `valid'
+if the gene's protein sequence contains binding sites, motifs, or
+other fucntional characteristics of proteins. Using the results from
+InterProScan, we ask the question: \textbf{in the context of
+  \textit{Trichoderma}, do proteins predicted by gene finders contain
+  functional signatures?}
 
 \section{Identification of a Core \textit{Trichoderma} Gene Set.}
 
-**** I'm putting this here as another placeholder for future
-discussion. Is it valid to say predictions from 2 (or three) sources
-consititues a core gene set? I'd need to figure out a process for this
-as well. Unsure of amount of time it would add.
+Using results from identification of regions in section
+\ref{identify-regions} we will identify a shared or `consensus' set of
+predictions for each \textit{Trichoderma} assembly. \textbf{Can we
+  identify a set of consensus predictions from gene finding results?
+  What are the properties of the resulting set?}
 
 \section{Selection of a Gene Finding Tool}
 
