@@ -2,13 +2,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Counts of regions identified in total and total number of regions where a prediction from each individual tool was found. Partial agreement values for DC1 and Tsth20 are set as N/A as there were only two tools in consideration.\relax }}{13}{table.caption.14}
-\contentsline {table}{\numberline {4.2}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{15}{table.caption.17}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Counts of regions identified in total and total number of regions where a prediction from each individual tool was found. Partial agreement values for DC1 and Tsth20 are set as N/A as there were only two tools in consideration.\relax }}{13}{table.caption.16}
+\contentsline {table}{\numberline {4.2}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{15}{table.caption.19}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces General assembly metrics produced by QUAST (a genome quality assement tool).\relax }}{25}{table.caption.21}
-\contentsline {table}{\numberline {5.2}{\ignorespaces tBLASTn hits from reference protein sequences to selected assemblies of intereset. Hits are reported if the alignment length is greater than 30\% of the reference protein length and if 30\% of the aligned length have identical matches.\relax }}{27}{table.caption.26}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Results from BUSCO using the fungal analysis option organized by gene finding tool.\relax }}{29}{table.caption.27}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Counts of regions from the region identification process}}{30}{table.caption.28}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Counts of `unique' gene predictions}}{30}{table.caption.29}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Agreement of predictions in anomalous GC regions.}}{31}{table.caption.30}
-\contentsline {table}{\numberline {5.7}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{32}{table.caption.31}
+\contentsline {table}{\numberline {5.1}{\ignorespaces General assembly metrics produced by QUAST (a genome quality assement tool).\relax }}{25}{table.caption.23}
+\contentsline {table}{\numberline {5.2}{\ignorespaces tBLASTn hits from reference protein sequences to selected assemblies of intereset. Hits are reported if the alignment length is greater than 30\% of the reference protein length and if 30\% of the aligned length have identical matches.\relax }}{27}{table.caption.28}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Results from BUSCO using the fungal analysis option organized by gene finding tool.\relax }}{29}{table.caption.29}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Counts of regions from the region identification process}}{30}{table.caption.30}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Counts of `unique' gene predictions}}{30}{table.caption.31}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Agreement of predictions in anomalous GC regions.}}{31}{table.caption.32}
+\contentsline {table}{\numberline {5.7}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{32}{table.caption.33}
