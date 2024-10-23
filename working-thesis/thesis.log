@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 SEP 2024 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 OCT 2024 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -683,7 +683,7 @@ Underfull \vbox (badness 6461) has occurred while \output is active []
  [30]
 
 LaTeX Warning: Reference `table:gc-tools' on page 31 undefined on input line 10
-5.
+6.
 
 )) [31] [32] [33 <./figures/t-reesei-cumulative-gene-lengths.pdf> <./figures/t-
 harzianum-cumulative-gene-lengths.pdf>] [34 <./figures/t-virens-cumulative-gene
@@ -733,9 +733,9 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (45 pages, 917956 bytes).
+Output written on thesis.pdf (45 pages, 920991 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
+ 987 PDF objects out of 1000 (max. 8388607)
  702 compressed objects within 8 object streams
  155 named destinations out of 1000 (max. 500000)
  594 words of extra memory for PDF output out of 10000 (max. 10000000)
