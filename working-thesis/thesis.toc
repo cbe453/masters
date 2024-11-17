@@ -60,7 +60,8 @@
 \contentsline {section}{\numberline {5.3}Distribution of Predicted Gene Lengths}{26}{section.5.3}
 \contentsline {section}{\numberline {5.4}BLAST Results}{27}{section.5.4}
 \contentsline {section}{\numberline {5.5}BUSCO Results}{27}{section.5.5}
-\contentsline {section}{\numberline {5.6}Region Identification}{27}{section.5.6}
+\contentsline {section}{\numberline {5.6}Region Identification}{30}{section.5.6}
 \contentsline {section}{\numberline {5.7}Genes in Regions of Anomalous GC Content}{31}{section.5.7}
-\contentsline {section}{\numberline {5.8}Conclusions}{35}{section.5.8}
-\contentsline {chapter}{References}{36}{section*.34}
+\contentsline {section}{\numberline {5.8}InterProScan as Supporting Evidence for Predicted Genes}{32}{section.5.8}
+\contentsline {section}{\numberline {5.9}Conclusions}{35}{section.5.9}
+\contentsline {chapter}{References}{36}{section*.35}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 OCT 2024 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 NOV 2024 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,6 +355,9 @@ LaTeX Warning: Label `table:gc-regions' multiply defined.
 
 LaTeX Warning: Label `table:gc-binomial' multiply defined.
 
+
+LaTeX Warning: Label `table:regioncounts' multiply defined.
+
 ))
 \openout1 = `thesis.aux'.
 
@@ -536,18 +539,18 @@ LaTeX Warning: Citation `10.1093/nar/gkac993' on page 7 undefined on input line
  293.
 
 [7]
-<figures/fasta-example.png, id=494, 540.0175pt x 84.315pt>
+<figures/fasta-example.png, id=501, 540.0175pt x 84.315pt>
 File: figures/fasta-example.png Graphic file (type png)
 <use figures/fasta-example.png>
 Package pdftex.def Info: figures/fasta-example.png  used on input line 316.
 (pdftex.def)             Requested size: 377.62642pt x 58.96089pt.
-<figures/fastq-example.png, id=497, 580.1675pt x 111.41624pt>
+<figures/fastq-example.png, id=504, 580.1675pt x 111.41624pt>
 File: figures/fastq-example.png Graphic file (type png)
 <use figures/fastq-example.png>
 Package pdftex.def Info: figures/fastq-example.png  used on input line 346.
 (pdftex.def)             Requested size: 377.62642pt x 72.52pt.
  [8 <./figures/fasta-example.png> <./figures/fastq-example.png>]
-<figures/gff-example.png, id=505, 840.13875pt x 103.38625pt>
+<figures/gff-example.png, id=512, 840.13875pt x 103.38625pt>
 File: figures/gff-example.png Graphic file (type png)
 <use figures/gff-example.png>
 Package pdftex.def Info: figures/gff-example.png  used on input line 373.
@@ -581,7 +584,7 @@ LaTeX Warning: Reference `table:gc-tools' on page 14 undefined on input line 10
 0.
 
 [14]) (./chapters/c4/methodology.tex
-<./figures/data-flowchart.pdf, id=541, 1077.02374pt x 688.5725pt>
+<./figures/data-flowchart.pdf, id=548, 1077.02374pt x 688.5725pt>
 File: ./figures/data-flowchart.pdf Graphic file (type pdf)
 <use ./figures/data-flowchart.pdf>
 Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 23.
@@ -597,18 +600,18 @@ e 54.
  (./chapter-5.tex
 Chapter 5.
 (./chapters/c5/assemblies.tex
-<figures/dc1-low-gc-fastqc.png, id=588, 803.0pt x 602.25pt>
+<figures/dc1-low-gc-fastqc.png, id=595, 803.0pt x 602.25pt>
 File: figures/dc1-low-gc-fastqc.png Graphic file (type png)
 <use figures/dc1-low-gc-fastqc.png>
 Package pdftex.def Info: figures/dc1-low-gc-fastqc.png  used on input line 17.
 (pdftex.def)             Requested size: 330.42041pt x 247.81548pt.
-<figures/tsth20-low-gc-fastqc.png, id=589, 803.0pt x 602.25pt>
+<figures/tsth20-low-gc-fastqc.png, id=596, 803.0pt x 602.25pt>
 File: figures/tsth20-low-gc-fastqc.png Graphic file (type png)
 <use figures/tsth20-low-gc-fastqc.png>
 Package pdftex.def Info: figures/tsth20-low-gc-fastqc.png  used on input line 2
 3.
 (pdftex.def)             Requested size: 377.62642pt x 283.22295pt.
-<figures/gc-plot.pdf, id=591, 462.52798pt x 346.89601pt>
+<figures/gc-plot.pdf, id=598, 462.52798pt x 346.89601pt>
 File: figures/gc-plot.pdf Graphic file (type pdf)
 <use figures/gc-plot.pdf>
 Package pdftex.def Info: figures/gc-plot.pdf  used on input line 43.
@@ -620,7 +623,7 @@ Package pdftex.def Info: figures/gc-plot.pdf  used on input line 43.
 ]
 [24 <./figures/dc1-low-gc-fastqc.png (PNG copy)> <./figures/tsth20-low-gc-fastq
 c.png (PNG copy)>] [25 <./figures/gc-plot.pdf>]
-<./figures/nextpolish-gene-finding.png, id=645, 999.735pt x 559.983pt>
+<./figures/nextpolish-gene-finding.png, id=652, 999.735pt x 559.983pt>
 File: ./figures/nextpolish-gene-finding.png Graphic file (type png)
 <use ./figures/nextpolish-gene-finding.png>
 Package pdftex.def Info: ./figures/nextpolish-gene-finding.png  used on input l
@@ -628,66 +631,71 @@ ine 20.
 (pdftex.def)             Requested size: 472.03123pt x 264.39684pt.
 
 
-Package caption Warning: \label without proper reference on input line 86.
+Package caption Warning: \label without proper reference on input line 93.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:cds-lengths' on page 26 undefined on input line 4
-9.
+LaTeX Warning: Reference `fig:cdf-lengths' on page 26 undefined on input line 4
+6.
 
 [26 <./figures/nextpolish-gene-finding.png>]
-<figures/dc1-cumulative-gene-lengths.pdf, id=652, 462.52798pt x 346.89601pt>
-File: figures/dc1-cumulative-gene-lengths.pdf Graphic file (type pdf)
-<use figures/dc1-cumulative-gene-lengths.pdf>
-Package pdftex.def Info: figures/dc1-cumulative-gene-lengths.pdf  used on input
- line 54.
+<figures/dc1-gene-cdf.pdf, id=659, 462.52798pt x 346.89601pt>
+File: figures/dc1-gene-cdf.pdf Graphic file (type pdf)
+<use figures/dc1-gene-cdf.pdf>
+Package pdftex.def Info: figures/dc1-gene-cdf.pdf  used on input line 61.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
-<figures/tsth20-cumulative-gene-lengths.pdf, id=653, 462.52798pt x 346.89601pt>
-
-File: figures/tsth20-cumulative-gene-lengths.pdf Graphic file (type pdf)
-<use figures/tsth20-cumulative-gene-lengths.pdf>
-Package pdftex.def Info: figures/tsth20-cumulative-gene-lengths.pdf  used on in
-put line 59.
+<figures/tsth20-gene-cdf.pdf, id=660, 462.52798pt x 346.89601pt>
+File: figures/tsth20-gene-cdf.pdf Graphic file (type pdf)
+<use figures/tsth20-gene-cdf.pdf>
+Package pdftex.def Info: figures/tsth20-gene-cdf.pdf  used on input line 66.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
-<figures/t-reesei-cumulative-gene-lengths.pdf, id=654, 462.52798pt x 346.89601p
-t>
-File: figures/t-reesei-cumulative-gene-lengths.pdf Graphic file (type pdf)
-<use figures/t-reesei-cumulative-gene-lengths.pdf>
-Package pdftex.def Info: figures/t-reesei-cumulative-gene-lengths.pdf  used on 
-input line 68.
+<figures/t-reesei-gene-cdf.pdf, id=661, 462.52798pt x 346.89601pt>
+File: figures/t-reesei-gene-cdf.pdf Graphic file (type pdf)
+<use figures/t-reesei-gene-cdf.pdf>
+Package pdftex.def Info: figures/t-reesei-gene-cdf.pdf  used on input line 75.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
-<figures/t-harzianum-cumulative-gene-lengths.pdf, id=655, 462.52798pt x 346.896
-01pt>
-File: figures/t-harzianum-cumulative-gene-lengths.pdf Graphic file (type pdf)
-<use figures/t-harzianum-cumulative-gene-lengths.pdf>
-Package pdftex.def Info: figures/t-harzianum-cumulative-gene-lengths.pdf  used 
-on input line 73.
+<figures/t-harzianum-gene-cdf.pdf, id=662, 462.52798pt x 346.89601pt>
+File: figures/t-harzianum-gene-cdf.pdf Graphic file (type pdf)
+<use figures/t-harzianum-gene-cdf.pdf>
+Package pdftex.def Info: figures/t-harzianum-gene-cdf.pdf  used on input line 8
+0.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
-<figures/t-virens-cumulative-gene-lengths.pdf, id=656, 462.52798pt x 346.89601p
-t>
-File: figures/t-virens-cumulative-gene-lengths.pdf Graphic file (type pdf)
-<use figures/t-virens-cumulative-gene-lengths.pdf>
-Package pdftex.def Info: figures/t-virens-cumulative-gene-lengths.pdf  used on 
-input line 82.
+<figures/t-virens-gene-cdf.pdf, id=663, 462.52798pt x 346.89601pt>
+File: figures/t-virens-gene-cdf.pdf Graphic file (type pdf)
+<use figures/t-virens-gene-cdf.pdf>
+Package pdftex.def Info: figures/t-virens-gene-cdf.pdf  used on input line 89.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
 ) (./chapters/c5/blast-results.tex) (./chapters/c5/busco-results.tex) (./chapte
-rs/c5/regions.tex [27] [28 <./figures/dc1-cumulative-gene-lengths.pdf> <./figur
-es/tsth20-cumulative-gene-lengths.pdf>] [29]
+rs/c5/regions.tex
+Underfull \vbox (badness 1331) has occurred while \output is active []
+
+ [27]
+[28 <./figures/dc1-gene-cdf.pdf> <./figures/tsth20-gene-cdf.pdf>] [29]
 Overfull \hbox (73.91403pt too wide) in paragraph at lines 50--59
  [] 
  []
 
-
-Underfull \vbox (badness 6461) has occurred while \output is active []
-
- [30]
+[30]
 
 LaTeX Warning: Reference `table:gc-tools' on page 31 undefined on input line 10
 6.
 
-)) [31] [32] [33 <./figures/t-reesei-cumulative-gene-lengths.pdf> <./figures/t-
-harzianum-cumulative-gene-lengths.pdf>] [34 <./figures/t-virens-cumulative-gene
--lengths.pdf>] [35
+) (./chapters/c5/interproscan-results.tex
+
+LaTeX Warning: Reference `ips-pfam:table' on page 31 undefined on input line 4.
+
+
+
+Overfull \hbox (148.83081pt too wide) in paragraph at lines 8--17
+ [] 
+ []
+
+
+Underfull \vbox (badness 1629) has occurred while \output is active []
+
+ [31]))
+[32] [33 <./figures/t-reesei-gene-cdf.pdf> <./figures/t-harzianum-gene-cdf.pdf>
+] [34 <./figures/t-virens-gene-cdf.pdf>] [35
 
 ] (./thesis.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
@@ -695,12 +703,13 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
- (./thesis.aux (./intro.aux)
-(./chapter-2.aux) (./chapter-3.aux) (./chapter-4.aux) (./chapter-5.aux))
+ (./thesis.aux (./intro.aux) (./chapter-2.aux) (./chapter-3.aux) (./chapter-4.a
+ux)
+(./chapter-5.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 15B961AF29B59E099A9F2FFE544CB00E;4610.
+(rerunfilecheck)             Checksum: 435EB0C9B58767AF8809D71CD8AFB3E7;4712.
 
 
 LaTeX Warning: There were undefined references.
@@ -711,10 +720,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 8020 strings out of 492649
- 123293 string characters out of 6129622
- 229876 words of memory out of 5000000
- 11574 multiletter control sequences out of 15000+600000
+ 8027 strings out of 492649
+ 123068 string characters out of 6129622
+ 230846 words of memory out of 5000000
+ 11576 multiletter control sequences out of 15000+600000
  8685 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,41p,930b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -733,10 +742,10 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (45 pages, 920991 bytes).
+Output written on thesis.pdf (45 pages, 951699 bytes).
 PDF statistics:
- 987 PDF objects out of 1000 (max. 8388607)
- 702 compressed objects within 8 object streams
- 155 named destinations out of 1000 (max. 500000)
- 594 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1001 PDF objects out of 1200 (max. 8388607)
+ 710 compressed objects within 8 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 602 words of extra memory for PDF output out of 10000 (max. 10000000)
 
