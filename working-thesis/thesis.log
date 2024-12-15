@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 NOV 2024 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 DEC 2024 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -639,38 +639,43 @@ LaTeX Warning: Reference `fig:cdf-lengths' on page 26 undefined on input line 4
 6.
 
 [26 <./figures/nextpolish-gene-finding.png>]
-<figures/dc1-gene-cdf.pdf, id=659, 462.52798pt x 346.89601pt>
-File: figures/dc1-gene-cdf.pdf Graphic file (type pdf)
-<use figures/dc1-gene-cdf.pdf>
-Package pdftex.def Info: figures/dc1-gene-cdf.pdf  used on input line 61.
+<figures/dc1-cdf-lengths-log.pdf, id=659, 462.52798pt x 346.89601pt>
+File: figures/dc1-cdf-lengths-log.pdf Graphic file (type pdf)
+<use figures/dc1-cdf-lengths-log.pdf>
+Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 61
+.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
-<figures/tsth20-gene-cdf.pdf, id=660, 462.52798pt x 346.89601pt>
-File: figures/tsth20-gene-cdf.pdf Graphic file (type pdf)
-<use figures/tsth20-gene-cdf.pdf>
-Package pdftex.def Info: figures/tsth20-gene-cdf.pdf  used on input line 66.
+<figures/tsth20-cdf-lengths-log.pdf, id=660, 462.52798pt x 346.89601pt>
+File: figures/tsth20-cdf-lengths-log.pdf Graphic file (type pdf)
+<use figures/tsth20-cdf-lengths-log.pdf>
+Package pdftex.def Info: figures/tsth20-cdf-lengths-log.pdf  used on input line
+ 66.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
-<figures/t-reesei-gene-cdf.pdf, id=661, 462.52798pt x 346.89601pt>
-File: figures/t-reesei-gene-cdf.pdf Graphic file (type pdf)
-<use figures/t-reesei-gene-cdf.pdf>
-Package pdftex.def Info: figures/t-reesei-gene-cdf.pdf  used on input line 75.
+<figures/t-reesei-cdf-lengths-log.pdf, id=661, 462.52798pt x 346.89601pt>
+File: figures/t-reesei-cdf-lengths-log.pdf Graphic file (type pdf)
+<use figures/t-reesei-cdf-lengths-log.pdf>
+Package pdftex.def Info: figures/t-reesei-cdf-lengths-log.pdf  used on input li
+ne 75.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
-<figures/t-harzianum-gene-cdf.pdf, id=662, 462.52798pt x 346.89601pt>
-File: figures/t-harzianum-gene-cdf.pdf Graphic file (type pdf)
-<use figures/t-harzianum-gene-cdf.pdf>
-Package pdftex.def Info: figures/t-harzianum-gene-cdf.pdf  used on input line 8
-0.
+<figures/t-harzianum-cdf-lengths-log.pdf, id=662, 462.52798pt x 346.89601pt>
+File: figures/t-harzianum-cdf-lengths-log.pdf Graphic file (type pdf)
+<use figures/t-harzianum-cdf-lengths-log.pdf>
+Package pdftex.def Info: figures/t-harzianum-cdf-lengths-log.pdf  used on input
+ line 80.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
-<figures/t-virens-gene-cdf.pdf, id=663, 462.52798pt x 346.89601pt>
-File: figures/t-virens-gene-cdf.pdf Graphic file (type pdf)
-<use figures/t-virens-gene-cdf.pdf>
-Package pdftex.def Info: figures/t-virens-gene-cdf.pdf  used on input line 89.
+<figures/t-virens-cdf-lengths-log.pdf, id=663, 462.52798pt x 346.89601pt>
+File: figures/t-virens-cdf-lengths-log.pdf Graphic file (type pdf)
+<use figures/t-virens-cdf-lengths-log.pdf>
+Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input li
+ne 89.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
 ) (./chapters/c5/blast-results.tex) (./chapters/c5/busco-results.tex) (./chapte
 rs/c5/regions.tex
 Underfull \vbox (badness 1331) has occurred while \output is active []
 
  [27]
-[28 <./figures/dc1-gene-cdf.pdf> <./figures/tsth20-gene-cdf.pdf>] [29]
+[28 <./figures/dc1-cdf-lengths-log.pdf> <./figures/tsth20-cdf-lengths-log.pdf>]
+[29]
 Overfull \hbox (73.91403pt too wide) in paragraph at lines 50--59
  [] 
  []
@@ -686,26 +691,25 @@ LaTeX Warning: Reference `ips-pfam:table' on page 31 undefined on input line 4.
 
 
 
-Overfull \hbox (148.83081pt too wide) in paragraph at lines 8--17
- [] 
- []
-
-
 Underfull \vbox (badness 1629) has occurred while \output is active []
 
- [31]))
-[32] [33 <./figures/t-reesei-gene-cdf.pdf> <./figures/t-harzianum-gene-cdf.pdf>
-] [34 <./figures/t-virens-gene-cdf.pdf>] [35
+ [31]
+Overfull \hbox (148.83081pt too wide) in paragraph at lines 8--17
+[][] 
+ []
 
-] (./thesis.bbl)
+)) [32] [33 <./figures/t-reesei-cdf-lengths-log.pdf> <./figures/t-harzianum-cdf
+-lengths-log.pdf>] [34 <./figures/t-virens-cdf-lengths-log.pdf>] [35
+
+]
+(./thesis.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
  [36
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
- (./thesis.aux (./intro.aux) (./chapter-2.aux) (./chapter-3.aux) (./chapter-4.a
-ux)
-(./chapter-5.aux))
+ (./thesis.aux (./intro.aux) (./chapter-2.aux)
+(./chapter-3.aux) (./chapter-4.aux) (./chapter-5.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -721,7 +725,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
  8027 strings out of 492649
- 123068 string characters out of 6129622
+ 123243 string characters out of 6129622
  230846 words of memory out of 5000000
  11576 multiletter control sequences out of 15000+600000
  8685 words of font info for 30 fonts, out of 8000000 for 9000
@@ -742,9 +746,9 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (45 pages, 951699 bytes).
+Output written on thesis.pdf (45 pages, 944937 bytes).
 PDF statistics:
- 1001 PDF objects out of 1200 (max. 8388607)
+ 1000 PDF objects out of 1000 (max. 8388607)
  710 compressed objects within 8 object streams
  157 named destinations out of 1000 (max. 500000)
  602 words of extra memory for PDF output out of 10000 (max. 10000000)
