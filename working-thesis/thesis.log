@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 DEC 2024 11:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 DEC 2024 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -631,7 +631,7 @@ ine 20.
 (pdftex.def)             Requested size: 472.03123pt x 264.39684pt.
 
 
-Package caption Warning: \label without proper reference on input line 93.
+Package caption Warning: \label without proper reference on input line 97.
 See the caption package documentation for explanation.
 
 
@@ -642,40 +642,36 @@ LaTeX Warning: Reference `fig:cdf-lengths' on page 26 undefined on input line 4
 <figures/dc1-cdf-lengths-log.pdf, id=659, 462.52798pt x 346.89601pt>
 File: figures/dc1-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/dc1-cdf-lengths-log.pdf>
-Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 61
+Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 65
 .
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
 <figures/tsth20-cdf-lengths-log.pdf, id=660, 462.52798pt x 346.89601pt>
 File: figures/tsth20-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/tsth20-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/tsth20-cdf-lengths-log.pdf  used on input line
- 66.
+ 70.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
 <figures/t-reesei-cdf-lengths-log.pdf, id=661, 462.52798pt x 346.89601pt>
 File: figures/t-reesei-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-reesei-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-reesei-cdf-lengths-log.pdf  used on input li
-ne 75.
+ne 79.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
 <figures/t-harzianum-cdf-lengths-log.pdf, id=662, 462.52798pt x 346.89601pt>
 File: figures/t-harzianum-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-harzianum-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-harzianum-cdf-lengths-log.pdf  used on input
- line 80.
+ line 84.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
 <figures/t-virens-cdf-lengths-log.pdf, id=663, 462.52798pt x 346.89601pt>
 File: figures/t-virens-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-virens-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input li
-ne 89.
+ne 93.
 (pdftex.def)             Requested size: 377.62642pt x 283.23383pt.
 ) (./chapters/c5/blast-results.tex) (./chapters/c5/busco-results.tex) (./chapte
-rs/c5/regions.tex
-Underfull \vbox (badness 1331) has occurred while \output is active []
-
- [27]
-[28 <./figures/dc1-cdf-lengths-log.pdf> <./figures/tsth20-cdf-lengths-log.pdf>]
-[29]
+rs/c5/regions.tex [27] [28 <./figures/dc1-cdf-lengths-log.pdf> <./figures/tsth2
+0-cdf-lengths-log.pdf>] [29]
 Overfull \hbox (73.91403pt too wide) in paragraph at lines 50--59
  [] 
  []
@@ -746,7 +742,7 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (45 pages, 944937 bytes).
+Output written on thesis.pdf (45 pages, 945092 bytes).
 PDF statistics:
  1000 PDF objects out of 1000 (max. 8388607)
  710 compressed objects within 8 object streams

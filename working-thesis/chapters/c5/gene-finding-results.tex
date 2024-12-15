@@ -43,17 +43,21 @@ In, gene finding tools will predict genes of different lengths within
 a genome. To better understand the likelihood of a gene being of a
 certain length, the cumulative density function for the lengths of CDS
 sequences for each gene finding tool are plotted in figure
-~\ref{fig:cdf-lengths}. For DC1 and Tsth20, we see that the curves of
-Braker and GeneMark follow eachother quite closely across the entirety
-of their curves. Where we start to see disagreement is in the RefSeq
-assemblies. In \textit{T. reesei}, Braker deviates from the curves of
-GeneMark and RefSeq in the 0 to 1000bp region of the plot, indicating
-that a sequence predicted by Braker is more likely to be of a shorter
-length than GeneMark and RefSeq predictions. In \textit{T. harzianum}
-and \textit{T. virens}, we can see that RefSeq consistently predicts
-genes of shorter length than Braker and GeneMark, especially in the
-case of \textit{T. harzianum}. The curves for predictions from Braker
-and GeneMark are similar in these assemblies.
+~\ref{fig:cdf-lengths}. In DC1, the curves from Braker and GeneMark
+follow each other closely, with the only variation being genes of
+short length, where Braker's curve extends beyond that of GeneMark,
+indicating that Braker predicts more shorter genes than GeneMark. In
+the case of Tsth20, the curves are nearly identical. In
+\textit{T. reesei}, we see disagreement in the curves for shorter
+genes, with Braker appearing to predict more shorter genes than
+GeneMark and RefSeq. The upper portions of the curve trend towards
+agreement between the curves. In \textit{T. harzianum}, RefSeq
+deviates from GeneMark and Braker, predicting more genes of short
+length. Braker and GeneMark appear to be in near-complete
+agreement. Finally, in \textit{T. virens}, we see the RefSeq curve
+deviating towards more shorted genes once again, although the
+deviation is not as drastic as in \textit{T. harzianum}.
+
 
 \begin{figure}
   \centering
