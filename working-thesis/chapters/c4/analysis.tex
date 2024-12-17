@@ -118,7 +118,51 @@ at this point. However, the methodology of initially sorting features
 based on left position somewhat prevents this process from
 happening. This implementation requires further processing of
 identified regions late on the process, simplifying the all to all
-comparison that would occurr if all features were considered at once.
+comparison that would occur if all features were considered at once.
+
+Identification of overlapping features results in different 'classes'
+of regions. A few basic cases are outlined in figure
+~\ref{fig:igv-cases}. The simplest of case is the a region where the
+gene finders agree unanimously on the gene (agreement currently means
+same start and end point). 
+
+
+\begin{figure}[b]
+  \centering
+  \begin{subfigure}{0.9\textwidth}
+    \includegraphics[width=\textwidth]{figures/igv/igv-agreement-thin.png}
+    \label{fig:igv-agree}
+    \caption{Complete Agreement}
+  \end{subfigure}
+  \begin{subfigure}{0.9\textwidth}
+    \includegraphics[width=\textwidth]{figures/igv/igv-start-stop-thin.png}
+    \label{fig:igv-start-stop}
+    \caption{Start/Stop Disagreement}
+  \end{subfigure}
+  \phantomcaption
+\end{figure}
+\begin{figure}[t]
+  \ContinuedFloat
+  \centering
+  \begin{subfigure}{0.9\textwidth}
+    \includegraphics[width=\textwidth]{figures/igv/igv-missing-thin.png}
+    \label{fig:igv-missing}
+    \caption{Missing Prediction}
+  \end{subfigure}
+  \begin{subfigure}{0.9\textwidth}
+    \includegraphics[width=\textwidth]{figures/igv/igv-complicated-thin.png}
+    \label{fig:igv-complicated}
+    \caption{Complete Disagreement}
+  \end{subfigure}
+  \caption[Examples of Potential Regions]{Several visual examples of
+    regions using IGV. \textbf{a)} Region where all prediction tools
+    are in agreement. \textbf{b)} Prediction tools agree that gene is
+    present, but not on the exact start and/or stop
+    positions. \textbf{c)} A region where one tool does not predict a
+    gene while the others do. \textbf{d)} A region with a combination
+    of disagreeing predictions.}
+  \label{fig:igv-cases}
+\end{figure}
 
 \subsection{Shared Gene Content with Closely Related Organisms}
 

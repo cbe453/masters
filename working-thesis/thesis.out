@@ -36,32 +36,30 @@
 \BOOKMARK [1][-]{section.3.10}{Identification of a Core Trichoderma Gene Set.}{chapter.3}% 36
 \BOOKMARK [1][-]{section.3.11}{Selection of a Gene Finding Tool}{chapter.3}% 37
 \BOOKMARK [0][-]{chapter.4}{Data and Methodology}{}% 38
-\BOOKMARK [1][-]{section.4.1}{Region Identification}{chapter.4}% 39
-\BOOKMARK [1][-]{section.4.2}{Genes in Regions of Anomalous GC Content}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.3}{Methodology}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.4}{Data and Processing Overview}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.4.1}{Data}{section.4.4}% 43
-\BOOKMARK [1][-]{section.4.5}{Assembly and Annotation}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.5.1}{Repeat Masking}{section.4.5}% 45
-\BOOKMARK [2][-]{subsection.4.5.2}{GeneMark-ES}{section.4.5}% 46
-\BOOKMARK [2][-]{subsection.4.5.3}{Braker2}{section.4.5}% 47
-\BOOKMARK [1][-]{section.4.6}{Identification of Overlapping Features and Regions}{chapter.4}% 48
-\BOOKMARK [1][-]{section.4.7}{Analysis of Results}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.7.1}{Basic Analysis}{section.4.7}% 50
-\BOOKMARK [2][-]{subsection.4.7.2}{Distribution of Gene Lengths}{section.4.7}% 51
-\BOOKMARK [2][-]{subsection.4.7.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.4.7}% 52
-\BOOKMARK [2][-]{subsection.4.7.4}{Methodology for Indetifying Overlapping Features}{section.4.7}% 53
-\BOOKMARK [2][-]{subsection.4.7.5}{Shared Gene Content with Closely Related Organisms}{section.4.7}% 54
-\BOOKMARK [2][-]{subsection.4.7.6}{BUSCO Analysis}{section.4.7}% 55
-\BOOKMARK [2][-]{subsection.4.7.7}{Comparative Genomics}{section.4.7}% 56
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 57
-\BOOKMARK [1][-]{section.5.1}{Assemblies of DC1 and Tsth20}{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.2}{Initial Gene Finding Results}{chapter.5}% 59
-\BOOKMARK [1][-]{section.5.3}{Distribution of Predicted Gene Lengths}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.4}{BLAST Results}{chapter.5}% 61
-\BOOKMARK [1][-]{section.5.5}{BUSCO Results}{chapter.5}% 62
-\BOOKMARK [1][-]{section.5.6}{Region Identification}{chapter.5}% 63
-\BOOKMARK [1][-]{section.5.7}{Genes in Regions of Anomalous GC Content}{chapter.5}% 64
-\BOOKMARK [1][-]{section.5.8}{InterProScan as Supporting Evidence for Predicted Genes}{chapter.5}% 65
-\BOOKMARK [1][-]{section.5.9}{Conclusions}{chapter.5}% 66
-\BOOKMARK [0][-]{section*.36}{References}{}% 67
+\BOOKMARK [1][-]{section.4.1}{Methodology}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.2}{Data and Processing Overview}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.2.1}{Data}{section.4.2}% 41
+\BOOKMARK [1][-]{section.4.3}{Assembly and Annotation}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.3.1}{Repeat Masking}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.2}{GeneMark-ES}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.3}{Braker2}{section.4.3}% 45
+\BOOKMARK [1][-]{section.4.4}{Identification of Overlapping Features and Regions}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.5}{Analysis of Results}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.5.1}{Basic Analysis}{section.4.5}% 48
+\BOOKMARK [2][-]{subsection.4.5.2}{Distribution of Gene Lengths}{section.4.5}% 49
+\BOOKMARK [2][-]{subsection.4.5.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.4.5}% 50
+\BOOKMARK [2][-]{subsection.4.5.4}{Methodology for Indetifying Overlapping Features}{section.4.5}% 51
+\BOOKMARK [2][-]{subsection.4.5.5}{Shared Gene Content with Closely Related Organisms}{section.4.5}% 52
+\BOOKMARK [2][-]{subsection.4.5.6}{BUSCO Analysis}{section.4.5}% 53
+\BOOKMARK [2][-]{subsection.4.5.7}{Comparative Genomics}{section.4.5}% 54
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 55
+\BOOKMARK [1][-]{section.5.1}{Assemblies of DC1 and Tsth20}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.2}{Initial Gene Finding Results}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.3}{Distribution of Predicted Gene Lengths}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.4}{BLAST Results}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.5}{BUSCO Results}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.6}{Region Identification}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.7}{Genes in Regions of Anomalous GC Content}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.8}{InterProScan as Supporting Evidence for Predicted Genes}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.9}{Conclusions}{chapter.5}% 64
+\BOOKMARK [0][-]{section*.34}{References}{}% 65
