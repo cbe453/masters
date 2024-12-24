@@ -1,70 +1,26 @@
 \section{Assemblies of DC1 and Tsth20}
 
-Prior to assembly of DC1 and Tsth20 sequences, the tool FastQC was
-used to evaluate the quality of the Illumina sequences provided for
-this project. After trimming the Illumina sequences for low quality
-reads, one FAIL flag was raised for both samples. This was the
-per-sequence GC content flag, indicating that the GC content of
-high-quality did not meet expectations. Plots of GC content for the
-trimmed R1 sequences of both DC1 and Tsth20 are shown in
-figure~\ref{fig:fastqc-lowgc}. In these plots, there is a considerable
-increase in the number of sequences with GC content between 2 and 30\%,
-which is important to note for later results and discussion.
-
-\begin{figure}
-  \centering
-  \begin{subfigure}{0.7\textwidth}
-    \includegraphics[width=\textwidth]{figures/dc1-low-gc-fastqc.png}
-    \caption{DC1}
-    \label{fig:dc1fastqc}
-  \end{subfigure}
-  \\
-  \begin{subfigure}{0.8\textwidth}
-    \includegraphics[width=\textwidth]{figures/tsth20-low-gc-fastqc.png}
-    \caption{Tsth20}
-    \label{fig:tsth20fastqc}
-  \end{subfigure}
-  \caption{Plots showing the distribution of GC content in Illumina
-    sequences.}
-  \label{fig:fastqc-lowgc}
-\end{figure}
-
-A sliding window analysis was also performed on all final assemblies
-in order to identify regions of anomalous GC content. The results of
-this analysis are shown in figure~\ref{fig:assembly-gc}. Of the
-included assemblies, anomalous GC content was identified in DC1,
-Tsth20, \textit{T. reesei} and \textit{T. harzianum}, with
-\textit{T. virens} showing no anomalous GC content. In addition to the
-confirmation of anomalous GC content, it appears that the distribution
-of GC content in \textit{T. reesei} differs from the other assemblies.
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.8\textwidth]{figures/gc-plot.pdf}
-  \end{center}
-  \caption{Plots showing the frequency of GC values calculated from
-    sliding windows for each assembly.}
-  \label{fig:assembly-gc}
-\end{figure}
-
-For other general assembly metrics, the QUAST tool was used. Results
-from QUAST are shown in figure~\ref{table:assemblies}, from which we can
-make several observations. The most obvious observation to start with
-is total contig counts for each assembly. For DC1 and Tsth20, the
+For general assembly metrics of DC1 and Tsth20, the QUAST tool was
+used. Results from QUAST are shown in figure~\ref{table:assemblies},
+from which we can make several observations. In DC1 and Tsth20, the
 total contig counts are an order of magnitude smaller when compared to
 the other NCBI RefSeq assemblies, inidicating highly contiguous
 assemblies from nextDenovo and nextPolish. This is likely due to the
 use of long-read sequencing used in the assemblies of DC1 and
-Tsth20. The total assembly lengths are similar, hovering around the
-38-42Mb range, except in the case of \textit{T. reesei}, which is
-known to have a significantly smaller genome length (ref) at roughly
-33Mb. The largest contig size for each assembly vary greatly. DC1 and
-Tsth20 have the largest contigs of all assemblies being considered,
-which is again likely due to the inclusion of long-read sequencing
-data in the assembly process. The N50 values for all assemblies are
-above 1Mb, with DC1 and Tsth20 N50s being at minimum three times
-larger than others assemblies.
-
+Tsth20. The total assembly lengths are similar, ranging from 38Mb to
+42Mb, except in the case of \textit{T. reesei}, which is known to have
+a significantly smaller genome length \cite{Kubicek2019} at roughly
+33Mb. The largest contig size for each assembly varies greatly. DC1
+and Tsth20 have the largest contigs of all assemblies being
+considered, which is again likely due to the inclusion of long-read
+sequencing data in the assembly process. The N50 values for all
+assemblies are above 1Mb, with DC1 and Tsth20 N50s being at minimum
+three times larger than others assemblies. Results from this table
+indicate that the assemblies of DC1 and Tsth20 are more contiguous
+than the assemblies of \textit{Trichoderma reesei, harzianum and
+  virens} also considered in this analysis. While contiguity is not
+the sole indicator of genome quality, it does provide confidence in
+the quality of the input data and resulting assemblies.
 
 \begin{table}
   \begin{center}
@@ -82,5 +38,35 @@ larger than others assemblies.
     genome quality assement tool).}
   \label{table:assemblies}
 \end{table}
+
+During initial investigation of the sequences used as input to the
+assembly process, we observed that the reads contained abnormal ratios
+of GC content. To see if this observation extended to the assemblies
+as well, sliding windows of GC content were calculated for all
+assemblies included in this analysis. The results of this analysis are
+shown in figure~\ref{fig:assembly-gc}. Of the included assemblies,
+anomalous GC content in the form of AT-rich sequences were identified
+in DC1, Tsth20, \textit{T. reesei} and \textit{T. harzianum}, with
+\textit{T. virens} showing no anomalous GC content. Anomolous GC
+content is visualized on the left tails of the distributions with a
+local peak around sequences containing 10 percent GC content. In
+addition to the confirmation of anomalous GC content, it appears that
+the distribution of GC content in \textit{T. reesei} differs from the
+other assemblies. The curve of GC content for \textit{T. reesei},
+visualized in green in \ref{fig:assembly-gc}, lies farther to the
+right, indicating higher GC content in its assembly. While the left
+tail of the curve also shows an increase in AT rich sequence
+composition, it is shifted farther right than other
+\textit{Trichoderma} assemblies. Investigation of these anomalous
+regions is continued in section ...
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{figures/gc-plot.pdf}
+  \end{center}
+  \caption{Plots showing the frequency of GC values calculated from
+    sliding windows for each assembly.}
+  \label{fig:assembly-gc}
+\end{figure}
 
 

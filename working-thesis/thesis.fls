@@ -195,12 +195,6 @@ INPUT chapter-5.tex
 INPUT chapter-5.tex
 INPUT chapters/c5/assemblies.tex
 INPUT chapters/c5/assemblies.tex
-INPUT figures/dc1-low-gc-fastqc.png
-INPUT ./figures/dc1-low-gc-fastqc.png
-INPUT ./figures/dc1-low-gc-fastqc.png
-INPUT figures/tsth20-low-gc-fastqc.png
-INPUT ./figures/tsth20-low-gc-fastqc.png
-INPUT ./figures/tsth20-low-gc-fastqc.png
 INPUT figures/gc-plot.pdf
 INPUT ./figures/gc-plot.pdf
 INPUT ./figures/gc-plot.pdf

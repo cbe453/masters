@@ -8,7 +8,6 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces A flowchart of the methodology followed for this research. Sections are separated based the general process they are associated with (i.e. input data, assembly, gene finding and downstream analysis).\relax }}{14}{figure.caption.16}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Examples of Potential Regions}}{22}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots showing the distribution of GC content in Illumina sequences.\relax }}{24}{figure.caption.19}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Plots showing the frequency of GC values calculated from sliding windows for each assembly.\relax }}{25}{figure.caption.20}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Counts of predicted genes and mRNAs}}{26}{figure.caption.22}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Cumulative Density Function of Gene Lengths}}{35}{figure.caption.25}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots showing the frequency of GC values calculated from sliding windows for each assembly.\relax }}{24}{figure.caption.20}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Counts of predicted genes and mRNAs}}{25}{figure.caption.21}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Cumulative Density Function of Gene Lengths}}{33}{figure.caption.24}
