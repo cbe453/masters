@@ -203,6 +203,8 @@ INPUT chapters/c5/gene-finding-results.tex
 INPUT ./figures/nextpolish-gene-finding.png
 INPUT ./figures/nextpolish-gene-finding.png
 INPUT ./figures/nextpolish-gene-finding.png
+INPUT chapters/c5/gene-length-results.tex
+INPUT chapters/c5/gene-length-results.tex
 INPUT figures/dc1-cdf-lengths-log.pdf
 INPUT ./figures/dc1-cdf-lengths-log.pdf
 INPUT ./figures/dc1-cdf-lengths-log.pdf
