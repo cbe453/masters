@@ -198,6 +198,8 @@ INPUT chapters/c5/assemblies.tex
 INPUT figures/gc-plot.pdf
 INPUT ./figures/gc-plot.pdf
 INPUT ./figures/gc-plot.pdf
+INPUT chapters/c5/tool-profiling.tex
+INPUT chapters/c5/tool-profiling.tex
 INPUT chapters/c5/gene-finding-results.tex
 INPUT chapters/c5/gene-finding-results.tex
 INPUT ./figures/nextpolish-gene-finding.png

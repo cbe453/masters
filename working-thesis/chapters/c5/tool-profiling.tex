@@ -1,0 +1,109 @@
+\section{Profiling Gene Finding Tools}
+
+While Braker2, GeneMark and RefSeq all provide lists of possible genes
+for a provided reference, the implementation for each tool is
+different, requiring more, less or completely different kinds of work
+depending on the tool used.
+
+First, we will briefly discuss the RefSeq annotation process. RefSeq
+annotation is only applied to data that is submitted to NCBI. Getting
+access to the pipeline without making data public may be possible, but
+would entirely depend on who you know and should not be considered an
+option if you are working with sensitive data that cannot be made
+publicly available. Once data is submitted to NCBI, the RefSeq
+annotation pipeline can be applied, which leverages existing RNAseq,
+CDS and protein sequences to produce a trained model for gene
+prediction. The RefSeq annotation pipeline is iterative and performed
+multiple times when new data is submitted. Run times for this process
+are difficult to determine due to the hidden nature of the pipeline.
+
+Next we will discuss the handling, installation running of both
+Braker2 and GeneMark packages. GeneMark is a gene finding tool
+developed by the Georgia Institute of Technology with packages
+prepared for Linux and MacOS. It is provided as a package which can be
+downloaded from their site after submitting requested
+information. Once that is submitted, the user is provided with a key
+that must be placed in the appropriate location once the software is
+unpacked. The core controlling methods of GeneMark are written in
+Perl, which is a still used but aging interpreted programming
+language. Only a few Perl modules are required to get GeneMark up and
+running. The version of GeneMark used in this work also requires a
+Python version greater than 3.3. From a user perspective, running
+GeneMark is generally straightforward. The user will have to know
+which implementation of GeneMark they are wanting to use for their
+application, as GeneMark has several variations it can run depending
+on the desired application. Options supplied to GeneMark ar generally
+straightforward meaning any user with familiarity of bioinformatics
+tools should be able to run GeneMark, although documentation for use
+is only provided by the help message when runningthe program. In my
+experience, installation of GeneMark was generally straightforward and
+simple. The platform used for this research did require installation
+of several Perl5 modules, but this was simple with a little knowledge
+of CPAN and knowing where Perl looks for its libraries. I can see this
+posing a challenge for a biologist or inexperienced user in a typical
+lab setting as the solution wasn't plug an play in my case.
+
+Braker2 is hosted on GitHub as a repository that receives relatively
+frequent updates with Braker3 being released while working on this
+thesis. Installation of the repository is straightforward pull from
+GitHub. As with GeneMark, the core controlling methods of Braker2 are
+built on Perl, a still used but less popular interpreted scripted
+language. The repository itself is not enough to run Braker2, as the
+package relies on a number of dependencies including Perl and (perl
+dependencies), Augustus, BamTools, BedTools, GeneMark, StringTie,
+GFFRead and a few others. The number of dependencies required for
+Braker2 is large, and getting everything running will certainly vary
+based on the chosen processing platform. Manual installation of these
+dependencies would be difficult, time consuming and in general advised
+against. The platform used in this research is hosted and managed by
+University of Saskatchewan services, which is modelled around the HPC
+platform used by the Digital Research Alliance of Canada and software
+is managed similarily. Many of Braker2's requirements are satisfied by
+modules already included in the environment, making installation
+relatively simple if you know the ins and outs of the Digital Research
+Alliance of Canada's software stack. This case still required
+installation of some Perl modules in addition to loading necessary
+modules. Alternatively, one could use a package manager like Anaconda
+or Minoconda to handle installation of packages. This is perfectly
+reasonable, but also requires knowledge specific to Anaconda, which
+can be complicated and frustrating for users with little software
+management experience. Once installation is finished, the Barker2
+pipeline is relatively straightforwad to run as well, with excellent
+documentation included both online and through the built in help
+message.
+
+In this research, the Braker2 pipeline was run in two modes. The first
+mode is a training mode, where sequence files are supplied to Braker2
+to train a gene calling model. The training and gene finding steps are
+run as part of the same command, and a model built using the training
+data is saved for bookkeeping and future use. The training was
+performed using roughly 145 million Illumina paired end RNAseq reads
+on the \textit{Trichoderma reesei} genome. The training (including
+RNAseq alignments) and gene finding pipeline in this case took 1 hour
+and 17 minutes using 60 threads. Applying the Braker2 trained gene
+finding model to DC1 with 60 threads took 21 minutes to complete. In
+the case of GeneMark, running the GeneMark-ES pipeline start to finish
+on DC1 with 56 threads finished in 16 minutes. Run times will of
+course vary depending on processing power available to the end user,
+but in the case of \textit{Trichoderma} genomes, users can expect
+quick results with relatively little computing power.
+
+Outputs from both Braker2 and GeneMark come in the form of GTF or GFF
+files. GeneMark defaults to GTF but can be told to output GFF through
+a commandline option. In addition to GFF, Braker2 can also output
+coding sequences and amino acids sequences for the protein products
+resulting from it's gene predictions. GeneMark does not produce any
+sequence outputs from it's gene predictions.
+
+In summation, Braker2 and GeneMark are not simple plug and play
+software packages. Users should expect to encounter some issues when
+getting these programs running in addition to normal downloading and
+unpacking of software packages so some expertise is recommended. Once
+installed, both tools are relatively simple to use with documention
+available for both on the commandline and excellent documentation
+available for Braker2 on their GitHub page. Outputs from both tools
+are similar although Braker2 has the ability to output coding and
+amino acid sequences for downstream processing. Both tools run in
+reasonable amounts of time, where in the case of smaller genomes such
+as \textit{Trichoderma}, users can expect results within a few hours
+to a day depending on number of computing cycles available to them.
