@@ -15,7 +15,11 @@ annotation pipeline can be applied, which leverages existing RNAseq,
 CDS and protein sequences to produce a trained model for gene
 prediction. The RefSeq annotation pipeline is iterative and performed
 multiple times when new data is submitted. Run times for this process
-are difficult to determine due to the hidden nature of the pipeline.
+are difficult to determine due to the hidden nature of the
+pipeline. The RefSeq annotation process produces comprehensive
+outputs, including CDS sequences, translated CDS, RNA from genomic
+sequences, proteins, feature counts and tables, and finally GFF and GTF
+formatted annotation files for these features.
 
 Next we will discuss the handling, installation running of both
 Braker2 and GeneMark packages. GeneMark is a gene finding tool
@@ -93,17 +97,25 @@ files. GeneMark defaults to GTF but can be told to output GFF through
 a commandline option. In addition to GFF, Braker2 can also output
 coding sequences and amino acids sequences for the protein products
 resulting from it's gene predictions. GeneMark does not produce any
-sequence outputs from it's gene predictions.
+sequence outputs from it's gene predictions. Using the default
+analysis pipelines for each tool, none of them predict untranslated
+regions outside of the left and right positions of the gene and mRNA
+features. Braker2, when trained with RNAseq data, includes an option
+to predict UTR regions, but it is experimental and is not performed by
+default.
 
-In summation, Braker2 and GeneMark are not simple plug and play
+In summation, Braker2 and GeneMark are not direct plug and play
 software packages. Users should expect to encounter some issues when
 getting these programs running in addition to normal downloading and
-unpacking of software packages so some expertise is recommended. Once
-installed, both tools are relatively simple to use with documention
-available for both on the commandline and excellent documentation
-available for Braker2 on their GitHub page. Outputs from both tools
-are similar although Braker2 has the ability to output coding and
-amino acid sequences for downstream processing. Both tools run in
-reasonable amounts of time, where in the case of smaller genomes such
-as \textit{Trichoderma}, users can expect results within a few hours
-to a day depending on number of computing cycles available to them.
+unpacking of software packages so some expertise is
+recommended. Neither Braker2 or GeneMark require users to compile
+software, however Braker2's dependencies may require additional
+compilation and attention. Once installed, both tools are relatively
+simple to use with documention available for both on the commandline
+and excellent documentation available for Braker2 on their GitHub
+page. Outputs from both tools are similar although Braker2 has the
+ability to output coding and amino acid sequences for downstream
+processing. Both tools run in reasonable amounts of time, where in the
+case of smaller genomes such as \textit{Trichoderma}, users can expect
+results within a few hours to a day depending on number of computing
+cycles available to them.
