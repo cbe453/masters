@@ -29,30 +29,12 @@ Sara Goodwin, John~D McPherson, and W~Richard McCombie.
   technologies}.
 \newblock {\em Nature Reviews Genetics}, 17(6):333--351, 2016.
 
-\bibitem{Kubicek2019}
-Christian~P Kubicek, Andrei~S Steindorff, Komal Chenthamara, Gelsomina
-  Manganiello, Bernard Henrissat, Jian Zhang, Feng Cai, Alexey~G Kopchinskiy,
-  Eva~M Kubicek, Alan Kuo, Riccardo Baroncelli, Sabrina Sarrocco,
-  Eliane~Ferreira Noronha, Giovanni Vannacci, Qirong Shen, Igor~V Grigoriev,
-  and Irina~S Druzhinina.
-\newblock {Evolution and comparative genomics of the most common Trichoderma
-  species}.
-\newblock {\em BMC Genomics}, 20(1):485, 2019.
-
 \bibitem{10.1093/nar/gki937}
 Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
   Borodovsky.
 \newblock {Gene identification in novel eukaryotic genomes by self-training
   algorithm}.
 \newblock {\em Nucleic Acids Research}, 33(20):6494--6506, 2005.
-
-\bibitem{10.1093/molbev/msab199}
-Mos{\`{e}} Manni, Matthew~R Berkeley, Mathieu Seppey, Felipe~A Sim{\~{a}}o, and
-  Evgeny~M Zdobnov.
-\newblock {BUSCO Update: Novel and Streamlined Workflows along with Broader and
-  Deeper Phylogenetic Coverage for Scoring of Eukaryotic, Prokaryotic, and
-  Viral Genomes}.
-\newblock {\em Molecular Biology and Evolution}, 38(10):4647--4654, 2021.
 
 \bibitem{Marx2023}
 Vivien Marx.
@@ -63,6 +45,10 @@ Vivien Marx.
 Niranjan Nagarajan and Mihai Pop.
 \newblock {Sequence assembly demystified}.
 \newblock {\em Nature Reviews Genetics}, 14(3):157--167, 2013.
+
+\bibitem{NCBI2024}
+NCBI.
+\newblock {NCBI Eukaryotic Annotation Pipeline}, 2024.
 
 \bibitem{Plohl2014}
 Miroslav Plohl, Nevenka Me{\v{s}}trovi{\'{c}}, and Brankica Mravinac.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JAN 2025 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 JAN 2025 21:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,19 +607,28 @@ File: figures/igv/igv-complicated-thin.png Graphic file (type png)
 Package pdftex.def Info: figures/igv/igv-complicated-thin.png  used on input li
 ne 153.
 (pdftex.def)             Requested size: 424.82523pt x 142.14955pt.
- [19])) [20] [21 <./figures/igv/igv-agreement-thin.png> <./figures/igv/igv-star
-t-stop-thin.png>] [22 <./figures/igv/igv-missing-thin.png> <./figures/igv/igv-c
-omplicated-thin.png>]
+
+
+LaTeX Warning: Citation `10.1093/molbev/msab199' on page 19 undefined on input 
+line 208.
+
+[19])) [20] [21 <./figures/igv/igv-agreement-thin.png> <./figures/igv/igv-start
+-stop-thin.png>] [22 <./figures/igv/igv-missing-thin.png> <./figures/igv/igv-co
+mplicated-thin.png>]
 \openout2 = `chapter-5.aux'.
 
  (./chapter-5.tex
 Chapter 5.
-(./chapters/c5/assemblies.tex [23
+(./chapters/c5/assemblies.tex
+
+LaTeX Warning: Citation `Kubicek2019' on page 23 undefined on input line 12.
+
+[23
 
 
 
 ]
-<figures/gc-plot.pdf, id=598, 462.52798pt x 346.89601pt>
+<figures/gc-plot.pdf, id=594, 462.52798pt x 346.89601pt>
 File: figures/gc-plot.pdf Graphic file (type pdf)
 <use figures/gc-plot.pdf>
 Package pdftex.def Info: figures/gc-plot.pdf  used on input line 69.
@@ -638,11 +647,9 @@ File: ./figures/nextpolish-gene-finding.png Graphic file (type png)
 Package pdftex.def Info: ./figures/nextpolish-gene-finding.png  used on input l
 ine 20.
 (pdftex.def)             Requested size: 472.03123pt x 264.39684pt.
-)
-(./chapters/c5/gene-length-results.tex
-Underfull \vbox (badness 4660) has occurred while \output is active []
 
- [27 <./figures/nextpolish-gene-finding.png>]
+[27 <./figures/nextpolish-gene-finding.png>])
+(./chapters/c5/gene-length-results.tex
 
 Package caption Warning: \label without proper reference on input line 59.
 See the caption package documentation for explanation.
@@ -702,14 +709,14 @@ LaTeX Warning: Reference `ips-pfam:table' on page 35 undefined on input line 4.
 
 )) [35] [36
 
-] (./thesis.bbl [37
-
-])
+] (./thesis.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
- [38]
+ [37
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
- (./thesis.aux (./intro.aux)
-(./chapter-2.aux) (./chapter-3.aux) (./chapter-4.aux) (./chapter-5.aux))
+ (./thesis.aux (./intro.aux) (./chapter-2.aux)
+(./chapter-3.aux) (./chapter-4.aux) (./chapter-5.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -724,13 +731,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 8196 strings out of 492649
- 125438 string characters out of 6129622
- 236489 words of memory out of 5000000
- 11734 multiletter control sequences out of 15000+600000
+ 8192 strings out of 492649
+ 125366 string characters out of 6129622
+ 236441 words of memory out of 5000000
+ 11732 multiletter control sequences out of 15000+600000
  8685 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,14n,41p,930b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,14n,41p,930b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -746,10 +753,10 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (47 pages, 1010647 bytes).
+Output written on thesis.pdf (46 pages, 1009785 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
- 706 compressed objects within 8 object streams
- 157 named destinations out of 1000 (max. 500000)
+ 999 PDF objects out of 1000 (max. 8388607)
+ 702 compressed objects within 8 object streams
+ 155 named destinations out of 1000 (max. 500000)
  604 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -11,45 +11,47 @@ Database file #1: ./refs/full-bib.bib
 Warning--I didn't find a database entry for "Keller2011"
 Warning--I didn't find a database entry for "10.1093/nar/gkac993"
 Warning--I didn't find a database entry for "10.1104/pp.19.00386"
-You've used 17 entries,
+Warning--I didn't find a database entry for "10.1093/molbev/msab199"
+Warning--I didn't find a database entry for "Kubicek2019"
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            630 strings with 7897 characters,
-and the built_in function-call counts, 6447 in all, are:
-= -- 611
-> -- 403
+            625 strings with 7186 characters,
+and the built_in function-call counts, 5451 in all, are:
+= -- 528
+> -- 294
 < -- 0
-+ -- 159
-- -- 142
-* -- 568
-:= -- 1129
-add.period$ -- 51
-call.type$ -- 17
-change.case$ -- 122
++ -- 116
+- -- 100
+* -- 451
+:= -- 946
+add.period$ -- 47
+call.type$ -- 16
+change.case$ -- 98
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 185
-empty$ -- 424
-format.name$ -- 142
-if$ -- 1257
+cite$ -- 16
+duplicate$ -- 170
+empty$ -- 394
+format.name$ -- 100
+if$ -- 1080
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 17
-newline$ -- 88
-num.names$ -- 34
-pop$ -- 88
+int.to.str$ -- 16
+missing$ -- 15
+newline$ -- 82
+num.names$ -- 32
+pop$ -- 73
 preamble$ -- 1
-purify$ -- 105
+purify$ -- 82
 quote$ -- 0
-skip$ -- 124
+skip$ -- 118
 stack$ -- 0
-substring$ -- 393
-swap$ -- 17
+substring$ -- 348
+swap$ -- 16
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 68
+type$ -- 64
 warning$ -- 0
-while$ -- 60
-width$ -- 19
-write$ -- 189
-(There were 3 warnings)
+while$ -- 55
+width$ -- 18
+write$ -- 175
+(There were 5 warnings)
