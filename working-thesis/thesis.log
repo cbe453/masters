@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 JAN 2025 21:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  22 JAN 2025 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -650,54 +650,48 @@ ine 20.
 
 [27 <./figures/nextpolish-gene-finding.png>])
 (./chapters/c5/gene-length-results.tex
-
-Package caption Warning: \label without proper reference on input line 59.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:cdf-lengths' on page 28 undefined on input line 6
-.
-
 <figures/dc1-cdf-lengths-log.pdf, id=656, 462.52798pt x 346.89601pt>
 File: figures/dc1-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/dc1-cdf-lengths-log.pdf>
-Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 27
+Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 29
 .
 (pdftex.def)             Requested size: 330.42041pt x 247.82762pt.
 <figures/tsth20-cdf-lengths-log.pdf, id=657, 462.52798pt x 346.89601pt>
 File: figures/tsth20-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/tsth20-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/tsth20-cdf-lengths-log.pdf  used on input line
- 32.
+ 34.
 (pdftex.def)             Requested size: 330.42041pt x 247.82762pt.
 <figures/t-reesei-cdf-lengths-log.pdf, id=658, 462.52798pt x 346.89601pt>
 File: figures/t-reesei-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-reesei-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-reesei-cdf-lengths-log.pdf  used on input li
-ne 41.
+ne 43.
 (pdftex.def)             Requested size: 330.42041pt x 247.82762pt.
 <figures/t-harzianum-cdf-lengths-log.pdf, id=659, 462.52798pt x 346.89601pt>
 File: figures/t-harzianum-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-harzianum-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-harzianum-cdf-lengths-log.pdf  used on input
- line 46.
+ line 48.
 (pdftex.def)             Requested size: 330.42041pt x 247.82762pt.
 <figures/t-virens-cdf-lengths-log.pdf, id=660, 462.52798pt x 346.89601pt>
 File: figures/t-virens-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-virens-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input li
-ne 55.
+ne 57.
 (pdftex.def)             Requested size: 330.42041pt x 247.82762pt.
-) (./chapters/c5/blast-results.tex [28] [29 <./figures/dc1-cdf-lengths-log.pdf>
- <./figures/tsth20-cdf-lengths-log.pdf>] [30 <./figures/t-reesei-cdf-lengths-lo
-g.pdf> <./figures/t-harzianum-cdf-lengths-log.pdf>] [31 <./figures/t-virens-cdf
--lengths-log.pdf>]) (./chapters/c5/busco-results.tex)
-(./chapters/c5/regions.tex
+) (./chapters/c5/blast-results.tex
+Underfull \vbox (badness 4543) has occurred while \output is active []
+
+ [28]
+[29 <./figures/dc1-cdf-lengths-log.pdf> <./figures/tsth20-cdf-lengths-log.pdf>]
+[30 <./figures/t-reesei-cdf-lengths-log.pdf> <./figures/t-harzianum-cdf-lengths
+-log.pdf>] [31 <./figures/t-virens-cdf-lengths-log.pdf>])
+(./chapters/c5/busco-results.tex) (./chapters/c5/regions.tex [32] [33]
 Overfull \hbox (73.91403pt too wide) in paragraph at lines 50--59
  [] 
  []
 
-[32] [33]
 
 LaTeX Warning: Reference `table:gc-tools' on page 34 undefined on input line 10
 6.
@@ -707,16 +701,16 @@ LaTeX Warning: Reference `table:gc-tools' on page 34 undefined on input line 10
 LaTeX Warning: Reference `ips-pfam:table' on page 35 undefined on input line 4.
 
 
-)) [35] [36
+)) [35] [36] [37
 
 ] (./thesis.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
- [37
+ [38
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
- (./thesis.aux (./intro.aux) (./chapter-2.aux)
-(./chapter-3.aux) (./chapter-4.aux) (./chapter-5.aux))
+ (./thesis.aux (./intro.aux)
+(./chapter-2.aux) (./chapter-3.aux) (./chapter-4.aux) (./chapter-5.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -731,9 +725,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 8192 strings out of 492649
- 125366 string characters out of 6129622
- 236441 words of memory out of 5000000
+ 8193 strings out of 492649
+ 125373 string characters out of 6129622
+ 233412 words of memory out of 5000000
  11732 multiletter control sequences out of 15000+600000
  8685 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -753,10 +747,10 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (46 pages, 1009785 bytes).
+Output written on thesis.pdf (47 pages, 1010640 bytes).
 PDF statistics:
- 999 PDF objects out of 1000 (max. 8388607)
- 702 compressed objects within 8 object streams
- 155 named destinations out of 1000 (max. 500000)
+ 1003 PDF objects out of 1200 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 156 named destinations out of 1000 (max. 500000)
  604 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -57,10 +57,10 @@
 \contentsline {section}{\numberline {5.2}Profiling Gene Finding Tools}{24}{section.5.2}
 \contentsline {section}{\numberline {5.3}Initial Gene Finding Results}{27}{section.5.3}
 \contentsline {section}{\numberline {5.4}Distribution of Predicted Gene Lengths}{28}{section.5.4}
-\contentsline {section}{\numberline {5.5}BLAST Results}{28}{section.5.5}
+\contentsline {section}{\numberline {5.5}BLAST Results}{32}{section.5.5}
 \contentsline {section}{\numberline {5.6}BUSCO Results}{32}{section.5.6}
 \contentsline {section}{\numberline {5.7}Region Identification}{32}{section.5.7}
 \contentsline {section}{\numberline {5.8}Genes in Regions of Anomalous GC Content}{34}{section.5.8}
 \contentsline {section}{\numberline {5.9}InterProScan as Supporting Evidence for Predicted Genes}{35}{section.5.9}
-\contentsline {section}{\numberline {5.10}Conclusions}{36}{section.5.10}
-\contentsline {chapter}{References}{37}{section*.33}
+\contentsline {section}{\numberline {5.10}Conclusions}{37}{section.5.10}
+\contentsline {chapter}{References}{38}{section*.33}
