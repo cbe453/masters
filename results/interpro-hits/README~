@@ -1,0 +1,9 @@
+
+BCBio GFF package is not happy with the way that InterProScan formats
+its GFF files. IPS includes fasta entries of the hits at the end of
+the GFF entries, which throws an error. In addition to that, IPS
+description field in the GFF file may contain extra '=' symbols,
+resulting in an error (EC=2 -> EC-2). I used sed to fix both of these
+issues and produce a new GFF file in this processing directory.
+
+sed -n '/\#\#FASTA/q;p' /Volumes/Roots/Connor/masters/processing/dc1/interproscan/genemark/dc1-genemark.aa.gff3 | sed 's/EC=/EC-/' > dc1-genemark-ips-fmt.gff3

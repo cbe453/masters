@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+import argparse
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Kolmogorov-Smirnov Test between CDFs of gene lengths')
+    parser.add_argument('-1', type=str, dest='input1', help='Path to CDS file from gene prediction tool 1.')
+    parser.add_argument('-2', type=str, dest='input2', help='Path to CDS file from gene prediction tool 2.')
+    args = parser.parse_args()
+
+
+    exit(main(args))

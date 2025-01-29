@@ -9,6 +9,9 @@ import numpy as np
 from scipy import stats
 import random
 import seaborn as sns
+from collections import Counter
+from mpl_toolkits.axes_grid1.inset_locator import (inset_axes, InsetPosition,
+                                                  mark_inset)
 
 # Nice color palette for colorblind individuals
 #CB_color_cycle = ['#377eb8', '#ff7f00', '#4daf4a',
@@ -58,29 +61,41 @@ def histPlot(args):
     plt.show()
     
 def cumDist(args):
-    tools = ['Braker2', 'RefSeq', 'GeneMark']
+    tools = ['Braker2', 'GeneMark', 'RefSeq']
+    #tools = ['Braker2', 'GeneMark']
+    fig, ax = plt.subplots()
+    #axins = ax.inset_axes([0.2, 0.13, 0.51, 0.7])
+
     for i in range(0, len(args.input)):
+        if (len(tools) > 2):
+            next
         data = parseData(args.input[i])
-        sortedData = np.sort(data)
+        sortedData = sorted(np.log10(data))
         finalSum = sum(data)
-        curSum = 0
-        i = 0
+        finalCount = len(data)
         x = []
-        y = []
-        for cdsLen in sortedData:
-            curSum = cdsLen + curSum
-            plotVal = (curSum / finalSum)
-            i += 1
-            y.append(plotVal)
-            x.append(i)
-        #sortedData = np.sort(finalData)
-        print(x[-5::1])
-        print(y[-5::1])
-        print(curSum)
-        print(finalSum)
-        #plt.step(finalData, np.arange(0, len(finalData)))
+        p = []
+        counter = Counter(sortedData)
+
+        for key in counter.keys():
+            x.append(key)
+            p.append(counter[key] / finalCount)
+
+        y = np.cumsum(p)
+        
+        ax.plot(x, y, label=tools[i])
+        #axins.plot(x, y, label=tools[i])
         #sns.histplot(finalData, kde=True, color='#dede00', label=tools[2])
-        plt.plot(y, x)
+        #plt.step(x, y, label = tools[i])
+
+    #mark_inset(ax, axins, loc1=1, loc2=4, fc='none', ec='0.5')
+    #axins.set_xlabel('')
+    #axins.set_xlim(0, 2500)
+    #axins.set_ylim(0,1)
+    plt.ylabel('Proportion of total genes (%)')
+    plt.xlabel('Log10 Gene Length')
+    plt.legend(loc = 'center right')
+    plt.savefig(args.output, format = 'pdf')
     plt.show()
         
 def parseData(cdsPath):
