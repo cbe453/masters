@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  22 JAN 2025 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 JAN 2025 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -681,12 +681,9 @@ Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input li
 ne 57.
 (pdftex.def)             Requested size: 330.42041pt x 247.82762pt.
 ) (./chapters/c5/blast-results.tex
-Underfull \vbox (badness 4543) has occurred while \output is active []
-
- [28]
-[29 <./figures/dc1-cdf-lengths-log.pdf> <./figures/tsth20-cdf-lengths-log.pdf>]
-[30 <./figures/t-reesei-cdf-lengths-log.pdf> <./figures/t-harzianum-cdf-lengths
--log.pdf>] [31 <./figures/t-virens-cdf-lengths-log.pdf>])
+[28] [29 <./figures/dc1-cdf-lengths-log.pdf> <./figures/tsth20-cdf-lengths-log.
+pdf>] [30 <./figures/t-reesei-cdf-lengths-log.pdf> <./figures/t-harzianum-cdf-l
+engths-log.pdf>] [31 <./figures/t-virens-cdf-lengths-log.pdf>])
 (./chapters/c5/busco-results.tex) (./chapters/c5/regions.tex [32] [33]
 Overfull \hbox (73.91403pt too wide) in paragraph at lines 50--59
  [] 
@@ -747,7 +744,7 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (47 pages, 1010640 bytes).
+Output written on thesis.pdf (47 pages, 1010796 bytes).
 PDF statistics:
  1003 PDF objects out of 1200 (max. 8388607)
  705 compressed objects within 8 object streams

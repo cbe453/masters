@@ -12,16 +12,16 @@ indicating that Braker2 predicts more shorter genes than GeneMark. In
 the case of Tsth20, the curves are nearly identical. In
 \textit{T. reesei}, we see disagreement in the curves for shorter
 genes, with Braker2 appearing to predict a greater amount of shorter
-genes than GeneMark and RefSeq. The upper portions of the curve trend
-towards agreement between the curves. In \textit{T. harzianum}, RefSeq
-deviates from GeneMark and Braker2, predicting more genes of short
-length, while Braker and GeneMark appear to be in near-complete
+genes than GeneMark and RefSeq. The upper portions of the curves trend
+toward similar predicted gene lengths. In \textit{T. harzianum},
+RefSeq deviates from GeneMark and Braker2, predicting more genes of
+short length, while Braker and GeneMark appear to be in near-complete
 agreement. Finally, in \textit{T. virens}, we see the RefSeq curve
 predicting shorter genes once again, although the deviation is not as
 drastic as in \textit{T. harzianum}. From these plots, we can say that
 visually, gene finding tools appear to predict different lengths of
-genes. From these plots, we can also say that Braker2 predicts the
-shortest genes of all three gene finding methods.
+genes. We also observe that Braker2 predicts the shortest genes of all
+three gene finding methods.
 
 \begin{figure}[p!]
   \centering
@@ -65,19 +65,21 @@ shortest genes of all three gene finding methods.
 \end{figure}
 
 To confirm these observations statistically, two-sided two-sample
-Kolmogorov-Smirnov tests were performed using the log10 transformed
-gene lengths and are presented in table \ref{table:ks-2s}. In the
-cases of DC1 and Tsth20, we see that Braker2 and GeneMark do not
-produce statistically different lengths of genes, which is interesting
-considering that the Braker2 includes experimental evidence for
-another assembly while GeneMark does not. In \textit{T. reesei}, while
-RefSeq and GeneMark do not reject the null hypothesis when compared,
-Braker2 gene lengths are significantly different than both RefSeq and
-GeneMark, which is also confirmed visually in the CDF plots above. The
-same cannot be said for \textit{T. harzianum}, where RefSeq is
+Kolmogorov-Smirnov tests were performed using the $\log_{10}$
+transformed gene lengths and are presented in table
+\ref{table:ks-2s}. In the cases of DC1 and Tsth20, we see that Braker2
+and GeneMark do not produce statistically different lengths of genes,
+which is interesting considering that the Braker2 includes
+experimental evidence for another assembly while GeneMark does not. In
+\textit{T. reesei}, while RefSeq and GeneMark do not reject the null
+hypothesis when compared, Braker2's predicted gene lengths are
+significantly different than both RefSeq and GeneMark, which is also
+confirmed visually in the CDF plots above. The same cannot be said for
+\textit{T. harzianum} and \textit{T. virens}, where RefSeq is
 significantly different from both GeneMark and Braker2, which are not
-significantly different from eachother. This observation extends to
-\textit{T. virens}.
+significantly different from eachother. It is also notable that RefSeq
+and GeneMark predict similar gene lengths in \textit{T. reesei} but
+not in \textit{T. harzianum} and \textit{T. virens.}
 
 \begin{table}
   \begin{center}
@@ -107,10 +109,11 @@ different lengths of genes, paritcularly in \textit{T. reesei,
   harzianum} \textit{T. virens}. Why that may be the case is difficult
 to answer without deeper invesitgation. There is clearly an underlying
 difference between the gene finding tools, in particular when training
-data is introduced. With hesitance, we observe that when gene finders
-are applied to the assemblies from which their training data
-originated, the gene finders tend to predict shorter genes. Conversly,
-we observe that when a gene finding tool trained with experimental
-evidence is applied to a different \textit{Trichoderma} assembly, the
-lengths of predicted genes do not significantly differ from an
-\textit{ab initio} gene finder like GeneMark.
+data is introduced. We observe that when gene finders are applied to
+the assemblies from which their training data originated, they tend to
+predict shorter genes. Conversly, we observe that when a gene finding
+tool trained with experimental evidence is applied to a different
+\textit{Trichoderma} assembly, the lengths of predicted genes do not
+significantly differ from an \textit{ab initio} gene finder like
+GeneMark, except in the case of RefSeq's predictions on
+\textit{T. reesei}.
