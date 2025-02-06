@@ -237,6 +237,9 @@ INPUT ./figures/igv/ips-basic-agree.png
 INPUT figures/igv/ips-model-disagree2.png
 INPUT ./figures/igv/ips-model-disagree2.png
 INPUT ./figures/igv/ips-model-disagree2.png
+INPUT figures/igv/ips-braker-genemark-norefseq.png
+INPUT ./figures/igv/ips-braker-genemark-norefseq.png
+INPUT ./figures/igv/ips-braker-genemark-norefseq.png
 INPUT thesis.bbl
 INPUT thesis.bbl
 INPUT thesis.aux

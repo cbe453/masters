@@ -1,21 +1,29 @@
 \section{InterProScan as Supporting Evidence for Predicted Genes}
 
 Pfam hits from InterProScan analysis are presented in table
-~\ref{ips-pfam:table}, from which we can identify one major trend. In
+~\ref{table:ips-pfam}, from which we can identify one major trend. In
 general, between 65 and 75 percent of proteins predicted by both
 Braker2 and GeneMark contain a match to a Pfam entry. This is
 promising performance for the gene finders as the RefSeq annotations
 demonstrate similar proportions of Pfam hits to predicted
 proteins. The total counts may be decieving however, as predictions
-from Braker2 may result in more than one protein product. In the case
-of GeneMark, only one protein is produced per gene model. From visual
-inspection of Pfam hits mapped back to the references, it would appear
-that in general, when gene finders agree that a gene is present,
-InterProScan reports the same Pfam match in all three predictions. An
-example of agreement between Braker2, GeneMark, RefSeq and
-InterProScan is shown in figure \ref{fig:basic-agree}. 
+from Braker2 may result in more than one protein product per gene,
+whereas in the case of GeneMark, only one protein is produced per gene
+model. From visual inspection of Pfam hits mapped back to the
+references, it would appear that in general, when gene finders agree
+that a gene is present, InterProScan reports the same Pfam match in
+all three predictions. An example of agreement between Braker2,
+GeneMark, RefSeq and InterProScan is shown in figure
+\ref{fig:basic-agree}. It is important to note that the positioning of
+the Pfam match does not indicate the exact position in the gene
+sequence, but provides an indication of the presence of Pfam
+matches. Pfam matches are offset from the start of the gene based on
+the start and end position of the Pfam match in the protein
+sequence. For example, if a Pfam match has a start position 10 amino
+acids into the protein sequence, the corresponding start position in
+the resulting GFF is 10bp downstream from the start of the gene.
 
-\begin{table}[!]
+\begin{table}[h!]
   \centering
   \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
@@ -28,17 +36,17 @@ InterProScan is shown in figure \ref{fig:basic-agree}.
   \end{tabular}
   \caption[InterProScan Pfam Evidence]{Table with counts of predicted
     genes with Pfam annotations from InterProScan}
-  \label{table:regioncounts}
+  \label{table:ips-pfam}
 \end{table}
 
 
-\begin{figure}
+\begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{figures/igv/ips-basic-agree.png}
+  \includegraphics[width=\textwidth]{figures/igv/ips-basic-agree.png}
   \caption[Agreeing Pfam matches]{An IGV capture showing complete
     agreement between gene finders for both gene model and protein
     Pfam hits}
-  \label{fig:basic-agree.png}
+  \label{fig:basic-agree}
 \end{figure}
 
 While cases of complete agreement are abundant, cases of disagreemnt
@@ -46,20 +54,45 @@ also exist and in strange forms. In many cases, while the gene finders
 agree on the presence of a gene, only the RefSeq protein product
 contains a match to the Pfam database. Why this may be the case is
 unclear, and may warrant further investigation. There are also many
-cases in which InterProScan reports the same Pfam hits, but the gene
-models in the region do not agree. There are even cases such as the
-region shown in figure \ref{fig:agree-bizarre2}, where Braker2 and
-GeneMark agree that two genes andtheir associated proteins and Pfam
-matches are separate, but RefSeq only reports one gene with multipl
-Pfam hits.
+cases in which InterProScan reports the same Pfam hits for individual
+proteins, but the gene models in the region do not agree. There are
+even cases such as the region shown in figure
+\ref{fig:agree-bizarre2}, where Braker2 and GeneMark agree that two
+genes and their associated proteins and Pfam matches are separate, but
+RefSeq only reports one gene with multiple Pfam hits. There are also
+several cases where two tools are in agreement with proteins
+containing Pfam hits while another is not. Even more interesting are
+cases such as the one shown in figure \ref{fig:ips-no-refseq}, in
+which Braker and GeneMark predictions contain Pfam matches while
+RefSeq does not report a gene at all. This may be the due to
+experimental data used in the RefSeq training process or a result of
+curation. Regardless of the tool, these cases demonstrate well that
+gene finders are not always in agreement, to the point that
+predictions are not present even though protein products from other
+gene finders contain known Pfam matches.
 
-\begin{figure}[!]
+\begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{figures/igv/ips-model-disagree2.png}
+  \includegraphics[width=\textwidth]{figures/igv/ips-model-disagree2.png}
   \caption[Split Pfam matches]{An IGV capture showing Braker2 and
     GeneMark reporting two genes and their resulting proteins and
     Pfam hits as separate, while RefSeq reports one gene, one protein
     and three Pfam matches.}
   \label{fig:agree-bizarre2}
-
 \end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{figures/igv/ips-braker-genemark-norefseq.png}
+  \caption[RefSeq absence with IPS evidence]{An IGV capture showing a
+    scenario where GeneMark and Braker2 agree on a gene model with
+    supporting Pfam evidence and RefSeq does not report any gene.}
+  \label{fig:ips-no-refseq}
+\end{figure}
+
+In summary, the protein products from Braker2 and GeneMark predictions
+do contain matches to the Pfam database. The proportions of matches to
+total proteins are similar to that of the RefSeq annotation, sitting
+between 65 and 75 percent. While Pfam hits to Braker2, GeneMark and
+RefSeq proteins generally agree, we do observe regions in which there
+is disagreement in serveral forms.
