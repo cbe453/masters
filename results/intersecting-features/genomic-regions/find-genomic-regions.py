@@ -88,7 +88,8 @@ def writeRegions(regions, outfile):
                         regionLowGC = True
                         continue
                     geneCount += 1
-                    finalStr += (str(feature.feature) + ':' +
+                    finalStr += ('ftr' + str(geneCount) + '=' +
+                                 str(feature.feature) + ':' +
                                  str(feature.startPos) + '-' + str(feature.endPos)
                                  + ':' + str(feature.strand) + ';')
                 outHandle.write(str(key) + '\t' +
