@@ -1,141 +1,90 @@
 \section{Region Identification}
 
-The region identification process begins with identification of
-regions sharing gene calls from each tool. For this project, we have
-classified regions as complete, partial or singleton. A complete
-region is a set of overlaps which contains a feature from each tool
-considered in the region finding process. A partial region is a set of
-overlaps which includes more than one but not all tools considered. A
-singleton is a region in which a feature from only one tool is
-present. Table \ref{table:regioncounts} displays the results from the
-region finding process when applied to only the features of type
-'gene' predicted by each tool.
+Visual breakdowns of the types of regions identified and their counts
+for each \textit{Trichoderma} assembly are shown in figure
+\ref{fig:regions-sankey}. We will first discuss the types of regions,
+beginning with fully support regions. These regions labelled `Full
+Support', are sections of genomic sequence where each gene finder
+agrees that a gene is present in some form. These fully supported
+regions are then broken down into two categories, based on whether or
+not the models from each gene finder agree on the start and stop
+positions of the gene model. Regions that have support from more than
+one gene finder, but not all, are labelled regions with `Partial
+Support'. These regions are also broken down in to two sub-regions
+based on whether or not the gene predictions agree on the start and
+stop positions of the gene. Regions with support from only one gene
+finder are labelled as singletons.
 
-\begin{table}
-  \begin{center}
-    \begin{tabular}{|c|c|c|c|c|c|c|}
-      \hline
-      Assembly & Regions (total) & Complete Agreement & Partial Agreement & Singletons\\ \hline
-      DC1 & 11269 & 8483 & N/A & 2786  \\ \hline
-      Tsth20 & 12272 & 8737 & N/A & 3535  \\ \hline
-      \textit{T. reesei} & 9823 & 8282 & 557 & 984  \\ \hline
-      \textit{T. harzianum} & 13388 & 8009 & 3314 & 2065  \\ \hline
-      \textit{T. virens} & 12045 & 7537 & 3715 & 793  \\ \hline
-    \end{tabular}
-  \end{center}
-  \caption[Counts of regions from the region identification
-    process]{Counts of regions identified in total and total number of
-    regions where a prediction from each individual tool was
-    found. Partial agreement values for DC1 and Tsth20 are set as N/A
-    as there were only two tools in consideration.}
-  \label{table:regioncounts}
-\end{table}
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}{0.9\textwidth}
+    \includegraphics[width=\textwidth]{figures/dc1-region-breakdown.png}
+    \label{fig:dc1-regions}
+    \caption{DC1}
+  \end{subfigure}
+  \begin{subfigure}{0.9\textwidth}
+    \includegraphics[width=\textwidth]{figures/tsth20-region-breakdown.png}
+    \label{fig:tsth20-regions}
+    \caption{Tsth20}
+  \end{subfigure}
+  \begin{subfigure}{0.9\textwidth}
+    \includegraphics[width=\textwidth]{figures/t-reesei-region-breakdown.png}
+    \label{fig:t-reesei-regions}
+    \caption{\textit{T. reesei}}
+  \end{subfigure}
+\end{figure}
+\begin{figure}[h!]
+  \ContinuedFloat
+  \centering
+  \begin{subfigure}{0.9\textwidth}
+    \includegraphics[width=\textwidth]{figures/t-harzianum-region-breakdown.png}
+    \label{fig:t-harzianum-regions}
+    \caption{\textit{T. harzianum}}
+  \end{subfigure}
+  \begin{subfigure}{0.9\textwidth}
+    \includegraphics[width=\textwidth]{figures/t-virens-region-breakdown.png}
+    \label{fig:t-virens-regions}
+    \caption{\textit{T. virens}}
+  \end{subfigure}
+  \caption[Breakdown of identified regions]{Figures showing breakdowns
+    of genomic regions identified by the region finding
+    process. Regions with supporting predictions from all gene finders
+    included in this analysis are labelled with `Full Support'. Fully
+    supported regions are then broken down into regions where gene
+    models agree on the start and stop positions of the genes, and
+    those that do not. Regions labelled with `Partial Support' are
+    regions with supporting gene predictions from more than one gene
+    finder, but not all. Partially supported regions are also broken
+    down into regions in which gene finders agree on the start and
+    stop positions of the gene, and those that do not agree. Regions
+    with gene predictions from only one gene finder are labelled as
+    singletons.}
+  \label{fig:regions-sankey}
+\end{figure}
 
-The results of the region finding process when applied to gene calls
-show a mix of agreement and disagreement between the tools considered
-here. While regions of complete agreement make up the majority of
-regions in all assemblies, there are more partial agreements and
-singletons than one would expect under the assumption that gene
-finding tools are equal. Both DC1 and Tsth20 have a large number of
-singleton regions present in comparison to the RefSeq datasets.
-
-The composition of gene calls from partial and singleton regions will
-help provide an understanding of each tools performance when looking
-for unqiue gene predictions. Table \ref{table:uniquegenes} displays
-counts of genes for each gene finding tool that are 'unique', or are
-not shared in a complete region.
-
-\begin{table}
-  \begin{center}
-    \begin{tabular}{|c|c|c|c|c|c|c|}
-      \hline
-      Assembly & Braker Partial & Braker Single & GeneMark Partial & GeneMark Single & RefSeq Partial & RefSeq Single \\ \hline
-      DC1 & N/A & 3 & N/A & 2783 & N/A & N/A \\ \hline
-      Tsth20 & N/A & 6 & N/A & 3529 & N/A & N/A \\ \hline
-      \textit{T. reesei} & 387 & 533 & 423 & 175 & 304 & 276 \\ \hline
-      \textit{T. harzianum} & 38 & 2 & 3309 & 209 & 3281 & 1854 \\ \hline
-      \textit{T. virens} & 30 & 0 & 3700 & 162 & 3700 & 631 \\ \hline
-    \end{tabular}
-  \end{center}
-  \caption[Counts of `unique' gene predictions]{}
-  \label{table:uniquegenes}
-\end{table}
-
-From table \ref{table:uniquegenes}, we can see that Braker's ability
-to predict unique or semi-unique genes is weaker than that of GeneMark
-and RefSeq in all assemblies except in the case
-\textit{T. reesei}. GeneMark predicts significantly more unique genes
-than Braker for the assemblies of DC1 and Tsth20 and a similar number
-of semi-unique and unique genes as RefSeq except in the case of
-\textit{T. harzianum} where RefSeq predicts far more unique genes.
-
-\section{Genes in Regions of Anomalous GC Content}
-
-Evaluating gene finder performance in regions of anomalous GC content
-is one of the key topics of this research. One simple way to evaluate
-performance is whether or not gene finding tools predict genes
-uniformly throughout a given sequence. Biologically, we know that
-regions of anomalous nucleotide composition are less likely to contain
-coding sequences than typical genomic regions, leading us to the
-problem of first identifying predicted genes in standard and anomalous
-regions. After identifying low GC segments within each assembly, we
-can include them in the region identification method. Counts from
-region identification with the inclusion of anomolous GC content are
-presented in table \ref{table:gc-regions}.
-
-\begin{table}
-  \begin{center}
-    \begin{tabular}{|c|c|c|c|c|}
-      Assembly & Total Regions & Complete Agreement & Partial Agreement & Singletons \\ \hline
-      DC1 & 11856 & 10 & N/A & 20  \\ \hline
-      Tsth20 & 12507 & 2 & N/A & 9  \\ \hline
-      \textit{T. reesei} & 10428 & 25 & 19 & 115  \\ \hline
-      \textit{T. harzianum} & 14622 & 26 & 45 & 548  \\ \hline
-      \textit{T. virens} & 12121 & 8 & 11 & 17  \\ \hline
-    \end{tabular}
-  \end{center}
-  \caption[Agreement of predictions in anomalous GC regions.]{Total
-    regions identified each assembly followed by counts of regions
-    (both agreement and singletons) in regions of anomalous GC
-    content.}
-  \label{table:gc-regions}
-\end{table}
-
-To better understand the performance of each tool in identifying genes
-in repetitive sequences, we will investigate the composition of the
-partial and singleton regions. Table \ref{table:gc-tools} shows the
-the number of genes identified by each tool in those regions.
-
-%\begin{table}
-%  \begin{center}
-
-%  \end{center}
-%\end{table}
-
-From this result, we classified predicted genes into two classes;
-genes in regions with normal GC content, and genes in regions with
-anomalous content. In this case, anomalous content is defined as a
-window of genomic sequence containing a percent GC composition of 28\%
-or lower. This number was chosen based on the plots of GC content
-presented in the assembly section of the results. After classifying
-predicted genes, two-sided binomial tests were performed with the null
-hypothesis being that predicted genes are distributed uniformly
-throughout an assembly. Framed differently, we expect the sum of genes
-predicted in both regular and irregular regions to be proportional to
-the sum of lengths of those regions, respectively. This is not the
-case as demonstrated in table~\ref{table:gc-binomial}.
-
-\begin{table}
-  \begin{center}
-    \begin{tabular}{|c|c|c|c|c|c|}
-      \hline
-      Tool & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens} \\ \hline
-      Braker2 & $9.56^{-181}$ & $1.14^{-259}$ & $2.68^{-96}$ & $4.05^{-140}$ & $1.35^{-35}$ \\ \hline
-      GeneMark & $5.12^{-216}$ & $0.0$ & $5.66^{-49}$ & $5.37^{-219}$ & $5.31^{-35}$ \\ \hline
-      RefSeq & N/A & N/A & $1.29^{-49}$ & $2.44^{-205}$ & $7.40^{-33}$ \\ \hline
-    \end{tabular}
-  \end{center}
-  \caption{\textit{p} values produced from a two-sided binomial test
-    for each combination of tool and assembly.}
-  \label{table:gc-binomial}
-\end{table}
+Looking at DC1 and Tsth20 in figure \ref{fig:regions-sankey}, it
+appears that Braker2 and GeneMark predict genes in the same regions in
+the majority of cases. For regions with full support, the models also
+tend to agree on the start and stop positions of the gene in that
+region. This is not generally the case as we will see
+later. \textit{Trichoderma reesei} contains the fewest number of
+regions, which seems to scale appropriately with the total number of
+predicted genes. The vast majority of the regions are fully or
+partially supported by Braker2, GeneMark and RefSeq, with only 10
+percent of the regions being single predictions. The most interesting
+thing here is the number of fully supported regions that disagree on
+start and stop positions of the gene(s) in that region. There is
+clearly a difference in the gene models being produced by these gene
+finders. If there is disagreement on the start and stop positions of a
+gene, then there is likely disagreement on the number and location of
+exons and introns within the gene model as well. In the case of
+partially supported regions, there is more disagreement than
+agreement, but that may come as less of a surprise as there is already
+disgreement on the presence of a gene at all. Gene finding behaviour
+in regions from \textit{T.harzianum} and \textit{T. virens} differ
+from the other assemblies in the split between fully and partially
+supported regions. There seems to be fewer regions with full support
+from all gene finders and the reason why is unclear. The gene models
+in each region, whether fully or partially supported, still tend to
+disagree on start and stop positions of the genes more often than
+agree
