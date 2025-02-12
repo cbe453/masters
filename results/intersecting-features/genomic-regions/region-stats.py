@@ -23,6 +23,19 @@ def agree(region):
     return(True)
         #print('start: ' + str(start))
         #print('stop: ' + str(stop))
+
+def sameStrand(region):
+    numFeatures = int(region.qualifiers['geneCount'][0])
+    firstStrand = None
+    for i in range(1, numFeatures+1):
+        key = 'ftr' + str(i)
+        feature = region.qualifiers[key][0]
+        if firstStrand == None:
+            firstStrand = str(feature.split(':')[2])
+        elif firstStrand != str(feature.split(':')[2]):
+            return(False)
+
+    return(True)
         
 def parseGFF(gffFile):
     contigs = {}
@@ -35,8 +48,11 @@ def parseGFF(gffFile):
     fullSupport = 0
     fullSupportAgree = 0
     fullSupportDisagree = 0
-    uncertainRegions = 0
+    uncertainRegions = []
     totalRegions = 0
+    sameStrands = 0
+    diffStrands = []
+    
     
     for contig in GFF.parse(gffHandle):
         for region in contig.features:
@@ -52,17 +68,29 @@ def parseGFF(gffFile):
                     fullSupportAgree += 1
                 else:
                     fullSupportDisagree += 1
-            if toolCount == 2:
-                fullSupport += 1
-                if(agree(region)):
-                    fullSupportAgree += 1
+
+                if (sameStrand(region)):
+                    sameStrands += 1
                 else:
-                    fullSupportDisagree += 1
+                    diffStrands.append(region)
+                    
+            if toolCount == 2:
+                partialSupport += 1
+                if(agree(region)):
+                    partialSupportAgree += 1
+                else:
+                    partialSupportDisagree += 1
+
+                if (sameStrand(region)):
+                    sameStrands += 1
+                else:
+                    diffStrands.append(region)
+                    
             elif toolCount == 1:
                 single += 1
 
             if geneCount > 3:
-                uncertainRegions += 1
+                uncertainRegions.append(region)
 
     print('Total number of regions: ' + str(totalRegions))
     print('Fully supported genes: ' + str(fullSupport))
@@ -72,8 +100,8 @@ def parseGFF(gffFile):
     print('Partially supported genes with agreeing models: ' + str(partialSupportAgree))
     print('Partially supported genes with disagreeing models: ' + str(partialSupportDisagree))
     print('Singletons: ' + str(single))
-    print('Regions with more than 3 predicted models: ' + str(uncertainRegions))
-    
+    print('Regions with more than 3 predicted models: ' + str(len(uncertainRegions)))
+    print('Regions with predictions on differing strands: ' + str(len(diffStrands)))
 
     fig = go.Figure(data=[go.Sankey(
         node = dict(
@@ -95,9 +123,16 @@ def parseGFF(gffFile):
         ))])
     
     fig.update_layout(title_text="Basic Sankey Diagram", font_size=10)
-    fig.show()
+    #fig.show()
     gffHandle.close()
 
+    outHandle = open(args.outFile, 'w')
+    for region in diffStrands:
+        outHandle.write(region.__str__())
+        #print(region)
+    for region in uncertainRegions:
+        outHandle.write(region.__str__())
+    outHandle.close()
     return
             
 def main(args):
