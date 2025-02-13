@@ -244,6 +244,12 @@ INPUT ./figures/t-harzianum-region-breakdown.png
 INPUT figures/t-virens-region-breakdown.png
 INPUT ./figures/t-virens-region-breakdown.png
 INPUT ./figures/t-virens-region-breakdown.png
+INPUT figures/igv/igv-uncertain-regions.png
+INPUT ./figures/igv/igv-uncertain-regions.png
+INPUT ./figures/igv/igv-uncertain-regions.png
+INPUT figures/igv/igv-opposing-strands.png
+INPUT ./figures/igv/igv-opposing-strands.png
+INPUT ./figures/igv/igv-opposing-strands.png
 INPUT chapters/c5/gc-regions.tex
 INPUT chapters/c5/gc-regions.tex
 INPUT chapters/c5/interproscan-results.tex

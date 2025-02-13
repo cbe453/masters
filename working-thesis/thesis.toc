@@ -60,7 +60,7 @@
 \contentsline {section}{\numberline {5.5}BLAST Results}{32}{section.5.5}
 \contentsline {section}{\numberline {5.6}BUSCO Results}{32}{section.5.6}
 \contentsline {section}{\numberline {5.7}Region Identification}{32}{section.5.7}
-\contentsline {section}{\numberline {5.8}Genes in Regions of Anomalous GC Content}{35}{section.5.8}
-\contentsline {section}{\numberline {5.9}InterProScan as Supporting Evidence for Predicted Genes}{36}{section.5.9}
-\contentsline {section}{\numberline {5.10}Conclusions}{42}{section.5.10}
-\contentsline {chapter}{References}{43}{section*.36}
+\contentsline {section}{\numberline {5.8}Genes in Regions of Anomalous GC Content}{37}{section.5.8}
+\contentsline {section}{\numberline {5.9}InterProScan as Supporting Evidence for Predicted Genes}{39}{section.5.9}
+\contentsline {section}{\numberline {5.10}Conclusions}{43}{section.5.10}
+\contentsline {chapter}{References}{44}{section*.38}

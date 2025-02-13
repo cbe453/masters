@@ -7,6 +7,6 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces Table of \textit {P}-values from two-sided two-sample Kolmogorov-Smirnov tests between gene finding tools.\relax }}{31}{table.caption.25}
 \contentsline {table}{\numberline {5.3}{\ignorespaces tBLASTn hits from reference protein sequences to selected assemblies of intereset. Hits are reported if the alignment length is greater than 30\% of the reference protein length and if 30\% of the aligned length have identical matches.\relax }}{32}{table.caption.26}
 \contentsline {table}{\numberline {5.4}{\ignorespaces Results from BUSCO using the fungal analysis option organized by gene finding tool.\relax }}{33}{table.caption.27}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Agreement of predictions in anomalous GC regions.}}{35}{table.caption.30}
-\contentsline {table}{\numberline {5.6}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{36}{table.caption.31}
-\contentsline {table}{\numberline {5.7}{\ignorespaces InterProScan Pfam Evidence}}{37}{table.caption.32}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Agreement of predictions in anomalous GC regions.}}{38}{table.caption.32}
+\contentsline {table}{\numberline {5.6}{\ignorespaces \textit {p} values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{39}{table.caption.33}
+\contentsline {table}{\numberline {5.7}{\ignorespaces InterProScan Pfam Evidence}}{40}{table.caption.34}
