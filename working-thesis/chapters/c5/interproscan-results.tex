@@ -2,37 +2,40 @@
 
 Pfam hits from InterProScan analysis are presented in table
 ~\ref{table:ips-pfam}, from which we can identify one major trend. In
-general, between 65 and 75 percent of proteins predicted by both
-Braker2 and GeneMark contain a match to a Pfam entry. This is
-promising performance for the gene finders as the RefSeq annotations
-demonstrate similar proportions of Pfam hits to predicted
-proteins. The total counts may be decieving however, as predictions
-from Braker2 may result in more than one protein product per gene,
-whereas in the case of GeneMark, only one protein is produced per gene
-model. From visual inspection of Pfam hits mapped back to the
-references, it would appear that in general, when gene finders agree
-that a gene is present, InterProScan reports the same Pfam match in
-all three predictions. An example of agreement between Braker2,
+general, roughly 73-76\% of proteins predicted by Braker2, GeneMark
+and RefSeq contain a match to a Pfam entry, except in the case of
+\texit{T. harzianum}, which has reports a considerably lower
+proportion of genes with Pfam matches. Why the proportion of RefSeq
+proteins with Pfam matches in \textit{T. harzianum} is so low is
+unknown. This is promising performance for the gene finders as the
+RefSeq annotations demonstrate similar proportions of Pfam hits to
+predicted proteins. The total counts may be decieving however, as
+predictions from Braker2 may result in more than one protein product
+per gene, whereas in the case of GeneMark, only one protein is
+produced per gene model. From visual inspection of Pfam hits mapped
+back to the references, it appears that in general, when gene finders
+agree that a gene is present, InterProScan reports the same Pfam match
+in all three predictions. An example of agreement between Braker2,
 GeneMark, RefSeq and InterProScan is shown in figure
-\ref{fig:basic-agree}. It is important to note that the positioning of
-the Pfam match does not indicate the exact position in the gene
-sequence, but provides an indication of the presence of Pfam
+\ref{fig:basic-agree}. It is important to note that the position of
+the Pfam match in IGV does not indicate the true position of the Pfam
+match in the gene, but provides an indication of the presence of Pfam
 matches. Pfam matches are offset from the start of the gene based on
 the start and end position of the Pfam match in the protein
 sequence. For example, if a Pfam match has a start position 10 amino
 acids into the protein sequence, the corresponding start position in
-the resulting GFF is 10bp downstream from the start of the gene.
+the resulting GFF is 10bp downstream from the start of the gene. 
 
 \begin{table}[h!]
   \centering
   \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
-    Assembly & \makecell{Braker \\ Proteins} & \makecell{Braker Pfam \\ Hits} & \makecell{GeneMark \\ Proteins} & \makecell{GeneMark Pfam \\Hits} & \makecell{RefSeq \\ Proteins} & \makecell{RefSeq Pfam \\ Hits}  \\ \hline
-    DC1 & 14479 & 10676 & 11354 & 8416  & N/A & N/A \\ \hline
-    Tsth20 & 15546 & 11389 & 12373 & 9168 & N/A & N/A \\ \hline
-    \textit{T. reesei} & 11704 & 8471 & 9196 & 6990 & 9111 & 6964 \\ \hline
-    \textit{T. harzianum} & 15408 & 11370 & 12164 & 9061 & 14065 & 9293 \\ \hline
-    \textit{T. virens} & 15062 & 11249 & 11866 & 8871 & 12383 & 9062 \\ \hline
+    Assembly & Braker2 & GeneMark & RefSeq \\ \hline
+    DC1 & $100\times(\frac{10676}{14479})=73.73\%$ & $100\times(\frac{8416}{11354})=74.12\%$ & N/A \\ \hline
+    Tsth20 & $100\times(\frac{11389}{15546})=73.26\%$ & $100\times(\frac{9168}{12373})=74.10\%$ & N/A \\ \hline
+    \textit{T. reesei} & $100\times(\frac{8471}{11704})=72.38\%$ & $100\times(\frac{6990}{9196})=76.01\%$ & $100\times(\frac{6964}{9111})=76.44\%$ \\ \hline
+    \textit{T. harzianum} & $100\times(\frac{11370}{15408})=73.79\%$ & $100\times(\frac{9061}{12164})=74.49\%$ & $100\times(\frac{9293}{14065})=66.07\%$ \\ \hline
+    \textit{T. virens} & $100\times(\frac{11249}{15062})=74.68\%$ & $100\times(\frac{8871}{11866})=74.76\%$ & $100\times(\frac{9062}{12383})=73.18\%$ \\ \hline
   \end{tabular}
   \caption[InterProScan Pfam Evidence]{Table with counts of predicted
     genes with Pfam annotations from InterProScan}
