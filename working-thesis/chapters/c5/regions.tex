@@ -3,15 +3,15 @@
 Visual breakdowns of the types of regions identified and their counts
 for each \textit{Trichoderma} assembly are shown in figure
 \ref{fig:regions-sankey}. We will first discuss the types of regions,
-beginning with fully supported regions. These regions labelled `Full
+beginning with fully supported regions. These regions, labelled `Full
 Support', are sections of genomic sequence where each gene finder
 agrees that a gene is present in some form. These fully supported
 regions are then broken down into two categories, based on whether or
-not the models from each gene finder agree on the start and stop
+not the models from each gene finder agree on the start and/or stop
 positions of the gene model. Regions that have support from more than
 one gene finder, but not all, are labelled regions with `Partial
 Support'. These regions are also broken down in to two sub-regions
-based on whether or not the gene predictions agree on the start and
+based on whether or not the gene predictions agree on the start and/or
 stop positions of the gene. Regions with support from only one gene
 finder are labelled as singletons.
 
@@ -48,17 +48,19 @@ finder are labelled as singletons.
   \end{subfigure}
   \caption[Breakdown of identified regions]{Figures showing breakdowns
     of genomic regions identified by the region finding
-    process. Regions with supporting predictions from all gene finders
-    included in this analysis are labelled with `Full Support'. Fully
-    supported regions are then broken down into regions where gene
-    models agree on the start and stop positions of the genes, and
-    those that do not. Regions labelled with `Partial Support' are
-    regions with supporting gene predictions from more than one gene
-    finder, but not all. Partially supported regions are also broken
-    down into regions in which gene finders agree on the start and
-    stop positions of the gene, and those that do not agree. Regions
-    with gene predictions from only one gene finder are labelled as
-    singletons.}
+    process. Regions, in blue, are categorized based on support from
+    gene finders. Regions with supporting predictions from all gene
+    finders included in this analysis are labelled with `Full Support'
+    and colored red. Fully supported regions are then broken down into
+    regions where gene models agree on the start and stop positions of
+    the genes (purple), and those that do not (orange). Regions
+    labelled with `Partial Support' (turquoise) are regions with
+    supporting gene predictions from more than one gene finder, but
+    not all. Partially supported regions are also broken down into
+    regions in which gene finders agree on the start and stop
+    positions of the gene (cyan), and those that do not agree
+    (pink). Regions with gene predictions from only one gene finder
+    are labelled as singletons (green).}
   \label{fig:regions-sankey}
 \end{figure}
 
@@ -66,8 +68,10 @@ Looking at DC1 and Tsth20 in figure \ref{fig:regions-sankey}, it
 appears that Braker2 and GeneMark predict genes in the same regions in
 the majority of cases. For regions with full support, the models also
 tend to agree on the start and stop positions of the gene in that
-region. This is not generally the case as we will see
-later. \textit{Trichoderma reesei} contains the fewest number of
+region. This is not generally the case as we will see later. There are
+no regions with partial support for DC1 and Tsth20, as there are only
+two gene finders considered, leaving only complete agreement or
+disagreement. \textit{Trichoderma reesei} contains the fewest number of
 regions, which seems to scale appropriately with the total number of
 predicted genes. The vast majority of the regions are fully or
 partially supported by Braker2, GeneMark and RefSeq, with only 10
@@ -89,24 +93,26 @@ models in each region, whether fully or partially supported, still
 tend to disagree on start and stop positions of the genes more often
 than agree.
 
-It is also worthwhile investigating other potentially interesting
-cases of strange gene calls in regions. One such case is when a region
+It is also worthwhile investigating some potentially interesting cases
+of strange gene calls in regions. One such case is when a region
 contains more than three individual predicted genes. The null
 hypothesis, so to speak, is that if all gene finders agree on the
 presence of a gene in a region, then one should expect only three
 predictions in that region. We observe that this is not always
 true. Cases of more than three gene predictions in a region were
 present in regions from all processed assemblies. Figure
-\ref{fig:uncertain-regions} shows an example of one of these
-regions. In the case of DC1 and Tsth20, there were very few regions
-that matched this criteria, with 19 and 6 regions matching
-respectively. Conversly, \textit{T. reesei, T.harzianum and T.virens}
-contain many such regions, with assemblies reporting 546, 899 and 521
-regions with greater than three gene predictions respectively. While
-having predictions from each gene finding tool present in a region is
-a strong indicator for the presence of a gene, having more than one
-gene prediction per gene finder raises questions about which model (or
-models) is correct and why disagreement exists.
+\ref{fig:uncertain-regions} shows an example of one of these regions,
+in which the single gene predicted by RefSeq spans multiple gene
+predictions from both Braker2 and GeneMark. In the case of DC1 and
+Tsth20, there were very few regions that matched this scenario, with
+19 and 6 regions matching respectively. Conversly, \textit{T. reesei,
+  T.harzianum and T.virens} contain many such regions, with assemblies
+reporting 546, 899 and 521 regions with greater than three gene
+predictions respectively. While having predictions from each gene
+finding tool present in a region is a strong indicator for the
+presence of a gene, having more than one gene prediction per gene
+finder raises questions about which model (or models) is correct and
+why disagreement exists.
 
 \begin{figure}
   \centering
@@ -117,20 +123,20 @@ models) is correct and why disagreement exists.
   \label{fig:uncertain-regions}
 \end{figure}
 
-Another interesting scenario to investigate is whether or not gene
-finders always predict genes on the same strand within a region. We
-observe that regions containing predictions on different strands do
-exist, and are observed in predictions from all assemblies included in
-this analysis. Figure \ref{fig:opposing-strands} shows an example of a
-region containing gene predictions on opposing strands. As in the case
-of regions with more than three gene predictions, DC1 and Tsth20
-report fewer mixed strand regions with DC1 reporting 29 regions and
-Tsth20 reporting 46. \textit{T. reesei, T. harzianum and T. virens}
-again report more regions matching this criteria, with region counts
-being 203, 533 and 293 respectively. Under the assumption that gene
-finders should predict the same genes on the same strands, it is
-unexpected to find so many of these cases, and will require further
-investigation.
+Another interesting set of criteria to investigate is whether or not
+gene finders always predict genes on the same strand within a
+region. We observe that regions containing predictions on different
+strands do exist, and are observed in predictions from all assemblies
+included in this analysis. Figure \ref{fig:opposing-strands} shows an
+example of a region containing gene predictions on opposing
+strands. As in the case of regions with more than three gene
+predictions, DC1 and Tsth20 report fewer mixed strand regions with DC1
+reporting 29 regions and Tsth20 reporting 46. \textit{T. reesei,
+  T. harzianum and T. virens} report more regions in which this
+property is true, with region counts being 203, 533 and 293
+respectively. Under the assumption that gene finders should predict
+the same genes on the same strands, it is unexpected to find so many
+of these cases, and will require further investigation.
 
 \begin{figure}
   \centering
@@ -145,8 +151,8 @@ In summary, gene finders agree partially or completely on the presence
 of a gene in the vast majority of cases. While gene finders generally
 agree on the presence of a gene, they tend to disagree on the
 underlying gene model more often than they agree, except in in the
-case of Braker2 and GeneMark. This is likely due to only including two
-gene finders in their analysis rather than three, resulting in fewer
+case of DC1 and Tsth20. This is likely due to only including two gene
+finders in their analysis rather than three, resulting in fewer
 opportunities for disagreement. This observation is true when applied
 to the start and stop positions of the gene, but further investigation
 and comparison of intronic and exonic sequences between genes may

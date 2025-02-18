@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 FEB 2025 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 FEB 2025 19:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,7 +721,7 @@ ine 45.
 File: figures/igv/igv-uncertain-regions.png Graphic file (type png)
 <use figures/igv/igv-uncertain-regions.png>
 Package pdftex.def Info: figures/igv/igv-uncertain-regions.png  used on input l
-ine 113.
+ine 119.
 (pdftex.def)             Requested size: 424.82523pt x 205.19273pt.
 
 Underfull \vbox (badness 7576) has occurred while \output is active []
@@ -734,7 +734,7 @@ breakdown.png> <./figures/t-virens-region-breakdown.png>]
 File: figures/igv/igv-opposing-strands.png Graphic file (type png)
 <use figures/igv/igv-opposing-strands.png>
 Package pdftex.def Info: figures/igv/igv-opposing-strands.png  used on input li
-ne 137.
+ne 143.
 (pdftex.def)             Requested size: 424.82523pt x 206.08252pt.
 )
 (./chapters/c5/gc-regions.tex [37 <./figures/igv/igv-uncertain-regions.png>]
@@ -744,13 +744,19 @@ LaTeX Warning: Reference `table:gc-tools' on page 38 undefined on input line 36
 
 [38 <./figures/igv/igv-opposing-strands.png>])
 (./chapters/c5/interproscan-results.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <figures/igv/ips-basic-agree.png, id=946, 1551.7975pt x 839.135pt>
 File: figures/igv/ips-basic-agree.png Graphic file (type png)
 <use figures/igv/ips-basic-agree.png>
 Package pdftex.def Info: figures/igv/ips-basic-agree.png  used on input line 48
 .
 (pdftex.def)             Requested size: 472.03123pt x 255.25078pt.
- [39]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[39]
 <figures/igv/ips-model-disagree2.png, id=953, 1390.19376pt x 764.8575pt>
 File: figures/igv/ips-model-disagree2.png Graphic file (type png)
 <use figures/igv/ips-model-disagree2.png>
@@ -813,7 +819,7 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (52 pages, 1489171 bytes).
+Output written on thesis.pdf (52 pages, 1489554 bytes).
 PDF statistics:
  1064 PDF objects out of 1200 (max. 8388607)
  741 compressed objects within 8 object streams
