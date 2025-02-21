@@ -1,27 +1,37 @@
 \section{Genes in Regions of Anomalous GC Content}
 
-Evaluating gene finder performance in regions of anomalous GC content
-is one of the key topics of this research. One simple way to evaluate
-performance is whether or not gene finding tools predict genes
-uniformly throughout a given sequence. Biologically, we know that
-regions of anomalous nucleotide composition are less likely to contain
-coding sequences than typical genomic regions, leading us to the
-problem of first identifying predicted genes in standard and anomalous
-regions. After identifying low GC segments within each assembly, we
-can include them in the region identification method. Counts from
-region identification with the inclusion of anomolous GC content are
-presented in table \ref{table:gc-regions}.
+Figure \ref{table:gc-regions} shows the results of applying the same
+region finding process from earlier to segments of the genome
+identified as AT-rich. In comparison to results from section (region
+finding section), we see that there are far fewer predicted genes in
+regions of AT-rich genomic sequence. In DC1 and Tsth20, there are only
+42 and 13 genes predicted respectively. Of the regions with gene
+predictions in AT-rich genomic sequence, there are only a few with
+support from both Braker2 and GeneMark in DC1 and Tsth20. Again, in a
+similar case to section (region finding section), there are no regions
+with partial support as only two gene finding tools were applied to
+those assemblies. \textit{T. reesei} and \textit{T. harzianum} report
+more regions and genes in AT-rich genomic sequence than the other
+assemblies, but with most regions belonging to the singleton
+category. \textit{T. virens} is an interesting case, reporting a
+similar numbers of regions and genes in AT-rich genomic sequence as
+DC1 and Tsth20. Why \textit{T. virens} differs so greatly from the
+other RefSeq assemblies is unclear. In general, gene finders predict
+few genes in regions of AT-rich genomic sequence, and gene predictions
+in those regions show a smaller proportion of fully supported regions
+when compared to the AT-rich agnostic regions from section (region
+finding section).
 
 \begin{table}
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|}
       \hline
-      Assembly & Total Regions & Complete Agreement & Partial Agreement & Singletons \\ \hline
-      DC1 & 11856 & 10 & N/A & 20  \\ \hline
-      Tsth20 & 12507 & 2 & N/A & 9  \\ \hline
-      \textit{T. reesei} & 10428 & 25 & 19 & 115  \\ \hline
-      \textit{T. harzianum} & 14622 & 26 & 45 & 548  \\ \hline
-      \textit{T. virens} & 12121 & 8 & 11 & 17  \\ \hline
+      Assembly & Full Support & Partial Support & Singletons & No. Genes \\ \hline
+      DC1 & 11 & N/A & 20 & 42  \\ \hline
+      Tsth20 & 2 & N/A & 9 & 13  \\ \hline
+      \textit{T. reesei} & 25 & 18 & 54 & 194  \\ \hline
+      \textit{T. harzianum} & 26 & 43 & 68 & 265  \\ \hline
+      \textit{T. virens} & 8 & 11 & 0 & 49  \\ \hline
     \end{tabular}
   \end{center}
   \caption[Agreement of predictions in anomalous GC regions.]{Total
@@ -31,29 +41,43 @@ presented in table \ref{table:gc-regions}.
   \label{table:gc-regions}
 \end{table}
 
-To better understand the performance of each tool in identifying genes
-in repetitive sequences, we will investigate the composition of the
-partial and singleton regions. Table \ref{table:gc-tools} shows the
-the number of genes identified by each tool in those regions.
+In addition to a breakdown of regions in AT-rich genomic sequence,
+understanding which gene finders predict more or fewer genes in these
+regions may be of interest. Table \ref{table:gc-gene-counts} shows the
+number of genes predicted by each gene finding tool in regions of
+AT-rich genomic sequence. GeneMark appears to predict the fewest genes
+in AT-rich regions, while RefSeq appears to predict the most. Braker2
+lies somewhere in the middle. Again, \textit{T. virens} appears as an
+odd case, with very few predictions from all gene finders. Why
+\textit{T. virens} differs from the other RefSeq assemblies is
+unclear.
 
-%\begin{table}                                                                                                                                                                                                                                                                                                                                                            
-%  \begin{center}                                                                                                                                                                                                                                                                                                                                                         
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      Assembly & Braker2 & GeneMark & RefSeq \\ \hline
+      DC1 & 31 & 11 & N/A \\ \hline
+      Tsth20 & 11 & 2 & N/A \\ \hline
+      \textit{T. reesei} & 39 & 48 & 107 \\ \hline
+      \textit{T. harzianum} & 81 & 30 & 154 \\ \hline
+      \textit{T.virens} & 21 & 8 & 20 \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption{Number of genes predicted by Braker2, GeneMark and RefSeq
+    in AT-rich genomic sequence from each assembly.}
+  \label{table:gc-gene-counts}
+\end{table}
 
-%  \end{center}                                                                                                                                                                                                                                                                                                                                                           
-%\end{table}                                                                                                                                                                                                                                                                                                                                                              
-
-From this result, we classified predicted genes into two classes;
-genes in regions with normal GC content, and genes in regions with
-anomalous content. In this case, anomalous content is defined as a
-window of genomic sequence containing a percent GC composition of 28\%
-or lower. This number was chosen based on the plots of GC content
-presented in the assembly section of the results. After classifying
-predicted genes, two-sided binomial tests were performed with the null
-hypothesis being that predicted genes are distributed uniformly
-throughout an assembly. Framed differently, we expect the sum of genes
-predicted in both regular and irregular regions to be proportional to
-the sum of lengths of those regions, respectively. This is not the
-case as demonstrated in table~\ref{table:gc-binomial}.
+Finally, to test the probability of any given gene prediction falling
+in an AT-rich genomic sequence, a two-sided binomial test was
+performed to determine if the number of genes predicted in AT-rich
+sequences is proportional to fraction of genomic sequence they
+comprise. The results of the test are shown in table
+\ref{table:gc-binomial}. In all cases, it appears that the gene
+finding tools selected for this analysis do not predict the same
+proportion of genes in AT-rich genomic sequence as in typical genomic
+sequence.
 
 \begin{table}
   \begin{center}
@@ -69,3 +93,12 @@ case as demonstrated in table~\ref{table:gc-binomial}.
     for each combination of tool and assembly.}
   \label{table:gc-binomial}
 \end{table}
+
+In summary, very few genes are predicted by these gene finding tools
+in AT-rich genomic sequences. Additionally genes predicted in these
+regions tend to be isolated and not supported by other gene finders,
+although there is some agreement. In terms of `performance', RefSeq
+tends to predict the most genes in these AT-rich regions while
+GeneMark predicts the fewest. Lastly, the selected gene finding tools
+do not predict genes in AT-rich sequences in proportion to the
+fraction of genomic sequence they comprise.
