@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 FEB 2025 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 FEB 2025 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,37 +691,37 @@ g.pdf> <./figures/t-harzianum-cdf-lengths-log.pdf>] [31 <./figures/t-virens-cdf
 File: figures/dc1-region-breakdown.png Graphic file (type png)
 <use figures/dc1-region-breakdown.png>
 Package pdftex.def Info: figures/dc1-region-breakdown.png  used on input line 2
-1.
+2.
 (pdftex.def)             Requested size: 424.82523pt x 156.48325pt.
 <figures/tsth20-region-breakdown.png, id=907, 648.4225pt x 217.81375pt>
 File: figures/tsth20-region-breakdown.png Graphic file (type png)
 <use figures/tsth20-region-breakdown.png>
 Package pdftex.def Info: figures/tsth20-region-breakdown.png  used on input lin
-e 26.
+e 27.
 (pdftex.def)             Requested size: 424.82523pt x 142.70726pt.
 <figures/t-reesei-region-breakdown.png, id=908, 586.19pt x 233.87375pt>
 File: figures/t-reesei-region-breakdown.png Graphic file (type png)
 <use figures/t-reesei-region-breakdown.png>
 Package pdftex.def Info: figures/t-reesei-region-breakdown.png  used on input l
-ine 31.
+ine 32.
 (pdftex.def)             Requested size: 424.82523pt x 169.49165pt.
 <figures/t-harzianum-region-breakdown.png, id=909, 596.2275pt x 233.87375pt>
 File: figures/t-harzianum-region-breakdown.png Graphic file (type png)
 <use figures/t-harzianum-region-breakdown.png>
 Package pdftex.def Info: figures/t-harzianum-region-breakdown.png  used on inpu
-t line 40.
+t line 41.
 (pdftex.def)             Requested size: 424.82523pt x 166.64032pt.
 <figures/t-virens-region-breakdown.png, id=910, 587.19376pt x 233.87375pt>
 File: figures/t-virens-region-breakdown.png Graphic file (type png)
 <use figures/t-virens-region-breakdown.png>
 Package pdftex.def Info: figures/t-virens-region-breakdown.png  used on input l
-ine 45.
+ine 46.
 (pdftex.def)             Requested size: 424.82523pt x 169.20259pt.
 <figures/igv/igv-uncertain-regions.png, id=913, 1446.40375pt x 698.61pt>
 File: figures/igv/igv-uncertain-regions.png Graphic file (type png)
 <use figures/igv/igv-uncertain-regions.png>
 Package pdftex.def Info: figures/igv/igv-uncertain-regions.png  used on input l
-ine 119.
+ine 120.
 (pdftex.def)             Requested size: 424.82523pt x 205.19273pt.
 
 Underfull \vbox (badness 7576) has occurred while \output is active []
@@ -734,13 +734,17 @@ breakdown.png> <./figures/t-virens-region-breakdown.png>]
 File: figures/igv/igv-opposing-strands.png Graphic file (type png)
 <use figures/igv/igv-opposing-strands.png>
 Package pdftex.def Info: figures/igv/igv-opposing-strands.png  used on input li
-ne 143.
+ne 144.
 (pdftex.def)             Requested size: 424.82523pt x 206.08252pt.
 )
-(./chapters/c5/gc-regions.tex [37 <./figures/igv/igv-uncertain-regions.png>]
-[38 <./figures/igv/igv-opposing-strands.png>])
-(./chapters/c5/interproscan-results.tex [39]
-<figures/igv/ips-basic-agree.png, id=954, 1551.7975pt x 839.135pt>
+(./chapters/c5/gc-regions.tex
+
+LaTeX Warning: Reference `section:regions.' on page 37 undefined on input line 
+26.
+
+[37 <./figures/igv/igv-uncertain-regions.png>] [38 <./figures/igv/igv-opposing-
+strands.png>]) (./chapters/c5/interproscan-results.tex [39]
+<figures/igv/ips-basic-agree.png, id=956, 1551.7975pt x 839.135pt>
 File: figures/igv/ips-basic-agree.png Graphic file (type png)
 <use figures/igv/ips-basic-agree.png>
 Package pdftex.def Info: figures/igv/ips-basic-agree.png  used on input line 48
@@ -750,7 +754,7 @@ Package pdftex.def Info: figures/igv/ips-basic-agree.png  used on input line 48
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/igv/ips-model-disagree2.png, id=957, 1390.19376pt x 764.8575pt>
+<figures/igv/ips-model-disagree2.png, id=959, 1390.19376pt x 764.8575pt>
 File: figures/igv/ips-model-disagree2.png Graphic file (type png)
 <use figures/igv/ips-model-disagree2.png>
 Package pdftex.def Info: figures/igv/ips-model-disagree2.png  used on input lin
@@ -759,7 +763,7 @@ e 79.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/igv/ips-braker-genemark-norefseq.png, id=958, 1448.41125pt x 701.62125
+<figures/igv/ips-braker-genemark-norefseq.png, id=960, 1448.41125pt x 701.62125
 pt>
 File: figures/igv/ips-braker-genemark-norefseq.png Graphic file (type png)
 <use figures/igv/ips-braker-genemark-norefseq.png>
@@ -789,10 +793,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 8275 strings out of 492649
- 127867 string characters out of 6129622
- 232625 words of memory out of 5000000
- 11789 multiletter control sequences out of 15000+600000
+ 8278 strings out of 492649
+ 127922 string characters out of 6129622
+ 232742 words of memory out of 5000000
+ 11792 multiletter control sequences out of 15000+600000
  8685 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,41p,930b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -811,10 +815,10 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (53 pages, 1491135 bytes).
+Output written on thesis.pdf (53 pages, 1491205 bytes).
 PDF statistics:
- 1072 PDF objects out of 1200 (max. 8388607)
- 748 compressed objects within 8 object streams
+ 1074 PDF objects out of 1200 (max. 8388607)
+ 750 compressed objects within 8 object streams
  168 named destinations out of 1000 (max. 500000)
  654 words of extra memory for PDF output out of 10000 (max. 10000000)
 

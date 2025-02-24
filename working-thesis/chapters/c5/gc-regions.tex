@@ -1,26 +1,29 @@
 \section{Genes in Regions of Anomalous GC Content}
+\label{section:gc-regions}
 
 Figure \ref{table:gc-regions} shows the results of applying the same
 region finding process from earlier to segments of the genome
-identified as AT-rich. In comparison to results from section (region
-finding section), we see that there are far fewer predicted genes in
-regions of AT-rich genomic sequence. In DC1 and Tsth20, there are only
-42 and 13 genes predicted respectively. Of the regions with gene
-predictions in AT-rich genomic sequence, there are only a few with
-support from both Braker2 and GeneMark in DC1 and Tsth20. Again, in a
-similar case to section (region finding section), there are no regions
-with partial support as only two gene finding tools were applied to
-those assemblies. \textit{T. reesei} and \textit{T. harzianum} report
-more regions and genes in AT-rich genomic sequence than the other
-assemblies, but with most regions belonging to the singleton
+identified as AT-rich. AT-rich is defined as a region of genomic
+sequence with percent GC composition less than 28\%. In comparison to
+results from section \ref{section:regions}, we see that overall there
+are far fewer regions with gene predictions in AT-rich genomic
+segements. In DC1, Tsth20, there are very few regions with full
+support from both Braker2 and GeneMark, but more singletons. Again, as
+in section \ref{section:regions}, there are no regions with partial
+support as only two gene finding tools were applied to those
+assemblies. \textit{T. reesei} and \textit{T. harzianum} report more
+regions in AT-rich genomic sequence than the other assemblies, but
+with the majoirty of regions belonging to the singleton
 category. \textit{T. virens} is an interesting case, reporting a
 similar numbers of regions and genes in AT-rich genomic sequence as
-DC1 and Tsth20. Why \textit{T. virens} differs so greatly from the
-other RefSeq assemblies is unclear. In general, gene finders predict
-few genes in regions of AT-rich genomic sequence, and gene predictions
-in those regions show a smaller proportion of fully supported regions
-when compared to the AT-rich agnostic regions from section (region
-finding section).
+DC1 and Tsth20. \textit{T. virens} is also the only assembly to report
+zero singleton gene predictions. Why \textit{T. virens} differs from the
+other RefSeq assemblies is unclear. In general, there are few regions
+with gene predictions in AT-rich genomic segments, and within these
+regions, the majority of cases are isolated singleton gene
+predictions. These observations differ greatly from those made in
+nucleotide composition agnostic approach in section
+\ref{section:regions.}
 
 \begin{table}
   \begin{center}
@@ -94,11 +97,11 @@ sequence.
   \label{table:gc-binomial}
 \end{table}
 
-In summary, very few genes are predicted by these gene finding tools
-in AT-rich genomic sequences. Additionally genes predicted in these
+In summary, very few regions with gene predictions are present in
+AT-rich genomic sequence. Additionally, genes predicted in these
 regions tend to be isolated and not supported by other gene finders,
-although there is some agreement. In terms of `performance', RefSeq
-tends to predict the most genes in these AT-rich regions while
-GeneMark predicts the fewest. Lastly, the selected gene finding tools
-do not predict genes in AT-rich sequences in proportion to the
-fraction of genomic sequence they comprise.
+although some agreement is observed. In terms of number of genes
+predicted, RefSeq tends to predict the most genes in these AT-rich
+regions while GeneMark predicts the fewest. Lastly, the selected gene
+finding tools do not predict genes in AT-rich sequences in proportion
+to the fraction of genomic sequence they comprise.
