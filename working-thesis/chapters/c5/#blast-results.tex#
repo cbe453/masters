@@ -1,0 +1,29 @@
+\section{BLAST Results}
+Results from the T-BLAST-N alignments are presented in table
+\ref{table:tblastn}. BLAST results for both the \textit{T. atroviride}
+and \textit{Fusarium} datasets show that there are matches to
+proteins. All assemblies considered contain at minimum 89\% of the
+reference protein sequences in the case of \textit{T. atroviride} and
+a minimum of 75\% in the case of \textit{Fusarium}. In the case of
+\textit{S. cerevisiae}, a minimum of 57\% of reference proteins
+matched. The decreasing percentage of hits reported conincides with
+increasing distances in the evolutionary tree. These results provide
+rough validation that the assemblies contain potential for protein
+coding sequences.
+
+
+\begin{table}
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    Reference & Ref. Proteins & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens}  \\ \hline
+    \textit{T. atroviride} & 11807 & 11552 & 11080 & 10601 & 11081 & 11078 \\ \hline 
+    \textit{Fusarium} & 13312 & 10327 & 10429 & 10064 & 10434 & 10490 \\ \hline
+    \textit{S. cerevisiae} & 6014 & 3537 & 3517 & 3445 & 3509 & 3500 \\ \hline
+  \end{tabular}
+  \caption{tBLASTn hits from reference protein sequences to selected
+    assemblies of intereset. Hits are reported if the alignment length
+    is greater than 30\% of the reference protein length and if 30\%
+    of the aligned length have identical matches.}
+  \label{table:tblastn}
+\end{table}
