@@ -9,13 +9,12 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Examples of Potential Regions}}{22}{figure.caption.18}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Plots showing the frequency of GC values calculated from sliding windows for each assembly.\relax }}{24}{figure.caption.20}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Counts of predicted genes and mRNAs}}{27}{figure.caption.21}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces CDF plots part 1.}}{29}{figure.caption.22}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots part 2.}}{30}{figure.caption.23}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces CDF plots part 3.}}{31}{figure.caption.24}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Breakdown of identified regions}}{37}{figure.caption.32}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Example of a region with many gene calls}}{38}{figure.caption.33}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Predictions on opposing strands}}{39}{figure.caption.34}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Agreeing Pfam matches}}{42}{figure.caption.39}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Split Pfam matches}}{43}{figure.caption.40}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces RefSeq absence with IPS evidence}}{43}{figure.caption.41}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces CDF plots part 1.}}{29}{figure.caption.22}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces CDF plots part 2.}}{30}{figure.caption.23}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots part 3.}}{31}{figure.caption.24}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Breakdown of identified regions}}{36}{figure.caption.32}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Example of a region with many gene calls}}{38}{figure.caption.33}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Predictions on opposing strands}}{39}{figure.caption.34}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Agreeing Pfam matches}}{41}{figure.caption.39}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Split Pfam matches}}{42}{figure.caption.40}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces RefSeq absence with IPS evidence}}{43}{figure.caption.41}

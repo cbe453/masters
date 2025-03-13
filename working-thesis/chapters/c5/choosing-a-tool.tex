@@ -1,0 +1,27 @@
+\section{Selection of Gene Finding Tool}
+
+With all of these results, it makes sense to explore the question of
+which gene finding tool one should choose when predicting genes in a
+genome of interest. Results from this work are summarized in table
+\ref{table:final-score}.
+
+\begin{table}
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Category & Braker2 & GeneMark & RefSeq \\ \hline
+    Availability & 3 & 3 & 0 \\ \hline
+    Ease of install & 1 & 2 & 0 \\ \hline
+    Ease of use & 3 & 3 & 0 \\ \hline
+    \makecell{\# of genes\\predicted} 1 & 2 & 3 \\ \hline
+    \makecell{\# of transcripts\\predicted} 3 & 0 & 2 \\ \hline
+    \makecell{Predicts shortest\\genes} & 3 & 1 & 0 \\ \hline
+    \makecell{Predicts more\\shorter genes} & 1 & 0 & 3 \\ \hline
+    BUSCO Performance & 2 & 1 & 3 \\ \hline
+    \makecell{Performance in\\AT-rich sequence} & 2 & 1 & 3 \\ \hline
+    \makecell{Predictions with \\InterProScan support} & 3 & 3 & 3 \\ \hline
+  \end{tabular}
+  \caption[Final scoring table]{Table with scores attirbuted to
+    performance of each gene finder in several categories.}
+  \label{table:final-score}
+\end{table}
