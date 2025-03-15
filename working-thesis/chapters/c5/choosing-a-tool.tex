@@ -1,9 +1,54 @@
 \section{Selection of Gene Finding Tool}
 
 With all of these results, it makes sense to explore the question of
-which gene finding tool one should choose when predicting genes in a
-genome of interest. Results from this work are summarized in table
-\ref{table:final-score}.
+which gene finding tool one should choose for optimal gene prediction
+performance. Results from this work are summarized in table
+\ref{table:final-score}. Ignoring availability and use of the gene
+finding tools, it would appear that RefSeq performs the best in the
+remaining categories, earning top marks in every category except in
+it's ability to predict very short genes. Braker2 earns second place,
+however this does not capture Braker2's failure in predicting accurate
+numbers of genes in DC1, Tsth20, \textit{T. harzianum} and
+\textit{T. virens}. GeneMark comes in last, excelling only in number
+of genes predicted and Pfam support for the genes that it predicts.
+
+Relating these observations to use-case scenarios; in the case that
+your organism of interest has a RefSeq annotation associated with it,
+the RefSeq gene prediction process appears to produce the best set of
+predictions. If users also have experimental evidence, such as RNAseq
+data under experimental conditions, it may be worthwhile training a
+Braker2 model and predicting genes with Braker2 to supplement the
+already well performing RefSeq gene predictions. If the organism of
+interest is not a RefSeq individual but training data is available,
+Braker2 is the next best option, although it is important to note that
+the application of a trained Braker2 prediction model to an organism
+from which the training data did not originate is not advised based on
+the results presented in this work. While it is true that the
+\textit{T. reesei} genome differs from other \textit{Trichoderma}
+genomes, it's status as a representative RefSeq organism makes it a
+somewhat of a gold standard. In this case, applying a gene model
+trained using evidence from the gold standard produces biased numbers
+of genes predicted in other \textit{Trichoderma} genomes. While
+Braker2 technically scores the second highest, users must be very
+careful when selecting training data, and ensure that the training
+data either comes from the organism of interest, or comes from a very
+closely related organism with a highly similar genome. In the case
+that no appropriate training data is available, GeneMark is still an
+option, and users can be confident that the tool predicts a reasonably
+accurate number of genes with supporting Pfam matches. It is also
+important to note that GeneMark does not perform as well in AT-rich
+regions as Braker2 and RefSeq, does not predict isoforms, and
+systematically fails to predict some BUSCO orthologs.
+
+When availability of a gene finding tool becomes a concern and RefSeq
+is not considered, the scores change significantly, but Braker2 still
+outperforms GeneMark. If the organism of interest is not considered a
+representative RefSeq individual, but supporting evidence specific to
+that organism or a very closely related organism is available, a
+trained Braker2 prediction model will perform well. Again, in the case
+that the organism is not a RefSeq individual and no appropriate
+training data is available, GeneMark is still a reasonable option even
+with the previously identified caveats.
 
 \begin{table}
   \centering
@@ -12,16 +57,29 @@ genome of interest. Results from this work are summarized in table
     Category & Braker2 & GeneMark & RefSeq \\ \hline
     Availability & 3 & 3 & 0 \\ \hline
     Ease of install & 1 & 2 & 0 \\ \hline
-    Ease of use & 3 & 3 & 0 \\ \hline
-    \makecell{\# of genes\\predicted} 1 & 2 & 3 \\ \hline
-    \makecell{\# of transcripts\\predicted} 3 & 0 & 2 \\ \hline
-    \makecell{Predicts shortest\\genes} & 3 & 1 & 0 \\ \hline
+    Ease of use & 3 & 3 & 0 \\ \hdashline
+    \makecell{\# of genes\\predicted} & 0 & 3 & 3 \\ \hline
+    \makecell{\# of transcripts\\predicted} & 3 & 0 & 2 \\ \hline
+    \makecell{Predicts shortest\\genes} & 2 & 1 & 0 \\ \hline
     \makecell{Predicts more\\shorter genes} & 1 & 0 & 3 \\ \hline
     BUSCO Performance & 2 & 1 & 3 \\ \hline
     \makecell{Performance in\\AT-rich sequence} & 2 & 1 & 3 \\ \hline
     \makecell{Predictions with \\InterProScan support} & 3 & 3 & 3 \\ \hline
+    \makecell{Final Score\\(Publicly Available)} & 20 & 17 & N/A \\ \hline
+    \makecell{Final Score\\(Ignoring Availability)} & 13 & 9 & 17 \\ \hline
   \end{tabular}
   \caption[Final scoring table]{Table with scores attirbuted to
-    performance of each gene finder in several categories.}
+    performance of each gene finder in several categories. The score
+    definitions for performance are as follows: 0 - fail, 1 - pass, 2
+    - good, 3-excellent. Since RefSeq is not publicly available, it is
+    marked as N/A in the publicly available final scores.}
   \label{table:final-score}
 \end{table}
+
+In summary, these results indicate that if your organism is a RefSeq
+organism, use the RefSeq annotation. If no RefSeq predictions are
+available but appropriate training data is, one should use Braker2. If
+the training data is of questionable similarity or not available at
+all, users can fall back on \textit{ab initio} gene finders such as
+GeneMark, which while not ideal, still predict genes with supporting
+evidence.

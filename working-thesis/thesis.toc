@@ -63,5 +63,5 @@
 \contentsline {section}{\numberline {5.8}Genes in Regions of Anomalous GC Content}{38}{section.5.8}
 \contentsline {section}{\numberline {5.9}InterProScan as Supporting Evidence for Predicted Genes}{40}{section.5.9}
 \contentsline {section}{\numberline {5.10}Selection of Gene Finding Tool}{42}{section.5.10}
-\contentsline {section}{\numberline {5.11}Conclusions}{44}{section.5.11}
-\contentsline {chapter}{References}{45}{section*.43}
+\contentsline {section}{\numberline {5.11}Conclusions}{45}{section.5.11}
+\contentsline {chapter}{References}{46}{section*.43}
