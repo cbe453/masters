@@ -1,0 +1,29 @@
+TY  - JOUR
+AU  - Hu, Jiang
+AU  - Wang, Zhuo
+AU  - Sun, Zongyi
+AU  - Hu, Benxia
+AU  - Ayoola, Adeola Oluwakemi
+AU  - Liang, Fan
+AU  - Li, Jingjing
+AU  - Sandoval, José R.
+AU  - Cooper, David N.
+AU  - Ye, Kai
+AU  - Ruan, Jue
+AU  - Xiao, Chuan-Le
+AU  - Wang, Depeng
+AU  - Wu, Dong-Dong
+AU  - Wang, Sheng
+PY  - 2024
+DA  - 2024/04/26
+TI  - NextDenovo: an efficient error correction and accurate assembly tool for noisy long reads
+JO  - Genome Biology
+SP  - 107
+VL  - 25
+IS  - 1
+AB  - Long-read sequencing data, particularly those derived from the Oxford Nanopore sequencing platform, tend to exhibit high error rates. Here, we present NextDenovo, an efficient error correction and assembly tool for noisy long reads, which achieves a high level of accuracy in genome assembly. We apply NextDenovo to assemble 35 diverse human genomes from around the world using Nanopore long-read data. These genomes allow us to identify the landscape of segmental duplication and gene copy number variation in modern human populations. The use of NextDenovo should pave the way for population-scale long-read assembly using Nanopore long-read data.
+SN  - 1474-760X
+UR  - https://doi.org/10.1186/s13059-024-03252-4
+DO  - 10.1186/s13059-024-03252-4
+ID  - Hu2024
+ER  - 

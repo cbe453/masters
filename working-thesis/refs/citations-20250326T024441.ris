@@ -1,0 +1,27 @@
+Provider: Silverchair
+Database: Oxford University Press
+Content: text/plain; charset="UTF-8"
+
+TY  - JOUR
+AU  - Hu, Jiang
+AU  - Fan, Junpeng
+AU  - Sun, Zongyi
+AU  - Liu, Shanlin
+T1  - NextPolish: a fast and efficient genome polishing tool for long-read assembly
+PY  - 2020
+Y1  - 2020/04/01
+DO  - 10.1093/bioinformatics/btz891
+JO  - Bioinformatics
+JA  - Bioinformatics
+VL  - 36
+IS  - 7
+SP  - 2253
+EP  - 2255
+SN  - 1367-4803
+AB  - Although long-read sequencing technologies can produce genomes with long contiguity, they suffer from high error rates. Thus, we developed NextPolish, a tool that efficiently corrects sequence errors in genomes assembled with long reads. This new tool consists of two interlinked modules that are designed to score and count K-mers from high quality short reads, and to polish genome assemblies containing large numbers of base errors.When evaluated for the speed and efficiency using human and a plant (Arabidopsis thaliana) genomes, NextPolish outperformed Pilon by correcting sequence errors faster, and with a higher correction accuracy.NextPolish is implemented in C and Python. The source code is available from https://github.com/Nextomics/NextPolish.Supplementary data are available at Bioinformatics online.
+Y2  - 3/26/2025
+UR  - https://doi.org/10.1093/bioinformatics/btz891
+ER  - 
+
+
+

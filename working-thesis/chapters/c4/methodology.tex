@@ -21,48 +21,59 @@ portion of this figure is discussed in detail in this section.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{./figures/data-flowchart.pdf}
-  \caption{A flowchart of the methodology followed for this research. Sections are separated based the general process they are associated with (i.e. input data, assembly, gene finding and downstream analysis).}
+  \caption{A flowchart of the methodology followed for this
+    research. Sections are separated based the general process they
+    are associated with (i.e. input data, assembly, gene finding and
+    downstream analysis).}
 \end{figure}
 
 \section{Assembly and Annotation}
 
-In an attempt to produce high quality assemblies of DC1 and Tsth20, We
-decided on a set of tools named NextDenovo and NextPolish as they have
-produced excellent assemblies based on previous experience. (should
-find a citation to confirm this)
+\subsection{Assembly}
 
-(Might be better for discussion or omitted since it is specific to our
-setup) Initial attempts to run the example dataset resulted in
-permissions errors due to the management of the storage system being
-used, which were encountered with other tools in the past. To remedy
-this, the software installation was copied to RSMI's scratch space on
-Copernicus. Once the approriate permissions were given to run
-nextDenovo, the example dataset was run without issue.
+Prior to gene prediction, genomic Nanopore sequences from DC1 and
+Tsth20 were assembled in to contigs using NextDenovo\ref{Hu02024} and
+then polished with Illumina sequences using
+NextPolish\ref{Hu2020}. Assembly and polishing were both performed
+using default parameters.
 
-Following assembly using nextDenovo, Illumina sequence data from DC1
-and Tsth20 was used to polish each respective genome using
-nextPolish. Default parameters were used from assembly except for
-modification of the parallel option to reduce processing times.
+%In an attempt to produce high quality assemblies of DC1 and Tsth20, We
+%decided on a set of tools named NextDenovo and NextPolish as they have
+%produced excellent assemblies based on previous experience. (should
+%find a citation to confirm this)
 
-\subsection{Repeat Masking}
+%(Might be better for discussion or omitted since it is specific to our
+%setup) Initial attempts to run the example dataset resulted in
+%permissions errors due to the management of the storage system being
+%used, which were encountered with other tools in the past. To remedy
+%this, the software installation was copied to RSMI's scratch space on
+%Copernicus. Once the approriate permissions were given to run
+%nextDenovo, the example dataset was run without issue.
 
-In order to evaluate the performance of gene finding tools in
-repetitive or low complexity regions in the context of
-\textit{Trichoderma} genomes, we must first identify said regions in
-the genomes considered. To do this, the GenericRepeatFinder tool was
-used, which is a \textit{de novo} repeat detection tool
-\cite{10.1104/pp.19.00386}. GenerifRepeatFinder detects three
-different types of repeats, those being MITEs, TDRs and TIRs. Commands
-used for this program follow the example commands provided on the
-GitHub page for the GenericRepeatFinder project.
+%Following assembly using nextDenovo, Illumina sequence data from DC1
+%and Tsth20 was used to polish each respective genome using
+%nextPolish. Default parameters were used from assembly except for
+%modification of the parallel option to reduce processing times.
 
-\subsection{GeneMark-ES}
+%\subsection{Repeat Masking}
 
-To begin, GeneMark-ES was run as it requires no prior information or
-alignments in order to run. In this case GeneMark-ES has an option
-specifically for fungal genomes, which was used in this case. Apart
-from the fungal option, the only additional options supplied were for
-output format of GFF3 and number of cores for reduced processing time.
+%In order to evaluate the performance of gene finding tools in
+%repetitive or low complexity regions in the context of
+%\textit{Trichoderma} genomes, we must first identify said regions in
+%the genomes considered. To do this, the GenericRepeatFinder tool was
+%used, which is a \textit{de novo} repeat detection tool
+%\cite{10.1104/pp.19.00386}. GenerifRepeatFinder detects three
+%different types of repeats, those being MITEs, TDRs and TIRs. Commands
+%used for this program follow the example commands provided on the
+%GitHub page for the GenericRepeatFinder project.
+
+\subsection{Gene prediction with GeneMark-ES}
+
+GeneMark-ES was run as it requires no prior information or alignments
+in order to run. In this case GeneMark-ES has an option specifically
+for fungal genomes, which was used in this case. Apart from the fungal
+option, the only additional options supplied were for output format of
+GFF3 and number of cores for reduced processing time.
 
 General command structure for GeneMark-ES:
 

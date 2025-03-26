@@ -40,8 +40,8 @@
 \BOOKMARK [1][-]{section.4.2}{Data and Processing Overview}{chapter.4}% 40
 \BOOKMARK [2][-]{subsection.4.2.1}{Data}{section.4.2}% 41
 \BOOKMARK [1][-]{section.4.3}{Assembly and Annotation}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.3.1}{Repeat Masking}{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.2}{GeneMark-ES}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.1}{Assembly}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.2}{Gene prediction with GeneMark-ES}{section.4.3}% 44
 \BOOKMARK [2][-]{subsection.4.3.3}{Braker2}{section.4.3}% 45
 \BOOKMARK [1][-]{section.4.4}{Identification of Overlapping Features and Regions}{chapter.4}% 46
 \BOOKMARK [1][-]{section.4.5}{Analysis of Results}{chapter.4}% 47
