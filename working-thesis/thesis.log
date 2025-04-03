@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 APR 2025 19:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 APR 2025 19:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -878,15 +878,15 @@ File: ./figures/data-flowchart.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 11.
 (pdftex.def)             Requested size: 542.83304pt x 364.75447pt.
 
-Overfull \hbox (70.8018pt too wide) in paragraph at lines 11--15
+Overfull \hbox (70.8018pt too wide) in paragraph at lines 11--16
 [][] 
  []
 
 
-LaTeX Warning: Reference `Hu02024' on page 13 undefined on input line 25.
+LaTeX Warning: Reference `Hu02024' on page 13 undefined on input line 26.
 
 
-LaTeX Warning: Reference `Hu2020' on page 13 undefined on input line 27.
+LaTeX Warning: Reference `Hu2020' on page 13 undefined on input line 28.
 
 [13
 
@@ -1103,7 +1103,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
 Here is how much of TeX's memory you used:
  18361 strings out of 492649
  342414 string characters out of 6129622
- 444435 words of memory out of 5000000
+ 444489 words of memory out of 5000000
  21654 multiletter control sequences out of 15000+600000
  8685 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1123,7 +1123,7 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on thesis.pdf (55 pages, 1144978 bytes).
+Output written on thesis.pdf (55 pages, 1145092 bytes).
 PDF statistics:
  1102 PDF objects out of 1200 (max. 8388607)
  778 compressed objects within 8 object streams
