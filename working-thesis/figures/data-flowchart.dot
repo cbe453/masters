@@ -1,67 +1,102 @@
 digraph G{
 
 	subgraph cluster_0 {
-		 style=filled;
-		 color=darkolivegreen1;	
-		 Illumina [shape = diamond];
-        	 Nanopore [shape = diamond];
+		 style = filled;
+		 color = gray;	
+		 Illumina [shape = rectangle];
+        	 Nanopore [shape = rectangle];
 		 Illumina -> "Trimmomatic/Filtering";
 		 Nanopore -> "Trimmomatic/Filtering";
-		 RefSeqs [shape = diamond];
-		 RNAseq [shape = diamond];
-		 Rfam [shape = diamond];
-		 FilteredReads [shape = diamond];
+		 RefSeqs [shape = rectangle];
+		 RNAseq [shape = rectangle];
+		 FilteredReads [shape = rectangle];
 		 label = "Initial Data and Filtering";
 	}
 
 	subgraph cluster_1 {
-		 style=filled;
-		 color=aquamarine;	
-		 NextDenovo;
-		 RepeatMasker;
-		 AssemblyMetrics [shape = diamond];
-		 Assemblies [shape = diamond];
+		 style = filled;
+		 color = gray;	
+		 "NextDenovo/NextPolish";
+		 AssemblyMetrics [shape = rectangle];
+		 Assemblies [shape = rectangle];
+		 GCwindows [shape = rectangle]
 		 Assemblies -> Quast;
-		 RepeatRegions [shape = diamond];
+		 Assemblies -> GCwindows;
 		 label = "Genome Assembly and Processing";
 	}
 
 	subgraph cluster_2 {
-		 style=filled;
-		 color=darkslategray3;
-		 Infernal;
-		 SmallRNAs [shape = diamond];
-		 "GeneMarkCalls" [shape = diamond];
-		 "Braker2Calls" [shape = diamond];
+		 style = filled;
+		 color=gray;
+		 "GeneMarkCalls" [shape = rectangle];
+		 "Braker2Calls" [shape = rectangle];
 		 GeneMark -> "GeneMarkCalls";
 		 Braker2 -> "Braker2Calls";
 		 label = "Genome Annotation";
+		 RefSeqCalls [shape = rectangle];
 	}
 
 	subgraph cluster_3 {
-		 style=filled;
-		 color=lightcoral;
-		 DownstreamProcessing;
+		 style = filled;
+		 color = gray;
 	}
 	
 	"Trimmomatic/Filtering" -> FilteredReads;
-	FilteredReads -> NextDenovo;
-	NextDenovo -> Assemblies;
+	FilteredReads -> "NextDenovo/NextPolish";
+	"NextDenovo/NextPolish" -> Assemblies;
 	Assemblies -> GeneMark;
 	Assemblies -> Braker2;
-	Assemblies -> Infernal;
-	Assemblies -> RepeatMasker;
-	Infernal -> SmallRNAs -> DownstreamProcessing;
-	RefSeqs -> Infernal;
 	RefSeqs -> GeneMark;
 	RefSeqs -> Braker2;
+	RefSeqs -> RefSeqCalls;
 	RNAseq -> Braker2;
-	RefSeqs -> RepeatMasker;
-	"GeneMarkCalls" -> DownstreamProcessing;
-	"Braker2Calls" -> DownstreamProcessing;
-	RepeatMasker -> RepeatRegions;
-	RepeatRegions -> DownstreamProcessing;
 	RefSeqs -> Quast;
 	Quast -> AssemblyMetrics;
-	Rfam -> Infernal;
+
+	subgraph cluster_4 {
+		 label = "Downstream Analysis";
+		 style = filled;
+		 color = gray;
+		 Busco;
+		 GeneMetrics;
+		 InterProScan;
+		 RegionAnalysis;
+	}
+
+	RefSeqCalls -> GeneMetrics;
+	GeneMarkCalls -> GeneMetrics;
+	Braker2Calls -> GeneMetrics;
+	RefSeqCalls -> Busco;
+	GeneMarkCalls -> Busco;
+	Braker2Calls -> Busco;
+	RefSeqCalls -> InterProScan;
+	GeneMarkCalls -> InterProScan;
+	Braker2Calls -> InterProScan;
+	RefSeqCalls -> RegionAnalysis;
+	GeneMarkCalls -> RegionAnalysis;
+	Braker2Calls -> RegionAnalysis;
+	InterProScan -> RegionAnalysis;
+	GCwindows -> RegionAnalysis;
+
+	subgraph cluster_5 {
+		 label = "Results";
+		 style = filled;
+		 color = gray;
+		 "3.2 - Assembly Results" [shape = rectangle];
+		 "3.4 - Prediction Counts" [shape = rectangle];
+		 "3.5 - Gene Lengths" [shape = rectangle];
+		 "3.6 - Predictions in AT-rich\nGenomic Sequence" [shape = rectangle];
+		 "3.7 - Busco Performance" [shape = rectangle];
+		 "3.8 - Regions of Agreement\nand Disagreement" [shape = rectangle];
+		 "3.9 - Predictions with\nInterProScan Support" [shape = rectangle];
+	}
+
+	AssemblyMetrics -> "3.2 - Assembly Results";
+	GeneMetrics -> "3.4 - Prediction Counts";
+	GeneMetrics -> "3.5 - Gene Lengths";
+	RegionAnalysis -> "3.6 - Predictions in AT-rich\nGenomic Sequence";
+	Busco -> "3.7 - Busco Performance";
+	RegionAnalysis -> "3.8 - Regions of Agreement\nand Disagreement";
+	RegionAnalysis -> "3.9 - Predictions with\nInterProScan Support";
+	
 }
