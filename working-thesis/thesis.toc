@@ -42,15 +42,16 @@
 \contentsline {subsection}{\numberline {4.3.1}Assembly}{13}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Gene prediction with GeneMark-ES}{13}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Braker2}{13}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Identification of Overlapping Features and Regions}{15}{section.4.4}
-\contentsline {section}{\numberline {4.5}Analysis of Results}{16}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Basic Analysis}{16}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Distribution of Gene Lengths}{16}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Intersection of Gene Calls, smallRNAs and Repetitive Regions}{17}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Methodology for Indetifying Overlapping Features}{18}{subsection.4.5.4}
-\contentsline {subsection}{\numberline {4.5.5}Shared Gene Content with Closely Related Organisms}{18}{subsection.4.5.5}
-\contentsline {subsection}{\numberline {4.5.6}BUSCO Analysis}{19}{subsection.4.5.6}
-\contentsline {subsection}{\numberline {4.5.7}Comparative Genomics}{19}{subsection.4.5.7}
+\contentsline {section}{\numberline {4.4}BUSCO Performance}{15}{section.4.4}
+\contentsline {section}{\numberline {4.5}Region Identification}{15}{section.4.5}
+\contentsline {section}{\numberline {4.6}Analysis of Results}{16}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Basic Analysis}{16}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Distribution of Gene Lengths}{17}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Intersection of Gene Calls, smallRNAs and Repetitive Regions}{17}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Methodology for Indetifying Overlapping Features}{18}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Shared Gene Content with Closely Related Organisms}{18}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.6}BUSCO Analysis}{19}{subsection.4.6.6}
+\contentsline {subsection}{\numberline {4.6.7}Comparative Genomics}{19}{subsection.4.6.7}
 \contentsline {chapter}{\numberline {5}Results}{22}{chapter.5}
 \contentsline {section}{\numberline {5.1}Assemblies of DC1 and Tsth20}{22}{section.5.1}
 \contentsline {section}{\numberline {5.2}Profiling Gene Finding Tools}{23}{section.5.2}

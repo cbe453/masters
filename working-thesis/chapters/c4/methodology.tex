@@ -22,11 +22,17 @@ in this section.
 
 \subsection{Assembly}
 
-Prior to gene prediction, genomic Nanopore sequences from DC1 and
-Tsth20 were assembled in to contigs using NextDenovo\ref{Hu02024} and
-then polished with Illumina sequences using
-NextPolish\ref{Hu2020}. Assembly and polishing were both performed
-using default parameters.
+Sequencing for the assembly process came in the form of Nanopore and
+Illumina sequence data. Nanopore data was not processed prior to
+assembly. Illumina sequencing data was filtered using Trimmomatic with
+filtering criteria as follows: SLIDINGWINDOW:4:28, LEADING:28,
+TRAILING:28, MINLEN:75. Only surviving paired-end reads were used for
+further analysis.
+
+Genomic Nanopore sequences from DC1 and Tsth20 were assembled in to
+contigs using NextDenovo\ref{Hu02024} v2.5.0 and then polished with
+Illumina sequences using NextPolish\ref{Hu2020} v1.4.1. Assembly and
+polishing were both performed using default parameters.
 
 %In an attempt to produce high quality assemblies of DC1 and Tsth20, We
 %decided on a set of tools named NextDenovo and NextPolish as they have
@@ -60,41 +66,55 @@ using default parameters.
 
 \subsection{Gene prediction with GeneMark-ES}
 
-GeneMark-ES was run as it requires no prior information or alignments
-in order to run. In this case GeneMark-ES has an option specifically
-for fungal genomes, which was used in this case. Apart from the fungal
-option, the only additional options supplied were for output format of
-GFF3 and number of cores for reduced processing time.
+\textit{Ab initio} gene finding was performed using GeneMark-ES
+v4.71. Default parameters were used in all cases except for the fungal
+option, which was set to yes in order to use a GeneMark model specific
+to fungal genomes. Convenience options were also used to produce GFF3
+output annotation files and an increased number of threads to reduce
+processing time.
 
-General command structure for GeneMark-ES:
-
-gmes\_petap.pl --ES --fungus
---format gff3 --cores 48 --sequence /path/to/sequence
+%General command structure for GeneMark-ES:
+%
+%gmes\_petap.pl --ES --fungus
+%--format gff3 --cores 48 --sequence /path/to/sequence
 
 \subsection{Braker2}
 
-As mentioned previously, \textit{Trichoderma reesei} was selected as
-the \'reference\' genome for this work. With this in mind, several
-short read archives (SRAs) from \textit{T. reesei} were selected for
-Augustus training. Following Augustus training, the model for
-\textit{T reesei} was applied to all genomes considered. Settings and
-procedures from running Braker2 are described below.
+For evidence-based gene finding, Braker2 v3.0.2 was used with
+\textit{Trichoderma reesei} selected as the reference or gold-standard
+genome to use as evidence. RNAseq datasets from \textit{T. reesei}
+were downloaded from the NCBI short-read archive using the sra-toolkit
+and were not trimmed or filtered prior to their use with
+Braker2. Default parameters were used to train a Braker2 model on
+\textit{Trichoderma reesei} data except in the case of the fungal
+option, which was used for this analysis for improved gene-finding
+performance in fungi. The Braker2 \textit{T. reesei} model was then
+applied to all assemblies.
 
-The variables that need to be set are AUGUSTUS\_CONFIG\_PATH and
-TSEBRA\_PATH. Augustus, by defuault, tries to write species
-information to the location where the software is installed. In this
-case, we don'thave write permissions to the compute canada software
-stack hosted byt Research Computing, so the AUGUSTUS\_CONFIG\_PATH
-variable must be set in order to create a writeable directory. As long
-as that path has a directory within it called braker, and a species
-directory within the braker directory, things should go
-smoothly. TSEBRA is a set of scripts also made by the creators of
-Braker and is required to merge results from the various gene
-prediction tools involved in the Braker2 pipeline. The TSEBRA\_PATH
-simply points to the directory where TSEBRA is located Both Braker2
-and TSEBRA can be cloned directly from GitHub (links to come)
+%The variables that need to be set are AUGUSTUS\_CONFIG\_PATH and
+%TSEBRA\_PATH. Augustus, by defuault, tries to write species
+%information to the location where the software is installed. In this
+%case, we don'thave write permissions to the compute canada software
+%stack hosted byt Research Computing, so the AUGUSTUS\_CONFIG\_PATH
+%variable must be set in order to create a writeable directory. As long
+%as that path has a directory within it called braker, and a species
+%directory within the braker directory, things should go
+%smoothly. TSEBRA is a set of scripts also made by the creators of
+%Braker and is required to merge results from the various gene
+%prediction tools involved in the Braker2 pipeline. The TSEBRA\_PATH
+%simply points to the directory where TSEBRA is located Both Braker2
+%and TSEBRA can be cloned directly from GitHub (links to come)
 
-\section{Identification of Overlapping Features and Regions}
+\section{BUSCO Performance}
+
+To assess the general performance of gene-finders, BUSCO v5.7.1 was
+selected as a tool to determine a gene-finder's ability to predict a
+set of conserved ortholagous genes. The BUSCO v5.7.1 Metaeuk pipeline
+was run using the Odb10 fungal lineage dataset to capture highly
+conserved genes in fungal genomes. This pipeline was applied to all
+genome assemblies used in this work. Used transcriptome mode... This needs to be discussed.
+
+\section{Region Identification}
 
 Feature Identification: To first undertand how gene prediction tools
 perform in comparison to other gene prediction tools, we must identify

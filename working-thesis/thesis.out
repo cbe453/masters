@@ -42,25 +42,26 @@
 \BOOKMARK [2][-]{subsection.4.3.1}{Assembly}{section.4.3}% 42
 \BOOKMARK [2][-]{subsection.4.3.2}{Gene prediction with GeneMark-ES}{section.4.3}% 43
 \BOOKMARK [2][-]{subsection.4.3.3}{Braker2}{section.4.3}% 44
-\BOOKMARK [1][-]{section.4.4}{Identification of Overlapping Features and Regions}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.5}{Analysis of Results}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.5.1}{Basic Analysis}{section.4.5}% 47
-\BOOKMARK [2][-]{subsection.4.5.2}{Distribution of Gene Lengths}{section.4.5}% 48
-\BOOKMARK [2][-]{subsection.4.5.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.4.5}% 49
-\BOOKMARK [2][-]{subsection.4.5.4}{Methodology for Indetifying Overlapping Features}{section.4.5}% 50
-\BOOKMARK [2][-]{subsection.4.5.5}{Shared Gene Content with Closely Related Organisms}{section.4.5}% 51
-\BOOKMARK [2][-]{subsection.4.5.6}{BUSCO Analysis}{section.4.5}% 52
-\BOOKMARK [2][-]{subsection.4.5.7}{Comparative Genomics}{section.4.5}% 53
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 54
-\BOOKMARK [1][-]{section.5.1}{Assemblies of DC1 and Tsth20}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.2}{Profiling Gene Finding Tools}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.3}{Initial Gene Finding Results}{chapter.5}% 57
-\BOOKMARK [1][-]{section.5.4}{Distribution of Predicted Gene Lengths}{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.5}{BLAST Results}{chapter.5}% 59
-\BOOKMARK [1][-]{section.5.6}{BUSCO Results}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.7}{Region Identification}{chapter.5}% 61
-\BOOKMARK [1][-]{section.5.8}{Genes in Regions of Anomalous GC Content}{chapter.5}% 62
-\BOOKMARK [1][-]{section.5.9}{InterProScan as Supporting Evidence for Predicted Genes}{chapter.5}% 63
-\BOOKMARK [1][-]{section.5.10}{Selection of Gene Finding Tool}{chapter.5}% 64
-\BOOKMARK [1][-]{section.5.11}{Conclusions}{chapter.5}% 65
-\BOOKMARK [0][-]{section*.43}{References}{}% 66
+\BOOKMARK [1][-]{section.4.4}{BUSCO Performance}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.5}{Region Identification}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.6}{Analysis of Results}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.6.1}{Basic Analysis}{section.4.6}% 48
+\BOOKMARK [2][-]{subsection.4.6.2}{Distribution of Gene Lengths}{section.4.6}% 49
+\BOOKMARK [2][-]{subsection.4.6.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.4.6}% 50
+\BOOKMARK [2][-]{subsection.4.6.4}{Methodology for Indetifying Overlapping Features}{section.4.6}% 51
+\BOOKMARK [2][-]{subsection.4.6.5}{Shared Gene Content with Closely Related Organisms}{section.4.6}% 52
+\BOOKMARK [2][-]{subsection.4.6.6}{BUSCO Analysis}{section.4.6}% 53
+\BOOKMARK [2][-]{subsection.4.6.7}{Comparative Genomics}{section.4.6}% 54
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 55
+\BOOKMARK [1][-]{section.5.1}{Assemblies of DC1 and Tsth20}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.2}{Profiling Gene Finding Tools}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.3}{Initial Gene Finding Results}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.4}{Distribution of Predicted Gene Lengths}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.5}{BLAST Results}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.6}{BUSCO Results}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.7}{Region Identification}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.8}{Genes in Regions of Anomalous GC Content}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.9}{InterProScan as Supporting Evidence for Predicted Genes}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.10}{Selection of Gene Finding Tool}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.11}{Conclusions}{chapter.5}% 66
+\BOOKMARK [0][-]{section*.43}{References}{}% 67
