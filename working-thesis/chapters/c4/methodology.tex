@@ -1,5 +1,3 @@
-\section{Methodology}
-
 \section{Workflow Overview}
 
 The general methodology for this work is described in figure
@@ -17,21 +15,19 @@ in this section.
     \label{fig:workflow}
   \end{figure}
 \end{center}
-      
-\section{Assembly and Annotation}
 
-\subsection{Assembly}
+\section{Assembly}
 
 Sequencing for the assembly process came in the form of Nanopore and
 Illumina sequence data. Nanopore data was not processed prior to
-assembly. Illumina sequencing data was filtered using Trimmomatic with
+assembly. Illumina sequencing data was filtered using Trimmomatic v0.38 with
 filtering criteria as follows: SLIDINGWINDOW:4:28, LEADING:28,
 TRAILING:28, MINLEN:75. Only surviving paired-end reads were used for
 further analysis.
 
 Genomic Nanopore sequences from DC1 and Tsth20 were assembled in to
-contigs using NextDenovo\ref{Hu02024} v2.5.0 and then polished with
-Illumina sequences using NextPolish\ref{Hu2020} v1.4.1. Assembly and
+contigs using NextDenovo\cite{Hu02024} v2.5.0 and then polished with
+Illumina sequences using NextPolish\cite{Hu2020} v1.4.1. Assembly and
 polishing were both performed using default parameters.
 
 %In an attempt to produce high quality assemblies of DC1 and Tsth20, We
@@ -64,7 +60,7 @@ polishing were both performed using default parameters.
 %used for this program follow the example commands provided on the
 %GitHub page for the GenericRepeatFinder project.
 
-\subsection{Gene prediction with GeneMark-ES}
+\section{Gene prediction with GeneMark-ES}
 
 \textit{Ab initio} gene finding was performed using GeneMark-ES
 v4.71. Default parameters were used in all cases except for the fungal
@@ -78,7 +74,7 @@ processing time.
 %gmes\_petap.pl --ES --fungus
 %--format gff3 --cores 48 --sequence /path/to/sequence
 
-\subsection{Braker2}
+\section{Braker2}
 
 For evidence-based gene finding, Braker2 v3.0.2 was used with
 \textit{Trichoderma reesei} selected as the reference or gold-standard
@@ -105,7 +101,7 @@ applied to all assemblies.
 %simply points to the directory where TSEBRA is located Both Braker2
 %and TSEBRA can be cloned directly from GitHub (links to come)
 
-\section{BUSCO Performance}
+\section{BUSCO}
 
 To assess the general performance of gene-finders, BUSCO v5.7.1 was
 selected as a tool to determine a gene-finder's ability to predict a
@@ -114,71 +110,113 @@ was run using the Odb10 fungal lineage dataset to capture highly
 conserved genes in fungal genomes. This pipeline was applied to all
 genome assemblies used in this work. Used transcriptome mode... This needs to be discussed.
 
+\section{InterProScan}
+
+Functional annotation of gene finder's protein products was performed
+using InterProScan v5.65-97.0 without the match lookup service and
+with the following analyses included: AntiFam-7.0, CDD-3.20,
+Coils-2.2.1, FunFam-4.3.0, Gene3D-4.3.0, Hamap-2023\_01,
+MobiDBLite-2.0, NCBIfam-13.0, PANTHER-18.0, Pfam-36.0, PIRSF-3.10,
+PIRSR-2023\_05, PRINTS-42.0, ProSitePatterns-2022\_05,
+ProSiteProfiles-2022\_05, SFLD-4, SMART-9.0,
+SUPERFAMILY-1.75. InterProScan was run on all predicted proteins using
+default parameters.
+
+\section{BLAST}
+
+Need to flesh this out after addressing results...
+
 \section{Region Identification}
 
-Feature Identification: To first undertand how gene prediction tools
-perform in comparison to other gene prediction tools, we must identify
-features. This identification of features will help us descirbe the
-similarities, and differences between gene finding tools. A feature,
-in this context, is any feature stated within a Genomic Feature Format
-file (GFF) provided to the program, in which mutliple GFF files can be
-provided. The definition of a feature, for this application, is an
-object that contains a contig ID, a start position, an end position
-and a strand property. In the context of features on different
-strands, start and stop positions of features are sorted based on left
-and right positions of the feature in respect to the reference
-sequence.
+Predictions and results from previous processing steps were then
+processed into overlapping regions of predictions and annotations. A
+region is defined as a set of start and stop genomic coordinates which
+contains one or more overlapping feature. We define a feature as a set
+of start and stop positions associated with a single gene prediction,
+annotation or other data point of interest.
 
-Region Identification: In addition to feature creation, we will also
-identify regions of overlapping features based on the precitions from
-each gene finding tool. These regions will help identify the
-agreements, or disagreements, between different gene-finding tools. A
-region, in this context, is a set of overlapping features, all of
-which overlap at least one other feature in the region. With each
-overlap, there will be an overlap type. These types can be defined
-based on Allen's Interval Calculus (reference), with the exception of
-features that start beyond the end point of the current region.
+Overlapping features were processed into regions using concepts
+similar in nature to Allen's interval algebra. This processing was
+performed with Python v3.12.4 and the GFF package from BCBio for easy
+GFF parsing. Pseudocode for the algorithm is shown in algorithm
+\ref{alg:regions}. The resulting regions are then further processed to
+identify trends and behaviours of gene finders in the context of other
+annotated information and features.
 
-=======
-Example command for braker2:
+\begin{algorithm}
+  \begin{algorithmic}
+    \State INPUT:\ list\ of\ GFF\ files,\ $GFFList$
+    \State RETURNS:\ list\ of\ regions,\ $regionList$
+    \For{\texttt{<each GFF in GFFList>}}
+    \State $allFeatures \gets GFF.features$
+    \EndFor
+    \State $sortedFeatures \gets sortStartCoord(allFeatures)$
+    \State $regionList \gets []$
+    \For{\texttt{<each feature in sortedFeatures>}}
+      \If{$feature = firstFeature$}
+        \State $currentRegion \gets newRegion$
+        \State $currentRegion.start \gets feature.start$
+        \State $currentRegion.end \gets feature.end$
+      \ElsIf{$feature = lastFeature$}
+        \State $regionList \gets region$
+        \State $return\ regionList$
+      \ElsIf{$feature\ overlaps\ currentRegion$}
+        \State $currentRegion \gets updateStartStopPositions$
+        \State $currentRegion \gets feature$
+      \Else
+        \State $regionList \gets currentRegion$
+        \State $currentRegion \gets newRegion$
+        \State $currentRegion \gets feature.start$
+        \State $currentRegion \gets feature.end$
+      \EndIf
+    \EndFor
+    \State $return\ regionList$
+  \end{algorithmic}
+  \caption{the general algorithm underlying the region identification
+    process.}
+  \label{alg:regions}
+\end{algorithm}
 
-/scratch/p2irc/p2irc\_rsmi/cbe453/masters/software/braker2/BRAKER/scripts/braker.pl
---gff3 --threads 60
---TSEBRA\_PATH=/scratch/p2irc/p2irc\_rsmi/cbe453/masters/software/braker2/tsebra/TSEBRA/bin/
---genome /path/to/sequence --species=TreeseiFungal --fungus
---useexisting
-
-BUSCO methodology (from research questions)
-The BUSCO method was applied using two BUSCO subsets,
-one generally applicable for fungi, and another targeting an
-evolutionary branch more closely related to \textit{Trichoderma}.
-
-Stats for length analysis (from research questions)
-The first statistical tool to be applied is ANOVA (analysis of
-variance) to compare the mean lengths genes predicted by each gene
-finding tool with the null hypothesis being that the mean of predicted
-gene lengths should be the same across all tools considered. In
-addition to ANOVA, pairwise comparisons of the distributions using a
-Kolmogorov–Smirnov test is appropriate. The null hypothesis in this
-test would be that the gene lengths are sample from the same
-distribution.
-
-Stats for binomial tests (from research questions)
-To do this, a binomial test will be used, with the null hypothesis
-being that the number of genes predicted in regions of normal and
-abnormal GC content should be proportional to the length of normal and
-abnormal GC content regions in the assembly. For example, if 30
-percent of the genome is comprised of anomalous GC content, then we
-would expect 30 percent of predicted genes to be present in those
-regions. In addition to anomalous GC content, this test can be applied
-to repetitive content in assemblies as well.
-
-Stats for regions (from research questions)
-From these results, Venn diagrams will be generated with
-Jaccard index calculated for each combination of gene finding
-tools. The region identification process can also be extended to
-include features identified by other tools, such as BLAST hits to
-validated gene models from other organisms and small RNAs. Chi2
-goodness of fit tests can then be applied to counts of 'validated'
-gene predictions or other features with the same null hypothesis that
-gene finders should predict the same number of features.
+%=======
+%Example command for braker2:
+%
+%/scratch/p2irc/p2irc\_rsmi/cbe453/masters/software/braker2/BRAKER/scripts/braker.pl
+%--gff3 --threads 60
+%--TSEBRA\_PATH=/scratch/p2irc/p2irc\_rsmi/cbe453/masters/software/braker2/tsebra/TSEBRA/bin/
+%--genome /path/to/sequence --species=TreeseiFungal --fungus
+%--useexisting
+%
+%BUSCO methodology (from research questions)
+%The BUSCO method was applied using two BUSCO subsets,
+%one generally applicable for fungi, and another targeting an
+%evolutionary branch more closely related to \textit{Trichoderma}.
+%
+%Stats for length analysis (from research questions)
+%The first statistical tool to be applied is ANOVA (analysis of
+%variance) to compare the mean lengths genes predicted by each gene
+%finding tool with the null hypothesis being that the mean of predicted
+%gene lengths should be the same across all tools considered. In
+%addition to ANOVA, pairwise comparisons of the distributions using a
+%Kolmogorov–Smirnov test is appropriate. The null hypothesis in this
+%test would be that the gene lengths are sample from the same
+%distribution.
+%
+%Stats for binomial tests (from research questions)
+%To do this, a binomial test will be used, with the null hypothesis
+%being that the number of genes predicted in regions of normal and
+%abnormal GC content should be proportional to the length of normal and
+%abnormal GC content regions in the assembly. For example, if 30
+%percent of the genome is comprised of anomalous GC content, then we
+%would expect 30 percent of predicted genes to be present in those
+%regions. In addition to anomalous GC content, this test can be applied
+%to repetitive content in assemblies as well.
+%
+%Stats for regions (from research questions)
+%From these results, Venn diagrams will be generated with
+%Jaccard index calculated for each combination of gene finding
+%tools. The region identification process can also be extended to
+%include features identified by other tools, such as BLAST hits to
+%validated gene models from other organisms and small RNAs. Chi2
+%goodness of fit tests can then be applied to counts of 'validated'
+%gene predictions or other features with the same null hypothesis that
+%gene finders should predict the same number of features.

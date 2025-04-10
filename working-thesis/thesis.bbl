@@ -29,6 +29,12 @@ Sara Goodwin, John~D McPherson, and W~Richard McCombie.
   technologies}.
 \newblock {\em Nature Reviews Genetics}, 17(6):333--351, 2016.
 
+\bibitem{Hu2020}
+Jiang Hu, Junpeng Fan, Zongyi Sun, and Shanlin Liu.
+\newblock {NextPolish: a fast and efficient genome polishing tool for long-read
+  assembly}.
+\newblock {\em Bioinformatics}, 36(7):2253--2255, apr 2020.
+
 \bibitem{Kubicek2019}
 Christian~P Kubicek, Andrei~S Steindorff, Komal Chenthamara, Gelsomina
   Manganiello, Bernard Henrissat, Jian Zhang, Feng Cai, Alexey~G Kopchinskiy,

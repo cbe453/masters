@@ -36,22 +36,22 @@
 \BOOKMARK [1][-]{section.3.10}{Identification of a Core Trichoderma Gene Set.}{chapter.3}% 36
 \BOOKMARK [1][-]{section.3.11}{Selection of a Gene Finding Tool}{chapter.3}% 37
 \BOOKMARK [0][-]{chapter.4}{Data and Methodology}{}% 38
-\BOOKMARK [1][-]{section.4.1}{Methodology}{chapter.4}% 39
-\BOOKMARK [1][-]{section.4.2}{Workflow Overview}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.3}{Assembly and Annotation}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.3.1}{Assembly}{section.4.3}% 42
-\BOOKMARK [2][-]{subsection.4.3.2}{Gene prediction with GeneMark-ES}{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.3}{Braker2}{section.4.3}% 44
-\BOOKMARK [1][-]{section.4.4}{BUSCO Performance}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.5}{Region Identification}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.6}{Analysis of Results}{chapter.4}% 47
-\BOOKMARK [2][-]{subsection.4.6.1}{Basic Analysis}{section.4.6}% 48
-\BOOKMARK [2][-]{subsection.4.6.2}{Distribution of Gene Lengths}{section.4.6}% 49
-\BOOKMARK [2][-]{subsection.4.6.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.4.6}% 50
-\BOOKMARK [2][-]{subsection.4.6.4}{Methodology for Indetifying Overlapping Features}{section.4.6}% 51
-\BOOKMARK [2][-]{subsection.4.6.5}{Shared Gene Content with Closely Related Organisms}{section.4.6}% 52
-\BOOKMARK [2][-]{subsection.4.6.6}{BUSCO Analysis}{section.4.6}% 53
-\BOOKMARK [2][-]{subsection.4.6.7}{Comparative Genomics}{section.4.6}% 54
+\BOOKMARK [1][-]{section.4.1}{Workflow Overview}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.2}{Assembly}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.3}{Gene prediction with GeneMark-ES}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.4}{Braker2}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.5}{BUSCO}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.6}{InterProScan}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.7}{BLAST}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.8}{Region Identification}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.9}{Analysis of Results}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.9.1}{Basic Analysis}{section.4.9}% 48
+\BOOKMARK [2][-]{subsection.4.9.2}{Distribution of Gene Lengths}{section.4.9}% 49
+\BOOKMARK [2][-]{subsection.4.9.3}{Intersection of Gene Calls, smallRNAs and Repetitive Regions}{section.4.9}% 50
+\BOOKMARK [2][-]{subsection.4.9.4}{Methodology for Indetifying Overlapping Features}{section.4.9}% 51
+\BOOKMARK [2][-]{subsection.4.9.5}{Shared Gene Content with Closely Related Organisms}{section.4.9}% 52
+\BOOKMARK [2][-]{subsection.4.9.6}{BUSCO Analysis}{section.4.9}% 53
+\BOOKMARK [2][-]{subsection.4.9.7}{Comparative Genomics}{section.4.9}% 54
 \BOOKMARK [0][-]{chapter.5}{Results}{}% 55
 \BOOKMARK [1][-]{section.5.1}{Assemblies of DC1 and Tsth20}{chapter.5}% 56
 \BOOKMARK [1][-]{section.5.2}{Profiling Gene Finding Tools}{chapter.5}% 57
