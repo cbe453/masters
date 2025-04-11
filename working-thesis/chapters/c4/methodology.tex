@@ -1,27 +1,28 @@
 \section{Workflow Overview}
 
 The general methodology for this work is described in figure
-\ref{fig:workflow}. Each portion of this figure is discussed in detail
-in this section.
+\ref{fig:workflow}. Technical portions of figure \ref{fig:workflow}
+are discussed in the following sections.
 
 \begin{figure}
   \centering
   \makebox[0pt]{
     \includegraphics[width=1.25\textwidth]{./figures/data-flowchart.pdf}
   }
-  \caption{A flowchart of the methodology followed for this
+  \caption{A flowchart of the methodology followed in this
     research. The workflow is broken up into sections based on the
-    stage of the pipeline. Oval-shaped nodes represent steps
-    involved in the processing of data, while rectangular nodes
-    represent intermediate datasets and results.}
+    processes and data involved at each step. Oval-shaped nodes
+    represent steps involved in the processing of data, while
+    rectangular nodes represent intermediate datasets and results.}
   \label{fig:workflow}
 \end{figure}
 
 
 \section{Sequence Pre-processing and Assembly}
 
-Sequencing for the assembly process came in the form of Nanopore and
-Illumina sequence data. Nanopore data was not processed prior to
+Genomic sequences were generated for DC1 and Tsth20 using
+Nanopore\cite{Wang2021} and Illumina\cite{Bennett2004} sequencing
+technologies. Nanopore data was not processed prior to
 assembly. Illumina sequencing data was filtered using Trimmomatic
 v0.38\cite{Bolger2014} with filtering criteria as follows:
 SLIDINGWINDOW:4:28, LEADING:28, TRAILING:28, MINLEN:75. Only surviving
@@ -31,7 +32,7 @@ Genomic Nanopore sequences from DC1 and Tsth20 were assembled in to
 contigs using NextDenovo\cite{Hu2024} v2.5.0 and then polished with
 Illumina sequences using NextPolish\cite{Hu2020} v1.4.1. Assembly and
 polishing were both performed using default parameters. Final assembly
-metrics were calculated using QUAST v5.0.2\cite{Gurevich2013} using
+metrics were calculated using QUAST v5.0.2\cite{Gurevich2013} with
 default parameters.
 
 %In an attempt to produce high quality assemblies of DC1 and Tsth20, We
@@ -69,9 +70,7 @@ default parameters.
 \textit{Ab initio} gene finding was performed using GeneMark-ES
 v4.71\cite{Borodovsky2011}. Default parameters were used in all cases
 except for the fungal option, which was set to yes in order to use a
-GeneMark model specific to fungal genomes. Convenience options were
-also used to produce GFF3 output annotation files and an increased
-number of threads to reduce processing time.
+GeneMark model specific to fungal genomes. 
 
 %General command structure for GeneMark-ES:
 %
@@ -81,15 +80,16 @@ number of threads to reduce processing time.
 \section{Gene Prediction Using Braker2}
 
 For evidence-based gene finding, Braker2 v3.0.2\cite{Bruna2021} was
-used with \textit{Trichoderma reesei} selected as the reference or
-gold-standard genome to use as evidence. RNAseq datasets from
-\textit{T. reesei} were downloaded from the NCBI short-read archive
-using the sra-toolkit\cite{NCBI2025} and were not trimmed or filtered
-prior to their use with Braker2. Default parameters were used to train
-a Braker2 model on \textit{Trichoderma reesei} data except in the case
-of the fungal option, which was used for this analysis for improved
-gene-finding performance in fungi. The Braker2 \textit{T. reesei}
-model was then applied to all assemblies.
+with \textit{Trichoderma reesei} selected as the reference organism
+for training. RNAseq datasets from \textit{T. reesei} were downloaded
+from the NCBI short-read archive using the sra-toolkit\cite{NCBI2025}
+and were not trimmed or filtered prior to their use in Braker2
+training. Default parameters were used to train a Braker2 model on
+\textit{Trichoderma reesei} data except in the case of the fungal
+option, which was used for this analysis for improved gene-finding
+performance in fungi. The trained Braker2 \textit{T. reesei}
+prediction model was then applied to all assemblies with default
+parameters.
 
 %The variables that need to be set are AUGUSTUS\_CONFIG\_PATH and
 %TSEBRA\_PATH. Augustus, by defuault, tries to write species
@@ -110,29 +110,30 @@ model was then applied to all assemblies.
 To assess the general performance of gene-finders, BUSCO
 v5.7.1\cite{10.1093/bioinformatics/btv351} was selected as a tool to
 determine a gene-finder's ability to predict a set of conserved
-ortholagous genes. The BUSCO Metaeuk pipeline was run using the Odb10
-fungal lineage dataset to capture highly conserved genes in fungal
-genomes. This pipeline was applied to all genome assemblies used in
-this work. Used transcriptome mode... This needs to be discussed.
+ortholagous genes. The BUSCO Metaeuk pipeline was run using the BUSCO
+fungi\_Odb10 fungal lineage dataset to capture highly conserved genes
+in fungal genomes. This pipeline was applied to all genome assemblies
+used in this work. Used transcriptome mode... This needs to be
+discussed.
 
 \section{Region Identification Procedure}
 \label{section:region-met}
 
-Predictions and results from previous processing steps were then
-processed into overlapping regions of predictions and annotations. A
-region is defined as a set of start and stop genomic coordinates which
-contains one or more overlapping feature. We define a feature as a set
-of start and stop positions associated with a single gene prediction,
+Predictions and results from previous steps were then processed into
+overlapping regions of predictions and annotations. A region is
+defined as a set of start and stop genomic coordinates which contains
+one or more overlapping feature. We also define a feature as a set of
+start and stop positions associated with a single gene prediction,
 annotation or other data point of interest.
 
-Overlapping features were processed into regions using concepts
-similar in nature to Allen's interval algebra. This processing was
-performed with Python v3.12.4\cite{Foundation} and the GFF package
-from BCBio\cite{Chapman} for easy GFF parsing. Pseudocode for the
-algorithm is shown in algorithm \ref{alg:regions}. The resulting
-regions are then further processed to identify trends and behaviours
-of gene finders in the context of other annotated information and
-features.
+Overlapping features were processed into regions using a concept
+similar in nature to Allen's interval
+algebra\cite{DECHTER2003333}. Pseudocode for the algorithm is shown in
+algorithm \ref{alg:regions}. This processing was performed with Python
+v3.12.4\cite{Foundation} and the GFF package from BCBio\cite{Chapman}
+for easy GFF parsing.  The resulting regions are then further
+processed to identify trends and behaviours of gene finders in the
+context of other annotated information and features.
 
 \begin{algorithm}
   \begin{algorithmic}
@@ -170,17 +171,18 @@ features.
 
 \section{Functional Annotation Using InterProScan}
 
-Functional annotation of gene finder's protein products was performed
-using InterProScan v5.65-97.0\cite{10.1093/bioinformatics/btu031}
-without the match lookup service and with the following analyses
-included: AntiFam-7.0, CDD-3.20, Coils-2.2.1, FunFam-4.3.0,
-Gene3D-4.3.0, Hamap-2023\_01, MobiDBLite-2.0, NCBIfam-13.0,
-PANTHER-18.0, Pfam-36.0, PIRSF-3.10, PIRSR-2023\_05, PRINTS-42.0,
-ProSitePatterns-2022\_05, ProSiteProfiles-2022\_05, SFLD-4, SMART-9.0,
+The predicted proteins from each gene finder were functionally
+annotated using InterProScan
+v5.65-97.0\cite{10.1093/bioinformatics/btu031} without the match
+lookup service and with the following analyses included: AntiFam-7.0,
+CDD-3.20, Coils-2.2.1, FunFam-4.3.0, Gene3D-4.3.0, Hamap-2023\_01,
+MobiDBLite-2.0, NCBIfam-13.0, PANTHER-18.0, Pfam-36.0, PIRSF-3.10,
+PIRSR-2023\_05, PRINTS-42.0, ProSitePatterns-2022\_05,
+ProSiteProfiles-2022\_05, SFLD-4, SMART-9.0,
 SUPERFAMILY-1.75. InterProScan was run on all predicted proteins using
-default parameters. The resulting protein annotations were then mapped
-back to the gene predictions and process using the region
-identification algorithm in section \ref{section:region-met}.
+default parameters. The resulting protein annotations were mapped back
+to the gene predictions and processed using the region identification
+algorithm in section \ref{section:region-met}.
 
 \section{Identification of AT-rich Genomic Windows}
 
@@ -188,9 +190,10 @@ Sliding windows of GC content over each \textit{Trichoderma} assembly
 were calculated using isochore from the EMBOSS tool suite
 v6.6.0\cite{Rice2000}. The sliding window used was 250bp long with a
 50bp shift. A window was classified as AT-rich if the sequence
-contained 27\% or less GC content. AT-rich sequences were then mapped
-to a GFF file and processed using the region identification algorithm
-described in section \ref{section:region-met}.
+contained 27\% or less GC content. The genomic sequences from AT-rich
+windows were mapped to a GFF file and processed using the region
+identification algorithm described in section
+\ref{section:region-met}.
 
 \section{Ground-truthing with BLAST}
 

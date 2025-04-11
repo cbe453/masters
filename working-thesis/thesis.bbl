@@ -5,6 +5,11 @@ Jill Adams.
 \newblock {Complex Genomes: Shotgun Sequencing}.
 \newblock {\em Nature Education}, 1(1):186, 2008.
 
+\bibitem{Bennett2004}
+Simon Bennett.
+\newblock {Solexa Ltd.}
+\newblock {\em Pharmacogenomics}, 5(4):433--438, jun 2004.
+
 \bibitem{Bolger2014}
 Anthony~M Bolger, Marc Lohse, and Bjoern Usadel.
 \newblock {Trimmomatic: a flexible trimmer for Illumina sequence data}.
@@ -31,6 +36,13 @@ Brad Chapman.
 Phillip E~C Compeau, Pavel~A Pevzner, and Glenn Tesler.
 \newblock {How to apply de Bruijn graphs to genome assembly.}
 \newblock {\em Nature biotechnology}, 29(11):987--991, nov 2011.
+
+\bibitem{DECHTER2003333}
+Rina Dechter.
+\newblock {chapter 12 - Temporal Constraint Networks}.
+\newblock In Rina Dechter, editor, {\em Constraint Processing}, The Morgan
+  Kaufmann Series in Artificial Intelligence, pages 333--362. Morgan Kaufmann,
+  San Francisco, 2003.
 
 \bibitem{Ejigu2020}
 Girum~Fitihamlak Ejigu and Jaehee Jung.
@@ -157,6 +169,11 @@ Todd~J Treangen and Steven~L Salzberg.
 \newblock {Repetitive DNA and next-generation sequencing: computational
   challenges and solutions.}
 \newblock {\em Nature reviews. Genetics}, 13(1):36--46, nov 2011.
+
+\bibitem{Wang2021}
+Yunhao Wang, Yue Zhao, Audrey Bollas, Yuru Wang, and Kin~Fai Au.
+\newblock {Nanopore sequencing technology, bioinformatics and applications}.
+\newblock {\em Nature Biotechnology}, 39(11):1348--1365, 2021.
 
 \bibitem{10.1371/journal.pgen.1007467}
 David~J Winter, Austen R~D Ganley, Carolyn~A Young, Ivan Liachko, Christopher~L

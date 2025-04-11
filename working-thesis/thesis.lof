@@ -5,7 +5,7 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces An example of GFF entries for a sinlge gene.\relax }}{9}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A flowchart of the methodology followed for this research. The workflow is broken up into sections based on the stage of the pipeline. Oval-shaped nodes represent steps involved in the processing of data, while rectangular nodes represent intermediate datasets and results.\relax }}{14}{figure.caption.16}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A flowchart of the methodology followed in this research. The workflow is broken up into sections based on the processes and data involved at each step. Oval-shaped nodes represent steps involved in the processing of data, while rectangular nodes represent intermediate datasets and results.\relax }}{14}{figure.caption.16}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Plots showing the frequency of GC values calculated from sliding windows for each assembly.\relax }}{19}{figure.caption.18}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces CDF plots part 1.}}{24}{figure.caption.20}

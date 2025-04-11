@@ -1,0 +1,20 @@
+TY  - JOUR
+AU  - Wang, Yunhao
+AU  - Zhao, Yue
+AU  - Bollas, Audrey
+AU  - Wang, Yuru
+AU  - Au, Kin Fai
+PY  - 2021
+DA  - 2021/11/01
+TI  - Nanopore sequencing technology, bioinformatics and applications
+JO  - Nature Biotechnology
+SP  - 1348
+EP  - 1365
+VL  - 39
+IS  - 11
+AB  - Rapid advances in nanopore technologies for sequencing single long DNA and RNA molecules have led to substantial improvements in accuracy, read length and throughput. These breakthroughs have required extensive development of experimental and bioinformatics methods to fully exploit nanopore long reads for investigations of genomes, transcriptomes, epigenomes and epitranscriptomes. Nanopore sequencing is being applied in genome assembly, full-length transcript detection and base modification detection and in more specialized areas, such as rapid clinical diagnoses and outbreak surveillance. Many opportunities remain for improving data quality and analytical approaches through the development of new nanopores, base-calling methods and experimental protocols tailored to particular applications.
+SN  - 1546-1696
+UR  - https://doi.org/10.1038/s41587-021-01108-x
+DO  - 10.1038/s41587-021-01108-x
+ID  - Wang2021
+ER  - 

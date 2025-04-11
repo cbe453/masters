@@ -10,45 +10,45 @@ The style file: plain.bst
 Database file #1: ./refs/full-bib.bib
 Warning--I didn't find a database entry for "Keller2011"
 Warning--I didn't find a database entry for "10.1093/nar/gkac993"
-You've used 29 entries,
+You've used 32 entries,
             2118 wiz_defined-function locations,
-            702 strings with 9931 characters,
-and the built_in function-call counts, 11160 in all, are:
-= -- 1038
-> -- 730
-< -- 0
-+ -- 289
-- -- 260
-* -- 977
-:= -- 1935
-add.period$ -- 83
-call.type$ -- 29
-change.case$ -- 217
+            725 strings with 10375 characters,
+and the built_in function-call counts, 12365 in all, are:
+= -- 1164
+> -- 776
+< -- 1
++ -- 307
+- -- 275
+* -- 1068
+:= -- 2127
+add.period$ -- 93
+call.type$ -- 32
+change.case$ -- 233
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 301
-empty$ -- 735
-format.name$ -- 260
-if$ -- 2178
+cite$ -- 32
+duplicate$ -- 347
+empty$ -- 833
+format.name$ -- 275
+if$ -- 2435
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 25
-newline$ -- 144
-num.names$ -- 58
-pop$ -- 185
+int.to.str$ -- 32
+missing$ -- 28
+newline$ -- 159
+num.names$ -- 66
+pop$ -- 197
 preamble$ -- 1
-purify$ -- 188
+purify$ -- 201
 quote$ -- 0
-skip$ -- 217
+skip$ -- 250
 stack$ -- 0
-substring$ -- 670
-swap$ -- 29
-text.length$ -- 0
+substring$ -- 773
+swap$ -- 41
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
+type$ -- 128
 warning$ -- 0
-while$ -- 99
-width$ -- 31
-write$ -- 307
+while$ -- 113
+width$ -- 34
+write$ -- 343
 (There were 2 warnings)
