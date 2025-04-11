@@ -1,0 +1,61 @@
+PMID- 21901742
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20111229
+LR  - 20221221
+IS  - 1934-340X (Electronic)
+IS  - 1934-3396 (Print)
+IS  - 1934-3396 (Linking)
+VI  - Chapter 4
+DP  - 2011 Sep
+TI  - Eukaryotic gene prediction using GeneMark.hmm-E and GeneMark-ES.
+PG  - 4.6.1-4.6.10
+LID - 10.1002/0471250953.bi0406s35 [doi]
+AB  - This unit describes how to use the gene-finding programs GeneMark.hmm-E and 
+      GeneMark-ES for finding protein-coding genes in the genomic DNA of eukaryotic 
+      organisms. These bioinformatics tools have been demonstrated to have 
+      state-of-the-art accuracy for many fungal, plant, and animal genomes, and have 
+      frequently been used for gene annotation in novel genomic sequences. An 
+      additional advantage of GeneMark-ES is that the problem of algorithm 
+      parameterization is solved automatically, with parameters estimated by iterative 
+      self-training (unsupervised training).
+CI  - © 2011 by John Wiley & Sons, Inc.
+FAU - Borodovsky, Mark
+AU  - Borodovsky M
+AD  - Georgia Institute of Technology, Atlanta, Georgia.
+FAU - Lomsadze, Alex
+AU  - Lomsadze A
+AD  - Georgia Institute of Technology, Atlanta, Georgia.
+LA  - eng
+GR  - R01 HG000783/HG/NHGRI NIH HHS/United States
+GR  - R01 HG000783-14/HG/NHGRI NIH HHS/United States
+GR  - HG00783/HG/NHGRI NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PL  - United States
+TA  - Curr Protoc Bioinformatics
+JT  - Current protocols in bioinformatics
+JID - 101157830
+SB  - IM
+MH  - *Algorithms
+MH  - Computational Biology/*methods
+MH  - Eukaryota/*genetics
+MH  - Genes/*genetics
+MH  - Genome/*genetics
+MH  - Internet
+MH  - *Models, Genetic
+MH  - *Software
+PMC - PMC3204378
+MID - NIHMS323319
+EDAT- 2011/09/09 06:00
+MHDA- 2011/12/30 06:00
+PMCR- 2012/09/01
+CRDT- 2011/09/09 06:00
+PHST- 2011/09/09 06:00 [entrez]
+PHST- 2011/09/09 06:00 [pubmed]
+PHST- 2011/12/30 06:00 [medline]
+PHST- 2012/09/01 00:00 [pmc-release]
+AID - 10.1002/0471250953.bi0406s35 [doi]
+PST - ppublish
+SO  - Curr Protoc Bioinformatics. 2011 Sep;Chapter 4:4.6.1-4.6.10. doi: 
+      10.1002/0471250953.bi0406s35.

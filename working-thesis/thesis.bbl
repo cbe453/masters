@@ -5,12 +5,27 @@ Jill Adams.
 \newblock {Complex Genomes: Shotgun Sequencing}.
 \newblock {\em Nature Education}, 1(1):186, 2008.
 
+\bibitem{Bolger2014}
+Anthony~M Bolger, Marc Lohse, and Bjoern Usadel.
+\newblock {Trimmomatic: a flexible trimmer for Illumina sequence data}.
+\newblock {\em Bioinformatics}, 30(15):2114--2120, aug 2014.
+
+\bibitem{Borodovsky2011}
+Mark Borodovsky and Alex Lomsadze.
+\newblock {Eukaryotic gene prediction using GeneMark.hmm-E and GeneMark-ES}.
+\newblock {\em Current Protocols in Bioinformatics}, Chapter
+  4(SUPPL.35):4.6.1--4.6.10, sep 2011.
+
 \bibitem{Bruna2021}
 Tom{\'{a}}{\v{s}} Brůna, Katharina~J Hoff, Alexandre Lomsadze, Mario Stanke,
   and Mark Borodovsky.
 \newblock {BRAKER2: automatic eukaryotic genome annotation with GeneMark-EP+
   and AUGUSTUS supported by a protein database.}
 \newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, mar 2021.
+
+\bibitem{Chapman}
+Brad Chapman.
+\newblock {BCBio Python Package}.
 
 \bibitem{Compeau2011}
 Phillip E~C Compeau, Pavel~A Pevzner, and Glenn Tesler.
@@ -23,17 +38,42 @@ Girum~Fitihamlak Ejigu and Jaehee Jung.
   by Next-Generation Sequencing.}
 \newblock {\em Biology}, 9(9), sep 2020.
 
+\bibitem{Foundation}
+Python~Software Foundation.
+\newblock {Python}.
+
 \bibitem{Goodwin2016}
 Sara Goodwin, John~D McPherson, and W~Richard McCombie.
 \newblock {Coming of age: ten years of next-generation sequencing
   technologies}.
 \newblock {\em Nature Reviews Genetics}, 17(6):333--351, 2016.
 
+\bibitem{Gurevich2013}
+Alexey Gurevich, Vladislav Saveliev, Nikolay Vyahhi, and Glenn Tesler.
+\newblock {QUAST: quality assessment tool for genome assemblies.}
+\newblock {\em Bioinformatics (Oxford, England)}, 29(8):1072--1075, apr 2013.
+
 \bibitem{Hu2020}
 Jiang Hu, Junpeng Fan, Zongyi Sun, and Shanlin Liu.
 \newblock {NextPolish: a fast and efficient genome polishing tool for long-read
   assembly}.
 \newblock {\em Bioinformatics}, 36(7):2253--2255, apr 2020.
+
+\bibitem{Hu2024}
+Jiang Hu, Zhuo Wang, Zongyi Sun, Benxia Hu, Adeola~Oluwakemi Ayoola, Fan Liang,
+  Jingjing Li, Jos{\'{e}}~R Sandoval, David~N Cooper, Kai Ye, Jue Ruan,
+  Chuan-Le Xiao, Depeng Wang, Dong-Dong Wu, and Sheng Wang.
+\newblock {NextDenovo: an efficient error correction and accurate assembly tool
+  for noisy long reads}.
+\newblock {\em Genome Biology}, 25(1):107, 2024.
+
+\bibitem{10.1093/bioinformatics/btu031}
+Philip Jones, David Binns, Hsin-Yu Chang, Matthew Fraser, Weizhong Li, Craig
+  McAnulla, Hamish McWilliam, John Maslen, Alex Mitchell, Gift Nuka, Sebastien
+  Pesseat, Antony~F Quinn, Amaia Sangrador-Vegas, Maxim Scheremetjew, Siew-Yit
+  Yong, Rodrigo Lopez, and Sarah Hunter.
+\newblock {InterProScan 5: genome-scale protein function classification}.
+\newblock {\em Bioinformatics}, 30(9):1236--1240, 2014.
 
 \bibitem{Kubicek2019}
 Christian~P Kubicek, Andrei~S Steindorff, Komal Chenthamara, Gelsomina
@@ -52,14 +92,6 @@ Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
   algorithm}.
 \newblock {\em Nucleic Acids Research}, 33(20):6494--6506, 2005.
 
-\bibitem{10.1093/molbev/msab199}
-Mos{\`{e}} Manni, Matthew~R Berkeley, Mathieu Seppey, Felipe~A Sim{\~{a}}o, and
-  Evgeny~M Zdobnov.
-\newblock {BUSCO Update: Novel and Streamlined Workflows along with Broader and
-  Deeper Phylogenetic Coverage for Scoring of Eukaryotic, Prokaryotic, and
-  Viral Genomes}.
-\newblock {\em Molecular Biology and Evolution}, 38(10):4647--4654, 2021.
-
 \bibitem{Marx2023}
 Vivien Marx.
 \newblock {Method of the year: long-read sequencing}.
@@ -74,10 +106,25 @@ Niranjan Nagarajan and Mihai Pop.
 NCBI.
 \newblock {NCBI Eukaryotic Annotation Pipeline}, 2024.
 
+\bibitem{NCBI2025}
+NCBI.
+\newblock {NCBI SRA Toolkit}, 2025.
+
 \bibitem{Plohl2014}
 Miroslav Plohl, Nevenka Me{\v{s}}trovi{\'{c}}, and Brankica Mravinac.
 \newblock {Centromere identity from the DNA point of view}.
 \newblock {\em Chromosoma}, 123(4):313--325, aug 2014.
+
+\bibitem{Rice2000}
+P~Rice, I~Longden, and A~Bleasby.
+\newblock {EMBOSS: the European Molecular Biology Open Software Suite.}
+\newblock {\em Trends in genetics : TIG}, 16(6):276--277, jun 2000.
+
+\bibitem{Robinson2011}
+James~T Robinson, Helga Thorvaldsd{\'{o}}ttir, Wendy Winckler, Mitchell
+  Guttman, Eric~S Lander, Gad Getz, and Jill~P Mesirov.
+\newblock {Integrative genomics viewer}.
+\newblock {\em Nature Biotechnology}, 29(1):24--26, 2011.
 
 \bibitem{10.3389/fpls.2023.1190304}
 Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
@@ -86,6 +133,13 @@ Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
   combination on the Arabidopsis thaliana holobiont: a metabolomics and
   metabarcoding approach}.
 \newblock {\em Frontiers in Plant Science}, 14, 2023.
+
+\bibitem{10.1093/bioinformatics/btv351}
+Felipe~A Sim{\~{a}}o, Robert~M Waterhouse, Panagiotis Ioannidis, Evgenia~V
+  Kriventseva, and Evgeny~M Zdobnov.
+\newblock {BUSCO: assessing genome assembly and annotation completeness with
+  single-copy orthologs}.
+\newblock {\em Bioinformatics}, 31(19):3210--3212, 2015.
 
 \bibitem{Slotkin2018}
 R~Keith Slotkin.

@@ -1,0 +1,81 @@
+PMID- 24695404
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20141002
+LR  - 20240611
+IS  - 1367-4811 (Electronic)
+IS  - 1367-4803 (Print)
+IS  - 1367-4803 (Linking)
+VI  - 30
+IP  - 15
+DP  - 2014 Aug 1
+TI  - Trimmomatic: a flexible trimmer for Illumina sequence data.
+PG  - 2114-20
+LID - 10.1093/bioinformatics/btu170 [doi]
+AB  - MOTIVATION: Although many next-generation sequencing (NGS) read preprocessing 
+      tools already existed, we could not find any tool or combination of tools that 
+      met our requirements in terms of flexibility, correct handling of paired-end data 
+      and high performance. We have developed Trimmomatic as a more flexible and 
+      efficient preprocessing tool, which could correctly handle paired-end data. 
+      RESULTS: The value of NGS read preprocessing is demonstrated for both 
+      reference-based and reference-free tasks. Trimmomatic is shown to produce output 
+      that is at least competitive with, and in many cases superior to, that produced 
+      by other tools, in all scenarios tested. AVAILABILITY AND IMPLEMENTATION: 
+      Trimmomatic is licensed under GPL V3. It is cross-platform (Java 1.5+ required) 
+      and available at http://www.usadellab.org/cms/index.php?page=trimmomatic CONTACT: 
+      usadel@bio1.rwth-aachen.de SUPPLEMENTARY INFORMATION: Supplementary data are 
+      available at Bioinformatics online.
+CI  - © The Author 2014. Published by Oxford University Press.
+FAU - Bolger, Anthony M
+AU  - Bolger AM
+AD  - Department Metabolic Networks, Max Planck Institute of Molecular Plant 
+      Physiology, Am Mühlenberg 1, 14476 Golm,Institut für Biologie I, RWTH Aachen, 
+      Worringer Weg 3, 52074 Aachen and Institute of Bio- and Geosciences: Plant 
+      Sciences, Forschungszentrum Jülich, Leo-Brandt-Straße, 52425 Jülich, 
+      GermanyDepartment Metabolic Networks, Max Planck Institute of Molecular Plant 
+      Physiology, Am Mühlenberg 1, 14476 Golm,Institut für Biologie I, RWTH Aachen, 
+      Worringer Weg 3, 52074 Aachen and Institute of Bio- and Geosciences: Plant 
+      Sciences, Forschungszentrum Jülich, Leo-Brandt-Straße, 52425 Jülich, Germany.
+FAU - Lohse, Marc
+AU  - Lohse M
+AD  - Department Metabolic Networks, Max Planck Institute of Molecular Plant 
+      Physiology, Am Mühlenberg 1, 14476 Golm,Institut für Biologie I, RWTH Aachen, 
+      Worringer Weg 3, 52074 Aachen and Institute of Bio- and Geosciences: Plant 
+      Sciences, Forschungszentrum Jülich, Leo-Brandt-Straße, 52425 Jülich, Germany.
+FAU - Usadel, Bjoern
+AU  - Usadel B
+AD  - Department Metabolic Networks, Max Planck Institute of Molecular Plant 
+      Physiology, Am Mühlenberg 1, 14476 Golm,Institut für Biologie I, RWTH Aachen, 
+      Worringer Weg 3, 52074 Aachen and Institute of Bio- and Geosciences: Plant 
+      Sciences, Forschungszentrum Jülich, Leo-Brandt-Straße, 52425 Jülich, 
+      GermanyDepartment Metabolic Networks, Max Planck Institute of Molecular Plant 
+      Physiology, Am Mühlenberg 1, 14476 Golm,Institut für Biologie I, RWTH Aachen, 
+      Worringer Weg 3, 52074 Aachen and Institute of Bio- and Geosciences: Plant 
+      Sciences, Forschungszentrum Jülich, Leo-Brandt-Straße, 52425 Jülich, Germany.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20140401
+PL  - England
+TA  - Bioinformatics
+JT  - Bioinformatics (Oxford, England)
+JID - 9808944
+SB  - IM
+MH  - Computational Biology
+MH  - Databases, Genetic
+MH  - High-Throughput Nucleotide Sequencing/*methods
+MH  - *Software
+PMC - PMC4103590
+EDAT- 2014/04/04 06:00
+MHDA- 2014/10/03 06:00
+PMCR- 2014/04/01
+CRDT- 2014/04/04 06:00
+PHST- 2014/04/04 06:00 [entrez]
+PHST- 2014/04/04 06:00 [pubmed]
+PHST- 2014/10/03 06:00 [medline]
+PHST- 2014/04/01 00:00 [pmc-release]
+AID - btu170 [pii]
+AID - 10.1093/bioinformatics/btu170 [doi]
+PST - ppublish
+SO  - Bioinformatics. 2014 Aug 1;30(15):2114-20. doi: 10.1093/bioinformatics/btu170. 
+      Epub 2014 Apr 1.
