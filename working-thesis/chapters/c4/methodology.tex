@@ -69,8 +69,8 @@ default parameters.
 
 \textit{Ab initio} gene finding was performed using GeneMark-ES
 v4.71\cite{Borodovsky2011}. Default parameters were used in all cases
-except for the fungal option, which was set to yes in order to use a
-GeneMark model specific to fungal genomes. 
+except for the fungal option, which was allowed the use of a GeneMark
+model specific to fungal genomes.
 
 %General command structure for GeneMark-ES:
 %
@@ -80,16 +80,16 @@ GeneMark model specific to fungal genomes.
 \section{Gene Prediction Using Braker2}
 
 For evidence-based gene finding, Braker2 v3.0.2\cite{Bruna2021} was
-with \textit{Trichoderma reesei} selected as the reference organism
-for training. RNAseq datasets from \textit{T. reesei} were downloaded
-from the NCBI short-read archive using the sra-toolkit\cite{NCBI2025}
-and were not trimmed or filtered prior to their use in Braker2
-training. Default parameters were used to train a Braker2 model on
-\textit{Trichoderma reesei} data except in the case of the fungal
-option, which was used for this analysis for improved gene-finding
-performance in fungi. The trained Braker2 \textit{T. reesei}
-prediction model was then applied to all assemblies with default
-parameters.
+used with \textit{Trichoderma reesei} selected as the reference
+organism for training. RNAseq datasets from \textit{T. reesei} were
+downloaded from the NCBI short-read archive using the
+sra-toolkit\cite{NCBI2025} and were not trimmed or filtered prior to
+their use in Braker2 training. Default parameters were used to train a
+Braker2 model on \textit{Trichoderma reesei} data except in the case
+of the fungal option, which was used for this analysis for improved
+gene-finding performance in fungi. The trained Braker2
+\textit{T. reesei} prediction model was then applied to all assemblies
+with default parameters.
 
 %The variables that need to be set are AUGUSTUS\_CONFIG\_PATH and
 %TSEBRA\_PATH. Augustus, by defuault, tries to write species
@@ -121,8 +121,8 @@ determine a gene-finder's ability to predict a set of conserved
 ortholagous genes. The BUSCO Metaeuk pipeline was run using the BUSCO
 fungi\_Odb10 fungal lineage dataset to capture highly conserved genes
 in fungal genomes. This pipeline was applied to all genome assemblies
-used in this work. Used transcriptome mode... This needs to be
-discussed.
+used in this work. (note for us to discuss: I used transcriptome
+mode...)
 
 \section{Region Identification Procedure}
 \label{section:region-met}
@@ -135,9 +135,12 @@ start and stop positions associated with a single gene prediction,
 annotation or other data point of interest.
 
 Overlapping features were processed into regions using a concept
-similar in nature to Allen's interval
-algebra\cite{DECHTER2003333}. Pseudocode for the algorithm is shown in
-algorithm \ref{alg:regions}. This processing was performed with Python
+similar to Allen's interval algebra\cite{DECHTER2003333}. The
+algorithm first sorts all features on each contig by start coordinate
+and then iterates over each feature, identifying overlaps with
+previous features to identify regions of overlapping
+features. Pseudocode for the algorithm is shown in algorithm
+\ref{alg:regions}. This processing was performed with Python
 v3.12.4\cite{Foundation} and the GFF package from BCBio\cite{Chapman}
 for easy GFF parsing.  The resulting regions are then further
 processed to identify trends and behaviours of gene finders in the
@@ -196,11 +199,11 @@ algorithm in section \ref{section:region-met}.
 
 Sliding windows of GC content over each \textit{Trichoderma} assembly
 were calculated using isochore from the EMBOSS tool suite
-v6.6.0\cite{Rice2000}. The sliding window used was 250bp long with a
+v6.6.0\cite{Rice2000}. The sliding window used was 250bp wide with a
 50bp shift. A window was classified as AT-rich if the sequence
-contained 27\% or less GC content. The genomic sequences from AT-rich
-windows were mapped to a GFF file and processed using the region
-identification algorithm described in section
+contained lower than 28\% GC content. The genomic sequences from
+AT-rich windows were mapped to a GFF file and processed using the
+region identification algorithm described in section
 \ref{section:region-met}.
 
 \section{Ground-truthing with BLAST}
