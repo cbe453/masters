@@ -5,17 +5,17 @@ table \ref{table:gene-counts}. Immediately we see that Braker2
 predicts far fewer genes in all assemblies, except in the case of
 \textit{Trichoderma reesei.} This is possibly due to the effects of
 training the Braker2 gene model using data from \textit{Trichoderma
-  reesei.} Given the shorter length of the \textit{T. reesei}
-assembly, and subsequently fewer genes present, the trained model may
-predict fewer genes in other assemblies. Regardless, there is a
-significant difference in the number of genes predicted by Braker2 in
-comparison to GeneMark and RefSeq. The number of genes predicted by
-GeneMark and RefSeq are similar, except in the case of
-\textit{T. harzianum}, in which RefSeq predicts roughly 17\% more
-genes than GeneMark. Braker2 consistently predicts more transcripts
-than GeneMark and RefSeq. RefSeq also appears to predict isoforms but
-in fewer numbers than Braker2. Transcript prediction counts in
-\textit{T. harzianum} from RefSeq are also interesting, with RefSeq
+  reesei}, which has a significantly smaller genome in comparison to
+other \textit{Trichoderma} assemblies, although genome size is not
+always indicative of gene content. Regardless, there is a significant
+difference in the number of genes predicted by Braker2 in comparison
+to GeneMark and RefSeq. The number of genes predicted by GeneMark and
+RefSeq are similar, except in the case of \textit{T. harzianum}, in
+which RefSeq predicts roughly 17\% more genes than GeneMark. Braker2
+consistently predicts more transcripts than GeneMark and
+RefSeq. RefSeq also appears to predict multiple transcripts for each
+gene but in fewer numbers than Braker2. Transcript prediction counts
+in \textit{T. harzianum} from RefSeq are also interesting, with RefSeq
 predicting fewer transcripts than genes. Why this is occurs is unknown
 but may warrant further investigation.
 
@@ -24,7 +24,7 @@ but may warrant further investigation.
   \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
     Assembly & Braker2 & & GeneMark & & RefSeq & \\ \hline
-     & Genes & mRNA & Genes & mRNA & Genes & mRNA \\ \hline
+     & Genes & Transcripts & Genes & Transcripts & Genes & Transcripts \\ \hline
     DC1 & 8546 & 8637 & 11353 & 11353 & N/A & N/A \\ \hline
     Tsth20 & 8784 & 8858 & 12362 & 12362 & N/A & N/A \\ \hline
     \textit{T. reesei} & 9659 & 10175 & 9196 & 9196 & 9109 & 9118 \\ \hline

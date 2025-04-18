@@ -1,10 +1,10 @@
 \section{Distribution of Predicted Gene Lengths}
 \label{section:lengths}
 
-To better understand and compare the distributions of gene lengths
+To better understand and compare the distributions of CDS sequences
 predicted by Braker2, GeneMark, and RefSeq, the cumulative density
 function for the lengths of CDS sequences for each gene finding tool
-are shown in figure ~\ref{fig:cdf-lengths-1}, \ref{fig:cdf-lengths-2}
+are shown in figures ~\ref{fig:cdf-lengths-1}, \ref{fig:cdf-lengths-2}
 and \ref{fig:cdf-lengths-3}. The $\log_{10}$ values of gene lengths
 were used for a better visulazation of the distributions. In DC1, the
 curves from Braker2 and GeneMark follow each other closely, with the
@@ -13,7 +13,7 @@ extends beyond that of GeneMark, indicating that Braker2 predicts more
 shorter genes than GeneMark. In the case of Tsth20, the curves are
 nearly identical. In \textit{T. reesei}, we see disagreement in the
 curves for shorter genes, with Braker2 appearing to predict a greater
-amount of shorter genes than GeneMark and RefSeq. The upper portions
+number of shorter genes than GeneMark and RefSeq. The upper portions
 of the curves trend toward similar predicted gene lengths. In
 \textit{T. harzianum}, RefSeq deviates from GeneMark and Braker2,
 predicting more genes of short length, while Braker and GeneMark
@@ -21,7 +21,7 @@ appear to be in near-complete agreement except in the case of very
 short genes. Finally, in \textit{T. virens}, we see the RefSeq curve
 predicting shorter genes once again, although the deviation is not as
 drastic as in \textit{T. harzianum}. It also appears that GeneMark
-predicts the shortets genes in \textit{T. virens}, deviating from the
+predicts the shortest genes in \textit{T. virens}, deviating from the
 other assemblies where Braker2 always predicts the shortest
 genes. From these plots, we can say that visually, gene finding tools
 appear to predict different lengths of genes. We also observe that
@@ -79,19 +79,21 @@ finding methods.
 
 To confirm these observations statistically, two-sided two-sample
 Kolmogorov-Smirnov tests were performed using the $\log_{10}$
-transformed gene lengths and are presented in table
-\ref{table:ks-2s}. In the cases of DC1 and Tsth20, we see that in
-agreement with figure \ref{cdf-lengths-1}, Braker2 and GeneMark do not
-produce statistically different lengths of genes, which is interesting
+transformed gene lengths, with the null hypothesis being that
+frequency of genes predicted in AT-rich and normal genomic sequence
+are same. Results are presented in table \ref{table:ks-2s}. In the
+cases of DC1 and Tsth20, we see that in agreement with figure
+\ref{fig:cdf-lengths-1}, Braker2 and GeneMark do not produce
+statistically different lengths of genes, which is interesting
 considering that the Braker2 includes experimental evidence for
 another assembly while GeneMark does not. In \textit{T. reesei}, while
 RefSeq and GeneMark do not reject the null hypothesis when compared,
 Braker2's predicted gene lengths are significantly different than both
-RefSeq and GeneMark, which is also confirmed visually in the CDF plots
-above. The same cannot be said for \textit{T. harzianum} and
+RefSeq and GeneMark, which is also confirmed visually in the CDF
+plots. The same cannot be said for \textit{T. harzianum} and
 \textit{T. virens}, where RefSeq is significantly different from both
-GeneMark and Braker2, which are not significantly different from
-each other. It is also notable that RefSeq and GeneMark predict similar
+GeneMark and Braker2, which are not significantly different from each
+other. It is also notable that RefSeq and GeneMark predict similar
 gene lengths in \textit{T. reesei} but not in \textit{T. harzianum}
 and \textit{T. virens.}
 

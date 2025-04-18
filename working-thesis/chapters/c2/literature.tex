@@ -276,6 +276,33 @@ influence a user's decision on which gene finding tool to consider and
 will complicate comparative analysis of multiple gene finding
 tools. (citation needed somewhere in here)
 
+\section{RefSeq}
+
+First, we will briefly discuss the RefSeq annotation process. RefSeq
+annotation is only applied to data that is submitted to NCBI. The
+RefSeq Eukaryotic Genome Annotation Pipeline\cite{NCBI2024} is a
+genome annotation process developed and maintained by NCBI. The
+pipeline is not directly publicly available to public users, and
+requires submission of data to NCBI. Once data is submitted to NCBI,
+the RefSeq annotation pipeline may be applied upon request only if the
+genome is the highest quality assembly for the species in question or
+if the genome is of significant interest to the scientific community,
+limiting reach of the annotation process to many users. The pipeline
+supplies existing RNAseq, CDS and protein sequences to NCBI's in-house
+gene prediction tool Gnomon, which produces trained models for gene
+prediction. While the tools used for alignment and processing of
+supporting sequence information are listed, the inner workings of
+Gnomon are not well documented, at least from the public perspective,
+and I was unable to find Gnomon in any compilable or executable form
+during my search. Recreation of the RefSeq pipeline would prove
+extremely challenging if not impossible without supporting
+information. Run times for this pipeline are difficult to determine
+due to the hidden nature of the pipeline, unknown compute resources
+and varying quantities of data used. The RefSeq annotation process
+produces comprehensive outputs, including CDS sequences, translated
+CDS, RNA from genomic sequences, proteins, feature counts and tables,
+and finally GFF and GTF formatted annotation files for these features.
+
 \section{InterProScan}
 The outputs from gene finding tools are a set of potential genes that
 fit the model used by each tool. While they are considered genes, the

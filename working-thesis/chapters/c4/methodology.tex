@@ -20,6 +20,10 @@ are discussed in the following sections.
 
 \section{Sequence Pre-processing and Assembly}
 
+% somewhere here...
+% The training was performed using roughly 145 million Illumina
+% paired end RNAseq reads on the \textit{Trichoderma reesei} genome.
+
 Genomic sequences were generated for DC1 and Tsth20 using
 Nanopore\cite{Wang2021} and Illumina\cite{Bennett2004} sequencing
 technologies. Nanopore data was not processed prior to
@@ -90,6 +94,10 @@ of the fungal option, which was used for this analysis for improved
 gene-finding performance in fungi. The trained Braker2
 \textit{T. reesei} prediction model was then applied to all assemblies
 with default parameters.
+
+Braker2 also provides a UTR option to predict upstream sequence
+features, but that option is experimental and was left off for this
+work.
 
 %The variables that need to be set are AUGUSTUS\_CONFIG\_PATH and
 %TSEBRA\_PATH. Augustus, by defuault, tries to write species
