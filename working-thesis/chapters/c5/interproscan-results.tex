@@ -4,11 +4,11 @@ Pfam hits from InterProScan analysis are presented in table
 ~\ref{table:ips-pfam}, from which we can identify one major trend. In
 general, roughly 73-76\% of proteins predicted by Braker2, GeneMark
 and RefSeq contain a match to a Pfam entry, except in the case of
-\textit{T. harzianum}, which reports a considerably lower
-proportion of genes with Pfam matches. Why the proportion of RefSeq
-proteins with Pfam matches in \textit{T. harzianum} is so low is
-unknown. This is promising performance for the gene finders as the
-RefSeq annotations demonstrate similar proportions of Pfam hits to
+\textit{T. harzianum}, which reports a considerably lower proportion
+of genes with Pfam matches in the RefSeq dataset. Why the proportion
+of RefSeq proteins with Pfam matches in \textit{T. harzianum} is so
+low is unknown. This is promising performance for the gene finders as
+the RefSeq annotations demonstrate similar proportions of Pfam hits to
 predicted proteins. The total counts may be decieving however, as
 predictions from Braker2 may result in more than one protein product
 per gene, whereas in the case of GeneMark, only one protein is
@@ -37,8 +37,8 @@ the resulting GFF is 10bp downstream from the start of the gene.
     \textit{T. harzianum} & $100\times(\frac{11370}{15408})=73.79\%$ & $100\times(\frac{9061}{12164})=74.49\%$ & $100\times(\frac{9293}{14065})=66.07\%$ \\ \hline
     \textit{T. virens} & $100\times(\frac{11249}{15062})=74.68\%$ & $100\times(\frac{8871}{11866})=74.76\%$ & $100\times(\frac{9062}{12383})=73.18\%$ \\ \hline
   \end{tabular}
-  \caption[InterProScan Pfam Evidence]{Table with counts of predicted
-    genes with Pfam annotations from InterProScan}
+  \caption[InterProScan Pfam Evidence]{Table showing the fractions of predicted
+    genes with Pfam annotations from InterProScan as a percent}
   \label{table:ips-pfam}
 \end{table}
 
@@ -48,7 +48,10 @@ the resulting GFF is 10bp downstream from the start of the gene.
   \includegraphics[width=\textwidth]{figures/igv/ips-basic-agree.png}
   \caption[Agreeing Pfam matches]{An IGV capture showing complete
     agreement between gene finders for both gene model and protein
-    Pfam hits}
+    Pfam hits. The longer segments are predicted genes and the smaller
+    segments are annotated Pfam matches, all with agreeing start and
+    stop positions. The \textbf{desc} in each sub-window indicate
+    agreeing Pfam annotations.}
   \label{fig:basic-agree}
 \end{figure}
 

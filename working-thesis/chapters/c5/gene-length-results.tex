@@ -127,11 +127,10 @@ difficult to answer without deeper invesitgation. There is clearly an
 underlying difference between RefSeq and the other gene finding
 tools. Braker2 and GeneMark tend to be in agreement, except in the
 case of \textit{T. reesei}, which Braker2 was specifically trained
-for. We observe that when gene finders are applied to the assemblies
-from which their training data originated, they tend to predict
-shorter genes. Conversly, we observe that when a gene finding tool
-trained with experimental evidence is applied to a different
-\textit{Trichoderma} assembly, the lengths of predicted genes do not
-significantly differ from an \textit{ab initio} gene finder like
-GeneMark, except in the case of RefSeq's predictions on
-\textit{T. reesei}.
+for. We observe that when the gene finder Braker2 is applied to an
+assembly from which the training data originated, Braker2 predicts
+shorter genes. Conversly, we observe that when Braker2 is trained with
+experimental evidence and applied to a \textit{Trichoderma} assembly
+from which the training data did not originate, the lengths of
+predicted genes do not significantly differ from the \textit{ab
+  initio} gene finder GeneMark.

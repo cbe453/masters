@@ -1,7 +1,7 @@
 \section{Genes in Regions of Anomalous GC Content}
 \label{section:gc-regions}
 
-Figure \ref{table:gc-regions} shows the results of applying the same
+Table \ref{table:gc-regions} shows the results of applying the same
 region finding process from earlier to segments of the genome
 identified as AT-rich. AT-rich is defined as a region of genomic
 sequence with percent GC composition less than 28\%. In comparison to
@@ -23,7 +23,7 @@ with gene predictions in AT-rich genomic segments, and within these
 regions, the majority of cases are isolated singleton gene
 predictions. These observations differ greatly from those made in
 nucleotide composition agnostic approach in section
-\ref{section:regions.}
+\ref{section:regions}.
 
 \begin{table}
   \begin{center}
@@ -38,9 +38,9 @@ nucleotide composition agnostic approach in section
     \end{tabular}
   \end{center}
   \caption[Agreement of predictions in anomalous GC regions.]{Total
-    regions identified each assembly followed by counts of regions
-    (both agreement and singletons) in regions of anomalous GC
-    content.}
+    number of regions identified in each assembly followed by counts
+    of regions (both agreement and singletons) in regions of AT-rich
+    genomic sequence.}
   \label{table:gc-regions}
 \end{table}
 
@@ -92,7 +92,7 @@ sequence.
       RefSeq & N/A & N/A & $1.29^{-49}$ & $2.44^{-205}$ & $7.40^{-33}$ \\ \hline
     \end{tabular}
   \end{center}
-  \caption{\textit{p} values produced from a two-sided binomial test
+  \caption{\textit{p}-values produced from a two-sided binomial test
     for each combination of tool and assembly.}
   \label{table:gc-binomial}
 \end{table}
