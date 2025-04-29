@@ -1,0 +1,73 @@
+PMID- 21493652
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20110920
+LR  - 20240104
+IS  - 1367-4811 (Electronic)
+IS  - 1367-4803 (Print)
+IS  - 1367-4803 (Linking)
+VI  - 27
+IP  - 12
+DP  - 2011 Jun 15
+TI  - BamTools: a C++ API and toolkit for analyzing and managing BAM files.
+PG  - 1691-2
+LID - 10.1093/bioinformatics/btr174 [doi]
+AB  - MOTIVATION: Analysis of genomic sequencing data requires efficient, easy-to-use 
+      access to alignment results and flexible data management tools (e.g. filtering, 
+      merging, sorting, etc.). However, the enormous amount of data produced by current 
+      sequencing technologies is typically stored in compressed, binary formats that 
+      are not easily handled by the text-based parsers commonly used in bioinformatics 
+      research. RESULTS: We introduce a software suite for programmers and end users 
+      that facilitates research analysis and data management using BAM files. BamTools 
+      provides both the first C++ API publicly available for BAM file support as well 
+      as a command-line toolkit. AVAILABILITY: BamTools was written in C++, and is 
+      supported on Linux, Mac OSX and MS Windows. Source code and documentation are 
+      freely available at http://github.org/pezmaster31/bamtools.
+FAU - Barnett, Derek W
+AU  - Barnett DW
+AD  - Department of Biology, Boston College, Chestnut Hill, MA 02467, USA. 
+      barnetde@bc.edu
+FAU - Garrison, Erik K
+AU  - Garrison EK
+FAU - Quinlan, Aaron R
+AU  - Quinlan AR
+FAU - Strömberg, Michael P
+AU  - Strömberg MP
+FAU - Marth, Gabor T
+AU  - Marth GT
+LA  - eng
+GR  - RC2 HG005552-01/HG/NHGRI NIH HHS/United States
+GR  - R01 HG004719-01/HG/NHGRI NIH HHS/United States
+GR  - RC2 HG005552/HG/NHGRI NIH HHS/United States
+GR  - RC2 HG005552-02/HG/NHGRI NIH HHS/United States
+GR  - R01 HG004719-02/HG/NHGRI NIH HHS/United States
+GR  - R01 HG004719/HG/NHGRI NIH HHS/United States
+GR  - R01 HG004719-04/HG/NHGRI NIH HHS/United States
+GR  - R01 HG004719-02S1/HG/NHGRI NIH HHS/United States
+GR  - R01 HG004719-03/HG/NHGRI NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+DEP - 20110414
+PL  - England
+TA  - Bioinformatics
+JT  - Bioinformatics (Oxford, England)
+JID - 9808944
+SB  - IM
+MH  - Genomics/*methods
+MH  - Sequence Alignment
+MH  - *Sequence Analysis, DNA
+MH  - *Software
+PMC - PMC3106182
+EDAT- 2011/04/16 06:00
+MHDA- 2011/09/21 06:00
+PMCR- 2012/06/15
+CRDT- 2011/04/16 06:00
+PHST- 2011/04/16 06:00 [entrez]
+PHST- 2011/04/16 06:00 [pubmed]
+PHST- 2011/09/21 06:00 [medline]
+PHST- 2012/06/15 00:00 [pmc-release]
+AID - btr174 [pii]
+AID - 10.1093/bioinformatics/btr174 [doi]
+PST - ppublish
+SO  - Bioinformatics. 2011 Jun 15;27(12):1691-2. doi: 10.1093/bioinformatics/btr174. 
+      Epub 2011 Apr 14.

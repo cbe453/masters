@@ -1,14 +1,15 @@
-\section{Profiling Gene Finding Tools}
+\section{Installation and Profiling Gene Finding Tools}
 
 While Braker2, GeneMark and RefSeq all provide lists of possible genes
 for a provided input, the implementation of each tool is different,
 requiring more or less effort to install and run thn other tools. This
 section discusses the implementations, installation procedures and
-execution of GeneMark and Braker2 in more detail. The computing
-platform used in this research is hosted and managed by University of
-Saskatchewan services, which is modelled around the HPC platform used
-by the Digital Research Alliance of Canada and software is managed
-similarily.
+execution of GeneMark and Braker2 in more detail. For more information
+on the versions and parameters used in this processing, please see
+section \ref{met:braker2}. The computing platform used in this
+research is hosted and managed by University of Saskatchewan services,
+which is modelled around the HPC platform used by the Digital Research
+Alliance of Canada and software is managed similarily.
 
 GeneMark\cite{10.1093/nar/gki937} is a gene finding tool developed by
 the Georgia Institute of Technology with packages prepared for Linux
@@ -20,7 +21,7 @@ once the software is downloaded and unpacked. The core controlling
 methods of GeneMark are written in Perl, accompanied by several Python
 scripts and compiled exectuables. GeneMark was tested by the
 developers with Perl version 5.10, and Python 3.3. A number of Perl
-dependencies are also required, which can be installed via YAML. The
+dependencies are also required, which can be installed via CPAN. The
 user will have to know which implementation of GeneMark they are
 wanting to use for their application, as GeneMark has several
 variations it can run depending on the desired application. In this
@@ -35,6 +36,8 @@ the GeneMark-ES pipeline on DC1 with 56 threads finished in 16
 minutes. GeneMark's outputs consist of a GTF or GFF file of predicted
 genes as well as a number of other outputs related to the run.
 
+% CPAN here: https://www.cpan.org/modules/INSTALL.html
+
 Braker2\cite{Bruna2021} is hosted on GitHub as a repository that
 receives relatively frequent updates with Braker3 being released while
 working before the completion of this work. Braker is maintained by
@@ -44,8 +47,11 @@ is a straightforward pull from GitHub. As with GeneMark, Braker2 uses
 a combination of Perl, Python and other exectuables in its regular
 use. Downloading the repository itself is not enough for execution, as
 Braker2 relies on a number of dependencies and bioinformatics tools
-including Perl and (Perl dependencies), Augustus, BamTools, BedTools,
-GeneMark, StringTie, GFFRead and a few others. Manual installation of
+including Perl and (Perl dependencies), Augustus\cite{Stanke2006},
+BamTools\cite{Barnett2011},
+BedTools\cite{10.1093/bioinformatics/btq033},
+GeneMark\cite{Borodovsky2011}, StringTie\cite{Pertea2015},
+GFFRead\cite{Pertea2020} and several others. Manual installation of
 these dependencies would be difficult, time consuming and in general
 advised against. In this case, many of Braker2's requirements are
 satisfied by modules already included in the environment, making
@@ -56,7 +62,7 @@ modules. Alternatively, one could use a package manager like Anaconda
 or Minoconda to handle installation of packages. This is perfectly
 reasonable, but also requires knowledge specific to Anaconda, which
 can be complicated and frustrating for users with little software
-management experience. Once installation is finished, the Barker2
+management experience. Once installation is finished, the Braker2
 pipeline is relatively straightforwad to run as well, with excellent
 documentation included both online and through the built in help
 message. The training, including RNAseq alignments, and gene finding

@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Stanke, Mario
+AU  - Tzvetkova, Ana
+AU  - Morgenstern, Burkhard
+PY  - 2006
+DA  - 2006/08/07
+TI  - AUGUSTUS at EGASP: using EST, protein and genomic alignments for improved gene prediction in the human genome
+JO  - Genome Biology
+SP  - S11
+VL  - 7
+IS  - 1
+AB  - A large number of gene prediction programs for the human genome exist. These annotation tools use a variety of methods and data sources. In the recent ENCODE genome annotation assessment project (EGASP), some of the most commonly used and recently developed gene-prediction programs were systematically evaluated and compared on test data from the human genome. AUGUSTUS was among the tools that were tested in this project.
+SN  - 1474-760X
+UR  - https://doi.org/10.1186/gb-2006-7-s1-s11
+DO  - 10.1186/gb-2006-7-s1-s11
+ID  - Stanke2006
+ER  - 

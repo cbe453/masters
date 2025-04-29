@@ -1,0 +1,72 @@
+PMID- 32489650
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20200928
+LR  - 20210914
+IS  - 2046-1402 (Electronic)
+IS  - 2046-1402 (Linking)
+VI  - 9
+DP  - 2020
+TI  - GFF Utilities: GffRead and GffCompare.
+LID - ISCB Comm J-304 [pii]
+LID - 10.12688/f1000research.23297.2 [doi]
+AB  - GTF (Gene Transfer Format) and GFF (General Feature Format) are popular file 
+      formats used by bioinformatics programs to represent and exchange information 
+      about various genomic features, such as gene and transcript locations and 
+      structure. GffRead and GffCompare are open source programs that provide extensive 
+      and efficient solutions to manipulate files in a GTF or GFF format. While GffRead 
+      can convert, sort, filter, transform, or cluster genomic features, GffCompare can 
+      be used to compare and merge different gene annotations. Availability and 
+      implementation: GFF utilities are implemented in C++ for Linux and OS X and 
+      released as open source under an MIT license  ( 
+      https://github.com/gpertea/gffread, https://github.com/gpertea/gffcompare).
+CI  - Copyright: © 2020 Pertea G and Pertea M.
+FAU - Pertea, Geo
+AU  - Pertea G
+AD  - Center for Computational Biology, Johns Hopkins University, Baltimore, MD, 21218, 
+      USA.
+AD  - Department of Biomedical Engineering, Johns Hopkins University, Baltimore, MD, 
+      21218, USA.
+FAU - Pertea, Mihaela
+AU  - Pertea M
+AUID- ORCID: 0000-0003-0762-8637
+AD  - Center for Computational Biology, Johns Hopkins University, Baltimore, MD, 21218, 
+      USA.
+AD  - Department of Biomedical Engineering, Johns Hopkins University, Baltimore, MD, 
+      21218, USA.
+LA  - eng
+GR  - R01 HG006677/HG/NHGRI NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
+DEP - 20200428
+PL  - England
+TA  - F1000Res
+JT  - F1000Research
+JID - 101594320
+SB  - IM
+MH  - *Computational Biology
+MH  - Genome
+MH  - *Genomics
+MH  - Molecular Sequence Annotation
+MH  - *Software
+PMC - PMC7222033
+OTO - NOTNLM
+OT  - GTF and GFF file formats
+OT  - gene annotation
+OT  - transcriptome analysis
+COIS- No competing interests were disclosed.
+EDAT- 2020/09/22 06:00
+MHDA- 2020/09/29 06:00
+PMCR- 2020/09/09
+CRDT- 2020/09/21 06:09
+PHST- 2020/09/04 00:00 [accepted]
+PHST- 2020/09/21 06:09 [entrez]
+PHST- 2020/09/22 06:00 [pubmed]
+PHST- 2020/09/29 06:00 [medline]
+PHST- 2020/09/09 00:00 [pmc-release]
+AID - ISCB Comm J-304 [pii]
+AID - 10.12688/f1000research.23297.2 [doi]
+PST - epublish
+SO  - F1000Res. 2020 Apr 28;9:ISCB Comm J-304. doi: 10.12688/f1000research.23297.2. 
+      eCollection 2020.

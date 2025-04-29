@@ -2,21 +2,21 @@
 \label{section:gene-finding}
 
 Counts of genes predicted by Braker2, GeneMark and RefSeq are shown in
-table \ref{table:gene-counts}. Immediately we see that Braker2
+Table \ref{table:gene-counts}. Immediately we see that Braker2
 predicts far fewer genes in all assemblies, except in the case of
 \textit{Trichoderma reesei.} This is possibly due to the effects of
 training the Braker2 gene model using data from \textit{Trichoderma
   reesei}, which has a significantly smaller genome in comparison to
 other \textit{Trichoderma} assemblies, although genome size is not
-always indicative of gene content. Regardless, there is a significant
-difference in the number of genes predicted by Braker2 in comparison
-to GeneMark and RefSeq. The number of genes predicted by GeneMark and
-RefSeq are similar, except in the case of \textit{T. harzianum}, in
-which RefSeq predicts roughly 17\% more genes than GeneMark. Braker2
-consistently predicts more transcripts than GeneMark and
-RefSeq. RefSeq also appears to predict multiple transcripts for each
-gene but in fewer numbers than Braker2. Transcript prediction counts
-in \textit{T. harzianum} from RefSeq are also interesting, with RefSeq
+always indicative of gene content. Regardless, we observe a difference
+in the number of genes predicted by Braker2 in comparison to GeneMark
+and RefSeq. The number of genes predicted by GeneMark and RefSeq are
+similar, except in the case of \textit{T. harzianum}, in which RefSeq
+predicts roughly 17\% more genes than GeneMark. Braker2 consistently
+predicts more transcripts than GeneMark and RefSeq. RefSeq also
+appears to predict multiple transcripts for each gene but in fewer
+numbers than Braker2. Transcript prediction counts in
+\textit{T. harzianum} from RefSeq are also interesting, with RefSeq
 predicting fewer transcripts than genes. Why this is occurs is unknown
 but may warrant further investigation.
 
@@ -32,8 +32,9 @@ but may warrant further investigation.
     \textit{T. harzianum} & 8314 & 8385 & 12164 & 12164 & 14269 & 14090 \\ \hline
     \textit{T. virens} & 7801 & 7863 & 11866 & 11866 & 12405 & 12406 \\ \hline
   \end{tabular}
-  \caption[Gene prediction counts]{Number of genes predicted by each
-    gene finder for each \textit{Trichoderma} genome.}
+  \caption[Gene prediction counts]{Number of genes and transcripts
+    (isoforms) predicted by each gene finder for each
+    \textit{Trichoderma} genome.}
   \label{table:gene-counts}
 \end{table}
 

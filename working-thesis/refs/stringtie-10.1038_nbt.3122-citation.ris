@@ -1,0 +1,21 @@
+TY  - JOUR
+AU  - Pertea, Mihaela
+AU  - Pertea, Geo M
+AU  - Antonescu, Corina M
+AU  - Chang, Tsung-Cheng
+AU  - Mendell, Joshua T
+AU  - Salzberg, Steven L
+PY  - 2015
+DA  - 2015/03/01
+TI  - StringTie enables improved reconstruction of a transcriptome from RNA-seq reads
+JO  - Nature Biotechnology
+SP  - 290
+EP  - 295
+VL  - 33
+IS  - 3
+AB  - Using a network flow algorithm from optimization theory enables improved assembly of transcriptomes from RNA-seq reads.
+SN  - 1546-1696
+UR  - https://doi.org/10.1038/nbt.3122
+DO  - 10.1038/nbt.3122
+ID  - Pertea2015
+ER  - 
