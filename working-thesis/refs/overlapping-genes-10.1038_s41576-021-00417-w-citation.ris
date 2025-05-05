@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Wright, Bradley W.
+AU  - Molloy, Mark P.
+AU  - Jaschke, Paul R.
+PY  - 2022
+DA  - 2022/03/01
+TI  - Overlapping genes in natural and engineered genomes
+JO  - Nature Reviews Genetics
+SP  - 154
+EP  - 168
+VL  - 23
+IS  - 3
+AB  - Modern genome-scale methods that identify new genes, such as proteogenomics and ribosome profiling, have revealed, to the surprise of many, that overlap in genes, open reading frames and even coding sequences is widespread and functionally integrated into prokaryotic, eukaryotic and viral genomes. In parallel, the constraints that overlapping regions place on genome sequences and their evolution can be harnessed in bioengineering to build more robust synthetic strains and constructs. With a focus on overlapping protein-coding and RNA-coding genes, this Review examines their discovery, topology and biogenesis in the context of their genome biology. We highlight exciting new uses for sequence overlap to control translation, compress synthetic genetic constructs, and protect against mutation.
+SN  - 1471-0064
+UR  - https://doi.org/10.1038/s41576-021-00417-w
+DO  - 10.1038/s41576-021-00417-w
+ID  - Wright2022
+ER  - 

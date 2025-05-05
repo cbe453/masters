@@ -9,6 +9,11 @@ Jill Adams.
 \newblock {Complex Genomes: Shotgun Sequencing}.
 \newblock {\em Nature Education}, 1(1):186, 2008.
 
+\bibitem{Altschul1990}
+S~F Altschul, W~Gish, W~Miller, E~W Myers, and D~J Lipman.
+\newblock {Basic local alignment search tool.}
+\newblock {\em Journal of molecular biology}, 215(3):403--410, oct 1990.
+
 \bibitem{Barnett2011}
 Derek~W Barnett, Erik~K Garrison, Aaron~R Quinlan, Michael~P Str{\"{o}}mberg,
   and Gabor~T Marth.
@@ -223,5 +228,10 @@ Sheridan~L Woo, Rosa Hermosa, Matteo Lorito, and Enrique Monte.
 \newblock {Trichoderma: a multipurpose, plant-beneficial microorganism for
   eco-sustainable agriculture}.
 \newblock {\em Nature Reviews Microbiology}, 21(5):312--326, 2023.
+
+\bibitem{Wright2022}
+Bradley~W Wright, Mark~P Molloy, and Paul~R Jaschke.
+\newblock {Overlapping genes in natural and engineered genomes}.
+\newblock {\em Nature Reviews Genetics}, 23(3):154--168, 2022.
 
 \end{thebibliography}

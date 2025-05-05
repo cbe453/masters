@@ -1,15 +1,21 @@
 \section{BLAST Results}
-Results from the tblastn runs are presented in table
-\ref{table:tblastn}. Initial tblastn results appear promising for both
-the \textit{T. atroviride} and \textit{Fusarium} datasets. All
-assemblies considered contain at minimum 89\% of the reference protein
-sequences in the case of \textit{T. atroviride} and a minimum of 75\%
-in the case of \textit{Fusarium}. In the case of
+
+As a control, proteins from three related organisms were used as
+queries to tblastn\cite{Altschul1990} on each \textit{Trichoderma}
+assembly. The organisms and their associated NCBI accession IDs are as
+follows: \textit{T. atroviride} - GCF\_000171015.1,
+\textit{F. graminarium} - GCF\_000240135.3, \textit{S. cerevisiae} -
+GCF\_000146045.2.  Results from the tblastn runs are presented in
+table \ref{table:tblastn-prots}. Initial tblastn results appear
+promising for both the \textit{T. atroviride} and \textit{Fusarium}
+datasets. All assemblies considered contain at minimum 89\% of the
+reference protein sequences in the case of \textit{T. atroviride} and
+a minimum of 75\% in the case of \textit{Fusarium}. In the case of
 \textit{S. cerevisiae}, a minimum of 57\% of reference proteins
-matched. The decreasing percentage of hits reported conincides with
-increasing distances in the evolutionary tree. These results provide
-rough validation that the assemblies contain potential for protein
-coding sequences.
+matched. It appears that the percentage of hits decreases as
+evolutionary distance increases. These results provide rough
+validation that the assemblies contain potential for protein coding
+sequences.
 
 
 \begin{table}
@@ -25,8 +31,74 @@ coding sequences.
     \textit{Trichoderma} assemblies. Hits are reported if the
     alignment length is greater than 30\% of the reference protein
     length and if 30\% of the aligment length has identical
-    matches. NCBI IDs for the assemblies are as follows:
-    \textit{T. atroviride} - GCF\_000171015.1, \textit{F. graminarium}
-    - GCF\_000240135.3, \textit{S. cerevisiae} - GCF\_000146045.2.}
-  \label{table:tblastn}
+    matches.}
+  \label{table:tblastn-prots}
 \end{table}
+
+While successful tblastn hits from input proteins are useful, it is
+worthwhile exploring those hits in the context of regions and gene
+predictions within them. Counts of genes from regions with tblastn
+hits are shown in Table \ref{table:tblastn-genes}. In a similar trend
+to Table \ref{table:tblastn-prots}, genes in regions with tblastn hits
+decrease as evolutionary distance increases. In DC1 and Tsth20, we
+observe that Braker2 predicts more genes in regions with tblastn hits
+than GeneMark. RefSeq is not included for DC1 and Tsth20, as there is
+no RefSeq annotation available. In \textit{T. harzianum} and
+\textit{T. virens}, Braker2 and RefSeq appear to have similar counts
+of genes in regions with tblastn hits. Interestingly, in the case of
+\textit{T. reesei}, there are more genes from GeneMark in regions with
+tblastn hits, which is not the case in \textit{T. harzianum} and
+\textit{T. virens}.
+
+Another interesting observation is comparing the coverage, or
+completeness, of the input and query sequence. As mentioned, it
+appears that high proportions of query sequences are being mapped to
+the subject, but the gene predictions are not as well represented in
+regions where those tblastn hits occur. A likely reason for this is
+innapropriate alignment parameters. More flexible gap parameters and
+the use of a different scoring matrix would likely produce better
+results, but optimization of parameters was not performed in this
+analysis. It is also possible that the post-alignment filtering
+criteria were inappropriate, resulting in short alignments that are
+true in nature, but may not be indicative of the presence of a truly
+similar protein.
+
+\begin{table}
+  \centering
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Subject & Query & Braker2 & GeneMark & RefSeq \\ \hline
+    DC1 & \textit{T. atroviride} & 5902 & 4679 & N/A \\ \hline
+    DC1 & \textit{F. graminarium} & 4955 & 4114 & N/A \\ \hline
+    DC1 & \textit{S. cerevisiae} & 2105 & 1850 & N/A \\ \hline
+    Tsth20 & \textit{T. atroviride} & 6065 & 4626 & N/A \\ \hline
+    Tsth20 & \textit{F. graminarium} & 5365 & 4191 & N/A \\ \hline
+    Tsth20 & \textit{S. cerevisiae} & 2211 & 1869 & N/A \\ \hline
+    \textit{T. reesei} & \textit{T. atroviride} & 5072 & 5174 & 4989 \\ \hline
+    \textit{T. reesei} & \textit{F. graminarium} & 4577 & 4685 & 4529 \\ \hline
+    \textit{T. reesei} & \textit{S. cerevisiae} & 2055 & 2114 & 2022 \\ \hline
+    \textit{T. harzianum} & \textit{T. atroviride} & 6363 & 4611 & 6835 \\ \hline
+    \textit{T. harzianum} & \textit{F. graminarium} & 5659 & 4198 & 5982 \\ \hline
+    \textit{T. harzianum} & \textit{S. cerevisiae} & 2424 & 1963 & 2560 \\ \hline
+    \textit{T. virens} & \textit{T. atroviride} & 6256 & 4437 & 6415 \\ \hline
+    \textit{T. virens} & \textit{F. graminarium} & 5568 & 4075 & 5664 \\ \hline
+    \textit{T. virens} & \textit{S. cerevisiae} & 2318 & 1861 & 2352 \\ \hline
+  \end{tabular}
+  \caption{Counts of transcripts predicted by Braker2, GeneMark and
+    RefSeq in regions containing tblastn hits from
+    \textit{Ttrichoderma atroviride}, \textit{Fusarium granminarium},
+    and \textit{Saccharomyces cerevisiae}.}
+  \label{table:tblastn-genes}
+\end{table}
+
+Overall, it appears that using tblastn with proteins from related
+organisms may be a viable option as a control when no reference or
+model organism is available. At the very minimum, tblastn hits can be
+used as another piece of supporting evidence for the existence of a
+gene, with one caveat being imperfect coverage of predictions. The
+issue of imperfect coverage may be mitigated by parameter
+optimization. It is also possible that one could employ a
+similarity-based cutoff on the proportion of predicted genes in
+regions with tblastn hits as an indicator of gene finding performance,
+however this would require further analysis, preferably with more
+closely related organisms.

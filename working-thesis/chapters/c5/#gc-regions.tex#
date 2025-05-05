@@ -87,7 +87,7 @@ in an AT-rich genomic sequence, a two-sided binomial test was
 performed to determine if the number of genes predicted in AT-rich
 sequences is proportional to fraction of genomic sequence they
 comprise. The null hypothesis in this case is that the number of genes
-in AT-rich sequence is proportional to the total AT-rich sequence in
+in AT-rich sequence are proportional to the total AT-rich sequence in
 the genome. The results of the test are shown in Table
 \ref{table:gc-binomial}. In all cases, it appears that the gene
 finding tools selected for this analysis do not predict the same

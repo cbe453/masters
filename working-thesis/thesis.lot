@@ -6,13 +6,12 @@
 \contentsline {table}{\numberline {5.1}{\ignorespaces General assembly metrics produced by QUAST\cite {Gurevich2013} (a genome quality assement tool).\relax }}{19}{table.caption.17}
 \contentsline {table}{\numberline {5.2}{\ignorespaces Gene prediction counts}}{23}{table.caption.19}
 \contentsline {table}{\numberline {5.3}{\ignorespaces Table of \textit {P}-values from two-sided two-sample Kolmogorov-Smirnov tests between gene finding tools.\relax }}{26}{table.caption.23}
-\contentsline {table}{\numberline {5.4}{\ignorespaces tblastn hits from reference protein sequences to selected \textit {Trichoderma} assemblies. Hits are reported if the alignment length is greater than 30\% of the reference protein length and if 30\% of the aligment length has identical matches. NCBI IDs for the assemblies are as follows: \textit {T. atroviride} - GCF\_000171015.1, \textit {F. graminarium} - GCF\_000240135.3, \textit {S. cerevisiae} - GCF\_000146045.2.\relax }}{27}{table.caption.24}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Results from BUSCO using the fungal analysis option organized by gene finding tool. The selected BUSCO dataste contains 758 markers. For more information on the categories assigned by BUSCO, please refer to the documentation.\relax }}{28}{table.caption.25}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Braker2 missed BUSCO proteins}}{29}{table.caption.26}
-\contentsline {table}{\numberline {5.7}{\ignorespaces GeneMark missed BUSCO proteins}}{29}{table.caption.27}
-\contentsline {table}{\numberline {5.8}{\ignorespaces RefSeq missed BUSCO proteins}}{29}{table.caption.28}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Agreement of predictions in anomalous GC regions.}}{35}{table.caption.33}
-\contentsline {table}{\numberline {5.10}{\ignorespaces Number of genes predicted by Braker2, GeneMark and RefSeq in AT-rich genomic sequence from each assembly.\relax }}{35}{table.caption.34}
-\contentsline {table}{\numberline {5.11}{\ignorespaces \textit {p}-values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{36}{table.caption.35}
-\contentsline {table}{\numberline {5.12}{\ignorespaces InterProScan Pfam Evidence}}{36}{table.caption.36}
-\contentsline {table}{\numberline {5.13}{\ignorespaces Final scoring table}}{40}{table.caption.40}
+\contentsline {table}{\numberline {5.4}{\ignorespaces tblastn hits from reference protein sequences to selected \textit {Trichoderma} assemblies. Hits are reported if the alignment length is greater than 30\% of the reference protein length and if 30\% of the aligment length has identical matches.\relax }}{27}{table.caption.24}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Counts of transcripts predicted by Braker2, GeneMark and RefSeq in regions containing tblastn hits from \textit {Ttrichoderma atroviride}, \textit {Fusarium granminarium}, and \textit {Saccharomyces cerevisiae}.\relax }}{28}{table.caption.25}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Results from BUSCO using the fungal analysis option organized by gene finding tool. The selected BUSCO dataste contains 758 markers. For more information on the categories assigned by BUSCO, please refer to the documentation.\relax }}{29}{table.caption.26}
+\contentsline {table}{\numberline {5.7}{\ignorespaces GeneMark missed BUSCO proteins}}{30}{table.caption.27}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Agreement of predictions in anomalous GC regions.}}{36}{table.caption.32}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Number of genes predicted by Braker2, GeneMark and RefSeq in AT-rich genomic sequence from each assembly. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2.\relax }}{37}{table.caption.33}
+\contentsline {table}{\numberline {5.10}{\ignorespaces \textit {p}-values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{37}{table.caption.34}
+\contentsline {table}{\numberline {5.11}{\ignorespaces InterProScan Pfam Evidence}}{38}{table.caption.35}
+\contentsline {table}{\numberline {5.12}{\ignorespaces Final scoring table}}{42}{table.caption.39}

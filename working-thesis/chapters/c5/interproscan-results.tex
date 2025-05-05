@@ -1,6 +1,6 @@
 \section{InterProScan as Supporting Evidence for Predicted Genes}
 
-Pfam hits from InterProScan analysis are presented in table
+Pfam hits from InterProScan analysis are presented in Table
 ~\ref{table:ips-pfam}, from which we can identify one major trend. In
 general, roughly 73-76\% of proteins predicted by Braker2, GeneMark
 and RefSeq contain a match to a Pfam entry, except in the case of
@@ -16,7 +16,7 @@ produced per gene model. From visual inspection of Pfam hits mapped
 back to the references, it appears that in general, when gene finders
 agree that a gene is present, InterProScan reports the same Pfam match
 in all three predictions. An example of agreement between Braker2,
-GeneMark, RefSeq and InterProScan is shown in figure
+GeneMark, RefSeq and InterProScan is shown in Figure
 \ref{fig:basic-agree}. It is important to note that the position of
 the Pfam match in IGV does not indicate the true position of the Pfam
 match in the gene, but provides an indication of the presence of Pfam
@@ -31,11 +31,18 @@ the resulting GFF is 10bp downstream from the start of the gene.
   \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
     Assembly & Braker2 & GeneMark & RefSeq \\ \hline
-    DC1 & $100\times(\frac{10676}{14479})=73.73\%$ & $100\times(\frac{8416}{11354})=74.12\%$ & N/A \\ \hline
-    Tsth20 & $100\times(\frac{11389}{15546})=73.26\%$ & $100\times(\frac{9168}{12373})=74.10\%$ & N/A \\ \hline
-    \textit{T. reesei} & $100\times(\frac{8471}{11704})=72.38\%$ & $100\times(\frac{6990}{9196})=76.01\%$ & $100\times(\frac{6964}{9111})=76.44\%$ \\ \hline
-    \textit{T. harzianum} & $100\times(\frac{11370}{15408})=73.79\%$ & $100\times(\frac{9061}{12164})=74.49\%$ & $100\times(\frac{9293}{14065})=66.07\%$ \\ \hline
-    \textit{T. virens} & $100\times(\frac{11249}{15062})=74.68\%$ & $100\times(\frac{8871}{11866})=74.76\%$ & $100\times(\frac{9062}{12383})=73.18\%$ \\ \hline
+DC1 & $\frac{10676}{14479}$ & $\frac{8416}{11354}$ & \
+N/A \\ \hline
+    Tsth20 & $\frac{11389}{15546}$ & $\frac{9168}{12373}$\
+ & N/A \\ \hline
+    \textit{T. reesei} & $\frac{8471}{11704}$ & $\frac{6990}{9196}$ & $\frac{6964}{9111}$ \\ \hline
+    \textit{T. harzianum} & $\frac{11370}{15408}$ & $\frac{9061}{12164}$ & $\frac{9293}{14065}$ \\ \hline
+    \textit{T. virens} & $\frac{11249}{15062}$ & $\frac{8871}{11866}$ & $\frac{9062}{12383}$ \\ \hline
+%    DC1 & $100\times(\frac{10676}{14479})=73.73\%$ & $100\times(\frac{8416}{11354})=74.12\%$ & N/A \\ \hline
+%    Tsth20 & $100\times(\frac{11389}{15546})=73.26\%$ & $100\times(\frac{9168}{12373})=74.10\%$ & N/A \\ \hline
+%    \textit{T. reesei} & $100\times(\frac{8471}{11704})=72.38\%$ & $100\times(\frac{6990}{9196})=76.01\%$ & $100\times(\frac{6964}{9111})=76.44\%$ \\ \hline
+%    \textit{T. harzianum} & $100\times(\frac{11370}{15408})=73.79\%$ & $100\times(\frac{9061}{12164})=74.49\%$ & $100\times(\frac{9293}{14065})=66.07\%$ \\ \hline
+%    \textit{T. virens} & $100\times(\frac{11249}{15062})=74.68\%$ & $100\times(\frac{8871}{11866})=74.76\%$ & $100\times(\frac{9062}{12383})=73.18\%$ \\ \hline
   \end{tabular}
   \caption[InterProScan Pfam Evidence]{Table showing the fractions of predicted
     genes with Pfam annotations from InterProScan as a percent}
@@ -62,20 +69,20 @@ contains a match to the Pfam database. Why this may be the case is
 unclear, and may warrant further investigation. There are also many
 cases in which InterProScan reports the same Pfam hits for individual
 proteins, but the gene models in the region do not agree. There are
-even cases such as the region shown in figure
+even cases such as the region shown in Figure
 \ref{fig:agree-bizarre2}, where Braker2 and GeneMark agree that two
 genes and their associated proteins and Pfam matches are separate, but
 RefSeq only reports one gene with multiple Pfam hits. There are also
 several cases where two tools are in agreement with proteins
 containing Pfam hits while another is not. Even more interesting are
-cases such as the one shown in figure \ref{fig:ips-no-refseq}, in
+cases such as the one shown in Figure \ref{fig:ips-no-refseq}, in
 which Braker and GeneMark predictions contain Pfam matches while
 RefSeq does not report a gene at all. This may be the due to
 experimental data used in the RefSeq training process or a result of
 curation. Regardless of the tool, these cases demonstrate well that
-gene finders are not always in agreement, to the point that
-predictions are not present even though protein products from other
-gene finders contain known Pfam matches.
+gene finders are not always in agreement even on well known proteins,
+to the point that predictions are not present even though protein
+products from other gene finders contain known Pfam matches.
 
 \begin{figure}[h!]
   \centering
