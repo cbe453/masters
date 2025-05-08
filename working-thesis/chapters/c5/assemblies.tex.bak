@@ -42,12 +42,12 @@ contigs reported in other work\cite{Kubicek2019}.
     \end{tabular}
   \end{center}
   \caption{General assembly metrics produced by
-    QUAST\cite{Gurevich2013} (a genome quality assessment tool).}
+    QUAST\cite{Gurevich2013} (a genome quality assement tool).}
   \label{table:assemblies}
 \end{table}
 
 During initial investigation of the inputs to the assembly process, we
-observed that the Illumina reads have a bimodal distribution of GC
+observed that the Illumina reads have a bimodal distributiion of GC
 content as shown in Figure\ref{fig:assembly-gc}. To see if this
 observation extended to the assemblies as well, 250 bp sliding windows
 were used to calculate GC content for all assemblies included in this
@@ -73,14 +73,14 @@ X-axis than other \textit{Trichoderma} assemblies. We can not explain
 exactly why \textit{T. reesei}'s curve differs so much at this time,
 but it is likely due to the much smaller \textit{T. reesei} assembly
 and it's properties. Investigation of these AT-rich sequences is
-continued in Section \ref{section:gc-regions}, where only sequences
+continued in section \ref{section:gc-regions}, where only sequences
 containing less than greater than 72\% AT nucleotide content are
 considered, as the distributions begin to deviate from the normal
 distribution at that point.
 
 \begin{figure}
   \begin{center}
-    \makebox[\textwidth]{\includegraphics[width=1\textwidth]{figures/gc-plot.pdf}}
+    \includegraphics[width=0.8\textwidth]{figures/gc-plot.pdf}
   \end{center}
   \caption{Plots showing proportions of sliding windows of GC content
     for each \textit{Trichoderma} genome assembly.}

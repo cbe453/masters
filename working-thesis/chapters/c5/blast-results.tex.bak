@@ -1,5 +1,4 @@
 \section{BLAST Results}
-\label{section:blast}
 
 As a control, proteins from three related organisms were used as
 queries to tblastn\cite{Altschul1990} on each \textit{Trichoderma}
@@ -7,7 +6,7 @@ assembly. The organisms and their associated NCBI accession IDs are as
 follows: \textit{T. atroviride} - GCF\_000171015.1,
 \textit{F. graminarium} - GCF\_000240135.3, \textit{S. cerevisiae} -
 GCF\_000146045.2.  Results from the tblastn runs are presented in
-Table \ref{table:tblastn-prots}. Initial tblastn results appear
+table \ref{table:tblastn-prots}. Initial tblastn results appear
 promising for both the \textit{T. atroviride} and \textit{Fusarium}
 datasets. All assemblies considered contain at minimum 89\% of the
 reference protein sequences in the case of \textit{T. atroviride} and
@@ -31,7 +30,7 @@ sequences.
   \caption{tblastn hits from reference protein sequences to selected
     \textit{Trichoderma} assemblies. Hits are reported if the
     alignment length is greater than 30\% of the reference protein
-    length and if 30\% of the alignment length has identical
+    length and if 30\% of the aligment length has identical
     matches.}
   \label{table:tblastn-prots}
 \end{table}
@@ -56,7 +55,7 @@ completeness, of the input and query sequence. As mentioned, it
 appears that high proportions of query sequences are being mapped to
 the subject, but the gene predictions are not as well represented in
 regions where those tblastn hits occur. A likely reason for this is
-inappropriate alignment parameters. More flexible gap parameters and
+innapropriate alignment parameters. More flexible gap parameters and
 the use of a different scoring matrix would likely produce better
 results, but optimization of parameters was not performed in this
 analysis. It is also possible that the post-alignment filtering

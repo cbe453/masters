@@ -1,5 +1,4 @@
 \section{BUSCO Results}
-\label{section:busco}
 
 The results of BUSCO analysis using the fungal subset provided by
 BUSCO are presented in Table \ref{table:busco}. Results from BUSCO
@@ -9,13 +8,13 @@ completeness of 99.2\% or higher, with a maximum completeness of
 most BUSCO complete sets of gene predictions of the three tools
 considered. Interestingly, Braker2 produces far more duplicated BUSCO
 matches than both GeneMark and RefSeq. Examining the BUSCO output
-logs, this appears to be due to Braker2 predicting more than one
-coding sequence for some genes predictions, resulting in multiple
-similar proteins. In general, all gene finders perform exceptionally
-well in regards to BUSCO performance. While these results do not
-capture the entire set of genes possibly present in these
-\textit{Trichoderma} assemblies, they do confirm that the gene finders
-are at minimum predicting many evolutionarily conserved fungal genes.
+logs, this appears to be due to Braker2 predictin more than one
+transcript for some genes predictions, resulting in multiple similar
+proteins. In general, all gene finders perform exceptionally well in
+regards to BUSCO performance. While these results do not capture the
+entire set of genes possibly present in these \textit{Trichoderma}
+assemblies, they do confirm that the gene finders are at minimum
+predicting many evolutionarily conserved fungal genes.
 
 \begin{table}
   \begin{center}
@@ -58,7 +57,7 @@ are at minimum predicting many evolutionarily conserved fungal genes.
     \end{subtable}
   \end{center}
   \caption{Results from BUSCO using the fungal analysis option
-    organized by gene finding tool. The selected BUSCO dataset
+    organized by gene finding tool. The selected BUSCO dataste
     contains 758 markers. For more information on the categories
     assigned by BUSCO, please refer to the documentation.}
   \label{table:busco}
@@ -66,22 +65,23 @@ are at minimum predicting many evolutionarily conserved fungal genes.
 
 While BUSCO matches are a good metric for general performance of gene
 finders, it is also important to investigate BUSCO proteins without
-matching gene predictions. Table \ref{table:busco}, shows breakdowns
-of genes missed by each gene finder across the \textit{Trichoderma}
-assemblies. Braker2 misses four unique proteins across the five
-\textit{Trichoderma} assemblies, with only one protein missing in more
-than one assembly. This protein represents a formyl transferase
-protein. GeneMark predictions miss six unique BUSCO proteins, with two
-proteins missing in more than one assembly. These proteins are the
-same formyl transferase missed by Braker2, which was missed in four of
-the five assemblies, and a ubiquitin-conjugating enzyme, which was
-missed in all five assemblies. RefSeq, being the gene finder with the
-most BUSCO complete set of gene predictions, misses only three unique
-BUSCO proteins in the three assemblies. Those missing proteins
-represent a YEATS protein domain and Midasin protein. Of those three
-proteins, the Midasin and YEATS proteins are missed in two of the
-three assemblies from NCBI. Those missing proteins represent a YEATS
-protein domain and Midasin protein.
+matching gene predictions. Tables \ref{table:braker-busco},
+\ref{table:genemark-busco} and \ref{table:refseq-busco}, show
+breakdowns of genes missed by each gene finder across the
+\textit{Trichoderma} assemblies. Braker2 misses four unique proteins
+across the five \textit{Trichoderma} assemblies, with only one protein
+missing in more than one assembly. This protein represents a formyl
+transferase protein. GeneMark predictions miss six unique BUSCO
+proteins, with two proteins missing in more than one assembly. These
+proteins are the same formyl transferase missed by Braker2, which was
+missed in four of the five assemblies, and a ubiquitin-conjugating
+enzyme, which was missed in all five assemblies. RefSeq, being the
+gene finder with the most BUSCO complete set of gene predictions,
+misses only three unique BUSCO proteins in the three assemblies. Those
+missing proteins represent a YEATS protein domain and Midasin
+protein. Of those three proteins, the Midasin and YEATS proteins are
+missed in two of the three assemblies from NCBI. Those missing
+proteins represent a YEATS protein domain and Midasin protein.
 
 %\begin{table}
 %  \centering
@@ -101,8 +101,7 @@ protein domain and Midasin protein.
 
 
 \begin{center}
-  \begin{table}
-  \makebox[\textwidth]{
+\begin{table}
   \begin{tabular}{|c|c|c|c|c|c|c|c|}
     \hline
     Tool & BUSCO ID & Annotation & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens} \\ \hline
@@ -120,7 +119,6 @@ protein domain and Midasin protein.
     RefSeq & 315802at4751 & tRNA dimethylallyltransferase & N/A & N/A & \checkmark & \checkmark &  \\ \hline
     RefSeq & 352224at4751 & YEATS & N/A & N/A &  & \checkmark &  \\ \hline
   \end{tabular}
-  }
   \caption[GeneMark missed BUSCO proteins]{The presence (\checkmark)
     or absence of all BUSCO IDs missed by Braker2, GeneMark and RefSeq
     in each \textit{Trichoderma} assembly.}
@@ -149,10 +147,10 @@ capable of predicting genes that are expected to be present in these
 assemblies. From this we can say that the foundations of the
 underlying gene models used by each gene finder are solid. Braker2
 produces more duplicate matches than GeneMark and RefSeq, but this is
-likely due to multiple isoforms of possible genes being present in the
+likely due to mutliple isoforms of possible genes being present in the
 input data. Despite excellent coverage of the BUSCO fungal proteins,
 all three gene finders miss some BUSCO proteins in their
-predictions. GeneMark misses the most proteins and in particularly
+predictions. GeneMark misses the most proteins and in paritcularly
 struggles with predicting a formyl transferase and a
 ubiquitin-conjugating enzyme. Braker2 also appears to have difficulty
 predicting a formyl transferase just as GeneMark did. RefSeq misses

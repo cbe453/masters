@@ -74,7 +74,7 @@ are no regions with partial support for DC1 and Tsth20, as there are
 only two gene finders considered. \textit{Trichoderma reesei} contains
 the fewest number of regions, which seems to scale appropriately with
 the total number of predicted genes and assembly length. Eighty-four
-percent of the regions are fully or partially supported by Braker2,
+perfecnt of the regions are fully or partially supported by Braker2,
 GeneMark and RefSeq, with only 10 percent of the regions being single
 tool predictions. The most interesting observation here is the extent
 to which fully supported regions disagree on start and stop positions
@@ -119,9 +119,8 @@ models) is correct and why disagreement exists.
   \centering
   \includegraphics[width=0.9\textwidth]{figures/igv/igv-uncertain-regions.png}
   \caption[Example of a region with many gene calls]{An IGV screenshot
-    from \textit{T. reesei} showing a region containing five gene
-    predictions in which one of the gene finders disagrees with the
-    other two, highlighted in the red box.}
+    from \textit{T. reesei} showing a region containing five
+    gene predictions.}
   \label{fig:uncertain-regions}
 \end{figure}
 

@@ -1,17 +1,15 @@
 \section{Installation and Profiling Gene Finding Tools}
-\label{section:profiling}
 
-While Braker2, GeneMark and RefSeq all predict coding sequences of
-possible genes for a provided input, the implementation of each tool
-is different, requiring more or less effort to install and run than
-other tools. This section discusses the implementations, installation
-procedures and execution of GeneMark and Braker2 in more detail. For
-more information on the versions and parameters used in this
-processing, please see Section \ref{met:braker2}. The computing
-platform used in this research is hosted and managed by University of
-Saskatchewan services, which is modelled around the HPC platform used
-by the Digital Research Alliance of Canada and software is managed
-similarly.
+While Braker2, GeneMark and RefSeq all provide lists of possible genes
+for a provided input, the implementation of each tool is different,
+requiring more or less effort to install and run thn other tools. This
+section discusses the implementations, installation procedures and
+execution of GeneMark and Braker2 in more detail. For more information
+on the versions and parameters used in this processing, please see
+section \ref{met:braker2}. The computing platform used in this
+research is hosted and managed by University of Saskatchewan services,
+which is modelled around the HPC platform used by the Digital Research
+Alliance of Canada and software is managed similarily.
 
 GeneMark\cite{10.1093/nar/gki937} is a gene finding tool developed by
 the Georgia Institute of Technology with packages prepared for Linux
@@ -21,7 +19,7 @@ form. Once the necessary information is submitted, the user is
 provided with a key that must be placed in the appropriate location
 once the software is downloaded and unpacked. The core controlling
 methods of GeneMark are written in Perl, accompanied by several Python
-scripts and compiled executables. GeneMark was tested by the
+scripts and compiled exectuables. GeneMark was tested by the
 developers with Perl version 5.10, and Python 3.3. A number of Perl
 dependencies are also required, which can be installed via CPAN. The
 user will have to know which implementation of GeneMark they are
@@ -60,12 +58,12 @@ satisfied by modules already included in the environment, making
 installation relatively simple if one is familiar with the Digital
 Research Alliance of Canada's software stack. This case still required
 installation of some Perl modules in addition to loading necessary
-modules. Alternatively, one could use a package manager like Conda to
-handle installation of packages. This is perfectly reasonable, but
-also requires knowledge specific to Conda, which can be complicated
-and frustrating for users with little software management
-experience. Once installation is finished, the Braker2 pipeline is
-relatively straightforward to run as well, with excellent
+modules. Alternatively, one could use a package manager like Anaconda
+or Minoconda to handle installation of packages. This is perfectly
+reasonable, but also requires knowledge specific to Anaconda, which
+can be complicated and frustrating for users with little software
+management experience. Once installation is finished, the Braker2
+pipeline is relatively straightforwad to run as well, with excellent
 documentation included both online and through the built in help
 message. The training, including RNAseq alignments, and gene finding
 pipeline in this case took 1 hour and 17 minutes using 60
@@ -90,7 +88,7 @@ unpacking of software packages so some expertise is
 recommended. Neither Braker2 nor GeneMark require users to compile
 software, however Braker2's dependencies may require additional
 compilation and attention. Once installed, both tools are relatively
-simple to use with documentation available for both on the command-line
+simple to use with documention available for both on the commandline
 and excellent documentation available for Braker2 on their GitHub
 page. Outputs from both tools are similar although Braker2 has the
 ability to output coding and amino acid sequences for downstream

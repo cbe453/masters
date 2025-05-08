@@ -194,6 +194,8 @@ INPUT chapter-4.aux
 INPUT chapter-4.aux
 INPUT chapter-5.aux
 INPUT chapter-5.aux
+INPUT chapter-6.aux
+INPUT chapter-6.aux
 OUTPUT thesis.aux
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -281,6 +283,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 OUTPUT chapter-5.aux
 INPUT chapter-5.tex
 INPUT chapter-5.tex
+INPUT chapters/c5/overview.tex
+INPUT chapters/c5/overview.tex
 INPUT chapters/c5/assemblies.tex
 INPUT chapters/c5/assemblies.tex
 INPUT figures/gc-plot.pdf
@@ -310,8 +314,6 @@ INPUT ./figures/t-harzianum-cdf-lengths-log.pdf
 INPUT figures/t-virens-cdf-lengths-log.pdf
 INPUT ./figures/t-virens-cdf-lengths-log.pdf
 INPUT ./figures/t-virens-cdf-lengths-log.pdf
-INPUT chapters/c5/blast-results.tex
-INPUT chapters/c5/blast-results.tex
 INPUT chapters/c5/busco-results.tex
 INPUT chapters/c5/busco-results.tex
 INPUT chapters/c5/regions.tex
@@ -337,8 +339,6 @@ INPUT ./figures/igv/igv-uncertain-regions.png
 INPUT figures/igv/igv-opposing-strands.png
 INPUT ./figures/igv/igv-opposing-strands.png
 INPUT ./figures/igv/igv-opposing-strands.png
-INPUT chapters/c5/gc-regions.tex
-INPUT chapters/c5/gc-regions.tex
 INPUT chapters/c5/interproscan-results.tex
 INPUT chapters/c5/interproscan-results.tex
 INPUT figures/igv/ips-basic-agree.png
@@ -350,8 +350,15 @@ INPUT ./figures/igv/ips-model-disagree2.png
 INPUT figures/igv/ips-braker-genemark-norefseq.png
 INPUT ./figures/igv/ips-braker-genemark-norefseq.png
 INPUT ./figures/igv/ips-braker-genemark-norefseq.png
-INPUT chapters/c5/choosing-a-tool.tex
-INPUT chapters/c5/choosing-a-tool.tex
+INPUT chapters/c5/blast-results.tex
+INPUT chapters/c5/blast-results.tex
+INPUT chapters/c5/gc-regions.tex
+INPUT chapters/c5/gc-regions.tex
+OUTPUT chapter-6.aux
+INPUT chapter-6.tex
+INPUT chapter-6.tex
+INPUT chapters/c6/conclusions.tex
+INPUT chapters/c6/conclusions.tex
 INPUT thesis.bbl
 INPUT thesis.bbl
 INPUT thesis.aux
@@ -365,6 +372,8 @@ INPUT chapter-4.aux
 INPUT chapter-4.aux
 INPUT chapter-5.aux
 INPUT chapter-5.aux
+INPUT chapter-6.aux
+INPUT chapter-6.aux
 INPUT ./thesis.out
 INPUT ./thesis.out
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb

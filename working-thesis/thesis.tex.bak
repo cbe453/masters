@@ -24,7 +24,7 @@
 
 \abstract{placeholder}
 
-\acknowledgements{I would like to acknowledge both
+\acknowledgements{I would like to acknoweldge both
   Dr. Kusalik and Dave Schneider for their excellent support and
   mentorship during both COVID and my MSc. project. I would also like
   to thank Brendan Ashby and Dr. Leon Kochian for providing both data
@@ -68,7 +68,7 @@
 
 \include{chapter-5}
 
-\include{chapter-6}
+\section{Conclusions}
 
 \uofsbibliography{./refs/full-bib}
 

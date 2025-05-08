@@ -7,14 +7,14 @@ identified as AT-rich. AT-rich is defined as a region of genomic
 sequence with percent GC composition less than 28\% as determined in
 Section \ref{section:assemblies}. In comparison to results from
 Section \ref{section:regions}, we see that overall there are far fewer
-regions with gene predictions in AT-rich genomic segments. In DC1,
+regions with gene predictions in AT-rich genomic segements. In DC1,
 Tsth20, there are very few regions with full support from both Braker2
 and GeneMark, but more singletons. Again, as in Section
 \ref{section:regions}, there are no regions with partial support as
 only two gene finding tools were applied to those
 assemblies. \textit{T. reesei} and \textit{T. harzianum} report more
 regions in AT-rich genomic sequence than the other assemblies, but
-with the majority of regions belonging to the singleton
+with the majoirty of regions belonging to the singleton
 category. \textit{T. virens} is an interesting case, reporting a
 similar numbers of regions and genes in AT-rich genomic sequence as
 DC1 and Tsth20. \textit{T. virens} is also the only assembly to report
@@ -23,7 +23,7 @@ the other RefSeq assemblies is unclear. In general, there are few
 regions with gene predictions in AT-rich genomic segments, and within
 these regions, the majority of cases are isolated singleton gene
 predictions. These observations differ greatly from those made in
-nucleotide composition agnostic approach in Section
+nucleotide composition agnostic approach in section
 \ref{section:regions}.
 
 \begin{table}
@@ -51,7 +51,7 @@ In addition to a breakdown of regions in AT-rich genomic sequence,
 understanding which gene finders predict more or fewer genes in these
 regions may be of interest. It is possible that an HMM, trained on
 genomic sequence with varying nucleotide content, may predict genes
-differently to an HMM trained only on sequences with uniformly
+differently to an HMM trained only on sequences with uniformally
 distributed nucleotide composition as the variation in nucleotide
 composition may affect the various states and relationships between
 them in an HMM. Table \ref{table:gc-gene-counts} shows the number of
