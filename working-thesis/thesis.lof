@@ -5,16 +5,16 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces An example of GFF entries for a sinlge gene.\relax }}{9}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A flowchart of the methodology followed in this research. The workflow is broken up into sections based on the processes and data involved at each step. Oval-shaped nodes represent steps involved in the processing of data, while rectangular nodes represent intermediate datasets and results.\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A flowchart of the methodology followed in this research. The workflow is broken up into sections based on the processes and data involved at each step. Oval-shaped nodes represent steps involved in the processing of data, while rectangular nodes represent input and intermediate datasets as well as results.\relax }}{15}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots showing proportions of sliding windows of GC content for each \textit {Trichoderma} genome assembly.\relax }}{21}{figure.caption.18}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces CDF plots part 1.}}{25}{figure.caption.20}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces CDF plots part 2.}}{26}{figure.caption.21}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots part 3.}}{27}{figure.caption.22}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Breakdown of identified regions}}{33}{figure.caption.27}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Example of a region with many gene calls}}{34}{figure.caption.28}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Predictions on opposing strands}}{35}{figure.caption.29}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Agreeing Pfam matches}}{36}{figure.caption.31}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Split Pfam matches}}{37}{figure.caption.32}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces RefSeq absence with IPS evidence}}{38}{figure.caption.33}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots showing proportions of sliding windows of GC content for each \textit {Trichoderma} genome assembly.\relax }}{22}{figure.caption.18}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces CDF plots part 1.}}{26}{figure.caption.20}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces CDF plots part 2.}}{27}{figure.caption.21}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots part 3.}}{28}{figure.caption.22}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Breakdown of identified regions}}{34}{figure.caption.27}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Example of a region with many gene calls}}{35}{figure.caption.28}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Predictions on opposing strands}}{36}{figure.caption.29}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Agreeing Pfam matches}}{37}{figure.caption.31}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Split Pfam matches}}{38}{figure.caption.32}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces RefSeq absence with IPS evidence}}{39}{figure.caption.33}
 \addvspace {10\p@ }

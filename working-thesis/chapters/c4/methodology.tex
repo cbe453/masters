@@ -1,8 +1,12 @@
 \section{Workflow Overview}
 
 The general methodology for this work is described in figure
-\ref{fig:workflow}. Technical portions of figure \ref{fig:workflow}
-are discussed in the following sections.
+\ref{fig:workflow}. A workflow, is presented in Figure
+\ref{fig:workflow}. This workflow shows the processes used in this
+analysis as well as their inputs and outputs. Each process is shown as
+a diamond, while initial and intermediate datasets are shown
+cirlces. The following sections discuss the steps taken to produce the
+results for this project.
 
 \begin{figure}
   \centering
@@ -13,7 +17,8 @@ are discussed in the following sections.
     research. The workflow is broken up into sections based on the
     processes and data involved at each step. Oval-shaped nodes
     represent steps involved in the processing of data, while
-    rectangular nodes represent intermediate datasets and results.}
+    rectangular nodes represent input and intermediate datasets as
+    well as results.}
   \label{fig:workflow}
 \end{figure}
 
@@ -26,11 +31,12 @@ are discussed in the following sections.
 
 Genomic sequences were generated for DC1 and Tsth20 using
 Nanopore\cite{Wang2021} and Illumina\cite{Bennett2004} sequencing
-technologies. Nanopore data was not processed prior to
-assembly. Illumina sequencing data was filtered using Trimmomatic
-v0.38\cite{Bolger2014} with filtering criteria as follows:
-SLIDINGWINDOW:4:28, LEADING:28, TRAILING:28, MINLEN:75. Only surviving
-paired-end reads were used for further analysis.
+technologies by Brendan Ashby at the Global Institute for Food
+Security at the University of Saskatchewan. Nanopore data was not
+processed prior to assembly. Illumina sequencing data was filtered
+using Trimmomatic v0.38\cite{Bolger2014} with filtering criteria as
+follows: SLIDINGWINDOW:4:28, LEADING:28, TRAILING:28, MINLEN:75. Only
+surviving paired-end reads were used for further analysis.
 
 Genomic Nanopore sequences from DC1 and Tsth20 were assembled in to
 contigs using NextDenovo\cite{Hu2024} v2.5.0 and then polished with
@@ -69,12 +75,39 @@ default parameters.
 %used for this program follow the example commands provided on the
 %GitHub page for the GenericRepeatFinder project.
 
+\section{Selection of Datasets from NCBI}
+
+
+Three forms of inputs from NCBI were selected for use in this
+work. The first set of inputs are RefSeq assemblies of three
+\textit{Trichoderma} accessions for \textit{T. virens},
+\textit{T. harzianum}, and \textit{T. virens}. NCBI RefSeq accession
+IDs for those assemblies are GCF\_000167675.1\_v2.0,
+GCF\_003025095.1\_Triha\_v1.0, and GCF\_000170995.1\_TRIVI\_v2.0,
+respectively. \textit{T. reesei} was selected as it is the most
+well-studied \textit{Trichoderma} species. \textit{T. harzianum} and
+\textit{T. virens} were selected as additional datasets due to their
+prevalence in literature as well.
+
+The second set of inputs are RNAseq datastes from \textit{T. reesei},
+used as input in the training process for Braker2. The SRA accession
+IDs for those sequencing runs are: . Limited RNAseq datasets were used
+as there were few RNAseq datasets were available at the beginning of
+this project.
+
+The final set of inputs are protein sequences from RefSeq individuals
+\textit{T. atroviride}, \textit{Fusarium graminarium}, and
+\textit{Saccharomyces cerevisiae}. The NCBI accession IDs for these
+assemblies and associated protein sequences are GCF\_000171015.1,
+GCF\_000240135.3, and GCF\_000146045.2, respectively.
+
 \section{Gene Prediction Using GeneMark-ES}
 
 \textit{Ab initio} gene finding was performed using GeneMark-ES
-v4.71\cite{Borodovsky2011}. Default parameters were used in all cases
-except for the fungal option, which was allowed the use of a GeneMark
-model specific to fungal genomes.
+v4.71\cite{Borodovsky2011} with DC1, Tsth20 and selected RefSeq
+\textit{Trichoderma} assemblies used as input. Default parameters were
+used in all cases except for the fungal option, which was allowed the
+use of a GeneMark model specific to fungal genomes.
 
 %General command structure for GeneMark-ES:
 %

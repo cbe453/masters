@@ -5,8 +5,8 @@ digraph G{
 		 color = gray;	
 		 Illumina [shape = rectangle];
         	 Nanopore [shape = rectangle];
-		 Illumina -> "Trimmomatic/Filtering";
-		 Nanopore -> "Trimmomatic/Filtering";
+		 "Illumina Reads" -> "Trimmomatic + Filtering";
+		 "Nanopore Reads" -> "Trimmomatic + Filtering";
 		 RefSeqs [shape = rectangle];
 		 RNAseq [shape = rectangle];
 		 FilteredReads [shape = rectangle];
@@ -16,7 +16,7 @@ digraph G{
 	subgraph cluster_1 {
 		 style = filled;
 		 color = gray;	
-		 "NextDenovo/NextPolish";
+		 "NextDenovo + NextPolish";
 		 AssemblyMetrics [shape = rectangle];
 		 Assemblies [shape = rectangle];
 		 GCwindows [shape = rectangle]
@@ -28,12 +28,12 @@ digraph G{
 	subgraph cluster_2 {
 		 style = filled;
 		 color=gray;
-		 "GeneMarkCalls" [shape = rectangle];
-		 "Braker2Calls" [shape = rectangle];
-		 GeneMark -> "GeneMarkCalls";
-		 Braker2 -> "Braker2Calls";
+		 "GeneMark Calls" [shape = rectangle];
+		 "Braker2 Calls" [shape = rectangle];
+		 GeneMark -> "GeneMark Calls";
+		 Braker2 -> "Braker2 Calls";
 		 label = "Genome Annotation";
-		 RefSeqCalls [shape = rectangle];
+		 "RefSeq Calls" [shape = rectangle];
 	}
 
 	subgraph cluster_3 {
@@ -41,14 +41,14 @@ digraph G{
 		 color = gray;
 	}
 	
-	"Trimmomatic/Filtering" -> FilteredReads;
+	"Trimmomatic + Filtering" -> FilteredReads;
 	FilteredReads -> "NextDenovo/NextPolish";
-	"NextDenovo/NextPolish" -> Assemblies;
+	"NextDenovo + NextPolish" -> Assemblies;
 	Assemblies -> GeneMark;
 	Assemblies -> Braker2;
 	RefSeqs -> GeneMark;
 	RefSeqs -> Braker2;
-	RefSeqs -> RefSeqCalls;
+	RefSeqs -> "RefSeq Calls";
 	RNAseq -> Braker2;
 	RefSeqs -> Quast;
 	Quast -> AssemblyMetrics;
@@ -63,18 +63,18 @@ digraph G{
 		 RegionAnalysis;
 	}
 
-	RefSeqCalls -> GeneMetrics;
-	GeneMarkCalls -> GeneMetrics;
-	Braker2Calls -> GeneMetrics;
-	RefSeqCalls -> Busco;
-	GeneMarkCalls -> Busco;
-	Braker2Calls -> Busco;
-	RefSeqCalls -> InterProScan;
-	GeneMarkCalls -> InterProScan;
-	Braker2Calls -> InterProScan;
-	RefSeqCalls -> RegionAnalysis;
-	GeneMarkCalls -> RegionAnalysis;
-	Braker2Calls -> RegionAnalysis;
+	"RefSeq Calls" -> GeneMetrics;
+	"GeneMark Calls" -> GeneMetrics;
+	"Braker2 Calls" -> GeneMetrics;
+	"RefSeq Calls" -> Busco;
+	"GeneMark Calls" -> Busco;
+	"Braker2 Calls" -> Busco;
+	"RefSeq Calls" -> InterProScan;
+	"GeneMark Calls" -> InterProScan;
+	"Braker2 Calls" -> InterProScan;
+	"RefSeq Calls" -> RegionAnalysis;
+	"GeneMark Calls" -> RegionAnalysis;
+	"Braker2 Calls" -> RegionAnalysis;
 	InterProScan -> RegionAnalysis;
 	GCwindows -> RegionAnalysis;
 
@@ -82,21 +82,21 @@ digraph G{
 		 label = "Results";
 		 style = filled;
 		 color = gray;
-		 "3.2 - Assembly Results" [shape = rectangle];
-		 "3.4 - Prediction Counts" [shape = rectangle];
-		 "3.5 - Gene Lengths" [shape = rectangle];
-		 "3.6 - Predictions in AT-rich\nGenomic Sequence" [shape = rectangle];
-		 "3.7 - Busco Performance" [shape = rectangle];
-		 "3.8 - Regions of Agreement\nand Disagreement" [shape = rectangle];
-		 "3.9 - Predictions with\nInterProScan Support" [shape = rectangle];
+		 "4.2 - Assembly Results" [shape = rectangle];
+		 "4.4 - Predictied Gene Counts" [shape = rectangle];
+		 "4.5 - Gene Lengths" [shape = rectangle];
+		 "4.6 - Gene Predictions in AT-rich\nGenomic Sequence" [shape = rectangle];
+		 "4.7 - Busco Performance" [shape = rectangle];
+		 "4.8 - Regions of Prediction Agreement\nand Disagreement" [shape = rectangle];
+		 "4.9 - Predictions with\nInterProScan Support" [shape = rectangle];
 	}
 
-	AssemblyMetrics -> "3.2 - Assembly Results";
-	GeneMetrics -> "3.4 - Prediction Counts";
-	GeneMetrics -> "3.5 - Gene Lengths";
-	RegionAnalysis -> "3.6 - Predictions in AT-rich\nGenomic Sequence";
-	Busco -> "3.7 - Busco Performance";
-	RegionAnalysis -> "3.8 - Regions of Agreement\nand Disagreement";
-	RegionAnalysis -> "3.9 - Predictions with\nInterProScan Support";
+	AssemblyMetrics -> "4.2 - Assembly Results";
+	GeneMetrics -> "4.4 - Prediction Counts";
+	GeneMetrics -> "4.5 - Gene Lengths";
+	RegionAnalysis -> "4.6 - Predictions in AT-rich\nGenomic Sequence";
+	Busco -> "4.7 - Busco Performance";
+	RegionAnalysis -> "4.8 - Regions of Agreement\nand Disagreement";
+	RegionAnalysis -> "4.9 - Predictions with\nInterProScan Support";
 	
 }

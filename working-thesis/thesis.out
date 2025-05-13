@@ -38,26 +38,27 @@
 \BOOKMARK [0][-]{chapter.4}{Data and Methodology}{}% 38
 \BOOKMARK [1][-]{section.4.1}{Workflow Overview}{chapter.4}% 39
 \BOOKMARK [1][-]{section.4.2}{Sequence Pre-processing and Assembly}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.3}{Gene Prediction Using GeneMark-ES}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.4}{Gene Prediction Using Braker2}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.5}{Binomial Tests on CDS Lengths}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.6}{Evaluating Gene-Finder Performance Using BUSCO}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.7}{Region Identification Procedure}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.8}{Functional Annotation Using InterProScan}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.9}{Identification of AT-rich Genomic Windows}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.10}{Ground-truthing with BLAST}{chapter.4}% 48
-\BOOKMARK [1][-]{section.4.11}{Visualization of Identified Regions}{chapter.4}% 49
-\BOOKMARK [0][-]{chapter.5}{Results and Discussion}{}% 50
-\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 51
-\BOOKMARK [1][-]{section.5.2}{Assemblies of DC1 and Tsth20}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.3}{Installation and Profiling Gene Finding Tools}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.4}{Initial Gene Finding Results}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.5}{Distribution of Predicted Coding Sequence Lengths}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.6}{BUSCO Results}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.7}{Region Identification}{chapter.5}% 57
-\BOOKMARK [1][-]{section.5.8}{InterProScan as Supporting Evidence for Predicted Genes}{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.9}{BLAST Results}{chapter.5}% 59
-\BOOKMARK [1][-]{section.5.10}{Genes in Regions of Anomalous GC Content}{chapter.5}% 60
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 61
-\BOOKMARK [1][-]{section.6.1}{Selection of Gene Finding Tool}{chapter.6}% 62
-\BOOKMARK [0][-]{section*.40}{References}{}% 63
+\BOOKMARK [1][-]{section.4.3}{Selection of Datasets from NCBI}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.4}{Gene Prediction Using GeneMark-ES}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.5}{Gene Prediction Using Braker2}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.6}{Binomial Tests on CDS Lengths}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.7}{Evaluating Gene-Finder Performance Using BUSCO}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.8}{Region Identification Procedure}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.9}{Functional Annotation Using InterProScan}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.10}{Identification of AT-rich Genomic Windows}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.11}{Ground-truthing with BLAST}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.12}{Visualization of Identified Regions}{chapter.4}% 50
+\BOOKMARK [0][-]{chapter.5}{Results and Discussion}{}% 51
+\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.2}{Assemblies of DC1 and Tsth20}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.3}{Installation and Profiling Gene Finding Tools}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.4}{Initial Gene Finding Results}{chapter.5}% 55
+\BOOKMARK [1][-]{section.5.5}{Distribution of Predicted Coding Sequence Lengths}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.6}{BUSCO Results}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.7}{Region Identification}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.8}{InterProScan as Supporting Evidence for Predicted Genes}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.9}{BLAST Results}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.10}{Genes in Regions of Anomalous GC Content}{chapter.5}% 61
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 62
+\BOOKMARK [1][-]{section.6.1}{Selection of Gene Finding Tool}{chapter.6}% 63
+\BOOKMARK [0][-]{section*.40}{References}{}% 64
