@@ -19,9 +19,9 @@ digraph G{
 		 "NextDenovo + NextPolish";
 		 AssemblyMetrics [shape = rectangle];
 		 Assemblies [shape = rectangle];
-		 GCwindows [shape = rectangle]
+		 "Identify AT-rich\nSequence" [shape = rectangle]
 		 Assemblies -> Quast;
-		 Assemblies -> GCwindows;
+		 Assemblies -> "Identify AT-rich\nSequence";
 		 label = "Genome Assembly and Processing";
 	}
 
@@ -42,7 +42,7 @@ digraph G{
 	}
 	
 	"Trimmomatic + Filtering" -> FilteredReads;
-	FilteredReads -> "NextDenovo/NextPolish";
+	FilteredReads -> "NextDenovo + NextPolish";
 	"NextDenovo + NextPolish" -> Assemblies;
 	Assemblies -> GeneMark;
 	Assemblies -> Braker2;
@@ -76,27 +76,29 @@ digraph G{
 	"GeneMark Calls" -> RegionAnalysis;
 	"Braker2 Calls" -> RegionAnalysis;
 	InterProScan -> RegionAnalysis;
-	GCwindows -> RegionAnalysis;
+	"Identify AT-rich\nSequence" -> RegionAnalysis;
 
 	subgraph cluster_5 {
 		 label = "Results";
 		 style = filled;
 		 color = gray;
 		 "4.2 - Assembly Results" [shape = rectangle];
-		 "4.4 - Predictied Gene Counts" [shape = rectangle];
-		 "4.5 - Gene Lengths" [shape = rectangle];
-		 "4.6 - Gene Predictions in AT-rich\nGenomic Sequence" [shape = rectangle];
+		 "4.4/4.5 - Predicted Gene Counts" [shape = rectangle];
+		 "4.6 - Gene Lengths" [shape = rectangle];
+		 "4.10 - Gene Predictions in AT-rich\nGenomic Sequence" [shape = rectangle];
 		 "4.7 - Busco Performance" [shape = rectangle];
-		 "4.8 - Regions of Prediction Agreement\nand Disagreement" [shape = rectangle];
+		 "4.8 - Regions of Prediction\nAgreement and Disagreement" [shape = rectangle];
 		 "4.9 - Predictions with\nInterProScan Support" [shape = rectangle];
+		 "4.11 - tblastn Alignments" [shape = rectangle];
+		 "4.12 - IGV Visualization" [shape = rectangle];
 	}
 
 	AssemblyMetrics -> "4.2 - Assembly Results";
-	GeneMetrics -> "4.4 - Prediction Counts";
-	GeneMetrics -> "4.5 - Gene Lengths";
-	RegionAnalysis -> "4.6 - Predictions in AT-rich\nGenomic Sequence";
+	GeneMetrics -> "4.4/4.5 - Predicted Gene Counts";
+	GeneMetrics -> "4.6 - Gene Lengths";
+	RegionAnalysis -> "4.10 - Gene Predictions in AT-rich\nGenomic Sequence";
 	Busco -> "4.7 - Busco Performance";
-	RegionAnalysis -> "4.8 - Regions of Agreement\nand Disagreement";
+	RegionAnalysis -> "4.8 - Regions of Prediction\nAgreement and Disagreement";
 	RegionAnalysis -> "4.9 - Predictions with\nInterProScan Support";
 	
 }

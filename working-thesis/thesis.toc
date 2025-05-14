@@ -41,11 +41,11 @@
 \contentsline {section}{\numberline {4.3}Selection of Datasets from NCBI}{14}{section.4.3}
 \contentsline {section}{\numberline {4.4}Gene Prediction Using GeneMark-ES}{16}{section.4.4}
 \contentsline {section}{\numberline {4.5}Gene Prediction Using Braker2}{16}{section.4.5}
-\contentsline {section}{\numberline {4.6}Binomial Tests on CDS Lengths}{16}{section.4.6}
+\contentsline {section}{\numberline {4.6}Statistical Analysis CDS Lengths}{16}{section.4.6}
 \contentsline {section}{\numberline {4.7}Evaluating Gene-Finder Performance Using BUSCO}{16}{section.4.7}
 \contentsline {section}{\numberline {4.8}Region Identification Procedure}{17}{section.4.8}
 \contentsline {section}{\numberline {4.9}Functional Annotation Using InterProScan}{17}{section.4.9}
-\contentsline {section}{\numberline {4.10}Identification of AT-rich Genomic Windows}{17}{section.4.10}
+\contentsline {section}{\numberline {4.10}Gene predictions in AT-rich Genomic Sequence}{17}{section.4.10}
 \contentsline {section}{\numberline {4.11}Ground-truthing with BLAST}{17}{section.4.11}
 \contentsline {section}{\numberline {4.12}Visualization of Identified Regions}{19}{section.4.12}
 \contentsline {chapter}{\numberline {5}Results and Discussion}{20}{chapter.5}
@@ -61,4 +61,4 @@
 \contentsline {section}{\numberline {5.10}Genes in Regions of Anomalous GC Content}{41}{section.5.10}
 \contentsline {chapter}{\numberline {6}Conclusions}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}Selection of Gene Finding Tool}{43}{section.6.1}
-\contentsline {chapter}{References}{46}{section*.40}
+\contentsline {chapter}{References}{46}{section*.41}

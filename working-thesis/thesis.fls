@@ -280,6 +280,9 @@ INPUT ./figures/data-flowchart.pdf
 INPUT ./figures/data-flowchart.pdf
 INPUT ./figures/data-flowchart.pdf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT figures/igv/igv-agreement-thin-number.png
+INPUT ./figures/igv/igv-agreement-thin-number.png
+INPUT ./figures/igv/igv-agreement-thin-number.png
 OUTPUT chapter-5.aux
 INPUT chapter-5.tex
 INPUT chapter-5.tex

@@ -41,11 +41,11 @@
 \BOOKMARK [1][-]{section.4.3}{Selection of Datasets from NCBI}{chapter.4}% 41
 \BOOKMARK [1][-]{section.4.4}{Gene Prediction Using GeneMark-ES}{chapter.4}% 42
 \BOOKMARK [1][-]{section.4.5}{Gene Prediction Using Braker2}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.6}{Binomial Tests on CDS Lengths}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.6}{Statistical Analysis CDS Lengths}{chapter.4}% 44
 \BOOKMARK [1][-]{section.4.7}{Evaluating Gene-Finder Performance Using BUSCO}{chapter.4}% 45
 \BOOKMARK [1][-]{section.4.8}{Region Identification Procedure}{chapter.4}% 46
 \BOOKMARK [1][-]{section.4.9}{Functional Annotation Using InterProScan}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.10}{Identification of AT-rich Genomic Windows}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.10}{Gene predictions in AT-rich Genomic Sequence}{chapter.4}% 48
 \BOOKMARK [1][-]{section.4.11}{Ground-truthing with BLAST}{chapter.4}% 49
 \BOOKMARK [1][-]{section.4.12}{Visualization of Identified Regions}{chapter.4}% 50
 \BOOKMARK [0][-]{chapter.5}{Results and Discussion}{}% 51
@@ -61,4 +61,4 @@
 \BOOKMARK [1][-]{section.5.10}{Genes in Regions of Anomalous GC Content}{chapter.5}% 61
 \BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 62
 \BOOKMARK [1][-]{section.6.1}{Selection of Gene Finding Tool}{chapter.6}% 63
-\BOOKMARK [0][-]{section*.40}{References}{}% 64
+\BOOKMARK [0][-]{section*.41}{References}{}% 64

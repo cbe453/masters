@@ -76,7 +76,7 @@ default parameters.
 %GitHub page for the GenericRepeatFinder project.
 
 \section{Selection of Datasets from NCBI}
-
+\label{met:datasets}
 
 Three forms of inputs from NCBI were selected for use in this
 work. The first set of inputs are RefSeq assemblies of three
@@ -102,6 +102,7 @@ assemblies and associated protein sequences are GCF\_000171015.1,
 GCF\_000240135.3, and GCF\_000146045.2, respectively.
 
 \section{Gene Prediction Using GeneMark-ES}
+\label{met:genemark}
 
 \textit{Ab initio} gene finding was performed using GeneMark-ES
 v4.71\cite{Borodovsky2011} with DC1, Tsth20 and selected RefSeq
@@ -147,13 +148,13 @@ work.
 %simply points to the directory where TSEBRA is located Both Braker2
 %and TSEBRA can be cloned directly from GitHub (links to come)
 
-\section{Binomial Tests on CDS Lengths}
+\section{Statistical Analysis CDS Lengths}
 
-In section \ref{section:lengths}, the coding DNA sequences (CDS) of
-predicted genes were tested using a binomial test, under the null
-hypothesis that the probability of a gene being in normal or AT-rich
-genomic sequence is proportional to the total lengths of normal or
-AT-rich sequence in the assembly.
+In section \ref{section:lengths}, the lengths in base pairs of coding
+DNA sequences (CDS) from predicted genes were tested using a binomial
+test, under the null hypothesis that the probability of a gene being
+in normal or AT-rich genomic sequence is proportional to the total
+lengths of normal or AT-rich sequence in the assembly.
 
 \section{Evaluating Gene-Finder Performance Using BUSCO}
 
@@ -169,12 +170,12 @@ mode...)
 \section{Region Identification Procedure}
 \label{section:region-met}
 
-Predictions and results from previous steps were then processed into
-overlapping regions of predictions and annotations. A region is
-defined as a set of start and stop genomic coordinates which contains
-one or more overlapping feature. We also define a feature as a set of
-start and stop positions associated with a single gene prediction,
-annotation or other data point of interest.
+Predictions and results from \ref{met:genemark} and \ref{met:braker2}
+were then processed into overlapping regions of predictions and
+annotations. A region is defined as a pair of start and stop genomic
+coordinates which contains one or more overlapping features. We define
+a feature as a set of start and stop positions associated with a
+single gene prediction, annotation or other data point of interest.
 
 Overlapping features were processed into regions using a concept
 similar to Allen's interval algebra\cite{DECHTER2003333}. The
@@ -184,7 +185,7 @@ previous features to identify regions of overlapping
 features. Pseudocode for the algorithm is shown in algorithm
 \ref{alg:regions}. This processing was performed with Python
 v3.12.4\cite{Foundation} and the GFF package from BCBio\cite{Chapman}
-for easy GFF parsing.  The resulting regions are then further
+for easy GFF parsing.  The resulting regions were then further
 processed to identify trends and behaviours of gene finders in the
 context of other annotated information and features.
 
@@ -197,20 +198,22 @@ context of other annotated information and features.
     \EndFor
     \State $sortedFeatures \gets sortStartCoord(allFeatures)$
     \State $regionList \gets []$
+    \State $firstFeature \gets firstItem(sortedFeatures)$
+    \State $lastFeature \gets lastItem(sortedFeatures)$
     \For{\texttt{<each feature in sortedFeatures>}}
       \If{$feature = firstFeature$}
-        \State $currentRegion \gets newRegion$
+        \State $currentRegion \gets newRegion(feature)$
         \State $currentRegion.start \gets feature.start$
         \State $currentRegion.end \gets feature.end$
       \ElsIf{$feature = lastFeature$}
-        \State $regionList \gets region$
+        \State $regionList.append(currentRegion)$
         \State $return\ regionList$
       \ElsIf{$feature\ overlaps\ currentRegion$}
-        \State $currentRegion \gets updateStartStopPositions$
-        \State $currentRegion \gets feature$
+        \State $currentRegion.updatePositions(currentRegion, feature)$
+        \State $currentRegion.addFeature(feature)$
       \Else
-        \State $regionList \gets currentRegion$
-        \State $currentRegion \gets newRegion$
+        \State $regionList.append(currentRegion)$
+        \State $currentRegion \gets newRegion(feature)$
         \State $currentRegion \gets feature.start$
         \State $currentRegion \gets feature.end$
       \EndIf
@@ -237,10 +240,11 @@ default parameters. The resulting protein annotations were mapped back
 to the gene predictions and processed using the region identification
 algorithm in section \ref{section:region-met}.
 
-\section{Identification of AT-rich Genomic Windows}
+\section{Gene predictions in AT-rich Genomic Sequence}
 
-Sliding windows of GC content over each \textit{Trichoderma} assembly
-were calculated using isochore from the EMBOSS tool suite
+AT-rich genomic sequences were identified using sliding windows of GC
+content over each \textit{Trichoderma} assembly. Sliding windows were
+generated using the isochore program from the EMBOSS tool suite
 v6.6.0\cite{Rice2000}. The sliding window used was 250bp wide with a
 50bp shift. A window was classified as AT-rich if the sequence
 contained lower than 28\% GC content. The genomic sequences from
@@ -250,12 +254,43 @@ region identification algorithm described in section
 
 \section{Ground-truthing with BLAST}
 
-Need to flesh this out if I write results section.
+The \textit{Trichoderma} assemblies chosen for comparison were used as
+the subject sequences in tblastn searches with the query proteins
+discussed in paragraph three of Section \ref{met:datasets}. Default
+parameters were used in the tblastn searches. Hits from the tblastn
+alignments were then filtered for alignments with a minimum of 30\%
+query coverage and 30\% identity. These criteria were selected as they
+filter out spurious alignments while also retaining short alignments
+that capture functional or conserved protein coding
+sequence. Remaining aligments were then converted to GFF format and processed using the region identification algorithm in \ref{section:region-met}
 
 \section{Visualization of Identified Regions}
 
 Results from the region identification process were visualized using
-the IGV genome browser v2.19.1\cite{Robinson2011}.
+the IGV genome browser v2.19.1\cite{Robinson2011}. An example of an
+IGV screenshot is shown in Figure \ref{fig:igv-methods}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/igv/igv-agreement-thin-number}
+  \caption[IGV example]{An example of an IGV screenshot used in
+    portions of the results from this work. The top half of the image
+    displays information about the reference sequence with box one
+    showing the position of the viewer relative to the reference
+    sequence, and box two showing the numerical positions of the
+    reference. The lower half of the image displays tracks, or
+    additional layers of information mapped to the reference
+    sequence. Box three shows a track displaying the nucleotide at
+    each position if the scale of the viewer is small enough. Box four
+    shows several tracks, each containing features, the regions in
+    blue, from a GFF file. The tracks in this example are limited to
+    gene predictions, although tracks in other IGV screenshots may
+    include features from other tools such as InterProScan. Individual
+    tracks will be referred to in increasing numerical order in the
+    track list beginning from the top. The nucleotide track is not
+    included in the order.}
+  \label{fig:igv-methods}
+\end{figure}
 
 %=======
 %Example command for braker2:
