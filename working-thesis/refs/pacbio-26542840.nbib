@@ -1,0 +1,84 @@
+PMID- 26542840
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20160815
+LR  - 20220410
+IS  - 2210-3244 (Electronic)
+IS  - 1672-0229 (Print)
+IS  - 1672-0229 (Linking)
+VI  - 13
+IP  - 5
+DP  - 2015 Oct
+TI  - PacBio Sequencing and Its Applications.
+PG  - 278-89
+LID - S1672-0229(15)00134-5 [pii]
+LID - 10.1016/j.gpb.2015.08.002 [doi]
+AB  - Single-molecule, real-time sequencing developed by Pacific BioSciences offers 
+      longer read lengths than the second-generation sequencing (SGS) technologies, 
+      making it well-suited for unsolved problems in genome, transcriptome, and 
+      epigenetics research. The highly-contiguous de novo assemblies using PacBio 
+      sequencing can close gaps in current reference assemblies and characterize 
+      structural variation (SV) in personal genomes. With longer reads, we can sequence 
+      through extended repetitive regions and detect mutations, many of which are 
+      associated with diseases. Moreover, PacBio transcriptome sequencing is 
+      advantageous for the identification of gene isoforms and facilitates reliable 
+      discoveries of novel genes and novel isoforms of annotated genes, due to its 
+      ability to sequence full-length transcripts or fragments with significant 
+      lengths. Additionally, PacBio's sequencing technique provides information that is 
+      useful for the direct detection of base modifications, such as methylation. In 
+      addition to using PacBio sequencing alone, many hybrid sequencing strategies have 
+      been developed to make use of more accurate short reads in conjunction with 
+      PacBio long reads. In general, hybrid sequencing strategies are more affordable 
+      and scalable especially for small-size laboratories than using PacBio Sequencing 
+      alone. The advent of PacBio sequencing has made available much information that 
+      could not be obtained via SGS alone.
+CI  - Copyright © 2015 The Authors. Production and hosting by Elsevier Ltd.. All rights 
+      reserved.
+FAU - Rhoads, Anthony
+AU  - Rhoads A
+AD  - Department of Biostatistics, University of Iowa, Iowa City, IA 52242, USA.
+FAU - Au, Kin Fai
+AU  - Au KF
+AD  - Department of Biostatistics, University of Iowa, Iowa City, IA 52242, USA; 
+      Department of Internal Medicine, University of Iowa, Iowa City, IA 52242, USA. 
+      Electronic address: kinfai-au@uiowa.edu.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20151102
+PL  - England
+TA  - Genomics Proteomics Bioinformatics
+JT  - Genomics, proteomics & bioinformatics
+JID - 101197608
+RN  - 0 (Protein Isoforms)
+SB  - IM
+MH  - DNA Methylation/genetics
+MH  - Genome/*genetics
+MH  - Molecular Sequence Annotation/*methods
+MH  - Protein Isoforms/genetics
+MH  - Repetitive Sequences, Nucleic Acid/genetics
+MH  - Sequence Analysis, DNA/*instrumentation/*methods
+MH  - Transcriptome/*genetics
+PMC - PMC4678779
+OTO - NOTNLM
+OT  - De novo assembly
+OT  - Gene isoform detection
+OT  - Hybrid sequencing
+OT  - Methylation
+OT  - Third-generation sequencing
+EDAT- 2015/11/07 06:00
+MHDA- 2016/08/16 06:00
+PMCR- 2015/11/02
+CRDT- 2015/11/07 06:00
+PHST- 2015/05/28 00:00 [received]
+PHST- 2015/08/06 00:00 [revised]
+PHST- 2015/08/11 00:00 [accepted]
+PHST- 2015/11/07 06:00 [entrez]
+PHST- 2015/11/07 06:00 [pubmed]
+PHST- 2016/08/16 06:00 [medline]
+PHST- 2015/11/02 00:00 [pmc-release]
+AID - S1672-0229(15)00134-5 [pii]
+AID - 10.1016/j.gpb.2015.08.002 [doi]
+PST - ppublish
+SO  - Genomics Proteomics Bioinformatics. 2015 Oct;13(5):278-89. doi: 
+      10.1016/j.gpb.2015.08.002. Epub 2015 Nov 2.

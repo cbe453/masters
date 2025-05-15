@@ -2,7 +2,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Example of two FASTA sequence entries. One example with sequence characters split across multiple lines, and one showing all sequence characters on the same line.\relax }}{8}{figure.caption.13}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Example of the four lines in a FASTQ entry.\relax }}{9}{figure.caption.14}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of GFF entries for a sinlge gene.\relax }}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of GFF entries for a single gene.\relax }}{9}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces A flowchart of the methodology followed in this research. The workflow is broken up into sections based on the processes and data involved at each step. Oval-shaped nodes represent steps involved in the processing of data, while rectangular nodes represent input and intermediate datasets as well as results.\relax }}{15}{figure.caption.16}
