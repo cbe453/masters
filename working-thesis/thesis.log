@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 MAY 2025 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 MAY 2025 22:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1043,18 +1043,18 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 330.
-<figures/fasta-example.png, id=526, 540.0175pt x 84.315pt>
+<figures/fasta-example.png, id=538, 540.0175pt x 84.315pt>
 File: figures/fasta-example.png Graphic file (type png)
 <use figures/fasta-example.png>
 Package pdftex.def Info: figures/fasta-example.png  used on input line 340.
 (pdftex.def)             Requested size: 377.62642pt x 58.96089pt.
  [8 <./figures/fasta-example.png>]
-<figures/fastq-example.png, id=535, 580.1675pt x 111.41624pt>
+<figures/fastq-example.png, id=547, 580.1675pt x 111.41624pt>
 File: figures/fastq-example.png Graphic file (type png)
 <use figures/fastq-example.png>
 Package pdftex.def Info: figures/fastq-example.png  used on input line 370.
 (pdftex.def)             Requested size: 377.62642pt x 72.52pt.
-<figures/gff-example.png, id=537, 840.13875pt x 103.38625pt>
+<figures/gff-example.png, id=549, 840.13875pt x 103.38625pt>
 File: figures/gff-example.png Graphic file (type png)
 <use figures/gff-example.png>
 Package pdftex.def Info: figures/gff-example.png  used on input line 397.
@@ -1083,7 +1083,7 @@ Chapter 3.
  (./chapter-4.tex
 Chapter 4.
 (./chapters/c4/methodology.tex
-<./figures/data-flowchart.pdf, id=564, 1718.42pt x 853.1875pt>
+<./figures/data-flowchart.pdf, id=576, 1718.42pt x 853.1875pt>
 File: ./figures/data-flowchart.pdf Graphic file (type pdf)
 <use ./figures/data-flowchart.pdf>
 Package pdftex.def Info: ./figures/data-flowchart.pdf  used on input line 15.
@@ -1106,7 +1106,7 @@ Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 224.
 
 [17] [18]
-<figures/igv/igv-agreement-thin-number.png, id=632, 1308.89pt x 437.635pt>
+<figures/igv/igv-agreement-thin-number.png, id=644, 1308.89pt x 437.635pt>
 File: figures/igv/igv-agreement-thin-number.png Graphic file (type png)
 <use figures/igv/igv-agreement-thin-number.png>
 Package pdftex.def Info: figures/igv/igv-agreement-thin-number.png  used on inp
@@ -1117,22 +1117,18 @@ ut line 275.
 
  (./chapter-5.tex
 Chapter 5.
-(./chapters/c5/overview.tex
-
-LaTeX Warning: Reference `chapter:conclusion' on page 20 undefined on input lin
-e 23.
-
-) (./chapters/c5/assemblies.tex [20
+(./chapters/c5/overview.tex) (./chapters/c5/assemblies.tex [20
 
 
 
 ]
-<figures/gc-plot.pdf, id=665, 462.52798pt x 346.89601pt>
+<figures/gc-plot.pdf, id=678, 462.52798pt x 346.89601pt>
 File: figures/gc-plot.pdf Graphic file (type pdf)
 <use figures/gc-plot.pdf>
 Package pdftex.def Info: figures/gc-plot.pdf  used on input line 83.
 (pdftex.def)             Requested size: 472.03123pt x 354.04097pt.
-) (./chapters/c5/tool-profiling.tex
+)
+(./chapters/c5/tool-profiling.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
@@ -1142,25 +1138,25 @@ Underfull \vbox (badness 2922) has occurred while \output is active []
  [23])
 (./chapters/c5/gene-finding-results.tex [24])
 (./chapters/c5/gene-length-results.tex
-<figures/dc1-cdf-lengths-log.pdf, id=741, 722.7pt x 361.35pt>
+<figures/dc1-cdf-lengths-log.pdf, id=755, 722.7pt x 361.35pt>
 File: figures/dc1-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/dc1-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 33
 .
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
-<figures/tsth20-cdf-lengths-log.pdf, id=742, 722.7pt x 361.35pt>
+<figures/tsth20-cdf-lengths-log.pdf, id=756, 722.7pt x 361.35pt>
 File: figures/tsth20-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/tsth20-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/tsth20-cdf-lengths-log.pdf  used on input line
  38.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
-<figures/t-reesei-cdf-lengths-log.pdf, id=743, 722.7pt x 361.35pt>
+<figures/t-reesei-cdf-lengths-log.pdf, id=757, 722.7pt x 361.35pt>
 File: figures/t-reesei-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-reesei-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-reesei-cdf-lengths-log.pdf  used on input li
 ne 51.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
-<figures/t-harzianum-cdf-lengths-log.pdf, id=744, 722.7pt x 361.35pt>
+<figures/t-harzianum-cdf-lengths-log.pdf, id=758, 722.7pt x 361.35pt>
 File: figures/t-harzianum-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-harzianum-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-harzianum-cdf-lengths-log.pdf  used on input
@@ -1179,7 +1175,7 @@ sei \OT1/cmr/m/n/10 (GCF[]000167675.1[]v2.0) and \OT1/cmr/m/it/10 T. harzianum.
 
  []
 
-<figures/t-virens-cdf-lengths-log.pdf, id=745, 722.7pt x 361.35pt>
+<figures/t-virens-cdf-lengths-log.pdf, id=759, 722.7pt x 361.35pt>
 File: figures/t-virens-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-virens-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input li
@@ -1193,31 +1189,31 @@ Underfull \vbox (badness 3815) has occurred while \output is active []
 
  [30])
 (./chapters/c5/regions.tex [31]
-<figures/dc1-region-breakdown.png, id=982, 659.46375pt x 242.9075pt>
+<figures/dc1-region-breakdown.png, id=995, 659.46375pt x 242.9075pt>
 File: figures/dc1-region-breakdown.png Graphic file (type png)
 <use figures/dc1-region-breakdown.png>
 Package pdftex.def Info: figures/dc1-region-breakdown.png  used on input line 2
 2.
 (pdftex.def)             Requested size: 424.82523pt x 156.48325pt.
-<figures/tsth20-region-breakdown.png, id=983, 648.4225pt x 217.81375pt>
+<figures/tsth20-region-breakdown.png, id=996, 648.4225pt x 217.81375pt>
 File: figures/tsth20-region-breakdown.png Graphic file (type png)
 <use figures/tsth20-region-breakdown.png>
 Package pdftex.def Info: figures/tsth20-region-breakdown.png  used on input lin
 e 27.
 (pdftex.def)             Requested size: 424.82523pt x 142.70726pt.
-<figures/t-reesei-region-breakdown.png, id=984, 586.19pt x 233.87375pt>
+<figures/t-reesei-region-breakdown.png, id=997, 586.19pt x 233.87375pt>
 File: figures/t-reesei-region-breakdown.png Graphic file (type png)
 <use figures/t-reesei-region-breakdown.png>
 Package pdftex.def Info: figures/t-reesei-region-breakdown.png  used on input l
 ine 32.
 (pdftex.def)             Requested size: 424.82523pt x 169.49165pt.
-<figures/t-harzianum-region-breakdown.png, id=985, 596.2275pt x 233.87375pt>
+<figures/t-harzianum-region-breakdown.png, id=998, 596.2275pt x 233.87375pt>
 File: figures/t-harzianum-region-breakdown.png Graphic file (type png)
 <use figures/t-harzianum-region-breakdown.png>
 Package pdftex.def Info: figures/t-harzianum-region-breakdown.png  used on inpu
 t line 41.
 (pdftex.def)             Requested size: 424.82523pt x 166.64032pt.
-<figures/t-virens-region-breakdown.png, id=986, 587.19376pt x 233.87375pt>
+<figures/t-virens-region-breakdown.png, id=999, 587.19376pt x 233.87375pt>
 File: figures/t-virens-region-breakdown.png Graphic file (type png)
 <use figures/t-virens-region-breakdown.png>
 Package pdftex.def Info: figures/t-virens-region-breakdown.png  used on input l
@@ -1226,13 +1222,13 @@ ine 46.
  [32] [33 <./figures/dc1-region-breakdown.png> <./figures/tsth20-region-breakdo
 wn.png> <./figures/t-reesei-region-breakdown.png>] [34 <./figures/t-harzianum-r
 egion-breakdown.png> <./figures/t-virens-region-breakdown.png>]
-<figures/igv/igv-uncertain-regions.png, id=1008, 1446.40375pt x 698.61pt>
+<figures/igv/igv-uncertain-regions.png, id=1021, 1446.40375pt x 698.61pt>
 File: figures/igv/igv-uncertain-regions.png Graphic file (type png)
 <use figures/igv/igv-uncertain-regions.png>
 Package pdftex.def Info: figures/igv/igv-uncertain-regions.png  used on input l
 ine 120.
 (pdftex.def)             Requested size: 424.82523pt x 205.19273pt.
-<figures/igv/igv-opposing-strands.png, id=1011, 1448.41125pt x 702.625pt>
+<figures/igv/igv-opposing-strands.png, id=1024, 1448.41125pt x 702.625pt>
 File: figures/igv/igv-opposing-strands.png Graphic file (type png)
 <use figures/igv/igv-opposing-strands.png>
 Package pdftex.def Info: figures/igv/igv-opposing-strands.png  used on input li
@@ -1240,20 +1236,20 @@ ne 146.
 (pdftex.def)             Requested size: 424.82523pt x 206.08252pt.
 ) (./chapters/c5/interproscan-results.tex [35 <./figures/igv/igv-uncertain-regi
 ons.png>] [36 <./figures/igv/igv-opposing-strands.png>]
-<figures/igv/ips-basic-agree.png, id=1025, 1551.7975pt x 839.135pt>
+<figures/igv/ips-basic-agree.png, id=1038, 1551.7975pt x 839.135pt>
 File: figures/igv/ips-basic-agree.png Graphic file (type png)
 <use figures/igv/ips-basic-agree.png>
 Package pdftex.def Info: figures/igv/ips-basic-agree.png  used on input line 56
 .
 (pdftex.def)             Requested size: 472.03123pt x 255.25078pt.
  [37 <./figures/igv/ips-basic-agree.png>]
-<figures/igv/ips-model-disagree2.png, id=1033, 1390.19376pt x 764.8575pt>
+<figures/igv/ips-model-disagree2.png, id=1047, 1390.19376pt x 764.8575pt>
 File: figures/igv/ips-model-disagree2.png Graphic file (type png)
 <use figures/igv/ips-model-disagree2.png>
 Package pdftex.def Info: figures/igv/ips-model-disagree2.png  used on input lin
 e 90.
 (pdftex.def)             Requested size: 472.03123pt x 259.69798pt.
-<figures/igv/ips-braker-genemark-norefseq.png, id=1034, 1448.41125pt x 701.6212
+<figures/igv/ips-braker-genemark-norefseq.png, id=1048, 1448.41125pt x 701.6212
 5pt>
 File: figures/igv/ips-braker-genemark-norefseq.png Graphic file (type png)
 <use figures/igv/ips-braker-genemark-norefseq.png>
@@ -1269,23 +1265,23 @@ emark-norefseq.png>]) (./chapters/c5/gc-regions.tex [40] [41])) [42]
 
  (./chapter-6.tex
 Chapter 6.
-) [43
+(./chapters/c6/conclusions.tex [43
 
 
 
-] (./thesis.bbl [44
+])) [44] [45] (./thesis.bbl [46
 
 
-] [45]) [46]
+] [47])
+[48]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
- (./thesis.aux (./intro.aux)
-(./chapter-2.aux) (./chapter-3.aux) (./chapter-4.aux) (./chapter-5.aux)
-(./chapter-6.aux))
+ (./thesis.aux (./intro.aux) (./chapter-2.aux) (./chapter-3.aux)
+(./chapter-4.aux) (./chapter-5.aux) (./chapter-6.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6C9C7993353C89FFD4359EE76807458D;4531.
+(rerunfilecheck)             Checksum: 71DAED4629A20033F2BD67E72B593D7C;4666.
 
 
 LaTeX Warning: There were undefined references.
@@ -1293,10 +1289,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 19511 strings out of 492649
- 358765 string characters out of 6129622
- 442771 words of memory out of 5000000
- 22751 multiletter control sequences out of 15000+600000
+ 19523 strings out of 492649
+ 358941 string characters out of 6129622
+ 442884 words of memory out of 5000000
+ 22754 multiletter control sequences out of 15000+600000
  9272 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,61p,930b,650s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1319,10 +1315,10 @@ e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/
 2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2
 018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/201
 8/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (55 pages, 1106741 bytes).
+Output written on thesis.pdf (57 pages, 1113042 bytes).
 PDF statistics:
- 1193 PDF objects out of 1200 (max. 8388607)
- 867 compressed objects within 9 object streams
- 195 named destinations out of 1000 (max. 500000)
- 638 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1218 PDF objects out of 1440 (max. 8388607)
+ 890 compressed objects within 9 object streams
+ 200 named destinations out of 1000 (max. 500000)
+ 654 words of extra memory for PDF output out of 10000 (max. 10000000)
 

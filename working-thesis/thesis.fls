@@ -369,6 +369,8 @@ INPUT chapters/c5/gc-regions.tex
 OUTPUT chapter-6.aux
 INPUT chapter-6.tex
 INPUT chapter-6.tex
+INPUT chapters/c6/conclusions.tex
+INPUT chapters/c6/conclusions.tex
 INPUT thesis.bbl
 INPUT thesis.bbl
 INPUT thesis.aux
