@@ -1,0 +1,31 @@
+digraph G{
+
+	rankdir = "TB";
+	splines = true;
+	fill = lightgray;
+	"Region Identification" [shape = rarrow];
+	subgraph cluster_0 {
+		 "Novel Genome Assemblies" [shape = note];
+		 label = "Gene Prediction";
+		 "RefSeq Genome Assemblies" [shape = cylinder];
+		 "RefSeq RNA Reads" [shape = cylinder];
+		 "RefSeq Gene Calls" [shape = cylinder];
+		 {rank = same; "RefSeq Genome Assemblies"; "RefSeq RNA Reads"};
+		 "GeneMark Gene Prediction" [shape = box3d];
+		 "Braker2 Gene Prediction" [shape = box3d];
+		 "RefSeq Genome Assemblies" -> "GeneMark Gene Prediction";
+		 "RefSeq Genome Assemblies" -> "Braker2 Gene Prediction";
+		 "RefSeq RNA Reads" -> "Braker2 Gene Prediction";
+		 "Braker2 Gene Calls" [shape = note];
+		 "GeneMark Gene Calls" [shape = note];
+		 "Braker2 Gene Prediction" -> "Braker2 Gene Calls"
+		 "GeneMark Gene Prediction" -> "GeneMark Gene Calls"
+		 {rank = same; "RefSeq Gene Calls"; "Braker2 Gene Calls"; "GeneMark Gene Calls"}
+
+	}		 
+	"Novel Genome Assemblies" -> "GeneMark Gene Prediction";
+	"Novel Genome Assemblies" -> "Braker2 Gene Prediction";
+	"GeneMark Gene Calls" -> "Region Identification";
+	"Braker2 Gene Calls" -> "Region Identification";
+	"RefSeq Gene Calls" -> "Region Identification";
+}

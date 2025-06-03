@@ -1,0 +1,8 @@
+digraph G{
+
+	"Illumina Reads" [shape = cylinder];
+	"Nanopore Reads" [shape = cylinder];
+	"NextDenovo" [shape = box3d];
+	"NextPolish" [shape = box3d];
+	"Assembled Genomes" [shape = cds];
+}

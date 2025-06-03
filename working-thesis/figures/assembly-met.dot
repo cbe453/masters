@@ -1,0 +1,35 @@
+digraph G{
+
+	"Gene Prediction and Further Processing" [shape = rarrow];
+	#"Identify AT-rich Genomic Sequence" [shape = box3d];
+
+	splines = ortho;
+	rankdir = "TB";
+	subgraph cluster_0 {
+		 style = filled;
+		 color = lightgray;
+		 "Illumina Reads" [shape = cylinder];
+		 "Trimmomatic Filtering" [shape = box3d];
+		 "Nanopore Reads" [shape = cylinder];
+		 "NextDenovo Assembly" [shape = box3d];
+		 "NextPolish Polishing" [shape = box3d];
+		 "Trimmed Illumina Reads" [shape = note];
+		 "Novel Genome Assemblies" [shape = note];
+		 "Illumina Reads" -> "Trimmomatic Filtering";
+		 "Trimmomatic Filtering" -> "Trimmed Illumina Reads";
+		 "Trimmed Illumina Reads" -> "NextDenovo Assembly";
+		 "Nanopore Reads" -> "NextDenovo Assembly";
+		 "NextDenovo Assembly" -> "NextPolish Polishing" -> "Novel Genome Assemblies";
+		 "QUAST Assembly Assessment" [shape = box3d];
+		 "Novel Genome Assemblies" -> "QUAST Assembly Assessment";
+		 "Assembly Metrics" [shape = tab];
+		 "QUAST Assembly Assessment" -> "Assembly Metrics";
+		 #{rank = same; "Assembled Genomes"; "QUAST Assembly Assessment"};
+		 {rank = same; "Illumina Reads"; "Nanopore Reads"};
+		 label = "Sequence Filtering and Assembly";
+	 	 #{rank = same; "Novel GA"; "Gene Prediction and Further Processing"};
+	}
+
+	#"Assembled Genomes" -> "Identify AT-rich Genomic Sequence";
+	"Novel Genome Assemblies" -> "Gene Prediction and Further Processing";
+}

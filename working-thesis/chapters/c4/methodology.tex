@@ -1,4 +1,4 @@
-\section{Workflow Overview}
+\section{Methodology Overview}
 
 The general methodology for this work is described in figure
 \ref{fig:workflow}. A workflow, is presented in Figure
@@ -8,19 +8,19 @@ a diamond, while initial and intermediate datasets are shown
 cirlces. The following sections discuss the steps taken to produce the
 results for this project.
 
-\begin{figure}
-  \centering
-  \makebox[0pt]{
-    \includegraphics[width=1.25\textwidth]{./figures/data-flowchart.pdf}
-  }
-  \caption{A flowchart of the methodology followed in this
-    research. The workflow is broken up into sections based on the
-    processes and data involved at each step. Oval-shaped nodes
-    represent steps involved in the processing of data, while
-    rectangular nodes represent input and intermediate datasets as
-    well as results.}
-  \label{fig:workflow}
-\end{figure}
+%\begin{figure}
+%  \centering
+%  \makebox[0pt]{
+%    \includegraphics[width=1.25\textwidth]{./figures/data-flowchart.pdf}
+%  }
+%  \caption{A flowchart of the methodology followed in this
+%    research. The workflow is broken up into sections based on the
+%    processes and data involved at each step. Oval-shaped nodes
+%    represent steps involved in the processing of data, while
+%    rectangular nodes represent input and intermediate datasets as
+%    well as results.}
+%  \label{fig:workflow}
+%\end{figure}
 
 
 \section{Sequence Pre-processing and Assembly}
@@ -29,10 +29,10 @@ results for this project.
 % The training was performed using roughly 145 million Illumina
 % paired end RNAseq reads on the \textit{Trichoderma reesei} genome.
 
-Genomic sequences were generated for DC1 and Tsth20 using
-Nanopore\cite{Wang2021} and Illumina\cite{Bennett2004} sequencing
-technologies by Brendan Ashby at the Global Institute for Food
-Security at the University of Saskatchewan. Nanopore data was not
+Genomic sequences for assembling were generated for DC1 and Tsth20
+using Nanopore\cite{Wang2021} and Illumina\cite{Bennett2004}
+sequencing technologies by Brendan Ashby at the Global Institute for
+Food Security at the University of Saskatchewan. Nanopore data was not
 processed prior to assembly. Illumina sequencing data was filtered
 using Trimmomatic v0.38\cite{Bolger2014} with filtering criteria as
 follows: SLIDINGWINDOW:4:28, LEADING:28, TRAILING:28, MINLEN:75. Only

@@ -1,0 +1,5 @@
+digraph G{
+
+	"Illumina Reads" [shape = cylinder];
+	"Nanopore Reads" [shape = cylinder];
+}

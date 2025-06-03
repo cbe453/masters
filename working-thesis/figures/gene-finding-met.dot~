@@ -1,0 +1,6 @@
+digraph G{
+
+	"Assembled Genomes" [shape = note];
+	"RefSeq Genomes" [shape = cylinder];
+	"RefSeq RNA Reads" [shape = cylinder];
+}
