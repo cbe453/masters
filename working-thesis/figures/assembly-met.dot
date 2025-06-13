@@ -1,13 +1,18 @@
 digraph G{
 
-	"Gene Prediction and Further Processing" [shape = rarrow];
+	subgraph cluster_1 {
+		 style = filled;
+		 color = palegreen1;
+		 "Gene Prediction and Further Processing" [shape = rarrow];
+		 
+	}
+	
 	#"Identify AT-rich Genomic Sequence" [shape = box3d];
-
-	splines = ortho;
+	#splines = ortho;
 	rankdir = "TB";
 	subgraph cluster_0 {
 		 style = filled;
-		 color = lightgray;
+		 color = wheat;
 		 "Illumina Reads" [shape = cylinder];
 		 "Trimmomatic Filtering" [shape = box3d];
 		 "Nanopore Reads" [shape = cylinder];
@@ -26,10 +31,23 @@ digraph G{
 		 "QUAST Assembly Assessment" -> "Assembly Metrics";
 		 #{rank = same; "Assembled Genomes"; "QUAST Assembly Assessment"};
 		 {rank = same; "Illumina Reads"; "Nanopore Reads"};
-		 label = "Sequence Filtering and Assembly";
+		 label = "Sequence Processing and Assembly";
 	 	 #{rank = same; "Novel GA"; "Gene Prediction and Further Processing"};
+		 "AT-rich Sequence\n Identification" [shape = box3d];
+		 "Novel Genome Assemblies" -> "AT-rich Sequence\n Identification";
+		 "RefSeq Genome Assemblies" [shape = cylinder];
+		 "RefSeq Genome Assemblies" -> "AT-rich Sequence\n Identification";
+		 "AT-rich Sequence\n Identification" -> "AT-rich Sequences"
+		 "AT-rich Sequences" [shape = note];
+	}
+
+	subgraph cluster_2 {
+		 style = filled;
+		 color = steelblue1;
+		 "Region Identification" [shape = rarrow]
 	}
 
 	#"Assembled Genomes" -> "Identify AT-rich Genomic Sequence";
 	"Novel Genome Assemblies" -> "Gene Prediction and Further Processing";
+	"AT-rich Sequences" -> "Region Identification";
 }

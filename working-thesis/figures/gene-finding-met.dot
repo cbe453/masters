@@ -2,11 +2,25 @@ digraph G{
 
 	rankdir = "TB";
 	splines = true;
-	fill = lightgray;
-	"Region Identification" [shape = rarrow];
+	style = filled;
+	color = palegreen1;
+
+	subgraph cluster_1 {
+
+		 style = filled;
+		 color = steelblue1;
+		"Region Identification" [shape = rarrow];
+	}
+
+	subgraph cluster_2 {
+		 style = filled;
+		 color = turquoise;
+		 "Evaluation and Validation" [shape = rarrow];
+	}
+
 	subgraph cluster_0 {
 		 "Novel Genome Assemblies" [shape = note];
-		 label = "Gene Prediction";
+		 label = "Gene Prediction and Processing";
 		 "RefSeq Genome Assemblies" [shape = cylinder];
 		 "RefSeq RNA Reads" [shape = cylinder];
 		 "RefSeq Gene Calls" [shape = cylinder];
@@ -21,8 +35,18 @@ digraph G{
 		 "Braker2 Gene Prediction" -> "Braker2 Gene Calls"
 		 "GeneMark Gene Prediction" -> "GeneMark Gene Calls"
 		 {rank = same; "RefSeq Gene Calls"; "Braker2 Gene Calls"; "GeneMark Gene Calls"}
+		 "CDS Processing" [shape = box3d];
+		 "GeneMark Gene Calls" -> "CDS Processing";
+		 "Braker2 Gene Calls" -> "CDS Processing";
+		 "RefSeq Gene Calls" -> "CDS Processing";
+		 "GeneMark Gene Calls" -> "Evaluation and Validation";
+                 "Braker2 Gene Calls" -> "Evaluation and Validation";
+                 "RefSeq Gene Calls" -> "Evaluation and Validation";
+		 "CDS Statistics" [shape = tab];
+		 "CDS Processing" -> "CDS Statistics";
 
-	}		 
+	}
+
 	"Novel Genome Assemblies" -> "GeneMark Gene Prediction";
 	"Novel Genome Assemblies" -> "Braker2 Gene Prediction";
 	"GeneMark Gene Calls" -> "Region Identification";

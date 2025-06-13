@@ -22,9 +22,66 @@ results for this project.
 %  \label{fig:workflow}
 %\end{figure}
 
+\section{Selection of Datasets from NCBI}
+\label{met:datasets}
+
+Three forms of inputs from NCBI were selected for use in this
+work. The first set of inputs are RefSeq assemblies of three
+\textit{Trichoderma} accessions for \textit{T. virens},
+\textit{T. harzianum}, and \textit{T. virens}. NCBI RefSeq accession
+IDs for those assemblies are GCF\_000167675.1\_v2.0,
+GCF\_003025095.1\_Triha\_v1.0, and GCF\_000170995.1\_TRIVI\_v2.0,
+respectively. \textit{T. reesei} was selected as it is the most
+well-studied \textit{Trichoderma} species. \textit{T. harzianum} and
+\textit{T. virens} were selected as additional datasets due to their
+prevalence in literature as well.
+
+The second set of inputs are RNAseq datastes from \textit{T. reesei},
+used as input in the training process for Braker2. The SRA accession
+IDs for those sequencing runs are: . Limited RNAseq datasets were used
+as there were few RNAseq datasets were available at the beginning of
+this project.
+
+The final set of inputs are protein sequences from RefSeq individuals
+\textit{T. atroviride}, \textit{Fusarium graminarium}, and
+\textit{Saccharomyces cerevisiae}. The NCBI accession IDs for these
+assemblies and associated protein sequences are GCF\_000171015.1,
+GCF\_000240135.3, and GCF\_000146045.2, respectively.
+
+\section{Sequence Processing and Assembly Workflow}
+\label{met:seq-workflow}
+
+To better understand the methods used in sequence processing and
+assembly, the steps will be collected into several sub-workflows,
+beginning with sequence processing and assembly as shown in Figure
+\ref{fig:seq-workflow}. Processing steps are represented by boxes,
+intermediate results for use in other steps are represented by pages,
+final results used in discussion are represented by folders, and
+datasets that were not produced in this work are represented by
+cylinders. Other workflows that use intermediate datasets from this
+workflow are depicted as arrows outside of the brown subgraph.
+
+The processing steps Trimmomatic filtering, NextDenovo assembly,
+NextPolish Polishing and QUAST assembly assessment are described in
+Section \ref{met:seq-process}. The AT-rich sequence identification
+process is described in Section \ref{met:atrich}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{figures/assembly-met.pdf}
+  \caption{A workflow (in brown) depicting the steps taken to process
+    input sequences, generate assemblies, and post-process those
+    assemblies for use in other workflows. Processing steps are
+    represented by boxes, intermediate results for use in other steps
+    are represented by pages, final results used in discussion are
+    represented by folders, and datasets that were not produced in
+    this work are represented by cylinders. Other workflows are
+    represented by arrows outside of the brown subgraph.}
+  \label{fig:seq-workflow}
+\end{figure}
 
 \section{Sequence Pre-processing and Assembly}
-
+\label{met:seq-process}
 % somewhere here...
 % The training was performed using roughly 145 million Illumina
 % paired end RNAseq reads on the \textit{Trichoderma reesei} genome.
@@ -75,34 +132,41 @@ default parameters.
 %used for this program follow the example commands provided on the
 %GitHub page for the GenericRepeatFinder project.
 
-\section{Selection of Datasets from NCBI}
-\label{met:datasets}
 
-Three forms of inputs from NCBI were selected for use in this
-work. The first set of inputs are RefSeq assemblies of three
-\textit{Trichoderma} accessions for \textit{T. virens},
-\textit{T. harzianum}, and \textit{T. virens}. NCBI RefSeq accession
-IDs for those assemblies are GCF\_000167675.1\_v2.0,
-GCF\_003025095.1\_Triha\_v1.0, and GCF\_000170995.1\_TRIVI\_v2.0,
-respectively. \textit{T. reesei} was selected as it is the most
-well-studied \textit{Trichoderma} species. \textit{T. harzianum} and
-\textit{T. virens} were selected as additional datasets due to their
-prevalence in literature as well.
+\section{Gene Prediction and Further Processing}
+\label{met:predict-workflow}
 
-The second set of inputs are RNAseq datastes from \textit{T. reesei},
-used as input in the training process for Braker2. The SRA accession
-IDs for those sequencing runs are: . Limited RNAseq datasets were used
-as there were few RNAseq datasets were available at the beginning of
-this project.
+To better understand the methods used in gene prediction and CDS
+analysis, the steps will be collected into several sub-workflows,
+beginning with sequence processing and assembly as shown in Figure
+\ref{fig:predict-workflow}. Processing steps are represented by boxes,
+intermediate results for use in other steps are represented by pages,
+final results used in discussion are represented by folders, and
+datasets that were not produced in this work are represented by
+cylinders. Other workflows that use intermediate datasets from this
+workflow are depicted as arrows outside of the green subgraph.
 
-The final set of inputs are protein sequences from RefSeq individuals
-\textit{T. atroviride}, \textit{Fusarium graminarium}, and
-\textit{Saccharomyces cerevisiae}. The NCBI accession IDs for these
-assemblies and associated protein sequences are GCF\_000171015.1,
-GCF\_000240135.3, and GCF\_000146045.2, respectively.
+The GeneMark gene prediction process is described in Section
+\ref{met:genemark}, while the Braker2 gene prediction process is
+described in Section \ref{met:braker2}. The CDS processing step is
+described in Section \ref{met:cds-stats}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{figures/gene-finding-met.pdf}
+  \caption{A workflow (green) depicting the steps taken to predict
+    genes for use in other workflows and process CDS sequence
+    lengths. Processing steps are represented by boxes, intermediate
+    results for use in other steps are represented by pages, final
+    results used in discussion are represented by folders, and
+    datasets that were not produced in this work are represented by
+    cylinders. Other workflows are represented by arrows outside of the
+    green subgraph.}
+\end{figure}
 
 \section{Gene Prediction Using GeneMark-ES}
 \label{met:genemark}
+
 
 \textit{Ab initio} gene finding was performed using GeneMark-ES
 v4.71\cite{Borodovsky2011} with DC1, Tsth20 and selected RefSeq
@@ -148,24 +212,32 @@ work.
 %simply points to the directory where TSEBRA is located Both Braker2
 %and TSEBRA can be cloned directly from GitHub (links to come)
 
-\section{Statistical Analysis CDS Lengths}
-
-In section \ref{section:lengths}, the lengths in base pairs of coding
-DNA sequences (CDS) from predicted genes were tested using a binomial
-test, under the null hypothesis that the probability of a gene being
-in normal or AT-rich genomic sequence is proportional to the total
-lengths of normal or AT-rich sequence in the assembly.
+\section{Statistical Analysis of CDS Lengths}
+\label{met:cds-stats}
+The distribution of gene lengths predicted by a gene-finder is an
+important feature to consider when selecting a gene finding tool, as
+genes of a particular length may be of interest to researchers, but
+more importantly, gene-finders may be biased to certain distributions
+based on their underlying models. These biased distributions may
+differ from the true distribution of CDS lengths leading to
+propagation of sub-optimal gene-finding results. To determine, at
+minimum, if differences exist between distributions of predicted gene
+lengths from each tool, the $log^10$ lengths of coding sequences (CDS)
+were subject to a two-sample Kolmogorov-Smirnov test\cite{ref1}.
 
 \section{Evaluating Gene-Finder Performance Using BUSCO}
 
-To assess the general performance of gene-finders, BUSCO
-v5.7.1\cite{10.1093/bioinformatics/btv351} was selected as a tool to
-determine a gene-finder's ability to predict a set of conserved
-ortholagous genes. The BUSCO Metaeuk pipeline was run using the BUSCO
-fungi\_Odb10 fungal lineage dataset to capture highly conserved genes
-in fungal genomes. This pipeline was applied to all genome assemblies
-used in this work. (note for us to discuss: I used transcriptome
-mode...)
+While novel gene predictions are of great interest in new subjects, it
+is also important to confirm that gene-finders are predicting genes
+that are expected to be present in the organism of
+interest\cite{https://doi.org/10.1002/cpz1.323}. To determine if this
+is true, BUSCO v5.7.1\cite{10.1093/bioinformatics/btv351} was selected
+as a tool to determine a gene-finder's ability to predict a set of
+conserved ortholagous genes. The BUSCO Metaeuk pipeline was run using
+the BUSCO fungi\_Odb10 fungal lineage dataset to capture highly
+conserved genes in fungal genomes. This pipeline was applied to all
+genome assemblies used in this work. (note for us to discuss: I used
+transcriptome mode...)
 
 \section{Region Identification Procedure}
 \label{section:region-met}
@@ -241,7 +313,7 @@ to the gene predictions and processed using the region identification
 algorithm in section \ref{section:region-met}.
 
 \section{Gene predictions in AT-rich Genomic Sequence}
-
+\label{met:atrich}
 AT-rich genomic sequences were identified using sliding windows of GC
 content over each \textit{Trichoderma} assembly. Sliding windows were
 generated using the isochore program from the EMBOSS tool suite

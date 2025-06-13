@@ -120,6 +120,11 @@ Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
   algorithm}.
 \newblock {\em Nucleic Acids Research}, 33(20):6494--6506, 2005.
 
+\bibitem{https://doi.org/10.1002/cpz1.323}
+Mos{\`{e}} Manni, Matthew~R Berkeley, Mathieu Seppey, and Evgeny~M Zdobnov.
+\newblock {BUSCO: Assessing Genomic Data Quality and Beyond}.
+\newblock {\em Current Protocols}, 1(12):e323, 2021.
+
 \bibitem{Marx2023}
 Vivien Marx.
 \newblock {Method of the year: long-read sequencing}.
