@@ -1,0 +1,38 @@
+digraph G {
+
+	subgraph cluster_0 {
+		 style = filled;
+		 color = yellow;
+		 label = "Evaluation and Validation"
+		 "RefSeq Gene Calls" [shape = cylinder];
+		 "GeneMark Gene Calls" [shape = tab];
+		 "Braker2 Gene Calls" [shape = tab];
+		 "InterProScan\nFunctional Annotation" [shape = box3d];
+		 "GeneMark Gene Calls" -> "InterProScan\nFunctional Annotation";
+		 "RefSeq Gene Calls" -> "InterProScan\nFunctional Annotation";
+		 "Braker2 Gene Calls" -> "InterProScan\nFunctional Annotation";
+		 "Pfam Matches" [shape = tab];
+		 "InterProScan\nFunctional Annotation" -> "Pfam Matches";
+		 "BLAST Alignments" [shape = box3d];
+		 "GeneMark Gene Calls" -> "BLAST Alignments";
+		 "RefSeq Gene Calls" -> "BLAST Alignments";
+		 "Braker2 Gene Calls" -> "BLAST Alignments";
+		 "BLAST Hits" [shape = tab];
+		 "BLAST Alignments" -> "BLAST Hits";
+		 "BUSCO Evaluation" [shape = box3d];
+		 "GeneMark Gene Calls" -> "BUSCO Evaluation";
+                 "RefSeq Gene Calls" -> "BUSCO Evaluation";
+                 "Braker2 Gene Calls" -> "BUSCO Evaluation";
+		 "BUSCO Results" [shape = tab];
+		 "BUSCO Evaluation" -> "BUSCO Results";
+	}
+
+	subgraph cluster_1 {
+		 style = filled;
+		 color = steelblue1;
+		 "Region Identification" [shape = rarrow];
+	}
+
+	"BLAST Hits" -> "Region Identification";
+	"Pfam Matches" -> "Region Identification";
+}

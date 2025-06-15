@@ -14,12 +14,12 @@ digraph G{
 
 	subgraph cluster_2 {
 		 style = filled;
-		 color = turquoise;
+		 color = yellow;
 		 "Evaluation and Validation" [shape = rarrow];
 	}
 
 	subgraph cluster_0 {
-		 "Novel Genome Assemblies" [shape = note];
+		 "Novel Genome Assemblies" [shape = tab];
 		 label = "Gene Prediction and Processing";
 		 "RefSeq Genome Assemblies" [shape = cylinder];
 		 "RefSeq RNA Reads" [shape = cylinder];
@@ -30,8 +30,8 @@ digraph G{
 		 "RefSeq Genome Assemblies" -> "GeneMark Gene Prediction";
 		 "RefSeq Genome Assemblies" -> "Braker2 Gene Prediction";
 		 "RefSeq RNA Reads" -> "Braker2 Gene Prediction";
-		 "Braker2 Gene Calls" [shape = note];
-		 "GeneMark Gene Calls" [shape = note];
+		 "Braker2 Gene Calls" [shape = tab];
+		 "GeneMark Gene Calls" [shape = tab];
 		 "Braker2 Gene Prediction" -> "Braker2 Gene Calls"
 		 "GeneMark Gene Prediction" -> "GeneMark Gene Calls"
 		 {rank = same; "RefSeq Gene Calls"; "Braker2 Gene Calls"; "GeneMark Gene Calls"}
@@ -52,4 +52,9 @@ digraph G{
 	"GeneMark Gene Calls" -> "Region Identification";
 	"Braker2 Gene Calls" -> "Region Identification";
 	"RefSeq Gene Calls" -> "Region Identification";
+	edge[style=invis];
+	#"CDS Statistics" -> "Evaluation and Validation";
+	#"CDS Statistics" -> "Region Identification";
+	"Evaluation and Validation" -> "Region Identification";
+
 }

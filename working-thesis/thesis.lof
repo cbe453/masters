@@ -5,18 +5,20 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces An example of GFF entries for a single gene.\relax }}{9}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A workflow (in brown) depicting the steps taken to process input sequences, generate assemblies, and post-process those assemblies for use in other workflows. Processing steps are represented by boxes, intermediate results for use in other steps are represented by pages, final results used in discussion are represented by folders, and datasets that were not produced in this work are represented by cylinders. Other workflows are represented by arrows outside of the brown subgraph.\relax }}{16}{figure.caption.16}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces A workflow (green) depicting the steps taken to predict genes for use in other workflows and process CDS sequence lengths. Processing steps are represented by boxes, intermediate results for use in other steps are represented by pages, final results used in discussion are represented by folders, and datasets that were not produced in this work are represented by cylinders. Other workflows are represented by arrows outside of the green subgraph.\relax }}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces IGV example}}{20}{figure.caption.18}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A simplified workflow used in this work. Each processing stage is is represented by an octagon, and data flows are indicated by directed edges between them. In this figure and subsequent figures, the sequence processing stage is colored brown, the gene prediction and processing stage is colored green, the evaluation and validation stage is colored yellow, and the region identification process is colored blue.\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A workflow (in brown) depicting the steps taken to process input sequences, generate assemblies, and post-process those assemblies for use in other workflows. Processing steps are represented by boxes, datasets of interest that were produced by this work are represented by folders, and datasets that were not produced in this work are represented by cylinders. Other workflows are represented by arrows outside of the brown subgraph.\relax }}{16}{figure.caption.17}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A workflow (green) depicting the steps taken to predict genes for use in other workflows and process CDS sequence lengths. Processing steps are represented by boxes, datasets of interest that were produced by this work are represented by folders, and datasets that were not produced in this work are represented by cylinders. Other workflows are represented by arrows outside of the green subgraph.\relax }}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A workflow (yellow) depicting the steps taken to evaluate and validate predicted genes. Processing steps are represented by boxes, datasets of interest that were produced by this work are represented by folders, and datasets that were not produced in this work are represented by cylinders. Other workflows using results from these processing steps are represented by arrows outside of the green subgraph.\relax }}{20}{figure.caption.19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces IGV example}}{23}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots showing proportions of sliding windows of GC content for each \textit {Trichoderma} genome assembly.\relax }}{23}{figure.caption.20}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces CDF plots part 1.}}{27}{figure.caption.22}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces CDF plots part 2.}}{28}{figure.caption.23}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots part 3.}}{29}{figure.caption.24}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Breakdown of identified regions}}{35}{figure.caption.29}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Example of a region with many gene calls}}{36}{figure.caption.30}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Predictions on opposing strands}}{37}{figure.caption.31}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Agreeing Pfam matches}}{38}{figure.caption.33}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Split Pfam matches}}{39}{figure.caption.34}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces RefSeq absence with IPS evidence}}{40}{figure.caption.35}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Plots showing proportions of sliding windows of GC content for each \textit {Trichoderma} genome assembly.\relax }}{26}{figure.caption.22}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces CDF plots part 1.}}{30}{figure.caption.24}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces CDF plots part 2.}}{31}{figure.caption.25}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots part 3.}}{32}{figure.caption.26}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Breakdown of identified regions}}{38}{figure.caption.31}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Example of a region with many gene calls}}{39}{figure.caption.32}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Predictions on opposing strands}}{40}{figure.caption.33}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Agreeing Pfam matches}}{41}{figure.caption.35}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Split Pfam matches}}{42}{figure.caption.36}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces RefSeq absence with IPS evidence}}{43}{figure.caption.37}
 \addvspace {10\p@ }

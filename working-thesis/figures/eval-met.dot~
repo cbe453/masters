@@ -1,0 +1,11 @@
+digraph G {
+
+	subgraph cluster_0 {
+		 style = filled;
+		 color = turquoise;
+		 "RefSeq Gene Calls" [shape = cylinder];
+		 "GeneMark Gene Calls" [shape = note];
+
+	}
+
+}

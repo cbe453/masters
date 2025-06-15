@@ -1,0 +1,30 @@
+digraph G{
+	subgraph cluster_0 {
+		 style = filled;
+		 color = wheat;
+		 "1. Sequence Processing and Assembly" [shape = doubleoctagon];
+	}
+
+	subgraph cluster_1 {
+		 style = filled;
+		 color = palegreen;
+		 "2. Gene Prediction and Processing" [shape = doubleoctagon];
+	}
+
+	subgraph cluster_2 {
+		 style = filled;
+		 color = yellow;
+		 "3. Evaluation and Validation" [shape = doubleoctagon];
+	}
+
+	subgraph cluster_3 {
+		 style = filled;
+		 color = steelblue1;
+		 "4. Region Identification" [shape = doubleoctagon];
+	}
+
+	"1. Sequence Processing and Assembly" -> "2. Gene Prediction and Processing";
+	"2. Gene Prediction and Processing" -> "3. Evaluation and Validation";
+	"2. Gene Prediction and Processing" -> "4. Region Identification";
+	"3. Evaluation and Validation" -> "4. Region Identification";
+}

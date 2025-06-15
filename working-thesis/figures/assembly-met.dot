@@ -18,8 +18,8 @@ digraph G{
 		 "Nanopore Reads" [shape = cylinder];
 		 "NextDenovo Assembly" [shape = box3d];
 		 "NextPolish Polishing" [shape = box3d];
-		 "Trimmed Illumina Reads" [shape = note];
-		 "Novel Genome Assemblies" [shape = note];
+		 "Trimmed Illumina Reads" [shape = tab];
+		 "Novel Genome Assemblies" [shape = tab];
 		 "Illumina Reads" -> "Trimmomatic Filtering";
 		 "Trimmomatic Filtering" -> "Trimmed Illumina Reads";
 		 "Trimmed Illumina Reads" -> "NextDenovo Assembly";
@@ -38,7 +38,7 @@ digraph G{
 		 "RefSeq Genome Assemblies" [shape = cylinder];
 		 "RefSeq Genome Assemblies" -> "AT-rich Sequence\n Identification";
 		 "AT-rich Sequence\n Identification" -> "AT-rich Sequences"
-		 "AT-rich Sequences" [shape = note];
+		 "AT-rich Sequences" [shape = tab];
 	}
 
 	subgraph cluster_2 {
