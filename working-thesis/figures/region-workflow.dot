@@ -1,0 +1,67 @@
+digraph G{
+
+	style = filled;
+	color = steelblue1;
+
+	subgraph cluster_0 {
+		label = "Region Identification";
+		"Braker2 Gene Calls" [shape = tab];
+		"GeneMark Gene Calls" [shape = tab];
+		"RefSeq Gene Calls" [shape = cylinder];
+		"Pooled Gene Calls" [shape = tab];
+		"BLAST Hits" [shape = tab];
+		"Pfam Matches" [shape = tab];
+		"AT-rich Sequences" [shape = tab];
+
+		"Braker2 Gene Calls" -> "Pooled Gene Calls";
+                "GeneMark Gene Calls" -> "Pooled Gene Calls";
+                "RefSeq Gene Calls" -> "Pooled Gene Calls";
+
+		subgraph cluster_1 {
+			fillcolor = "#EDF1F2"; 
+                    	color = "black";
+	 		label = "Regions of Genes";
+			a [label = "Identify Regions", shape = box3d];
+			shape = rect;
+			style = rounded;
+		}
+
+		"Pooled Gene Calls" -> a;
+
+		subgraph cluster_2 {
+			fillcolor = "#EDF1F2"; 
+                    	color = "black";
+			label = "Regions of Genes in\nAT-rich Genomic Sequence";
+			b [label = "Identify Regions", shape = box3d];
+			shape = rect;
+                        style = rounded;
+		}
+
+		"Pooled Gene Calls" -> b;
+		"AT-rich Sequences" -> b;
+
+		subgraph cluster_3 {
+			fillcolor = "#EDF1F2"; 
+                        color = "black";
+			label = "Regions of Genes with\nBLAST Alignments";
+			c [label = "Identify Regions", shape = box3d];
+			shape = rect;
+                        style = rounded;
+		}
+
+		"Pooled Gene Calls" -> c;
+		"BLAST Hits" -> c;
+		 
+		subgraph cluster_4 {
+			fillcolor = "#EDF1F2"; 
+                    	color = "black";
+			label = "Regions of Genes with\nPfam Matches";
+		 	d [label = "Identify Regions", shape = box3d];
+			shape = rect;
+                        style = rounded;
+		}
+
+		"Pooled Gene Calls" -> d;
+		"Pfam Matches" -> d;
+	}
+}
