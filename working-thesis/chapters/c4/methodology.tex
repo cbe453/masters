@@ -175,18 +175,24 @@ CDS processing step is described in Section \ref{met:cds-stats}.
 \section{Selection of Datasets from NCBI}
 \label{met:datasets}
 
-Three forms of inputs from NCBI were selected for use in this
-work. The first set of inputs are RefSeq assemblies of three
-\textit{Trichoderma} accessions for \textit{T. virens},
-\textit{T. harzianum}, and \textit{T. virens}. NCBI RefSeq accession
-IDs for those assemblies are GCF\_000167675.1\_v2.0,
-GCF\_003025095.1\_Triha\_v1.0, and GCF\_000170995.1\_TRIVI\_v2.0,
-respectively. \textit{T. reesei} was selected as it is the most
-well-studied \textit{Trichoderma} species. \textit{T. harzianum} and
-\textit{T. virens} were selected as additional datasets due to their
-prevalence in literature as well.
+It is important to evaluate gene finders in comparison to a standard
+or control dataset as a method of ground-truthing. Such datasets
+include reference genome sequences and their associated gene
+predictions from NCBI. In addition to control datasets, RNAseq data
+can also be used as training data for various tools as well, such as
+the evidence-based training used by Braker2. In this work, four forms
+of input were selected from NCBI for comparison and training. The
+first two datasets are assemblies and associated gene predictions of
+three RefSeq \textit{Trichoderma} accessions, with those accessions
+being \textit{T. virens}, \textit{T. harzianum}, and
+\textit{T. virens}. NCBI RefSeq accession IDs for those assemblies are
+GCF\_000167675.1\_v2.0, GCF\_003025095.1\_Triha\_v1.0, and
+GCF\_000170995.1\_TRIVI\_v2.0, respectively. \textit{T. reesei} was
+selected as it is the most well-studied \textit{Trichoderma}
+species. \textit{T. harzianum} and \textit{T. virens} were selected as
+additional datasets due to their prevalence in literature as well.
 
-The second set of inputs are RNAseq datastes from \textit{T. reesei},
+The second set of inputs are RNAseq datasets from \textit{T. reesei},
 used as input in the training process for Braker2. The SRA accession
 IDs for those sequencing runs are: . Limited RNAseq datasets were used
 as there were few RNAseq datasets were available at the beginning of
@@ -341,11 +347,45 @@ sequence. Remaining aligments were then converted to GFF format and
 processed using the region identification algorithm in
 \ref{section:region-met}
 
-\section{Region Identification Procedure}
+\section{Region Identification Overview}
+\label{section:region-overview}
+A major portion of this work was the process of identifying regions of
+overlapping features as a method of comparing gene calls from
+different assemblers. The definition of a region and the algorithm
+used to identify them is described in detail in Section
+\ref{section:region-met}, and an overview of the region identification
+workflow is shown in Figure \ref{fig:region-overview}. The top of the
+graph shows the gene calls produced by the workflow described in
+Section \ref{met:predict-workflow}, which are used as input in along
+with other previously generated datasets. These additional datasets
+may contain other information such as blast alignments or functional
+annotation can be included as features in the region identification
+process. Datasets outlined with rectangles indicate that the data
+within were processed with the input gene calls and discussed in their
+own results sections. Datasets output by the region identification
+process were then visualized with the Integrative Genomics Viewer,
+described in Section \ref{section:igv-met}
+
+\begin{figure}
+  \centering
+  \makebox[0pt]{\includegraphics[width=1.2\textwidth]{figures/region-workflow.pdf}}
+  \caption{An overview of the region identification process for
+    different datasets. Sections of the graph are outlined with
+    rectangles, indicating that the datasets within were processed
+    along with gene calls and discussed in their own results
+    sections. Processing steps are represented by boxes, datasets of
+    interest that were produced by this work are represented by
+    folders, and datasets that were not produced by this work are
+    represented by cylinders.}
+  \label{fig:region-overview}
+\end{figure}
+
+
+\section{Region Identification Algorithm}
 \label{section:region-met}
 
 Predictions and results from \ref{met:genemark} and \ref{met:braker2}
-were then processed into overlapping regions of predictions and
+were processed into regions of overlapping gene predictions and
 annotations. A region is defined as a pair of start and stop genomic
 coordinates which contains one or more overlapping features. We define
 a feature as a set of start and stop positions associated with a
@@ -412,6 +452,7 @@ region identification algorithm described in section
 \ref{section:region-met}.
 
 \section{Visualization of Identified Regions}
+\label{section:igv-met}
 Results from the region identification process were visualized using
 the IGV genome browser v2.19.1\cite{Robinson2011}. An example of an
 IGV screenshot is shown in Figure \ref{fig:igv-methods}
