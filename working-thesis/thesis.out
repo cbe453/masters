@@ -41,12 +41,12 @@
 \BOOKMARK [1][-]{section.4.1}{Methodology Overview}{chapter.4}% 41
 \BOOKMARK [1][-]{section.4.2}{Sequence Processing and Assembly Workflow}{chapter.4}% 42
 \BOOKMARK [1][-]{section.4.3}{Sequence Pre-processing and Assembly}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.4}{Gene Prediction and Further Processing}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.4}{Overview of Gene Prediction and Further Processing}{chapter.4}% 44
 \BOOKMARK [1][-]{section.4.5}{Selection of Datasets from NCBI}{chapter.4}% 45
 \BOOKMARK [1][-]{section.4.6}{Gene Prediction Using GeneMark-ES}{chapter.4}% 46
 \BOOKMARK [1][-]{section.4.7}{Gene Prediction Using Braker2}{chapter.4}% 47
 \BOOKMARK [1][-]{section.4.8}{Statistical Analysis of CDS Lengths}{chapter.4}% 48
-\BOOKMARK [1][-]{section.4.9}{Evaluation and Validation of Gene Predictions}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.9}{Overview of Evaluation and Validation of Gene Predictions}{chapter.4}% 49
 \BOOKMARK [1][-]{section.4.10}{Evaluating Gene-Finder Performance Using BUSCO}{chapter.4}% 50
 \BOOKMARK [1][-]{section.4.11}{Functional Annotation Using InterProScan}{chapter.4}% 51
 \BOOKMARK [1][-]{section.4.12}{Ground-truthing with BLAST}{chapter.4}% 52
