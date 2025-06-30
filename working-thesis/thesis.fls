@@ -301,7 +301,12 @@ INPUT ./figures/eval-met.pdf
 INPUT figures/region-workflow.pdf
 INPUT ./figures/region-workflow.pdf
 INPUT ./figures/region-workflow.pdf
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT figures/dc1-low-gc-fastqc.png
+INPUT ./figures/dc1-low-gc-fastqc.png
+INPUT ./figures/dc1-low-gc-fastqc.png
 INPUT figures/igv/igv-agreement-thin-number.png
 INPUT ./figures/igv/igv-agreement-thin-number.png
 INPUT ./figures/igv/igv-agreement-thin-number.png
