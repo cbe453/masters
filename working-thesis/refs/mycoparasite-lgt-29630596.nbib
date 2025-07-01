@@ -1,0 +1,203 @@
+PMID- 29630596
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20180626
+LR  - 20240314
+IS  - 1553-7404 (Electronic)
+IS  - 1553-7390 (Print)
+IS  - 1553-7390 (Linking)
+VI  - 14
+IP  - 4
+DP  - 2018 Apr
+TI  - Massive lateral transfer of genes encoding plant cell wall-degrading enzymes to 
+      the mycoparasitic fungus Trichoderma from its plant-associated hosts.
+PG  - e1007322
+LID - 10.1371/journal.pgen.1007322 [doi]
+LID - e1007322
+AB  - Unlike most other fungi, molds of the genus Trichoderma (Hypocreales, Ascomycota) 
+      are aggressive parasites of other fungi and efficient decomposers of plant 
+      biomass. Although nutritional shifts are common among hypocrealean fungi, there 
+      are no examples of such broad substrate versatility as that observed in 
+      Trichoderma. A phylogenomic analysis of 23 hypocrealean fungi (including nine 
+      Trichoderma spp. and the related Escovopsis weberi) revealed that the genus 
+      Trichoderma has evolved from an ancestor with limited cellulolytic capability 
+      that fed on either fungi or arthropods. The evolutionary analysis of Trichoderma 
+      genes encoding plant cell wall-degrading carbohydrate-active enzymes and 
+      auxiliary proteins (pcwdCAZome, 122 gene families) based on a gene tree / species 
+      tree reconciliation demonstrated that the formation of the genus was accompanied 
+      by an unprecedented extent of lateral gene transfer (LGT). Nearly one-half of the 
+      genes in Trichoderma pcwdCAZome (41%) were obtained via LGT from plant-associated 
+      filamentous fungi belonging to different classes of Ascomycota, while no LGT was 
+      observed from other potential donors. In addition to the ability to feed on 
+      unrelated fungi (such as Basidiomycota), we also showed that Trichoderma is 
+      capable of endoparasitism on a broad range of Ascomycota, including extant LGT 
+      donors. This phenomenon was not observed in E. weberi and rarely in other 
+      mycoparasitic hypocrealean fungi. Thus, our study suggests that LGT is linked to 
+      the ability of Trichoderma to parasitize taxonomically related fungi (up to 
+      adelphoparasitism in strict sense). This may have allowed primarily mycotrophic 
+      Trichoderma fungi to evolve into decomposers of plant biomass.
+FAU - Druzhinina, Irina S
+AU  - Druzhinina IS
+AUID- ORCID: 0000-0003-2821-5268
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+FAU - Chenthamara, Komal
+AU  - Chenthamara K
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+FAU - Zhang, Jian
+AU  - Zhang J
+AD  - Jiangsu Provincial Key Lab of Organic Solid Waste Utilization, Nanjing 
+      Agricultural University, Nanjing, China.
+FAU - Atanasova, Lea
+AU  - Atanasova L
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+FAU - Yang, Dongqing
+AU  - Yang D
+AD  - Jiangsu Provincial Key Lab of Organic Solid Waste Utilization, Nanjing 
+      Agricultural University, Nanjing, China.
+FAU - Miao, Youzhi
+AU  - Miao Y
+AD  - Jiangsu Provincial Key Lab of Organic Solid Waste Utilization, Nanjing 
+      Agricultural University, Nanjing, China.
+FAU - Rahimi, Mohammad J
+AU  - Rahimi MJ
+AUID- ORCID: 0000-0002-8444-8608
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+FAU - Grujic, Marica
+AU  - Grujic M
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+FAU - Cai, Feng
+AU  - Cai F
+AUID- ORCID: 0000-0002-3998-3097
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+AD  - Jiangsu Provincial Key Lab of Organic Solid Waste Utilization, Nanjing 
+      Agricultural University, Nanjing, China.
+FAU - Pourmehdi, Shadi
+AU  - Pourmehdi S
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+FAU - Salim, Kamariah Abu
+AU  - Salim KA
+AUID- ORCID: 0000-0001-7819-5010
+AD  - Environmental and Life Sciences, Universiti Brunei Darussalam, Bandar Seri 
+      Begawan, Brunei Darussalam.
+FAU - Pretzer, Carina
+AU  - Pretzer C
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+FAU - Kopchinskiy, Alexey G
+AU  - Kopchinskiy AG
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+FAU - Henrissat, Bernard
+AU  - Henrissat B
+AUID- ORCID: 0000-0002-3434-8588
+AD  - Architecture et Fonction des Macromolécules Biologiques, CNRS, Aix-Marseille 
+      Université, Marseille, France.
+AD  - INRA, USC 1408 AFMB, Marseille, France.
+AD  - Department of Biological Sciences, King Abdulaziz University, Jeddah, Saudi 
+      Arabia.
+FAU - Kuo, Alan
+AU  - Kuo A
+AUID- ORCID: 0000-0003-3514-3530
+AD  - US Department of Energy Joint Genome Institute, Walnut Creek, CA, United States 
+      of America.
+FAU - Hundley, Hope
+AU  - Hundley H
+AD  - US Department of Energy Joint Genome Institute, Walnut Creek, CA, United States 
+      of America.
+FAU - Wang, Mei
+AU  - Wang M
+AD  - US Department of Energy Joint Genome Institute, Walnut Creek, CA, United States 
+      of America.
+FAU - Aerts, Andrea
+AU  - Aerts A
+AD  - US Department of Energy Joint Genome Institute, Walnut Creek, CA, United States 
+      of America.
+FAU - Salamov, Asaf
+AU  - Salamov A
+AD  - US Department of Energy Joint Genome Institute, Walnut Creek, CA, United States 
+      of America.
+FAU - Lipzen, Anna
+AU  - Lipzen A
+AD  - US Department of Energy Joint Genome Institute, Walnut Creek, CA, United States 
+      of America.
+FAU - LaButti, Kurt
+AU  - LaButti K
+AUID- ORCID: 0000-0002-5838-1972
+AD  - US Department of Energy Joint Genome Institute, Walnut Creek, CA, United States 
+      of America.
+FAU - Barry, Kerrie
+AU  - Barry K
+AD  - US Department of Energy Joint Genome Institute, Walnut Creek, CA, United States 
+      of America.
+FAU - Grigoriev, Igor V
+AU  - Grigoriev IV
+AD  - US Department of Energy Joint Genome Institute, Walnut Creek, CA, United States 
+      of America.
+AD  - Department of Plant and Microbial Biology, University of California Berkeley, 
+      Berkeley, CA, United States of America.
+FAU - Shen, Qirong
+AU  - Shen Q
+AD  - Jiangsu Provincial Key Lab of Organic Solid Waste Utilization, Nanjing 
+      Agricultural University, Nanjing, China.
+FAU - Kubicek, Christian P
+AU  - Kubicek CP
+AD  - Microbiology and Applied Genomics Group, Research Area Biochemical Technology, 
+      Institute of Chemical, Environmental & Bioscience Engineering, TU Wien, Vienna, 
+      Austria.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20180409
+PL  - United States
+TA  - PLoS Genet
+JT  - PLoS genetics
+JID - 101239074
+RN  - 0 (Fungal Proteins)
+RN  - EC 3.2.1.- (Glycoside Hydrolases)
+SB  - IM
+MH  - Basidiomycota/classification/enzymology/genetics
+MH  - Cell Wall/*metabolism/microbiology
+MH  - Fungal Proteins/*genetics/metabolism
+MH  - *Gene Transfer, Horizontal
+MH  - Glycoside Hydrolases/genetics/metabolism
+MH  - Host-Pathogen Interactions
+MH  - Hyphae/enzymology/genetics/ultrastructure
+MH  - Hypocreales/classification/enzymology/genetics
+MH  - Microscopy, Electron, Scanning
+MH  - Phylogeny
+MH  - Plants/*metabolism/microbiology
+MH  - Trichoderma/enzymology/*genetics/physiology
+PMC - PMC5908196
+COIS- The authors have declared that no competing interests exist.
+EDAT- 2018/04/10 06:00
+MHDA- 2018/06/27 06:00
+PMCR- 2018/04/09
+CRDT- 2018/04/10 06:00
+PHST- 2017/11/01 00:00 [received]
+PHST- 2018/03/20 00:00 [accepted]
+PHST- 2018/04/19 00:00 [revised]
+PHST- 2018/04/10 06:00 [pubmed]
+PHST- 2018/06/27 06:00 [medline]
+PHST- 2018/04/10 06:00 [entrez]
+PHST- 2018/04/09 00:00 [pmc-release]
+AID - PGENETICS-D-17-02166 [pii]
+AID - 10.1371/journal.pgen.1007322 [doi]
+PST - epublish
+SO  - PLoS Genet. 2018 Apr 9;14(4):e1007322. doi: 10.1371/journal.pgen.1007322. 
+      eCollection 2018 Apr.
