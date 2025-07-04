@@ -19,6 +19,13 @@ S~Andrews.
 \newblock {FastQC: a quality control tool for high throughput sequence data.},
   2010.
 
+\bibitem{Baker2012}
+Scott~E Baker, Giancarlo Perrone, Nathan~M Richardson, Antonia Gallo, and
+  Christian~P Kubicek.
+\newblock {Phylogenomic analysis of polyketide synthase-encoding genes in
+  Trichoderma.}
+\newblock {\em Microbiology (Reading, England)}, 158(Pt 1):147--154, jan 2012.
+
 \bibitem{Barnett2011}
 Derek~W Barnett, Erik~K Garrison, Aaron~R Quinlan, Michael~P Str{\"{o}}mberg,
   and Gabor~T Marth.
@@ -58,12 +65,29 @@ Phillip E~C Compeau, Pavel~A Pevzner, and Glenn Tesler.
 \newblock {How to apply de Bruijn graphs to genome assembly.}
 \newblock {\em Nature biotechnology}, 29(11):987--991, nov 2011.
 
+\bibitem{Craney2013}
+Arryn Craney, Salman Ahmed, and Justin Nodwell.
+\newblock {Towards a new science of secondary metabolism}.
+\newblock {\em The Journal of Antibiotics}, 66(7):387--400, 2013.
+
 \bibitem{DECHTER2003333}
 Rina Dechter.
 \newblock {chapter 12 - Temporal Constraint Networks}.
 \newblock In Rina Dechter, editor, {\em Constraint Processing}, The Morgan
   Kaufmann Series in Artificial Intelligence, pages 333--362. Morgan Kaufmann,
   San Francisco, 2003.
+
+\bibitem{Druzhinina2018}
+Irina~S Druzhinina, Komal Chenthamara, Jian Zhang, Lea Atanasova, Dongqing
+  Yang, Youzhi Miao, Mohammad~J Rahimi, Marica Grujic, Feng Cai, Shadi
+  Pourmehdi, Kamariah~Abu Salim, Carina Pretzer, Alexey~G Kopchinskiy, Bernard
+  Henrissat, Alan Kuo, Hope Hundley, Mei Wang, Andrea Aerts, Asaf Salamov, Anna
+  Lipzen, Kurt LaButti, Kerrie Barry, Igor~V Grigoriev, Qirong Shen, and
+  Christian~P Kubicek.
+\newblock {Massive lateral transfer of genes encoding plant cell wall-degrading
+  enzymes to the mycoparasitic fungus Trichoderma from its plant-associated
+  hosts.}
+\newblock {\em PLoS genetics}, 14(4):e1007322, apr 2018.
 
 \bibitem{Ejigu2020}
 Girum~Fitihamlak Ejigu and Jaehee Jung.

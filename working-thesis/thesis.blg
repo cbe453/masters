@@ -13,45 +13,45 @@ Warning--I didn't find a database entry for "Keller2011"
 Warning--I didn't find a database entry for "10.1093/nar/gkac993"
 Warning--to sort, need author, editor, or key in ref1
 Warning--empty author and editor in ref1
-You've used 44 entries,
+You've used 47 entries,
             2118 wiz_defined-function locations,
-            798 strings with 12292 characters,
-and the built_in function-call counts, 16622 in all, are:
-= -- 1581
-> -- 994
+            820 strings with 13379 characters,
+and the built_in function-call counts, 18458 in all, are:
+= -- 1737
+> -- 1168
 < -- 2
-+ -- 393
-- -- 349
-* -- 1418
-:= -- 2831
-add.period$ -- 127
-call.type$ -- 44
-change.case$ -- 305
++ -- 462
+- -- 415
+* -- 1611
+:= -- 3158
+add.period$ -- 136
+call.type$ -- 47
+change.case$ -- 347
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 486
-empty$ -- 1152
-format.name$ -- 349
-if$ -- 3301
+cite$ -- 49
+duplicate$ -- 519
+empty$ -- 1234
+format.name$ -- 415
+if$ -- 3640
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 39
-newline$ -- 217
-num.names$ -- 88
-pop$ -- 259
+int.to.str$ -- 47
+missing$ -- 42
+newline$ -- 232
+num.names$ -- 94
+pop$ -- 295
 preamble$ -- 1
-purify$ -- 262
+purify$ -- 301
 quote$ -- 0
-skip$ -- 350
+skip$ -- 371
 stack$ -- 0
-substring$ -- 1073
-swap$ -- 62
+substring$ -- 1162
+swap$ -- 65
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 174
+type$ -- 186
 warning$ -- 2
-while$ -- 154
-width$ -- 46
-write$ -- 471
+while$ -- 165
+width$ -- 49
+write$ -- 504
 (There were 4 warnings)
