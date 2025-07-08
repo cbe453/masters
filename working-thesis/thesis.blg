@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: chapter-2.aux
 A level-1 auxiliary file: chapter-3.aux
 A level-1 auxiliary file: chapter-4.aux
@@ -17,7 +16,7 @@ Warning--to sort, need author, editor, or key in ref1
 Warning--empty author and editor in ref1
 You've used 47 entries,
             2118 wiz_defined-function locations,
-            824 strings with 13425 characters,
+            823 strings with 13416 characters,
 and the built_in function-call counts, 18458 in all, are:
 = -- 1737
 > -- 1168

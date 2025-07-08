@@ -2,7 +2,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces General assembly metrics produced by QUAST\cite {Gurevich2013} (a genome quality assessment tool).\relax }}{29}{table.caption.24}
 \contentsline {table}{\numberline {5.2}{\ignorespaces Gene prediction counts}}{33}{table.caption.26}
 \contentsline {table}{\numberline {5.3}{\ignorespaces Table of \textit {P}-values from two-sided two-sample Kolmogorov-Smirnov tests between gene finding tools.\relax }}{37}{table.caption.30}

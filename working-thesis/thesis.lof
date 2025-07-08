@@ -1,8 +1,7 @@
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of two FASTA sequence entries. One example with sequence characters split across multiple lines, and one showing all sequence characters on the same line.\relax }}{9}{figure.caption.13}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of the four lines in a FASTQ entry.\relax }}{9}{figure.caption.14}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of GFF entries for a single gene.\relax }}{10}{figure.caption.15}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Example of two FASTA sequence entries. One example with sequence characters split across multiple lines, and one showing all sequence characters on the same line.\relax }}{8}{figure.caption.13}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Example of the four lines in a FASTQ entry.\relax }}{8}{figure.caption.14}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces An example of GFF entries for a single gene.\relax }}{9}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces A simplified workflow used in this work. Each processing stage is is represented by an octagon, and the flow of data are indicated by directed edges between them. In this figure and subsequent figures, the sequence processing stage is coloured brown, the gene prediction and processing stage is coloured green, the evaluation and validation stage is coloured yellow, and the region identification process is coloured blue.\relax }}{15}{figure.caption.17}
