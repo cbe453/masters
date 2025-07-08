@@ -9,13 +9,15 @@ A level-1 auxiliary file: chapter-5.aux
 A level-1 auxiliary file: chapter-6.aux
 The style file: plain.bst
 Database file #1: ./refs/full-bib.bib
+Warning--I didn't find a database entry for "Mukherjee2012"
+Warning--I didn't find a database entry for "Komaki2020"
 Warning--I didn't find a database entry for "Keller2011"
 Warning--I didn't find a database entry for "10.1093/nar/gkac993"
 Warning--to sort, need author, editor, or key in ref1
 Warning--empty author and editor in ref1
 You've used 47 entries,
             2118 wiz_defined-function locations,
-            820 strings with 13379 characters,
+            824 strings with 13425 characters,
 and the built_in function-call counts, 18458 in all, are:
 = -- 1737
 > -- 1168
@@ -54,4 +56,4 @@ warning$ -- 2
 while$ -- 165
 width$ -- 49
 write$ -- 504
-(There were 4 warnings)
+(There were 6 warnings)
