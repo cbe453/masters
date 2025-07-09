@@ -2,72 +2,31 @@
 \contentsline {chapter}{Abstract}{ii}{section*.4}
 \contentsline {chapter}{Acknowledgements}{iii}{section*.6}
 \contentsline {chapter}{Contents}{iv}{section*.8}
-\contentsline {chapter}{List of Tables}{vi}{section*.9}
-\contentsline {chapter}{List of Figures}{vii}{section*.10}
-\contentsline {chapter}{List of Abbreviations}{viii}{section*.11}
+\contentsline {chapter}{List of Tables}{v}{section*.9}
+\contentsline {chapter}{List of Figures}{vi}{section*.10}
+\contentsline {chapter}{List of Abbreviations}{vii}{section*.11}
 \contentsline {chapter}{\numberline {1}Background}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Genomics}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Sequencing}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Whole Genome Shotgun Sequencing}{1}{section.1.3}
 \contentsline {section}{\numberline {1.4}Next Generation Sequencing - Illumina}{2}{section.1.4}
 \contentsline {section}{\numberline {1.5}3rd Generation Sequencing - Nanopore}{2}{section.1.5}
-\contentsline {section}{\numberline {1.6}Secondary Metabolites}{2}{section.1.6}
-\contentsline {section}{\numberline {1.7}\textit {Trichoderma} and it's Evolution}{3}{section.1.7}
-\contentsline {section}{\numberline {1.8}Environmental Stress}{3}{section.1.8}
-\contentsline {section}{\numberline {1.9}Novel \textit {Trichoderma} Genomes}{3}{section.1.9}
-\contentsline {section}{\numberline {1.10}Genome Assembly}{4}{section.1.10}
-\contentsline {section}{\numberline {1.11}Identification of Anomolous Genomic regions}{5}{section.1.11}
-\contentsline {section}{\numberline {1.12}Repeat Identification and Masking}{5}{section.1.12}
-\contentsline {section}{\numberline {1.13}Centromere Identification}{5}{section.1.13}
-\contentsline {section}{\numberline {1.14}Gene Finding Methods}{6}{section.1.14}
-\contentsline {section}{\numberline {1.15}RefSeq}{7}{section.1.15}
-\contentsline {section}{\numberline {1.16}InterProScan}{7}{section.1.16}
-\contentsline {section}{\numberline {1.17}File Formats}{8}{section.1.17}
-\contentsline {subsection}{\numberline {1.17.1}FASTA}{8}{subsection.1.17.1}
-\contentsline {subsection}{\numberline {1.17.2}FASTQ}{8}{subsection.1.17.2}
-\contentsline {subsection}{\numberline {1.17.3}General Feature Format - GFF}{9}{subsection.1.17.3}
-\contentsline {section}{\numberline {1.18}BLAST and tblastn}{9}{section.1.18}
-\contentsline {section}{\numberline {1.19}BUSCO}{10}{section.1.19}
-\contentsline {chapter}{\numberline {3}Research Questions}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Research Questions}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}\textit {Trichoderma} Assembly Results}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}Profiling of Gene Finding Tools}{11}{section.3.3}
-\contentsline {section}{\numberline {3.4}Number of Features Predicted}{12}{section.3.4}
-\contentsline {section}{\numberline {3.5}Lengths of Predicted Genes}{12}{section.3.5}
-\contentsline {section}{\numberline {3.6}Performance in Regions of Anomalous Sequence Content}{12}{section.3.6}
-\contentsline {section}{\numberline {3.7}BUSCO Completeness}{12}{section.3.7}
-\contentsline {section}{\numberline {3.8}Identifying Regions of Agreement and Disagreement}{12}{section.3.8}
-\contentsline {section}{\numberline {3.9}Validation of Predicted Genes via InterProScan}{13}{section.3.9}
-\contentsline {section}{\numberline {3.10}Selection of a Gene Finding Tool}{13}{section.3.10}
-\contentsline {chapter}{\numberline {4}Data and Methodology}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Methodology Overview}{14}{section.4.1}
-\contentsline {section}{\numberline {4.2}Sequence Processing and Assembly Workflow}{14}{section.4.2}
-\contentsline {section}{\numberline {4.3}Sequence Pre-processing and Assembly}{14}{section.4.3}
-\contentsline {section}{\numberline {4.4}Overview of Gene Prediction and Further Processing}{17}{section.4.4}
-\contentsline {section}{\numberline {4.5}Selection of Datasets from NCBI}{19}{section.4.5}
-\contentsline {section}{\numberline {4.6}Gene Prediction Using GeneMark-ES}{19}{section.4.6}
-\contentsline {section}{\numberline {4.7}Gene Prediction Using Braker2}{19}{section.4.7}
-\contentsline {section}{\numberline {4.8}Statistical Analysis of CDS Lengths}{20}{section.4.8}
-\contentsline {section}{\numberline {4.9}Overview of Evaluation and Validation of Gene Predictions}{20}{section.4.9}
-\contentsline {section}{\numberline {4.10}Evaluating Gene-Finder Performance Using BUSCO}{22}{section.4.10}
-\contentsline {section}{\numberline {4.11}Functional Annotation Using InterProScan}{22}{section.4.11}
-\contentsline {section}{\numberline {4.12}Ground-truthing with BLAST}{22}{section.4.12}
-\contentsline {section}{\numberline {4.13}Region Identification Overview}{22}{section.4.13}
-\contentsline {section}{\numberline {4.14}Region Identification Algorithm}{23}{section.4.14}
-\contentsline {section}{\numberline {4.15}Gene predictions in AT-rich Genomic Sequence}{24}{section.4.15}
-\contentsline {section}{\numberline {4.16}Visualization of Identified Regions}{24}{section.4.16}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Overview}{28}{section.5.1}
-\contentsline {section}{\numberline {5.2}Assemblies of DC1 and Tsth20}{28}{section.5.2}
-\contentsline {section}{\numberline {5.3}Installation and Profiling Gene Finding Tools}{31}{section.5.3}
-\contentsline {section}{\numberline {5.4}Initial Gene Finding Results}{32}{section.5.4}
-\contentsline {section}{\numberline {5.5}Distribution of Predicted Coding Sequence Lengths}{33}{section.5.5}
-\contentsline {section}{\numberline {5.6}BUSCO Results}{37}{section.5.6}
-\contentsline {section}{\numberline {5.7}Region Identification}{40}{section.5.7}
-\contentsline {section}{\numberline {5.8}InterProScan as Supporting Evidence for Predicted Genes}{44}{section.5.8}
-\contentsline {section}{\numberline {5.9}BLAST Results}{47}{section.5.9}
-\contentsline {section}{\numberline {5.10}Genes in Regions of Anomalous GC Content}{49}{section.5.10}
-\contentsline {chapter}{\numberline {6}Conclusions}{51}{chapter.6}
-\contentsline {section}{\numberline {6.1}Selection of Gene Finding Tool}{51}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{52}{section.6.2}
-\contentsline {chapter}{References}{54}{section*.16}
+\contentsline {section}{\numberline {1.6}Horizontal Gene Transfer}{2}{section.1.6}
+\contentsline {section}{\numberline {1.7}Secondary Metabolites}{2}{section.1.7}
+\contentsline {section}{\numberline {1.8}\textit {Trichoderma} Species and their Evolution}{3}{section.1.8}
+\contentsline {section}{\numberline {1.9}Environmental Stress}{3}{section.1.9}
+\contentsline {section}{\numberline {1.10}Novel \textit {Trichoderma} Genomes}{4}{section.1.10}
+\contentsline {section}{\numberline {1.11}Genome Assembly}{4}{section.1.11}
+\contentsline {section}{\numberline {1.12}Identification of Anomolous Genomic regions}{5}{section.1.12}
+\contentsline {section}{\numberline {1.13}Repeat Identification and Masking}{5}{section.1.13}
+\contentsline {section}{\numberline {1.14}Centromere Identification}{6}{section.1.14}
+\contentsline {section}{\numberline {1.15}Gene Finding Methods}{6}{section.1.15}
+\contentsline {section}{\numberline {1.16}RefSeq}{7}{section.1.16}
+\contentsline {section}{\numberline {1.17}InterProScan}{7}{section.1.17}
+\contentsline {section}{\numberline {1.18}File Formats}{8}{section.1.18}
+\contentsline {subsection}{\numberline {1.18.1}FASTA}{8}{subsection.1.18.1}
+\contentsline {subsection}{\numberline {1.18.2}FASTQ}{8}{subsection.1.18.2}
+\contentsline {subsection}{\numberline {1.18.3}General Feature Format - GFF}{9}{subsection.1.18.3}
+\contentsline {section}{\numberline {1.19}BLAST and tblastn}{9}{section.1.19}
+\contentsline {section}{\numberline {1.20}BUSCO}{10}{section.1.20}
+\contentsline {chapter}{References}{11}{section*.16}

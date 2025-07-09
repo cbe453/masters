@@ -11,21 +11,22 @@
 \BOOKMARK [1][-]{section.1.3}{Whole Genome Shotgun Sequencing}{chapter.1}% 11
 \BOOKMARK [1][-]{section.1.4}{Next Generation Sequencing - Illumina}{chapter.1}% 12
 \BOOKMARK [1][-]{section.1.5}{3rd Generation Sequencing - Nanopore}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.6}{Secondary Metabolites}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.7}{Trichoderma and it's Evolution}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.8}{Environmental Stress}{chapter.1}% 16
-\BOOKMARK [1][-]{section.1.9}{Novel Trichoderma Genomes}{chapter.1}% 17
-\BOOKMARK [1][-]{section.1.10}{Genome Assembly}{chapter.1}% 18
-\BOOKMARK [1][-]{section.1.11}{Identification of Anomolous Genomic regions}{chapter.1}% 19
-\BOOKMARK [1][-]{section.1.12}{Repeat Identification and Masking}{chapter.1}% 20
-\BOOKMARK [1][-]{section.1.13}{Centromere Identification}{chapter.1}% 21
-\BOOKMARK [1][-]{section.1.14}{Gene Finding Methods}{chapter.1}% 22
-\BOOKMARK [1][-]{section.1.15}{RefSeq}{chapter.1}% 23
-\BOOKMARK [1][-]{section.1.16}{InterProScan}{chapter.1}% 24
-\BOOKMARK [1][-]{section.1.17}{File Formats}{chapter.1}% 25
-\BOOKMARK [2][-]{subsection.1.17.1}{FASTA}{section.1.17}% 26
-\BOOKMARK [2][-]{subsection.1.17.2}{FASTQ}{section.1.17}% 27
-\BOOKMARK [2][-]{subsection.1.17.3}{General Feature Format - GFF}{section.1.17}% 28
-\BOOKMARK [1][-]{section.1.18}{BLAST and tblastn}{chapter.1}% 29
-\BOOKMARK [1][-]{section.1.19}{BUSCO}{chapter.1}% 30
-\BOOKMARK [0][-]{section*.16}{References}{}% 74
+\BOOKMARK [1][-]{section.1.6}{Horizontal Gene Transfer}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.7}{Secondary Metabolites}{chapter.1}% 15
+\BOOKMARK [1][-]{section.1.8}{Trichoderma Species and their Evolution}{chapter.1}% 16
+\BOOKMARK [1][-]{section.1.9}{Environmental Stress}{chapter.1}% 17
+\BOOKMARK [1][-]{section.1.10}{Novel Trichoderma Genomes}{chapter.1}% 18
+\BOOKMARK [1][-]{section.1.11}{Genome Assembly}{chapter.1}% 19
+\BOOKMARK [1][-]{section.1.12}{Identification of Anomolous Genomic regions}{chapter.1}% 20
+\BOOKMARK [1][-]{section.1.13}{Repeat Identification and Masking}{chapter.1}% 21
+\BOOKMARK [1][-]{section.1.14}{Centromere Identification}{chapter.1}% 22
+\BOOKMARK [1][-]{section.1.15}{Gene Finding Methods}{chapter.1}% 23
+\BOOKMARK [1][-]{section.1.16}{RefSeq}{chapter.1}% 24
+\BOOKMARK [1][-]{section.1.17}{InterProScan}{chapter.1}% 25
+\BOOKMARK [1][-]{section.1.18}{File Formats}{chapter.1}% 26
+\BOOKMARK [2][-]{subsection.1.18.1}{FASTA}{section.1.18}% 27
+\BOOKMARK [2][-]{subsection.1.18.2}{FASTQ}{section.1.18}% 28
+\BOOKMARK [2][-]{subsection.1.18.3}{General Feature Format - GFF}{section.1.18}% 29
+\BOOKMARK [1][-]{section.1.19}{BLAST and tblastn}{chapter.1}% 30
+\BOOKMARK [1][-]{section.1.20}{BUSCO}{chapter.1}% 31
+\BOOKMARK [0][-]{section*.16}{References}{}% 32
