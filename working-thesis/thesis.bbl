@@ -132,6 +132,12 @@ Philip Jones, David Binns, Hsin-Yu Chang, Matthew Fraser, Weizhong Li, Craig
 \newblock {InterProScan 5: genome-scale protein function classification}.
 \newblock {\em Bioinformatics}, 30(9):1236--1240, 2014.
 
+\bibitem{Komaki2020}
+Hisayuki Komaki and Tomohiko Tamura.
+\newblock {Polyketide Synthase and Nonribosomal Peptide Synthetase Gene
+  Clusters in Type Strains of the Genus Phytohabitans.}
+\newblock {\em Life (Basel, Switzerland)}, 10(11), oct 2020.
+
 \bibitem{Kubicek2019}
 Christian~P Kubicek, Andrei~S Steindorff, Komal Chenthamara, Gelsomina
   Manganiello, Bernard Henrissat, Jian Zhang, Feng Cai, Alexey~G Kopchinskiy,
@@ -163,6 +169,11 @@ Mos{\`{e}} Manni, Matthew~R Berkeley, Mathieu Seppey, and Evgeny~M Zdobnov.
 Vivien Marx.
 \newblock {Method of the year: long-read sequencing}.
 \newblock {\em Nature Methods}, 20(1):6--11, 2023.
+
+\bibitem{Mukherjee2012}
+Prasun~K Mukherjee, Benjamin~A Horwitz, and Charles~M Kenerley.
+\newblock {Secondary metabolism in Trichoderma--a genomic perspective.}
+\newblock {\em Microbiology (Reading, England)}, 158(Pt 1):35--45, jan 2012.
 
 \bibitem{Nagarajan2013}
 Niranjan Nagarajan and Mihai Pop.

@@ -12,23 +12,22 @@
 \contentsline {section}{\numberline {1.4}Next Generation Sequencing - Illumina}{2}{section.1.4}
 \contentsline {section}{\numberline {1.5}3rd Generation Sequencing - Nanopore}{2}{section.1.5}
 \contentsline {section}{\numberline {1.6}Secondary Metabolites}{2}{section.1.6}
-\contentsline {section}{\numberline {1.7}Non-ribosomal Peptide Synthetases}{3}{section.1.7}
-\contentsline {section}{\numberline {1.8}Polyketide Synthetases}{3}{section.1.8}
-\contentsline {section}{\numberline {1.9}\textit {Trichoderma}}{3}{section.1.9}
-\contentsline {section}{\numberline {1.10}Novel \textit {Trichoderma} Genomes}{3}{section.1.10}
-\contentsline {section}{\numberline {1.11}Genome Assembly}{4}{section.1.11}
-\contentsline {section}{\numberline {1.12}Identification of Anomolous Genomic regions}{5}{section.1.12}
-\contentsline {section}{\numberline {1.13}Repeat Identification and Masking}{5}{section.1.13}
-\contentsline {section}{\numberline {1.14}Centromere Identification}{5}{section.1.14}
-\contentsline {section}{\numberline {1.15}Gene Finding Methods}{6}{section.1.15}
-\contentsline {section}{\numberline {1.16}RefSeq}{7}{section.1.16}
-\contentsline {section}{\numberline {1.17}InterProScan}{7}{section.1.17}
-\contentsline {section}{\numberline {1.18}File Formats}{8}{section.1.18}
-\contentsline {subsection}{\numberline {1.18.1}FASTA}{8}{subsection.1.18.1}
-\contentsline {subsection}{\numberline {1.18.2}FASTQ}{8}{subsection.1.18.2}
-\contentsline {subsection}{\numberline {1.18.3}General Feature Format - GFF}{9}{subsection.1.18.3}
-\contentsline {section}{\numberline {1.19}BLAST and tblastn}{9}{section.1.19}
-\contentsline {section}{\numberline {1.20}BUSCO}{9}{section.1.20}
+\contentsline {section}{\numberline {1.7}\textit {Trichoderma} and it's Evolution}{3}{section.1.7}
+\contentsline {section}{\numberline {1.8}Environmental Stress}{3}{section.1.8}
+\contentsline {section}{\numberline {1.9}Novel \textit {Trichoderma} Genomes}{3}{section.1.9}
+\contentsline {section}{\numberline {1.10}Genome Assembly}{4}{section.1.10}
+\contentsline {section}{\numberline {1.11}Identification of Anomolous Genomic regions}{5}{section.1.11}
+\contentsline {section}{\numberline {1.12}Repeat Identification and Masking}{5}{section.1.12}
+\contentsline {section}{\numberline {1.13}Centromere Identification}{5}{section.1.13}
+\contentsline {section}{\numberline {1.14}Gene Finding Methods}{6}{section.1.14}
+\contentsline {section}{\numberline {1.15}RefSeq}{7}{section.1.15}
+\contentsline {section}{\numberline {1.16}InterProScan}{7}{section.1.16}
+\contentsline {section}{\numberline {1.17}File Formats}{8}{section.1.17}
+\contentsline {subsection}{\numberline {1.17.1}FASTA}{8}{subsection.1.17.1}
+\contentsline {subsection}{\numberline {1.17.2}FASTQ}{8}{subsection.1.17.2}
+\contentsline {subsection}{\numberline {1.17.3}General Feature Format - GFF}{9}{subsection.1.17.3}
+\contentsline {section}{\numberline {1.18}BLAST and tblastn}{9}{section.1.18}
+\contentsline {section}{\numberline {1.19}BUSCO}{10}{section.1.19}
 \contentsline {chapter}{\numberline {3}Research Questions}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Research Questions}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}\textit {Trichoderma} Assembly Results}{11}{section.3.2}

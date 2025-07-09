@@ -8,51 +8,49 @@ A level-1 auxiliary file: chapter-5.aux
 A level-1 auxiliary file: chapter-6.aux
 The style file: plain.bst
 Database file #1: ./refs/full-bib.bib
-Warning--I didn't find a database entry for "Mukherjee2012"
-Warning--I didn't find a database entry for "Komaki2020"
 Warning--I didn't find a database entry for "Keller2011"
 Warning--I didn't find a database entry for "10.1093/nar/gkac993"
 Warning--to sort, need author, editor, or key in ref1
 Warning--empty author and editor in ref1
-You've used 47 entries,
+You've used 49 entries,
             2118 wiz_defined-function locations,
-            823 strings with 13416 characters,
-and the built_in function-call counts, 18458 in all, are:
-= -- 1737
-> -- 1168
+            829 strings with 13727 characters,
+and the built_in function-call counts, 19057 in all, are:
+= -- 1796
+> -- 1199
 < -- 2
-+ -- 462
-- -- 415
-* -- 1611
-:= -- 3158
-add.period$ -- 136
-call.type$ -- 47
-change.case$ -- 347
++ -- 474
+- -- 425
+* -- 1660
+:= -- 3263
+add.period$ -- 142
+call.type$ -- 49
+change.case$ -- 358
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 519
-empty$ -- 1234
-format.name$ -- 415
-if$ -- 3640
+cite$ -- 51
+duplicate$ -- 540
+empty$ -- 1277
+format.name$ -- 425
+if$ -- 3759
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 42
-newline$ -- 232
-num.names$ -- 94
-pop$ -- 295
+int.to.str$ -- 49
+missing$ -- 44
+newline$ -- 242
+num.names$ -- 98
+pop$ -- 302
 preamble$ -- 1
-purify$ -- 301
+purify$ -- 310
 quote$ -- 0
-skip$ -- 371
+skip$ -- 387
 stack$ -- 0
-substring$ -- 1162
-swap$ -- 65
+substring$ -- 1191
+swap$ -- 67
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
+type$ -- 194
 warning$ -- 2
-while$ -- 165
-width$ -- 49
-write$ -- 504
-(There were 6 warnings)
+while$ -- 171
+width$ -- 51
+write$ -- 526
+(There were 4 warnings)
