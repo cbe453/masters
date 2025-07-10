@@ -264,7 +264,7 @@ of a GeneMark model specific to fungal genomes.
 \section{Gene Prediction Using Braker2}
 \label{met:braker2}
 
-For evidence-based gene finding, Braker2 v3.0.2\cite{Bruna2021} was
+The argument for the use of For evidence-based gene finding, Braker2 v3.0.2\cite{Bruna2021} was
 used with \textit{Trichoderma reesei} selected as the reference
 organism for
 training. Illumina\textsuperscript{\textcopyright}\texttrademark\cite{Bennett2004}

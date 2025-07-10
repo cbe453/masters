@@ -1,57 +1,71 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: chapter-2.aux
-A level-1 auxiliary file: chapter-3.aux
-A level-1 auxiliary file: chapter-4.aux
-A level-1 auxiliary file: chapter-5.aux
-A level-1 auxiliary file: chapter-6.aux
+I couldn't open auxiliary file chapter-3.aux
+---line 30 of file thesis.aux
+ : \@input{chapter-3.aux
+ :                      }
+I'm skipping whatever remains of this command
+I couldn't open auxiliary file chapter-4.aux
+---line 31 of file thesis.aux
+ : \@input{chapter-4.aux
+ :                      }
+I'm skipping whatever remains of this command
+I couldn't open auxiliary file chapter-5.aux
+---line 32 of file thesis.aux
+ : \@input{chapter-5.aux
+ :                      }
+I'm skipping whatever remains of this command
+I couldn't open auxiliary file chapter-6.aux
+---line 33 of file thesis.aux
+ : \@input{chapter-6.aux
+ :                      }
+I'm skipping whatever remains of this command
 The style file: plain.bst
 Database file #1: ./refs/full-bib.bib
 Warning--I didn't find a database entry for "Keller2011"
 Warning--I didn't find a database entry for "10.1093/nar/gkac993"
-Warning--to sort, need author, editor, or key in ref1
-Warning--empty author and editor in ref1
-You've used 42 entries,
+Warning--can't use both author and editor fields in Goncalves2024
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            787 strings with 12030 characters,
-and the built_in function-call counts, 16010 in all, are:
-= -- 1523
-> -- 964
-< -- 2
-+ -- 381
-- -- 339
-* -- 1373
-:= -- 2730
-add.period$ -- 122
-call.type$ -- 42
-change.case$ -- 294
+            691 strings with 9725 characters,
+and the built_in function-call counts, 10154 in all, are:
+= -- 954
+> -- 653
+< -- 1
++ -- 258
+- -- 232
+* -- 898
+:= -- 1762
+add.period$ -- 77
+call.type$ -- 26
+change.case$ -- 193
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 468
-empty$ -- 1101
-format.name$ -- 339
-if$ -- 3176
+cite$ -- 27
+duplicate$ -- 288
+empty$ -- 660
+format.name$ -- 232
+if$ -- 1986
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 38
-newline$ -- 208
-num.names$ -- 84
-pop$ -- 245
+int.to.str$ -- 26
+missing$ -- 26
+newline$ -- 132
+num.names$ -- 52
+pop$ -- 154
 preamble$ -- 1
-purify$ -- 253
+purify$ -- 168
 quote$ -- 0
-skip$ -- 335
+skip$ -- 199
 stack$ -- 0
-substring$ -- 1032
-swap$ -- 60
-text.length$ -- 2
+substring$ -- 605
+swap$ -- 34
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 166
-warning$ -- 2
-while$ -- 148
-width$ -- 44
-write$ -- 452
-(There were 4 warnings)
+type$ -- 102
+warning$ -- 1
+while$ -- 92
+width$ -- 28
+write$ -- 286
+(There were 4 error messages)

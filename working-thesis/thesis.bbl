@@ -1,41 +1,21 @@
 \begin{thebibliography}{10}
 
-\bibitem{ref1}
-{\em {Kolmogorov--Smirnov Test}}, pages 283--287.
-\newblock Springer New York, New York, NY, 2008.
-
 \bibitem{Adams2008}
 Jill Adams.
 \newblock {Complex Genomes: Shotgun Sequencing}.
 \newblock {\em Nature Education}, 1(1):186, 2008.
 
-\bibitem{Altschul1990}
-S~F Altschul, W~Gish, W~Miller, E~W Myers, and D~J Lipman.
-\newblock {Basic local alignment search tool.}
-\newblock {\em Journal of molecular biology}, 215(3):403--410, oct 1990.
-
-\bibitem{Barnett2011}
-Derek~W Barnett, Erik~K Garrison, Aaron~R Quinlan, Michael~P Str{\"{o}}mberg,
-  and Gabor~T Marth.
-\newblock {BamTools: a C++ API and toolkit for analyzing and managing BAM
-  files.}
-\newblock {\em Bioinformatics (Oxford, England)}, 27(12):1691--1692, jun 2011.
+\bibitem{Baker2012}
+Scott~E Baker, Giancarlo Perrone, Nathan~M Richardson, Antonia Gallo, and
+  Christian~P Kubicek.
+\newblock {Phylogenomic analysis of polyketide synthase-encoding genes in
+  Trichoderma.}
+\newblock {\em Microbiology (Reading, England)}, 158(Pt 1):147--154, jan 2012.
 
 \bibitem{Bennett2004}
 Simon Bennett.
 \newblock {Solexa Ltd.}
 \newblock {\em Pharmacogenomics}, 5(4):433--438, jun 2004.
-
-\bibitem{Bolger2014}
-Anthony~M Bolger, Marc Lohse, and Bjoern Usadel.
-\newblock {Trimmomatic: a flexible trimmer for Illumina sequence data}.
-\newblock {\em Bioinformatics}, 30(15):2114--2120, aug 2014.
-
-\bibitem{Borodovsky2011}
-Mark Borodovsky and Alex Lomsadze.
-\newblock {Eukaryotic gene prediction using GeneMark.hmm-E and GeneMark-ES}.
-\newblock {\em Current Protocols in Bioinformatics}, Chapter
-  4(SUPPL.35):4.6.1--4.6.10, sep 2011.
 
 \bibitem{Bruna2021}
 Tom{\'{a}}{\v{s}} Brůna, Katharina~J Hoff, Alexandre Lomsadze, Mario Stanke,
@@ -44,21 +24,27 @@ Tom{\'{a}}{\v{s}} Brůna, Katharina~J Hoff, Alexandre Lomsadze, Mario Stanke,
   and AUGUSTUS supported by a protein database.}
 \newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, mar 2021.
 
-\bibitem{Chapman}
-Brad Chapman.
-\newblock {BCBio Python Package}.
-
 \bibitem{Compeau2011}
 Phillip E~C Compeau, Pavel~A Pevzner, and Glenn Tesler.
 \newblock {How to apply de Bruijn graphs to genome assembly.}
 \newblock {\em Nature biotechnology}, 29(11):987--991, nov 2011.
 
-\bibitem{DECHTER2003333}
-Rina Dechter.
-\newblock {chapter 12 - Temporal Constraint Networks}.
-\newblock In Rina Dechter, editor, {\em Constraint Processing}, The Morgan
-  Kaufmann Series in Artificial Intelligence, pages 333--362. Morgan Kaufmann,
-  San Francisco, 2003.
+\bibitem{Craney2013}
+Arryn Craney, Salman Ahmed, and Justin Nodwell.
+\newblock {Towards a new science of secondary metabolism}.
+\newblock {\em The Journal of Antibiotics}, 66(7):387--400, 2013.
+
+\bibitem{Druzhinina2018}
+Irina~S Druzhinina, Komal Chenthamara, Jian Zhang, Lea Atanasova, Dongqing
+  Yang, Youzhi Miao, Mohammad~J Rahimi, Marica Grujic, Feng Cai, Shadi
+  Pourmehdi, Kamariah~Abu Salim, Carina Pretzer, Alexey~G Kopchinskiy, Bernard
+  Henrissat, Alan Kuo, Hope Hundley, Mei Wang, Andrea Aerts, Asaf Salamov, Anna
+  Lipzen, Kurt LaButti, Kerrie Barry, Igor~V Grigoriev, Qirong Shen, and
+  Christian~P Kubicek.
+\newblock {Massive lateral transfer of genes encoding plant cell wall-degrading
+  enzymes to the mycoparasitic fungus Trichoderma from its plant-associated
+  hosts.}
+\newblock {\em PLoS genetics}, 14(4):e1007322, apr 2018.
 
 \bibitem{Ejigu2020}
 Girum~Fitihamlak Ejigu and Jaehee Jung.
@@ -66,9 +52,11 @@ Girum~Fitihamlak Ejigu and Jaehee Jung.
   by Next-Generation Sequencing.}
 \newblock {\em Biology}, 9(9), sep 2020.
 
-\bibitem{Foundation}
-Python~Software Foundation.
-\newblock {Python}.
+\bibitem{Goncalves2024}
+Carla Gon{\c{c}}alves, Chris~Todd Hittinger, and Antonis Rokas.
+\newblock {\em {Horizontal Gene Transfer in Fungi and Its Ecological
+  Importance}}, pages 59--81.
+\newblock Springer International Publishing, Cham, 2024.
 
 \bibitem{Goodwin2016}
 Sara Goodwin, John~D McPherson, and W~Richard McCombie.
@@ -76,32 +64,11 @@ Sara Goodwin, John~D McPherson, and W~Richard McCombie.
   technologies}.
 \newblock {\em Nature Reviews Genetics}, 17(6):333--351, 2016.
 
-\bibitem{Gurevich2013}
-Alexey Gurevich, Vladislav Saveliev, Nikolay Vyahhi, and Glenn Tesler.
-\newblock {QUAST: quality assessment tool for genome assemblies.}
-\newblock {\em Bioinformatics (Oxford, England)}, 29(8):1072--1075, apr 2013.
-
-\bibitem{Hu2020}
-Jiang Hu, Junpeng Fan, Zongyi Sun, and Shanlin Liu.
-\newblock {NextPolish: a fast and efficient genome polishing tool for long-read
-  assembly}.
-\newblock {\em Bioinformatics}, 36(7):2253--2255, apr 2020.
-
-\bibitem{Hu2024}
-Jiang Hu, Zhuo Wang, Zongyi Sun, Benxia Hu, Adeola~Oluwakemi Ayoola, Fan Liang,
-  Jingjing Li, Jos{\'{e}}~R Sandoval, David~N Cooper, Kai Ye, Jue Ruan,
-  Chuan-Le Xiao, Depeng Wang, Dong-Dong Wu, and Sheng Wang.
-\newblock {NextDenovo: an efficient error correction and accurate assembly tool
-  for noisy long reads}.
-\newblock {\em Genome Biology}, 25(1):107, 2024.
-
-\bibitem{10.1093/bioinformatics/btu031}
-Philip Jones, David Binns, Hsin-Yu Chang, Matthew Fraser, Weizhong Li, Craig
-  McAnulla, Hamish McWilliam, John Maslen, Alex Mitchell, Gift Nuka, Sebastien
-  Pesseat, Antony~F Quinn, Amaia Sangrador-Vegas, Maxim Scheremetjew, Siew-Yit
-  Yong, Rodrigo Lopez, and Sarah Hunter.
-\newblock {InterProScan 5: genome-scale protein function classification}.
-\newblock {\em Bioinformatics}, 30(9):1236--1240, 2014.
+\bibitem{Komaki2020}
+Hisayuki Komaki and Tomohiko Tamura.
+\newblock {Polyketide Synthase and Nonribosomal Peptide Synthetase Gene
+  Clusters in Type Strains of the Genus Phytohabitans.}
+\newblock {\em Life (Basel, Switzerland)}, 10(11), oct 2020.
 
 \bibitem{Kubicek2019}
 Christian~P Kubicek, Andrei~S Steindorff, Komal Chenthamara, Gelsomina
@@ -120,15 +87,15 @@ Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
   algorithm}.
 \newblock {\em Nucleic Acids Research}, 33(20):6494--6506, 2005.
 
-\bibitem{https://doi.org/10.1002/cpz1.323}
-Mos{\`{e}} Manni, Matthew~R Berkeley, Mathieu Seppey, and Evgeny~M Zdobnov.
-\newblock {BUSCO: Assessing Genomic Data Quality and Beyond}.
-\newblock {\em Current Protocols}, 1(12):e323, 2021.
-
 \bibitem{Marx2023}
 Vivien Marx.
 \newblock {Method of the year: long-read sequencing}.
 \newblock {\em Nature Methods}, 20(1):6--11, 2023.
+
+\bibitem{Mukherjee2012}
+Prasun~K Mukherjee, Benjamin~A Horwitz, and Charles~M Kenerley.
+\newblock {Secondary metabolism in Trichoderma--a genomic perspective.}
+\newblock {\em Microbiology (Reading, England)}, 158(Pt 1):35--45, jan 2012.
 
 \bibitem{Nagarajan2013}
 Niranjan Nagarajan and Mihai Pop.
@@ -139,49 +106,16 @@ Niranjan Nagarajan and Mihai Pop.
 NCBI.
 \newblock {NCBI Eukaryotic Annotation Pipeline}, 2024.
 
-\bibitem{NCBI2025}
-NCBI.
-\newblock {NCBI SRA Toolkit}, 2025.
-
-\bibitem{Pertea2020}
-Geo Pertea and Mihaela Pertea.
-\newblock {GFF Utilities: GffRead and GffCompare.}
-\newblock {\em F1000Research}, 9, 2020.
-
-\bibitem{Pertea2015}
-Mihaela Pertea, Geo~M Pertea, Corina~M Antonescu, Tsung-Cheng Chang, Joshua~T
-  Mendell, and Steven~L Salzberg.
-\newblock {StringTie enables improved reconstruction of a transcriptome from
-  RNA-seq reads}.
-\newblock {\em Nature Biotechnology}, 33(3):290--295, 2015.
-
 \bibitem{Plohl2014}
 Miroslav Plohl, Nevenka Me{\v{s}}trovi{\'{c}}, and Brankica Mravinac.
 \newblock {Centromere identity from the DNA point of view}.
 \newblock {\em Chromosoma}, 123(4):313--325, aug 2014.
-
-\bibitem{10.1093/bioinformatics/btq033}
-Aaron~R Quinlan and Ira~M Hall.
-\newblock {BEDTools: a flexible suite of utilities for comparing genomic
-  features}.
-\newblock {\em Bioinformatics}, 26(6):841--842, 2010.
 
 \bibitem{Rhoads2015}
 Anthony Rhoads and Kin~Fai Au.
 \newblock {PacBio Sequencing and Its Applications.}
 \newblock {\em Genomics, proteomics and bioinformatics}, 13(5):278--289, oct
   2015.
-
-\bibitem{Rice2000}
-P~Rice, I~Longden, and A~Bleasby.
-\newblock {EMBOSS: the European Molecular Biology Open Software Suite.}
-\newblock {\em Trends in genetics : TIG}, 16(6):276--277, jun 2000.
-
-\bibitem{Robinson2011}
-James~T Robinson, Helga Thorvaldsd{\'{o}}ttir, Wendy Winckler, Mitchell
-  Guttman, Eric~S Lander, Gad Getz, and Jill~P Mesirov.
-\newblock {Integrative genomics viewer}.
-\newblock {\em Nature Biotechnology}, 29(1):24--26, 2011.
 
 \bibitem{10.3389/fpls.2023.1190304}
 Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
@@ -191,23 +125,10 @@ Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
   metabarcoding approach}.
 \newblock {\em Frontiers in Plant Science}, 14, 2023.
 
-\bibitem{10.1093/bioinformatics/btv351}
-Felipe~A Sim{\~{a}}o, Robert~M Waterhouse, Panagiotis Ioannidis, Evgenia~V
-  Kriventseva, and Evgeny~M Zdobnov.
-\newblock {BUSCO: assessing genome assembly and annotation completeness with
-  single-copy orthologs}.
-\newblock {\em Bioinformatics}, 31(19):3210--3212, 2015.
-
 \bibitem{Slotkin2018}
 R~Keith Slotkin.
 \newblock {The case for not masking away repetitive DNA}.
 \newblock {\em Mobile DNA}, 9(1):15, 2018.
-
-\bibitem{Stanke2006}
-Mario Stanke, Ana Tzvetkova, and Burkhard Morgenstern.
-\newblock {AUGUSTUS at EGASP: using EST, protein and genomic alignments for
-  improved gene prediction in the human genome}.
-\newblock {\em Genome Biology}, 7(1):S11, 2006.
 
 \bibitem{doi:10.1080/10408390600762696}
 Ioannis S~Arvanitoyannis {Theodoros H. Varzakas} and Haralambos Baltas.
@@ -239,10 +160,5 @@ Sheridan~L Woo, Rosa Hermosa, Matteo Lorito, and Enrique Monte.
 \newblock {Trichoderma: a multipurpose, plant-beneficial microorganism for
   eco-sustainable agriculture}.
 \newblock {\em Nature Reviews Microbiology}, 21(5):312--326, 2023.
-
-\bibitem{Wright2022}
-Bradley~W Wright, Mark~P Molloy, and Paul~R Jaschke.
-\newblock {Overlapping genes in natural and engineered genomes}.
-\newblock {\em Nature Reviews Genetics}, 23(3):154--168, 2022.
 
 \end{thebibliography}

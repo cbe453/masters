@@ -5,67 +5,28 @@
 \BOOKMARK [0][-]{section*.9}{List of Tables}{}% 5
 \BOOKMARK [0][-]{section*.10}{List of Figures}{}% 6
 \BOOKMARK [0][-]{section*.11}{List of Abbreviations}{}% 7
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 8
-\BOOKMARK [0][-]{chapter.2}{Background}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Genomics}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Sequencing}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Whole Genome Shotgun Sequencing}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{Next Generation Sequencing - Illumina}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.5}{3rd Generation Sequencing - Nanopore}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.6}{Trichoderma}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.7}{Genome Assembly}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.8}{Identification of Anomolous Genomic regions}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.9}{Repeat Identification and Masking}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.10}{Centromere Identification}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.11}{Gene Finding Methods}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.12}{RefSeq}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.13}{InterProScan}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.14}{File Formats}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.14.1}{FASTA}{section.2.14}% 24
-\BOOKMARK [2][-]{subsection.2.14.2}{FASTQ}{section.2.14}% 25
-\BOOKMARK [2][-]{subsection.2.14.3}{General Feature Format - GFF}{section.2.14}% 26
-\BOOKMARK [1][-]{section.2.15}{BLAST and tblastn}{chapter.2}% 27
-\BOOKMARK [1][-]{section.2.16}{BUSCO}{chapter.2}% 28
-\BOOKMARK [0][-]{chapter.3}{Research Questions}{}% 29
-\BOOKMARK [1][-]{section.3.1}{Research Questions}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.2}{Trichoderma Assembly Results}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.3}{Profiling of Gene Finding Tools}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.4}{Number of Features Predicted}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.5}{Lengths of Predicted Genes}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.6}{Performance in Regions of Anomalous Sequence Content}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.7}{BUSCO Completeness}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.8}{Identifying Regions of Agreement and Disagreement}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.9}{Validation of Predicted Genes via InterProScan}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.10}{Selection of a Gene Finding Tool}{chapter.3}% 39
-\BOOKMARK [0][-]{chapter.4}{Data and Methodology}{}% 40
-\BOOKMARK [1][-]{section.4.1}{Methodology Overview}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.2}{Sequence Processing and Assembly Workflow}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.3}{Sequence Pre-processing and Assembly}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.4}{Overview of Gene Prediction and Further Processing}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.5}{Selection of Datasets from NCBI}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.6}{Gene Prediction Using GeneMark-ES}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.7}{Gene Prediction Using Braker2}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.8}{Statistical Analysis of CDS Lengths}{chapter.4}% 48
-\BOOKMARK [1][-]{section.4.9}{Overview of Evaluation and Validation of Gene Predictions}{chapter.4}% 49
-\BOOKMARK [1][-]{section.4.10}{Evaluating Gene-Finder Performance Using BUSCO}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.11}{Functional Annotation Using InterProScan}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.12}{Ground-truthing with BLAST}{chapter.4}% 52
-\BOOKMARK [1][-]{section.4.13}{Region Identification Overview}{chapter.4}% 53
-\BOOKMARK [1][-]{section.4.14}{Region Identification Algorithm}{chapter.4}% 54
-\BOOKMARK [1][-]{section.4.15}{Gene predictions in AT-rich Genomic Sequence}{chapter.4}% 55
-\BOOKMARK [1][-]{section.4.16}{Visualization of Identified Regions}{chapter.4}% 56
-\BOOKMARK [0][-]{chapter.5}{Results and Discussion}{}% 57
-\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.2}{Assemblies of DC1 and Tsth20}{chapter.5}% 59
-\BOOKMARK [1][-]{section.5.3}{Installation and Profiling Gene Finding Tools}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.4}{Initial Gene Finding Results}{chapter.5}% 61
-\BOOKMARK [1][-]{section.5.5}{Distribution of Predicted Coding Sequence Lengths}{chapter.5}% 62
-\BOOKMARK [1][-]{section.5.6}{BUSCO Results}{chapter.5}% 63
-\BOOKMARK [1][-]{section.5.7}{Region Identification}{chapter.5}% 64
-\BOOKMARK [1][-]{section.5.8}{InterProScan as Supporting Evidence for Predicted Genes}{chapter.5}% 65
-\BOOKMARK [1][-]{section.5.9}{BLAST Results}{chapter.5}% 66
-\BOOKMARK [1][-]{section.5.10}{Genes in Regions of Anomalous GC Content}{chapter.5}% 67
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 68
-\BOOKMARK [1][-]{section.6.1}{Selection of Gene Finding Tool}{chapter.6}% 69
-\BOOKMARK [1][-]{section.6.2}{Future Work}{chapter.6}% 70
-\BOOKMARK [0][-]{section*.45}{References}{}% 71
+\BOOKMARK [0][-]{chapter.1}{Background}{}% 8
+\BOOKMARK [1][-]{section.1.1}{Genomics}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.2}{Sequencing}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.3}{Whole Genome Shotgun Sequencing}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.4}{Next Generation Sequencing - Illumina}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.5}{3rd Generation Sequencing - Nanopore}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.6}{Horizontal Gene Transfer}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.7}{Secondary Metabolites}{chapter.1}% 15
+\BOOKMARK [1][-]{section.1.8}{Trichoderma Species and their Evolution}{chapter.1}% 16
+\BOOKMARK [1][-]{section.1.9}{Environmental Stress}{chapter.1}% 17
+\BOOKMARK [1][-]{section.1.10}{Novel Trichoderma Genomes}{chapter.1}% 18
+\BOOKMARK [1][-]{section.1.11}{Genome Assembly}{chapter.1}% 19
+\BOOKMARK [1][-]{section.1.12}{Identification of Anomolous Genomic regions}{chapter.1}% 20
+\BOOKMARK [1][-]{section.1.13}{Repeat Identification and Masking}{chapter.1}% 21
+\BOOKMARK [1][-]{section.1.14}{Centromere Identification}{chapter.1}% 22
+\BOOKMARK [1][-]{section.1.15}{Gene Finding Methods}{chapter.1}% 23
+\BOOKMARK [1][-]{section.1.16}{RefSeq}{chapter.1}% 24
+\BOOKMARK [1][-]{section.1.17}{InterProScan}{chapter.1}% 25
+\BOOKMARK [1][-]{section.1.18}{File Formats}{chapter.1}% 26
+\BOOKMARK [2][-]{subsection.1.18.1}{FASTA}{section.1.18}% 27
+\BOOKMARK [2][-]{subsection.1.18.2}{FASTQ}{section.1.18}% 28
+\BOOKMARK [2][-]{subsection.1.18.3}{General Feature Format - GFF}{section.1.18}% 29
+\BOOKMARK [1][-]{section.1.19}{BLAST and tblastn}{chapter.1}% 30
+\BOOKMARK [1][-]{section.1.20}{BUSCO}{chapter.1}% 31
+\BOOKMARK [0][-]{section*.16}{References}{}% 32

@@ -1,0 +1,85 @@
+PMID- 19541913
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20091217
+LR  - 20211020
+IS  - 1549-5469 (Electronic)
+IS  - 1088-9051 (Print)
+IS  - 1088-9051 (Linking)
+VI  - 19
+IP  - 10
+DP  - 2009 Oct
+TI  - Evidence-based gene predictions in plant genomes.
+PG  - 1912-23
+LID - 10.1101/gr.088997.108 [doi]
+AB  - Automated evidence-based gene building is a rapid and cost-effective way to 
+      provide reliable gene annotations on newly sequenced genomes. One of the 
+      limitations of evidence-based gene builders, however, is their requirement for 
+      transcriptional evidence-known proteins, full-length cDNAs, or expressed sequence 
+      tags (ESTs)-in the species of interest. This limitation is of particular concern 
+      for plant genomes, where the rate of genome sequencing is greatly outpacing the 
+      rate of EST- and cDNA-sequencing projects. To overcome this limitation, we have 
+      developed an evidence-based gene build system (the Gramene pipeline) that can use 
+      transcriptional evidence across related species. The Gramene pipeline uses the 
+      Ensembl computing infrastructure with a novel data processing scheme. Using the 
+      previously annotated plant genomes, the dicot Arabidopsis thaliana and the 
+      monocot Oryza sativa, we show that the cross-species ESTs from within monocot or 
+      dicot class are a valuable source of evidence for gene predictions. We also find 
+      that, using only EST and cross-species evidence, the Gramene pipeline can 
+      generate a plant gene set that is comparable in quality to the human genes based 
+      on known proteins and full-length cDNAs. We compare the Gramene pipeline to 
+      several widely used ab initio gene prediction programs in rice; this comparison 
+      shows the pipeline performs favorably at both the gene and exon levels with 
+      cross-species gene products only. We discuss the results of testing the pipeline 
+      on a 22-Mb region of the newly sequenced maize genome and discuss potential 
+      application of the pipeline to other genomes.
+FAU - Liang, Chengzhi
+AU  - Liang C
+AD  - Cold Spring Harbor Laboratory, New York 11724, USA. liang@cshl.edu
+FAU - Mao, Long
+AU  - Mao L
+FAU - Ware, Doreen
+AU  - Ware D
+FAU - Stein, Lincoln
+AU  - Stein L
+LA  - eng
+PT  - Evaluation Study
+PT  - Journal Article
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
+DEP - 20090618
+PL  - United States
+TA  - Genome Res
+JT  - Genome research
+JID - 9518021
+RN  - 0 (Plant Proteins)
+SB  - IM
+MH  - Algorithms
+MH  - Arabidopsis/genetics
+MH  - Brassica/genetics
+MH  - Chromosome Mapping/*methods
+MH  - Computational Biology/*methods
+MH  - Electronic Data Processing/methods
+MH  - Forecasting
+MH  - *Genes, Plant
+MH  - *Genome, Plant
+MH  - Oryza/genetics
+MH  - Plant Proteins/analysis/genetics
+MH  - Quality Control
+MH  - Sensitivity and Specificity
+MH  - Sequence Alignment/methods
+MH  - Species Specificity
+MH  - Zea mays/genetics
+PMC - PMC2765265
+EDAT- 2009/06/23 09:00
+MHDA- 2009/12/18 06:00
+PMCR- 2010/04/01
+CRDT- 2009/06/23 09:00
+PHST- 2009/06/23 09:00 [entrez]
+PHST- 2009/06/23 09:00 [pubmed]
+PHST- 2009/12/18 06:00 [medline]
+PHST- 2010/04/01 00:00 [pmc-release]
+AID - gr.088997.108 [pii]
+AID - 10.1101/gr.088997.108 [doi]
+PST - ppublish
+SO  - Genome Res. 2009 Oct;19(10):1912-23. doi: 10.1101/gr.088997.108. Epub 2009 Jun 
+      18.

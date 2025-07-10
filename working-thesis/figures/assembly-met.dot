@@ -19,8 +19,12 @@ digraph G{
 		 "NextDenovo Assembly" [shape = box3d];
 		 "NextPolish Polishing" [shape = box3d];
 		 "Processed Illumina Reads" [shape = tab];
+		 "Sequence Quality\nAssessment" [shape = box3d];
 		 "Novel Genome Assemblies" [shape = tab];
 		 "Illumina Reads" -> "Pre-process Reads";
+		 "Illumina Reads" -> "Sequence Quality\nAssessment";
+		 "GC Content Plots" [shape = box3d];
+		 "Sequence Quality\nAssessment" -> "GC Content Plots";
 		 "Pre-process Reads" -> "Processed Illumina Reads";
 		 "Processed Illumina Reads" -> "NextDenovo Assembly";
 		 "Nanopore Reads" -> "NextDenovo Assembly";
@@ -33,12 +37,13 @@ digraph G{
 		 {rank = same; "Illumina Reads"; "Nanopore Reads"};
 		 label = "Sequence Processing and Assembly";
 	 	 #{rank = same; "Novel GA"; "Gene Prediction and Further Processing"};
-		 "AT-rich Sequence\n Identification" [shape = box3d];
-		 "Novel Genome Assemblies" -> "AT-rich Sequence\n Identification";
+		 "AT-rich Sequence\nIdentification" [shape = box3d];
+		 "Novel Genome Assemblies" -> "AT-rich Sequence\nIdentification";
 		 "RefSeq Genome Assemblies" [shape = cylinder];
-		 "RefSeq Genome Assemblies" -> "AT-rich Sequence\n Identification";
-		 "AT-rich Sequence\n Identification" -> "AT-rich Sequences"
+		 "RefSeq Genome Assemblies" -> "AT-rich Sequence\nIdentification";
+		 "AT-rich Sequence\nIdentification" -> "AT-rich Sequences"
 		 "AT-rich Sequences" [shape = tab];
+		 "GC Content Plots" -> "AT-rich Sequence\nIdentification";
 	}
 
 	subgraph cluster_2 {
