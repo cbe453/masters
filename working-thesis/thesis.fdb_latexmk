@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex thesis"] 1752034307 "thesis.aux" "thesis.bbl" "thesis" 1752035176
+["bibtex thesis"] 1752034307 "thesis.aux" "thesis.bbl" "thesis" 1752192139
   "./refs/full-bib.bib" 1752032079 72671 68db8f8915e974bac1d77abd45075979 ""
   "/Users/connorburbridge/Documents/GitHub/masters/working-thesis/chapter-2.aux" 1752034777 5729 8f5c0d14d075842abbd5a03f79e1cd3f ""
   "/usr/local/texlive/2018/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
@@ -7,7 +7,7 @@
   (generated)
   "thesis.bbl"
   "thesis.blg"
-["pdflatex"] 1752034774 "/Users/connorburbridge/Documents/GitHub/masters/working-thesis/thesis.tex" "/Users/connorburbridge/Documents/GitHub/masters/working-thesis/thesis.pdf" "thesis" 1752035176
+["pdflatex"] 1752034774 "/Users/connorburbridge/Documents/GitHub/masters/working-thesis/thesis.tex" "/Users/connorburbridge/Documents/GitHub/masters/working-thesis/thesis.pdf" "thesis" 1752192139
   "/Users/connorburbridge/Documents/GitHub/masters/working-thesis/thesis.aux" 1752034777 2195 70722885f71234bae9f9948c71b30dbd ""
   "/Users/connorburbridge/Documents/GitHub/masters/working-thesis/thesis.tex" 1751946861 2301 db2cffebc85efe605dbb648214dfbc0a ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1480098666 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -161,7 +161,7 @@
   "chapter-4.aux" 0 -1 0 ""
   "chapter-5.aux" 0 -1 0 ""
   "chapter-6.aux" 0 -1 0 ""
-  "chapters/c2/literature.tex" 1752035175 27925 c54e4d2ff302271e62b7ca2312019337 ""
+  "chapters/c2/literature.tex" 1752192138 27925 c54e4d2ff302271e62b7ca2312019337 ""
   "figures/fasta-example.png" 1751651672 27029 1009d50c92f8a0caa2845e61f2e12dba ""
   "figures/fastq-example.png" 1751651672 52730 b704b02fee09e7f4e81587e78957f2a5 ""
   "figures/gff-example.png" 1751651672 101187 21b252394228cc69f297178fbfca4367 ""
@@ -174,13 +174,13 @@
   "thesis.toc" 1752034777 2426 bbe1ca982ad1a6c67fc164d7407df0b9 ""
   "uofsthesis-cs.cls" 1751651672 29687 77b6e4d44acf1f2972768c4c328bb96b ""
   (generated)
-  "thesis.aux"
-  "chapter-2.aux"
-  "thesis.out"
   "/Users/connorburbridge/Documents/GitHub/masters/working-thesis/thesis.pdf"
-  "thesis.lof"
+  "chapter-2.aux"
   "thesis.toc"
   "/Users/connorburbridge/Documents/GitHub/masters/working-thesis/thesis.log"
   "thesis.pdf"
-  "thesis.lot"
   "thesis.log"
+  "thesis.aux"
+  "thesis.lof"
+  "thesis.lot"
+  "thesis.out"
