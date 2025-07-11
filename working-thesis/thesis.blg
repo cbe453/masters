@@ -1,71 +1,59 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: chapter-2.aux
-I couldn't open auxiliary file chapter-3.aux
----line 30 of file thesis.aux
- : \@input{chapter-3.aux
- :                      }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file chapter-4.aux
----line 31 of file thesis.aux
- : \@input{chapter-4.aux
- :                      }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file chapter-5.aux
----line 32 of file thesis.aux
- : \@input{chapter-5.aux
- :                      }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file chapter-6.aux
----line 33 of file thesis.aux
- : \@input{chapter-6.aux
- :                      }
-I'm skipping whatever remains of this command
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: chapter-3.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: ./refs/full-bib.bib
+Warning--I didn't find a database entry for "Mukherjee2012"
+Warning--I didn't find a database entry for "Goncalves2024"
+Warning--I didn't find a database entry for "Craney2013"
+Warning--I didn't find a database entry for "Komaki2020"
 Warning--I didn't find a database entry for "Keller2011"
-Warning--I didn't find a database entry for "10.1093/nar/gkac993"
-Warning--can't use both author and editor fields in Goncalves2024
-You've used 26 entries,
+Warning--can't use both author and editor fields in Loftus2003
+You've used 11 entries,
             2118 wiz_defined-function locations,
-            691 strings with 9725 characters,
-and the built_in function-call counts, 10154 in all, are:
-= -- 954
-> -- 653
-< -- 1
-+ -- 258
-- -- 232
-* -- 898
-:= -- 1762
-add.period$ -- 77
-call.type$ -- 26
-change.case$ -- 193
+            593 strings with 6796 characters,
+and the built_in function-call counts, 4498 in all, are:
+= -- 405
+> -- 317
+< -- 2
++ -- 125
+- -- 114
+* -- 381
+:= -- 798
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 89
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 288
-empty$ -- 660
-format.name$ -- 232
-if$ -- 1986
+cite$ -- 12
+duplicate$ -- 128
+empty$ -- 273
+format.name$ -- 114
+if$ -- 889
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 26
-newline$ -- 132
-num.names$ -- 52
-pop$ -- 154
+int.to.str$ -- 11
+missing$ -- 12
+newline$ -- 58
+num.names$ -- 22
+pop$ -- 73
 preamble$ -- 1
-purify$ -- 168
+purify$ -- 79
 quote$ -- 0
-skip$ -- 199
+skip$ -- 89
 stack$ -- 0
-substring$ -- 605
-swap$ -- 34
-text.length$ -- 1
+substring$ -- 228
+swap$ -- 20
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 102
+type$ -- 42
 warning$ -- 1
-while$ -- 92
-width$ -- 28
-write$ -- 286
-(There were 4 error messages)
+while$ -- 32
+width$ -- 13
+write$ -- 124
+(There were 6 warnings)

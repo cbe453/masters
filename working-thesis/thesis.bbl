@@ -1,74 +1,22 @@
 \begin{thebibliography}{10}
 
-\bibitem{Adams2008}
-Jill Adams.
-\newblock {Complex Genomes: Shotgun Sequencing}.
-\newblock {\em Nature Education}, 1(1):186, 2008.
-
-\bibitem{Baker2012}
-Scott~E Baker, Giancarlo Perrone, Nathan~M Richardson, Antonia Gallo, and
-  Christian~P Kubicek.
-\newblock {Phylogenomic analysis of polyketide synthase-encoding genes in
-  Trichoderma.}
-\newblock {\em Microbiology (Reading, England)}, 158(Pt 1):147--154, jan 2012.
-
-\bibitem{Bennett2004}
-Simon Bennett.
-\newblock {Solexa Ltd.}
-\newblock {\em Pharmacogenomics}, 5(4):433--438, jun 2004.
-
 \bibitem{Bruna2021}
-Tom{\'{a}}{\v{s}} Brůna, Katharina~J Hoff, Alexandre Lomsadze, Mario Stanke,
-  and Mark Borodovsky.
-\newblock {BRAKER2: automatic eukaryotic genome annotation with GeneMark-EP+
-  and AUGUSTUS supported by a protein database.}
-\newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, mar 2021.
+Tomáš Brůna, Katharina~J Hoff, Alexandre Lomsadze, Mario Stanke, and Mark
+  Borodovsky.
+\newblock Braker2: automatic eukaryotic genome annotation with genemark-ep+ and
+  augustus supported by a protein database.
+\newblock {\em NAR genomics and bioinformatics}, 3:lqaa108, 3 2021.
 
 \bibitem{Compeau2011}
 Phillip E~C Compeau, Pavel~A Pevzner, and Glenn Tesler.
-\newblock {How to apply de Bruijn graphs to genome assembly.}
-\newblock {\em Nature biotechnology}, 29(11):987--991, nov 2011.
-
-\bibitem{Craney2013}
-Arryn Craney, Salman Ahmed, and Justin Nodwell.
-\newblock {Towards a new science of secondary metabolism}.
-\newblock {\em The Journal of Antibiotics}, 66(7):387--400, 2013.
-
-\bibitem{Druzhinina2018}
-Irina~S Druzhinina, Komal Chenthamara, Jian Zhang, Lea Atanasova, Dongqing
-  Yang, Youzhi Miao, Mohammad~J Rahimi, Marica Grujic, Feng Cai, Shadi
-  Pourmehdi, Kamariah~Abu Salim, Carina Pretzer, Alexey~G Kopchinskiy, Bernard
-  Henrissat, Alan Kuo, Hope Hundley, Mei Wang, Andrea Aerts, Asaf Salamov, Anna
-  Lipzen, Kurt LaButti, Kerrie Barry, Igor~V Grigoriev, Qirong Shen, and
-  Christian~P Kubicek.
-\newblock {Massive lateral transfer of genes encoding plant cell wall-degrading
-  enzymes to the mycoparasitic fungus Trichoderma from its plant-associated
-  hosts.}
-\newblock {\em PLoS genetics}, 14(4):e1007322, apr 2018.
+\newblock How to apply de bruijn graphs to genome assembly.
+\newblock {\em Nature biotechnology}, 29:987--991, 11 2011.
 
 \bibitem{Ejigu2020}
 Girum~Fitihamlak Ejigu and Jaehee Jung.
-\newblock {Review on the Computational Genome Annotation of Sequences Obtained
-  by Next-Generation Sequencing.}
-\newblock {\em Biology}, 9(9), sep 2020.
-
-\bibitem{Goncalves2024}
-Carla Gon{\c{c}}alves, Chris~Todd Hittinger, and Antonis Rokas.
-\newblock {\em {Horizontal Gene Transfer in Fungi and Its Ecological
-  Importance}}, pages 59--81.
-\newblock Springer International Publishing, Cham, 2024.
-
-\bibitem{Goodwin2016}
-Sara Goodwin, John~D McPherson, and W~Richard McCombie.
-\newblock {Coming of age: ten years of next-generation sequencing
-  technologies}.
-\newblock {\em Nature Reviews Genetics}, 17(6):333--351, 2016.
-
-\bibitem{Komaki2020}
-Hisayuki Komaki and Tomohiko Tamura.
-\newblock {Polyketide Synthase and Nonribosomal Peptide Synthetase Gene
-  Clusters in Type Strains of the Genus Phytohabitans.}
-\newblock {\em Life (Basel, Switzerland)}, 10(11), oct 2020.
+\newblock Review on the computational genome annotation of sequences obtained
+  by next-generation sequencing.
+\newblock {\em Biology}, 9, 9 2020.
 
 \bibitem{Kubicek2019}
 Christian~P Kubicek, Andrei~S Steindorff, Komal Chenthamara, Gelsomina
@@ -76,89 +24,53 @@ Christian~P Kubicek, Andrei~S Steindorff, Komal Chenthamara, Gelsomina
   Eva~M Kubicek, Alan Kuo, Riccardo Baroncelli, Sabrina Sarrocco,
   Eliane~Ferreira Noronha, Giovanni Vannacci, Qirong Shen, Igor~V Grigoriev,
   and Irina~S Druzhinina.
-\newblock {Evolution and comparative genomics of the most common Trichoderma
-  species}.
-\newblock {\em BMC Genomics}, 20(1):485, 2019.
+\newblock Evolution and comparative genomics of the most common trichoderma
+  species.
+\newblock {\em BMC Genomics}, 20:485, 2019.
+
+\bibitem{Loftus2003}
+Brendan Loftus.
+\newblock {\em 4 - Genome Sequencing, Assembly and Gene Prediction in Fungi},
+  volume~3, pages 65--81.
+\newblock Elsevier, 2003.
 
 \bibitem{10.1093/nar/gki937}
 Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
   Borodovsky.
-\newblock {Gene identification in novel eukaryotic genomes by self-training
-  algorithm}.
-\newblock {\em Nucleic Acids Research}, 33(20):6494--6506, 2005.
-
-\bibitem{Marx2023}
-Vivien Marx.
-\newblock {Method of the year: long-read sequencing}.
-\newblock {\em Nature Methods}, 20(1):6--11, 2023.
-
-\bibitem{Mukherjee2012}
-Prasun~K Mukherjee, Benjamin~A Horwitz, and Charles~M Kenerley.
-\newblock {Secondary metabolism in Trichoderma--a genomic perspective.}
-\newblock {\em Microbiology (Reading, England)}, 158(Pt 1):35--45, jan 2012.
+\newblock Gene identification in novel eukaryotic genomes by self-training
+  algorithm.
+\newblock {\em Nucleic Acids Research}, 33:6494--6506, 2005.
 
 \bibitem{Nagarajan2013}
 Niranjan Nagarajan and Mihai Pop.
-\newblock {Sequence assembly demystified}.
-\newblock {\em Nature Reviews Genetics}, 14(3):157--167, 2013.
-
-\bibitem{NCBI2024}
-NCBI.
-\newblock {NCBI Eukaryotic Annotation Pipeline}, 2024.
+\newblock Sequence assembly demystified.
+\newblock {\em Nature Reviews Genetics}, 14:157--167, 2013.
 
 \bibitem{Plohl2014}
-Miroslav Plohl, Nevenka Me{\v{s}}trovi{\'{c}}, and Brankica Mravinac.
-\newblock {Centromere identity from the DNA point of view}.
-\newblock {\em Chromosoma}, 123(4):313--325, aug 2014.
-
-\bibitem{Rhoads2015}
-Anthony Rhoads and Kin~Fai Au.
-\newblock {PacBio Sequencing and Its Applications.}
-\newblock {\em Genomics, proteomics and bioinformatics}, 13(5):278--289, oct
-  2015.
+Miroslav Plohl, Nevenka Meštrović, and Brankica Mravinac.
+\newblock Centromere identity from the dna point of view.
+\newblock {\em Chromosoma}, 123:313--325, 8 2014.
 
 \bibitem{10.3389/fpls.2023.1190304}
 Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
   and Luigi Lucini.
-\newblock {Trichoderma spp.-mediated mitigation of heat, drought, and their
-  combination on the Arabidopsis thaliana holobiont: a metabolomics and
-  metabarcoding approach}.
+\newblock Trichoderma spp.-mediated mitigation of heat, drought, and their
+  combination on the arabidopsis thaliana holobiont: a metabolomics and
+  metabarcoding approach.
 \newblock {\em Frontiers in Plant Science}, 14, 2023.
-
-\bibitem{Slotkin2018}
-R~Keith Slotkin.
-\newblock {The case for not masking away repetitive DNA}.
-\newblock {\em Mobile DNA}, 9(1):15, 2018.
-
-\bibitem{doi:10.1080/10408390600762696}
-Ioannis S~Arvanitoyannis {Theodoros H. Varzakas} and Haralambos Baltas.
-\newblock {The Politics and Science Behind GMO Acceptance}.
-\newblock {\em Critical Reviews in Food Science and Nutrition}, 47(4):335--361,
-  2007.
-
-\bibitem{Treangen2011}
-Todd~J Treangen and Steven~L Salzberg.
-\newblock {Repetitive DNA and next-generation sequencing: computational
-  challenges and solutions.}
-\newblock {\em Nature reviews. Genetics}, 13(1):36--46, nov 2011.
-
-\bibitem{Wang2021}
-Yunhao Wang, Yue Zhao, Audrey Bollas, Yuru Wang, and Kin~Fai Au.
-\newblock {Nanopore sequencing technology, bioinformatics and applications}.
-\newblock {\em Nature Biotechnology}, 39(11):1348--1365, 2021.
 
 \bibitem{10.1371/journal.pgen.1007467}
 David~J Winter, Austen R~D Ganley, Carolyn~A Young, Ivan Liachko, Christopher~L
   Schardl, Pierre-Yves Dupont, Daniel Berry, Arvina Ram, Barry Scott, and
   Murray~P Cox.
-\newblock {Repeat elements organise 3D genome structure and mediate
-  transcription in the filamentous fungus Epichlo{\"{e}} festucae}.
-\newblock {\em PLOS Genetics}, 14(10):1--29, 2018.
+\newblock Repeat elements organise 3d genome structure and mediate
+  transcription in the filamentous fungus epichloë festucae.
+\newblock {\em PLOS Genetics}, 14:1--29, 2018.
 
 \bibitem{Woo2023}
 Sheridan~L Woo, Rosa Hermosa, Matteo Lorito, and Enrique Monte.
-\newblock {Trichoderma: a multipurpose, plant-beneficial microorganism for
-  eco-sustainable agriculture}.
-\newblock {\em Nature Reviews Microbiology}, 21(5):312--326, 2023.
+\newblock Trichoderma: a multipurpose, plant-beneficial microorganism for
+  eco-sustainable agriculture.
+\newblock {\em Nature Reviews Microbiology}, 21:312--326, 2023.
 
 \end{thebibliography}

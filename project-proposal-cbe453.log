@@ -1,0 +1,134 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  10 JUL 2025 19:44
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/cbe45/OneDrive/Desktop/Masters/masters/project-proposal-cbe453.tex
+(c:/Users/cbe45/OneDrive/Desktop/Masters/masters/project-proposal-cbe453.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-06-09>
+(C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip51
+\@affilsep=\skip52
+\c@Maxaffil=\count283
+\c@authors=\count284
+\c@affil=\count285
+) (C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count286
+) (project-proposal-cbe453.aux)
+\openout1 = `project-proposal-cbe453.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 11.
+
+
+[1
+
+{C:/Users/cbe45/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (project-proposal-cbe453.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `project-proposal-cbe453.toc'.
+
+
+
+[2
+
+]
+
+[3
+
+]
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 279--282
+[]\OT1/cmr/m/n/12 Kaminskyj et al. (2012). Method for in-creas-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--282
+\OT1/cmr/m/n/12 ing plant growth us-ing the fun-gus \OT1/cmr/m/it/12 Tri-cho-derma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--282
+\OT1/cmr/m/it/12 harzianum \OT1/cmr/m/n/12 (United States PCT/CA2O1O/OO1454).
+ []
+
+
+Overfull \hbox (112.56006pt too wide) in paragraph at lines 279--282
+\OT1/cmr/m/n/12 https://patentimages.storage.googleapis.com/57/4f/7f/5ff60c47045f01/US20120178624A1.pdf 
+ []
+
+
+
+[9]
+
+[10] (project-proposal-cbe453.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-06-09>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 588 strings out of 468221
+ 10834 string characters out of 5432891
+ 434021 words of memory out of 5000000
+ 29177 multiletter control sequences out of 15000+600000
+ 633024 words of font info for 60 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 35i,5n,38p,267b,250s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on project-proposal-cbe453.pdf (10 pages, 104067 bytes).
+PDF statistics:
+ 65 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
