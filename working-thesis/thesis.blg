@@ -9,51 +9,49 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: ./refs/full-bib.bib
-Warning--I didn't find a database entry for "Mukherjee2012"
 Warning--I didn't find a database entry for "Goncalves2024"
-Warning--I didn't find a database entry for "Craney2013"
 Warning--I didn't find a database entry for "Komaki2020"
 Warning--I didn't find a database entry for "Keller2011"
 Warning--can't use both author and editor fields in Loftus2003
-You've used 11 entries,
+You've used 13 entries,
             2118 wiz_defined-function locations,
-            593 strings with 6796 characters,
-and the built_in function-call counts, 4498 in all, are:
-= -- 405
-> -- 317
+            605 strings with 7093 characters,
+and the built_in function-call counts, 5178 in all, are:
+= -- 471
+> -- 353
 < -- 2
-+ -- 125
-- -- 114
-* -- 381
-:= -- 798
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 89
++ -- 139
+- -- 126
+* -- 433
+:= -- 916
+add.period$ -- 39
+call.type$ -- 13
+change.case$ -- 101
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 128
-empty$ -- 273
-format.name$ -- 114
-if$ -- 889
+cite$ -- 14
+duplicate$ -- 150
+empty$ -- 323
+format.name$ -- 126
+if$ -- 1029
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 12
-newline$ -- 58
-num.names$ -- 22
-pop$ -- 73
+int.to.str$ -- 13
+missing$ -- 14
+newline$ -- 68
+num.names$ -- 26
+pop$ -- 81
 preamble$ -- 1
-purify$ -- 79
+purify$ -- 89
 quote$ -- 0
-skip$ -- 89
+skip$ -- 103
 stack$ -- 0
-substring$ -- 228
-swap$ -- 20
+substring$ -- 274
+swap$ -- 22
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 42
+type$ -- 50
 warning$ -- 1
-while$ -- 32
-width$ -- 13
-write$ -- 124
-(There were 6 warnings)
+while$ -- 38
+width$ -- 15
+write$ -- 146
+(There were 4 warnings)

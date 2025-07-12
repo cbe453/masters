@@ -12,6 +12,11 @@ Phillip E~C Compeau, Pavel~A Pevzner, and Glenn Tesler.
 \newblock How to apply de bruijn graphs to genome assembly.
 \newblock {\em Nature biotechnology}, 29:987--991, 11 2011.
 
+\bibitem{Craney2013}
+Arryn Craney, Salman Ahmed, and Justin Nodwell.
+\newblock Towards a new science of secondary metabolism.
+\newblock {\em The Journal of Antibiotics}, 66:387--400, 2013.
+
 \bibitem{Ejigu2020}
 Girum~Fitihamlak Ejigu and Jaehee Jung.
 \newblock Review on the computational genome annotation of sequences obtained
@@ -40,6 +45,11 @@ Alexandre Lomsadze, Vardges Ter-Hovhannisyan, Yury~O Chernoff, and Mark
 \newblock Gene identification in novel eukaryotic genomes by self-training
   algorithm.
 \newblock {\em Nucleic Acids Research}, 33:6494--6506, 2005.
+
+\bibitem{Mukherjee2012}
+Prasun~K Mukherjee, Benjamin~A Horwitz, and Charles~M Kenerley.
+\newblock Secondary metabolism in trichoderma – a genomic perspective.
+\newblock {\em Microbiology}, 158:35--45, 2012.
 
 \bibitem{Nagarajan2013}
 Niranjan Nagarajan and Mihai Pop.
