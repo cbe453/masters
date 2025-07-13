@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  12 JUL 2025 12:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  12 JUL 2025 20:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -707,25 +707,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Chapter 1.
 (chapters/c2/literature.tex
 
-LaTeX Warning: Citation `Goncalves2024' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Goncalves2024' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Goncalves2024' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Goncalves2024' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Goncalves2024' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Goncalves2024' on page 1 undefined on input line 33.
-
-
-
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -735,10 +716,6 @@ l.37
 
 
 ]
-
-LaTeX Warning: Citation `Komaki2020' on page 2 undefined on input line 50.
-
-
 Overfull \hbox (5.60283pt too wide) in paragraph at lines 76--94
 []\OT1/cmr/m/n/10 Recently, two strains of \OT1/cmr/m/it/10 Tri-cho-derma \OT1/cmr/m/n/10 have been iden-ti-fied in the prairie re-gions of Al-berta and Saskatchewan.
  []
@@ -749,11 +726,7 @@ Overfull \hbox (5.60283pt too wide) in paragraph at lines 76--94
 
 [3]
 
-[4]
-
-LaTeX Warning: Citation `Keller2011' on page 5 undefined on input line 211.
-
-))
+[4]))
 
 [5]
 \openout2 = `chapter-3.aux'.
@@ -771,36 +744,34 @@ Chapter 2.
 
 [7]))
 
-[8] (thesis.bbl)
+[8] (thesis.bbl
 
 [9
 
 
 
-] (thesis.aux (chapter-2.aux) (chapter-3.aux))
+])
+
+[10] (thesis.aux (chapter-2.aux) (chapter-3.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 8DE268288F371A5B00B45E3027C818EF;4977.
  ) 
 Here is how much of TeX's memory you used:
- 23229 strings out of 468221
- 433599 string characters out of 5432891
- 818305 words of memory out of 5000000
- 51300 multiletter control sequences out of 15000+600000
+ 23237 strings out of 468221
+ 433647 string characters out of 5432891
+ 819380 words of memory out of 5000000
+ 51304 multiletter control sequences out of 15000+600000
  630397 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,8n,93p,1426b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,8n,93p,1417b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (17 pages, 198651 bytes).
+Output written on thesis.pdf (18 pages, 201139 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
  229 words of extra memory for PDF output out of 10000 (max. 10000000)
 
