@@ -10,18 +10,18 @@
 \contentsline {section}{\numberline {1.2}Secondary Metabolites}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Novel \textit {Trichoderma} Genomes}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Gene Predictions and Complementing Similarity Searches}{3}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Genome Assembly}{3}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Identification of Anomolous Genomic regions}{4}{section.1.6}%
+\contentsline {section}{\numberline {1.5}Genome Assembly}{4}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Identification of Anomolous Genomic regions}{5}{section.1.6}%
 \contentsline {section}{\numberline {1.7}Gene Finding Methods}{5}{section.1.7}%
-\contentsline {chapter}{\numberline {2}Research Questions}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Research Questions}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}\textit {Trichoderma} Assembly Results}{6}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Profiling of Gene Finding Tools}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Number of Features Predicted}{7}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Lengths of Predicted Genes}{7}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Performance in Regions of Anomalous Sequence Content}{7}{section.2.6}%
-\contentsline {section}{\numberline {2.7}BUSCO Completeness}{7}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Identifying Regions of Agreement and Disagreement}{7}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Validation of Predicted Genes via InterProScan}{8}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Selection of a Gene Finding Tool}{8}{section.2.10}%
-\contentsline {chapter}{References}{9}{section*.13}%
+\contentsline {chapter}{\numberline {2}Research Questions}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Research Questions}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}\textit {Trichoderma} Assembly Results}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Profiling of Gene Finding Tools}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Number of Features Predicted}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Lengths of Predicted Genes}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Performance in Regions of Anomalous Sequence Content}{8}{section.2.6}%
+\contentsline {section}{\numberline {2.7}BUSCO Completeness}{8}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Identifying Regions of Agreement and Disagreement}{8}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Validation of Predicted Genes via InterProScan}{9}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Selection of a Gene Finding Tool}{9}{section.2.10}%
+\contentsline {chapter}{References}{10}{section*.13}%
