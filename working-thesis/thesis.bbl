@@ -1,18 +1,12 @@
 \begin{thebibliography}{10}
 
-\bibitem{borodovsky2011a}
-Mark Borodovsky and Alex Lomsadze.
-\newblock Eukaryotic gene prediction using {{GeneMark}}.hmm-{{E}} and
-  {{GeneMark-ES}}.
-\newblock {\em Current Protocols in Bioinformatics}, Chapter
-  4(SUPPL.35):4.6.1--4.6.10, September 2011.
-
-\bibitem{bruna2021a}
-Tom{\'a}{\v s} Br{\r u}na, Katharina~J. Hoff, Alexandre Lomsadze, Mario Stanke,
-  and Mark Borodovsky.
-\newblock {{BRAKER2}}: Automatic eukaryotic genome annotation with
-  {{GeneMark-EP}}+ and {{AUGUSTUS}} supported by a protein database.
-\newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, March 2021.
+\bibitem{blin2023}
+Kai Blin, Simon Shaw, Hannah~E Augustijn, Zachary~L Reitz, Friederike Biermann,
+  Mohammad Alanjary, Artem Fetter, Barbara~R Terlouw, William~W Metcalf, Eric
+  J~N Helfrich, Gilles~P {van~Wezel}, Marnix~H Medema, and Tilmann Weber.
+\newblock {{antiSMASH}} 7.0: New and improved predictions for detection,
+  regulation, chemical structures~and visualisation.
+\newblock {\em Nucleic Acids Research}, 51(W1):W46--W50, July 2023.
 
 \bibitem{compeau2011a}
 Phillip E.~C. Compeau, Pavel~A. Pevzner, and Glenn Tesler.
@@ -42,12 +36,6 @@ Carla Gon{\c c}alves, Chris~Todd Hittinger, and Antonis Rokas.
 \newblock In Yen-Ping Hsueh and Meredith Blackwell, editors, {\em Fungal
   {{Associations}}}, pages 59--81. Springer International Publishing, Cham,
   2024.
-
-\bibitem{Keller2011}
-Oliver Keller, Martin Kollmar, Mario Stanke, and Stephan Waack.
-\newblock A novel hybrid gene prediction method employing protein multiple
-  sequence alignments.
-\newblock {\em Bioinformatics}, 27(6):757--763, 2011.
 
 \bibitem{komaki2020}
 Hisayuki Komaki and Tomohiko Tamura.
@@ -93,6 +81,11 @@ Brendan Loftus.
   {{Fungi}}.
 \newblock In Dilip~K. Arora and George~G. Khachatourians, editors, {\em Fungal
   {{Genomics}}}, volume~3, pages 65--81. Elsevier, 2003.
+
+\bibitem{manni2021a}
+Mos{\`e} Manni, Matthew~R. Berkeley, Mathieu Seppey, and Evgeny~M. Zdobnov.
+\newblock {{BUSCO}}: {{Assessing Genomic Data Quality}} and {{Beyond}}.
+\newblock {\em Current Protocols}, 1(12):e323, 2021.
 
 \bibitem{Mukherjee2012}
 Prasun~K. Mukherjee, Benjamin~A. Horwitz, and Charles~M. Kenerley.

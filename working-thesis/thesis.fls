@@ -289,6 +289,13 @@ INPUT .\chapters\c2\literature.tex
 INPUT chapters\c2\literature.tex
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT .\figures\gene-model-fig-msc.png
+INPUT .\figures\gene-model-fig-msc.png
+INPUT .\figures\gene-model-fig-msc.png
+INPUT .\figures\gene-model-fig-msc.png
+INPUT .\figures\gene-model-fig-msc.png
+INPUT .\figures\gene-model-fig-msc.png
+INPUT .\figures\gene-model-fig-msc.png
 INPUT .\chapter-3.tex
 INPUT .\chapter-3.tex
 OUTPUT chapter-3.aux

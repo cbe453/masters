@@ -67,26 +67,6 @@ possible gene lengths is another important metric for comparison. Thus
 we ask the question: \textbf{do different gene finders predict genes
   of similar lengths in \textit{Trichoderma}?}
 
-\section{Performance in Regions of Anomalous Sequence Content}
-\label{rq:anomalous-sequence-content}
-
-One of the inspirations for this research is the unique composition of
-genomic sequence in \textit{Trichoderma}. Results from the assembly
-process show that GC content in \textit{Trichoderma} strains is
-abnormal throughout most assemblies. These regions of assemblies
-present an interesting opportunity to assess gene finding performance
-in regions of anomalous GC content. The question follows: \textbf{do
-  gene finders behave differently in regions of anomalous sequence
-  content?}
-
-\section{BUSCO Completeness}
-
-The use of existing benchmarks for gene finding performance is useful
-when assessing performance of gene finding tools, particularly in the
-case of genes that should be evolutionarily conserved. \textbf{Do gene
-  finders predict conserved single-copy orthologs expected in fungal
-  genomes?}
-
 \section{Identifying Regions of Agreement and Disagreement} \label{identify-regions}
 
 With predicted genes from several tools available, the question we
@@ -103,7 +83,7 @@ from which we can ask: \textbf{do gene finders agree on their
   prevalent?}
 
 \section{Validation of Predicted Genes via InterProScan}
-
+\label{rq:interproscan}
 In an effort to validate, or at least provide supporting evidence for
 any given gene prediction we will apply InterProScan to coding
 sequences predicted by each of the gene finders to identify features
@@ -114,12 +94,29 @@ InterProScan, we ask the question: \textbf{in the context of
   \textit{Trichoderma}, do proteins predicted by gene finders contain
   functional signatures?}
 
-%\section{Identification of a Core \textit{Trichoderma} Gene Set.}
-%Using results from identification of regions in section
-%\ref{identify-regions} we will identify a shared or `consensus' set of
-%predictions for each \textit{Trichoderma} assembly. \textbf{Can we
-%  identify a set of consensus predictions from gene finding results?
-%  What are the properties of the resulting set?}
+\section{Similarity searches of Predicted Genes with tblastn}
+\label{rq:tblastn}
+
+
+\section{Performance in Regions of Anomalous Sequence Content}
+\label{rq:anomalous-sequence-content}
+
+One of the inspirations for this research is the unique composition of
+genomic sequence in \textit{Trichoderma}. Results from the assembly
+process show that GC content in \textit{Trichoderma} strains is
+abnormal throughout most assemblies. These regions of assemblies
+present an interesting opportunity to assess gene finding performance
+in regions of anomalous GC content. The question follows: \textbf{do
+  gene finders behave differently in regions of anomalous sequence
+  content?}
+
+\section{BUSCO Completeness}
+\label{rq:busco-completeness}
+The use of existing benchmarks for gene finding performance is useful
+when assessing performance of gene finding tools, particularly in the
+case of genes that should be evolutionarily conserved. \textbf{Do gene
+  finders predict conserved single-copy orthologs expected in fungal
+  genomes?}
 
 \section{Selection of a Gene Finding Tool}
 
