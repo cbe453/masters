@@ -8,11 +8,6 @@ Kai Blin, Simon Shaw, Hannah~E Augustijn, Zachary~L Reitz, Friederike Biermann,
   regulation, chemical structures~and visualisation.
 \newblock {\em Nucleic Acids Research}, 51(W1):W46--W50, July 2023.
 
-\bibitem{compeau2011a}
-Phillip E.~C. Compeau, Pavel~A. Pevzner, and Glenn Tesler.
-\newblock How to apply de {{Bruijn}} graphs to genome assembly.
-\newblock {\em Nature biotechnology}, 29(11):987--991, November 2011.
-
 \bibitem{Craney2013}
 Arryn Craney, Salman Ahmed, and Justin Nodwell.
 \newblock Towards a new science of secondary metabolism.
@@ -87,15 +82,16 @@ Mos{\`e} Manni, Matthew~R. Berkeley, Mathieu Seppey, and Evgeny~M. Zdobnov.
 \newblock {{BUSCO}}: {{Assessing Genomic Data Quality}} and {{Beyond}}.
 \newblock {\em Current Protocols}, 1(12):e323, 2021.
 
+\bibitem{min2017}
+Byoungnam Min, Igor~V Grigoriev, and In-Geol Choi.
+\newblock {{FunGAP}}: {{Fungal Genome Annotation Pipeline}} using
+  evidence-based gene model evaluation.
+\newblock {\em Bioinformatics}, 33(18):2936--2937, September 2017.
+
 \bibitem{Mukherjee2012}
 Prasun~K. Mukherjee, Benjamin~A. Horwitz, and Charles~M. Kenerley.
 \newblock Secondary metabolism in {{Trichoderma}} -- a genomic perspective.
 \newblock {\em Microbiology}, 158(1):35--45, 2012.
-
-\bibitem{nagarajan2013a}
-Niranjan Nagarajan and Mihai Pop.
-\newblock Sequence assembly demystified.
-\newblock {\em Nature Reviews Genetics}, 14(3):157--167, 2013.
 
 \bibitem{plohl2014a}
 Miroslav Plohl, Nevenka Me{\v s}trovi{\'c}, and Brankica Mravinac.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  14 JUL 2025 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  16 JUL 2025 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -653,84 +653,33 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/it' instead on input line 65.
-
-
-
-[1
-
-{C:/Users/cbe45/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-
-[1
-
-]
-
-[2
-
-]
-
-[3
-
-] (thesis.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1.
-)
-\tf@toc=\write5
-\openout5 = `thesis.toc'.
-
-
-
-[4] (thesis.lot)
-\tf@lot=\write6
-\openout6 = `thesis.lot'.
-
-
-
-[5] (thesis.lof)
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
-
-
-
-[6]
-
-[7
-
-]
 \openout2 = `chapter-2.aux'.
 
  (chapter-2.tex
 Chapter 1.
 (chapters/c2/literature.tex
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.34 
-      [1
+[1
 
 
-]
+
+{C:/Users/cbe45/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 Overfull \hbox (5.60283pt too wide) in paragraph at lines 51--69
 []\OT1/cmr/m/n/10 Recently, two strains of \OT1/cmr/m/it/10 Tri-cho-derma \OT1/cmr/m/n/10 have been iden-ti-fied in the prairie re-gions of Al-berta and Saskatchewan.
  []
 
-<figures/gene-model-fig-msc.png, id=227, 1544.01843pt x 416.30531pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 73.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 73.
+<figures/gene-model-fig-msc.png, id=126, 680.871pt x 190.311pt>
 File: figures/gene-model-fig-msc.png Graphic file (type png)
 <use figures/gene-model-fig-msc.png>
 Package pdftex.def Info: figures/gene-model-fig-msc.png  used on input line 77.
-(pdftex.def)             Requested size: 377.62642pt x 101.81465pt.
+(pdftex.def)             Requested size: 377.62642pt x 105.55414pt.
 
 
 [2]
-Underfull \vbox (badness 1210) has occurred while \output is active []
-
-
 
 [3 <./figures/gene-model-fig-msc.png>]
 
@@ -742,6 +691,9 @@ Underfull \vbox (badness 1210) has occurred while \output is active []
  (chapter-3.tex
 Chapter 2.
 (chapters/c3/research-questions.tex
+Underfull \vbox (badness 3965) has occurred while \output is active []
+
+
 
 [6
 
@@ -749,6 +701,9 @@ Chapter 2.
 
 
 ]
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
+
 
 [7]))
 
@@ -766,20 +721,20 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3FF7FB40DE9EF06D12199AB5F5259CDA;5145.
+(rerunfilecheck)             Checksum: DA51F212E621F0A2EC0DD6D7B7C2D785;4110.
  ) 
 Here is how much of TeX's memory you used:
- 23264 strings out of 468221
- 434228 string characters out of 5432891
- 820862 words of memory out of 5000000
- 51329 multiletter control sequences out of 15000+600000
- 630397 words of font info for 51 fonts, out of 8000000 for 9000
+ 23197 strings out of 468221
+ 433187 string characters out of 5432891
+ 821980 words of memory out of 5000000
+ 51295 multiletter control sequences out of 15000+600000
+ 629408 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,8n,93p,1673b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (18 pages, 237587 bytes).
+ 90i,6n,93p,1950b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on thesis.pdf (10 pages, 182985 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 

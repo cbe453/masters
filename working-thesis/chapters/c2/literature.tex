@@ -15,7 +15,7 @@
 %opportunities to understand other `omics' within cells, such as
 %proteomics, metabolomics, transcriptomics and epigenomics.
 
-Chapter one provides a brief backgound on \textit{Trichoderma} and the context in which is being studied. Section ~\ref{lit:evolution} discusses the evolutionary mechanisms that may have led to the increased production of secondary metabolites in \textit{Trichoderma} species, such as horizontal gene transfer, gene duplication, and transposable elements. 
+Chapter one provides a brief background on \textit{Trichoderma} and the context in which is being studied. Section ~\ref{lit:evolution} discusses the evolutionary mechanisms that may have led to the increased production of secondary metabolites in \textit{Trichoderma} species, such as horizontal gene transfer, gene duplication, and transposable elements. ~\ref{lit:novel-genomes} discusses the novel \textit{Trichoderma} genomes that were sequenced as part of this work, and how they relate to the research questions. Section ~\ref{lit:similarity-searches} discusses the gene prediction tools that will be used in this work, while section ~\ref{lit:secondary-metabolites} provides an overview of secondary metabolites and their importance in \textit{Trichoderma} species. Finally, section ~\ref{lit:comp-motiv} provides an overview of comparative studies of gene prediction tools in \textit{Trichoderma} species, and how this work aims to fill the gap in literature.
 
 \section{\textit{Trichoderma} Species and their Evolution}
 \label{lit:evolution}
@@ -47,7 +47,7 @@ Given the proximity of \textit{Trichoderma} species to other fungi, bacteria, an
 %nutrient stress, leading to poor overall yields.
 
 \section{Novel \textit{Trichoderma} Genomes}
-
+\label{lit:novel-genomes}
 Recently, two strains of \textit{Trichoderma}
 have been identified in the prairie regions of Alberta and
 Saskatchewan. These two strains, named Tsth20 and DC1, have been found
@@ -68,14 +68,14 @@ genomes, it may serve as a foundation for future research of
 \textit{Trichoderma}. The assembly of these genomes come as a result of Research Question~\ref{rq:assembly-results}.
 
 \section{Gene Predictions and Complementing Similarity Searches}
-
+\label{lit:similarity-searches}
 Gene prediction methods are generally based on the idea that genes can be
-identified by searching for patterns in a sequence that match an expected gene structure or model. These gene structures begin from a 5' start codon, continue through a series of exons and introns, and end with a 3' stop codon~\cite{loftus2003a}. Flanking the gene structure are promoter regions, which are typically found upstream of the start codon, and untranslated regions (UTRs), which are found both upstream and downstream of the start and stop codons. Promoter regions are important for the regulation of gene expression, while UTRs are important for the stability and translation of the mRNA~\cite{loftus2003a}. Sequences are translated from the 5' start codon through to the 3' stop codon, splicing together exons and ignoring introns. An example of a eukaryotic gene structure is shown in Figure~\ref{fig:gene-structure}.
+identified by searching for patterns in a sequence that match an expected gene structure or model. These gene structures begin from a $5'$ start codon, continue through a series of exons and introns, and end with a $3'$ stop codon~\cite{loftus2003a}. Flanking the gene structure are promoter regions, which are typically found upstream of the start codon, and untranslated regions (UTRs), which are found both upstream and downstream of the start and stop codons. Promoter regions are important for the regulation of gene expression, while UTRs are important for the stability and translation of the mRNA~\cite{loftus2003a}. Sequences are translated from the $5'$ start codon through to the $3'$ stop codon, splicing together exons and ignoring introns. An example of a eukaryotic gene structure is shown in Figure~\ref{fig:gene-structure}.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/gene-model-fig-msc.png}
-    \caption{Example of a eukaryotic gene structure, showing a promoter region (blue), the 5' and 3' UTRs (purple), start codon (green), exons (orange), and introns (grey). The directed arrow indicates the direction of transcription. }
+    \caption{Example of a eukaryotic gene structure, showing a promoter region (blue), the $5'$ and $3'$ UTRs (purple), start codon (green), exons (orange), and introns (grey). The directed arrow indicates the direction of transcription. }
     \label{fig:gene-structure}
 \end{figure}
 
@@ -111,68 +111,72 @@ organism and may be necessary for survival in some situations~\cite{Craney2013}~
 
  %Given the modular nature of NRPSs and PKSs, one can assume that many genes %are responsible for the production of secondary metabolites. Thus, it is %important that methods used for the identification of genes involved in %secondary metabolite production are able to identify as many of those genes %as possible. Failure to identify these genes may result in an incomplete %understanding of the secondary metabolite production process, and may also %result in the loss of potential targets for further research. With this in %mind, it is important to consider the methods used for identification of %genes in a genome, as the methods used can have a significant impact on the %results, forming the basis of Research Questions ~\ref{rq:number-of-features} %and ~\ref{rq:gene-lengths}. 
 
-\section{Genome Assembly}
+\section{Gene Prediction Tools in Fungi}
+\label{lit:comp-motiv}
+With the biological context laid out, we can now turn our attention to the computational aspect of this work. Many \textit{Trichoderma} species have been assembled and annotated in the past, mostly for the purpose of understanding the mechanisms behind secondary metabolite production~\cite{Mukherjee2012}. Gene predictions in this context are typically compared against sequences from other organisms to derive functional information, and to validate the predicted genes~\cite{loftus2003a}. In comparison, very few studies have been conducted comparing gene prediction tools in fungal genomes, and even fewer have been conducted in \textit{Trichoderma} species. This is surprising, given the large number of gene prediction tools available, and the fact that many of them are used in the field of fungal genomics~\cite{ejigu2020a}. Comparisons of gene prediction tools are common when new tools are released, but these comparisons are often limited to a small number of tools, and are typically evaluated on several different species, rather than a single genome~\cite{min2017}. Complicating the matter further, the quality of genome sequences available may vary, making evaluation of different gene prediction tools difficult when working with multiple genomes and lesser-studied fungal species with low quality assemblies. Given the gap in literature regarding comparative analysis of gene prediction tools in \textit{Trichoderma} species, and the availability of the novel DC1 and Tsth20 genomes, this work aims to fill that gap by comparing the outputs of several gene prediction tools on these two genomes along with three other frequently studied \textit{Tichoderma} species. Prior to application of gene prediction tools, the genomes must be assembled, which is the focus of the next section.  
 
-Sequence assembly has been a long-standing problem in the field of
-bioinformatics~\cite{nagarajan2013a}. Determining the correct order and
-combination of smaller subsequences into an accurate complete sequence
-assembly is computationally difficult in terms of compute resources
-such as memory, CPU cycles and storage required for input
-sequences~\cite{nagarajan2013a}. In addition to these difficulties,
-there can be other issues encountered during assembly due to the
-nature of the data or genomes themselves, such as low quality base
-calls for long read data, which is not necessarily the case today, or
-the inherent content of genomes themselves using repetitive regions as
-an example. Insufficient data may result in short, fragmented
-assemblies, depending on the size of the genomes, while sequence data
-that is not long enough can fail to fully capture repetitive regions
-in an assembly. A wide range of assembly tools have been developed
-with their own unique approaches to the genome assembly problem, so it
-is important to use an appropriate assembler for the task at hand, and
-also important to evaluate the assembly thoroughly.
+%\section{Genome Assembly}
 
-Genome assembly tools generally approach the assembly problem using a
-graph-based approach. The most common graph-based approach is the de
-Bruijn graph assembly~\cite{compeau2011a}. A graph in this context, is
-set of nodes (\textit{k}-mers from sequences) connected by edges
-(overlaps between \textit{k}-mers). Traversing through this graph
-results in longer subsequences that ultimately result in a set of
-sequences referred to as an assembly. In the early years of long read
-sequence data, sequencing platforms encountered difficulties producing
-consistently high scores for base calls when sequencing. To combat
-this, some assembly workflows may also include a polishing or
-correction step once the initial assembly is completed in which high
-quality short read sequences are used as supplemental information to
-correct low quality regions in the assembly. These low quality base
-calls are typically not present in modern long read sequencing
-approaches as the methodology and quality of calls have improved
-drastically. While the polishing step is arguably unnecessary in
-modern assemblies, the polishing programs remain available should
-researchers be interested in applying additional reads for polishing.
+%Sequence assembly has been a long-standing problem in the field of
+%bioinformatics~\cite{nagarajan2013a}. Determining the correct order and
+%combination of smaller subsequences into an accurate complete sequence
+%assembly is computationally difficult in terms of compute resources
+%such as memory, CPU cycles and storage required for input
+%sequences~\cite{nagarajan2013a}. In addition to these difficulties,
+%there can be other issues encountered during assembly due to the
+%nature of the data or genomes themselves, such as low quality base
+%calls for long read data, which is not necessarily the case today, or
+%the inherent content of genomes themselves using repetitive regions as
+%an example. Insufficient data may result in short, fragmented
+%assemblies, depending on the size of the genomes, while sequence data
+%that is not long enough can fail to fully capture repetitive regions
+%in an assembly. A wide range of assembly tools have been developed
+%with their own unique approaches to the genome assembly problem, so it
+%is important to use an appropriate assembler for the task at hand, and
+%also important to evaluate the assembly thoroughly.
 
-One approach to aid in the previously mentioned issue of assembly
-correctness is to use a combination of long and short reads in what is
-known as a hybrid assembly. Combining both highly accurate short reads
-with deep coverage along with less accurate but much longer reads can
-produce high quality genome assemblies that capture long repetitive
-regions. Hybrid assembly approaches have been shown to produce high
-quality assemblies in a wide variety of organisms as the combine long
-read data with short data to produce assemblies that properly
-represent long repetetive regions with additionaly high quality
-Illumina sequences for correction. Once assembled, the sequences must
-also be evaluated with measures such as N50, L50, coverage, average
-contig length and total assembled length to ensure that the genomes
-are well assembled, at least based on these
-metrics~\cite{nagarajan2013a}. Following appropriate assembly protocols
-is essential to the further success of a project as downstream
-processing such as annotation depends on a high-quality assembly.
+%Genome assembly tools generally approach the assembly problem using a
+%graph-based approach. The most common graph-based approach is the de
+%Bruijn graph assembly~\cite{compeau2011a}. A graph in this context, is
+%set of nodes (\textit{k}-mers from sequences) connected by edges
+%(overlaps between \textit{k}-mers). Traversing through this graph
+%results in longer subsequences that ultimately result in a set of
+%sequences referred to as an assembly. In the early years of long read
+%sequence data, sequencing platforms encountered difficulties producing
+%consistently high scores for base calls when sequencing. To combat
+%this, some assembly workflows may also include a polishing or
+%correction step once the initial assembly is completed in which high
+%quality short read sequences are used as supplemental information to
+%correct low quality regions in the assembly. These low quality base
+%calls are typically not present in modern long read sequencing
+%approaches as the methodology and quality of calls have improved
+%drastically. While the polishing step is arguably unnecessary in
+%modern assemblies, the polishing programs remain available should
+%researchers be interested in applying additional reads for polishing.
 
-\section{Identification of Anomolous Genomic regions}
-One important aspect of interest when assembling any form of sequence
-is GC content or percent GC of the assembled sequence. Large regions
-of anomolous GC content may be of interest to researchers as they may
-contain repetitive regions and unique features responsible for traits
-specific to the organism in question.
+%One approach to aid in the previously mentioned issue of assembly
+%correctness is to use a combination of long and short reads in what is
+%known as a hybrid assembly. Combining both highly accurate short reads
+%with deep coverage along with less accurate but much longer reads can
+%produce high quality genome assemblies that capture long repetitive
+%regions. Hybrid assembly approaches have been shown to produce high
+%quality assemblies in a wide variety of organisms as the combine long
+%read data with short data to produce assemblies that properly
+%represent long repetetive regions with additionaly high quality
+%Illumina sequences for correction. Once assembled, the sequences must
+%also be evaluated with measures such as N50, L50, coverage, average
+%contig length and total assembled length to ensure that the genomes
+%are well assembled, at least based on these
+%metrics~\cite{nagarajan2013a}. Following appropriate assembly protocols
+%is essential to the further success of a project as downstream
+%processing such as annotation depends on a high-quality assembly.
+
+%\section{Identification of Anomolous Genomic regions}
+%One important aspect of interest when assembling any form of sequence
+%is GC content or percent GC of the assembled sequence. Large regions
+%of anomolous GC content may be of interest to researchers as they may
+%contain repetitive regions and unique features responsible for traits
+%specific to the organism in question.
 
 
 
