@@ -1,3 +1,130 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{zotero-item-326}
+{{SRA-Toolkit}}.
+\newblock https://hpc.nih.gov/apps/sratoolkit.html.
+
+\bibitem{2008}
+Kolmogorov--{{Smirnov Test}}.
+\newblock In {\em The {{Concise Encyclopedia}} of {{Statistics}}}, pages
+  283--287. Springer New York, 2008.
+
+\bibitem{andrews}
+Simon Andrews.
+\newblock Babraham {{Bioinformatics}} - {{FastQC A Quality Control}} tool for
+  {{High Throughput Sequence Data}}.
+\newblock https://www.bioinformatics.babraham.ac.uk/projects/fastqc/.
+
+\bibitem{bennett2004a}
+Simon Bennett.
+\newblock Solexa {{Ltd}}.
+\newblock {\em Pharmacogenomics}, 5(4):433--438, June 2004.
+
+\bibitem{bolger2014a}
+Anthony~M. Bolger, Marc Lohse, and Bjoern Usadel.
+\newblock Trimmomatic: A flexible trimmer for {{Illumina}} sequence data.
+\newblock {\em Bioinformatics}, 30(15):2114--2120, August 2014.
+
+\bibitem{borodovsky2011a}
+Mark Borodovsky and Alex Lomsadze.
+\newblock Eukaryotic gene prediction using {{GeneMark}}.hmm-{{E}} and
+  {{GeneMark-ES}}.
+\newblock {\em Current Protocols in Bioinformatics}, Chapter
+  4(SUPPL.35):4.6.1--4.6.10, September 2011.
+
+\bibitem{bruna2021a}
+Tom{\'a}{\v s} Br{\r u}na, Katharina~J. Hoff, Alexandre Lomsadze, Mario Stanke,
+  and Mark Borodovsky.
+\newblock {{BRAKER2}}: Automatic eukaryotic genome annotation with
+  {{GeneMark-EP}}+ and {{AUGUSTUS}} supported by a protein database.
+\newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, March 2021.
+
+\bibitem{chapmana}
+Brad Chapman.
+\newblock {{BCBio Python Package}}.
+
+\bibitem{dechter2003}
+Rina Dechter.
+\newblock Chapter 12 - {{Temporal Constraint Networks}}.
+\newblock In Rina Dechter, editor, {\em Constraint {{Processing}}}, pages
+  333--362. Morgan Kaufmann, 2003.
+
+\bibitem{foundationa}
+Python~Software Foundation.
+\newblock Python.
+
+\bibitem{gertz2006}
+E.~Michael Gertz, Yi-Kuo Yu, Richa Agarwala, Alejandro~A. Sch{\"a}ffer, and
+  Stephen~F. Altschul.
+\newblock Composition-based statistics and translated nucleotide searches:
+  {{Improving}} the {{TBLASTN}} module of {{BLAST}}.
+\newblock {\em BMC Biology}, 4(1):41, December 2006.
+
+\bibitem{gupta2016}
+Vijai~Kumar Gupta, Andrei~Stecca Steindorff, Renato~Graciano de~Paula, Rafael
+  {Silva-Rocha}, Astrid~R. {Mach-Aigner}, Robert~L. Mach, and Roberto~N. Silva.
+\newblock The {{Post-genomic Era}} of {{Trichoderma}} reesei: {{What}}'s
+  {{Next}}?
+\newblock {\em Trends in Biotechnology}, 34(12):970--982, December 2016.
+
+\bibitem{gurevich2013a}
+Alexey Gurevich, Vladislav Saveliev, Nikolay Vyahhi, and Glenn Tesler.
+\newblock {{QUAST}}: Quality assessment tool for genome assemblies.
+\newblock {\em Bioinformatics (Oxford, England)}, 29(8):1072--1075, April 2013.
+
+\bibitem{hu2020a}
+Jiang Hu, Junpeng Fan, Zongyi Sun, and Shanlin Liu.
+\newblock {{NextPolish}}: A fast and efficient genome polishing tool for
+  long-read assembly.
+\newblock {\em Bioinformatics}, 36(7):2253--2255, April 2020.
+
+\bibitem{hu2024a}
+Jiang Hu, Zhuo Wang, Zongyi Sun, Benxia Hu, Adeola~Oluwakemi Ayoola, Fan Liang,
+  Jingjing Li, Jos{\'e}~R. Sandoval, David~N. Cooper, Kai Ye, Jue Ruan,
+  Chuan-Le Xiao, Depeng Wang, Dong-Dong Wu, and Sheng Wang.
+\newblock {{NextDenovo}}: An efficient error correction and accurate assembly
+  tool for noisy long reads.
+\newblock {\em Genome Biology}, 25(1):107, 2024.
+
+\bibitem{jones2014}
+Philip Jones, David Binns, Hsin-Yu Chang, Matthew Fraser, Weizhong Li, Craig
+  McAnulla, Hamish McWilliam, John Maslen, Alex Mitchell, Gift Nuka, Sebastien
+  Pesseat, Antony~F. Quinn, Amaia {Sangrador-Vegas}, Maxim Scheremetjew,
+  Siew-Yit Yong, Rodrigo Lopez, and Sarah Hunter.
+\newblock {{InterProScan}} 5: Genome-scale protein function classification.
+\newblock {\em Bioinformatics}, 30(9):1236--1240, 2014.
+
+\bibitem{liang2009}
+Chengzhi Liang, Long Mao, Doreen Ware, and Lincoln Stein.
+\newblock Evidence-based gene predictions in plant genomes.
+\newblock {\em Genome Research}, 19(10):1912--1923, October 2009.
+
+\bibitem{manni2021b}
+Mos{\`e} Manni, Matthew~R. Berkeley, Mathieu Seppey, and Evgeny~M. Zdobnov.
+\newblock {{BUSCO}}: {{Assessing Genomic Data Quality}} and {{Beyond}}.
+\newblock {\em Current Protocols}, 1(12):e323, 2021.
+
+\bibitem{rice2000a}
+P.~Rice, I.~Longden, and A.~Bleasby.
+\newblock {{EMBOSS}}: The {{European Molecular Biology Open Software Suite}}.
+\newblock {\em Trends in genetics : TIG}, 16(6):276--277, June 2000.
+
+\bibitem{robinson2011a}
+James~T. Robinson, Helga Thorvaldsd{\'o}ttir, Wendy Winckler, Mitchell Guttman,
+  Eric~S. Lander, Gad Getz, and Jill~P. Mesirov.
+\newblock Integrative genomics viewer.
+\newblock {\em Nature Biotechnology}, 29(1):24--26, 2011.
+
+\bibitem{simao2015a}
+Felipe~A. Sim{\~a}o, Robert~M. Waterhouse, Panagiotis Ioannidis, Evgenia~V.
+  Kriventseva, and Evgeny~M. Zdobnov.
+\newblock {{BUSCO}}: Assessing genome assembly and annotation completeness with
+  single-copy orthologs.
+\newblock {\em Bioinformatics}, 31(19):3210--3212, October 2015.
+
+\bibitem{wang2021a}
+Yunhao Wang, Yue Zhao, Audrey Bollas, Yuru Wang, and Kin~Fai Au.
+\newblock Nanopore sequencing technology, bioinformatics and applications.
+\newblock {\em Nature Biotechnology}, 39(11):1348--1365, 2021.
 
 \end{thebibliography}

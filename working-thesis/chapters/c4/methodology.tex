@@ -6,7 +6,7 @@ these stages and the flow of data between them is shown in Figure
 \ref{fig:simple-work}. In ascending order, each processing stage is
 discussed in more detail in Sections \ref{met:seq-workflow},
 \ref{met:predict-workflow}, \ref{met:valid-workflow}, and
-\ref{sction:region-overview}.
+\ref{section:region-met}.
 
 \begin{figure}
   \centering
@@ -46,18 +46,18 @@ cylinders. Other workflows that use datasets produced by this workflow
 are depicted as arrows outside of the brown sub-graph.
 
 Illumina\textsuperscript{\textcopyright}\texttrademark
-\cite{Bennett2004} sequences were first trimmed and filtered using
-Trimmomatic\cite{Bolger2014} to remove adapter content and low-quality
+~\cite{bennett2004a} sequences were first trimmed and filtered using
+Trimmomatic~\cite{bolger2014a} to remove adapter content and low-quality
 sequences, as low-quality sequences may affect the assembly process,
 resulting in fragmented and erroneous assemblies. The processed
 Illumina\textsuperscript{\textcopyright}\texttrademark sequences and
-Nanopore\textsuperscript{\textcopyright}\texttrademark\cite{Wang2021}
+Nanopore\textsuperscript{\textcopyright}\texttrademark~\cite{wang2021a}
 sequences were then supplied to the hybrid genome assembly tool
-NextDenovo\cite{Hu2024}. As Ilumina sequences are of extremely high
+NextDenovo~\cite{hu2024a}. As Ilumina sequences are of extremely high
 accuracy, especially after trimming, the processed
 Illumina\textsuperscript{\textcopyright}\texttrademark data was then
 re-used to polish the assemblies with
-NextPolish\cite{Hu2020}. Polishing is used because long-read sequences
+NextPolish~\cite{hu2020a}. Polishing is used because long-read sequences
 used in the assembly process are less accurate, at approximately
 90-95\%, than Illumina sequences at ~99.9\%, so the Illumina data can
 be used to correct any assembled sequences that may contain base-call
@@ -67,8 +67,8 @@ metrics, and then used as input in the gene prediction workflow.
 
 The processing steps Trimmomatic filtering, NextDenovo assembly,
 NextPolish Polishing and QUAST assembly assessment are described in
-Section \ref{met:seq-process}. The AT-rich sequence identification
-process is described later in Section \ref{met:atrich}.
+Section~\ref{met:seq-process}. The AT-rich sequence identification
+process is described later in Section~\ref{met:atrich}.
 
 \begin{figure}
   \centering
@@ -84,7 +84,7 @@ process is described later in Section \ref{met:atrich}.
   \label{fig:seq-workflow}
 \end{figure}
 
-\section{Sequence Pre-processing and Assembly}
+\subsection{Sequence Pre-processing and Assembly}
 \label{met:seq-process}
 % somewhere here...
 % The training was performed using roughly 145 million Illumina
@@ -92,18 +92,18 @@ process is described later in Section \ref{met:atrich}.
 
 Genomic sequences used for assembly were generated for DC1 and Tsth20
 using
-Nanopore\textsuperscript{\textcopyright}\texttrademark\cite{Wang2021}
+Nanopore\textsuperscript{\textcopyright}\texttrademark~\cite{wang2021a}
 and
-Illumina\textsuperscript{\textcopyright}\texttrademark\cite{Bennett2004}
+Illumina\textsuperscript{\textcopyright}\texttrademark~\cite{bennett2004a}
 sequencing technologies by Brendan Ashby at the Global Institute for
 Food Security at the University of Saskatchewan. Short-read sequences
-were first examined with the FastQC tool\cite{Andrews2010} to evalute
+were first examined with the FastQC tool~\cite{andrews} to evaluate
 sequencing quality and general metrics associated with the sequencing
 run. FastQC was run with default parameters. The short-read sequences
 were then trimmed to remove any adapter content or low quality
 sequences as they may lead to fragmented assemblies and erroneous base
 calls.  Illumina\textsuperscript{\textcopyright}\texttrademark
-sequencing data was filtered using Trimmomatic v0.38\cite{Bolger2014}
+sequencing data was filtered using Trimmomatic v0.38~\cite{bolger2014a}
 with filtering criteria as follows: SLIDINGWINDOW:4:28, LEADING:28,
 TRAILING:28, MINLEN:75. Only surviving paired-end reads were used for
 further analysis. The
@@ -118,15 +118,15 @@ Nanopore\textsuperscript{\textcopyright}\texttrademark and
 Illumina\textsuperscript{\textcopyright}\texttrademark sequences from
 DC1 and Tsth20 were assembled in to contigs using the hybrid assembly
 tool
-NextDenovo\textsuperscript{\textcopyright}\texttrademark\cite{Hu2024}
+NextDenovo\textsuperscript{\textcopyright}\texttrademark~\cite{hu2024a}
 v2.5.0 with default parameters. Although hybrid genome assemblies are
 of higher quality, they may still contain base calling errors after
 assembly. The highly accurate short-reads can be used to correct base
 calling errors after assembly. To do this, the hybrid assemblies were
 polished with Illumina\textsuperscript{\textcopyright}\texttrademark
-sequences using NextPolish\cite{Hu2020} v1.4.1 and default
+sequences using NextPolish~\cite{hu2020a} v1.4.1 and default
 parameters. Final assembly metrics were calculated using QUAST
-v5.0.2\cite{Gurevich2013} with default parameters.
+v5.0.2~\cite{gurevich2013a} with default parameters.
 
 %In an attempt to produce high quality assemblies of DC1 and Tsth20, We
 %decided on a set of tools named NextDenovo and NextPolish as they have
@@ -162,38 +162,36 @@ v5.0.2\cite{Gurevich2013} with default parameters.
 \section{Overview of Gene Prediction and Further Processing}
 \label{met:predict-workflow}
 
-To better understand the methods used in the gene prediction and CDS
-analysis workflow, the steps have been grouped together in Figure
-\ref{fig:predict-workflow}. Processing steps are represented by boxes,
+To better understand the methods used in gene prediction and further processing, the steps have been assembled into a pipeline shown in Figure~\ref{fig:predict-workflow}. Processing steps are represented by boxes,
 results of interest generated by this work are represented by folders,
 and datasets that were not produced in this work are represented by
 cylinders. Other workflows that use datasets produced by this workflow
 are depicted as arrows outside of the green sub-graph.
 
 First, RefSeq assemblies and their associated annotations of closely
-related \textit{Trichoderma} species were selected from NCBI for
-training and comparison. Both and \textit{ab initio}
-(GeneMark\cite{Borodovsky2011}) and evidence-based
-(Braker2\cite{Bruna2021}) gene finders were selected for comparison to
+related \textit{Trichoderma} species were selected from the National Center for Biotechnology Information (NCBI) for
+training and comparison. Both \textit{ab initio}
+(GeneMark~\cite{borodovsky2011a}) and evidence-based
+(Braker2~\cite{bruna2021a}) gene finders were selected for comparison to
 evaluate gene prediction behaviour of both methods in the context of
 \textit{Trichoderma} genomes. Gene prediction was performed using both
 gene finders on the RefSeq genomes and the genomes of DC1 and
-Tsth20. Coding sequences (CDS) output by the gene finders were then
+Tsth20. Coding sequences output by the gene finders were then
 examined to better understand distributions of CDS lengths produced by
 different gene finders. Finally, all gene predictions were then
 supplied to the evaluation and validation stage as well as the region
 identification stage.
 
-Selection of NCBI datasets for training and comparison are further
-discussed in Section \ref{met:datasets}. The GeneMark gene prediction
-process is described in Section \ref{met:genemark}, while the Braker2
-gene prediction process is described in Section \ref{met:braker2}. The
-CDS processing step is described in Section \ref{met:cds-stats}.
+Datasets from the National Center for Biotechnology Information (NCBI) were selected for training and comparison, and are further
+discussed in Subsection \ref{met:datasets}. The GeneMark gene prediction
+process is described in Subsection \ref{met:genemark}, while the Braker2
+gene prediction process is described in Subsection \ref{met:braker2}. The
+process used to examine CDSs is described in Subsection \ref{met:cds-stats}.
 
 \begin{figure}
   \centering
   \makebox[0pt]{
-    \includegraphics[width=1.15\textwidth]{figures/gene-finding-met.pdf}
+    \includegraphics[width=\textwidth]{figures/gene-finding-met.pdf}
   }
   \caption{A workflow (green) depicting the steps taken to predict
     genes for use in other workflows and process CDS sequence
@@ -206,35 +204,34 @@ CDS processing step is described in Section \ref{met:cds-stats}.
   \label{fig:predict-workflow}
 \end{figure}
 
-\section{Selection of Datasets from NCBI}
+\subsection{Selection of Datasets from NCBI}
 \label{met:datasets}
 
 When evaluating gene-finders, it is important compare gene predictions
 to a standard, or control dataset, as a method of
 ground-truthing. Such datasets include reference genome sequences and
-their associated gene predictions from NCBI as used in this work. In
+their associated gene predictions from the NCBI as used in this work. In
 addition to comparing against control datasets, RNAseq data can also
 be used as training data for various tools as well, such as the
 evidence-based training used by Braker2. In this work, four forms of
 these inputs were selected from NCBI for comparison and training. The
 first two datasets selected were assemblies and associated gene
-predictions of three RefSeq \textit{Trichoderma} accessions, with
-those accessions being \textit{T. virens}, \textit{T. harzianum}, and
+predictions of three RefSeq \textit{Trichoderma} organisms, with
+those organisms being \textit{T. virens}, \textit{T. harzianum}, and
 \textit{T. virens}. NCBI RefSeq accession IDs for those assemblies are
 GCF\_000167675.1\_v2.0, GCF\_003025095.1\_Triha\_v1.0, and
 GCF\_000170995.1\_TRIVI\_v2.0, respectively. \textit{T. reesei} was
 selected as it is the most well-studied \textit{Trichoderma} species,
 and widely considered to be the gold-standard for \textit{Trichoderma}
-genomes. \textit{T. harzianum} and \textit{T. virens} were selected as
-additional datasets due to their prevalence in literature as well.
+genomes~\cite{gupta2016}. \textit{T. harzianum} and \textit{T. virens} were selected as additional datasets due to their prevalence in literature as well.
 
-The second set of selected inputs were RNAseq datasets from
+The second set of selected inputs were RNAseq datasets from 
 \textit{T. reesei}, used as input in the training process for
 Braker2. The use of training data in gene finding applications is to
 produce a predictive model that factors in experimental evidence for a
 `tailored' gene prediction model. These models can predict genes with
 more confidence and predict the correct gene structure more
-often\cite{Liang2009}. The SRA accession IDs for sequences used are:
+often~\cite{liang2009}. The SRA accession IDs for sequences used are:
 SRR5229930, SRR8329344, SRR8329345, SRR8329346, and
 SRR8329347. Limited RNAseq datasets were used as there were few RNAseq
 datasets available at the beginning of this project.
@@ -246,12 +243,12 @@ validation of gene predictions.  The NCBI accession IDs for these
 assemblies and associated protein sequences are GCF\_000171015.1,
 GCF\_000240135.3, and GCF\_000146045.2, respectively.
 
-\section{Gene Prediction Using GeneMark-ES}
+\subsection{Gene Prediction Using GeneMark-ES}
 \label{met:genemark}
 
 
 \textit{Ab initio} gene finding was performed using GeneMark-ES
-v4.71\cite{Borodovsky2011} with DC1, Tsth20 and selected RefSeq
+v4.71~\cite{borodovsky2011a} with DC1, Tsth20 and selected RefSeq
 \textit{Trichoderma} assemblies used as input. Default parameters were
 used in all cases except for the fungal option, which allowed the use
 of a GeneMark model specific to fungal genomes.
@@ -261,15 +258,15 @@ of a GeneMark model specific to fungal genomes.
 %gmes\_petap.pl --ES --fungus
 %--format gff3 --cores 48 --sequence /path/to/sequence
 
-\section{Gene Prediction Using Braker2}
+\subsection{Gene Prediction Using Braker2}
 \label{met:braker2}
 
-For evidence-based gene finding, Braker2 v3.0.2\cite{Bruna2021} was
+For evidence-based gene finding, Braker2 v3.0.2~\cite{bruna2021a} was
 used with \textit{Trichoderma reesei} selected as the reference
 organism for
-training. Illumina\textsuperscript{\textcopyright}\texttrademark\cite{Bennett2004}
+training. Illumina\textsuperscript{\textcopyright}\texttrademark~\cite{bennett2004a}
 RNAseq datasets from \textit{T. reesei} were downloaded from the NCBI
-short-read archive using the sra-toolkit\cite{NCBI2025} and were not
+short-read archive using the sra-toolkit~\cite{zotero-item-326} and were not
 trimmed or filtered prior to their use in Braker2 training. Default
 parameters were used to train a Braker2 model on \textit{Trichoderma
   reesei} data except in the case of the fungal option, which was used
@@ -295,7 +292,7 @@ work.
 %simply points to the directory where TSEBRA is located Both Braker2
 %and TSEBRA can be cloned directly from GitHub (links to come)
 
-\section{Statistical Analysis of CDS Lengths}
+\subsection{Statistical Analysis of CDS Lengths}
 \label{met:cds-stats}
 The distribution of gene lengths predicted by a gene-finder is an
 important feature to consider when selecting a gene finding tool, as
@@ -310,7 +307,7 @@ results that may not reflect the true distribution of gene lengths. To
 determine, if differences exist between distributions of predicted
 gene lengths from each tool, the $\log_{10}$ lengths of coding
 sequences (CDS) were subject to a two-sample Kolmogorov-Smirnov
-test\cite{ref1}.
+test~\cite{2008}.
 
 \section{Overview of Evaluation and Validation of Gene Predictions}
 \label{met:valid-workflow}
@@ -318,7 +315,7 @@ test\cite{ref1}.
 Following the gene prediction process, prediction results can then be
 evaluated and queried against exiting datasets as a form of
 validation. The workflow for evaluation and validation of gene
-predictions is shown in Figure \ref{fig:valid}. Processing steps are
+predictions is shown in Figure~\ref{fig:valid}. Processing steps are
 represented by boxes, results of interest generated by this work are
 represented by folders, and datasets that were not produced in this
 work are represented by cylinders. Other workflows that use datasets
@@ -335,8 +332,8 @@ searches of the five \textit{Trichoderma} assemblies selected for the
 main body of this work.
 
 BUSCO evaluation, InterProScan Annotation, and BLAST alignments
-processes are described in more detail in Sections \ref{met:busco},
-\ref{met:interproscan}, and \ref{met:blast}, respectively. Results
+processes are described in more detail in Sections ~\ref{met:busco},
+~\ref{met:interproscan}, and ~\ref{met:blast}, respectively. Results
 from these processes are also used as inputs in the region
 identification workflow later.
 
@@ -354,26 +351,26 @@ identification workflow later.
   \label{fig:valid}
 \end{figure}
 
-\section{Evaluating Gene-Finder Performance Using BUSCO}
+\subsection{Evaluating Gene-Finder Performance Using BUSCO}
 \label{met:busco}
 While novel gene predictions are of great interest in new subjects, it
 is also important to confirm that gene-finders are predicting genes
 that are expected to be present in the organism of
-interest\cite{https://doi.org/10.1002/cpz1.323}. To determine if this
-is true, BUSCO v5.7.1\cite{10.1093/bioinformatics/btv351} was selected
+interest~\cite{manni2021b}. To determine if this
+is true, BUSCO v5.7.1~\cite{simao2015a} was selected
 as a tool to determine a gene-finder's ability to predict a set of
 conserved ortholagous genes. The BUSCO Metaeuk pipeline was run using
 the BUSCO fungi\_Odb10 fungal lineage dataset to capture highly
 conserved genes in fungal genomes. This pipeline was applied to all
 genome assemblies used in this work.
 
-\section{Functional Annotation Using InterProScan}
+\subsection{Functional Annotation Using InterProScan}
 \label{met:interproscan}
 The presence of a functional component in a predicted gene's protein
 product is good evidence in favour of a gene-finder's performance. To
 identify functional components, the protein products from each gene
 finder's predictions were functionally annotated using InterProScan
-v5.65-97.0\cite{10.1093/bioinformatics/btu031} without the match
+v5.65-97.0~\cite{jones2014} without the match
 lookup service and with the following analyses included: AntiFam-7.0,
 CDD-3.20, Coils-2.2.1, FunFam-4.3.0, Gene3D-4.3.0, Hamap-2023\_01,
 MobiDBLite-2.0, NCBIfam-13.0, PANTHER-18.0, Pfam-36.0, PIRSF-3.10,
@@ -382,20 +379,12 @@ ProSiteProfiles-2022\_05, SFLD-4, SMART-9.0,
 SUPERFAMILY-1.75. InterProScan was run on all predicted proteins using
 default parameters. The resulting protein annotations were mapped back
 to their genome assemblies and processed using the region
-identification algorithm in section \ref{section:region-met}.
+identification algorithm in section ~\ref{section:region-met}.
 
-\section{Ground-truthing with BLAST}
+\subsection{Ground-truthing with the Basic Local Alignment Search Tool (BLAST)}
 \label{met:blast}
 The \textit{Trichoderma} assemblies chosen for comparison were used as
-the subject sequences in tblastn searches with the query proteins
-discussed in paragraph three of Section \ref{met:datasets}. Default
-parameters were used in the tblastn searches. Hits from the tblastn
-alignments were then filtered for alignments with a minimum of 30\%
-query coverage and 30\% identity. These criteria were selected as they
-filter out spurious alignments while also retaining short alignments
-that capture functional or conserved protein coding
-sequence. Remaining alignments were then processed using the region
-identification algorithm in \ref{section:region-met}
+the subject sequences in tblastn~\cite{gertz2006} searches with the query proteins discussed in paragraph three of Section ~\ref{met:datasets}. Default parameters were used in the tblastn searches. Hits from the tblastn alignments were then filtered for alignments with a minimum of 30\% query coverage and 30\% identity. These criteria were selected as they filter out spurious alignments while also retaining short alignments that capture functional or conserved protein coding sequence. Remaining alignments were then processed using the region identification algorithm in ~\ref{section:region-met}
 
 \section{Region Identification Overview}
 \label{section:region-overview}
@@ -403,10 +392,10 @@ A major portion of this work was the process of identifying regions of
 overlapping features as a method of comparing gene calls from
 different assemblers. The definition of a region and the algorithm
 used to identify them is described in detail in Section
-\ref{section:region-met}, and an overview of the region identification
-workflow is shown in Figure \ref{fig:region-overview}. The top of the
+~\ref{section:region-met}, and an overview of the region identification
+workflow is shown in Figure~\ref{fig:region-overview}. The top of the
 graph shows the gene calls produced by the workflow described in
-Section \ref{met:predict-workflow}, which are used as the main input
+Section~\ref{met:predict-workflow}, which are used as the main input
 to the region identification process along with other previously
 generated datasets. These additional datasets may contain other
 information such as blast alignments or functional annotations and can
@@ -415,7 +404,7 @@ outlined with rectangles indicate that the data within were processed
 in the context of the main gene calls and are discussed in their own
 results sections. Datasets output by the region identification process
 were then visualized with the Integrative Genomics Viewer, described
-in Section \ref{section:igv-met}
+in Section~\ref{section:igv-met}
 
 \begin{figure}
   \centering
@@ -433,10 +422,10 @@ in Section \ref{section:igv-met}
 \end{figure}
 
 
-\section{Region Identification Algorithm}
+\subsection{Region Identification Algorithm}
 \label{section:region-met}
 
-Predictions and results from \ref{met:genemark} and \ref{met:braker2}
+Predictions and results from~\ref{met:genemark} and~\ref{met:braker2}
 were processed into regions of overlapping gene predictions and
 annotations. A region is defined as a pair of genomic coordinates
 containing one start and one stop coordinate, that contains one or
@@ -446,7 +435,7 @@ associated with a gene prediction, annotation, or other data point of
 interest.
 
 Overlapping features were processed into regions using a concept
-similar to Allen's interval algebra\cite{DECHTER2003333}. The
+similar to Allen's interval algebra~\cite{dechter2003}. The
 algorithm first sorts all features on each contig by start coordinate
 and then iterates over each feature, identifying overlaps with
 previous features to identify regions of overlapping features. We
@@ -457,8 +446,8 @@ of edges \textit{E}, forming the graph \textit{G} = \textit{\{V,
 \textit{R}\textsuperscript{+} of \textit{G}, resulting in sub-graphs,
 or regions of features in which each node has a path to each other
 node in that sub-graph. Pseudo-code for the algorithm is shown in
-Algorithm \ref{alg:regions}. This processing was performed with Python
-v3.12.4\cite{Foundation} and the GFF package from BCBio\cite{Chapman}
+Algorithm~\ref{alg:regions}. This processing was performed with Python
+v3.12.4~\cite{foundationa} and the GFF package from BCBio~\cite{chapmana}
 for easy GFF parsing. The resulting regions were then further
 processed to identify trends and behaviours of gene finders in the
 context of other annotated information and features.
@@ -499,12 +488,12 @@ context of other annotated information and features.
   \label{alg:regions}
 \end{algorithm}
 
-\section{Gene predictions in AT-rich Genomic Sequence}
+\subsection{Gene predictions in AT-rich Genomic Sequence}
 \label{met:atrich}
 Initial exploration of the Illumina sequence data generated for DC1
 and Tsth20 showed bi-modal distributions of GC content in the
 sequences. An example of the GC distribution of Illumina sequences for
-DC1 is shown in Figure \ref{fig:dc1-low-gc} compared to a theoretical
+DC1 is shown in Figure~\ref{fig:dc1-low-gc} compared to a theoretical
 normal distribution. To differentiate AT-rich sequences from normal
 sequences, a cutoff value was selected to isolate AT-rich sequences
 from the rest. The cutoff value was chosen as 28\% GC content, which
@@ -525,18 +514,18 @@ explained below.
 AT-rich genomic sequences were identified using sliding windows of GC
 content over each \textit{Trichoderma} assembly. Sliding windows were
 generated using the isochore program from the EMBOSS tool suite
-v6.6.0\cite{Rice2000}. The sliding window used was 250bp wide with a
+v6.6.0~\cite{rice2000a}. The sliding window used was 250bp wide with a
 50bp shift. A window was classified as AT-rich if the sequence
 contained lower than 28\% GC content. The genomic sequences from
 AT-rich windows were mapped to a GFF file and processed using the
 region identification algorithm described in section
-\ref{section:region-met}.
+~\ref{section:region-met}.
 
-\section{Visualization of Identified Regions}
+\subsection{Visualization of Identified Regions}
 \label{section:igv-met}
 Results from the region identification process were visualized using
-the IGV genome browser v2.19.1\cite{Robinson2011}. An example of an
-IGV screenshot is shown in Figure \ref{fig:igv-methods}
+the IGV genome browser v2.19.1~\cite{robinson2011a}. An example of an
+IGV screenshot is shown in Figure~\ref{fig:igv-methods}.
 
 \begin{figure}
   \centering
@@ -604,4 +593,3 @@ IGV screenshot is shown in Figure \ref{fig:igv-methods}
 %goodness of fit tests can then be applied to counts of 'validated'
 %gene predictions or other features with the same null hypothesis that
 %gene finders should predict the same number of features.
->>

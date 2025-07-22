@@ -3,7 +3,7 @@ digraph G{
 	subgraph cluster_1 {
 		 style = filled;
 		 color = palegreen1;
-		 "Gene Prediction and Further Processing" [shape = rarrow];
+		 "Gene Prediction and\nFurther Processing" [shape = doubleoctagon];
 		 
 	}
 	
@@ -16,8 +16,8 @@ digraph G{
 		 "Illumina Reads" [shape = cylinder];
 		 "Pre-process Reads" [shape = box3d];
 		 "Nanopore Reads" [shape = cylinder];
-		 "NextDenovo Assembly" [shape = box3d];
-		 "NextPolish Polishing" [shape = box3d];
+		 "Genome Assembly" [shape = box3d];
+		 "Genome Polishing" [shape = box3d];
 		 "Processed Illumina Reads" [shape = tab];
 		 "Sequence Quality\nAssessment" [shape = box3d];
 		 "Novel Genome Assemblies" [shape = tab];
@@ -26,13 +26,14 @@ digraph G{
 		 "GC Content Plots" [shape = box3d];
 		 "Sequence Quality\nAssessment" -> "GC Content Plots";
 		 "Pre-process Reads" -> "Processed Illumina Reads";
-		 "Processed Illumina Reads" -> "NextDenovo Assembly";
-		 "Nanopore Reads" -> "NextDenovo Assembly";
-		 "NextDenovo Assembly" -> "NextPolish Polishing" -> "Novel Genome Assemblies";
-		 "QUAST Assembly Assessment" [shape = box3d];
-		 "Novel Genome Assemblies" -> "QUAST Assembly Assessment";
+		 "Processed Illumina Reads" -> "Genome Assembly";
+		 "Processed Illumina Reads" -> "Genome Polishing";
+		 "Nanopore Reads" -> "Genome Assembly";
+		 "Genome Assembly" -> "Genome Polishing" -> "Novel Genome Assemblies";
+		 "Genome Quality\nAssessment" [shape = box3d];
+		 "Novel Genome Assemblies" -> "Genome Quality\nAssessment";
 		 "Assembly Metrics" [shape = tab];
-		 "QUAST Assembly Assessment" -> "Assembly Metrics";
+		 "Genome Quality\nAssessment" -> "Assembly Metrics";
 		 #{rank = same; "Assembled Genomes"; "QUAST Assembly Assessment"};
 		 {rank = same; "Illumina Reads"; "Nanopore Reads"};
 		 label = "Sequence Processing and Assembly";
@@ -49,10 +50,10 @@ digraph G{
 	subgraph cluster_2 {
 		 style = filled;
 		 color = steelblue1;
-		 "Region Identification" [shape = rarrow]
+		 "Region Identification" [shape = doubleoctagon]
 	}
 
 	#"Assembled Genomes" -> "Identify AT-rich Genomic Sequence";
-	"Novel Genome Assemblies" -> "Gene Prediction and Further Processing";
+	"Novel Genome Assemblies" -> "Gene Prediction and\nFurther Processing";
 	"AT-rich Sequences" -> "Region Identification";
 }

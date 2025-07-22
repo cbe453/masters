@@ -9,13 +9,13 @@ digraph G{
 
 		 style = filled;
 		 color = steelblue1;
-		"Region Identification" [shape = rarrow];
+		"Region Identification" [shape = doubleoctagon];
 	}
 
 	subgraph cluster_2 {
 		 style = filled;
 		 color = yellow;
-		 "Evaluation and Validation" [shape = rarrow];
+		 "Evaluation and Validation" [shape = doubleoctagon];
 	}
 
 	subgraph cluster_0 {
@@ -39,22 +39,25 @@ digraph G{
 		 "GeneMark Gene Calls" -> "CDS Processing";
 		 "Braker2 Gene Calls" -> "CDS Processing";
 		 "RefSeq Gene Calls" -> "CDS Processing";
-		 "GeneMark Gene Calls" -> "Evaluation and Validation";
-                 "Braker2 Gene Calls" -> "Evaluation and Validation";
-                 "RefSeq Gene Calls" -> "Evaluation and Validation";
+
 		 "CDS Statistics" [shape = tab];
 		 "CDS Processing" -> "CDS Statistics";
+		 
 
 	}
-
+			 "GeneMark Gene Calls" -> "Evaluation and Validation":n;
+         "Braker2 Gene Calls" -> "Evaluation and Validation":n;
+         "RefSeq Gene Calls" -> "Evaluation and Validation":n;
 	"Novel Genome Assemblies" -> "GeneMark Gene Prediction";
 	"Novel Genome Assemblies" -> "Braker2 Gene Prediction";
-	"GeneMark Gene Calls" -> "Region Identification";
-	"Braker2 Gene Calls" -> "Region Identification";
-	"RefSeq Gene Calls" -> "Region Identification";
+	"GeneMark Gene Calls" -> "Region Identification":n;
+	"Braker2 Gene Calls" -> "Region Identification":n;
+	"RefSeq Gene Calls" -> "Region Identification":n;
+	#"Evaluation and Validation" -> "Region Identification";
+	#{rank = same; "Evaluation and Validation"; "Region Identification"};
 	edge[style=invis];
-	#"CDS Statistics" -> "Evaluation and Validation";
-	#"CDS Statistics" -> "Region Identification";
-	"Evaluation and Validation" -> "Region Identification";
+	"CDS Statistics" -> "Evaluation and Validation";
+	"CDS Statistics" -> "Region Identification";
+	
 
 }

@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: chapter-3.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: chapter-4.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Database file #1: ./refs/full-bib.bib
+Warning--to sort, need author or key in zotero-item-326
+Warning--to sort, need author or key in 2008
+Warning--empty author in 2008
+You've used 22 entries,
+            2118 wiz_defined-function locations,
+            634 strings with 8128 characters,
+and the built_in function-call counts, 8774 in all, are:
+= -- 823
+> -- 536
+< -- 2
++ -- 214
+- -- 191
+* -- 758
+:= -- 1466
+add.period$ -- 64
+call.type$ -- 22
+change.case$ -- 161
+chr.to.int$ -- 0
+cite$ -- 25
+duplicate$ -- 252
+empty$ -- 611
+format.name$ -- 191
+if$ -- 1759
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 18
+newline$ -- 109
+num.names$ -- 42
+pop$ -- 153
+preamble$ -- 1
+purify$ -- 139
+quote$ -- 0
+skip$ -- 184
+stack$ -- 0
+substring$ -- 570
+swap$ -- 40
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 88
+warning$ -- 3
+while$ -- 74
+width$ -- 24
+write$ -- 230
+(There were 3 warnings)
