@@ -1,56 +1,79 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: intro.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: chapter-2.aux
 Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: chapter-3.aux
 Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: chapter-4.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: chapter-5.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: chapter-6.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: ./refs/full-bib.bib
+Warning--I didn't find a database entry for "Gurevich2013"
+Warning--I didn't find a database entry for "Hu2024"
+Warning--I didn't find a database entry for "Hu2020"
+Warning--I didn't find a database entry for "Kubicek2019"
+Warning--I didn't find a database entry for "10.1093/nar/gki937"
+Warning--I didn't find a database entry for "Bruna2021"
+Warning--I didn't find a database entry for "Stanke2006"
+Warning--I didn't find a database entry for "Barnett2011"
+Warning--I didn't find a database entry for "10.1093/bioinformatics/btq033"
+Warning--I didn't find a database entry for "Borodovsky2011"
+Warning--I didn't find a database entry for "Pertea2015"
+Warning--I didn't find a database entry for "Pertea2020"
+Warning--I didn't find a database entry for "ref1"
+Warning--I didn't find a database entry for "Wright2022"
+Warning--I didn't find a database entry for "Altschul1990"
 Warning--to sort, need author or key in zotero-item-326
 Warning--to sort, need author or key in 2008
 Warning--empty author in 2008
-You've used 22 entries,
+You've used 38 entries,
             2118 wiz_defined-function locations,
-            634 strings with 8128 characters,
-and the built_in function-call counts, 8774 in all, are:
-= -- 823
-> -- 536
-< -- 2
-+ -- 214
-- -- 191
-* -- 758
-:= -- 1466
-add.period$ -- 64
-call.type$ -- 22
-change.case$ -- 161
+            762 strings with 13478 characters,
+and the built_in function-call counts, 17277 in all, are:
+= -- 1560
+> -- 1293
+< -- 5
++ -- 512
+- -- 473
+* -- 1584
+:= -- 2979
+add.period$ -- 114
+call.type$ -- 38
+change.case$ -- 348
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 252
-empty$ -- 611
-format.name$ -- 191
-if$ -- 1759
+cite$ -- 41
+duplicate$ -- 448
+empty$ -- 1026
+format.name$ -- 473
+if$ -- 3372
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 18
-newline$ -- 109
-num.names$ -- 42
-pop$ -- 153
+int.to.str$ -- 38
+missing$ -- 34
+newline$ -- 189
+num.names$ -- 78
+pop$ -- 316
 preamble$ -- 1
-purify$ -- 139
+purify$ -- 310
 quote$ -- 0
-skip$ -- 184
+skip$ -- 319
 stack$ -- 0
-substring$ -- 570
-swap$ -- 40
-text.length$ -- 2
+substring$ -- 912
+swap$ -- 71
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 152
 warning$ -- 3
-while$ -- 74
-width$ -- 24
-write$ -- 230
-(There were 3 warnings)
+while$ -- 133
+width$ -- 40
+write$ -- 410
+(There were 18 warnings)

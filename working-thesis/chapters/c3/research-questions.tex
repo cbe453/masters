@@ -1,34 +1,17 @@
-With an ever-increasing number of gene prediction tools available to
-users, it is important to assess and understand their behaviour and
-performance, particularly in the context of new genome
-assemblies of lesser studied organisms, where a reference prediction
-set may not be available. The main purpose of this research is to
-evaluate and compare gene finding tools in the context of
-\textit{Trichoderma} assemblies where a gold standard set of gene
-predictions does not exist. To assess behaviour and performance in
-these contexts, we have defined X problems to profile the selected
-gene finding tools. In addition to applying selected gene finding
-tools to novel \textit{Trichoderma} isolates, Tsht20 and DC1, we also
-applied selected gene finding tools to existing \textit{Trichoderma}
-assemblies from the National Center for Biotechnology Information
-(NCBI).
+With an ever-increasing numer of gene prediction tools available, and the continuous discovery of new and unique genomic sequences, it is important to assess the performance of these gene finding tools. This chapter will address the following research questions, which will be answered in the context of \textit{Trichoderma} genomes. The answers to these questions will provide insight into the performance of gene finding tools, and will help inform the selection of a gene finding tool for future work.
 
 \section{\textit{Trichoderma} Assembly Results}
 \label{rq:assembly-results}
-
 Since gene finding tools operate on an assembled genomic sequence, it
 must follow that the results will be influenced by the supplied
 assembly. Before applying gene finders to the new assemblies, we
-should first investigate the new assemblies by generating general
-assembly metrics for the new assemblies to contrast and compare with
-existing assemblies. We ask: \textbf{how do assemblies of DC1 and
+should first evaluate the assemblies using general assembly metrics and compare with them existing assemblies. We ask: \textbf{how do assemblies of DC1 and
   Tsth20 compare to existing \textit{Trichoderma} assemblies?} With
 these isolates being from the \textit{Trichoderma} family, we expect
 assembly metrics to be similar in nature to existing assemblies from
-NCBI, but do they?
+NCBI, but are they? In addition, what are the quantitative features of these assemblies?
 
 \section{Profiling of Gene Finding Tools}
-
 Different gene finding tools may predict different types of features
 associated with gene structures. The question arises: \textbf{which
   (if any) gene finders predict additional features outside of the
@@ -43,42 +26,22 @@ algorithms which raises several questions. \textbf{How are these gene
   context of \textit{Trichoderma}?}
 
 \section{Number of Features Predicted}
-
-\textbf{Do gene finders predict similar numbers of features in the
-  context of \textit{Trichoderma} genomes?} 
 \label{rq:number-of-features}  
-One common method for
-evaluating gene finding tools is by looking at the number of features
-predicted by each tool. These features make an obvious point of
-comparison for selected gene finding tools. The term `feature' here is
-somewhat ambiguous, referring to many possible categories of genomic
-feature. For each gene finding tool, we compare the counts for
-predicted genes, transcripts, and coding sequences.
+
+One common method for evaluating gene finding tools is by comparing the number of genes and coding sequences each tool predicts. This gives insight into the sensitivity of each tool, as well as a sense of completeness of the predicted gene set. We will compare the number of features predicted by each tool, and ask: \textbf{Do gene finders predict similar numbers of features in \textit{Trichoderma} genomes?}
 
 \section{Lengths of Predicted Genes}
 \label{rq:gene-lengths}
+Genome assemblies can contain a wide range of gene lengths, and for some
+users, genes of a specific length may be a key point of interest, as is the case in \textit{Trichoderma}, where genes encoding non-ribosomal peptide synthases are generally quite large~\cite{komaki2020}. Thus, it is important to assess the lengths of predicted genes from different gene finding tools. We will compare the lengths of predicted genes from each tool and ask: \textbf{do gene finders predict genes of similar lengths in \textit{Trichoderma}?}
 
-Genome assemblies can contain a wide range of gene lengths. For some
-users, genes of a specific length may be a key point of interest, so
-the ability of a gene prediction tool to capture the broad range of
-possible gene lengths is another important metric for comparison. Thus
-we ask the question: \textbf{do different gene finders predict genes
-  of similar lengths in \textit{Trichoderma}?}
-
-\section{Identifying Regions of Agreement and Disagreement} \label{identify-regions}
-
-With predicted genes from several tools available, the question we
-would like to ask is whether or not the gene finders agree with one
-another for any given prediction. To answer this question, we will
-identify 'regions' of overlapping predictions. A region can be defined
-as a start and stop position of a set of individual or overlapping
-features from one or more gene finding tools and external
-sources. With regions identified, we can determine agreement, or more
-importantly, disagreement in predictions between gene finding tools
+\section{Identifying Regions of Agreement and Disagreement} 
+\label{identify-regions}
+With several sets of gene predictions, it is important to assess the agreement and disagreement between the predictions of different gene finding tools. To answer this question, we will identify `regions' of overlapping predictions. A 
+region is defined as a set of overlapping gene predictions, where a gene prediction from one tool overlaps with a gene prediction from another tool.
+With overlapping regions identified, we can determine any agreement and disagreement in predictions between gene finding tools
 from which we can ask: \textbf{do gene finders agree on their
-  predictions?} \textbf{If no, to what extent do they disagree? Are
-  there genomic regions where agreement or disagreement are more
-  prevalent?}
+  predictions?} \textbf{If no, to what extent do they disagree?}
 
 \section{Validation of Predicted Genes via InterProScan}
 \label{rq:interproscan}
@@ -94,19 +57,13 @@ InterProScan, we ask the question: \textbf{in the context of
 
 \section{Similarity Searches of Predicted Genes with tblastn}
 \label{rq:tblastn}
+In a similar manner to validation via InterProScan, we can use protein alignments to search for similarity between predicted genes and existing protein sequences. This will allow us to assess the degree of similarity between predicted genes and known proteins, which can provide further validation of gene predictions and help infer possible function. We ask: \textbf{do gene finders predict genes that are similar to known proteins in \textit{Trichoderma}}
 
 
-\section{Performance in Regions of Anomalous Sequence Content}
+\section{Performance in AT-rich Genomic Sequence}
 \label{rq:anomalous-sequence-content}
-
-One of the inspirations for this research is the unique composition of
-genomic sequence in \textit{Trichoderma}. Results from the assembly
-process show that GC content in \textit{Trichoderma} strains is
-abnormal throughout most assemblies. These regions of assemblies
-present an interesting opportunity to assess gene finding performance
-in regions of anomalous GC content. The question follows: \textbf{do
-  gene finders behave differently in regions of anomalous sequence
-  content?}
+Results from the assembly process show that AT-rich sequence content is prevalent in most \textit{Trichoderma} assemblies we selected. These regions of assemblies present an interesting opportunity to assess gene finding performance
+in regions of anomalous GC content, since features such as transposable elements and repetitive sequences are often found in these regions. We ask: \textbf{do gene finders perform differently in AT-rich regions of \textit{Trichoderma} genomes?}   
 
 \section{BUSCO Completeness}
 \label{rq:busco-completeness}
