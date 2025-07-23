@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  21 JUL 2025 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  22 JUL 2025 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -658,18 +658,12 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
  (chapter-3.tex
 Chapter 1.
 (chapters/c3/research-questions.tex
-Underfull \vbox (badness 3965) has occurred while \output is active []
-
-
 
 [1
 
 
 
 {C:/Users/cbe45/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \vbox (badness 2922) has occurred while \output is active []
-
-
 
 [2]))
 
@@ -710,96 +704,96 @@ Package pdftex.def Info: figures/assembly-met.pdf  used on input line 75.
 [5 <./figures/workflow-simple.pdf>]
 
 [6 <./figures/assembly-met.pdf>]
-
-pdfTeX warning: pdflatex (file ./figures/gene-finding-met.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/gene-finding-met.pdf, id=211, 612.2875pt x 543.02875pt>
-File: figures/gene-finding-met.pdf Graphic file (type pdf)
-<use figures/gene-finding-met.pdf>
-Package pdftex.def Info: figures/gene-finding-met.pdf  used on input line 195.
-(pdftex.def)             Requested size: 472.03123pt x 418.63885pt.
+<figures/dc1-low-gc-fastqc.png, id=205, 803.0pt x 602.25pt>
+File: figures/dc1-low-gc-fastqc.png Graphic file (type png)
+<use figures/dc1-low-gc-fastqc.png>
+Package pdftex.def Info: figures/dc1-low-gc-fastqc.png  used on input line 146.
+(pdftex.def)             Requested size: 472.03123pt x 354.02869pt.
 
 
 [7]
 
-[8 <./figures/gene-finding-met.pdf>]
-Underfull \vbox (badness 7704) has occurred while \output is active []
+[8 <./figures/dc1-low-gc-fastqc.png (PNG copy)>]
 
+pdfTeX warning: pdflatex (file ./figures/gene-finding-met.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/gene-finding-met.pdf, id=230, 612.2875pt x 543.02875pt>
+File: figures/gene-finding-met.pdf Graphic file (type pdf)
+<use figures/gene-finding-met.pdf>
+Package pdftex.def Info: figures/gene-finding-met.pdf  used on input line 228.
+(pdftex.def)             Requested size: 472.03123pt x 418.63885pt.
 
 
 [9]
-<figures/eval-met.pdf, id=251, 546.04pt x 387.4475pt>
+
+[10 <./figures/gene-finding-met.pdf>]
+
+pdfTeX warning: pdflatex (file ./figures/eval-met.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/eval-met.pdf, id=259, 537.00626pt x 403.5075pt>
 File: figures/eval-met.pdf Graphic file (type pdf)
 <use figures/eval-met.pdf>
-Package pdftex.def Info: figures/eval-met.pdf  used on input line 342.
-(pdftex.def)             Requested size: 377.62642pt x 267.94798pt.
+Package pdftex.def Info: figures/eval-met.pdf  used on input line 369.
+(pdftex.def)             Requested size: 377.62642pt x 283.74629pt.
 
 
-[10]
+[11]
 
-[11 <./figures/eval-met.pdf>]
-<figures/region-workflow.pdf, id=282, 1064.97874pt x 495.8525pt>
+[12 <./figures/eval-met.pdf>]
+
+[13]
+
+pdfTeX warning: pdflatex (file ./figures/region-workflow.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/region-workflow.pdf, id=304, 1034.86626pt x 508.90125pt>
 File: figures/region-workflow.pdf Graphic file (type pdf)
 <use figures/region-workflow.pdf>
-Package pdftex.def Info: figures/region-workflow.pdf  used on input line 411.
-(pdftex.def)             Requested size: 566.43604pt x 263.73877pt.
-
-
-[12]
-
-[13 <./figures/region-workflow.pdf>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 445.
- (C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+Package pdftex.def Info: figures/region-workflow.pdf  used on input line 434.
+(pdftex.def)             Requested size: 566.43604pt x 278.56094pt.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 465.
+(C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 445.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 487.
-<figures/dc1-low-gc-fastqc.png, id=308, 803.0pt x 602.25pt>
-File: figures/dc1-low-gc-fastqc.png Graphic file (type png)
-<use figures/dc1-low-gc-fastqc.png>
-Package pdftex.def Info: figures/dc1-low-gc-fastqc.png  used on input line 506.
-(pdftex.def)             Requested size: 472.03123pt x 354.02869pt.
-<figures/igv/igv-agreement-thin-number.png, id=313, 1308.89pt x 437.635pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 465.
+
+
+[14 <./figures/region-workflow.pdf>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 507.
+<figures/igv/igv-agreement-thin-number.png, id=332, 1308.89pt x 437.635pt>
 File: figures/igv/igv-agreement-thin-number.png Graphic file (type png)
 <use figures/igv/igv-agreement-thin-number.png>
-Package pdftex.def Info: figures/igv/igv-agreement-thin-number.png  used on input line 532.
+Package pdftex.def Info: figures/igv/igv-agreement-thin-number.png  used on input line 524.
 (pdftex.def)             Requested size: 424.82523pt x 142.04271pt.
 ))
 
-[14]
+[15 <./figures/igv/igv-agreement-thin-number.png>]
 
-[15]
+[16] (thesis.bbl
 
-[16 <./figures/dc1-low-gc-fastqc.png (PNG copy)>]
-
-[17 <./figures/igv/igv-agreement-thin-number.png>] (thesis.bbl
-
-[18
+[17
 
 
 
 ])
 
-[19] (thesis.aux (chapter-3.aux) (chapter-4.aux))
+[18] (thesis.aux (chapter-3.aux) (chapter-4.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2F8FC131E7FF44225A6AEDE7F128424C;7267.
+(rerunfilecheck)             Checksum: 9F8F7ED1B17C2514995244842B999E2D;7321.
  ) 
 Here is how much of TeX's memory you used:
  23378 strings out of 468221
- 437116 string characters out of 5432891
- 826579 words of memory out of 5000000
- 51437 multiletter control sequences out of 15000+600000
+ 437130 string characters out of 5432891
+ 824647 words of memory out of 5000000
+ 51438 multiletter control sequences out of 15000+600000
  630855 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,7n,93p,993b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (19 pages, 405519 bytes).
+ 90i,7n,93p,995b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (18 pages, 434781 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
+ 430 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
  288 words of extra memory for PDF output out of 10000 (max. 10000000)
 

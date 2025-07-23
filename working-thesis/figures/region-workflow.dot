@@ -17,16 +17,17 @@ digraph G{
 		process [label = "Region Identification", shape = box3d];
 		#"Pooled Gene Calls" -> process;
 
-		subgraph cluster_1 {
-			fillcolor = "#EDF1F2"; 
-                    	color = "black";
-	 		label = "Regions of Genes";
-			#a [label = "Identify Regions", shape = box3d];
-			"Regions of Genes" [shape = note];
-			shape = rect;
-			style = rounded;
-		}
-		process -> "Regions of Genes":e;
+		#subgraph cluster_1 {
+		#	fillcolor = "#EDF1F2"; 
+        #            	color = "black";
+	 	#	label = "Regions of Genes";
+		#	#a [label = "Identify Regions", shape = box3d];
+		#	"Regions of Genes" [shape = note];
+		#	shape = rect;
+		#	style = rounded;
+		#}
+		"Regions of Genes" [shape = tab];
+		process -> "Regions of Genes":ne;
 
 		subgraph cluster_2 {
 			fillcolor = "#EDF1F2"; 

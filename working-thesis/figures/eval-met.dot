@@ -30,7 +30,7 @@ digraph G {
 	subgraph cluster_1 {
 		 style = filled;
 		 color = steelblue1;
-		 "Region Identification" [shape = rarrow];
+		 "Region Identification" [shape = doubleoctagon];
 	}
 
 	"BLAST Hits" -> "Region Identification";
