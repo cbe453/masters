@@ -1,0 +1,139 @@
+\documentclass[t]{beamer}
+\usepackage{lmodern} % Need to use this package for proper font encoding.
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+% Title slide information
+\title{Evaluation of Gene Finding Tools on \textit{Trichoderma} Genomes - Update}
+\date{July, 2025} 
+\author{Connor Burbridge}
+\titlegraphic{UsaskAerial.jpg} 
+\institute{Department of Computer Science} 
+\usetheme{usask}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Outline} 
+
+	\begin{itemize}
+		\item Progress update with results
+		\item Progress assessment
+		\item Timeline for completion	
+		\item Discussion of next steps
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Background} 
+	\begin{itemize}
+		\item Gene finding is a critical step in genome annotation.
+		\item \textit{Trichoderma} species are important for agriculture and biotechnology.
+		\item Various tools exist for gene prediction, but their implementations and performance can vary significantly.
+		\item Few studies have compared these tools in fungi, and even fewer in \textit{Trichoderma}.
+		\item In addition, high-quality reference genomes are not available for all species, which makes comparisons difficult.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Why \textit{Trichoderma}?}
+	\begin{itemize}
+		\item \textit{Trichoderma} species are ubiquitous in soil and play a significant role in nutrient cycling.
+		\item They are also used in biocontrol and as biofertilizers.
+		\item Known for their production of plant cell wall degrading enzymes, and secondary metabolites.
+		\item Further genomic studies can help in understanding their biology and potential applications.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Novel \textit{Trichoderma} Genomes}
+	\begin{itemize}
+		\item \textit{Trichoderma} species are diverse, with many species not yet fully characterized.
+		\item Recent advances in sequencing technology have made it possible to generate high-quality genomes for these species.
+		\item Two novel genomes of \textit{Trichoderma} species have been sequenced at the Global Institute for food Security
+		\item DC1 and Tsth20, shown to improve drought and salt tolerance when applied to crops.
+		\item These genomes provide an opportunity to evaluate gene finding tools in a comparative context, and contribute to the understanding of \textit{Trichoderma} biology. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Workflow Overview}
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/workflow-simple.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Datasets and Tools}
+	\begin{itemize}
+		\item \textbf{Datasets:}
+		\begin{itemize}
+			\item \textit{Trichoderma} genomes: DC1 and Tsth20.
+			\item Reference genomes and annotations: \textit{T. reesei, T. harzianum, T.virens}.
+			\item RNAseq training data from \textit{T. reesei}. 
+			\item Benchmarking Universal Single-Copy Orthologs (BUSCO) fungal database.
+			\item Protein sequence queries for tblastn from \textit{T. atroviride, Fusarium graminearum, and Saccharomyces cerevisiae}.	
+		\end{itemize}
+		\item \textbf{Tools:}
+		\begin{itemize}
+			\item Sequence processing: FastQC, Trimmomatic, Hisat2.
+			\item Genome assembly: NextDenovo and NextPolish.
+			\item Gene finding tools: Braker2 and GeneMark-ES.
+			\item Evaluation tools: BUSCO, tblastn, InterProScan, and custom scripts.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Assembly Results}
+	\centering
+	\vspace{0.5cm}
+	\resizebox{\linewidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+  		Name & Total Contigs & Total Length & Largest Contig & GC\% & N50 & L50 \\ \hline
+     	DC1 & 8 & 38.6 Mb & 11.49 Mb & 47.97 & 5.69 Mb & 3 \\ \hline
+      	Tsth20 & 7 & 41.58 Mb & 8.02 Mb & 47.33 & 6.52 Mb & 3 \\ \hline
+      	\textit{T. harzianum} & 532 & 40.98 Mb & 4.08 Mb & 47.61 & 2.41 Mb & 7 \\ \hline
+      	\textit{T. virens} & 93 & 39.02 Mb & 3.45 Mb & 49.25 & 1.83 Mb & 8 \\ \hline
+      	\textit{T. reesei} & 77 & 33.39 Mb & 3.75 Mb & 52.82 & 1.21 Mb & 9 \\ \hline
+    \end{tabular}}
+	\begin{itemize}
+		\item DC1 and Tsth20 assemblies are high quality with few contigs in comparison to other \textit{Trichoderma} assemblies.
+		\item Input sequences and assemblies show a bimodal distribution of GC content.
+		\item AT-rich sequence content may be related to transposable elements and repeat-induced mutations, which may be of interest in secondary metabolite production.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gene Finding Results}
+	\centering
+	\resizebox{\linewidth}{!}{
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+    	\hline
+    	Assembly & Braker2 & & GeneMark & & RefSeq & \\ \hline
+     	& Genes & CDS & Genes & CDS & Genes & CDS \\ \hline
+    	DC1 & 8546 & 8637 & 11353 & 11353 & N/A & N/A \\ \hline
+    	Tsth20 & 8784 & 8858 & 12362 & 12362 & N/A & N/A \\ \hline
+    	\textit{T. reesei} & 9659 & 10175 & 9196 & 9196 & 9109 & 9118 \\ \hline
+    	\textit{T. harzianum} & 8314 & 8385 & 12164 & 12164 & 14269 & 14090 \\ \hline
+    	\textit{T. virens} & 7801 & 7863 & 11866 & 11866 & 12405 & 12406 \\ \hline
+  	\end{tabular}}
+	\begin{itemize}
+		\item Braker2 predicts more genes and coding sequences than GeneMark and RefSeq in \textit{T. ressei}, but fewer in other assemblies.
+		\item GeneMark and RefSeq predictions are similar, except in \textit{T. harzianum}, where RefSeq predicts 17\% more genes.
+		\item GeneMark only predicts one coding sequence per gene, while Braker2 and RefSeq predict multiple coding sequences.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Examining Coding Sequence Lengths}
+\end{frame}
+
+\end{document}
