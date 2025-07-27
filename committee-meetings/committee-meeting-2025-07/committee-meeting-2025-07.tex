@@ -134,6 +134,77 @@
 
 \begin{frame}
 	\frametitle{Examining Coding Sequence Lengths}
+	\centering
+	\vspace{0.3cm}
+	\resizebox{0.9\linewidth}{!}{
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      Genome & Tool \#1 & Tool \#2 & \textit{P}-value  \\ \hline
+      DC1 & Braker2 & GeneMark & $0.999$ \\ \hline
+      Tsth20 & Braker2 & GeneMark & $0.965$ \\ \hline
+      \textit{T. reesei} & Braker2 & GeneMark & $9.481*10^{-07}$ \\ \hline
+      \textit{T. reesei} & GeneMark & RefSeq & $0.002$ \\ \hline
+      \textit{T. reesei} & Braker2 & RefSeq & $1.340*10^{-07}$ \\ \hline
+      \textit{T. harzianum} & Braker2 & GeneMark & $0.863$ \\ \hline
+      \textit{T. harzianum} & GeneMark & RefSeq & $4.313*10^{-52}$ \\ \hline
+      \textit{T. harzianum} & Braker2 & RefSeq & $4.674*10^{-55}$ \\ \hline
+      \textit{T. virens} & Braker2 & GeneMark & $0.635$ \\ \hline
+      \textit{T. virens} & GeneMark & RefSeq & $7.352*10^{-12}$ \\ \hline
+      \textit{T. virens} & Braker2 & RefSeq & $1.794*10^{-09}$ \\ \hline
+    \end{tabular}}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{BUSCO Results}
+	\centering
+	\includegraphics[width=0.65\textwidth]{../../working-thesis/figures/busco-screenshot.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Agreement of Gene Predictions}
+	\centering
+	\begin{itemize}
+		\item In DC1 and Tsth20, BRaker2 and GeneMark tend to agree on theh start and stop positions of genes when they predict the same gene. Both gene finders have a large portion of singleton predictions.
+	\end{itemize}
+	\begin{figure}
+		\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/dc1-region-breakdown.png}
+		\caption{DC1}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\vspace{1cm}
+	\centering
+	\begin{itemize}
+		\item In \textit{T. reesei}, Braker2, GeneMark and RefSeq tend to disagree more on the start and stop positions of genes when they predict the same gene.
+		\item Disagreement is more pronounced in \textit{T. harzianum} and \textit{T. virens}, where genes with partial support from more than one gene finder are common.
+		
+	\end{itemize}
+	\begin{figure}
+		\includegraphics[width=0.8\textwidth]{../../working-thesis/figures/t-reesei-region-breakdown.png}
+		\caption{\textit{T. reesei}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{InterProScan Results}
+	\centering
+	\begin{itemize}
+		\item k
+	\end{itemize}
+	\resizebox{\linewidth}{!}{
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    Assembly & Braker2 & GeneMark & RefSeq \\ \hline
+DC1 & $\frac{10676}{14479}$ & $\frac{8416}{11354}$ & \
+N/A \\ \hline
+    Tsth20 & $\frac{11389}{15546}$ & $\frac{9168}{12373}$\
+ & N/A \\ \hline
+    \textit{T. reesei} & $\frac{8471}{11704}$ & $\frac{6990}{9196}$ & $\frac{6964}{9111}$ \\ \hline
+    \textit{T. harzianum} & $\frac{11370}{15408}$ & $\frac{9061}{12164}$ & $\frac{9293}{14065}$ \\ \hline
+    \textit{T. virens} & $\frac{11249}{15062}$ & $\frac{8871}{11866}$ & $\frac{9062}{12383}$ \\ \hline
+  \end{tabular}}
 \end{frame}
 
 \end{document}
