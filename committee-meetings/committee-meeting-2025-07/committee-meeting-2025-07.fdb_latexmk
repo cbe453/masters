@@ -1,6 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1753642116.72805 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/committee-meeting-2025-07/committee-meeting-2025-07.tex" "committee-meeting-2025-07.pdf" "committee-meeting-2025-07" 1753642119.29988 0
+["pdflatex"] 1753662196.54783 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/committee-meeting-2025-07/committee-meeting-2025-07.tex" "committee-meeting-2025-07.pdf" "committee-meeting-2025-07" 1753662199.65194 0
   "../../working-thesis/figures/busco-screenshot.png" 1753639644 144357 638806d9542311811fd39ebc29bfc1a4 ""
+  "../../working-thesis/figures/conclusion-snip.png" 1753661992 96906 a5d10fca31ae1c9f42596f7e81ae32f5 ""
   "../../working-thesis/figures/dc1-region-breakdown.png" 1752192669 20470 c862ee3d269e5e8cf752555b4e0c286b ""
   "../../working-thesis/figures/t-reesei-region-breakdown.png" 1752192669 28808 53daaf7e77d1805d88779011291d42c5 ""
   "../../working-thesis/figures/workflow-simple.pdf" 1753156763 26723 b8eb7c0c6bc95168db419346fffc889a ""
@@ -229,11 +230,11 @@
   "beamerinnerthemeusask.sty" 1753470774 1716 cef013ce5da465ab607f3b2ca55d249d ""
   "beamerouterthemeusask.sty" 1753470774 254 0d27c7d349668f7c4bb8c70b5f1c26aa ""
   "beamerthemeusask.sty" 1753470774 349 8543ab80154c3d56b5c69b8ded9adcbb ""
-  "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/committee-meeting-2025-07/committee-meeting-2025-07.tex" 1753642115 8547 6967c54cb3a6ec920fc3c3abb8d64ebe ""
-  "committee-meeting-2025-07.aux" 1753642118 2238 7911b1fc8942b3235b7bf7b39729ade3 "pdflatex"
-  "committee-meeting-2025-07.nav" 1753642118 1481 4dff29d63ced408af8d13a7957e2a731 "pdflatex"
-  "committee-meeting-2025-07.out" 1753642117 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "committee-meeting-2025-07.tex" 1753642115 8547 6967c54cb3a6ec920fc3c3abb8d64ebe ""
+  "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/committee-meeting-2025-07/committee-meeting-2025-07.tex" 1753662195 12160 aeae09e790ff4a0e90b798ca5434579a ""
+  "committee-meeting-2025-07.aux" 1753662199 2883 b199f66519bdeb48ded663e64304019e "pdflatex"
+  "committee-meeting-2025-07.nav" 1753662199 1946 cc1d57bc897673374b837eab8153475a "pdflatex"
+  "committee-meeting-2025-07.out" 1753662197 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "committee-meeting-2025-07.tex" 1753662195 12160 aeae09e790ff4a0e90b798ca5434579a ""
   (generated)
   "committee-meeting-2025-07.aux"
   "committee-meeting-2025-07.log"

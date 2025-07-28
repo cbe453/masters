@@ -191,7 +191,7 @@
 	\frametitle{InterProScan Results}
 	\centering
 	\begin{itemize}
-		\item k
+		\item I need to look into this. Braker2 numbers strange
 	\end{itemize}
 	\resizebox{\linewidth}{!}{
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -205,6 +205,86 @@ N/A \\ \hline
     \textit{T. harzianum} & $\frac{11370}{15408}$ & $\frac{9061}{12164}$ & $\frac{9293}{14065}$ \\ \hline
     \textit{T. virens} & $\frac{11249}{15062}$ & $\frac{8871}{11866}$ & $\frac{9062}{12383}$ \\ \hline
   \end{tabular}}
+\end{frame}
+
+\begin{frame}
+	\frametitle{BLAST Results}
+	\centering
+	\vspace{0.35cm}
+	\resizebox{\linewidth}{!}{
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+    	\hline
+   		Reference & Ref. Proteins & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens}  \\ \hline
+    	\textit{Trichoderma atroviride} & 11807 & 11552 & 11080 & 10601 & 11081 & 11078 \\ \hline 
+    	\textit{Fusarium granminarium} & 13312 & 10327 & 10429 & 10064 & 10434 & 10490 \\ \hline
+    	\textit{Saccharomyces cerevisiae} & 6014 & 3537 & 3517 & 3445 & 3509 & 3500 \\ \hline
+  	\end{tabular}}
+	\begin{itemize}
+		\item The \textit{T. atroviride} and \textit{Fusarium} datasets are well respresented in the tblastn searches, while the \textit{S. cerevisiae} dataset is less well represented.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\vspace{1.5cm}
+	\resizebox{\linewidth}{!}{
+	\begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Subject & Query & Braker2 & GeneMark & RefSeq \\ \hline
+    DC1 & \textit{T. atroviride} & 5902 & 4679 & N/A \\ \hline
+    DC1 & \textit{F. graminarium} & 4955 & 4114 & N/A \\ \hline
+    DC1 & \textit{S. cerevisiae} & 2105 & 1850 & N/A \\ \hline
+	\textit{T. reesei} & \textit{T. atroviride} & 5072 & 5174 & 4989 \\ \hline
+    \textit{T. reesei} & \textit{F. graminarium} & 4577 & 4685 & 4529 \\ \hline
+    \textit{T. reesei} & \textit{S. cerevisiae} & 2055 & 2114 & 2022 \\ \hline
+	\textit{T. harzianum} & \textit{T. atroviride} & 6363 & 4611 & 6835 \\ \hline
+    \textit{T. harzianum} & \textit{F. graminarium} & 5659 & 4198 & 5982 \\ \hline
+    \textit{T. harzianum} & \textit{S. cerevisiae} & 2424 & 1963 & 2560 \\ \hline
+	\end{tabular}}
+	\begin{itemize}
+		\item Regions with Braker2 and RefSeq gene predictions consistently have more tblastn hits than GeneMark, with the exception of \textit{T. reesei}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gene Predictions in AT-rich Sequence}
+	\centering
+	\resizebox{0.7\linewidth}{!}{
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      Assembly & Braker2 & GeneMark & RefSeq \\ \hline
+      DC1 & 31 & 11 & N/A \\ \hline
+      Tsth20 & 11 & 2 & N/A \\ \hline
+      \textit{T. reesei} & 39 & 48 & 107 \\ \hline
+      \textit{T. harzianum} & 81 & 30 & 154 \\ \hline
+      \textit{T.virens} & 21 & 8 & 20 \\ \hline
+    \end{tabular}}
+	\vspace{0.3cm}
+	\begin{itemize}
+		\item Very few genes are predicted in AT-rich regions of DC1, Tsth20 and \textit{T. virens} assemblies in comparison to the \textit{T. reesei} and \textit{T. harzianum} assemblies.
+		\item Possibly due to higher quality assemblies? Although \textit{T. virens} is still fragmented.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\centering
+	\vspace{2cm}
+	\resizebox{\linewidth}{!}{
+	\begin{tabular}{|c|c|c|c|c|c|}
+      	\hline
+      	Tool & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens} \\ \hline
+     	 Braker2 & $9.56*10^{-181}$ & $1.14*10^{-259}$ & $2.68*10^{-96}$ & $4.05*10^{-140}$ & $1.35*10^{-35}$ \\ \hline
+      	GeneMark & $5.12*10^{-216}$ & $0.0$ & $5.66*10^{-49}$ & $5.37*10^{-219}$ & $5.31*10^{-35}$ \\ \hline
+      	RefSeq & N/A & N/A & $1.29*10^{-49}$ & $2.44*10^{-205}$ & $7.40*10^{-33}$ \\ \hline
+    \end{tabular}}
+	\begin{itemize}
+		\item The results of the two-sided binomial test indicate that the number of genes predicted in AT-rich genomic sequence is not proportional to the fraction of genomic sequence they comprise.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\vspace{0.75cm}
+	\centering
+	\includegraphics[width=0.5\textwidth]{../../working-thesis/figures/conclusion-snip.png}
 \end{frame}
 
 \end{document}
