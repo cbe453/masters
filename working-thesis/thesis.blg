@@ -18,62 +18,51 @@ The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: ./refs/full-bib.bib
 Warning--I didn't find a database entry for "Gurevich2013"
-Warning--I didn't find a database entry for "Hu2024"
-Warning--I didn't find a database entry for "Hu2020"
-Warning--I didn't find a database entry for "Kubicek2019"
-Warning--I didn't find a database entry for "10.1093/nar/gki937"
-Warning--I didn't find a database entry for "Bruna2021"
-Warning--I didn't find a database entry for "Stanke2006"
-Warning--I didn't find a database entry for "Barnett2011"
-Warning--I didn't find a database entry for "10.1093/bioinformatics/btq033"
-Warning--I didn't find a database entry for "Borodovsky2011"
-Warning--I didn't find a database entry for "Pertea2015"
-Warning--I didn't find a database entry for "Pertea2020"
 Warning--I didn't find a database entry for "ref1"
 Warning--I didn't find a database entry for "Wright2022"
 Warning--I didn't find a database entry for "Altschul1990"
 Warning--to sort, need author or key in zotero-item-326
 Warning--to sort, need author or key in 2008
 Warning--empty author in 2008
-You've used 38 entries,
+You've used 43 entries,
             2118 wiz_defined-function locations,
-            762 strings with 13478 characters,
-and the built_in function-call counts, 17277 in all, are:
-= -- 1560
-> -- 1293
+            765 strings with 14143 characters,
+and the built_in function-call counts, 19072 in all, are:
+= -- 1734
+> -- 1398
 < -- 5
-+ -- 512
-- -- 473
-* -- 1584
-:= -- 2979
-add.period$ -- 114
-call.type$ -- 38
-change.case$ -- 348
++ -- 553
+- -- 509
+* -- 1735
+:= -- 3290
+add.period$ -- 129
+call.type$ -- 43
+change.case$ -- 381
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 448
-empty$ -- 1026
-format.name$ -- 473
-if$ -- 3372
+cite$ -- 46
+duplicate$ -- 502
+empty$ -- 1149
+format.name$ -- 509
+if$ -- 3727
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 34
-newline$ -- 189
-num.names$ -- 78
-pop$ -- 316
+int.to.str$ -- 43
+missing$ -- 39
+newline$ -- 214
+num.names$ -- 88
+pop$ -- 339
 preamble$ -- 1
-purify$ -- 310
+purify$ -- 338
 quote$ -- 0
-skip$ -- 319
+skip$ -- 357
 stack$ -- 0
-substring$ -- 912
-swap$ -- 71
+substring$ -- 1027
+swap$ -- 76
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 152
+type$ -- 172
 warning$ -- 3
-while$ -- 133
-width$ -- 40
-write$ -- 410
-(There were 18 warnings)
+while$ -- 150
+width$ -- 45
+write$ -- 465
+(There were 7 warnings)

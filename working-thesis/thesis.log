@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  27 JUL 2025 12:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  30 JUL 2025 21:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -568,24 +568,24 @@ File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 ) (thesis.aux (intro.aux) (chapter-2.aux) (chapter-3.aux) (chapter-4.aux) (chapter-5.aux) (chapter-6.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -629,7 +629,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 64.
+Package hyperref Info: Link coloring OFF on input line 68.
 (thesis.out) (thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -655,7 +655,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/it' instead on input line 65.
+(Font)              using `OT1/cmr/m/it' instead on input line 69.
 
 
 
@@ -717,7 +717,7 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 \include{intro}
+l.73 \include{intro}
                      [1
 
 
@@ -887,18 +887,6 @@ Chapter 5.
 LaTeX Warning: Citation `Gurevich2013' on page 24 undefined on input line 5.
 
 
-LaTeX Warning: Citation `Hu2024' on page 24 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Hu2020' on page 24 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Kubicek2019' on page 24 undefined on input line 15.
-
-
-LaTeX Warning: Citation `Kubicek2019' on page 24 undefined on input line 30.
-
-
 
 [24
 
@@ -912,7 +900,7 @@ LaTeX Warning: Citation `Gurevich2013' on page 25 undefined on input line 45.
 
 LaTeX Warning: Citation `Gurevich2013' on page 25 undefined on input line 45.
 
-<figures/gc-plot.pdf, id=776, 462.52798pt x 346.89601pt>
+<figures/gc-plot.pdf, id=780, 462.52798pt x 346.89601pt>
 File: figures/gc-plot.pdf Graphic file (type pdf)
 <use figures/gc-plot.pdf>
 Package pdftex.def Info: figures/gc-plot.pdf  used on input line 83.
@@ -925,31 +913,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [25]
 
 [26 <./figures/gc-plot.pdf>]
-
-LaTeX Warning: Citation `10.1093/nar/gki937' on page 27 undefined on input line 16.
-
-
-LaTeX Warning: Citation `Bruna2021' on page 27 undefined on input line 43.
-
-
-LaTeX Warning: Citation `Stanke2006' on page 27 undefined on input line 52.
-
-
-LaTeX Warning: Citation `Barnett2011' on page 27 undefined on input line 53.
-
-
-LaTeX Warning: Citation `10.1093/bioinformatics/btq033' on page 27 undefined on input line 54.
-
-
-LaTeX Warning: Citation `Borodovsky2011' on page 27 undefined on input line 55.
-
-
-LaTeX Warning: Citation `Pertea2015' on page 27 undefined on input line 55.
-
-
-LaTeX Warning: Citation `Pertea2020' on page 27 undefined on input line 56.
-
-
 Underfull \vbox (badness 2922) has occurred while \output is active []
 
 
@@ -957,22 +920,22 @@ Underfull \vbox (badness 2922) has occurred while \output is active []
 [27]) (chapters/c5/gene-finding-results.tex
 
 [28]) (chapters/c5/gene-length-results.tex
-<figures/dc1-cdf-lengths-log.pdf, id=839, 722.7pt x 361.35pt>
+<figures/dc1-cdf-lengths-log.pdf, id=856, 722.7pt x 361.35pt>
 File: figures/dc1-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/dc1-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 33.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
-<figures/tsth20-cdf-lengths-log.pdf, id=840, 722.7pt x 361.35pt>
+<figures/tsth20-cdf-lengths-log.pdf, id=857, 722.7pt x 361.35pt>
 File: figures/tsth20-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/tsth20-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/tsth20-cdf-lengths-log.pdf  used on input line 38.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
-<figures/t-reesei-cdf-lengths-log.pdf, id=841, 722.7pt x 361.35pt>
+<figures/t-reesei-cdf-lengths-log.pdf, id=858, 722.7pt x 361.35pt>
 File: figures/t-reesei-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-reesei-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-reesei-cdf-lengths-log.pdf  used on input line 51.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
-<figures/t-harzianum-cdf-lengths-log.pdf, id=842, 722.7pt x 361.35pt>
+<figures/t-harzianum-cdf-lengths-log.pdf, id=859, 722.7pt x 361.35pt>
 File: figures/t-harzianum-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-harzianum-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-harzianum-cdf-lengths-log.pdf  used on input line 56.
@@ -987,7 +950,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 63--63
 \OT1/cmr/m/n/10 be each gene find-ing tool ap-plied to \OT1/cmr/m/it/10 T. ree-sei \OT1/cmr/m/n/10 (GCF[]000167675.1[]v2.0) and \OT1/cmr/m/it/10 T. harzianum.
  []
 
-<figures/t-virens-cdf-lengths-log.pdf, id=843, 722.7pt x 361.35pt>
+<figures/t-virens-cdf-lengths-log.pdf, id=860, 722.7pt x 361.35pt>
 File: figures/t-virens-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-virens-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input line 70.
@@ -1013,27 +976,27 @@ Underfull \vbox (badness 3815) has occurred while \output is active []
 [34]) (chapters/c5/regions.tex
 
 [35]
-<figures/dc1-region-breakdown.png, id=1075, 659.46375pt x 242.9075pt>
+<figures/dc1-region-breakdown.png, id=1092, 659.46375pt x 242.9075pt>
 File: figures/dc1-region-breakdown.png Graphic file (type png)
 <use figures/dc1-region-breakdown.png>
 Package pdftex.def Info: figures/dc1-region-breakdown.png  used on input line 22.
 (pdftex.def)             Requested size: 424.82523pt x 156.48325pt.
-<figures/tsth20-region-breakdown.png, id=1076, 648.4225pt x 217.81375pt>
+<figures/tsth20-region-breakdown.png, id=1093, 648.4225pt x 217.81375pt>
 File: figures/tsth20-region-breakdown.png Graphic file (type png)
 <use figures/tsth20-region-breakdown.png>
 Package pdftex.def Info: figures/tsth20-region-breakdown.png  used on input line 27.
 (pdftex.def)             Requested size: 424.82523pt x 142.70726pt.
-<figures/t-reesei-region-breakdown.png, id=1077, 586.19pt x 233.87375pt>
+<figures/t-reesei-region-breakdown.png, id=1094, 586.19pt x 233.87375pt>
 File: figures/t-reesei-region-breakdown.png Graphic file (type png)
 <use figures/t-reesei-region-breakdown.png>
 Package pdftex.def Info: figures/t-reesei-region-breakdown.png  used on input line 32.
 (pdftex.def)             Requested size: 424.82523pt x 169.49165pt.
-<figures/t-harzianum-region-breakdown.png, id=1078, 596.2275pt x 233.87375pt>
+<figures/t-harzianum-region-breakdown.png, id=1095, 596.2275pt x 233.87375pt>
 File: figures/t-harzianum-region-breakdown.png Graphic file (type png)
 <use figures/t-harzianum-region-breakdown.png>
 Package pdftex.def Info: figures/t-harzianum-region-breakdown.png  used on input line 41.
 (pdftex.def)             Requested size: 424.82523pt x 166.64032pt.
-<figures/t-virens-region-breakdown.png, id=1079, 587.19376pt x 233.87375pt>
+<figures/t-virens-region-breakdown.png, id=1096, 587.19376pt x 233.87375pt>
 File: figures/t-virens-region-breakdown.png Graphic file (type png)
 <use figures/t-virens-region-breakdown.png>
 Package pdftex.def Info: figures/t-virens-region-breakdown.png  used on input line 46.
@@ -1045,7 +1008,7 @@ Package pdftex.def Info: figures/t-virens-region-breakdown.png  used on input li
 [37 <./figures/dc1-region-breakdown.png> <./figures/tsth20-region-breakdown.png> <./figures/t-reesei-region-breakdown.png>]
 
 [38 <./figures/t-harzianum-region-breakdown.png> <./figures/t-virens-region-breakdown.png>]
-<figures/igv/igv-uncertain-regions.png, id=1100, 1446.40375pt x 698.61pt>
+<figures/igv/igv-uncertain-regions.png, id=1117, 1446.40375pt x 698.61pt>
 File: figures/igv/igv-uncertain-regions.png Graphic file (type png)
 <use figures/igv/igv-uncertain-regions.png>
 Package pdftex.def Info: figures/igv/igv-uncertain-regions.png  used on input line 120.
@@ -1054,7 +1017,7 @@ Package pdftex.def Info: figures/igv/igv-uncertain-regions.png  used on input li
 
 LaTeX Warning: Citation `Wright2022' on page 39 undefined on input line 142.
 
-<figures/igv/igv-opposing-strands.png, id=1102, 1448.41125pt x 702.625pt>
+<figures/igv/igv-opposing-strands.png, id=1119, 1448.41125pt x 702.625pt>
 File: figures/igv/igv-opposing-strands.png Graphic file (type png)
 <use figures/igv/igv-opposing-strands.png>
 Package pdftex.def Info: figures/igv/igv-opposing-strands.png  used on input line 146.
@@ -1064,7 +1027,7 @@ Package pdftex.def Info: figures/igv/igv-opposing-strands.png  used on input lin
 [39 <./figures/igv/igv-uncertain-regions.png>]
 
 [40 <./figures/igv/igv-opposing-strands.png>]
-<figures/igv/ips-basic-agree.png, id=1116, 1551.7975pt x 839.135pt>
+<figures/igv/ips-basic-agree.png, id=1133, 1551.7975pt x 839.135pt>
 File: figures/igv/ips-basic-agree.png Graphic file (type png)
 <use figures/igv/ips-basic-agree.png>
 Package pdftex.def Info: figures/igv/ips-basic-agree.png  used on input line 56.
@@ -1072,12 +1035,12 @@ Package pdftex.def Info: figures/igv/ips-basic-agree.png  used on input line 56.
 
 
 [41 <./figures/igv/ips-basic-agree.png>]
-<figures/igv/ips-model-disagree2.png, id=1124, 1390.19376pt x 764.8575pt>
+<figures/igv/ips-model-disagree2.png, id=1141, 1390.19376pt x 764.8575pt>
 File: figures/igv/ips-model-disagree2.png Graphic file (type png)
 <use figures/igv/ips-model-disagree2.png>
 Package pdftex.def Info: figures/igv/ips-model-disagree2.png  used on input line 90.
 (pdftex.def)             Requested size: 472.03123pt x 259.69798pt.
-<figures/igv/ips-braker-genemark-norefseq.png, id=1125, 1448.41125pt x 701.62125pt>
+<figures/igv/ips-braker-genemark-norefseq.png, id=1142, 1448.41125pt x 701.62125pt>
 File: figures/igv/ips-braker-genemark-norefseq.png Graphic file (type png)
 <use figures/igv/ips-braker-genemark-norefseq.png>
 Package pdftex.def Info: figures/igv/ips-braker-genemark-norefseq.png  used on input line 100.
@@ -1140,17 +1103,17 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D02F846B200945CE26DEE0C6253383F6;12189.
  ) 
 Here is how much of TeX's memory you used:
- 24007 strings out of 468221
- 454267 string characters out of 5432891
- 851366 words of memory out of 5000000
- 51861 multiletter control sequences out of 15000+600000
+ 24017 strings out of 468221
+ 454414 string characters out of 5432891
+ 851646 words of memory out of 5000000
+ 51866 multiletter control sequences out of 15000+600000
  632796 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,18n,93p,1874b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (62 pages, 1310953 bytes).
+Output written on thesis.pdf (62 pages, 1315282 bytes).
 PDF statistics:
- 1314 PDF objects out of 1440 (max. 8388607)
- 196 named destinations out of 1000 (max. 500000)
+ 1332 PDF objects out of 1440 (max. 8388607)
+ 201 named destinations out of 1000 (max. 500000)
  597 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,13 +7,13 @@ is different, requiring more or less effort to install and run than
 other tools. This section discusses the implementations, installation
 procedures and execution of GeneMark and Braker2 in more detail. For
 more information on the versions and parameters used in this
-processing, please see Section \ref{met:braker2}. The computing
+processing, please see Section~\ref{met:braker2}. The computing
 platform used in this research is hosted and managed by University of
 Saskatchewan services, which is modelled around the HPC platform used
 by the Digital Research Alliance of Canada and software is managed
 similarly.
 
-GeneMark\cite{10.1093/nar/gki937} is a gene finding tool developed by
+GeneMark~\cite{borodovsky2011a} is a gene finding tool developed by
 the Georgia Institute of Technology with packages prepared for Linux
 and MacOS. It is provided as licensed product in the form of a package
 which can be downloaded from their website after submitting a
@@ -40,20 +40,20 @@ genes as well as a number of other outputs related to the run.
 
 % CPAN here: https://www.cpan.org/modules/INSTALL.html
 
-Braker2\cite{Bruna2021} is hosted on GitHub as a repository that
+Braker2~\cite{bruna2021a} is hosted on GitHub as a repository that
 receives relatively frequent updates with Braker3 being released while
 working before the completion of this work. Braker is maintained by
 Katharina Hoff from the University of Greifswald and is available
 under the Open Source Artistic License. Installation of the repository
 is a straightforward pull from GitHub. As with GeneMark, Braker2 uses
-a combination of Perl, Python and other exectuables in its regular
+a combination of Perl, Python and other executables in its regular
 use. Downloading the repository itself is not enough for execution, as
 Braker2 relies on a number of dependencies and bioinformatics tools
-including Perl and (Perl dependencies), Augustus\cite{Stanke2006},
-BamTools\cite{Barnett2011},
-BedTools\cite{10.1093/bioinformatics/btq033},
-GeneMark\cite{Borodovsky2011}, StringTie\cite{Pertea2015},
-GFFRead\cite{Pertea2020} and several others. Manual installation of
+including Perl and (Perl dependencies), Augustus~\cite{stanke2006a},
+BamTools~\cite{barnett2011a},
+BedTools~\cite{quinlan2010},
+GeneMark~\cite{borodovsky2011a}, StringTie~\cite{pertea2015a},
+GFFRead~\cite{pertea2020a} and several others. Manual installation of
 these dependencies would be difficult, time consuming and in general
 advised against. In this case, many of Braker2's requirements are
 satisfied by modules already included in the environment, making
