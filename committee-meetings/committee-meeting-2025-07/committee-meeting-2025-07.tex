@@ -3,7 +3,10 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
-
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{bookmark}
+\usepackage[table]{xcolor}
 % Title slide information
 \title{Evaluation of Gene Finding Tools When Applied to \textit{Trichoderma} Genomes - Update}
 \date{July, 2025} 
@@ -39,9 +42,26 @@
 	\begin{itemize}
 		\item \textit{Trichoderma} is a genus of filamentous that is ubiquitous in soil and plays a significant role in nutrient cycling.
 		\item They are also used in biocontrol and as biofertilizers.
-		\item Known for their production of plant cell wall degrading enzymes, and secondary metabolites.
+		\item Known for their production of plant cell wall degrading enzymes, and \textbf{secondary metabolites}.
 		\item Further genomic studies can help in understanding their biology and potential applications.
 	\end{itemize}
+	\vspace{0.05cm}
+	\centering
+	%\includegraphics[width=0.2\textwidth]{./Trichoderma_harzianum.jpg}
+
+	\begin{figure}
+		\centering
+		\begin{minipage}{0.5\textwidth}
+			\centering
+			\includegraphics[width=0.35\linewidth]{./Trichoderma_harzianum.jpg}
+			\caption{\textit{T. harzianum}}
+		\end{minipage}\hfill
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=0.6\linewidth]{./Trichoderma_petri.jpg}
+			\caption{\textit{Trichoderma} colony}
+		\end{minipage}
+	\end{figure}
 \end{frame}
 
 \begin{frame}
@@ -58,8 +78,8 @@
 	\begin{itemize}
 		\item To better understand the biological mechanisms at work in \textit{Trichoderma} spp., we first need to understand their genomes by identifying genes within them.
 		\item Various tools exist for gene prediction, but their implementations and performance can vary significantly.
-		\item Few studies have compared these tools in fungi, and even fewer in \textit{Trichoderma}.
-		\item Meanwhile, increased accessibility to high-quality sequencing services has led to the generation of many new \textit{Trichoderma} genomes, including DC1 and Tsth20.
+		\item \textbf{Few studies have compared these tools in fungi, and even fewer in \textit{Trichoderma}}.
+		\item In addition, increased accessibility to high-quality sequencing services has led to the generation of many new \textit{Trichoderma} genomes, including DC1 and Tsth20.
 		\item These genomes provide an opportunity to evaluate gene finding tools in a comparative context, and contribute to the understanding of \textit{Trichoderma} biology. 
 	\end{itemize}
 \end{frame}
@@ -68,8 +88,8 @@
 	\frametitle{Research Objectives}
 	\begin{itemize}
 		\item Assemble and evaluate novel assemblies of DC1 and Tsth20.
-		\item Apply gene finders Braker2 and GeneMark in five \textit{Trichoderma} assemblies.
-		\item Compare gene finding tools based on several criteria, including:
+		\item Apply gene finders Braker2 and GeneMark in DC1, Tsth20, and three other RefSeq assemblies - \textit{T. reesei, T.harzianum} and \textit{T. virens}.
+		\item Compare gene finding tools based on relevant criteria, including:
 		\begin{itemize}
 			 \item Proportions of gene lengths predicted.
 			 \item Presence of functional domains and closely related protein sequences.
@@ -82,28 +102,7 @@
 \begin{frame}
 	\frametitle{Workflow Overview}
 	\centering
-	\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/workflow-simple.pdf}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Datasets and Tools}
-	\begin{itemize}
-		\item \textbf{Datasets:}
-		\begin{itemize}
-			\item Novel \textit{Trichoderma} genomes: DC1 and Tsth20.
-			\item Reference genomes and annotations: \textit{T. reesei, T. harzianum, T.virens}.
-			\item RNAseq training data from \textit{T. reesei}. 
-			\item Benchmarking Universal Single-Copy Orthologs (BUSCO) fungal database.
-			\item Protein sequence queries for tblastn from \textit{T. atroviride, Fusarium graminearum, and Saccharomyces cerevisiae}.	
-		\end{itemize}
-		\item \textbf{Tools:}
-		\begin{itemize}
-			\item Sequence processing: FastQC, Trimmomatic, Hisat2.
-			\item Genome assembly: NextDenovo and NextPolish.
-			\item Gene finding tools: Braker2 and GeneMark-ES.
-			\item Evaluation tools: BUSCO, tblastn, InterProScan, and custom scripts.
-		\end{itemize}
-	\end{itemize}
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/workflow-simple.pdf}
 \end{frame}
 
 \begin{frame}
@@ -114,8 +113,8 @@
     \begin{tabular}{|c|c|c|c|c|c|c|}
 		\hline
   		Name & Total Contigs & Total Length & Largest Contig & GC\% & N50 & L50 \\ \hline
-     	DC1 & 8 & 38.6 Mb & 11.49 Mb & 47.97 & 5.69 Mb & 3 \\ \hline
-      	Tsth20 & 7 & 41.58 Mb & 8.02 Mb & 47.33 & 6.52 Mb & 3 \\ \hline
+     	DC1 & \cellcolor{green}8 & 38.6 Mb & \cellcolor{green}11.49 Mb & 47.97 & \cellcolor{green}5.69 Mb & \cellcolor{green}3 \\ \hline
+      	Tsth20 & \cellcolor{green}7 & 41.58 Mb & \cellcolor{green}8.02 Mb & 47.33 & \cellcolor{green}6.52 Mb & \cellcolor{green}3 \\ \hline
       	\textit{T. harzianum} & 532 & 40.98 Mb & 4.08 Mb & 47.61 & 2.41 Mb & 7 \\ \hline
       	\textit{T. virens} & 93 & 39.02 Mb & 3.45 Mb & 49.25 & 1.83 Mb & 8 \\ \hline
       	\textit{T. reesei} & 77 & 33.39 Mb & 3.75 Mb & 52.82 & 1.21 Mb & 9 \\ \hline
@@ -133,12 +132,12 @@
 	\resizebox{\linewidth}{!}{
 	\begin{tabular}{|c|c|c|c|c|c|c|}
     	\hline
-    	Assembly & Braker2 & & GeneMark & & RefSeq & \\ \hline
-     	& Genes & CDS & Genes & CDS & Genes & CDS \\ \hline
+    	& \multicolumn{2}{c|}{Braker2} & \multicolumn{2}{c|}{GeneMark} & \multicolumn{2}{c|}{RefSeq} \\ \hline
+     	Assembly & Genes & CDS & Genes & CDS & Genes & CDS \\ \hline
     	DC1 & 8546 & 8637 & 11353 & 11353 & N/A & N/A \\ \hline
     	Tsth20 & 8784 & 8858 & 12362 & 12362 & N/A & N/A \\ \hline
-    	\textit{T. reesei} & 9659 & 10175 & 9196 & 9196 & 9109 & 9118 \\ \hline
-    	\textit{T. harzianum} & 8314 & 8385 & 12164 & 12164 & 14269 & 14090 \\ \hline
+    	\textit{T. reesei} & \cellcolor{green}9659 & \cellcolor{green}10175 & 9196 & 9196 & 9109 & 9118 \\ \hline
+    	\textit{T. harzianum} & 8314 & 8385 & 12164 & 12164 & \cellcolor{green}14269 & \cellcolor{green}14090 \\ \hline
     	\textit{T. virens} & 7801 & 7863 & 11866 & 11866 & 12405 & 12406 \\ \hline
   	\end{tabular}}
 	\begin{itemize}
@@ -158,15 +157,21 @@
       Genome & Tool \#1 & Tool \#2 & \textit{P}-value  \\ \hline
       DC1 & Braker2 & GeneMark & $0.999$ \\ \hline
       Tsth20 & Braker2 & GeneMark & $0.965$ \\ \hline
-      \textit{T. reesei} & Braker2 & GeneMark & $9.481*10^{-07}$ \\ \hline
+      %\textit{T. reesei} & Braker2 & GeneMark & $9.481*10^{-07}$ \\ \hline
+	  \textit{T. reesei} & \cellcolor{yellow}Braker2 & GeneMark & \cellcolor{yellow}$\textit{P}<0.005$ \\ \hline
       \textit{T. reesei} & GeneMark & RefSeq & $0.002$ \\ \hline
-      \textit{T. reesei} & Braker2 & RefSeq & $1.340*10^{-07}$ \\ \hline
-      \textit{T. harzianum} & Braker2 & GeneMark & $0.863$ \\ \hline
-      \textit{T. harzianum} & GeneMark & RefSeq & $4.313*10^{-52}$ \\ \hline
-      \textit{T. harzianum} & Braker2 & RefSeq & $4.674*10^{-55}$ \\ \hline
+      \textit{T. reesei} & \cellcolor{yellow}Braker2 & RefSeq & \cellcolor{yellow}$\textit{P}<0.005$ \\ \hline
+      %\textit{T. reesei} & Braker2 & RefSeq & $1.340*10^{-07}$ \\ \hline
+	  \textit{T. harzianum} & Braker2 & GeneMark & $0.863$ \\ \hline
+      %\textit{T. harzianum} & GeneMark & RefSeq & $4.313*10^{-52}$ \\ \hline
+      \textit{T. harzianum} & GeneMark & \cellcolor{yellow}RefSeq & \cellcolor{yellow}$\textit{P}<0.005$ \\ \hline
+	  %\textit{T. harzianum} & Braker2 & RefSeq & $4.674*10^{-55}$ \\ \hline
+	  \textit{T. harzianum} & Braker2 & \cellcolor{yellow}RefSeq & \cellcolor{yellow}$\textit{P}<0.005$ \\ \hline
       \textit{T. virens} & Braker2 & GeneMark & $0.635$ \\ \hline
-      \textit{T. virens} & GeneMark & RefSeq & $7.352*10^{-12}$ \\ \hline
-      \textit{T. virens} & Braker2 & RefSeq & $1.794*10^{-09}$ \\ \hline
+      %\textit{T. virens} & GeneMark & RefSeq & $7.352*10^{-12}$ \\ \hline
+	  \textit{T. virens} & GeneMark & \cellcolor{yellow}RefSeq & \cellcolor{yellow}$\textit{P}<0.005$ \\ \hline
+	  %\textit{T. virens} & Braker2 & RefSeq & $1.794*10^{-09}$ \\ \hline
+      \textit{T. virens} & Braker2 & \cellcolor{yellow}RefSeq & \cellcolor{yellow}$\textit{P}<0.005$ \\ \hline
     \end{tabular}}
 \end{frame}
 
@@ -211,52 +216,52 @@
 	\begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
     Assembly & Braker2 & GeneMark & RefSeq \\ \hline
-DC1 & ${10676}/{14479}$ & ${8416}/{11354}$ & \
+DC1 & ${73\%}$ & ${74.1\%}$ & \
 N/A \\ \hline
-    Tsth20 & ${11389}/{15546}$ & ${9168}/{12373}$\
+    Tsth20 & ${73.3\%}$ & ${74.1\%}$
  & N/A \\ \hline
-    \textit{T. reesei} & ${8471}/{11704}$ & ${6990}/{9196}$ & ${6964}/{9111}$ \\ \hline
-    \textit{T. harzianum} & ${11370}/{15408}$ & ${9061}/{12164}$ & ${9293}/{14065}$ \\ \hline
-    \textit{T. virens} & ${11249}/{15062}$ & ${8871}/{11866}$ & ${9062}/{12383}$ \\ \hline
+    \textit{T. reesei} & ${72.4\%}$ & ${76\%}$ & ${76.4\%}$ \\ \hline
+    \textit{T. harzianum} & ${73.8\%}$ & ${74.5\%}$ & \cellcolor{yellow}${66.11\%}$ \\ \hline
+    \textit{T. virens} & ${74.7\%}$ & ${74.8\%}$ & ${73.2\%}$ \\ \hline
   	\end{tabular}}
   	\begin{itemize}
-		\item All three gene finders predict a similar proportion of genes with functional domains.
+		\item All three gene finders predict a similar proportion of genes with functional domains, except in the case of \textit{T. harzianum}, where RefSeq predicts a significantly lower proportion of genes with functional domains.
 	\end{itemize}
 \end{frame}
 
-\begin{frame}
-	\frametitle{BLAST Results}
-	\centering
-	\vspace{0.7cm}
-	\resizebox{1\linewidth}{!}{
-	\begin{tabular}{|c|c|c|c|c|c|c|}
-    	\hline
-   		Reference & Ref. Proteins & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens}  \\ \hline
-    	\textit{Trichoderma atroviride} & 11807 & 11552 & 11080 & 10601 & 11081 & 11078 \\ \hline 
-    	\textit{Fusarium granminarium} & 13312 & 10327 & 10429 & 10064 & 10434 & 10490 \\ \hline
-    	\textit{Saccharomyces cerevisiae} & 6014 & 3537 & 3517 & 3445 & 3509 & 3500 \\ \hline
-  	\end{tabular}}
-	\vspace{0.2cm}
-	\begin{itemize}
-		\item The \textit{T. atroviride} and \textit{Fusarium} datasets are well respresented in the tblastn searches, while the \textit{S. cerevisiae} dataset is less well represented.
-	\end{itemize}
-\end{frame}
+%\begin{frame}
+%	\frametitle{BLAST Results}
+%	\centering
+%	\vspace{0.7cm}
+%	\resizebox{1\linewidth}{!}{
+%	\begin{tabular}{|c|c|c|c|c|c|c|}
+%    	\hline
+%   		Reference & Ref. Proteins & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens}  \\ \hline
+%    	\textit{Trichoderma atroviride} & 11807 & 11552 & 11080 & 10601 & 11081 & 11078 \\ \hline 
+%    	\textit{Fusarium granminarium} & 13312 & 10327 & 10429 & 10064 & 10434 & 10490 \\ \hline
+%    	\textit{Saccharomyces cerevisiae} & 6014 & 3537 & 3517 & 3445 & 3509 & 3500 \\ \hline
+%  	\end{tabular}}
+%	\vspace{0.2cm}
+%	\begin{itemize}
+%		\item The \textit{T. atroviride} and \textit{Fusarium} datasets are well respresented in the tblastn searches, while the \textit{S. cerevisiae} dataset is less well represented.
+%	\end{itemize}
+%\end{frame}
 
 \begin{frame}
-	\vspace{1.5cm}
+	\frametitle{tblastn Results}
 	\resizebox{\linewidth}{!}{
 	\begin{tabular}{|c|c|c|c|c|}
     \hline
     Subject & Query & Braker2 & GeneMark & RefSeq \\ \hline
-    DC1 & \textit{T. atroviride} & 5902 & 4679 & N/A \\ \hline
-    DC1 & \textit{F. graminarium} & 4955 & 4114 & N/A \\ \hline
-    DC1 & \textit{S. cerevisiae} & 2105 & 1850 & N/A \\ \hline
-	\textit{T. reesei} & \textit{T. atroviride} & 5072 & 5174 & 4989 \\ \hline
-    \textit{T. reesei} & \textit{F. graminarium} & 4577 & 4685 & 4529 \\ \hline
-    \textit{T. reesei} & \textit{S. cerevisiae} & 2055 & 2114 & 2022 \\ \hline
-	\textit{T. harzianum} & \textit{T. atroviride} & 6363 & 4611 & 6835 \\ \hline
-    \textit{T. harzianum} & \textit{F. graminarium} & 5659 & 4198 & 5982 \\ \hline
-    \textit{T. harzianum} & \textit{S. cerevisiae} & 2424 & 1963 & 2560 \\ \hline
+    DC1 & \textit{T. atroviride} & 5902 & \cellcolor{yellow}4679 & N/A \\ \hline
+    DC1 & \textit{F. graminarium} & 4955 & \cellcolor{yellow}4114 & N/A \\ \hline
+    DC1 & \textit{S. cerevisiae} & 2105 & \cellcolor{yellow}1850 & N/A \\ \hline
+	\textit{T. reesei} & \textit{T. atroviride} & 5072 & \cellcolor{green}5174 & 4989 \\ \hline
+    \textit{T. reesei} & \textit{F. graminarium} & 4577 & \cellcolor{green}4685 & 4529 \\ \hline
+    \textit{T. reesei} & \textit{S. cerevisiae} & 2055 & \cellcolor{green}2114 & 2022 \\ \hline
+	\textit{T. harzianum} & \textit{T. atroviride} & 6363 & \cellcolor{yellow}4611 & 6835 \\ \hline
+    \textit{T. harzianum} & \textit{F. graminarium} & 5659 & \cellcolor{yellow}4198 & 5982 \\ \hline
+    \textit{T. harzianum} & \textit{S. cerevisiae} & 2424 & \cellcolor{yellow}1963 & 2560 \\ \hline
 	\end{tabular}}
 	\begin{itemize}
 		\item Regions with Braker2 and RefSeq gene predictions consistently have more tblastn hits than GeneMark, with the exception of \textit{T. reesei}.
@@ -270,11 +275,11 @@ N/A \\ \hline
     \begin{tabular}{|c|c|c|c|}
       \hline
       Assembly & Braker2 & GeneMark & RefSeq \\ \hline
-      DC1 & 31 & 11 & N/A \\ \hline
-      Tsth20 & 11 & 2 & N/A \\ \hline
+      DC1 & \cellcolor{yellow}31 & \cellcolor{yellow}11 & N/A \\ \hline
+      Tsth20 & \cellcolor{yellow}11 & \cellcolor{yellow}2 & N/A \\ \hline
       \textit{T. reesei} & 39 & 48 & 107 \\ \hline
       \textit{T. harzianum} & 81 & 30 & 154 \\ \hline
-      \textit{T.virens} & 21 & 8 & 20 \\ \hline
+      \textit{T.virens} & \cellcolor{yellow}21 & \cellcolor{yellow}8 & \cellcolor{yellow}20 \\ \hline
     \end{tabular}}
 	\vspace{0.3cm}
 	\begin{itemize}
@@ -310,12 +315,6 @@ N/A \\ \hline
 \end{frame}
 
 \begin{frame}
-	\vspace{0.75cm}
-	\centering
-	\includegraphics[width=0.5\textwidth]{../../working-thesis/figures/conclusion-snip.png}
-\end{frame}
-
-\begin{frame}
 	\frametitle{Future Work}
 	\begin{itemize}
 		\item \textbf{Explore the landscape of secondary metabolite gene clusters in \textit{Trichoderma} genomes further.}
@@ -347,6 +346,50 @@ N/A \\ \hline
 		\item Results and Discussion - 80(?)\%
 		\item Conclusions and Future Work - 75\%
 		\item What to focus on next?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Acknowledgements}
+	\begin{itemize}
+		\item My supervisors for their committed support through COVID and other challenges.
+		\item The Global Institute for Food Security for providing the data for this project as well as a portion of my funding.
+		\item My committee members for their feedback and support.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Datasets and Tools}
+	\begin{itemize}
+		\item \textbf{Datasets:}
+		\begin{itemize}
+			\item Novel \textit{Trichoderma} genomes: DC1 and Tsth20.
+			\item Reference genomes and annotations: \textit{T. reesei, T. harzianum, T.virens}.
+			\item RNAseq training data from \textit{T. reesei}. 
+			\item Benchmarking Universal Single-Copy Orthologs (BUSCO) fungal database.
+			\item Protein sequence queries for tblastn from \textit{T. atroviride, Fusarium graminearum, and Saccharomyces cerevisiae}.	
+		\end{itemize}
+		\item \textbf{Tools:}
+		\begin{itemize}
+			\item Sequence processing: FastQC, Trimmomatic, Hisat2.
+			\item Genome assembly: NextDenovo and NextPolish.
+			\item Gene finding tools: Braker2 and GeneMark-ES.
+			\item Evaluation tools: BUSCO, tblastn, InterProScan, and custom scripts.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\vspace{0.75cm}
+	\centering
+	\includegraphics[width=0.5\textwidth]{../../working-thesis/figures/conclusion-snip.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Image Credits}
+	\begin{itemize}
+		\item \textit{T. harzianum} image: \url{https://en.wikipedia.org/wiki/Trichoderma}
+		\item \textit{Trichoderma colony} image:\url{https://biocontrol.entomology.cornell.edu/pathogens/trichoderma.php}
 	\end{itemize}
 \end{frame}
 
