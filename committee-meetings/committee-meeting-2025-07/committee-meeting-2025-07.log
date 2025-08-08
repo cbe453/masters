@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  8 AUG 2025 10:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  8 AUG 2025 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1660,13 +1660,13 @@ L3 programming layer <2025-06-09>
 Here is how much of TeX's memory you used:
  25775 strings out of 468221
  512463 string characters out of 5432891
- 885277 words of memory out of 5000000
+ 884277 words of memory out of 5000000
  53714 multiletter control sequences out of 15000+600000
  711974 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,123p,566b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on committee-meeting-2025-07.pdf (24 pages, 850732 bytes).
+Output written on committee-meeting-2025-07.pdf (24 pages, 850737 bytes).
 PDF statistics:
  700 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 500000)
