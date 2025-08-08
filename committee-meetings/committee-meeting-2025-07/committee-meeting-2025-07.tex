@@ -5,7 +5,7 @@
 \usepackage{graphicx}
 
 % Title slide information
-\title{Evaluation of Gene Finding Tools on \textit{Trichoderma} Genomes - Update}
+\title{Evaluation of Gene Finding Tools When Applied to \textit{Trichoderma} Genomes - Update}
 \date{July, 2025} 
 \author{Connor Burbridge}
 \titlegraphic{UsaskAerial.jpg} 
@@ -31,22 +31,12 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%
-\begin{frame}
-	\frametitle{Background} 
-	\begin{itemize}
-		\item \textit{Trichoderma} species are important for agriculture and biotechnology.
-		\item Gene finding is a critical step in understanding \textit{Trichoderma}
-		\item Various tools exist for gene prediction, but their implementations and performance can vary significantly.
-		\item Few studies have compared these tools in fungi, and even fewer in \textit{Trichoderma}.
-		\item In addition, high-quality reference genomes are not available for all species, which makes comparisons difficult.
-	\end{itemize}
-\end{frame}
+
 
 \begin{frame}
-	\frametitle{Why \textit{Trichoderma}?}
+	\frametitle{What is \textit{Trichoderma}?}
 	\begin{itemize}
-		\item describe trichoderma here*********
-		\item \textit{Trichoderma} species are ubiquitous in soil and play a significant role in nutrient cycling.
+		\item \textit{Trichoderma} is a genus of filamentous that is ubiquitous in soil and plays a significant role in nutrient cycling.
 		\item They are also used in biocontrol and as biofertilizers.
 		\item Known for their production of plant cell wall degrading enzymes, and secondary metabolites.
 		\item Further genomic studies can help in understanding their biology and potential applications.
@@ -58,9 +48,34 @@
 	\begin{itemize}
 		\item \textit{Trichoderma} species are diverse, with many species not yet fully characterized.
 		\item Recent advances in sequencing technology have made it possible to generate high-quality genomes for these species.
-		\item Two novel genomes of \textit{Trichoderma} species have been sequenced at the Global Institute for food Security
-		\item DC1 and Tsth20, shown to improve drought and salt tolerance when applied to crops.
+		\item Two novel \textit{Trichoderma} genomes have been sequenced at the Global Institute for food Security
+		\item DC1 and Tsth20, shown to improve drought and salt tolerance when applied to crops, and have been shown to breakdown hydrocarbons in soils.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Motivation} 
+	\begin{itemize}
+		\item To better understand biological mechanisms at work in \textit{Trichoderma} spp., we needto understand their genomes byt identifying genes within them.
+		\item Various tools exist for gene prediction, but their implementations and performance can vary significantly.
+		\item Few studies have compared these tools in fungi, and even fewer in \textit{Trichoderma}.
+		\item In addition, high-quality reference genomes are not available for all species, which makes comparisons difficult.
 		\item These genomes provide an opportunity to evaluate gene finding tools in a comparative context, and contribute to the understanding of \textit{Trichoderma} biology. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Research Objectives}
+	\begin{itemize}
+		\item Assemble and evaluate novel assemblies of DC1 and Tsth20.
+		\item Apply gene finders Braker2 and GeneMark in five \textit{Trichoderma} assemblies.
+		\item Compare gene finding tools based on several criteria, including:
+		\begin{itemize}
+			 \item Proportions of gene lengths predicted.
+			 \item Presence of functional domains and closely related protein sequences.
+			 \item Presence of genes in AT-rich sequence.
+			 \item Agreement of gene finders on start and stop positions of a gene. 
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
@@ -166,7 +181,7 @@
 	\frametitle{Agreement of Gene Predictions}
 	\centering
 	\begin{itemize}
-		\item In DC1 and Tsth20, BRaker2 and GeneMark tend to agree on theh start and stop positions of genes when they predict the same gene. Both gene finders have a large portion of singleton predictions.
+		\item In DC1 and Tsth20, Braker2 and GeneMark tend to agree on the start and stop positions of genes when they predict the same gene. Both gene finders have a large portion of singleton predictions.
 	\end{itemize}
 	\begin{figure}
 		\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/dc1-region-breakdown.png}
@@ -179,7 +194,7 @@
 	\centering
 	\begin{itemize}
 		\item In \textit{T. reesei}, Braker2, GeneMark and RefSeq tend to disagree more on the start and stop positions of genes when they predict the same gene.
-		\item Disagreement is more pronounced in \textit{T. harzianum} and \textit{T. virens}, where genes with partial support from more than one gene finder are common.
+		\item Disagreement is more pronounced in \textit{T. harzianum} and \textit{T. virens}, where there are fewer genes with supportinng predictions from each gene finder.
 		
 	\end{itemize}
 	\begin{figure}
@@ -191,28 +206,29 @@
 \begin{frame}
 	\frametitle{InterProScan Results}
 	\centering
-	\begin{itemize}
-		\item I need to look into this. Braker2 numbers strange
-	\end{itemize}
+	\vspace{0.35cm}
 	\resizebox{\linewidth}{!}{
 	\begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
     Assembly & Braker2 & GeneMark & RefSeq \\ \hline
-DC1 & $\frac{10676}{14479}$ & $\frac{8416}{11354}$ & \
+DC1 & ${10676}/{14479}$ & ${8416}/{11354}$ & \
 N/A \\ \hline
-    Tsth20 & $\frac{11389}{15546}$ & $\frac{9168}{12373}$\
+    Tsth20 & ${11389}/{15546}$ & ${9168}/{12373}$\
  & N/A \\ \hline
-    \textit{T. reesei} & $\frac{8471}{11704}$ & $\frac{6990}{9196}$ & $\frac{6964}{9111}$ \\ \hline
-    \textit{T. harzianum} & $\frac{11370}{15408}$ & $\frac{9061}{12164}$ & $\frac{9293}{14065}$ \\ \hline
-    \textit{T. virens} & $\frac{11249}{15062}$ & $\frac{8871}{11866}$ & $\frac{9062}{12383}$ \\ \hline
-  \end{tabular}}
+    \textit{T. reesei} & ${8471}/{11704}$ & ${6990}/{9196}$ & ${6964}/{9111}$ \\ \hline
+    \textit{T. harzianum} & ${11370}/{15408}$ & ${9061}/{12164}$ & ${9293}/{14065}$ \\ \hline
+    \textit{T. virens} & ${11249}/{15062}$ & ${8871}/{11866}$ & ${9062}/{12383}$ \\ \hline
+  	\end{tabular}}
+  	\begin{itemize}
+		\item I need to look into this. Braker2 numbers strange
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{BLAST Results}
 	\centering
-	\vspace{0.35cm}
-	\resizebox{\linewidth}{!}{
+	\vspace{0.7cm}
+	\resizebox{1\linewidth}{!}{
 	\begin{tabular}{|c|c|c|c|c|c|c|}
     	\hline
    		Reference & Ref. Proteins & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens}  \\ \hline
@@ -220,6 +236,7 @@ N/A \\ \hline
     	\textit{Fusarium granminarium} & 13312 & 10327 & 10429 & 10064 & 10434 & 10490 \\ \hline
     	\textit{Saccharomyces cerevisiae} & 6014 & 3537 & 3517 & 3445 & 3509 & 3500 \\ \hline
   	\end{tabular}}
+	\vspace{0.2cm}
 	\begin{itemize}
 		\item The \textit{T. atroviride} and \textit{Fusarium} datasets are well respresented in the tblastn searches, while the \textit{S. cerevisiae} dataset is less well represented.
 	\end{itemize}
@@ -286,10 +303,9 @@ N/A \\ \hline
 \begin{frame}
 	\frametitle{Conclusions}
 	\begin{itemize}
-		\item In terms of gene finding performance based on several criteria, RefSeq generally performs the best, while GeneMark performs the worst.
-		\item Braker2 performs well in \textit{T. reesei}, but not as well in the other assemblies.
-		\item Be carfeul with the training data you select for Braker2, as it can have a significant impact on the results.
-		\item RefSeq is not always available, so Braker2 should be used if appropriate training is available, but GeneMark can be used as a fallback.
+		\item In terms of gene finding performance based on several criteria, RefSeq predictions are typically the best, while GeneMark performs the worst.
+		\item Braker2 performs well in \textit{T. reesei}, but not as well in the other assemblies. Users should be careful with the training data selected for Braker2 training, as it can have a significant impact on the results.
+		\item RefSeq predictions are not always available, so Braker2 can be used if appropriate training is available, but GeneMark can be used as a fallback.
 	\end{itemize}
 \end{frame}
 
@@ -302,9 +318,9 @@ N/A \\ \hline
 \begin{frame}
 	\frametitle{Future Work}
 	\begin{itemize}
+		\item \textbf{Explore the landscape of secondary metabolite gene clusters in \textit{Trichoderma} genomes further.}
 		\item Extend the analysis to include more \textit{Trichoderma} species, more gene finding tools, and more datasets.
 		\item Investigate further methods for validation of gene predictions.
-		\item Explore the landscape of secondary metabolite gene clusters in \textit{Trichoderma} genomes further.
 		\item Continue to analyze the newly assembled genomes of DC1 and Tsth20.
 	\end{itemize}
 \end{frame}
@@ -324,13 +340,13 @@ N/A \\ \hline
 \begin{frame}
 	\frametitle{Current Status}
 	\begin{itemize}
-		\item Introduction - 0\%
-		\item Background - 80\%
-		\item Methods - 85\%
-		\item Research Questions - 75\%
-		\item Results and Discussion - 80\%
-		\item Conclusions and Future Work - 70\%
-		\item What else needs to be done?
+		\item Introduction - 70\%
+		\item Background - 85\%
+		\item Methods - 90\%
+		\item Research Questions - 85\%
+		\item Results and Discussion - 80(?)\%
+		\item Conclusions and Future Work - 75\%
+		\item What to focus on next?
 	\end{itemize}
 \end{frame}
 
