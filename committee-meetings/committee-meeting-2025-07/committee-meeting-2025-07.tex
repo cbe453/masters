@@ -23,10 +23,11 @@
 	\frametitle{Outline} 
 
 	\begin{itemize}
-		\item Progress update with results
-		\item Progress assessment
-		\item Timeline for completion	
-		\item Discussion of next steps
+		\item Background.
+		\item Progress update with results.
+		\item Progress assessment.
+		\item Timeline for completion.	
+		\item Discussion of next steps.
 	\end{itemize}
 \end{frame}
 
@@ -47,19 +48,18 @@
 	\frametitle{Novel \textit{Trichoderma} Genomes}
 	\begin{itemize}
 		\item \textit{Trichoderma} species are diverse, with many species not yet fully characterized.
-		\item Recent advances in sequencing technology have made it possible to generate high-quality genomes for these species.
-		\item Two novel \textit{Trichoderma} genomes have been sequenced at the Global Institute for food Security
 		\item DC1 and Tsth20, shown to improve drought and salt tolerance when applied to crops, and have been shown to breakdown hydrocarbons in soils.
+		\item Recent advances in sequencing technology have made it possible to generate high-quality genomes for these species.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Motivation} 
 	\begin{itemize}
-		\item To better understand biological mechanisms at work in \textit{Trichoderma} spp., we needto understand their genomes byt identifying genes within them.
+		\item To better understand the biological mechanisms at work in \textit{Trichoderma} spp., we first need to understand their genomes by identifying genes within them.
 		\item Various tools exist for gene prediction, but their implementations and performance can vary significantly.
 		\item Few studies have compared these tools in fungi, and even fewer in \textit{Trichoderma}.
-		\item In addition, high-quality reference genomes are not available for all species, which makes comparisons difficult.
+		\item Meanwhile, increased accessibility to high-quality sequencing services has led to the generation of many new \textit{Trichoderma} genomes, including DC1 and Tsth20.
 		\item These genomes provide an opportunity to evaluate gene finding tools in a comparative context, and contribute to the understanding of \textit{Trichoderma} biology. 
 	\end{itemize}
 \end{frame}
@@ -220,7 +220,7 @@ N/A \\ \hline
     \textit{T. virens} & ${11249}/{15062}$ & ${8871}/{11866}$ & ${9062}/{12383}$ \\ \hline
   	\end{tabular}}
   	\begin{itemize}
-		\item I need to look into this. Braker2 numbers strange
+		\item All three gene finders predict a similar proportion of genes with functional domains.
 	\end{itemize}
 \end{frame}
 
@@ -304,7 +304,7 @@ N/A \\ \hline
 	\frametitle{Conclusions}
 	\begin{itemize}
 		\item In terms of gene finding performance based on several criteria, RefSeq predictions are typically the best, while GeneMark performs the worst.
-		\item Braker2 performs well in \textit{T. reesei}, but not as well in the other assemblies. Users should be careful with the training data selected for Braker2 training, as it can have a significant impact on the results.
+		\item Braker2 performs well in \textit{T. reesei}, but not as well in the other assemblies. Users should be careful with the training data selected for Braker2, as it can have a significant impact on the results.
 		\item RefSeq predictions are not always available, so Braker2 can be used if appropriate training is available, but GeneMark can be used as a fallback.
 	\end{itemize}
 \end{frame}
