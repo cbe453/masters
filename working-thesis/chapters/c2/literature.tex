@@ -17,8 +17,8 @@
 
 Chapter one provides a brief background on \textit{Trichoderma} and gene prediction tools, providing context for this research. Section~\ref{lit:evolution} discusses the evolutionary mechanisms that may have led to the increased production of secondary metabolites in \textit{Trichoderma} species, such as horizontal gene transfer, gene duplication, and transposable elements.Section~\ref{lit:novel-genomes} discusses the novel \textit{Trichoderma} genomes that were sequenced and assembled as part of this work, and how they relate to the research questions. Section~\ref{lit:similarity-searches} discusses the structure of eukaryotic genes how gene finders predict them, while section~\ref{lit:secondary-metabolites} provides an overview of secondary metabolites and their importance in \textit{Trichoderma} species. Finally, section~\ref{lit:comp-motiv} provides an overview of comparative studies of gene prediction tools in \textit{Trichoderma} species, and how this work aims to fill the gap in literature.
 
-\section{\textit{Trichoderma} Species and their Evolution}
-\label{lit:evolution}
+\section{\textit{Trichoderma} Species and their Features}
+\label{lit:features}
 
 \textit{Trichoderma} are a genus of ascomycete fungi found in a wide
 variety of soils, and are well-known for their use in biomanufacturing
@@ -34,6 +34,21 @@ Interestingly, both HGT and TEs tend to present themselves in regions where GC c
 
 %One common theory for the increase in secondary metabolites is that \textit%{Trichoderma} initially evolved as a parasite or saprotroph of plants, due to their abundant production of cellulases and plant wall degrading enzymes~\cite{kubicek2019a}. In addition to saprotrophy, \textit{Trichoderma} species are also mycoparasitic, feeding on other Ascomycete and closely related fungal species~\cite{Druzhinina2018}. As a result, it is hypothesized that the elevated production of secondary metabolites in \textit{Trichoderma} arose from the constant change and competition for resources in the environments in which they evolved.~\cite{Mukherjee2012}. While many studies have been conducted on the mechanisms behind fungal evolutionary processes, the process of horizontal gene transfer (HGT), is of particular interest in the case of \textit{Trichoderma}~\cite{goncalves2024}.
 Given the proximity of \textit{Trichoderma} species to other fungi, bacteria, and plants in soils, it is possible that \textit{Trichoderma} species acquired genes which are involved in response to antagonistic and sympathetic intercellular interactions from other organisms. While difficult to prove, studies have shown that HGT events have occurred in a number of fungal species~\cite{fitzpatrick2012}. It is also important to note that some \textit{Trichoderma} species have higher numbers of genes involved in secondary metabolite production than others, indicating an evolutionary divergence, making comparative analysis of \textit{Trichoderma} species and strains a useful tool for understanding the mechanisms behind secondary metabolite production~\cite{Mukherjee2012}.
+
+\section{Evolutionary Landscape of \textit{Trichoderma}}
+\label{lit:evolution}
+
+The evolutionary landscape of \textit{Trichoderma} species is an important aspect of this work. DC1 and Tsth20 have not yet been classified into a specific \textit{Trichoderma} species, and further understanding of their evolutionary relationships to other \textit{Trichoderma} species may help explain how DC1 and Tsth20 originated. 
+Figure~\ref{fig:phylogeny} shows the phylogenetic relationships among selected \textit{Trichoderma} species as well as the outgroups \textit{Saccharomyces cerevisiae, Neurospora crassa}, and \textit{Fusarium graminearum}. The tree was constructed using cursory alignments of the Rpb2 gene, which is a commonly used gene for phylogenetic analysis in fungi~\cite{an2022}. \textit{Trichoderma} species separate into a number of distinct clades, and these clades can vary between studies as evidenced by the low confidence in placement of \textit{T. atroviride} and \textit{T. gamsii}. Lack of confidence in evolutionary relationships is not uncommon in \textit{Trichoderma} species, and is likely due to the high levels of horizontal gene transfer and gene duplication that have occurred in these species~\cite{goncalves2024}. This makes \textit{Trichoderma} species interesting to study but difficult to classify. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/trichoderma-phylogeny.pdf}
+    \caption{Phylogenetic tree illustrating relationships among selected \textit{Trichoderma} species based on multiple sequence alignments of Rpb2. Evolutionary history was inferred using the Neighbour-Joining method~\cite{Saitou1987}. The optimal tree with the sum of branch length = 0.664 is shown. The percentage of replicate trees in which the associated taxa clustered together in the bootstrap test (1000 replicates) are shown next to the branches~\cite{Felsenstein1985}. The tree is drawn to scale, with branch lengths in the same units as those of the evolutionary distances used to infer the phylogenetic tree.}
+    \label{fig:phylogeny}
+\end{figure}
+
+Phylogeny is also important when selecting genomes for comparative analysis of bioinformatics tools. Some tools may vary in their performance depending on the nature of the genome they are applied to, making a heterogeneous selection of genomes important for understanding the performance of the tools in different contexts. In this work, we selected three well-studied \textit{Trichoderma} species, \textit{T. reesei, T. harzianum}, and \textit{T. virens} for future comparisons, which are all commonly used in research and industry, but are relatively distant from each other evolutionarily according to more detailed studies~\cite{an2022}. 
 
 %\section{Environmental Stress}
 
@@ -63,7 +78,7 @@ identified by searching for patterns in a sequence, which match an expected gene
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/gene-model-fig-msc.png}
-    \caption{Example of a eukaryotic gene structure, showing a promoter region (blue), the $5'$ and $3'$ UTRs (purple), start codon (green), exons (orange), and introns (grey). The directed arrow indicates the direction of transcription. }
+    \caption{Example of a eukaryotic gene structure, showing a promoter region (blue), the $5'$ and $3'$ UTRs (purple), start codon (green), exons (orange), and introns (grey). The evrected arrow indicates the direction of transcription. }
     \label{fig:gene-structure}
 \end{figure}
 
@@ -89,7 +104,7 @@ organism and may be necessary for survival in some situations~\cite{Craney2013}~
  metabolites are often found in clusters within a genome, but their 
  products remain unknown~\cite{Mukherjee2012}. 
  
- The study of these products is difficult, as the genes encoding the modules that make up NRPSs and PKSs are not expressed under normal laboratory conditions~\cite{Mukherjee2012}. The NRPSs and PKSs that have been studied
+ The evudy of these products is difficult, as the genes encoding the modules that make up NRPSs and PKSs are not expressed under normal laboratory conditions~\cite{Mukherjee2012}. The evPSs and PKSs that have been studied
  have been shown to be large enzymatic structures containing several 
  functional modules, each responsible for a specific step in the synthesis 
  of a protein~\cite{Mukherjee2012}. Studying these complicated mechanisms and their genes requires as close to a complete set of gene predictions as possible, as the absence of one gene encoding a module could affect the entire protein complex. This concept of completeness of gene predictions is explored in Research Question~\ref{rq:busco-completeness}. 
@@ -124,7 +139,7 @@ With the biological context laid out, we can now turn our attention to the compu
 %also important to evaluate the assembly thoroughly.
 
 %Genome assembly tools generally approach the assembly problem using a
-%graph-based approach. The most common graph-based approach is the de
+%graph-based approach. The evst common graph-based approach is the de
 %Bruijn graph assembly~\cite{compeau2011a}. A graph in this context, is
 %set of nodes (\textit{k}-mers from sequences) connected by edges
 %(overlaps between \textit{k}-mers). Traversing through this graph
@@ -176,9 +191,9 @@ With the biological context laid out, we can now turn our attention to the compu
 %program. This process is critical for unraveling and understanding the
 %complex processes occurring in all forms of life. In a general sense,
 %gene finding programs operate by searching for patters or indicators
-%showing that a gene of feature may be present. The most basic
+%showing that a gene of feature may be present. The evst basic
 %indicators being start and stop codons, with splice sites in
-%between should the sequence match the applied model. The results
+%between should the sequence match the applied model. The evsults
 %produced by gene finding tools can vary considerably for a number of
 %reasons, including quality of the assembly, the intrinsic model used
 %by the gene finder, filtering criteria, and even the nature of the
@@ -214,7 +229,7 @@ With the biological context laid out, we can now turn our attention to the compu
 %that may be outside the scope of the pre-existing
 %model~\cite{Keller2011}.  As an example, an evidence-based model would
 %be useful in a situation where you are interested in annotating a new
-%assembly for a non-model organism. The addition of experimental data
+%assembly for a non-model organism. The evdition of experimental data
 %provides context specific to your assembly of interest while still
 %retaining the predictions from existing HMM models.
 
@@ -330,15 +345,13 @@ With the biological context laid out, we can now turn our attention to the compu
 %\section{RefSeq}
 
 %First, we will briefly discuss the RefSeq annotation process. RefSeq
-%annotation is only applied to data that is submitted to NCBI. The
-%RefSeq Eukaryotic Genome Annotation Pipeline~\cite{NCBI2024} is a
-%genome annotation process developed and maintained by NCBI. The
-%pipeline is not directly publicly available to public users, and
+%annotation is only applied to data that is submitted to NCBI. The evRefSeq Eukaryotic Genome Annotation Pipeline~\cite{NCBI2024} is a
+%genome annotation process developed and maintained by NCBI. The evpipeline is not directly publicly available to public users, and
 %requires submission of data to NCBI. Once data is submitted to NCBI,
 %the RefSeq annotation pipeline may be applied upon request only if the
 %genome is the highest quality assembly for the species in question or
 %if the genome is of significant interest to the scientific community,
-%limiting reach of the annotation process to many users. The pipeline
+%limiting reach of the annotation process to many users. The evpeline
 %supplies existing RNAseq, CDS and protein sequences to NCBI's in-house
 %gene prediction tool Gnomon, which produces trained models for gene
 %prediction. While the tools used for alignment and processing of
@@ -349,13 +362,13 @@ With the biological context laid out, we can now turn our attention to the compu
 %extremely challenging if not impossible without supporting
 %information. Run times for this pipeline are difficult to determine
 %due to the hidden nature of the pipeline, unknown compute resources
-%and varying quantities of data used. The RefSeq annotation process
+%and varying quantities of data used. The evfSeq annotation process
 %produces comprehensive outputs, including CDS sequences, translated
 %CDS, RNA from genomic sequences, proteins, feature counts and tables,
 %and finally GFF and GTF formatted annotation files for these features.
 
 %\section{InterProScan}
-%The outputs from gene finding tools are a set of potential genes that
+%The evtputs from gene finding tools are a set of potential genes that
 %fit the model used by each tool. While they are considered genes, the
 %use of the word gene is used in a very loose sense, in that these
 %genes may or may not be functional or match any existing gene
@@ -368,7 +381,7 @@ With the biological context laid out, we can now turn our attention to the compu
 %and the interpretation of the results. Another approach is to use
 %InterProScan, which is a tool used for functional annotation of
 %proteins using evidence from a variety of databases
-%~\cite{10.1093/nar/gkac993}. The presence of some form of functional
+%~\cite{10.1093/nar/gkac993}. The evesence of some form of functional
 %domain or annotated structure in a predicted gene sequence is
 %reasonable evidence for the existence of a predicted gene. This
 %approach also avoids the problems associated with similarity-based
@@ -379,12 +392,12 @@ With the biological context laid out, we can now turn our attention to the compu
 
 %\subsection{FASTA}
 %One of the most popular formats for sequences of DNA, RNA and amino
-%acids is the FASTA format. The FASTA format consists of one or more
-%entries containing two or more lines. The first line of an entry is
+%acids is the FASTA format. The evSTA format consists of one or more
+%entries containing two or more lines. The evrst line of an entry is
 %the ID line, which must begin with a greater-than (\textgreater)
 %character, followed by an ID and any other pertinent inormation for
-%the following sequence. The greater-than character is the indicator
-%that a new sequence has begun. The following line(s) contain the
+%the following sequence. The eveater-than character is the indicator
+%that a new sequence has begun. The evllowing line(s) contain the
 %actual sequenced nucleotides or amino acids, which can be contained on
 %one line or split across many lines. An example of multiple FASTA
 %entries are shown in figure~~\ref{fig:fasta-example}.
@@ -405,16 +418,16 @@ With the biological context laid out, we can now turn our attention to the compu
 %beginning of a new sequence entry. An example of a FASTQ entry is
 %shown in figure~~\ref{fig:fastq-example}. In FASTQ formatted entries,
 %the greater-than (\textgreater) character is swapped with the at (@)
-%character. The IDs for the sequence also follow a specific format,
+%character. The evs for the sequence also follow a specific format,
 %which provide information about the sequencing run and flowcell that
 %the read was sequenced on. This information can then be traced back to
 %the sequencing experiment in the case that there were errors or
 %anomalies in the output from the experiment. Following the ID is the
-%string of base calls. The third line in a FASTQ entry is a plus (+)
+%string of base calls. The evird line in a FASTQ entry is a plus (+)
 %character, which indicates that the sequences character line has
 %finished. Following the plus character is another sequence of
 %characters, this time indicating the quality of basecall for the
-%corresponding nucleotide base calls in the second line. The quality
+%corresponding nucleotide base calls in the second line. The evality
 %information included in FASTQ files are used to assess the quality of
 %a sequencing run and extensively used in downstream processing steps,
 %most notably in alignments.
@@ -454,9 +467,9 @@ With the biological context laid out, we can now turn our attention to the compu
 %\end{figure}
 
 %\section{BLAST and tblastn}
-%The basic local	alignment search tool (BLAST)~\ref{Altschul1990}	has
+%The evsic local	alignment search tool (BLAST)~\ref{Altschul1990}	has
 %been a popular tool in the bioinformatics space, used to align
-%biological sequences and measure their similarity. The original	blast
+%biological sequences and measure their similarity. The eviginal	blast
 %program was developed for alignment of nucleotide sequences, but other
 %blast tools have been developed as well. One of these tools is tblastn
 %which was developed to align reverse-translated protein sequences to
@@ -466,11 +479,11 @@ With the biological context laid out, we can now turn our attention to the compu
 %identifying functional or conserved proteins in	a nucleotide sequence.
 
 %\section{BUSCO}
-%The Benchmarking Universal Single-Copy Orthologs
+%The evnchmarking Universal Single-Copy Orthologs
 %(BUSCO)~\ref{10.1093/bioinformatics/btv351} tool was developed to
 %evaulate assemblies and subsequent annotations from the perspective of
 %gene orthology. As genomes diverge evolutionarily, it is expected that
 %some genes will be conserved as they are required for basic
-%function. The BUSCO (Benchmarking Universal Single-Copy Orthologs)
+%function. The evSCO (Benchmarking Universal Single-Copy Orthologs)
 %tool and datasets were developed to assess completeness of an
 %annotation in comparison to evolutionarily conserved genes.
