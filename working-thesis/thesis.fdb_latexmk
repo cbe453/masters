@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex thesis"] 1755577529.3036 "thesis.aux" "thesis.bbl" "thesis" 1755577531.31707 0
-  "./refs/full-bib.bib" 1755577526 91062 d2683976b2637a707fba71384eb6e932 ""
+["bibtex thesis"] 1755663106.11046 "thesis.aux" "thesis.bbl" "thesis" 1755663108.34547 0
+  "./refs/full-bib.bib" 1755577658 91062 d2683976b2637a707fba71384eb6e932 ""
   "C:/Users/cbe45/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "chapter-2.aux" 1755577530 6025 1a212366af382360d22ad13620649d14 "pdflatex"
-  "thesis.aux" 1755577530 1613 36f4fde86a64a7e88b88087273f215cb "pdflatex"
+  "chapter-2.aux" 1755663107 6025 c5ba7a6bc44de6c23eb8dac22b15e0bc "pdflatex"
+  "thesis.aux" 1755663107 1613 36f4fde86a64a7e88b88087273f215cb "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1755577529.58577 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/working-thesis/thesis.tex" "thesis.pdf" "thesis" 1755577531.3179 0
+["pdflatex"] 1755663106.49198 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/working-thesis/thesis.tex" "thesis.pdf" "thesis" 1755663108.34628 0
   "C:/Users/cbe45/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1754668936 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/cbe45/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1440.pk" 1752202196 16968 77a1c3c177fb57f54e8e1372c3d36546 ""
   "C:/Users/cbe45/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1752198246 13235208 6a99ba7a7edda16751e321c23f7d7000 ""
@@ -157,18 +157,18 @@
   "C:/Users/cbe45/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/cbe45/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/working-thesis/thesis.tex" 1755572334 2523 d03f0960bb47352e8065228821f1981c ""
-  "chapter-2.aux" 1755577530 6025 1a212366af382360d22ad13620649d14 "pdflatex"
+  "chapter-2.aux" 1755663107 6025 c5ba7a6bc44de6c23eb8dac22b15e0bc "pdflatex"
   "chapter-2.tex" 1752192669 58 78df2f2502c03904551bad50c8dca0b0 ""
-  "chapters/c2/literature.tex" 1755577499 43828 8aaf09e026b489312103b3d5fe784dce ""
+  "chapters/c2/literature.tex" 1755663103 44025 4d6ebf29c7c038d0cc5caddc589d453e ""
   "figures/gene-model-fig-msc.png" 1752727623 34012 8d5990fdb0254b04444f89ee36f42564 ""
-  "figures/trichoderma-phylogeny.pdf" 1755572028 34964 fb0e62d8fde22844233807408bd788d8 ""
-  "thesis.aux" 1755577530 1613 36f4fde86a64a7e88b88087273f215cb "pdflatex"
-  "thesis.bbl" 1755577529 6672 b7635e03e7432cee295a8cc5b32d3a80 "bibtex thesis"
-  "thesis.lof" 1755577530 1017 278516615272c53bed36996bf2387533 "pdflatex"
-  "thesis.lot" 1755577530 20 f06013b926d20d994f242e1f23baff30 "pdflatex"
-  "thesis.out" 1755577530 2429 398c60fb26798365e52fd5bedc9aff30 "pdflatex"
+  "figures/trichoderma-phylogeny-few-outgroups.pdf" 1755662146 33161 7a311a91d92569aeb9d25f2e5fece337 ""
+  "thesis.aux" 1755663107 1613 36f4fde86a64a7e88b88087273f215cb "pdflatex"
+  "thesis.bbl" 1755663106 6672 b7635e03e7432cee295a8cc5b32d3a80 "bibtex thesis"
+  "thesis.lof" 1755663107 1017 3bdb05c6c2a978431a4d0a1507d247b6 "pdflatex"
+  "thesis.lot" 1755663107 20 f06013b926d20d994f242e1f23baff30 "pdflatex"
+  "thesis.out" 1755663107 2429 398c60fb26798365e52fd5bedc9aff30 "pdflatex"
   "thesis.tex" 1755572334 2523 d03f0960bb47352e8065228821f1981c ""
-  "thesis.toc" 1755577530 1116 0545fa332c5b804a7a0a8c4717115dab "pdflatex"
+  "thesis.toc" 1755663107 1116 47b7f67038f13625c38b0960835b284d "pdflatex"
   "uofsthesis-cs.cls" 1752192669 30582 77b6e4d44acf1f2972768c4c328bb96b ""
   (generated)
   "chapter-2.aux"

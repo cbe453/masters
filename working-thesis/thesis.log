@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  18 AUG 2025 22:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  19 AUG 2025 22:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -719,16 +719,16 @@ l.33 I
 
 LaTeX Warning: Reference `rq:anomalous-sequence-content' on page 2 undefined on input line 33.
 
-<figures/trichoderma-phylogeny.pdf, id=179, 618.31pt x 698.61pt>
-File: figures/trichoderma-phylogeny.pdf Graphic file (type pdf)
-<use figures/trichoderma-phylogeny.pdf>
-Package pdftex.def Info: figures/trichoderma-phylogeny.pdf  used on input line 46.
-(pdftex.def)             Requested size: 472.03123pt x 533.3476pt.
+<figures/trichoderma-phylogeny-few-outgroups.pdf, id=179, 598.235pt x 630.355pt>
+File: figures/trichoderma-phylogeny-few-outgroups.pdf Graphic file (type pdf)
+<use figures/trichoderma-phylogeny-few-outgroups.pdf>
+Package pdftex.def Info: figures/trichoderma-phylogeny-few-outgroups.pdf  used on input line 46.
+(pdftex.def)             Requested size: 472.03123pt x 497.37865pt.
 
 
 [2]
 
-[3 <./figures/trichoderma-phylogeny.pdf>]
+[3 <./figures/trichoderma-phylogeny-few-outgroups.pdf>]
 
 LaTeX Warning: Reference `rq:assembly-results' on page 4 undefined on input line 71.
 
@@ -756,6 +756,9 @@ LaTeX Warning: Reference `rq:tblastn' on page 5 undefined on input line 88.
 
 
 LaTeX Warning: Reference `rq:busco-completeness' on page 5 undefined on input line 88.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -792,14 +795,14 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  23221 strings out of 468221
- 433198 string characters out of 5432891
+ 433296 string characters out of 5432891
  821685 words of memory out of 5000000
  51308 multiletter control sequences out of 15000+600000
  630038 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,8n,93p,1874b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (17 pages, 265811 bytes).
+Output written on thesis.pdf (17 pages, 263814 bytes).
 PDF statistics:
  324 PDF objects out of 1000 (max. 8388607)
  59 named destinations out of 1000 (max. 500000)
