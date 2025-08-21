@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  19 AUG 2025 22:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  20 AUG 2025 21:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -565,7 +565,7 @@ Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 ) (C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count362
-) (thesis.aux (chapter-2.aux))
+) (thesis.aux (intro.aux) (chapter-2.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -701,87 +701,98 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [7
 
 ]
-\openout2 = `chapter-2.aux'.
+\openout2 = `intro.aux'.
 
- (chapter-2.tex
+ (intro.tex
 Chapter 1.
-(chapters/c2/literature.tex
+(chapters/intro/introduction.tex))
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 I
-      nterestingly, both HGT and TEs tend to present themselves in regions w... [1
+l.73 \include{intro}
+                     [1
 
 
 ]
 
-LaTeX Warning: Reference `rq:anomalous-sequence-content' on page 2 undefined on input line 33.
+[2]
+\openout2 = `chapter-2.aux'.
 
-<figures/trichoderma-phylogeny-few-outgroups.pdf, id=179, 598.235pt x 630.355pt>
+ (chapter-2.tex
+Chapter 2.
+(chapters/c2/literature.tex
+
+[3
+
+
+
+
+]
+
+LaTeX Warning: Reference `rq:anomalous-sequence-content' on page 4 undefined on input line 33.
+
+<figures/trichoderma-phylogeny-few-outgroups.pdf, id=193, 598.235pt x 630.355pt>
 File: figures/trichoderma-phylogeny-few-outgroups.pdf Graphic file (type pdf)
 <use figures/trichoderma-phylogeny-few-outgroups.pdf>
 Package pdftex.def Info: figures/trichoderma-phylogeny-few-outgroups.pdf  used on input line 46.
 (pdftex.def)             Requested size: 472.03123pt x 497.37865pt.
 
 
-[2]
+[4]
 
-[3 <./figures/trichoderma-phylogeny-few-outgroups.pdf>]
+[5 <./figures/trichoderma-phylogeny-few-outgroups.pdf>]
 
-LaTeX Warning: Reference `rq:assembly-results' on page 4 undefined on input line 71.
+LaTeX Warning: Reference `rq:assembly-results' on page 6 undefined on input line 71.
 
 
 Overfull \hbox (5.60283pt too wide) in paragraph at lines 66--72
 []\OT1/cmr/m/n/10 Recently, two strains of \OT1/cmr/m/it/10 Tri-cho-derma \OT1/cmr/m/n/10 have been iden-ti-fied in the prairie re-gions of Al-berta and Saskatchewan.
  []
 
-<figures/gene-model-fig-msc.png, id=212, 680.871pt x 190.311pt>
+<figures/gene-model-fig-msc.png, id=227, 680.871pt x 190.311pt>
 File: figures/gene-model-fig-msc.png Graphic file (type png)
 <use figures/gene-model-fig-msc.png>
 Package pdftex.def Info: figures/gene-model-fig-msc.png  used on input line 80.
 (pdftex.def)             Requested size: 377.62642pt x 105.55414pt.
 
-LaTeX Warning: Reference `identify-regions' on page 4 undefined on input line 85.
+LaTeX Warning: Reference `identify-regions' on page 6 undefined on input line 85.
 
 
 
-[4]
+[6]
 
-LaTeX Warning: Reference `rq:interproscan' on page 5 undefined on input line 88.
-
-
-LaTeX Warning: Reference `rq:tblastn' on page 5 undefined on input line 88.
+LaTeX Warning: Reference `rq:interproscan' on page 7 undefined on input line 90.
 
 
-LaTeX Warning: Reference `rq:busco-completeness' on page 5 undefined on input line 88.
+LaTeX Warning: Reference `rq:tblastn' on page 7 undefined on input line 90.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `rq:busco-completeness' on page 7 undefined on input line 90.
 
 
 
-[5 <./figures/gene-model-fig-msc.png>]
+[7 <./figures/gene-model-fig-msc.png>]
 
-LaTeX Warning: Reference `rq:busco-completeness' on page 6 undefined on input line 110.
-
-
-LaTeX Warning: Reference `rq:gene-lengths' on page 6 undefined on input line 113.
+LaTeX Warning: Reference `rq:busco-completeness' on page 8 undefined on input line 112.
 
 
+LaTeX Warning: Reference `rq:gene-lengths' on page 8 undefined on input line 115.
 
-[6]))
 
-[7] (thesis.bbl
 
-[8
+[8]))
+
+[9] (thesis.bbl
+
+[10
 
 
 
 ])
 
-[9] (thesis.aux (chapter-2.aux))
+[11] (thesis.aux (intro.aux) (chapter-2.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
@@ -791,20 +802,20 @@ L3 programming layer <2025-06-09>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 398C60FB26798365E52FD5BEDC9AFF30;2429.
+(rerunfilecheck)             Checksum: 4E7B6F5DC6A1F22324F975F6A980115F;2533.
  ) 
 Here is how much of TeX's memory you used:
- 23221 strings out of 468221
- 433296 string characters out of 5432891
- 821685 words of memory out of 5000000
- 51308 multiletter control sequences out of 15000+600000
- 630038 words of font info for 50 fonts, out of 8000000 for 9000
+ 23261 strings out of 468221
+ 434394 string characters out of 5432891
+ 822397 words of memory out of 5000000
+ 51332 multiletter control sequences out of 15000+600000
+ 630373 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,8n,93p,1874b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (17 pages, 263814 bytes).
+ <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (19 pages, 271316 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
