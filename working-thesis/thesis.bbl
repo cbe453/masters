@@ -16,6 +16,32 @@ Kai Blin, Simon Shaw, Hannah~E Augustijn, Zachary~L Reitz, Friederike Biermann,
   regulation, chemical structures~and visualisation.
 \newblock {\em Nucleic Acids Research}, 51(W1):W46--W50, July 2023.
 
+\bibitem{borodovsky2011a}
+Mark Borodovsky and Alex Lomsadze.
+\newblock Eukaryotic gene prediction using {{GeneMark}}.hmm-{{E}} and
+  {{GeneMark-ES}}.
+\newblock {\em Current Protocols in Bioinformatics}, Chapter
+  4(SUPPL.35):4.6.1--4.6.10, September 2011.
+
+\bibitem{bruna2021a}
+Tom{\'a}{\v s} Br{\r u}na, Katharina~J. Hoff, Alexandre Lomsadze, Mario Stanke,
+  and Mark Borodovsky.
+\newblock {{BRAKER2}}: Automatic eukaryotic genome annotation with
+  {{GeneMark-EP}}+ and {{AUGUSTUS}} supported by a protein database.
+\newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, March 2021.
+
+\bibitem{burge1997}
+C.~Burge and S.~Karlin.
+\newblock Prediction of complete gene structures in human genomic {{DNA}}.
+\newblock {\em Journal of Molecular Biology}, 268(1):78--94, April 1997.
+
+\bibitem{cantarel2008}
+Brandi~L. Cantarel, Ian Korf, Sofia~M.C. Robb, Genis Parra, Eric Ross, Barry
+  Moore, Carson Holt, Alejandro S{\'a}nchez~Alvarado, and Mark Yandell.
+\newblock {{MAKER}}: {{An}} easy-to-use annotation pipeline designed for
+  emerging model organism genomes.
+\newblock {\em Genome Research}, 18(1):188--196, January 2008.
+
 \bibitem{Craney2013}
 Arryn Craney, Salman Ahmed, and Justin Nodwell.
 \newblock Towards a new science of secondary metabolism.
@@ -92,6 +118,12 @@ Brendan Loftus.
 \newblock In Dilip~K. Arora and George~G. Khachatourians, editors, {\em Fungal
   {{Genomics}}}, volume~3, pages 65--81. Elsevier, 2003.
 
+\bibitem{majoros2004}
+W.~H. Majoros, M.~Pertea, and S.~L. Salzberg.
+\newblock {{TigrScan}} and {{GlimmerHMM}}: Two open source {\emph{ab initio}}
+  eukaryotic gene-finders.
+\newblock {\em Bioinformatics}, 20(16):2878--2879, November 2004.
+
 \bibitem{manni2021a}
 Mos{\`e} Manni, Matthew~R. Berkeley, Mathieu Seppey, and Evgeny~M. Zdobnov.
 \newblock {{BUSCO}}: {{Assessing Genomic Data Quality}} and {{Beyond}}.
@@ -126,6 +158,13 @@ Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
   combination on the {{Arabidopsis}} thaliana holobiont: A metabolomics and
   metabarcoding approach.
 \newblock {\em Frontiers in Plant Science}, 14, 2023.
+
+\bibitem{stanke2003}
+Mario Stanke and Stephan Waack.
+\newblock Gene prediction with a hidden {{Markov}} model and a new intron
+  submodel.
+\newblock {\em Bioinformatics (Oxford, England)}, 19 Suppl 2:ii215--225,
+  October 2003.
 
 \bibitem{winter2018}
 David~J. Winter, Austen R.~D. Ganley, Carolyn~A. Young, Ivan Liachko,

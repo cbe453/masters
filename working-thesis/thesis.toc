@@ -12,5 +12,5 @@
 \contentsline {section}{\numberline {2.3}Novel \textit {Trichoderma} Genomes}{6}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Gene Predictions and Complementing Similarity Searches}{6}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Secondary Metabolites}{8}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Gene Prediction Tools in Fungi}{8}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Gene Prediction Tools in Fungi}{9}{section.2.6}%
 \contentsline {chapter}{References}{10}{section*.15}%

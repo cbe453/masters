@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex thesis"] 1755747235.27236 "thesis.aux" "thesis.bbl" "thesis" 1755747237.45071 0
-  "./refs/full-bib.bib" 1755577658 91062 d2683976b2637a707fba71384eb6e932 ""
+["bibtex thesis"] 1755833011.92423 "thesis.aux" "thesis.bbl" "thesis" 1755835442.92936 0
+  "./refs/full-bib.bib" 1755831951 98437 0c2f1dc75d6655c9634f6dd9609d178a ""
   "C:/Users/cbe45/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "chapter-2.aux" 1755747236 6070 c0e611a1ade508661486d01801d70945 "pdflatex"
-  "intro.aux" 1755747236 1411 1c059185f94206081cea73d020c6b4d7 "pdflatex"
-  "thesis.aux" 1755747236 1633 7884250f2fe0b8ddef5dce43e56f45fc "pdflatex"
+  "chapter-2.aux" 1755835442 6209 37149767c3e601870370bbd34b12fb97 "pdflatex"
+  "intro.aux" 1755835442 1411 1c059185f94206081cea73d020c6b4d7 "pdflatex"
+  "thesis.aux" 1755835442 1790 185458aad3f8145a1dbb2125ed9d0807 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1755747235.55888 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/working-thesis/thesis.tex" "thesis.pdf" "thesis" 1755747237.45181 0
+["pdflatex"] 1755835441.16573 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/working-thesis/thesis.tex" "thesis.pdf" "thesis" 1755835442.9305 0
   "C:/Users/cbe45/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1754668936 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/cbe45/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1752887912 11548 b1899b902ac549a4b942170cc3d2757f ""
   "C:/Users/cbe45/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1440.pk" 1752202196 16968 77a1c3c177fb57f54e8e1372c3d36546 ""
@@ -160,21 +160,21 @@
   "C:/Users/cbe45/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/cbe45/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/working-thesis/thesis.tex" 1755743499 2522 fb6bbf60dda5b470466823272628aac0 ""
-  "chapter-2.aux" 1755747236 6070 c0e611a1ade508661486d01801d70945 "pdflatex"
+  "chapter-2.aux" 1755835442 6209 37149767c3e601870370bbd34b12fb97 "pdflatex"
   "chapter-2.tex" 1752192669 58 78df2f2502c03904551bad50c8dca0b0 ""
-  "chapters/c2/literature.tex" 1755747232 44567 70b356bca273cae04883d1d6cc33f834 ""
+  "chapters/c2/literature.tex" 1755835440 46278 ff5fc049b3a5bcbc2c4ad0df27d15311 ""
   "chapters/intro/introduction.tex" 1755744165 4109 801d998e27b7112229842af09a8f3381 ""
   "figures/gene-model-fig-msc.png" 1752727623 34012 8d5990fdb0254b04444f89ee36f42564 ""
   "figures/trichoderma-phylogeny-few-outgroups.pdf" 1755662146 33161 7a311a91d92569aeb9d25f2e5fece337 ""
-  "intro.aux" 1755747236 1411 1c059185f94206081cea73d020c6b4d7 "pdflatex"
+  "intro.aux" 1755835442 1411 1c059185f94206081cea73d020c6b4d7 "pdflatex"
   "intro.tex" 1752192669 65 da8d5fbbbd6278293f3230b54f5dd468 ""
-  "thesis.aux" 1755747236 1633 7884250f2fe0b8ddef5dce43e56f45fc "pdflatex"
-  "thesis.bbl" 1755747235 6672 b7635e03e7432cee295a8cc5b32d3a80 "bibtex thesis"
-  "thesis.lof" 1755747236 1037 63c71e41df1860499df91c53c2eb8d59 "pdflatex"
-  "thesis.lot" 1755747236 40 b4a64fdfb29ace579b6af2a2fa1bd5bf "pdflatex"
-  "thesis.out" 1755747236 2533 4e7b6f5dc6a1f22324f975f6a980115f "pdflatex"
+  "thesis.aux" 1755835442 1790 185458aad3f8145a1dbb2125ed9d0807 "pdflatex"
+  "thesis.bbl" 1755833012 8310 c04c6cc30ac4f2468835a4fc26b46bf1 "bibtex thesis"
+  "thesis.lof" 1755835442 1037 63c71e41df1860499df91c53c2eb8d59 "pdflatex"
+  "thesis.lot" 1755835442 40 b4a64fdfb29ace579b6af2a2fa1bd5bf "pdflatex"
+  "thesis.out" 1755835442 2533 4e7b6f5dc6a1f22324f975f6a980115f "pdflatex"
   "thesis.tex" 1755743499 2522 fb6bbf60dda5b470466823272628aac0 ""
-  "thesis.toc" 1755747236 1185 a110d2bcdfcc7c12f120b6f59ff4924d "pdflatex"
+  "thesis.toc" 1755835442 1185 8f85d5da167e71e76c9fd7729ab66264 "pdflatex"
   "uofsthesis-cs.cls" 1752192669 30582 77b6e4d44acf1f2972768c4c328bb96b ""
   (generated)
   "chapter-2.aux"

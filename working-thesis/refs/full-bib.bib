@@ -156,6 +156,42 @@
   pmid = {33575650}
 }
 
+@article{burge1997,
+  title = {Prediction of Complete Gene Structures in Human Genomic {{DNA}}},
+  author = {Burge, C. and Karlin, S.},
+  year = {1997},
+  month = apr,
+  journal = {Journal of Molecular Biology},
+  volume = {268},
+  number = {1},
+  pages = {78--94},
+  issn = {0022-2836},
+  doi = {10.1006/jmbi.1997.0951},
+  abstract = {We introduce a general probabilistic model of the gene structure of human genomic sequences which incorporates descriptions of the basic transcriptional, translational and splicing signals, as well as length distributions and compositional features of exons, introns and intergenic regions. Distinct sets of model parameters are derived to account for the many substantial differences in gene density and structure observed in distinct C + G compositional regions of the human genome. In addition, new models of the donor and acceptor splice signals are described which capture potentially important dependencies between signal positions. The model is applied to the problem of gene identification in a computer program, GENSCAN, which identifies complete exon/intron structures of genes in genomic DNA. Novel features of the program include the capacity to predict multiple genes in a sequence, to deal with partial as well as complete genes, and to predict consistent sets of genes occurring on either or both DNA strands. GENSCAN is shown to have substantially higher accuracy than existing methods when tested on standardized sets of human and vertebrate genes, with 75 to 80\% of exons identified exactly. The program is also capable of indicating fairly accurately the reliability of each predicted exon. Consistently high levels of accuracy are observed for sequences of differing C + G content and for distinct groups of vertebrates.},
+  langid = {english},
+  pmid = {9149143},
+  keywords = {Animals,DNA,Exons,Genes,Genome Human,Humans,Introns,Markov Chains,Models Genetic,Molecular Sequence Data,Probability,Promoter Regions Genetic,Proteins,RNA Splicing,Sequence Analysis DNA,Software,Vertebrates}
+}
+
+@article{cantarel2008,
+  title = {{{MAKER}}: {{An}} Easy-to-Use Annotation Pipeline Designed for Emerging Model Organism Genomes},
+  shorttitle = {{{MAKER}}},
+  author = {Cantarel, Brandi L. and Korf, Ian and Robb, Sofia M.C. and Parra, Genis and Ross, Eric and Moore, Barry and Holt, Carson and S{\'a}nchez Alvarado, Alejandro and Yandell, Mark},
+  year = {2008},
+  month = jan,
+  journal = {Genome Research},
+  volume = {18},
+  number = {1},
+  pages = {188--196},
+  issn = {1088-9051},
+  doi = {10.1101/gr.6743907},
+  urldate = {2025-08-22},
+  abstract = {We have developed a portable and easily configurable genome annotation pipeline called MAKER. Its purpose is to allow investigators to independently annotate eukaryotic genomes and create genome databases. MAKER identifies repeats, aligns ESTs and proteins to a genome, produces ab initio gene predictions, and automatically synthesizes these data into gene annotations having evidence-based quality indices. MAKER is also easily trainable: Outputs of preliminary runs are used to automatically retrain its gene-prediction algorithm, producing higher-quality gene-models on subsequent runs. MAKER's inputs are minimal, and its outputs can be used to create a GMOD database. Its outputs can also be viewed in the Apollo Genome browser; this feature of MAKER provides an easy means to annotate, view, and edit individual contigs and BACs without the overhead of a database. As proof of principle, we have used MAKER to annotate the genome of the planarian Schmidtea mediterranea and to create a new genome database, SmedGD. We have also compared MAKER's performance to other published annotation pipelines. Our results demonstrate that MAKER provides a simple and effective means to convert a genome sequence into a community-accessible genome database. MAKER should prove especially useful for emerging model organism genome projects for which extensive bioinformatics resources may not be readily available.},
+  pmcid = {PMC2134774},
+  pmid = {18025269},
+  file = {C:\Users\cbe45\Zotero\storage\RBJJHNPT\Cantarel et al. - 2008 - MAKER An easy-to-use annotation pipeline designed for emerging model organism genomes.pdf}
+}
+
 @misc{chapmana,
   title = {{{BCBio Python Package}}},
   author = {Chapman, Brad}
@@ -518,6 +554,24 @@
   abstract = {Finding new protein-coding genes is one of the most important goals of eukaryotic genome sequencing projects. However, genomic organization of novel eukaryotic genomes is diverse and ab initio gene finding tools tuned up for previously studied species are rarely suitable for efficacious gene hunting in DNA sequences of a new genome. Gene identification methods based on cDNA and expressed sequence tag (EST) mapping to genomic DNA or those using alignments to closely related genomes rely either on existence of abundant cDNA and EST data and/or availability on reference genomes. Conventional statistical ab initio methods require large training sets of validated genes for estimating gene model parameters. In practice, neither one of these types of data may be available in sufficient amount until rather late stages of the novel genome sequencing. Nevertheless, we have shown that gene finding in eukaryotic genomes could be carried out in parallel with statistical models estimation directly from yet anonymous genomic DNA. The suggested method of parallelization of gene prediction with the model parameters estimation follows the path of the iterative Viterbi training. Rounds of genomic sequence labeling into coding and non-coding regions are followed by the rounds of model parameters estimation. Several dynamically changing restrictions on the possible range of model parameters are added to filter out fluctuations in the initial steps of the algorithm that could redirect the iteration process away from the biologically relevant point in parameter space. Tests on well-studied eukaryotic genomes have shown that the new method performs comparably or better than conventional methods where the supervised model training precedes the gene prediction step. Several novel genomes have been analyzed and biologically interesting findings are discussed. Thus, a self-training algorithm that had been assumed feasible only for prokaryotic genomes has now been developed for ab initio eukaryotic gene identification.}
 }
 
+@article{majoros2004,
+  title = {{{TigrScan}} and {{GlimmerHMM}}: Two Open Source {\emph{Ab Initio}} Eukaryotic Gene-Finders},
+  shorttitle = {{{TigrScan}} and {{GlimmerHMM}}},
+  author = {Majoros, W. H. and Pertea, M. and Salzberg, S. L.},
+  year = {2004},
+  month = nov,
+  journal = {Bioinformatics},
+  volume = {20},
+  number = {16},
+  pages = {2878--2879},
+  issn = {1367-4811, 1367-4803},
+  doi = {10.1093/bioinformatics/bth315},
+  urldate = {2025-08-22},
+  abstract = {Summary: We describe two new Generalized Hidden Markov Model implementations for ab initio eukaryotic gene prediction. The C/C++ source code for both is available as open source and is highly reusable due to their modular and extensible architectures. Unlike most of the currently available genefinders, the programs are re-trainable by the end user. They are also re-configurable and include several types of probabilistic submodels which can be independently combined, such as Maximal Dependence Decomposition trees and interpolated Markov models. Both programs have been used at TIGR for the annotation of the Aspergillus fumigatus and Toxoplasma gondii genomes.},
+  langid = {english},
+  file = {C:\Users\cbe45\Zotero\storage\RETXPJBB\Majoros et al. - 2004 - TigrScan and GlimmerHMM two open source ab initio eukaryotic gene-finders.pdf}
+}
+
 @article{manni2021,
   title = {{{BUSCO Update}}: {{Novel}} and {{Streamlined Workflows}} along with {{Broader}} and {{Deeper Phylogenetic Coverage}} for {{Scoring}} of {{Eukaryotic}}, {{Prokaryotic}}, and {{Viral Genomes}}},
   author = {Manni, Mos{\`e} and Berkeley, Matthew R. and Seppey, Mathieu and Sim{\~a}o, Felipe A. and Zdobnov, Evgeny M.},
@@ -796,6 +850,22 @@
   issn = {1759-8753},
   doi = {10.1186/s13100-018-0120-9},
   abstract = {In the course of analyzing whole-genome data, it is common practice to mask or filter out repetitive regions of a genome, such as transposable elements and endogenous retroviruses, in order to focus only on genes and thus simplify the results. This Commentary is a plea from one member of the Mobile DNA community to all gene-centric researchers: please do not ignore the repetitive fraction of the genome. Please stop narrowing your findings by only analyzing a minority of the genome, and instead broaden your analyses to include the rich biology of repetitive and mobile DNA. In this article, I present four arguments supporting a case for retaining repetitive DNA in your genome-wide analysis.}
+}
+
+@article{stanke2003,
+  title = {Gene Prediction with a Hidden {{Markov}} Model and a New Intron Submodel},
+  author = {Stanke, Mario and Waack, Stephan},
+  year = {2003},
+  month = oct,
+  journal = {Bioinformatics (Oxford, England)},
+  volume = {19 Suppl 2},
+  pages = {ii215-225},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/btg1080},
+  abstract = {MOTIVATION: The problem of finding the genes in eukaryotic DNA sequences by computational methods is still not satisfactorily solved. Gene finding programs have achieved relatively high accuracy on short genomic sequences but do not perform well on longer sequences with an unknown number of genes in them. Here existing programs tend to predict many false exons. RESULTS: We have developed a new program, AUGUSTUS, for the ab initio prediction of protein coding genes in eukaryotic genomes. The program is based on a Hidden Markov Model and integrates a number of known methods and submodels. It employs a new way of modeling intron lengths. We use a new donor splice site model, a new model for a short region directly upstream of the donor splice site model that takes the reading frame into account and apply a method that allows better GC-content dependent parameter estimation. AUGUSTUS predicts on longer sequences far more human and drosophila genes accurately than the ab initio gene prediction programs we compared it with, while at the same time being more specific. AVAILABILITY: A web interface for AUGUSTUS and the executable program are located at http://augustus.gobics.de.},
+  langid = {english},
+  pmid = {14534192},
+  keywords = {Algorithms,Animals,Artificial Intelligence,Base Sequence,Computer Simulation,Humans,Introns,Markov Chains,Models Genetic,Molecular Sequence Data,Pattern Recognition Automated,RNA Splice Sites,Sequence Analysis DNA}
 }
 
 @article{stanke2006a,
