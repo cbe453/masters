@@ -1,20 +1,11 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
-\bibitem{an2022}
-Xiao-Ya An, Guo-Hui Cheng, Han-Xing Gao, Xue-Fei Li, Yang Yang, Dan Li, and
-  Yu~Li.
-\newblock Phylogenetic {{Analysis}} of {{Trichoderma Species Associated}} with
-  {{Green Mold Disease}} on {{Mushrooms}} and {{Two New Pathogens}} on
-  {{Ganoderma}} sichuanense.
-\newblock {\em Journal of Fungi}, 8(7):704, July 2022.
-
-\bibitem{blin2023}
-Kai Blin, Simon Shaw, Hannah~E Augustijn, Zachary~L Reitz, Friederike Biermann,
-  Mohammad Alanjary, Artem Fetter, Barbara~R Terlouw, William~W Metcalf, Eric
-  J~N Helfrich, Gilles~P {van~Wezel}, Marnix~H Medema, and Tilmann Weber.
-\newblock {{antiSMASH}} 7.0: New and improved predictions for detection,
-  regulation, chemical structures~and visualisation.
-\newblock {\em Nucleic Acids Research}, 51(W1):W46--W50, July 2023.
+\bibitem{barnett2011a}
+Derek~W. Barnett, Erik~K. Garrison, Aaron~R. Quinlan, Michael~P. Str{\"o}mberg,
+  and Gabor~T. Marth.
+\newblock {{BamTools}}: A {{C}}++ {{API}} and toolkit for analyzing and
+  managing {{BAM}} files.
+\newblock {\em Bioinformatics (Oxford, England)}, 27(12):1691--1692, June 2011.
 
 \bibitem{borodovsky2011a}
 Mark Borodovsky and Alex Lomsadze.
@@ -30,76 +21,13 @@ Tom{\'a}{\v s} Br{\r u}na, Katharina~J. Hoff, Alexandre Lomsadze, Mario Stanke,
   {{GeneMark-EP}}+ and {{AUGUSTUS}} supported by a protein database.
 \newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, March 2021.
 
-\bibitem{burge1997}
-C.~Burge and S.~Karlin.
-\newblock Prediction of complete gene structures in human genomic {{DNA}}.
-\newblock {\em Journal of Molecular Biology}, 268(1):78--94, April 1997.
-
-\bibitem{cantarel2008}
-Brandi~L. Cantarel, Ian Korf, Sofia~M.C. Robb, Genis Parra, Eric Ross, Barry
-  Moore, Carson Holt, Alejandro S{\'a}nchez~Alvarado, and Mark Yandell.
-\newblock {{MAKER}}: {{An}} easy-to-use annotation pipeline designed for
-  emerging model organism genomes.
-\newblock {\em Genome Research}, 18(1):188--196, January 2008.
-
-\bibitem{Craney2013}
-Arryn Craney, Salman Ahmed, and Justin Nodwell.
-\newblock Towards a new science of secondary metabolism.
-\newblock {\em The Journal of Antibiotics}, 66(7):387--400, 2013.
-
-\bibitem{ejigu2020a}
-Girum~Fitihamlak Ejigu and Jaehee Jung.
-\newblock Review on the {{Computational Genome Annotation}} of {{Sequences
-  Obtained}} by {{Next-Generation Sequencing}}.
-\newblock {\em Biology}, 9(9), September 2020.
-
-\bibitem{Felsenstein1985}
-Joseph Felsenstein.
-\newblock {{CONFIDENCE LIMITS ON PHYLOGENIES}}: {{AN APPROACH USING THE
-  BOOTSTRAP}}.
-\newblock {\em Evolution; International Journal of Organic Evolution},
-  39(4):783--791, July 1985.
-
-\bibitem{fitzpatrick2012}
-David~A. Fitzpatrick.
-\newblock Horizontal gene transfer in fungi.
-\newblock {\em FEMS Microbiology Letters}, 329(1):1--8, 2012.
-
-\bibitem{goncalves2024}
-Carla Gon{\c c}alves, Chris~Todd Hittinger, and Antonis Rokas.
-\newblock Horizontal {{Gene Transfer}} in {{Fungi}} and {{Its Ecological
-  Importance}}.
-\newblock In Yen-Ping Hsueh and Meredith Blackwell, editors, {\em Fungal
-  {{Associations}}}, pages 59--81. Springer International Publishing, Cham,
-  2024.
-
-\bibitem{komaki2020}
-Hisayuki Komaki and Tomohiko Tamura.
-\newblock Polyketide {{Synthase}} and {{Nonribosomal Peptide Synthetase Gene
-  Clusters}} in {{Type Strains}} of the {{Genus Phytohabitans}}.
-\newblock {\em Life}, 10(11):257, October 2020.
-
-\bibitem{kubicek2011}
-Christian~P. Kubicek, Alfredo {Herrera-Estrella}, Verena {Seidl-Seiboth},
-  Diego~A. Martinez, Irina~S. Druzhinina, Michael Thon, Susanne Zeilinger,
-  Sergio {Casas-Flores}, Benjamin~A. Horwitz, Prasun~K. Mukherjee, Mala
-  Mukherjee, L{\'a}szl{\'o} Kredics, Luis~D. Alcaraz, Andrea Aerts, Zsuzsanna
-  Antal, Lea Atanasova, Mayte~G. {Cervantes-Badillo}, Jean Challacombe, Olga
-  Chertkov, Kevin McCluskey, Fanny Coulpier, Nandan Deshpande, Hans {von
-  D{\"o}hren}, Daniel~J. Ebbole, Edgardo~U. {Esquivel-Naranjo}, Erzs{\'e}bet
-  Fekete, Michel Flipphi, Fabian Glaser, Elida~Y. {G{\'o}mez-Rodr{\'i}guez},
-  Sabine Gruber, Cliff Han, Bernard Henrissat, Rosa Hermosa, Miguel
-  {Hern{\'a}ndez-O{\~n}ate}, Levente Karaffa, Idit Kosti, St{\'e}phane Le~Crom,
-  Erika Lindquist, Susan Lucas, Mette L{\"u}beck, Peter~S. L{\"u}beck, Antoine
-  Margeot, Benjamin Metz, Monica Misra, Helena Nevalainen, Markus Omann,
-  Nicolle Packer, Giancarlo Perrone, Edith~E. {Uresti-Rivera}, Asaf Salamov,
-  Monika Schmoll, Bernhard Seiboth, Harris Shapiro, Serenella Sukno,
-  Juan~Antonio {Tamayo-Ramos}, Doris Tisch, Aric Wiest, Heather~H. Wilkinson,
-  Michael Zhang, Pedro~M. Coutinho, Charles~M. Kenerley, Enrique Monte,
-  Scott~E. Baker, and Igor~V. Grigoriev.
-\newblock Comparative genome sequence analysis underscores mycoparasitism as
-  the ancestral life style of {{Trichoderma}}.
-\newblock {\em Genome Biology}, 12(4):R40, April 2011.
+\bibitem{hu2024a}
+Jiang Hu, Zhuo Wang, Zongyi Sun, Benxia Hu, Adeola~Oluwakemi Ayoola, Fan Liang,
+  Jingjing Li, Jos{\'e}~R. Sandoval, David~N. Cooper, Kai Ye, Jue Ruan,
+  Chuan-Le Xiao, Depeng Wang, Dong-Dong Wu, and Sheng Wang.
+\newblock {{NextDenovo}}: An efficient error correction and accurate assembly
+  tool for noisy long reads.
+\newblock {\em Genome Biology}, 25(1):107, 2024.
 
 \bibitem{kubicek2019a}
 Christian~P. Kubicek, Andrei~S. Steindorff, Komal Chenthamara, Gelsomina
@@ -111,73 +39,28 @@ Christian~P. Kubicek, Andrei~S. Steindorff, Komal Chenthamara, Gelsomina
   species.
 \newblock {\em BMC Genomics}, 20(1):485, 2019.
 
-\bibitem{loftus2003a}
-Brendan Loftus.
-\newblock 4 - {{Genome Sequencing}}, {{Assembly}} and {{Gene Prediction}} in
-  {{Fungi}}.
-\newblock In Dilip~K. Arora and George~G. Khachatourians, editors, {\em Fungal
-  {{Genomics}}}, volume~3, pages 65--81. Elsevier, 2003.
+\bibitem{pertea2020a}
+Geo Pertea and Mihaela Pertea.
+\newblock {{GFF Utilities}}: {{GffRead}} and {{GffCompare}}.
+\newblock {\em F1000Research}, 9, 2020.
 
-\bibitem{majoros2004}
-W.~H. Majoros, M.~Pertea, and S.~L. Salzberg.
-\newblock {{TigrScan}} and {{GlimmerHMM}}: Two open source {\emph{ab initio}}
-  eukaryotic gene-finders.
-\newblock {\em Bioinformatics}, 20(16):2878--2879, November 2004.
+\bibitem{pertea2015a}
+Mihaela Pertea, Geo~M. Pertea, Corina~M. Antonescu, Tsung-Cheng Chang,
+  Joshua~T. Mendell, and Steven~L. Salzberg.
+\newblock {{StringTie}} enables improved reconstruction of a transcriptome from
+  {{RNA-seq}} reads.
+\newblock {\em Nature Biotechnology}, 33(3):290--295, 2015.
 
-\bibitem{manni2021a}
-Mos{\`e} Manni, Matthew~R. Berkeley, Mathieu Seppey, and Evgeny~M. Zdobnov.
-\newblock {{BUSCO}}: {{Assessing Genomic Data Quality}} and {{Beyond}}.
-\newblock {\em Current Protocols}, 1(12):e323, 2021.
+\bibitem{quinlan2010}
+Aaron~R. Quinlan and Ira~M. Hall.
+\newblock {{BEDTools}}: A flexible suite of utilities for comparing genomic
+  features.
+\newblock {\em Bioinformatics}, 26(6):841--842, 2010.
 
-\bibitem{min2017}
-Byoungnam Min, Igor~V Grigoriev, and In-Geol Choi.
-\newblock {{FunGAP}}: {{Fungal Genome Annotation Pipeline}} using
-  evidence-based gene model evaluation.
-\newblock {\em Bioinformatics}, 33(18):2936--2937, September 2017.
-
-\bibitem{Mukherjee2012}
-Prasun~K. Mukherjee, Benjamin~A. Horwitz, and Charles~M. Kenerley.
-\newblock Secondary metabolism in {{Trichoderma}} -- a genomic perspective.
-\newblock {\em Microbiology}, 158(1):35--45, 2012.
-
-\bibitem{plohl2014a}
-Miroslav Plohl, Nevenka Me{\v s}trovi{\'c}, and Brankica Mravinac.
-\newblock Centromere identity from the {{DNA}} point of view.
-\newblock {\em Chromosoma}, 123(4):313--325, August 2014.
-
-\bibitem{Saitou1987}
-N~Saitou and M~Nei.
-\newblock The neighbor-joining method: A new method for reconstructing
-  phylogenetic trees.
-\newblock {\em Molecular Biology and Evolution}, 4(4):406--425, July 1987.
-
-\bibitem{senizza2023}
-Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
-  and Luigi Lucini.
-\newblock Trichoderma spp.-mediated mitigation of heat, drought, and their
-  combination on the {{Arabidopsis}} thaliana holobiont: A metabolomics and
-  metabarcoding approach.
-\newblock {\em Frontiers in Plant Science}, 14, 2023.
-
-\bibitem{stanke2003}
-Mario Stanke and Stephan Waack.
-\newblock Gene prediction with a hidden {{Markov}} model and a new intron
-  submodel.
-\newblock {\em Bioinformatics (Oxford, England)}, 19 Suppl 2:ii215--225,
-  October 2003.
-
-\bibitem{winter2018}
-David~J. Winter, Austen R.~D. Ganley, Carolyn~A. Young, Ivan Liachko,
-  Christopher~L. Schardl, Pierre-Yves Dupont, Daniel Berry, Arvina Ram, Barry
-  Scott, and Murray~P. Cox.
-\newblock Repeat elements organise {{3D}} genome structure and mediate
-  transcription in the filamentous fungus {{Epichlo{\"e}}} festucae.
-\newblock {\em PLOS Genetics}, 14(10):1--29, 2018.
-
-\bibitem{woo2023a}
-Sheridan~L. Woo, Rosa Hermosa, Matteo Lorito, and Enrique Monte.
-\newblock Trichoderma: A multipurpose, plant-beneficial microorganism for
-  eco-sustainable agriculture.
-\newblock {\em Nature Reviews Microbiology}, 21(5):312--326, 2023.
+\bibitem{stanke2006a}
+Mario Stanke, Ana Tzvetkova, and Burkhard Morgenstern.
+\newblock {{AUGUSTUS}} at {{EGASP}}: Using {{EST}}, protein and genomic
+  alignments for improved gene prediction in the human genome.
+\newblock {\em Genome Biology}, 7(1):S11, 2006.
 
 \end{thebibliography}

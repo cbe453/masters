@@ -1,17 +1,18 @@
 \section{BUSCO Results}
 \label{section:busco}
 
-The results of BUSCO analysis using the fungal subset provided by
-BUSCO are presented in Table \ref{table:busco}. Results from BUSCO
+Results of BUSCO analysis using the sordariomycetes\_Odb12 dataset provided by BUSCO are presented in Table~\ref{table:busco}. The results 
 indicate that all gene sets considered in this analysis have a BUSCO
-completeness of 99.2\% or higher, with a maximum completeness of
-99.9\% for some gene sets. In general, Braker2 and RefSeq have the
+completeness of 94.9\% or higher, with a maximum completeness of
+99.9\% in the case of Braker2 and DC1. In general, Braker2 and RefSeq have the
 most BUSCO complete sets of gene predictions of the three tools
 considered. Interestingly, Braker2 produces far more duplicated BUSCO
 matches than both GeneMark and RefSeq. Examining the BUSCO output
 logs, this appears to be due to Braker2 predicting more than one
 coding sequence for some genes predictions, resulting in multiple
-similar proteins. In general, all gene finders perform exceptionally
+similar proteins. Interestingly, the coding sequences in the RefSeq annotations seem to miss far more genes than the other two gene finders while also having a higher number of fragmented BUSCO genes. This may be due to human curation of the RefSeq datasets, or the Gnomon gene prediction pipeline used by NCBI to produce these annotations. Further investigation is required to determine the exact cause of this discrepancy. Finally, it appears that \textit{T. reesei} tends to have slightly lower BUSCO completeness than the other \textit{Trichoderma} species considered in this analysis, regardless of gene finder used. Why this is the case is unknown, but may be due to the evolutionary distance between \textit{T. reesei}, the Gnomon annotation process, or potentially the fragmented nature of the \textit{T. reesei} assembly used in this analysis. 
+
+In general, all gene finders perform
 well in regards to BUSCO performance. While these results do not
 capture the entire set of genes possibly present in these
 \textit{Trichoderma} assemblies, they do confirm that the gene finders
@@ -24,42 +25,44 @@ are at minimum predicting many evolutionarily conserved fungal genes.
       \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
         Strain & Complete & Single & Duplicated & Fragmented & Missing \\ \hline
-        DC1 & 99.5 & 80.2 & 19.3 & 0.1 & 0.4 \\ \hline
-        Tsth20 & 99.9 & 81.7 & 18.2 & 0.0 & 0.1 \\ \hline
-        \textit{T. harzianum} & 99.7 & 80.2 & 19.5 & 0.0 & 0.3 \\ \hline
-        \textit{T. virens} & 99.8 & 79.0 & 20.8 & 0.1 & 0.1 \\ \hline
-        \textit{T. reesei} & 99.9 & 85.5 & 14.4 & 0.1 & 0.0 \\ \hline
+        DC1 & 4319 & 3505 & 814 & 2 & 2 \\ \hline
+        Tsth20 & 4309 & 3575 & 734 & 6 & 8 \\ \hline
+        \textit{T. reesei} & 4269 & 3616 & 653 & 27 & 27 \\ \hline
+        \textit{T. harzianum} & 4309 & 3562 & 747 & 6 & 8 \\ \hline
+        \textit{T. virens} & 4309 & 3504 & 805 & 7 & 7 \\ \hline
       \end{tabular}
       \caption{Braker2}
+      \vspace{0.5cm}
     \end{subtable}
     \begin{subtable}{\textwidth}
       \centering
       \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
         Strain & Complete & Single & Duplicated & Fragmented & Missing \\ \hline
-        DC1 & 99.2 & 98.8 & 0.4 & 0.3 & 0.5 \\ \hline
-        Tsth20 & 99.8 & 99.1 & 0.7 & 0.0 & 0.2 \\ \hline
-        \textit{T. harzianum} & 99.6 & 98.9 & 0.7 & 0.0 & 0.4 \\ \hline
-        \textit{T. virens} & 99.7 & 99.2 & 0.5 & 0.1 & 0.2 \\ \hline
-        \textit{T. reesei} & 99.6 & 99.5 & 0.1 & 0.0 & 0.4 \\ \hline
+        DC1 & 4313 & 4311 & 2 & 7 & 3 \\ \hline
+        Tsth20 & 4304 & 4291 & 13 & 10 & 9 \\ \hline
+        \textit{T. reesei} & 4297 & 4297 & 0 & 11 & 15 \\ \hline
+        \textit{T. harzianum} & 4301 & 4291 & 10 & 11 & 11 \\ \hline
+        \textit{T. virens} & 4301 & 4291 & 10 & 11 & 11 \\ \hline
       \end{tabular}
       \caption{GeneMark}
+      \vspace{0.5cm}
     \end{subtable}
     \begin{subtable}{\textwidth}
       \centering
       \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
         Strain & Complete & Single & Duplicated & Fragmented & Missing \\ \hline
-        \textit{T. harzianum} & 99.9 & 99.2 & 0.7 & 0.0 & 0.1 \\ \hline
-        \textit{T. virens} & 99.5 & 98.8 & 0.7 & 0.3 & 0.2 \\ \hline
-        \textit{T. reesei} & 99.8 & 99.5 & 0.3 & 0.0 & 0.2 \\ \hline
+        \textit{T. reesei} & 4102 & 4101 & 1 & 159 & 62 \\ \hline
+        \textit{T. harzianum} & 4244 & 4234 & 10 & 52 & 27 \\ \hline
+        \textit{T. virens} & 4174 & 4164 & 10 & 116 & 33 \\ \hline  
       \end{tabular}
       \caption{RefSeq}
     \end{subtable}
   \end{center}
   \caption{Results from BUSCO using the fungal analysis option
     organized by gene finding tool. The selected BUSCO dataset
-    contains 758 markers. For more information on the categories
+    contains 4323 markers. For more information on the categories
     assigned by BUSCO, please refer to the documentation.}
   \label{table:busco}
 \end{table}
@@ -68,65 +71,36 @@ While BUSCO matches are a good metric for general performance of gene
 finders, it is also important to investigate BUSCO proteins without
 matching gene predictions. Table \ref{table:busco}, shows breakdowns
 of genes missed by each gene finder across the \textit{Trichoderma}
-assemblies. Braker2 misses four unique proteins across the five
-\textit{Trichoderma} assemblies, with only one protein missing in more
-than one assembly. This protein represents a formyl transferase
-protein. GeneMark predictions miss six unique BUSCO proteins, with two
-proteins missing in more than one assembly. These proteins are the
-same formyl transferase missed by Braker2, which was missed in four of
-the five assemblies, and a ubiquitin-conjugating enzyme, which was
-missed in all five assemblies. RefSeq, being the gene finder with the
-most BUSCO complete set of gene predictions, misses only three unique
-BUSCO proteins in the three assemblies. Those missing proteins
-represent a YEATS protein domain and Midasin protein. Of those three
-proteins, the Midasin and YEATS proteins are missed in two of the
-three assemblies from NCBI. Those missing proteins represent a YEATS
-protein domain and Midasin protein.
+assemblies. 
 
-%\begin{table}
-%  \centering
-%  \begin{tabular}{|c|c|c|c|c|c|c|}
-%    \hline
-%    BUSCO ID & Annotation & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. reesei} \\ \hline
-%    195619at4751 & \makecell{Pyridoxal phosphate-dependent \\ transferase} &  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline 
-%    285254at4751 & Aminoacyl-tRNA synthetase & \checkmark & \checkmark & \checkmark &  & \checkmark \\ \hline
-%    348020at4751 & Formyl transferase &  &  & \checkmark &  & \checkmark \\ \hline
-%    497024at4751 & Zinc finger C2H2-type &  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline 
-%  \end{tabular}
-%  \caption[Braker2 missed BUSCO proteins]{The presence (\checkmark) or
-%    absence (X) of all BUSCO IDs missed by Braker2 in each
-%    \textit{Trichoderma} assembly.}
-%  \label{table:braker-busco}
+
+%\begin{center}
+% \begin{table}
+% \makebox[\textwidth]{
+% \begin{tabular}{|c|c|c|c|c|c|c|c|}
+%   \hline
+%   Tool & BUSCO ID & Annotation & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens} \\ \hline
+%   Braker2 & 195619at4751 & \makecell{Pyridoxal phosphate-dependent \\ transferase} & \  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
+%   Braker2 & 285254at4751 & Aminoacyl-tRNA synthetase & \checkmark & \checkmark & \checkmark &  & \checkmark \\ \hline
+%   Braker2 & 348020at4751 & Formyl transferase &  &  & \checkmark &  & \checkmark \\ \hline
+%   Braker2 & 497024at4751 & Zinc finger C2H2-type &  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
+%   GeneMark & 195619at4751 & \makecell{Pyridoxal phosphate-dependent \\ transferase} &  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
+%   GeneMark & 285254at4751 & Aminoacyl-tRNA synthetase & \checkmark & \checkmark & \checkmark &  & \checkmark \\ \hline
+%   GeneMark & 348020at4751 & Formyl transferase &  &  &  &  & \checkmark \\ \hline 
+%   GeneMark & 438731at4751 & LSM domain & \checkmark & \checkmark &  & \checkmark & \checkmark  \\ \hline
+%   GeneMark & 470813at4751 & Ubiquitin-conjugating enzyme &  &  &  &  &  \\ \hline
+%   GeneMark & 497024at4751 & Zinc finger C2H2-type &  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
+%   RefSeq & 494at4751 & Midasin & N/A & N/A &  &  & \checkmark\\ \hline
+%   RefSeq & 315802at4751 & tRNA dimethylallyltransferase & N/A & N/A & \checkmark & \checkmark &  \\ \hline
+%   RefSeq & 352224at4751 & YEATS & N/A & N/A &  & \checkmark &  \\ \hline
+% \end{tabular}
+% }
+% \caption[GeneMark missed BUSCO proteins]{The presence (\checkmark)
+%   or absence of all BUSCO IDs missed by Braker2, GeneMark and RefSeq
+%   in each \textit{Trichoderma} assembly.}
+% \label{table:genemark-busco}
 %\end{table}
-
-
-\begin{center}
-  \begin{table}
-  \makebox[\textwidth]{
-  \begin{tabular}{|c|c|c|c|c|c|c|c|}
-    \hline
-    Tool & BUSCO ID & Annotation & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens} \\ \hline
-    Braker2 & 195619at4751 & \makecell{Pyridoxal phosphate-dependent \\ transferase} & \  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
-    Braker2 & 285254at4751 & Aminoacyl-tRNA synthetase & \checkmark & \checkmark & \checkmark &  & \checkmark \\ \hline
-    Braker2 & 348020at4751 & Formyl transferase &  &  & \checkmark &  & \checkmark \\ \hline
-    Braker2 & 497024at4751 & Zinc finger C2H2-type &  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
-    GeneMark & 195619at4751 & \makecell{Pyridoxal phosphate-dependent \\ transferase} &  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
-    GeneMark & 285254at4751 & Aminoacyl-tRNA synthetase & \checkmark & \checkmark & \checkmark &  & \checkmark \\ \hline
-    GeneMark & 348020at4751 & Formyl transferase &  &  &  &  & \checkmark \\ \hline 
-    GeneMark & 438731at4751 & LSM domain & \checkmark & \checkmark &  & \checkmark & \checkmark  \\ \hline
-    GeneMark & 470813at4751 & Ubiquitin-conjugating enzyme &  &  &  &  &  \\ \hline
-    GeneMark & 497024at4751 & Zinc finger C2H2-type &  & \checkmark & \checkmark & \checkmark & \checkmark \\ \hline
-    RefSeq & 494at4751 & Midasin & N/A & N/A &  &  & \checkmark\\ \hline
-    RefSeq & 315802at4751 & tRNA dimethylallyltransferase & N/A & N/A & \checkmark & \checkmark &  \\ \hline
-    RefSeq & 352224at4751 & YEATS & N/A & N/A &  & \checkmark &  \\ \hline
-  \end{tabular}
-  }
-  \caption[GeneMark missed BUSCO proteins]{The presence (\checkmark)
-    or absence of all BUSCO IDs missed by Braker2, GeneMark and RefSeq
-    in each \textit{Trichoderma} assembly.}
-  \label{table:genemark-busco}
-\end{table}
-\end{center}
+%\end{center}
 
 %\begin{table}
 %  \centering
@@ -152,14 +126,5 @@ produces more duplicate matches than GeneMark and RefSeq, but this is
 likely due to multiple isoforms of possible genes being present in the
 input data. Despite excellent coverage of the BUSCO fungal proteins,
 all three gene finders miss some BUSCO proteins in their
-predictions. GeneMark misses the most proteins and in particularly
-struggles with predicting a formyl transferase and a
-ubiquitin-conjugating enzyme. Braker2 also appears to have difficulty
-predicting a formyl transferase just as GeneMark did. RefSeq misses
-the fewest BUSCO proteins and does not appear to systematically miss
-certain proteins, although it is hard to draw a conclusion with only
-three assemblies considered. It is also worth noting that RefSeq
-misses completely different proteins than the other gene finders while
-Braker2 and GeneMark do share some missed proteins. Finally, we note
-the possibility that human curation of RefSeq datasets is responsible
-for these differences, but this requires further investigation.
+predictions. 
+Finally, we reiterate the possibility that human curation of RefSeq datasets is responsible for these differences, but this requires further investigation.

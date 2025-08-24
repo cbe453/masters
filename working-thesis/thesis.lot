@@ -1,2 +1,11 @@
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces General assembly metrics produced by QUAST\cite {Gurevich2013} (a genome quality assessment tool).}}{2}{table.caption.13}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Gene prediction counts}}{6}{table.caption.15}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces Table of \textit {P}-values from two-sided two-sample Kolmogorov-Smirnov tests between gene finding tools.}}{10}{table.caption.19}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces Results from BUSCO using the fungal analysis option organized by gene finding tool. The selected BUSCO dataset contains 4323 markers. For more information on the categories assigned by BUSCO, please refer to the documentation.}}{12}{table.caption.20}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces InterProScan Pfam Evidence}}{18}{table.caption.25}%
+\contentsline {table}{\numberline {1.6}{\ignorespaces tblastn hits from reference protein sequences to selected \textit {Trichoderma} assemblies. Hits are reported if the alignment length is greater than 30\% of the reference protein length and if 30\% of the alignment length has identical matches.}}{19}{table.caption.29}%
+\contentsline {table}{\numberline {1.7}{\ignorespaces Counts of transcripts predicted by Braker2, GeneMark and RefSeq in regions containing tblastn hits from \textit {Ttrichoderma atroviride}, \textit {Fusarium granminarium}, and \textit {Saccharomyces cerevisiae}.}}{21}{table.caption.30}%
+\contentsline {table}{\numberline {1.8}{\ignorespaces Agreement of predictions in anomalous GC regions.}}{22}{table.caption.31}%
+\contentsline {table}{\numberline {1.9}{\ignorespaces Number of genes predicted by Braker2, GeneMark and RefSeq in AT-rich genomic sequence from each assembly. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2.}}{23}{table.caption.32}%
+\contentsline {table}{\numberline {1.10}{\ignorespaces \textit {p}-values produced from a two-sided binomial test for each combination of tool and assembly.}}{23}{table.caption.33}%

@@ -5,12 +5,15 @@
 \contentsline {chapter}{List of Tables}{v}{section*.9}%
 \contentsline {chapter}{List of Figures}{vi}{section*.10}%
 \contentsline {chapter}{List of Abbreviations}{vii}{section*.11}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}\textit {Trichoderma} Species and their Features}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Evolutionary Landscape of \textit {Trichoderma}}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Novel \textit {Trichoderma} Genomes}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Gene Predictions and Complementing Similarity Searches}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Secondary Metabolites}{8}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Gene Prediction Tools in Fungi}{9}{section.2.6}%
-\contentsline {chapter}{References}{10}{section*.15}%
+\contentsline {chapter}{\numberline {1}Results and Discussion}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Overview}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Assemblies of DC1 and Tsth20}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Installation and Profiling Gene Finding Tools}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Initial Gene Finding Results}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Distribution of Predicted Coding Sequence Lengths}{6}{section.1.5}%
+\contentsline {section}{\numberline {1.6}BUSCO Results}{10}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Region Identification}{11}{section.1.7}%
+\contentsline {section}{\numberline {1.8}InterProScan as Supporting Evidence for Predicted Genes}{17}{section.1.8}%
+\contentsline {section}{\numberline {1.9}BLAST Results}{18}{section.1.9}%
+\contentsline {section}{\numberline {1.10}Genes in Regions of Anomalous GC Content}{20}{section.1.10}%
+\contentsline {chapter}{References}{24}{section*.34}%
