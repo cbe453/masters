@@ -3,8 +3,8 @@
 
 Results of BUSCO analysis using the sordariomycetes\_Odb12 dataset provided by BUSCO are presented in Table~\ref{table:busco}. The results 
 indicate that all gene sets considered in this analysis have a BUSCO
-completeness of 94.9\% or higher, with a maximum completeness of
-99.9\% in the case of Braker2 and DC1. In general, Braker2 and RefSeq have the
+completeness of 94.1\% or higher, with a maximum completeness of
+98.4\% in the case of Braker2 and DC1. In general, Braker2 and RefSeq have the
 most BUSCO complete sets of gene predictions of the three tools
 considered. Interestingly, Braker2 produces far more duplicated BUSCO
 matches than both GeneMark and RefSeq. Examining the BUSCO output
@@ -25,11 +25,11 @@ are at minimum predicting many evolutionarily conserved fungal genes.
       \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
         Strain & Complete & Single & Duplicated & Fragmented & Missing \\ \hline
-        DC1 & 4319 & 3505 & 814 & 2 & 2 \\ \hline
-        Tsth20 & 4309 & 3575 & 734 & 6 & 8 \\ \hline
-        \textit{T. reesei} & 4269 & 3616 & 653 & 27 & 27 \\ \hline
-        \textit{T. harzianum} & 4309 & 3562 & 747 & 6 & 8 \\ \hline
-        \textit{T. virens} & 4309 & 3504 & 805 & 7 & 7 \\ \hline
+        DC1 & 4419 & 3547 & 872 & 40 & 33 \\ \hline
+        Tsth20 & 4416 & 3585 & 831 & 42 & 34 \\ \hline
+        \textit{T. reesei} & 4321 & 3587 & 734 & 80 & 91 \\ \hline
+        \textit{T. harzianum} & 4408 & 3572 & 836 & 49 & 35 \\ \hline
+        \textit{T. virens} & 4409 & 3530 & 879 & 53 & 30 \\ \hline
       \end{tabular}
       \caption{Braker2}
       \vspace{0.5cm}
@@ -39,11 +39,11 @@ are at minimum predicting many evolutionarily conserved fungal genes.
       \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
         Strain & Complete & Single & Duplicated & Fragmented & Missing \\ \hline
-        DC1 & 4313 & 4311 & 2 & 7 & 3 \\ \hline
-        Tsth20 & 4304 & 4291 & 13 & 10 & 9 \\ \hline
-        \textit{T. reesei} & 4297 & 4297 & 0 & 11 & 15 \\ \hline
-        \textit{T. harzianum} & 4301 & 4291 & 10 & 11 & 11 \\ \hline
-        \textit{T. virens} & 4301 & 4291 & 10 & 11 & 11 \\ \hline
+        DC1 & 4415 & 4401 & 14 & 43 & 34 \\ \hline
+        Tsth20 & 4409 & 4392 & 17 & 47 & 36 \\ \hline
+        \textit{T. reesei} & 4351 & 4345 & 6 & 69 & 72 \\ \hline
+        \textit{T. harzianum} & 4399 & 4382 & 17 & 53 & 40 \\ \hline
+        \textit{T. virens} & 4391 & 4369 & 22 & 61 & 40 \\ \hline
       \end{tabular}
       \caption{GeneMark}
       \vspace{0.5cm}
@@ -53,9 +53,9 @@ are at minimum predicting many evolutionarily conserved fungal genes.
       \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
         Strain & Complete & Single & Duplicated & Fragmented & Missing \\ \hline
-        \textit{T. reesei} & 4102 & 4101 & 1 & 159 & 62 \\ \hline
-        \textit{T. harzianum} & 4244 & 4234 & 10 & 52 & 27 \\ \hline
-        \textit{T. virens} & 4174 & 4164 & 10 & 116 & 33 \\ \hline  
+        \textit{T. reesei} & 4274 & 4267 & 7 & 112 & 106 \\ \hline
+        \textit{T. harzianum} & 4383 & 4366 & 17 & 60 & 49 \\ \hline
+        \textit{T. virens} & 4345 & 4321 & 24 & 92 & 55 \\ \hline  
       \end{tabular}
       \caption{RefSeq}
     \end{subtable}
