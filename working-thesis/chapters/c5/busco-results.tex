@@ -68,10 +68,53 @@ are at minimum predicting many evolutionarily conserved fungal genes.
 \end{table}
 
 While BUSCO matches are a good metric for general performance of gene
-finders, it is also important to investigate BUSCO proteins without
-matching gene predictions. Table \ref{table:busco}, shows breakdowns
-of genes missed by each gene finder across the \textit{Trichoderma}
-assemblies. 
+finders, it is also important to investigate BUSCO proteins the were missing from the gene predictions. Of interest are BUSCO proteins that are systematically missed by a gene finder in multiple or all assemblies, and whether or not these BUSCO proteins are also missed by other gene finders. Table~\ref{table:missed-busco-all} lists BUSCO IDs and their corresponding annotations that were not found in any set of predictions from Braker2, GeneMark or RefSeq. There are 17 BUSCO proteins that were not found by any of the three gene finders in any of the five \textit{Trichoderma} assemblies. The annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by all three gene finders, and further investigation is required to determine why these genes are not being predicted. It is possible that these genes are simply not present in these \textit{Trichoderma} species, but this may be unlikely given the evolutionary conservation of BUSCO proteins. Each gene finder also has one or more BUSCO proteins that are missed in all assemblies but not by one or both of the other gene finders. These genes are presented in Table~\ref{table:missed-all-gf}. Again, the annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by a particular gene finder, and further investigation is required to determine why these genes are not being predicted. Overall, it appears that there are very few BUSCO proteins that are systematically missed by all gene finders, indicating that the gene finders are generally capable of predicting the majority of conserved fungal genes.
+
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    BUSCO ID & Annotation \\ \hline
+    191658at147550 & Rossmann-fold NAD(+)-binding protein \\ \hline
+    250641at147550 & Aspartic-type endopeptidase \\ \hline
+    279527at147550 & Phosphatidic acid-preferring phospholipase A1, contains DDHD domain \\ \hline
+    578862at147550 & Transcription factor \\ \hline
+    579967at147550 & Alpha-L-rhamnosidase C \\ \hline
+    627082at147550 & Ferric reductase \\ \hline
+    628206at147550 & Zinc finger domain-containing protein \\ \hline
+    636196at147550 & ATP-dependent RNA helicase \\ \hline
+    646880at147550 & Lipase class 3 \\ \hline
+    647592at147550 & Conserved hypothetical protein \\ \hline
+    652375at147550 & Conserved hypothetical protein \\ \hline
+    657983at147550 & Conserved hypothetical protein \\ \hline
+    658912at147550 & Aromatic amino acid aminotransferase \\ \hline
+    659938at147550 & HAUS augmin-like complex subunit 1 \\ \hline
+    672116at147550 & Nitrogen regulatory protein AreA, GATA-like domain \\ \hline
+    677025at147550 & Mating-type switching protein Swi10 \\ \hline
+    689133at147550 & Myosin heavy chain \\ \hline
+  \end{tabular}
+  \caption{BUSCO IDs and their corresponding annotations that were not found in any set of predictions from Braker2, GeneMark or RefSeq.}
+  \label{table:missed-busco-all}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    BUSCO ID & Tool & Annotation \\ \hline
+    282444at147550 & RefSeq & Conserved hypothetical protein \\ \hline
+    291262at147550 & RefSeq & HAUS augmin-like complex subunit 6, N-terminal \\ \hline
+    632369at147550 & RefSeq & Peptidyl-prolyl cis-trans isomerase, FKBP-type \\ \hline
+    632579at147550 & RefSeq & Cyanate hydratase \\ \hline
+    672871at147550 & RefSeq & MAU2 chromatid cohesion factor \\ \hline
+    677279at147550 & RefSeq & Pentatricopeptide repeat domain-containing \\ \hline
+    688724at147550 & GeneMark/Braker2 & Putative protein of unknown function \\ \hline
+  \end{tabular}
+  \caption{Additional BUSCO IDs along with their corresponding annotations not found in any set of predictions. The tools that missed each BUSCO ID are also listed.}
+  \label{table:missed-all-gf}
+\end{table}
+
 
 
 %\begin{center}
@@ -117,8 +160,12 @@ assemblies.
 %  \label{table:refseq-busco}
 %\end{table}
 
-Braker2, GeneMark and RefSeq all demonstrate excellent coverage of the
-BUSCO fungal protein set, indicating that these gene finders are
+We also identified 48 BUSCO proteins that were missed in more than one \textit{Trichoderma} assembly but not all assemblies by any particular gene finder. These BUSCO proteins are not listed here for brevity, but are available in the supplementary materials. Further investigation of these BUSCO proteins may provide insight into potential weaknesses of a particular gene finder, or may indicate evolutionary differences between the \textit{Trichoderma} species considered in this analysis.
+
+%these BUSCO proteins are available in the updated busco analysis directory with the naming conventions post-process/*-some-missing.tsv.
+
+In summary, Braker2, GeneMark, and RefSeq all demonstrate excellent coverage of 
+the BUSCO fungal protein set, indicating that these gene finders are
 capable of predicting genes that are expected to be present in these
 assemblies. From this we can say that the foundations of the
 underlying gene models used by each gene finder are solid. Braker2
@@ -126,5 +173,6 @@ produces more duplicate matches than GeneMark and RefSeq, but this is
 likely due to multiple isoforms of possible genes being present in the
 input data. Despite excellent coverage of the BUSCO fungal proteins,
 all three gene finders miss some BUSCO proteins in their
-predictions. 
+predictions. Of note are higher number of BUSCO proteins missed
+in the \textit{T. reesei} predictions regardless of gene finder. In addition, RefSeq predictions seem to miss more BUSCO proteins than Braker2 and GeneMark, and also have a higher number of fragmented BUSCO proteins.
 Finally, we reiterate the possibility that human curation of RefSeq datasets is responsible for these differences, but this requires further investigation.
