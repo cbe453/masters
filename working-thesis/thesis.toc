@@ -1,59 +1,59 @@
-\contentsline {chapter}{Permission to Use}{i}{section*.1}%
-\contentsline {chapter}{Abstract}{ii}{section*.4}%
-\contentsline {chapter}{Acknowledgements}{iii}{section*.6}%
-\contentsline {chapter}{Contents}{iv}{section*.8}%
-\contentsline {chapter}{List of Tables}{vi}{section*.9}%
-\contentsline {chapter}{List of Figures}{vii}{section*.10}%
-\contentsline {chapter}{List of Abbreviations}{ix}{section*.11}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}\textit {Trichoderma} Species and their Features}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Evolutionary Landscape of \textit {Trichoderma}}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Novel \textit {Trichoderma} Genomes}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Gene Predictions and Complementing Similarity Searches}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Secondary Metabolites}{8}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Gene Prediction Tools in Fungi}{9}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Research Questions}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}\textit {Trichoderma} Assembly Results}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Profiling of Gene Finding Tools}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Number of Features Predicted}{10}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Lengths of Predicted Genes}{11}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Identifying Regions of Agreement and Disagreement}{11}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Validation of Predicted Genes via InterProScan}{11}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Similarity Searches of Predicted Genes with tblastn}{11}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Performance in AT-rich Genomic Sequence}{12}{section.3.8}%
-\contentsline {section}{\numberline {3.9}BUSCO Completeness}{12}{section.3.9}%
-\contentsline {section}{\numberline {3.10}Selection of a Gene Finding Tool}{12}{section.3.10}%
-\contentsline {chapter}{\numberline {4}Data and Methodology}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Methodology Overview}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Sequence Processing and Assembly Workflow}{13}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Sequence Pre-processing and Assembly}{13}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Identifying AT-rich Genomic Sequence}{16}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Overview of Gene Prediction and Further Processing}{16}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Selection of Datasets from NCBI}{18}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Gene Prediction Using GeneMark-ES}{20}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Gene Prediction Using Braker2}{20}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Statistical Analysis of CDS Lengths}{20}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Overview of Evaluation and Validation of Gene Predictions}{20}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Evaluating Gene-Finder Performance Using BUSCO}{21}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Functional Annotation Using InterProScan}{22}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Ground-truthing with the Basic Local Alignment Search Tool (BLAST)}{22}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Region Identification Overview}{22}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Region Identification Algorithm}{24}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Regions in AT-rich Genomic Sequence}{24}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Visualization of Identified Regions}{24}{subsection.4.5.3}%
-\contentsline {chapter}{\numberline {5}Results and Discussion}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Overview}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Assemblies of DC1 and Tsth20}{27}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Installation and Profiling Gene Finding Tools}{30}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Initial Gene Finding Results}{31}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Distribution of Predicted Coding Sequence Lengths}{32}{section.5.5}%
-\contentsline {section}{\numberline {5.6}BUSCO Results}{36}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Region Identification}{39}{section.5.7}%
-\contentsline {section}{\numberline {5.8}InterProScan as Supporting Evidence for Predicted Genes}{44}{section.5.8}%
-\contentsline {section}{\numberline {5.9}BLAST Results}{46}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Genes in Regions of Anomalous GC Content}{49}{section.5.10}%
-\contentsline {chapter}{\numberline {6}Conclusions}{51}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Selection of Gene Finding Tool}{51}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Future Work}{52}{section.6.2}%
-\contentsline {chapter}{References}{55}{section*.46}%
+\contentsline {chapter}{Permission to Use}{i}{section*.1}
+\contentsline {chapter}{Abstract}{ii}{section*.4}
+\contentsline {chapter}{Acknowledgements}{iii}{section*.6}
+\contentsline {chapter}{Contents}{iv}{section*.8}
+\contentsline {chapter}{List of Tables}{vi}{section*.9}
+\contentsline {chapter}{List of Figures}{vii}{section*.10}
+\contentsline {chapter}{List of Abbreviations}{ix}{section*.11}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}\textit {Trichoderma} Species and their Features}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Evolutionary Landscape of \textit {Trichoderma}}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Novel \textit {Trichoderma} Genomes}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Gene Predictions and Complementing Similarity Searches}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Secondary Metabolites}{8}{section.2.5}
+\contentsline {section}{\numberline {2.6}Gene Prediction Tools in Fungi}{9}{section.2.6}
+\contentsline {chapter}{\numberline {3}Research Questions}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}\textit {Trichoderma} Assembly Results}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Profiling of Gene Finding Tools}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Number of Features Predicted}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}Lengths of Predicted Genes}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}Identifying Regions of Agreement and Disagreement}{11}{section.3.5}
+\contentsline {section}{\numberline {3.6}Validation of Predicted Genes via InterProScan}{11}{section.3.6}
+\contentsline {section}{\numberline {3.7}Similarity Searches of Predicted Genes with tblastn}{11}{section.3.7}
+\contentsline {section}{\numberline {3.8}Performance in AT-rich Genomic Sequence}{12}{section.3.8}
+\contentsline {section}{\numberline {3.9}BUSCO Completeness}{12}{section.3.9}
+\contentsline {section}{\numberline {3.10}Selection of a Gene Finding Tool}{12}{section.3.10}
+\contentsline {chapter}{\numberline {4}Data and Methodology}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Methodology Overview}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sequence Processing and Assembly Workflow}{13}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Sequence Pre-processing and Assembly}{13}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Identifying AT-rich Genomic Sequence}{16}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Overview of Gene Prediction and Further Processing}{16}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Selection of Datasets from NCBI}{18}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Gene Prediction Using GeneMark-ES}{20}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Gene Prediction Using Braker2}{20}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Statistical Analysis of CDS Lengths}{20}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Overview of Evaluation and Validation of Gene Predictions}{20}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Evaluating Gene-Finder Performance Using BUSCO}{21}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Functional Annotation Using InterProScan}{22}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Ground-truthing with the Basic Local Alignment Search Tool (BLAST)}{22}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Region Identification Overview}{22}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Region Identification Algorithm}{24}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Regions in AT-rich Genomic Sequence}{24}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Visualization of Identified Regions}{24}{subsection.4.5.3}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Overview}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Assemblies of DC1 and Tsth20}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}Installation and Profiling Gene Finding Tools}{30}{section.5.3}
+\contentsline {section}{\numberline {5.4}Initial Gene Finding Results}{31}{section.5.4}
+\contentsline {section}{\numberline {5.5}Distribution of Predicted Coding Sequence Lengths}{32}{section.5.5}
+\contentsline {section}{\numberline {5.6}BUSCO Results}{36}{section.5.6}
+\contentsline {section}{\numberline {5.7}Region Identification}{39}{section.5.7}
+\contentsline {section}{\numberline {5.8}InterProScan as Supporting Evidence for Predicted Genes}{44}{section.5.8}
+\contentsline {section}{\numberline {5.9}BLAST Results}{46}{section.5.9}
+\contentsline {section}{\numberline {5.10}Genes in Regions of Anomalous GC Content}{49}{section.5.10}
+\contentsline {chapter}{\numberline {6}Conclusions}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Selection of Gene Finding Tool}{51}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{52}{section.6.2}
+\contentsline {chapter}{References}{55}{section*.46}
