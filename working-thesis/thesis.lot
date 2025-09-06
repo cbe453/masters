@@ -3,17 +3,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces General assembly metrics produced by QUAST\cite {Gurevich2013} (a genome quality assessment tool).\relax }}{28}{table.caption.22}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Gene prediction counts}}{32}{table.caption.24}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Table of \textit {P}-values from two-sided two-sample Kolmogorov-Smirnov tests between gene finding tools.\relax }}{36}{table.caption.28}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Results from BUSCO using the fungal analysis option organized by gene finding tool. The selected BUSCO dataset contains 4323 markers. For more information on the categories assigned by BUSCO, please refer to the documentation.\relax }}{38}{table.caption.29}
-\contentsline {table}{\numberline {5.5}{\ignorespaces BUSCO IDs and their corresponding annotations that were not found in any set of predictions from Braker2, GeneMark or RefSeq.\relax }}{39}{table.caption.30}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Additional BUSCO IDs along with their corresponding annotations not found in any set of predictions. The tools that missed each BUSCO ID are also listed.\relax }}{40}{table.caption.31}
-\contentsline {table}{\numberline {5.7}{\ignorespaces InterProScan Pfam Evidence}}{45}{table.caption.36}
-\contentsline {table}{\numberline {5.8}{\ignorespaces tblastn hits from reference protein sequences to selected \textit {Trichoderma} assemblies. Hits are reported if the alignment length is greater than 30\% of the reference protein length and if 30\% of the alignment length has identical matches.\relax }}{47}{table.caption.40}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Counts of transcripts predicted by Braker2, GeneMark and RefSeq in regions containing tblastn hits from \textit {Ttrichoderma atroviride}, \textit {Fusarium granminarium}, and \textit {Saccharomyces cerevisiae}.\relax }}{48}{table.caption.41}
-\contentsline {table}{\numberline {5.10}{\ignorespaces Agreement of predictions in anomalous GC regions.}}{49}{table.caption.42}
-\contentsline {table}{\numberline {5.11}{\ignorespaces Number of genes predicted by Braker2, GeneMark and RefSeq in AT-rich genomic sequence from each assembly. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2.\relax }}{50}{table.caption.43}
-\contentsline {table}{\numberline {5.12}{\ignorespaces \textit {p}-values produced from a two-sided binomial test for each combination of tool and assembly.\relax }}{50}{table.caption.44}
+\contentsline {table}{\numberline {5.1}{\ignorespaces General assembly metrics produced by QUAST\cite {Gurevich2013} (a genome quality assessment tool).}}{28}{table.caption.22}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Gene prediction counts}}{32}{table.caption.26}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Table of \textit {P}-values from two-sided two-sample Kolmogorov-Smirnov tests between gene finding tools.}}{36}{table.caption.30}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Results from BUSCO using the fungal analysis option organized by gene finding tool. The selected BUSCO dataset contains 4323 markers. For more information on the categories assigned by BUSCO, please refer to the documentation.}}{38}{table.caption.31}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces InterProScan Pfam Evidence}}{44}{table.caption.36}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces tblastn hits from reference protein sequences to selected \textit {Trichoderma} assemblies. Hits are reported if the alignment length is greater than 30\% of the reference protein length and if 30\% of the alignment length has identical matches.}}{46}{table.caption.40}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Counts of transcripts predicted by Braker2, GeneMark and RefSeq in regions containing tblastn hits from \textit {Ttrichoderma atroviride}, \textit {Fusarium granminarium}, and \textit {Saccharomyces cerevisiae}.}}{47}{table.caption.43}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Agreement of predictions in anomalous GC regions.}}{50}{table.caption.44}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Number of genes predicted by Braker2, GeneMark and RefSeq in AT-rich genomic sequence from each assembly. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2.}}{51}{table.caption.45}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces \textit {p}-values produced from a two-sided binomial test for each combination of tool and assembly.}}{51}{table.caption.46}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Final scoring table}}{53}{table.caption.45}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Final scoring table}}{54}{table.caption.47}%

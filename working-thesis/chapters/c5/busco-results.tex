@@ -3,8 +3,8 @@
 
 Results of BUSCO analysis using the sordariomycetes\_Odb12 dataset provided by BUSCO are presented in Table~\ref{table:busco}. The results 
 indicate that all gene sets considered in this analysis have a BUSCO
-completeness of 94.1\% or higher, with a maximum completeness of
-98.4\% in the case of Braker2 and DC1. In general, Braker2 and RefSeq have the
+completeness of 94.9\% or higher, with a maximum completeness of
+99.9\% in the case of Braker2 and DC1. In general, Braker2 and RefSeq have the
 most BUSCO complete sets of gene predictions of the three tools
 considered. Interestingly, Braker2 produces far more duplicated BUSCO
 matches than both GeneMark and RefSeq. Examining the BUSCO output
@@ -25,11 +25,11 @@ are at minimum predicting many evolutionarily conserved fungal genes.
       \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
         Strain & Complete & Single & Duplicated & Fragmented & Missing \\ \hline
-        DC1 & 4419 & 3547 & 872 & 40 & 33 \\ \hline
-        Tsth20 & 4416 & 3585 & 831 & 42 & 34 \\ \hline
-        \textit{T. reesei} & 4321 & 3587 & 734 & 80 & 91 \\ \hline
-        \textit{T. harzianum} & 4408 & 3572 & 836 & 49 & 35 \\ \hline
-        \textit{T. virens} & 4409 & 3530 & 879 & 53 & 30 \\ \hline
+        DC1 & 4319 & 3505 & 814 & 2 & 2 \\ \hline
+        Tsth20 & 4309 & 3575 & 734 & 6 & 8 \\ \hline
+        \textit{T. reesei} & 4269 & 3616 & 653 & 27 & 27 \\ \hline
+        \textit{T. harzianum} & 4309 & 3562 & 747 & 6 & 8 \\ \hline
+        \textit{T. virens} & 4309 & 3504 & 805 & 7 & 7 \\ \hline
       \end{tabular}
       \caption{Braker2}
       \vspace{0.5cm}
@@ -39,11 +39,11 @@ are at minimum predicting many evolutionarily conserved fungal genes.
       \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
         Strain & Complete & Single & Duplicated & Fragmented & Missing \\ \hline
-        DC1 & 4415 & 4401 & 14 & 43 & 34 \\ \hline
-        Tsth20 & 4409 & 4392 & 17 & 47 & 36 \\ \hline
-        \textit{T. reesei} & 4351 & 4345 & 6 & 69 & 72 \\ \hline
-        \textit{T. harzianum} & 4399 & 4382 & 17 & 53 & 40 \\ \hline
-        \textit{T. virens} & 4391 & 4369 & 22 & 61 & 40 \\ \hline
+        DC1 & 4313 & 4311 & 2 & 7 & 3 \\ \hline
+        Tsth20 & 4304 & 4291 & 13 & 10 & 9 \\ \hline
+        \textit{T. reesei} & 4297 & 4297 & 0 & 11 & 15 \\ \hline
+        \textit{T. harzianum} & 4301 & 4291 & 10 & 11 & 11 \\ \hline
+        \textit{T. virens} & 4301 & 4291 & 10 & 11 & 11 \\ \hline
       \end{tabular}
       \caption{GeneMark}
       \vspace{0.5cm}
@@ -53,9 +53,9 @@ are at minimum predicting many evolutionarily conserved fungal genes.
       \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
         Strain & Complete & Single & Duplicated & Fragmented & Missing \\ \hline
-        \textit{T. reesei} & 4274 & 4267 & 7 & 112 & 106 \\ \hline
-        \textit{T. harzianum} & 4383 & 4366 & 17 & 60 & 49 \\ \hline
-        \textit{T. virens} & 4345 & 4321 & 24 & 92 & 55 \\ \hline  
+        \textit{T. reesei} & 4102 & 4101 & 1 & 159 & 62 \\ \hline
+        \textit{T. harzianum} & 4244 & 4234 & 10 & 52 & 27 \\ \hline
+        \textit{T. virens} & 4174 & 4164 & 10 & 116 & 33 \\ \hline  
       \end{tabular}
       \caption{RefSeq}
     \end{subtable}
@@ -68,53 +68,10 @@ are at minimum predicting many evolutionarily conserved fungal genes.
 \end{table}
 
 While BUSCO matches are a good metric for general performance of gene
-finders, it is also important to investigate BUSCO proteins the were missing from the gene predictions. Of interest are BUSCO proteins that are systematically missed by a gene finder in multiple or all assemblies, and whether or not these BUSCO proteins are also missed by other gene finders. Table~\ref{table:missed-busco-all} lists BUSCO IDs and their corresponding annotations that were not found in any set of predictions from Braker2, GeneMark or RefSeq. There are 17 BUSCO proteins that were not found by any of the three gene finders in any of the five \textit{Trichoderma} assemblies. The annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by all three gene finders, and further investigation is required to determine why these genes are not being predicted. It is possible that these genes are simply not present in these \textit{Trichoderma} species, but this may be unlikely given the evolutionary conservation of BUSCO proteins. Each gene finder also has one or more BUSCO proteins that are missed in all assemblies but not by one or both of the other gene finders. These genes are presented in Table~\ref{table:missed-all-gf}. Again, the annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by a particular gene finder, and further investigation is required to determine why these genes are not being predicted. Overall, it appears that there are very few BUSCO proteins that are systematically missed by all gene finders, indicating that the gene finders are generally capable of predicting the majority of conserved fungal genes.
-
-
-\begin{table}[h]
-  \centering
-  \begin{tabular}{|c|c|}
-    \hline
-    BUSCO ID & Annotation \\ \hline
-    191658at147550 & Rossmann-fold NAD(+)-binding protein \\ \hline
-    250641at147550 & Aspartic-type endopeptidase \\ \hline
-    279527at147550 & Phosphatidic acid-preferring phospholipase A1, contains DDHD domain \\ \hline
-    578862at147550 & Transcription factor \\ \hline
-    579967at147550 & Alpha-L-rhamnosidase C \\ \hline
-    627082at147550 & Ferric reductase \\ \hline
-    628206at147550 & Zinc finger domain-containing protein \\ \hline
-    636196at147550 & ATP-dependent RNA helicase \\ \hline
-    646880at147550 & Lipase class 3 \\ \hline
-    647592at147550 & Conserved hypothetical protein \\ \hline
-    652375at147550 & Conserved hypothetical protein \\ \hline
-    657983at147550 & Conserved hypothetical protein \\ \hline
-    658912at147550 & Aromatic amino acid aminotransferase \\ \hline
-    659938at147550 & HAUS augmin-like complex subunit 1 \\ \hline
-    672116at147550 & Nitrogen regulatory protein AreA, GATA-like domain \\ \hline
-    677025at147550 & Mating-type switching protein Swi10 \\ \hline
-    689133at147550 & Myosin heavy chain \\ \hline
-  \end{tabular}
-  \caption{BUSCO IDs and their corresponding annotations that were not found in any set of predictions from Braker2, GeneMark or RefSeq.}
-  \label{table:missed-busco-all}
-\end{table}
-
-\begin{table}[h]
-  \centering
-  \begin{tabular}{|c|c|c|}
-    \hline
-    BUSCO ID & Tool & Annotation \\ \hline
-    282444at147550 & RefSeq & Conserved hypothetical protein \\ \hline
-    291262at147550 & RefSeq & HAUS augmin-like complex subunit 6, N-terminal \\ \hline
-    632369at147550 & RefSeq & Peptidyl-prolyl cis-trans isomerase, FKBP-type \\ \hline
-    632579at147550 & RefSeq & Cyanate hydratase \\ \hline
-    672871at147550 & RefSeq & MAU2 chromatid cohesion factor \\ \hline
-    677279at147550 & RefSeq & Pentatricopeptide repeat domain-containing \\ \hline
-    688724at147550 & GeneMark/Braker2 & Putative protein of unknown function \\ \hline
-  \end{tabular}
-  \caption{Additional BUSCO IDs along with their corresponding annotations not found in any set of predictions. The tools that missed each BUSCO ID are also listed.}
-  \label{table:missed-all-gf}
-\end{table}
-
+finders, it is also important to investigate BUSCO proteins without
+matching gene predictions. Table \ref{table:busco}, shows breakdowns
+of genes missed by each gene finder across the \textit{Trichoderma}
+assemblies. 
 
 
 %\begin{center}
@@ -160,12 +117,8 @@ finders, it is also important to investigate BUSCO proteins the were missing fro
 %  \label{table:refseq-busco}
 %\end{table}
 
-We also identified 48 BUSCO proteins that were missed in more than one \textit{Trichoderma} assembly but not all assemblies by any particular gene finder. These BUSCO proteins are not listed here for brevity, but are available in the supplementary materials. Further investigation of these BUSCO proteins may provide insight into potential weaknesses of a particular gene finder, or may indicate evolutionary differences between the \textit{Trichoderma} species considered in this analysis.
-
-%these BUSCO proteins are available in the updated busco analysis directory with the naming conventions post-process/*-some-missing.tsv.
-
-In summary, Braker2, GeneMark, and RefSeq all demonstrate excellent coverage of 
-the BUSCO fungal protein set, indicating that these gene finders are
+Braker2, GeneMark and RefSeq all demonstrate excellent coverage of the
+BUSCO fungal protein set, indicating that these gene finders are
 capable of predicting genes that are expected to be present in these
 assemblies. From this we can say that the foundations of the
 underlying gene models used by each gene finder are solid. Braker2
@@ -173,6 +126,5 @@ produces more duplicate matches than GeneMark and RefSeq, but this is
 likely due to multiple isoforms of possible genes being present in the
 input data. Despite excellent coverage of the BUSCO fungal proteins,
 all three gene finders miss some BUSCO proteins in their
-predictions. Of note are higher number of BUSCO proteins missed
-in the \textit{T. reesei} predictions regardless of gene finder. In addition, RefSeq predictions seem to miss more BUSCO proteins than Braker2 and GeneMark, and also have a higher number of fragmented BUSCO proteins.
+predictions. 
 Finally, we reiterate the possibility that human curation of RefSeq datasets is responsible for these differences, but this requires further investigation.

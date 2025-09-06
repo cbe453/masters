@@ -39,8 +39,8 @@ sequences.
 While successful tblastn hits from input proteins are useful, it is
 worthwhile exploring those hits in the context of regions and gene
 predictions within them. Counts of genes from regions with tblastn
-hits are shown in Table \ref{table:tblastn-genes}. In a similar trend
-to Table \ref{table:tblastn-prots}, genes in regions with tblastn hits
+hits are shown in Figures~\ref{fig:blast-tatroviride},~\ref{fig:blast-fgraminarium},~\ref{fig:blast-scerevisiae}, and Table \ref{table:tblastn-genes}. In a similar trend
+to Table~\ref{table:tblastn-prots}, genes in regions with tblastn hits
 decrease as evolutionary distance increases. In DC1 and Tsth20, we
 observe that Braker2 predicts more genes in regions with tblastn hits
 than GeneMark. RefSeq is not included for DC1 and Tsth20, as there is
@@ -63,6 +63,30 @@ analysis. It is also possible that the post-alignment filtering
 criteria were inappropriate, resulting in short alignments that are
 true in nature, but may not be indicative of the presence of a truly
 similar protein.
+
+\begin{figure}[htp]
+  \centering
+  \begin{subfigure}[b]{0.75\textwidth}
+    \includegraphics[width=\textwidth]{figures/blast-tatroviride.pdf}
+    \caption{\textit{T. atroviride} tblastn hits}
+    \label{fig:blast-tatroviride}
+  \end{subfigure}
+  \par\medskip
+  \begin{subfigure}[b]{0.75\textwidth}
+    \includegraphics[width=\textwidth]{figures/blast-fgraminarium.pdf}
+    \caption{\textit{F. graminarium} tblastn hits}
+    \label{fig:blast-fgraminarium}
+  \end{subfigure}
+\end{figure}
+\begin{figure}[htp]
+  \centering
+  \ContinuedFloat
+  \includegraphics[width=0.75\textwidth]{figures/blast-scerevisiae.pdf}
+  \caption{\textit{S. cerevisiae} tblastn hits}
+  \label{fig:blast-scerevisiae}
+  \caption{tblastn hits for reference proteins from \textit{T. atroviride}, \textit{F. graminarium}, and \textit{S. cerevisiae} against \textit{Trichoderma} assemblies.}
+  \label{fig:blast-hits}
+\end{figure}
 
 \begin{table}
   \centering
