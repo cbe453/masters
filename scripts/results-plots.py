@@ -4,7 +4,48 @@ import numpy as np
 
 print("Hello world!")
 
-def blast_counts():
+def blast_total_counts():
+    # Data: [Fungus, DC1, Tsth20, T. reesei, T. harzianum, T. virens, Average]
+    data = [
+        ["T. atroviride", 11552, 11080, 10601, 11081, 11078],
+        ["F. graminarium", 10327, 10429, 10064, 10434, 10490],
+        ["S. cerevisiae", 3537, 3517, 3445, 3509, 3500]
+    ]
+
+    fungi = [row[0] for row in data]
+    braker2 = [row[1] for row in data]
+    genemark = [row[2] for row in data]
+    treesei = [row[3] for row in data]
+    tharzianum = [row[4] for row in data]
+    tvirens = [row[5] for row in data]
+
+    width = 0.13  # slightly narrower bars
+    gap = 0.03    # space between bars
+    x = np.arange(len(fungi))
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+    rects1 = ax.bar(x - 2*width - 2*gap, braker2, width, label='DC1')
+    rects2 = ax.bar(x - width - gap, genemark, width, label='Tsth20')
+    rects3 = ax.bar(x, treesei, width, label='T. reesei')
+    rects4 = ax.bar(x + width + gap, tharzianum, width, label='T. harzianum')
+    rects5 = ax.bar(x + 2*width + 2*gap, tvirens, width, label='T. virens')
+
+    ax.set_xticks(x)
+    ax.set_xticklabels(fungi, fontsize=14)
+    ax.set_ylabel('Counts (#)', fontsize=16)
+    ax.set_title('Total tblastn hits for selected Trichoderma assemblies ', fontsize=16)
+    ax.legend(fontsize=14)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    ax.bar_label(rects1, padding=3)
+    ax.bar_label(rects2, padding=3)
+    ax.bar_label(rects3, padding=3)
+    ax.bar_label(rects4, padding=3)
+    ax.bar_label(rects5, padding=3)
+    plt.tight_layout()
+    plt.show() 
+
+def blast_region_counts():
     # Data: [Fungus, Reference, Braker2, GeneMark, RefSeq]
     data = [
         ["DC1", "T. atroviride", 5902, 4679, None],
@@ -25,7 +66,8 @@ def blast_counts():
     ]
 
     refs_list = ["T. atroviride", "F. graminarium", "S. cerevisiae"]
-    width = 0.25
+    width = 0.22
+    gap = 0.04
 
     for ref in refs_list:
         ref_data = [row for row in data if row[1] == ref]
@@ -36,9 +78,9 @@ def blast_counts():
         x = np.arange(len(fungi))
 
         fig, ax = plt.subplots(figsize=(8, 6))
-        rects1 = ax.bar(x - width, braker2, width, label='Braker2')
+        rects1 = ax.bar(x - width - gap, braker2, width, label='Braker2')
         rects2 = ax.bar(x, genemark, width, label='GeneMark')
-        rects3 = ax.bar(x + width, refseq, width, label='RefSeq')
+        rects3 = ax.bar(x + width + gap, refseq, width, label='RefSeq')
 
         ax.set_xticks(x)
         ax.set_xticklabels(fungi, rotation=45, ha='right', fontsize=14)
@@ -49,7 +91,6 @@ def blast_counts():
         ax.set_ylabel('Counts (#)', fontsize=16)
         ax.legend(fontsize=14)
 
-        # Set y-limits to allow space for the legend
         ymax = max(max(braker2), max(genemark), max(refseq))
         ax.set_ylim(0, ymax * 1.15)
 
@@ -59,17 +100,17 @@ def blast_counts():
         plt.show()
 
 def basic_counts():
-    width = 0.25
+    width = 0.22
+    gap = 0.04
     fungiNames = ["DC1", "Tsth20", "T. reesei", "T. harzianum", "T.virens"]
     toolNames = ["Braker2", "GeneMark", "RefSeq"]
     x = np.arange(len(fungiNames))
-    multiplier = 0
 
-    #geneData = {
-    #    'Braker2': (8546, 8784, 9659, 8314, 7801),
-    #    'GeneMark': (11353, 12362, 9196, 12164, 11866),
-    #    'RefSeq': (0, 0, 9109, 14269, 12405)
-    #}
+    geneData = {
+        'Braker2': (8546, 8784, 9659, 8314, 7801),
+        'GeneMark': (11353, 12362, 9196, 12164, 11866),
+        'RefSeq': (0, 0, 9109, 14269, 12405)
+    }
 
     cdsData = {
         'Braker2': (8637, 8858, 10175, 8385, 7863),
@@ -83,52 +124,32 @@ def basic_counts():
         'size'   : 12}
     plt.rc('font', **font)
 
-    for attribute, measurement in cdsData.items():
+    offsets = [-width-gap, 0, width+gap]
+    for i, (attribute, measurement) in enumerate(geneData.items()):
         print(attribute, measurement)
-        offset = width * multiplier
-        rects = ax.bar(x + offset, measurement, width, label=attribute)
+        rects = ax.bar(x + offsets[i], measurement, width, label=attribute)
         ax.bar_label(rects, padding=3)
-        multiplier += 1
     
     ax.set_ylabel('Counts (#)')
     ax.set_title('Coding sequences predicted by different gene finding tools')
-    ax.set_xticks(x + width, fungiNames)
+    ax.set_xticks(x)
+    ax.set_xticklabels(fungiNames)
     ax.legend(loc='upper left', ncols=3)
     ax.set_ylim(0, 15500)
     plt.xticks(fontsize=16)
     plt.yticks(fontsize=16)
-    ax.set_title('Number of coding sequences predicted by different gene finding tools in Trichoderma assemblies', fontsize=16)
+    ax.set_title('Number of genes predicted', fontsize=16)
     ax.set_ylabel('Counts (#)', fontsize=16)
     ax.legend(loc='upper left', ncols=3, fontsize=16)
 
     plt.show()
 
-    #dc1Genes = [8546, 11353, 0] 
-    #dc1CDS = [8637, 11353, 0]
-    #tsth20Genes = [8784, 12362, 0]
-    #tsth20CDS = [8858, 12362, 0]
-    #treeseiGenes = [9659, 9196, 9109]
-    #treeseiCDS = [10175, 9196, 9118]
-    #tharizianumGenes = [8314, 12164, 14269]
-    #tharizianumCDS = [8385, 12164, 14090]
-    #tvirensGenes = [7801, 11866, 12405]
-    #tvirensCDS = [7863, 11866, 12406]
-    #'DC1': (546, 11353, 0),
-    #'Tsth20': (8784, 12362, 0),
-    #'T. reesei': (9659, 9196, 9109),
-    #'T. harzianum': (8314, 12164, 14269),
-    #'T. virens': (7801, 11866, 12405)
-    #'DC1': (8637, 11353, 0),
-    #'Tsth20': (8858, 12362, 0),
-    #'T. reesei': (10175, 9196, 9118),
-    #'T. harzianum': (8385, 12164, 14090),
-    #'T. virens': (7863, 11866, 12406)
-
 def main():
     ### gene/CDS counts
-    #basic_counts()
+    basic_counts()
     ### BLAST counts
-    blast_counts()
+    #blast_region_counts()
+    #blast_total_counts()
 
 if __name__ == "__main__":
     print("This is a script for generating result plots.")

@@ -7,7 +7,7 @@ assembly. The organisms and their associated NCBI accession IDs are as
 follows: \textit{T. atroviride} - GCF\_000171015.1,
 \textit{F. graminarium} - GCF\_000240135.3, \textit{S. cerevisiae} -
 GCF\_000146045.2.  Results from the tblastn runs are presented in
-Table \ref{table:tblastn-prots}. Initial tblastn results appear
+Figure~\ref{fig:blast-total-counts} and Table \ref{table:tblastn-prots}. Initial tblastn results appear
 promising for both the \textit{T. atroviride} and \textit{Fusarium}
 datasets. All assemblies considered contain at minimum 89\% of the
 reference protein sequences in the case of \textit{T. atroviride} and
@@ -18,6 +18,12 @@ evolutionary distance increases. These results provide rough
 validation that the assemblies contain potential for protein coding
 sequences.
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.85\textwidth]{figures/blast-total-counts.pdf}
+  \caption[Total tblast hits]{Total tblastn hits for reference proteins from \textit{T. atroviride}, \textit{F. graminarium}, and \textit{S. cerevisiae} against \textit{Trichoderma} assemblies.}
+  \label{fig:blast-total-counts}
+\end{figure}
 
 \begin{table}
   \centering
@@ -66,24 +72,25 @@ similar protein.
 
 \begin{figure}[htp]
   \centering
-  \begin{subfigure}[b]{0.75\textwidth}
+  \begin{subfigure}[b]{0.85\textwidth}
     \includegraphics[width=\textwidth]{figures/blast-tatroviride.pdf}
     \caption{\textit{T. atroviride} tblastn hits}
     \label{fig:blast-tatroviride}
   \end{subfigure}
   \par\medskip
-  \begin{subfigure}[b]{0.75\textwidth}
+  \begin{subfigure}[b]{0.85\textwidth}
     \includegraphics[width=\textwidth]{figures/blast-fgraminarium.pdf}
     \caption{\textit{F. graminarium} tblastn hits}
     \label{fig:blast-fgraminarium}
   \end{subfigure}
 \end{figure}
-\begin{figure}[htp]
+\begin{figure}[htp]\ContinuedFloat
   \centering
-  \ContinuedFloat
-  \includegraphics[width=0.75\textwidth]{figures/blast-scerevisiae.pdf}
-  \caption{\textit{S. cerevisiae} tblastn hits}
-  \label{fig:blast-scerevisiae}
+  \begin{subfigure}[b]{0.85\textwidth}
+    \includegraphics[width=\textwidth]{figures/blast-scerevisiae.pdf}
+    \caption{\textit{S. cerevisiae} tblastn hits}
+    \label{fig:blast-scerevisiae}
+  \end{subfigure}
   \caption{tblastn hits for reference proteins from \textit{T. atroviride}, \textit{F. graminarium}, and \textit{S. cerevisiae} against \textit{Trichoderma} assemblies.}
   \label{fig:blast-hits}
 \end{figure}
