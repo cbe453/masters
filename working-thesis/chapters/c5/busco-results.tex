@@ -1,7 +1,7 @@
 \section{BUSCO Results}
 \label{section:busco}
 
-Results of BUSCO analysis using the sordariomycetes\_Odb12 dataset provided by BUSCO are presented in Table~\ref{table:busco}. The results 
+Results of BUSCO analysis using the sordariomycetes\_Odb12 dataset provided by BUSCO are presented in Figure~\ref{fig:busco-complete}, Figure~\ref{fig:busco-missing}, and Table~\ref{table:busco}. The results 
 indicate that all gene sets considered in this analysis have a BUSCO
 completeness of 94.9\% or higher, with a maximum completeness of
 99.9\% in the case of Braker2 and DC1. In general, Braker2 and RefSeq have the
@@ -17,6 +17,20 @@ well in regards to BUSCO performance. While these results do not
 capture the entire set of genes possibly present in these
 \textit{Trichoderma} assemblies, they do confirm that the gene finders
 are at minimum predicting many evolutionarily conserved fungal genes.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.90\textwidth]{figures/busco-complete-counts.pdf}
+  \caption[Complete BUSCO counts]{Barplot showing the number of complete BUSCOs for each gene finder across all \textit{Trichoderma} genome assemblies. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0. The dashed line indicates the total number of BUSCO markers in the selected dataset (4323).}
+  \label{fig:busco-complete}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.90\textwidth]{figures/busco-missing-counts.pdf}
+  \caption[Missing BUSCO counts]{Barplot showing the number of missing BUSCOs for each gene finder across all \textit{Trichoderma} genome assemblies. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0. The dashed line indicates the total number of BUSCO markers in the selected dataset (4323).}
+  \label{fig:busco-missing}
+\end{figure}
 
 \begin{table}
   \begin{center}

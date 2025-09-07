@@ -1,7 +1,7 @@
 \section{Genes in Regions of Anomalous GC Content}
 \label{section:gc-regions}
 
-Table \ref{table:gc-regions} shows the results of applying the same
+Figure~\ref{fig:gc-regions} and Table \ref{table:gc-regions} shows the results of applying the same
 region finding process from earlier to segments of the genome
 identified as AT-rich. AT-rich is defined as a region of genomic
 sequence with percent GC composition less than 28\% as determined in
@@ -26,6 +26,12 @@ predictions. These observations differ greatly from those made in
 nucleotide composition agnostic approach in Section
 \ref{section:regions}.
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.90\textwidth]{figures/atrich-regions-barplot.pdf}
+  \caption{Regions of full and partial agreement as well as singleton regions in AT-rich genomic sequence. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2 and as such, there are no regions with partial support.}
+\end{figure}
+
 \begin{table}
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|}
@@ -38,9 +44,7 @@ nucleotide composition agnostic approach in Section
       \textit{T. virens} & 8 & 11 & 0 & 49  \\ \hline
     \end{tabular}
   \end{center}
-  \caption[Agreement of predictions in anomalous GC regions.]{Total
-    number of regions identified in each assembly followed by counts
-    of regions (both agreement and singletons) in regions of AT-rich
+  \caption[Agreement of predictions in anomalous GC regions.]{Regions of full and partial agreement as well as singleton regions in AT-rich
     genomic sequence. It is important to note that in the cases of DC1
     and Tsth20, full support indicates supporting gene predictions
     from both GeneMark and Braker2.}
@@ -54,7 +58,7 @@ genomic sequence with varying nucleotide content, may predict genes
 differently to an HMM trained only on sequences with uniformly
 distributed nucleotide composition as the variation in nucleotide
 composition may affect the various states and relationships between
-them in an HMM. Table \ref{table:gc-gene-counts} shows the number of
+them in an HMM. Figure~\ref{fig:gc-gene-counts} and Table \ref{table:gc-gene-counts} shows the number of
 genes predicted by each gene finding tool in regions of AT-rich
 genomic sequence. GeneMark appears to predict the fewest genes in
 AT-rich regions, while RefSeq appears to predict the most. Braker2
@@ -62,6 +66,13 @@ lies somewhere in the middle. Again, \textit{T. virens} appears as an
 odd case, with very few predictions from all gene finders. Why
 \textit{T. virens} differs from the other RefSeq assemblies is
 unclear.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.90\textwidth]{figures/atrich-genes-barplot.pdf}
+  \caption{Number of genes predicted by each gene finder in AT-rich genomic sequence.}
+  \label{fig:gc-gene-counts}
+\end{figure}
 
 \begin{table}
   \begin{center}
@@ -76,9 +87,7 @@ unclear.
     \end{tabular}
   \end{center}
   \caption{Number of genes predicted by Braker2, GeneMark and RefSeq
-    in AT-rich genomic sequence from each assembly. It is important to
-    note that in the cases of DC1 and Tsth20, full support indicates
-    supporting gene predictions from both GeneMark and Braker2.}
+    in AT-rich genomic sequence from each assembly.}
   \label{table:gc-gene-counts}
 \end{table}
 

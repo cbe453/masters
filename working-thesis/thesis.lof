@@ -18,12 +18,17 @@
 \contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots part 1.}}{34}{figure.caption.27}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces CDF plots part 2.}}{35}{figure.caption.28}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces CDF plots part 3.}}{36}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Breakdown of identified regions}}{41}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Example of a region with many gene calls}}{42}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Predictions on opposing strands}}{43}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Agreeing Pfam matches}}{44}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Split Pfam matches}}{45}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces RefSeq absence with IPS evidence}}{46}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Total tblast hits}}{47}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces tblastn hits for reference proteins from \textit {T. atroviride}, \textit {F. graminarium}, and \textit {S. cerevisiae} against \textit {Trichoderma} assemblies.}}{49}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Complete BUSCO counts}}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Missing BUSCO counts}}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Breakdown of identified regions}}{43}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Example of a region with many gene calls}}{44}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Predictions on opposing strands}}{45}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Percentage of proteins with Pfam matches}}{46}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Agreeing Pfam matches}}{47}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Split Pfam matches}}{48}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces RefSeq absence with IPS evidence}}{49}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Total tblast hits}}{49}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces tblastn hits for reference proteins from \textit {T. atroviride}, \textit {F. graminarium}, and \textit {S. cerevisiae} against \textit {Trichoderma} assemblies. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0.}}{52}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Regions of full and partial agreement as well as singleton regions in AT-rich genomic sequence. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2 and as such, there are no regions with partial support.}}{53}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Number of genes predicted by each gene finder in AT-rich genomic sequence.}}{54}{figure.caption.50}%
 \addvspace {10\p@ }

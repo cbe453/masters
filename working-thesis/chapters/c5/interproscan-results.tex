@@ -1,7 +1,7 @@
 \section{InterProScan as Supporting Evidence for Predicted Genes}
 \label{section:interproscan}
 
-Pfam hits from InterProScan analysis are presented in Table
+Pfam hits from InterProScan analysis are presented in Figure~\ref{fig:ips-counts} and Table
 ~\ref{table:ips-pfam}, from which we can identify one major trend. In
 general, roughly 73-76\% of proteins predicted by Braker2, GeneMark
 and RefSeq contain a match to a Pfam entry, except in the case of
@@ -26,6 +26,13 @@ the start and end position of the Pfam match in the protein
 sequence. For example, if a Pfam match has a start position 10 amino
 acids into the protein sequence, the corresponding start position in
 the resulting GFF is 10bp downstream from the start of the gene.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.90\textwidth]{figures/interproscan-barplot.pdf}
+  \caption[Percentage of proteins with Pfam matches]{Barplot showing the percentage of predicted proteins with Pfam matches from InterProScan for each gene finder across all \textit{Trichoderma} genome assemblies. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0.}
+  \label{fig:ips-counts}
+\end{figure}
 
 \begin{table}[h!]
   \centering
