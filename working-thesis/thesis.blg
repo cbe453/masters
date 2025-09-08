@@ -14,56 +14,53 @@ A level-1 auxiliary file: chapter-5.aux
 Reallocating 'name_of_file' (item size: 1) to 14 items.
 A level-1 auxiliary file: chapter-6.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
-The style file: plain.bst
+The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: ./refs/full-bib.bib
 Warning--I didn't find a database entry for "Gurevich2013"
 Warning--I didn't find a database entry for "ref1"
 Warning--I didn't find a database entry for "Wright2022"
 Warning--I didn't find a database entry for "Altschul1990"
-Warning--to sort, need author or key in zotero-item-367
-Warning--to sort, need author or key in zotero-item-326
-Warning--to sort, need author or key in 2008
 Warning--empty author in 2008
 You've used 51 entries,
-            2118 wiz_defined-function locations,
-            808 strings with 15631 characters,
-and the built_in function-call counts, 21901 in all, are:
-= -- 2008
-> -- 1549
+            1791 wiz_defined-function locations,
+            757 strings with 15157 characters,
+and the built_in function-call counts, 13970 in all, are:
+= -- 1095
+> -- 945
 < -- 5
-+ -- 615
-- -- 561
-* -- 1980
-:= -- 3760
++ -- 334
+- -- 283
+* -- 1265
+:= -- 2326
 add.period$ -- 152
 call.type$ -- 51
-change.case$ -- 431
+change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 55
-duplicate$ -- 586
-empty$ -- 1358
-format.name$ -- 561
-if$ -- 4294
+cite$ -- 52
+duplicate$ -- 484
+empty$ -- 1197
+format.name$ -- 283
+if$ -- 2937
 int.to.chr$ -- 0
 int.to.str$ -- 51
 missing$ -- 46
 newline$ -- 253
-num.names$ -- 102
-pop$ -- 380
+num.names$ -- 54
+pop$ -- 92
 preamble$ -- 1
-purify$ -- 380
+purify$ -- 0
 quote$ -- 0
-skip$ -- 417
+skip$ -- 221
 stack$ -- 0
-substring$ -- 1230
+substring$ -- 972
 swap$ -- 84
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 204
-warning$ -- 4
-while$ -- 176
+type$ -- 0
+warning$ -- 1
+while$ -- 128
 width$ -- 53
 write$ -- 549
-(There were 8 warnings)
+(There were 5 warnings)

@@ -568,7 +568,7 @@
 
 \academicunit{Applied Computing} 
 \department{Computer Science}
-\author{Connor Burbridge, Dave Schneider, Tony Kusalik}
+\author{Connor Burbridge}
 \title{Comparative analysis of Gene Finding tools when applied to
   \textit{Trichoderma} genomes}
 \degree{\MSc}

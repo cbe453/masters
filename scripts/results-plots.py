@@ -24,8 +24,8 @@ def at_counts():
 
     ax.set_xticks(x)
     ax.set_xticklabels(assemblies, fontsize=14)
-    ax.set_ylabel('Number of Genes', fontsize=16)
-    ax.set_title('Regions of Gene Predictions in AT-rich Sequence', fontsize=16)
+    ax.set_ylabel('Number of regions', fontsize=16)
+    ax.set_title('Regions of gene predictions in AT-rich sequence', fontsize=16)
     ax.legend(loc='upper right', fontsize=12)
     ax.bar_label(rects1, padding=3)
     ax.bar_label(rects2, padding=3)
@@ -51,8 +51,8 @@ def at_counts():
 
     ax.set_xticks(x)
     ax.set_xticklabels(assemblies, fontsize=14)
-    ax.set_ylabel('Counts (#)', fontsize=16)
-    ax.set_title('Counts of genes in AT-rich sequence by Assembly and Tool', fontsize=16)
+    ax.set_ylabel('Number of genes', fontsize=16)
+    ax.set_title('Counts of genes in AT-rich sequence by assembly and tool', fontsize=16)
     ax.legend(fontsize=14)
     ax.bar_label(rects1, padding=3)
     ax.bar_label(rects2, padding=3)
@@ -65,71 +65,102 @@ def at_counts():
 def busco_counts():
     import matplotlib.pyplot as plt
 
-    # Data for each tool
-    strains_braker2 = ["DC1", "Tsth20", "T. reesei", "T. harzianum", "T. virens"]
-    complete_braker2 = [4319, 4309, 4269, 4309, 4309]
-    fragmented_braker2 = [2, 6, 27, 6, 7]
-    missing_braker2 = [2, 8, 27, 8, 7]
+    # Data extracted from the table
+    strains = [
+        "DC1", "Tsth20", "T. reesei", "T. harzianum", "T. virens",
+        "DC1", "Tsth20", "T. reesei", "T. harzianum", "T. virens",
+        "T. reesei", "T. harzianum", "T. virens"
+    ]
+    tools = [
+        "Braker2", "Braker2", "Braker2", "Braker2", "Braker2",
+        "GeneMark", "GeneMark", "GeneMark", "GeneMark", "GeneMark",
+        "RefSeq", "RefSeq", "RefSeq"
+    ]
+    complete = [
+        4419, 4416, 4321, 4408, 4409,
+        4415, 4409, 4351, 4399, 4391,
+        4274, 4383, 4345
+    ]
+    fragmented = [
+        40, 42, 80, 49, 53,
+        43, 47, 69, 53, 61,
+        112, 60, 92
+    ]
+    missing = [
+        33, 34, 91, 35, 30,
+        34, 36, 72, 40, 40,
+        106, 49, 55
+    ]
 
-    strains_genemark = ["DC1", "Tsth20", "T. reesei", "T. harzianum", "T. virens"]
-    complete_genemark = [4313, 4304, 4297, 4301, 4301]
-    fragmented_genemark = [7, 10, 11, 11, 11]
-    missing_genemark = [3, 9, 15, 11, 11]
+    # Unique strains for x-axis
+    unique_strains = ["DC1", "Tsth20", "T. reesei", "T. harzianum", "T. virens"]
+    tool_order = ["Braker2", "GeneMark", "RefSeq"]
 
-    # RefSeq only for T. reesei, T. harzianum, T. virens
-    strains_refseq = ["T. reesei", "T. harzianum", "T. virens"]
-    complete_refseq = [4102, 4244, 4174]
-    fragmented_refseq = [159, 52, 116]
-    missing_refseq = [62, 27, 33]
+    # Colors to match other plots
+    tool_colors = {
+        "Braker2": "#1f77b4",   # blue
+        "GeneMark": "#ff7f0e",  # orange
+        "RefSeq": "#2ca02c"     # green
+    }
 
+    # Prepare data for grouped bar plot (Complete)
+    complete_data = {tool: [] for tool in tool_order}
+    for strain in unique_strains:
+        for tool in tool_order:
+            # Find index
+            for i, (s, t) in enumerate(zip(strains, tools)):
+                if s == strain and t == tool:
+                    complete_data[tool].append(complete[i])
+                    break
+            else:
+                complete_data[tool].append(0)  # If not found (RefSeq for DC1/Tsth20)
+
+    x = np.arange(len(unique_strains))
     width = 0.22
-    gap = 0.08
+    gap = 0.04
+    offsets = [-width-gap, 0, width+gap]
 
-    # Calculate positions with gaps
-    x = np.arange(len(strains_braker2))
-    x_braker2 = x - width - gap
-    x_genemark = x
-    x_refseq = x[2:] + width + gap
-
-    # Plot 1: Complete BUSCOs
-    fig, ax = plt.subplots(figsize=(8, 6))
-    rects1 = ax.bar(x_braker2, complete_braker2, width, label='Braker2')
-    rects2 = ax.bar(x_genemark, complete_genemark, width, label='GeneMark')
-    rects3 = ax.bar(x_refseq, complete_refseq, width, label='RefSeq')
-
+    fig, ax = plt.subplots(figsize=(10, 6))
+    for i, tool in enumerate(tool_order):
+        rects = ax.bar(x + offsets[i], complete_data[tool], width, label=tool, color=tool_colors[tool])
+        ax.bar_label(rects, padding=3, fontsize=10)
     ax.set_xticks(x)
-    ax.set_xticklabels(strains_braker2, fontsize=14)
-    ax.set_ylabel('Complete BUSCOs', fontsize=16)
-    ax.set_title('Complete BUSCO counts by tool and strain', fontsize=16)
-    ax.legend(loc='upper right', ncol=3, fontsize=14)
-    ax.bar_label(rects1, padding=3)
-    ax.bar_label(rects2, padding=3)
-    ax.bar_label(rects3, padding=3)
-    ax.set_ylim(0, 5000)
-    # Add transparent horizontal line at 4323
-    ax.axhline(4323, color='black', linestyle='--', linewidth=2, alpha=0.3)
+    ax.set_xticklabels(unique_strains, fontsize=14)
+    ax.set_ylabel('Number of Complete BUSCOs', fontsize=14)
+    ax.set_title('Complete BUSCO counts by strain and tool', fontsize=14)
+    ax.legend(loc='upper left', ncol=3, fontsize=14)
+    plt.ylim(0, 5500)
     plt.tight_layout()
+    plt.yticks(fontsize=14)
     plt.show()
 
-    # Plot 2: Fragmented and Missing BUSCOs
-    fig, ax = plt.subplots(figsize=(8, 6))
-    # Fragmented
-    rects1 = ax.bar(x_braker2, fragmented_braker2, width, label='Braker2 - Fragmented')
-    rects2 = ax.bar(x_genemark, fragmented_genemark, width, label='GeneMark - Fragmented')
-    # Use correct order for RefSeq fragmented values
-    rects3 = ax.bar(x_refseq, fragmented_refseq, width, label='RefSeq - Fragmented')
-    # Missing
-    rects4 = ax.bar(x_braker2, missing_braker2, width, bottom=fragmented_braker2, label='Braker2 - Missing')
-    rects5 = ax.bar(x_genemark, missing_genemark, width, bottom=fragmented_genemark, label='GeneMark - Missing')
-    # Use correct order for RefSeq missing values
-    rects6 = ax.bar(x_refseq, missing_refseq, width, bottom=fragmented_refseq, label='RefSeq - Missing')
+    # Prepare data for stacked bar plot (Fragmented + Missing)
+    frag_data = {tool: [] for tool in tool_order}
+    miss_data = {tool: [] for tool in tool_order}
+    for strain in unique_strains:
+        for tool in tool_order:
+            for i, (s, t) in enumerate(zip(strains, tools)):
+                if s == strain and t == tool:
+                    frag_data[tool].append(fragmented[i])
+                    miss_data[tool].append(missing[i])
+                    break
+            else:
+                frag_data[tool].append(0)
+                miss_data[tool].append(0)
 
+    fig, ax = plt.subplots(figsize=(10, 6))
+    for i, tool in enumerate(tool_order):
+        rects_frag = ax.bar(x + offsets[i], frag_data[tool], width, label=f'{tool} Fragmented', color=tool_colors[tool])
+        rects_miss = ax.bar(x + offsets[i], miss_data[tool], width, bottom=frag_data[tool], label=f'{tool} Missing', color=tool_colors[tool], alpha=0.4)
+        ax.bar_label(rects_frag, padding=3, fontsize=10)
+        ax.bar_label(rects_miss, padding=3, fontsize=10)
     ax.set_xticks(x)
-    ax.set_xticklabels(strains_braker2, fontsize=14)
-    ax.set_ylabel('Fragmented & Missing BUSCOs', fontsize=16)
-    ax.set_title('Fragmented and Missing BUSCO counts by tool and strain', fontsize=16)
-    ax.legend(loc='upper left', fontsize=12, ncol=1)
+    ax.set_xticklabels(unique_strains, fontsize=14)
+    ax.set_ylabel('Number of BUSCOs', fontsize=14)
+    ax.set_title('Fragmented and missing BUSCOs by strain and tool', fontsize=14)
+    ax.legend(loc='upper left', ncol=1, fontsize=14)
     plt.tight_layout()
+    plt.yticks(fontsize=14)
     plt.show()
 
 def interproscan_counts():
@@ -151,7 +182,7 @@ def interproscan_counts():
     ax.set_xticks(x)
     ax.set_xticklabels(assemblies, fontsize=14)
     ax.set_ylabel('Pfam matches (%)', fontsize=16)
-    ax.set_title('InterProScan annotation percentages by assembly and tool', fontsize=16)
+    ax.set_title('Percentage of proteins with Pfam matches by assembly and tool', fontsize=16)
     ax.legend(fontsize=14)
     ax.bar_label(rects1, padding=3)
     ax.bar_label(rects2, padding=3)
@@ -191,7 +222,7 @@ def blast_total_counts():
 
     ax.set_xticks(x)
     ax.set_xticklabels(fungi, fontsize=14)
-    ax.set_ylabel('Counts (#)', fontsize=16)
+    ax.set_ylabel('Number of hits', fontsize=16)
     ax.set_title('Total tblastn hits for selected Trichoderma assemblies ', fontsize=16)
     ax.legend(fontsize=14)
     plt.xticks(fontsize=14)
@@ -243,12 +274,12 @@ def blast_region_counts():
 
         ax.set_xticks(x)
         ax.set_xticklabels(fungi, rotation=45, ha='right', fontsize=14)
-        ax.set_title(f'BLAST hits to {ref}', fontsize=16)
+        ax.set_title(f'Number of transcripts in regions with {ref} tblastn hits', fontsize=16)
         ax.bar_label(rects1, padding=3)
         ax.bar_label(rects2, padding=3)
         ax.bar_label(rects3, padding=3)
-        ax.set_ylabel('Counts (#)', fontsize=16)
-        ax.legend(fontsize=14)
+        ax.set_ylabel('Number of transcripts', fontsize=16)
+        ax.legend(fontsize=14, ncol=3, loc='upper left')
 
         ymax = max(max(braker2), max(genemark), max(refseq))
         ax.set_ylim(0, ymax * 1.15)
@@ -280,38 +311,36 @@ def basic_counts():
     fig, ax = plt.subplots(layout='constrained')
     font = {'family' : 'normal',
         'weight' : 'normal',
-        'size'   : 12}
+        'size'   : 14}
     plt.rc('font', **font)
 
     offsets = [-width-gap, 0, width+gap]
     for i, (attribute, measurement) in enumerate(geneData.items()):
         print(attribute, measurement)
         rects = ax.bar(x + offsets[i], measurement, width, label=attribute)
-        ax.bar_label(rects, padding=3)
+        ax.bar_label(rects, padding=3, fontsize=10)  # <-- smaller labels
     
-    ax.set_ylabel('Counts (#)')
-    ax.set_title('Coding sequences predicted by different gene finding tools')
     ax.set_xticks(x)
     ax.set_xticklabels(fungiNames)
     ax.legend(loc='upper left', ncols=3)
     ax.set_ylim(0, 15500)
-    plt.xticks(fontsize=16)
-    plt.yticks(fontsize=16)
-    ax.set_title('Number of genes predicted', fontsize=16)
-    ax.set_ylabel('Counts (#)', fontsize=16)
-    ax.legend(loc='upper left', ncols=3, fontsize=16)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    ax.set_title('Number of genes predicted by different tools', fontsize=14)
+    ax.set_ylabel('Number of genes', fontsize=14)
+    ax.legend(loc='upper left', ncols=3, fontsize=14)
 
     plt.show()
 
 def main():
     ### gene/CDS counts
-    #basic_counts()
+    basic_counts()
     ### BLAST counts
     #blast_region_counts()
     #blast_total_counts()
     #interproscan_counts()
     #busco_counts()
-    at_counts()
+    #at_counts()
 
 if __name__ == "__main__":
     print("This is a script for generating result plots.")

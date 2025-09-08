@@ -256,7 +256,8 @@ GCF\_000167675.1\_v2.0, GCF\_003025095.1\_Triha\_v1.0, and
 GCF\_000170995.1\_TRIVI\_v2.0, respectively. \textit{T. reesei} was
 selected as it is the most well-studied \textit{Trichoderma} species,
 and widely considered to be the gold-standard for \textit{Trichoderma}
-genomes~\cite{gupta2016}. \textit{T. harzianum} and \textit{T. virens} were selected as additional datasets due to their prevalence in literature as well.
+genomes~\cite{gupta2016}. \textit{T. harzianum} and \textit{T. virens} were selected as additional datasets due to their prevalence in literature as well. It is important to note that while RefSeq is considered a high-quality
+dataset, we did not use it as a ground truth in this case, but rather an additional point of comparison as it it possible that RefSeq annotations may also contain errors or omissions. This aligns with the method of region identification used later in this work, which is aimed to be a generic and adaptable method of comparing gene predictions, or any feature in GFF3 format, from multiple sources.
 
 The second set of selected inputs were RNAseq datasets from 
 \textit{T. reesei}, used as input in the training process for
