@@ -11,7 +11,7 @@ discussed in more detail in Sections \ref{met:seq-workflow},
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{figures/workflow-simple.pdf}
-  \caption{A simplified workflow used in this work. Each processing
+  \caption[Workflow overview]{A simplified workflow used in this work. Each processing
     stage is is represented by an octagon, and the flow of data are
     indicated by directed edges between them. In this figure and
     subsequent figures, the sequence processing stage is coloured
@@ -73,7 +73,7 @@ process is described later in Section~\ref{met:atrich}.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/assembly-met.pdf}
-  \caption{A workflow (in brown) depicting the steps taken to process
+  \caption[Sequence assembly and processing workflow]{A workflow (in brown) depicting the steps taken to process
     input sequences, generate assemblies, and post-process those
     assemblies for use in other workflows. Processing steps are
     represented by boxes, datasets of interest that were produced by
@@ -144,7 +144,7 @@ explained below.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/dc1-low-gc-fastqc.png}
-  \caption{A plot of GC content of Illumina sequences generated for
+  \caption[GC content distribution for DC1]{A plot of GC content of Illumina sequences generated for
     DC1. The X-axis indicates mean GC content of sequences while the
     Y-axis indicates the total number of sequences for a given mean GC
     content. A theoretical normal distribution is overlaid in blue.}
@@ -226,7 +226,7 @@ process used to examine CDSs is described in Subsection \ref{met:cds-stats}.
   \makebox[0pt]{
     \includegraphics[width=\textwidth]{figures/gene-finding-met.pdf}
   }
-  \caption{A workflow (green) depicting the steps taken to predict
+  \caption[Gene prediction workflow]{A workflow (green) depicting the steps taken to predict
     genes for use in other workflows and process CDS sequence
     lengths. Processing steps are represented by boxes, datasets of
     interest that were produced by this work are represented by
@@ -368,7 +368,7 @@ identification workflow later.
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{figures/eval-met.pdf}
-  \caption{A workflow (yellow) depicting the steps taken to evaluate
+  \caption[Gene evaluation and validation workflow]{A workflow (yellow) depicting the steps taken to evaluate
     and validate predicted genes. Processing steps are represented by
     boxes, datasets of interest that were produced by this work are
     represented by folders, and datasets that were not produced in
@@ -433,7 +433,7 @@ in Section~\ref{section:igv-met}
 \begin{figure}
   \centering
   \makebox[0pt]{\includegraphics[width=1.2\textwidth]{figures/region-workflow.pdf}}
-  \caption{An overview of the region identification process for
+  \caption[Region identification workflow]{An overview of the region identification process for
     different datasets. Sections of the graph are outlined with
     rounded rectangles, indicating that the datasets within were processed
     along with gene calls and discussed in their own results
