@@ -1,18 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Saitou1987}
-N~Saitou and M~Nei.
-\newblock The neighbor-joining method: A new method for reconstructing
-  phylogenetic trees.
-\newblock {\em Molecular Biology and Evolution}, 4(4):406--425, July 1987.
-
-\bibitem{Felsenstein1985}
-Joseph Felsenstein.
-\newblock {{CONFIDENCE LIMITS ON PHYLOGENIES}}: {{AN APPROACH USING THE
-  BOOTSTRAP}}.
-\newblock {\em Evolution; International Journal of Organic Evolution},
-  39(4):783--791, July 1985.
-
 \bibitem{woo2023a}
 Sheridan~L. Woo, Rosa Hermosa, Matteo Lorito, and Enrique Monte.
 \newblock Trichoderma: A multipurpose, plant-beneficial microorganism for
@@ -97,6 +84,19 @@ Xiao-Ya An, Guo-Hui Cheng, Han-Xing Gao, Xue-Fei Li, Yang Yang, Dan Li, and
   {{Green Mold Disease}} on {{Mushrooms}} and {{Two New Pathogens}} on
   {{Ganoderma}} sichuanense.
 \newblock {\em Journal of Fungi}, 8(7):704, July 2022.
+
+\bibitem{Saitou1987}
+N~Saitou and M~Nei.
+\newblock The neighbor-joining method: A new method for reconstructing
+  phylogenetic trees.
+\newblock {\em Molecular Biology and Evolution}, 4(4):406--425, July 1987.
+
+\bibitem{Felsenstein1985}
+Joseph Felsenstein.
+\newblock {{CONFIDENCE LIMITS ON PHYLOGENIES}}: {{AN APPROACH USING THE
+  BOOTSTRAP}}.
+\newblock {\em Evolution; International Journal of Organic Evolution},
+  39(4):783--791, July 1985.
 
 \bibitem{loftus2003a}
 Brendan Loftus.
