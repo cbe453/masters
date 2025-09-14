@@ -27,21 +27,21 @@
 \contentsline {chapter}{\numberline {4}Data and Methodology}{14}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Methodology Overview}{14}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Sequence Processing and Assembly Workflow}{14}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Sequence Pre-processing and Assembly}{14}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Sequence Pre-processing and Assembly}{17}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Identifying AT-rich Genomic Sequence}{17}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Overview of Gene Prediction and Further Processing}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Overview of Gene Prediction and Further Processing}{19}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Selection of Datasets from NCBI}{19}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Gene Prediction Using GeneMark-ES}{21}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Gene Prediction Using Braker2}{21}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Statistical Analysis of CDS Lengths}{21}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Overview of Evaluation and Validation of Gene Predictions}{21}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Overview of Evaluation and Validation of Gene Predictions}{22}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Evaluating Gene-Finder Performance Using BUSCO}{22}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Functional Annotation Using InterProScan}{23}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Ground-truthing with the Basic Local Alignment Search Tool (BLAST)}{23}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Region Identification Overview}{23}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Region Identification Algorithm}{25}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Regions in AT-rich Genomic Sequence}{25}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Visualization of Identified Regions}{25}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.4.2}Functional Annotation Using InterProScan}{22}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Ground-truthing with the Basic Local Alignment Search Tool (BLAST)}{24}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Region Identification Overview}{24}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Region Identification Algorithm}{24}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Regions in AT-rich Genomic Sequence}{26}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Visualization of Identified Regions}{26}{subsection.4.5.3}%
 \contentsline {chapter}{\numberline {5}Results and Discussion}{28}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Overview}{28}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Assemblies of DC1 and Tsth20}{28}{section.5.2}%

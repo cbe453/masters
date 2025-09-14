@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  13 SEP 2025 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  14 SEP 2025 13:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -745,12 +745,12 @@ Underfull \vbox (badness 4543) has occurred while \output is active []
 
 
 [4]
-<figures/trichoderma-phylogeny-few-outgroups.pdf, id=493, 598.235pt x 630.355pt>
+<figures/trichoderma-phylogeny-few-outgroups.pdf, id=494, 598.235pt x 630.355pt>
 File: figures/trichoderma-phylogeny-few-outgroups.pdf Graphic file (type pdf)
 <use figures/trichoderma-phylogeny-few-outgroups.pdf>
 Package pdftex.def Info: figures/trichoderma-phylogeny-few-outgroups.pdf  used on input line 55.
 (pdftex.def)             Requested size: 472.03123pt x 497.37865pt.
-<figures/gene-model-fig-msc.png, id=502, 680.871pt x 190.311pt>
+<figures/gene-model-fig-msc.png, id=503, 680.871pt x 190.311pt>
 File: figures/gene-model-fig-msc.png Graphic file (type png)
 <use figures/gene-model-fig-msc.png>
 Package pdftex.def Info: figures/gene-model-fig-msc.png  used on input line 80.
@@ -791,7 +791,7 @@ Chapter 4.
 (chapters/c4/methodology.tex
 
 pdfTeX warning: pdflatex (file ./figures/workflow-simple.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/workflow-simple.pdf, id=609, 523.9575pt x 397.485pt>
+<figures/workflow-simple.pdf, id=610, 523.9575pt x 397.485pt>
 File: figures/workflow-simple.pdf Graphic file (type pdf)
 <use figures/workflow-simple.pdf>
 Package pdftex.def Info: figures/workflow-simple.pdf  used on input line 13.
@@ -799,11 +799,14 @@ Package pdftex.def Info: figures/workflow-simple.pdf  used on input line 13.
 
 
 pdfTeX warning: pdflatex (file ./figures/assembly-met.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/assembly-met.pdf, id=618, 716.6775pt x 798.985pt>
+<figures/assembly-met.pdf, id=619, 716.6775pt x 798.985pt>
 File: figures/assembly-met.pdf Graphic file (type pdf)
 <use figures/assembly-met.pdf>
-Package pdftex.def Info: figures/assembly-met.pdf  used on input line 75.
+Package pdftex.def Info: figures/assembly-met.pdf  used on input line 57.
 (pdftex.def)             Requested size: 472.03123pt x 526.24669pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 [14
@@ -816,11 +819,14 @@ Package pdftex.def Info: figures/assembly-met.pdf  used on input line 75.
 [15 <./figures/workflow-simple.pdf>]
 
 [16 <./figures/assembly-met.pdf>]
-<figures/dc1-low-gc-fastqc.png, id=664, 803.0pt x 602.25pt>
+<figures/dc1-low-gc-fastqc.png, id=663, 803.0pt x 602.25pt>
 File: figures/dc1-low-gc-fastqc.png Graphic file (type png)
 <use figures/dc1-low-gc-fastqc.png>
-Package pdftex.def Info: figures/dc1-low-gc-fastqc.png  used on input line 146.
+Package pdftex.def Info: figures/dc1-low-gc-fastqc.png  used on input line 94.
 (pdftex.def)             Requested size: 472.03123pt x 354.02869pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 [17]
@@ -831,7 +837,7 @@ pdfTeX warning: pdflatex (file ./figures/gene-finding-met.pdf): PDF inclusion: f
 <figures/gene-finding-met.pdf, id=684, 612.2875pt x 543.02875pt>
 File: figures/gene-finding-met.pdf Graphic file (type pdf)
 <use figures/gene-finding-met.pdf>
-Package pdftex.def Info: figures/gene-finding-met.pdf  used on input line 228.
+Package pdftex.def Info: figures/gene-finding-met.pdf  used on input line 176.
 (pdftex.def)             Requested size: 472.03123pt x 418.63885pt.
 
 
@@ -842,45 +848,45 @@ Package pdftex.def Info: figures/gene-finding-met.pdf  used on input line 228.
 [21]
 
 pdfTeX warning: pdflatex (file ./figures/eval-met.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/eval-met.pdf, id=720, 537.00626pt x 403.5075pt>
+<figures/eval-met.pdf, id=718, 537.00626pt x 403.5075pt>
 File: figures/eval-met.pdf Graphic file (type pdf)
 <use figures/eval-met.pdf>
-Package pdftex.def Info: figures/eval-met.pdf  used on input line 370.
+Package pdftex.def Info: figures/eval-met.pdf  used on input line 318.
 (pdftex.def)             Requested size: 377.62642pt x 283.74629pt.
 
 
-[22 <./figures/eval-met.pdf>]
+[22]
+
+[23 <./figures/eval-met.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/region-workflow.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/region-workflow.pdf, id=750, 1034.86626pt x 508.90125pt>
+<figures/region-workflow.pdf, id=755, 1034.86626pt x 508.90125pt>
 File: figures/region-workflow.pdf Graphic file (type pdf)
 <use figures/region-workflow.pdf>
-Package pdftex.def Info: figures/region-workflow.pdf  used on input line 435.
+Package pdftex.def Info: figures/region-workflow.pdf  used on input line 383.
 (pdftex.def)             Requested size: 566.43604pt x 278.56094pt.
-
-
-[23]
-
-[24 <./figures/region-workflow.pdf>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 466.
- (C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 414.
+(C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 466.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 508.
-<figures/igv/igv-agreement-thin-number.png, id=782, 1308.89pt x 437.635pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 414.
+
+
+[24]
+
+[25 <./figures/region-workflow.pdf>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 456.
+<figures/igv/igv-agreement-thin-number.png, id=789, 1308.89pt x 437.635pt>
 File: figures/igv/igv-agreement-thin-number.png Graphic file (type png)
 <use figures/igv/igv-agreement-thin-number.png>
-Package pdftex.def Info: figures/igv/igv-agreement-thin-number.png  used on input line 525.
+Package pdftex.def Info: figures/igv/igv-agreement-thin-number.png  used on input line 473.
 (pdftex.def)             Requested size: 424.82523pt x 142.04271pt.
 ))
 
-[25]
+[26 <./figures/igv/igv-agreement-thin-number.png>]
 
-[26]
-
-[27 <./figures/igv/igv-agreement-thin-number.png>]
+[27]
 \openout2 = `chapter-5.aux'.
 
  (chapter-5.tex
@@ -1211,17 +1217,17 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 08C1D655681C6F1C100FDEDA3031AEE6;12433.
  ) 
 Here is how much of TeX's memory you used:
- 24141 strings out of 468221
- 458308 string characters out of 5432891
+ 24139 strings out of 468221
+ 458287 string characters out of 5432891
  837772 words of memory out of 5000000
- 51959 multiletter control sequences out of 15000+600000
- 632796 words of font info for 59 fonts, out of 8000000 for 9000
+ 51958 multiletter control sequences out of 15000+600000
+ 632461 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,17n,93p,2366b,627s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (73 pages, 1564723 bytes).
+ <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (73 pages, 1564346 bytes).
 PDF statistics:
- 1976 PDF objects out of 2073 (max. 8388607)
+ 1973 PDF objects out of 2073 (max. 8388607)
  232 named destinations out of 1000 (max. 500000)
  665 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -349,7 +349,6 @@ INPUT .\figures\workflow-simple.pdf
 INPUT .\figures\workflow-simple.pdf
 INPUT .\figures\workflow-simple.pdf
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0700.tfm
-INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT .\figures\assembly-met.pdf
 INPUT .\figures\assembly-met.pdf
 INPUT .\figures\assembly-met.pdf
@@ -647,8 +646,6 @@ INPUT .\chapter-6.aux
 INPUT chapter-6.aux
 INPUT .\thesis.out
 INPUT .\thesis.out
-INPUT C:\Users\cbe45\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
-INPUT C:\Users\cbe45\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\cbe45\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0700.pk
 INPUT C:\Users\cbe45\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0700.pk
 INPUT C:\Users\cbe45\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1440.pk
