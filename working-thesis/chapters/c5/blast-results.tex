@@ -1,13 +1,12 @@
-\section{BLAST Results}
-\label{section:blast}
+\section{BLAST Results}\label{section:blast}
 
 As a control, proteins from three related organisms were used as
-queries to tblastn\cite{Altschul1990} on each \textit{Trichoderma}
+queries to tblastn\cite{altschul1990a} on each \textit{Trichoderma}
 assembly. The organisms and their associated NCBI accession IDs are as
-follows: \textit{T. atroviride} - GCF\_000171015.1,
-\textit{F. graminarium} - GCF\_000240135.3, \textit{S. cerevisiae} -
+follows: \textit{T. atroviride} \- GCF\_000171015.1,
+\textit{F. graminarium} \- GCF\_000240135.3, \textit{S. cerevisiae} \-
 GCF\_000146045.2.  Results from the tblastn runs are presented in
-Figure~\ref{fig:blast-total-counts} and Table \ref{table:tblastn-prots}. Initial tblastn results appear
+Figure~\ref{fig:blast-total-counts} and Table~\ref{table:tblastn-prots}. Initial tblastn results appear
 promising for both the \textit{T. atroviride} and \textit{Fusarium}
 datasets. All assemblies considered contain at minimum 89\% of the
 reference protein sequences in the case of \textit{T. atroviride} and
@@ -21,8 +20,7 @@ sequences.
 \begin{figure}
   \centering
   \includegraphics[width=0.85\textwidth]{figures/blast-total-counts.pdf}
-  \caption[Total tblast hits]{Total tblastn hits for reference proteins from \textit{T. atroviride}, \textit{F. graminarium}, and \textit{S. cerevisiae} against \textit{Trichoderma} assemblies.}
-  \label{fig:blast-total-counts}
+  \caption[Total tblastn hits]{Total tblastn hits for reference proteins from \textit{T. atroviride}, \textit{F. graminarium}, and \textit{S. cerevisiae} against \textit{Trichoderma} assemblies.}\label{fig:blast-total-counts}
 \end{figure}
 
 \begin{table}
@@ -31,21 +29,20 @@ sequences.
     \hline
     Reference & Ref. Proteins & DC1 & Tsth20 & \textit{T. reesei} & \textit{T. harzianum} & \textit{T. virens}  \\ \hline
     \textit{Trichoderma atroviride} & 11807 & 11552 & 11080 & 10601 & 11081 & 11078 \\ \hline 
-    \textit{Fusarium granminarium} & 13312 & 10327 & 10429 & 10064 & 10434 & 10490 \\ \hline
+    \textit{Fusarium graminarium} & 13312 & 10327 & 10429 & 10064 & 10434 & 10490 \\ \hline
     \textit{Saccharomyces cerevisiae} & 6014 & 3537 & 3517 & 3445 & 3509 & 3500 \\ \hline
   \end{tabular}
   \caption[Overview of tblastn alignments]{tblastn hits from reference protein sequences to selected
     \textit{Trichoderma} assemblies. Hits are reported if the
     alignment length is greater than 30\% of the reference protein
     length and if 30\% of the alignment length has identical
-    matches.}
-  \label{table:tblastn-prots}
+    matches.}\label{table:tblastn-prots}
 \end{table}
 
 While successful tblastn hits from input proteins are useful, it is
 worthwhile exploring those hits in the context of regions and gene
 predictions within them. Counts of genes from regions with tblastn
-hits are shown in Figures~\ref{fig:blast-tatroviride},~\ref{fig:blast-fgraminarium},~\ref{fig:blast-scerevisiae}, and Table \ref{table:tblastn-genes}. In a similar trend
+hits are shown in Figures~\ref{fig:blast-tatroviride},~\ref{fig:blast-fgraminarium},~\ref{fig:blast-scerevisiae}, and Table~\ref{table:tblastn-genes}. In a similar trend
 to Table~\ref{table:tblastn-prots}, genes in regions with tblastn hits
 decrease as evolutionary distance increases. In DC1 and Tsth20, we
 observe that Braker2 predicts more genes in regions with tblastn hits
@@ -74,25 +71,21 @@ similar protein.
   \centering
   \begin{subfigure}[b]{0.85\textwidth}
     \includegraphics[width=\textwidth]{figures/blast-tatroviride.pdf}
-    \caption{\textit{T. atroviride} tblastn hits}
-    \label{fig:blast-tatroviride}
+    \caption{\textit{T. atroviride} tblastn hits}\label{fig:blast-tatroviride}
   \end{subfigure}
   \par\medskip
   \begin{subfigure}[b]{0.85\textwidth}
     \includegraphics[width=\textwidth]{figures/blast-fgraminarium.pdf}
-    \caption{\textit{F. graminarium} tblastn hits}
-    \label{fig:blast-fgraminarium}
+    \caption{\textit{F. graminarium} tblastn hits}\label{fig:blast-fgraminarium}
   \end{subfigure}
 \end{figure}
 \begin{figure}[htp]\ContinuedFloat
   \centering
   \begin{subfigure}[b]{0.85\textwidth}
     \includegraphics[width=\textwidth]{figures/blast-scerevisiae.pdf}
-    \caption{\textit{S. cerevisiae} tblastn hits}
-    \label{fig:blast-scerevisiae}
+    \caption{\textit{S. cerevisiae} tblastn hits}\label{fig:blast-scerevisiae}
   \end{subfigure}
-  \caption[Results from tblastn by reference]{tblastn hits for reference proteins from \textit{T. atroviride}, \textit{F. graminarium}, and \textit{S. cerevisiae} against \textit{Trichoderma} assemblies. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0.}
-  \label{fig:blast-hits}
+  \caption[Results from tblastn by reference]{tblastn hits for reference proteins from \textit{T. atroviride}, \textit{F. graminarium}, and \textit{S. cerevisiae} against \textit{Trichoderma} assemblies. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0.}\label{fig:blast-hits}
 \end{figure}
 
 \begin{table}
@@ -118,9 +111,8 @@ similar protein.
   \end{tabular}
   \caption[Counts of transcripts in regions with tblastn hits]{Counts of transcripts predicted by Braker2, GeneMark and
     RefSeq in regions containing tblastn hits from
-    \textit{Ttrichoderma atroviride}, \textit{Fusarium granminarium},
-    and \textit{Saccharomyces cerevisiae}.}
-  \label{table:tblastn-genes}
+    \textit{Trichoderma atroviride}, \textit{Fusarium graminarium},
+    and \textit{Saccharomyces cerevisiae}.}\label{table:tblastn-genes}
 \end{table}
 
 Overall, it appears that using tblastn with proteins from related

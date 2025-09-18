@@ -297,6 +297,11 @@ James~T. Robinson, Helga Thorvaldsd{\'o}ttir, Wendy Winckler, Mitchell Guttman,
 \newblock Integrative genomics viewer.
 \newblock {\em Nature Biotechnology}, 29(1):24--26, 2011.
 
+\bibitem{gurevich2013b}
+Alexey Gurevich, Vladislav Saveliev, Nikolay Vyahhi, and Glenn Tesler.
+\newblock {{QUAST}}: Quality assessment tool for genome assemblies.
+\newblock {\em Bioinformatics}, 29(8):1072--1075, April 2013.
+
 \bibitem{stanke2006a}
 Mario Stanke, Ana Tzvetkova, and Burkhard Morgenstern.
 \newblock {{AUGUSTUS}} at {{EGASP}}: Using {{EST}}, protein and genomic
@@ -327,5 +332,15 @@ Mihaela Pertea, Geo~M. Pertea, Corina~M. Antonescu, Tsung-Cheng Chang,
 Geo Pertea and Mihaela Pertea.
 \newblock {{GFF Utilities}}: {{GffRead}} and {{GffCompare}}.
 \newblock {\em F1000Research}, 9, 2020.
+
+\bibitem{wright2022a}
+Bradley~W. Wright, Mark~P. Molloy, and Paul~R. Jaschke.
+\newblock Overlapping genes in natural and engineered genomes.
+\newblock {\em Nature Reviews Genetics}, 23(3):154--168, 2022.
+
+\bibitem{altschul1990a}
+S.~F. Altschul, W.~Gish, W.~Miller, E.~W. Myers, and D.~J. Lipman.
+\newblock Basic local alignment search tool.
+\newblock {\em Journal of molecular biology}, 215(3):403--410, October 1990.
 
 \end{thebibliography}

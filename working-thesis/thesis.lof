@@ -26,7 +26,7 @@
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Agreeing Pfam matches}}{49}{figure.caption.41}%
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Split Pfam matches}}{50}{figure.caption.42}%
 \contentsline {figure}{\numberline {5.14}{\ignorespaces RefSeq absence with IPS evidence}}{51}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Total tblast hits}}{51}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Total tblastn hits}}{51}{figure.caption.44}%
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Results from tblastn by reference}}{53}{figure.caption.47}%
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Regions of agreement in AT-rich genomic sequence}}{54}{figure.caption.49}%
 \contentsline {figure}{\numberline {5.18}{\ignorespaces Gene counts in AT-rich regions}}{56}{figure.caption.51}%

@@ -1,8 +1,7 @@
-\section{Assemblies of DC1 and Tsth20}
-\label{section:assemblies}
+\section{Assemblies of DC1 and Tsth20}\label{section:assemblies}
 
 For general assembly metrics of DC1 and Tsth20, the
-QUAST~\cite{Gurevich2013} tool was used. Results from QUAST are shown
+QUAST~\cite{gurevich2013b} tool was used. Results from QUAST are shown
 in Table~\ref{table:assemblies}, from which we can make several
 observations. In DC1 and Tsth20, the total contig counts are an order
 of magnitude smaller when compared to the other NCBI RefSeq
@@ -42,13 +41,12 @@ contigs reported in other work~\cite{kubicek2019a}.
     \end{tabular}
   \end{center}
   \caption[General assembly metrics produced by QUAST]{General assembly metrics produced by
-    QUAST\cite{Gurevich2013} (a genome quality assessment tool).}
-  \label{table:assemblies}
+    QUAST\cite{gurevich2013b} (a genome quality assessment tool).}\label{table:assemblies}
 \end{table}
 
 During initial investigation of the inputs to the assembly process, we
 observed that the Illumina reads have a bimodal distribution of GC
-content as shown in Figure\ref{fig:assembly-gc}. To see if this
+content as shown in Figure~\ref{fig:assembly-gc}. To see if this
 observation extended to the assemblies as well, 250 bp sliding windows
 were used to calculate GC content for all assemblies included in this
 analysis. The results of this analysis are shown in
@@ -64,16 +62,16 @@ to the confirmation of increased AT-rich sequence content in most
 assemblies, it appears that the distribution of GC content in
 \textit{T. reesei} differs from the other assemblies. The curve of GC
 content for \textit{T. reesei}, visualized in green in Figure
-\ref{fig:assembly-gc}, is shifted to the right of the other
+~\ref{fig:assembly-gc}, is shifted to the right of the other
 \textit{Trichoderma} assemblies, indicating fewer AT-rich windows and
 more balanced nucleotide composition in its assembly. While the left
 tail of the curve also shows an increase in AT-rich sequence
-composition, with it's peak is again located farther right on the
+composition, with its peak is again located farther right on the
 X-axis than other \textit{Trichoderma} assemblies. We can not explain
 exactly why \textit{T. reesei}'s curve differs so much at this time,
 but it is likely due to the much smaller \textit{T. reesei} assembly
 and it's properties. Investigation of these AT-rich sequences is
-continued in Section \ref{section:gc-regions}, where only sequences
+continued in Section~\ref{section:gc-regions}, where only sequences
 containing less than greater than 72\% AT nucleotide content are
 considered, as the distributions begin to deviate from the normal
 distribution at that point.
@@ -83,8 +81,7 @@ distribution at that point.
     \makebox[\textwidth]{\includegraphics[width=1\textwidth]{figures/gc-plot.pdf}}
   \end{center}
   \caption[GC content distribution for each Trichoderma genome assembly]{Plots showing proportions of sliding windows of GC content
-    for each \textit{Trichoderma} genome assembly.}
-  \label{fig:assembly-gc}
+    for each \textit{Trichoderma} genome assembly.}\label{fig:assembly-gc}
 \end{figure}
 
 
