@@ -1,5 +1,4 @@
-\section{Selection of Gene Finding Tool}
-\label{chapter:conclusion}
+\section{Selection of Gene Finding Tool}\label{chapter:conclusion}
 
 With all of these results, it makes sense to explore the question of
 which gene finding tool one should choose for optimal gene prediction
@@ -7,13 +6,12 @@ performance. Comparisons drawn in this section are made in the context
 of \textit{Trichoderma} assemblies and may not extend to other
 datasets. Observations from the results portion of this work have been
 converted to scores relative to the other gene finders. Scores range
-from zero to three, with values being: 0 - failing performance, 1 -
-passing performance, 2 - good performance, and 3 - excellent
-performance. Results from this work are summarized in Table
-\ref{table:final-score}. Ignoring availability and use of the gene
+from zero to three, with values being: 0 \- failing performance, 1 \-
+passing performance, 2 \- good performance, and 3 \- excellent
+performance. Results from this work are summarized in Table~\ref{table:final-score}. Ignoring availability and use of the gene
 finding tools, it would appear that RefSeq performs the best in the
 remaining categories, earning top marks in every category except in
-it's ability to predict very short genes. Braker2 earns second place;
+its ability to predict very short genes. Braker2 earns second place;
 however, this does not capture Braker2's failure in predicting
 accurate numbers of genes in DC1, Tsth20, \textit{T. harzianum} and
 \textit{T. virens}. GeneMark comes in last, excelling only in number
@@ -35,8 +33,7 @@ interest is not a RefSeq individual but training data is available for
 that organism, Braker2 is the next best option, although it is
 important to note that the application of a trained Braker2 prediction
 model to an organism from which the training data did not originate is
-not advised based on the results presented in this work (see
-\ref{section:gene-finding}). While it is true that the
+not advised based on the results presented in this work (see~\ref{section:gene-finding}). While it is true that the
 \textit{T. reesei} genome differs from other \textit{Trichoderma}
 genomes, it's status as a representative RefSeq organism makes it
 somewhat of a gold standard. In this case, applying a gene model
@@ -55,7 +52,7 @@ systematically fails to predict some BUSCO orthologs.
 
 When availability of a gene finding tool becomes a concern and RefSeq
 is not considered, the scores drop significantly for Braker2 and
-GeneMark as seen in the final row of Table \ref{table:final-score}. In
+GeneMark as seen in the final row of Table~\ref{table:final-score}. In
 this situation, Braker2 still outperforms GeneMark. If the organism of
 interest is not considered a representative RefSeq individual, but
 supporting evidence specific to that organism or a very closely
@@ -84,17 +81,16 @@ still a reasonable option even with the previously identified caveats.
   \end{tabular}
   \caption[Final scoring table]{Table with scores attributed to
     performance of each gene finder in several categories. The score
-    definitions for performance are as follows: 0 - fail, 1 - pass, 2
-    - good, 3 - excellent. Since RefSeq is not publicly available, it is
+    definitions for performance are as follows: 0 \- fail, 1 \- pass, 2
+    \- good, 3 \- excellent. Since RefSeq is not publicly available, it is
     marked as N/A in the publicly available final scores. The dashed
     line separates categories associated with availability and use
-    from categories describing gene prediction performance.}
-  \label{table:final-score}
+    from categories describing gene prediction performance.}\label{table:final-score}
 \end{table}
 
 In summary, these results indicate that if your organism is a RefSeq
 organism, use the RefSeq annotation. If no RefSeq predictions are
-available but appropriate training data is, one should use Braker2. If
+available, but appropriate training data is, one should use Braker2. If
 the training data is of questionable similarity or not available at
 all, users can fall back on \textit{ab initio} gene finders such as
 GeneMark, which while not ideal, still predict genes with supporting

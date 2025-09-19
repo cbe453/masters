@@ -1,36 +1,31 @@
-\section{Genes in Regions of Anomalous GC Content}
-\label{section:gc-regions}
+\section{Genes in Regions of Anomalous GC Content}\label{section:gc-regions}
 
-Figure~\ref{fig:gc-regions} and Table \ref{table:gc-regions} shows the results of applying the same
+Figure~\ref{fig:gc-regions} and Table~\ref{table:gc-regions} shows the results of applying the same
 region finding process from earlier to segments of the genome
 identified as AT-rich. AT-rich is defined as a region of genomic
 sequence with percent GC composition less than 28\% as determined in
-Section \ref{section:assemblies}. In comparison to results from
-Section \ref{section:regions}, we see that overall there are far fewer
+Section~\ref{section:assemblies}. In comparison to results from
+Section~\ref{section:regions}, we see that overall there are far fewer
 regions with gene predictions in AT-rich genomic segments. In DC1,
 Tsth20, there are very few regions with full support from both Braker2
-and GeneMark, but more singletons. Again, as in Section
-\ref{section:regions}, there are no regions with partial support as
+and GeneMark, but more singletons. Again, as in Section~\ref{section:regions}, there are no regions with partial support as
 only two gene finding tools were applied to those
 assemblies. \textit{T. reesei} and \textit{T. harzianum} report more
 regions in AT-rich genomic sequence than the other assemblies, but
 with the majority of regions belonging to the singleton
-category. \textit{T. virens} is an interesting case, reporting a
-similar numbers of regions and genes in AT-rich genomic sequence as
+category. \textit{T. virens} is an interesting case, reporting a similar number of regions and genes in AT-rich genomic sequence as
 DC1 and Tsth20. \textit{T. virens} is also the only assembly to report
 zero singleton gene predictions. Why \textit{T. virens} differs from
 the other RefSeq assemblies is unclear. In general, there are few
 regions with gene predictions in AT-rich genomic segments, and within
 these regions, the majority of cases are isolated singleton gene
 predictions. These observations differ greatly from those made in
-nucleotide composition agnostic approach in Section
-\ref{section:regions}.
+nucleotide composition agnostic approach in Section~\ref{section:regions}.
 
 \begin{figure}
   \centering
   \includegraphics[width=0.90\textwidth]{figures/atrich-regions-barplot.pdf}
-  \caption[Regions of agreement in AT-rich genomic sequence]{Regions of full, partial, and no agreement in AT-rich genomic sequence. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2 and as such, there are no regions with partial support.}
-  \label{fig:gc-regions}
+  \caption[Regions of agreement in AT-rich genomic sequence]{Regions of full, partial, and no agreement in AT-rich genomic sequence. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2 and as such, there are no regions with partial support.}\label{fig:gc-regions}
 \end{figure}
 
 \begin{table}
@@ -45,8 +40,7 @@ nucleotide composition agnostic approach in Section
       \textit{T. virens} & 8 & 11 & 0 & 49  \\ \hline
     \end{tabular}
   \end{center}
-  \caption[Agreement of gene predictions in AT-rich regions]{Regions of full and partial agreement as well as singleton regions in AT-rich genomic sequence. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2.}
-  \label{table:gc-regions}
+  \caption[Agreement of gene predictions in AT-rich regions]{Regions of full and partial agreement as well as singleton regions in AT-rich genomic sequence. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2.}\label{table:gc-regions}
 \end{table}
 
 In addition to a breakdown of regions in AT-rich genomic sequence,
@@ -56,7 +50,7 @@ genomic sequence with varying nucleotide content, may predict genes
 differently to an HMM trained only on sequences with uniformly
 distributed nucleotide composition as the variation in nucleotide
 composition may affect the various states and relationships between
-them in an HMM. Figure~\ref{fig:gc-gene-counts} and Table \ref{table:gc-gene-counts} shows the number of
+them in an HMM. Figure~\ref{fig:gc-gene-counts} and Table~\ref{table:gc-gene-counts} shows the number of
 genes predicted by each gene finding tool in regions of AT-rich
 genomic sequence. GeneMark appears to predict the fewest genes in
 AT-rich regions, while RefSeq appears to predict the most. Braker2
@@ -68,8 +62,7 @@ unclear.
 \begin{figure}
   \centering
   \includegraphics[width=0.90\textwidth]{figures/atrich-genes-barplot.pdf}
-  \caption[Gene counts in AT-rich regions]{Number of genes predicted by each gene finder in AT-rich genomic sequence.}
-  \label{fig:gc-gene-counts}
+  \caption[Gene counts in AT-rich regions]{Number of genes predicted by each gene finder in AT-rich genomic sequence.}\label{fig:gc-gene-counts}
 \end{figure}
 
 \begin{table}
@@ -85,8 +78,7 @@ unclear.
     \end{tabular}
   \end{center}
   \caption[Number of genes predicted in AT-rich regions]{Number of genes predicted by Braker2, GeneMark and RefSeq
-    in AT-rich genomic sequence from each assembly.}
-  \label{table:gc-gene-counts}
+    in AT-rich genomic sequence from each assembly.}\label{table:gc-gene-counts}
 \end{table}
 
 Finally, to test the probability of any given gene prediction falling
@@ -95,8 +87,7 @@ performed to determine if the number of genes predicted in AT-rich
 sequences is proportional to fraction of genomic sequence they
 comprise. The null hypothesis in this case is that the number of genes
 in AT-rich sequence is proportional to the total AT-rich sequence in
-the genome. The results of the test are shown in Table
-\ref{table:gc-binomial}. In all cases, it appears that the gene
+the genome. The results of the test are shown in Table~\ref{table:gc-binomial}. In all cases, it appears that the gene
 finding tools selected for this analysis do not predict the same
 proportion of genes in AT-rich genomic sequence as in typical genomic
 sequence.
@@ -112,8 +103,7 @@ sequence.
     \end{tabular}
   \end{center}
   \caption[Binomial test results]{\textit{p}-values produced from a two-sided binomial test
-    for each combination of tool and assembly.}
-  \label{table:gc-binomial}
+    for each combination of tool and assembly.}\label{table:gc-binomial}
 \end{table}
 
 In summary, very few regions with gene predictions are present in

@@ -1,9 +1,8 @@
-\section{InterProScan as Supporting Evidence for Predicted Genes}
-\label{section:interproscan}
+\section{InterProScan as Supporting Evidence for Predicted Genes}\label{section:interproscan}
 
 Pfam hits from InterProScan analysis are presented in Figure~\ref{fig:ips-counts} and Table
 ~\ref{table:ips-pfam}, from which we can identify one major trend. In
-general, roughly 73-76\% of proteins predicted by Braker2, GeneMark
+general, roughly 73\-76\% of proteins predicted by Braker2, GeneMark
 and RefSeq contain a match to a Pfam entry, except in the case of
 \textit{T. harzianum}, which reports a considerably lower proportion
 of genes with Pfam matches in the RefSeq dataset. Why the proportion
@@ -30,8 +29,7 @@ the resulting GFF is 10bp downstream from the start of the gene.
 \begin{figure}
   \centering
   \includegraphics[width=0.90\textwidth]{figures/interproscan-barplot.pdf}
-  \caption[Percentage of proteins with Pfam matches]{Barplot showing the percentage of predicted proteins with Pfam matches from InterProScan for each gene finder across all \textit{Trichoderma} genome assemblies. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0.}
-  \label{fig:ips-counts}
+  \caption[Percentage of proteins with Pfam matches]{Bar plot showing the percentage of predicted proteins with Pfam matches from InterProScan for each gene finder across all \textit{Trichoderma} genome assemblies. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0.}\label{fig:ips-counts}
 \end{figure}
 
 \begin{table}[h!]
@@ -46,8 +44,7 @@ the resulting GFF is 10bp downstream from the start of the gene.
     \textit{T. virens} & 74.68 & 74.76 & 73.18 \\ \hline
   \end{tabular}
   \caption[InterProScan Pfam Evidence]{Table showing the fractions of predicted
-    genes with Pfam annotations from InterProScan as a percent}
-  \label{table:ips-pfam}
+    genes with Pfam annotations from InterProScan as a percent}\label{table:ips-pfam}
 \end{table}
 
 % DC1: 73.73\%, 74.12\%, N/A
@@ -69,9 +66,8 @@ the resulting GFF is 10bp downstream from the start of the gene.
     agreement between gene finders for both gene model and protein
     Pfam hits. The longer segments are predicted genes and the smaller
     segments are annotated Pfam matches, all with agreeing start and
-    stop positions. The \textbf{desc} in each sub-window indicate
-    agreeing Pfam annotations.}
-  \label{fig:basic-agree}
+    stop positions. The \textbf{description} in each sub-window indicate
+    agreeing Pfam annotations.}\label{fig:basic-agree}
 \end{figure}
 
 While cases of complete agreement are abundant, cases of disagreement
@@ -88,7 +84,7 @@ RefSeq only reports one gene with multiple Pfam hits. There are also
 several cases where two tools are in agreement with proteins
 containing Pfam hits while another is not. Even more interesting are
 cases such as the one shown in Figure~\ref{fig:ips-no-refseq}, in
-which Braker and GeneMark predictions contain Pfam matches while
+which Braker2 and GeneMark predictions contain Pfam matches while
 RefSeq does not report a gene at all. This may be the due to
 experimental data used in the RefSeq training process or a result of
 curation. Regardless of the tool, these cases demonstrate well that
@@ -102,8 +98,7 @@ products from other gene finders contain known Pfam matches.
   \caption[Split Pfam matches]{An IGV capture showing Braker2 and
     GeneMark reporting two genes and their resulting proteins and
     Pfam hits as separate, while RefSeq reports one gene, one protein
-    and three Pfam matches.}
-  \label{fig:agree-bizarre2}
+    and three Pfam matches.}\label{fig:agree-bizarre2}
 \end{figure}
 
 \begin{figure}
@@ -111,8 +106,7 @@ products from other gene finders contain known Pfam matches.
   \includegraphics[width=\textwidth]{figures/igv/ips-braker-genemark-norefseq.png}
   \caption[RefSeq absence with IPS evidence]{An IGV capture showing a
     scenario where GeneMark and Braker2 agree on a gene model with
-    supporting Pfam evidence and RefSeq does not report any gene.}
-  \label{fig:ips-no-refseq}
+    supporting Pfam evidence and RefSeq does not report any gene.}\label{fig:ips-no-refseq}
 \end{figure}
 
 In summary, the protein products from Braker2 and GeneMark predictions
