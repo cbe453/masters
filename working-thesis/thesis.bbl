@@ -2,8 +2,8 @@
 
 \bibitem{woo2023a}
 Sheridan~L. Woo, Rosa Hermosa, Matteo Lorito, and Enrique Monte.
-\newblock Trichoderma: A multipurpose, plant-beneficial microorganism for
-  eco-sustainable agriculture.
+\newblock \emph{Trichoderma}: A multipurpose, plant-beneficial microorganism
+  for eco-sustainable agriculture.
 \newblock {\em Nature Reviews Microbiology}, 21(5):312--326, 2023.
 
 \bibitem{kubicek2019a}
@@ -12,13 +12,14 @@ Christian~P. Kubicek, Andrei~S. Steindorff, Komal Chenthamara, Gelsomina
   Eva~M. Kubicek, Alan Kuo, Riccardo Baroncelli, Sabrina Sarrocco,
   Eliane~Ferreira Noronha, Giovanni Vannacci, Qirong Shen, Igor~V. Grigoriev,
   and Irina~S. Druzhinina.
-\newblock Evolution and comparative genomics of the most common {{Trichoderma}}
-  species.
+\newblock Evolution and comparative genomics of the most common
+  {{\emph{Trichoderma}}} species.
 \newblock {\em BMC Genomics}, 20(1):485, 2019.
 
 \bibitem{Mukherjee2012}
 Prasun~K. Mukherjee, Benjamin~A. Horwitz, and Charles~M. Kenerley.
-\newblock Secondary metabolism in {{Trichoderma}} -- a genomic perspective.
+\newblock Secondary metabolism in {{\emph{Trichoderma}}} -- a genomic
+  perspective.
 \newblock {\em Microbiology}, 158(1):35--45, 2012.
 
 \bibitem{goncalves2024}
@@ -39,7 +40,8 @@ David~J. Winter, Austen R.~D. Ganley, Carolyn~A. Young, Ivan Liachko,
   Christopher~L. Schardl, Pierre-Yves Dupont, Daniel Berry, Arvina Ram, Barry
   Scott, and Murray~P. Cox.
 \newblock Repeat elements organise {{3D}} genome structure and mediate
-  transcription in the filamentous fungus {{Epichlo{\"e}}} festucae.
+  transcription in the filamentous fungus {{\emph{Epichlo{\"e}}
+  \emph{festucae}}}.
 \newblock {\em PLOS Genetics}, 14(10):1--29, 2018.
 
 \bibitem{kubicek2011}
@@ -61,7 +63,7 @@ Christian~P. Kubicek, Alfredo {Herrera-Estrella}, Verena {Seidl-Seiboth},
   Michael Zhang, Pedro~M. Coutinho, Charles~M. Kenerley, Enrique Monte,
   Scott~E. Baker, and Igor~V. Grigoriev.
 \newblock Comparative genome sequence analysis underscores mycoparasitism as
-  the ancestral life style of {{Trichoderma}}.
+  the ancestral life style of {{\emph{Trichoderma}}}.
 \newblock {\em Genome Biology}, 12(4):R40, April 2011.
 
 \bibitem{fitzpatrick2012}
@@ -73,16 +75,16 @@ David~A. Fitzpatrick.
 Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
   and Luigi Lucini.
 \newblock Trichoderma spp.-mediated mitigation of heat, drought, and their
-  combination on the {{Arabidopsis}} thaliana holobiont: A metabolomics and
-  metabarcoding approach.
+  combination on the \emph{{{Arabidopsis}} thaliana} holobiont: A metabolomics
+  and metabarcoding approach.
 \newblock {\em Frontiers in Plant Science}, 14, 2023.
 
 \bibitem{an2022}
 Xiao-Ya An, Guo-Hui Cheng, Han-Xing Gao, Xue-Fei Li, Yang Yang, Dan Li, and
   Yu~Li.
-\newblock Phylogenetic {{Analysis}} of {{Trichoderma Species Associated}} with
-  {{Green Mold Disease}} on {{Mushrooms}} and {{Two New Pathogens}} on
-  {{Ganoderma}} sichuanense.
+\newblock Phylogenetic {{Analysis}} of {{\emph{Trichoderma} Species
+  Associated}} with {{Green Mold Disease}} on {{Mushrooms}} and {{Two New
+  Pathogens}} on \emph{{{Ganoderma}} Sichuanense}.
 \newblock {\em Journal of Fungi}, 8(7):704, July 2022.
 
 \bibitem{Saitou1987}
@@ -93,8 +95,8 @@ N~Saitou and M~Nei.
 
 \bibitem{Felsenstein1985}
 Joseph Felsenstein.
-\newblock {{CONFIDENCE LIMITS ON PHYLOGENIES}}: {{AN APPROACH USING THE
-  BOOTSTRAP}}.
+\newblock {{Confidence Limits On Phylogenies}}: {{An Approach Using The
+  Bootstrap}}.
 \newblock {\em Evolution; International Journal of Organic Evolution},
   39(4):783--791, July 1985.
 
@@ -232,7 +234,7 @@ P.~Rice, I.~Longden, and A.~Bleasby.
 \bibitem{gupta2016}
 Vijai~Kumar Gupta, Andrei~Stecca Steindorff, Renato~Graciano de~Paula, Rafael
   {Silva-Rocha}, Astrid~R. {Mach-Aigner}, Robert~L. Mach, and Roberto~N. Silva.
-\newblock The {{Post-genomic Era}} of {{Trichoderma}} reesei: {{What}}'s
+\newblock The {{Post-genomic Era}} of {{\emph{Trichoderma}}} reesei: {{What}}'s
   {{Next}}?
 \newblock {\em Trends in Biotechnology}, 34(12):970--982, December 2016.
 

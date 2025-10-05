@@ -20,7 +20,7 @@ Database file #1: ./refs/full-bib.bib
 Warning--empty author in 2008
 You've used 54 entries,
             1791 wiz_defined-function locations,
-            765 strings with 15476 characters,
+            765 strings with 15546 characters,
 and the built_in function-call counts, 14790 in all, are:
 = -- 1169
 > -- 987
