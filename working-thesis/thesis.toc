@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {3.2}Profiling of Gene Finding Tools}{11}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Number of Features Predicted}{11}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Lengths of Predicted Genes}{12}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Identifying Regions of Agreement and Disagreement}{12}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Agreement Between Gene Finders}{12}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Validation of Predicted Genes via InterProScan}{12}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Similarity Searches of Predicted Genes with tblastn}{12}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Performance in AT-rich Genomic Sequence}{13}{section.3.8}%
