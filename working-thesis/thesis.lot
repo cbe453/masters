@@ -4,8 +4,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces General assembly metrics produced by QUAST}}{29}{table.caption.22}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Number of genes and coding sequences predicted}}{33}{table.caption.26}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Results of Kolmogorov-Smirnov tests}}{37}{table.caption.30}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Number of genes and coding sequences predicted}}{34}{table.caption.26}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Results of Kolmogorov-Smirnov tests}}{38}{table.caption.30}%
 \contentsline {table}{\numberline {5.4}{\ignorespaces BUSCO results}}{40}{table.caption.32}%
 \contentsline {table}{\numberline {5.5}{\ignorespaces Missing BUSCO IDs}}{41}{table.caption.33}%
 \contentsline {table}{\numberline {5.6}{\ignorespaces Additional missing BUSCO IDs}}{42}{table.caption.34}%

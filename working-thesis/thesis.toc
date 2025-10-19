@@ -27,8 +27,8 @@
 \contentsline {chapter}{\numberline {4}Data and Methodology}{14}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Methodology Overview}{14}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Sequence Processing and Assembly Workflow}{14}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Sequence Pre-processing and Assembly}{17}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Identifying AT-rich Genomic Sequence}{17}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.1}Sequence Pre-processing and Assembly}{16}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Identifying AT-rich Genomic Sequence}{16}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Overview of Gene Prediction and Further Processing}{19}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Selection of Datasets from NCBI}{19}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Gene Prediction Using GeneMark-ES}{21}{subsection.4.3.2}%
@@ -45,10 +45,10 @@
 \contentsline {chapter}{\numberline {5}Results and Discussion}{28}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Overview}{28}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Assemblies of DC1 and Tsth20}{28}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Installation and Profiling Gene Finding Tools}{31}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Installation and Profiling Gene Finding Tools}{29}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Initial Gene Finding Results}{32}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Distribution of Predicted Coding Sequence Lengths}{33}{section.5.5}%
-\contentsline {section}{\numberline {5.6}BUSCO Results}{38}{section.5.6}%
+\contentsline {section}{\numberline {5.5}Distribution of Predicted Coding Sequence Lengths}{34}{section.5.5}%
+\contentsline {section}{\numberline {5.6}BUSCO Results}{37}{section.5.6}%
 \contentsline {section}{\numberline {5.7}Region Identification}{42}{section.5.7}%
 \contentsline {section}{\numberline {5.8}InterProScan as Supporting Evidence for Predicted Genes}{47}{section.5.8}%
 \contentsline {section}{\numberline {5.9}BLAST Results}{48}{section.5.9}%

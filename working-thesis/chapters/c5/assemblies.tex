@@ -4,7 +4,7 @@ For general assembly metrics of DC1 and Tsth20, the
 QUAST~\cite{gurevich2013b} tool was used. Results from QUAST are shown
 in Table~\ref{table:assemblies}, from which we can make several
 observations. In DC1 and Tsth20, the total contig counts are an order
-of magnitude smaller when compared to the other NCBI RefSeq
+of magnitude smaller than the NCBI RefSeq
 assemblies, indicating highly contiguous assemblies from
 nextDenovo~\cite{hu2024a} and nextPolish~\cite{hu2024a}. This is likely
 due to the use of Nanopore sequencing in the assemblies of DC1 and
@@ -18,8 +18,8 @@ Tsth20 have the largest contigs of all assemblies being considered,
 which is again likely due to the inclusion of long-read sequencing
 data in the assembly process. The N50 values for all assemblies are
 above 1Mb, with DC1 and Tsth20 N50s being at minimum two times larger
-than others assemblies. N50 lengths nearing chromosomal lengths
-indicates that assemblies of DC1 and Tsth20 are better assembled than
+than other assemblies. N50 lengths nearing chromosomal lengths
+suggests that assemblies of DC1 and Tsth20 are better assembled than
 the other \textit{Trichoderma} assemblies. While chromosome-scale
 contigs are not the sole indicator of genome quality, it does provide
 confidence in the quality of the input data and resulting
@@ -46,13 +46,12 @@ contigs reported in other work~\cite{kubicek2019a}.
 
 During initial investigation of the inputs to the assembly process, we
 observed that the Illumina reads have a bimodal distribution of GC
-content as shown in Figure~\ref{fig:assembly-gc}. To see if this
+content as shown in Figure~\ref{fig:dc1-low-gc}. To see if this
 observation extended to the assemblies as well, 250 bp sliding windows
-were used to calculate GC content for all assemblies included in this
+were used to calculate GC content for all five assemblies included in this
 analysis. The results of this analysis are shown in
-Figure~\ref{fig:assembly-gc}. AT-rich sequences are visualized on the
-left peak of the distributions sequences containing 90 percent AT
-content. Of the included assemblies, AT-rich sequences were identified
+Figure~\ref{fig:assembly-gc}. AT-rich sequences are visualized by the
+left peak (windows containing > 72\% AT nucleotides) of the distributions. Of the included assemblies, AT-rich sequences were identified
 in DC1, Tsth20, \textit{T. reesei} and \textit{T. harzianum}, with
 \textit{T. virens} deviating from the other assemblies showing very
 few AT-rich windows. This lack of AT-rich sequence in
@@ -63,18 +62,14 @@ assemblies, it appears that the distribution of GC content in
 \textit{T. reesei} differs from the other assemblies. The curve of GC
 content for \textit{T. reesei}, visualized in green in Figure
 ~\ref{fig:assembly-gc}, is shifted to the right of the other
-\textit{Trichoderma} assemblies, indicating fewer AT-rich windows and
-more balanced nucleotide composition in its assembly. While the left
-tail of the curve also shows an increase in AT-rich sequence
-composition, with its peak is again located farther right on the
-X-axis than other \textit{Trichoderma} assemblies. We can not explain
+\textit{Trichoderma} assemblies, indicating a higher overall GC content.
+We can not explain
 exactly why \textit{T. reesei}'s curve differs so much at this time,
 but it is likely due to the much smaller \textit{T. reesei} assembly
 and it's properties. Investigation of these AT-rich sequences is
 continued in Section~\ref{section:gc-regions}, where only sequences
-containing less than greater than 72\% AT nucleotide content are
-considered, as the distributions begin to deviate from the normal
-distribution at that point.
+containing greater than 72\% AT nucleotide content are
+considered, as the distributions begin to deviate from expected.
 
 \begin{figure}
   \begin{center}

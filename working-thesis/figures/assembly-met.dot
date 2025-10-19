@@ -16,7 +16,7 @@ digraph G{
 		 "Illumina Reads" [shape = cylinder];
 		 "Pre-process Reads" [shape = box3d];
 		 "Nanopore Reads" [shape = cylinder];
-		 "Genome Assembly" [shape = box3d];
+		 "Genome Assembly\n(DC1 and Tsth20)" [shape = box3d];
 		 "Genome Polishing" [shape = box3d];
 		 "Processed Illumina Reads" [shape = tab];
 		 "Sequence Quality\nAssessment" [shape = box3d];
@@ -26,10 +26,10 @@ digraph G{
 		 "GC Content Plots" [shape = box3d];
 		 "Sequence Quality\nAssessment" -> "GC Content Plots";
 		 "Pre-process Reads" -> "Processed Illumina Reads";
-		 "Processed Illumina Reads" -> "Genome Assembly";
+		 "Processed Illumina Reads" -> "Genome Assembly\n(DC1 and Tsth20)";
 		 "Processed Illumina Reads" -> "Genome Polishing";
-		 "Nanopore Reads" -> "Genome Assembly";
-		 "Genome Assembly" -> "Genome Polishing" -> "Novel Genome Assemblies";
+		 "Nanopore Reads" -> "Genome Assembly\n(DC1 and Tsth20)";
+		 "Genome Assembly\n(DC1 and Tsth20)" -> "Genome Polishing" -> "Novel Genome Assemblies";
 		 "Genome Quality\nAssessment" [shape = box3d];
 		 "Novel Genome Assemblies" -> "Genome Quality\nAssessment";
 		 "Assembly Metrics" [shape = tab];
