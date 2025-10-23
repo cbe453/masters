@@ -29,7 +29,7 @@
 \contentsline {section}{\numberline {4.2}Sequence Processing and Assembly Workflow}{14}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Sequence Pre-processing and Assembly}{16}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Identifying AT-rich Genomic Sequence}{16}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Overview of Gene Prediction and Further Processing}{19}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Overview of Gene Prediction and Further Processing}{18}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Selection of Datasets from NCBI}{19}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Gene Prediction Using GeneMark-ES}{21}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Gene Prediction Using Braker2}{21}{subsection.4.3.3}%

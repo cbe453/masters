@@ -27,8 +27,7 @@ Carla Gon{\c c}alves, Chris~Todd Hittinger, and Antonis Rokas.
 \newblock Horizontal {{Gene Transfer}} in {{Fungi}} and {{Its Ecological
   Importance}}.
 \newblock In Yen-Ping Hsueh and Meredith Blackwell, editors, {\em Fungal
-  {{Associations}}}, pages 59--81. Springer International Publishing, Cham,
-  2024.
+  {{Associations}}}, pages 59--81. Springer International Publishing, 2024.
 
 \bibitem{plohl2014a}
 Miroslav Plohl, Nevenka Me{\v s}trovi{\'c}, and Brankica Mravinac.
@@ -111,7 +110,7 @@ Brendan Loftus.
 Girum~Fitihamlak Ejigu and Jaehee Jung.
 \newblock Review on the {{Computational Genome Annotation}} of {{Sequences
   Obtained}} by {{Next-Generation Sequencing}}.
-\newblock {\em Biology}, 9(9), September 2020.
+\newblock {\em Biology}, 9(9):295, September 2020.
 
 \bibitem{borodovsky2011a}
 Mark Borodovsky and Alex Lomsadze.
@@ -135,15 +134,14 @@ W.~H. Majoros, M.~Pertea, and S.~L. Salzberg.
 Mario Stanke and Stephan Waack.
 \newblock Gene prediction with a hidden {{Markov}} model and a new intron
   submodel.
-\newblock {\em Bioinformatics (Oxford, England)}, 19 Suppl 2:ii215--225,
-  October 2003.
+\newblock {\em Bioinformatics}, 19 Suppl 2:ii215--225, October 2003.
 
 \bibitem{bruna2021a}
 Tom{\'a}{\v s} Br{\r u}na, Katharina~J. Hoff, Alexandre Lomsadze, Mario Stanke,
   and Mark Borodovsky.
 \newblock {{BRAKER2}}: Automatic eukaryotic genome annotation with
   {{GeneMark-EP}}+ and {{AUGUSTUS}} supported by a protein database.
-\newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, March 2021.
+\newblock {\em NAR Genomics and Bioinformatics}, 3(1):lqaa108, March 2021.
 
 \bibitem{cantarel2008}
 Brandi~L. Cantarel, Ian Korf, Sofia~M.C. Robb, Genis Parra, Eric Ross, Barry
@@ -154,7 +152,8 @@ Brandi~L. Cantarel, Ian Korf, Sofia~M.C. Robb, Genis Parra, Eric Ross, Barry
 
 \bibitem{zotero-item-367}
 The {{NCBI Eukaryotic Genome Annotation Pipeline}}.
-\newblock https://www.ncbi.nlm.nih.gov/refseq/annotation\_euk/process/.
+\newblock https://www.ncbi.nlm.nih.gov/refseq/annotation\_euk/process/, August
+  2025.
 
 \bibitem{manni2021a}
 Mos{\`e} Manni, Matthew~R. Berkeley, Mathieu Seppey, and Evgeny~M. Zdobnov.
@@ -224,12 +223,12 @@ Simon Andrews.
 \bibitem{gurevich2013a}
 Alexey Gurevich, Vladislav Saveliev, Nikolay Vyahhi, and Glenn Tesler.
 \newblock {{QUAST}}: Quality assessment tool for genome assemblies.
-\newblock {\em Bioinformatics (Oxford, England)}, 29(8):1072--1075, April 2013.
+\newblock {\em Bioinformatics}, 29(8):1072--1075, April 2013.
 
 \bibitem{rice2000a}
 P.~Rice, I.~Longden, and A.~Bleasby.
 \newblock {{EMBOSS}}: The {{European Molecular Biology Open Software Suite}}.
-\newblock {\em Trends in genetics : TIG}, 16(6):276--277, June 2000.
+\newblock {\em Trends in Genetics}, 16(6):276--277, June 2000.
 
 \bibitem{gupta2016}
 Vijai~Kumar Gupta, Andrei~Stecca Steindorff, Renato~Graciano de~Paula, Rafael
@@ -245,7 +244,7 @@ Chengzhi Liang, Long Mao, Doreen Ware, and Lincoln Stein.
 
 \bibitem{zotero-item-326}
 {{SRA-Toolkit}}.
-\newblock https://hpc.nih.gov/apps/sratoolkit.html.
+\newblock https://hpc.nih.gov/apps/sratoolkit.html, June 2025.
 
 \bibitem{2008}
 Kolmogorov--{{Smirnov Test}}.
@@ -288,10 +287,12 @@ Rina Dechter.
 \bibitem{foundationa}
 Python~Software Foundation.
 \newblock Python.
+\newblock https://www.python.org/psf-landing/, October 2025.
 
 \bibitem{chapmana}
 Brad Chapman.
 \newblock {{BCBio Python Package}}.
+\newblock https://github.com/chapmanb/bcbb/tree/master/gff, August 2025.
 
 \bibitem{robinson2011a}
 James~T. Robinson, Helga Thorvaldsd{\'o}ttir, Wendy Winckler, Mitchell Guttman,

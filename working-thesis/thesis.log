@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  18 OCT 2025 20:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  22 OCT 2025 22:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -798,14 +798,6 @@ Package pdftex.def Info: figures/workflow-simple.pdf  used on input line 10.
 (pdftex.def)             Requested size: 377.62642pt x 286.4801pt.
 
 
-pdfTeX warning: pdflatex (file ./figures/assembly-met.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/assembly-met.pdf, id=618, 716.6775pt x 804.00375pt>
-File: figures/assembly-met.pdf Graphic file (type pdf)
-<use figures/assembly-met.pdf>
-Package pdftex.def Info: figures/assembly-met.pdf  used on input line 53.
-(pdftex.def)             Requested size: 472.03123pt x 529.55226pt.
-
-
 [14
 
 
@@ -814,24 +806,32 @@ Package pdftex.def Info: figures/assembly-met.pdf  used on input line 53.
 ]
 
 [15 <./figures/workflow-simple.pdf>]
-<figures/raw-dc1-gc-plot.png, id=653, 462.528pt x 346.896pt>
-File: figures/raw-dc1-gc-plot.png Graphic file (type png)
-<use figures/raw-dc1-gc-plot.png>
-Package pdftex.def Info: figures/raw-dc1-gc-plot.png  used on input line 92.
-(pdftex.def)             Requested size: 472.03123pt x 354.04095pt.
+
+pdfTeX warning: pdflatex (file ./figures/assembly-met.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/assembly-met.pdf, id=642, 716.6775pt x 804.00375pt>
+File: figures/assembly-met.pdf Graphic file (type pdf)
+<use figures/assembly-met.pdf>
+Package pdftex.def Info: figures/assembly-met.pdf  used on input line 53.
+(pdftex.def)             Requested size: 472.03123pt x 529.55226pt.
 
 
 [16]
 
 [17 <./figures/assembly-met.pdf>]
+<figures/raw-dc1-gc-plot.png, id=674, 462.528pt x 346.896pt>
+File: figures/raw-dc1-gc-plot.png Graphic file (type png)
+<use figures/raw-dc1-gc-plot.png>
+Package pdftex.def Info: figures/raw-dc1-gc-plot.png  used on input line 94.
+(pdftex.def)             Requested size: 472.03123pt x 354.04095pt.
+
 
 [18 <./figures/raw-dc1-gc-plot.png>]
 
 pdfTeX warning: pdflatex (file ./figures/gene-finding-met.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/gene-finding-met.pdf, id=687, 612.2875pt x 543.02875pt>
+<figures/gene-finding-met.pdf, id=692, 612.2875pt x 543.02875pt>
 File: figures/gene-finding-met.pdf Graphic file (type pdf)
 <use figures/gene-finding-met.pdf>
-Package pdftex.def Info: figures/gene-finding-met.pdf  used on input line 164.
+Package pdftex.def Info: figures/gene-finding-met.pdf  used on input line 167.
 (pdftex.def)             Requested size: 472.03123pt x 418.63885pt.
 
 
@@ -842,10 +842,10 @@ Package pdftex.def Info: figures/gene-finding-met.pdf  used on input line 164.
 [21]
 
 pdfTeX warning: pdflatex (file ./figures/eval-met.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/eval-met.pdf, id=723, 537.00626pt x 403.5075pt>
+<figures/eval-met.pdf, id=732, 537.00626pt x 403.5075pt>
 File: figures/eval-met.pdf Graphic file (type pdf)
 <use figures/eval-met.pdf>
-Package pdftex.def Info: figures/eval-met.pdf  used on input line 299.
+Package pdftex.def Info: figures/eval-met.pdf  used on input line 302.
 (pdftex.def)             Requested size: 377.62642pt x 283.74629pt.
 
 
@@ -854,32 +854,32 @@ Package pdftex.def Info: figures/eval-met.pdf  used on input line 299.
 [23 <./figures/eval-met.pdf>]
 
 pdfTeX warning: pdflatex (file ./figures/region-workflow.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/region-workflow.pdf, id=756, 1034.86626pt x 508.90125pt>
+<figures/region-workflow.pdf, id=765, 1034.86626pt x 508.90125pt>
 File: figures/region-workflow.pdf Graphic file (type pdf)
 <use figures/region-workflow.pdf>
-Package pdftex.def Info: figures/region-workflow.pdf  used on input line 363.
+Package pdftex.def Info: figures/region-workflow.pdf  used on input line 366.
 (pdftex.def)             Requested size: 566.43604pt x 278.56094pt.
 
-Overfull \hbox (47.99756pt too wide) in paragraph at lines 378--383
+Overfull \hbox (47.99756pt too wide) in paragraph at lines 381--386
 []\OT1/cmr/m/n/10 The gene pre-dic-tions from Sub-sec-tions []4.3.1[], []4.3.2[], []4.3.3[] and the ad-di-tional datasets from Sub-sec-tions []4.2.2[], []4.4.3[], []4.4.2[]
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 392.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 395.
 (C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 392.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 395.
 
 
 [24]
 
 [25 <./figures/region-workflow.pdf>]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 434.
-<figures/igv/igv-agreement-thin-number.png, id=790, 1308.89pt x 437.635pt>
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 437.
+<figures/igv/igv-agreement-thin-number.png, id=798, 1308.89pt x 437.635pt>
 File: figures/igv/igv-agreement-thin-number.png Graphic file (type png)
 <use figures/igv/igv-agreement-thin-number.png>
-Package pdftex.def Info: figures/igv/igv-agreement-thin-number.png  used on input line 450.
+Package pdftex.def Info: figures/igv/igv-agreement-thin-number.png  used on input line 453.
 (pdftex.def)             Requested size: 424.82523pt x 142.04271pt.
 ))
 
@@ -902,7 +902,7 @@ LaTeX Warning: Reference `fig:seq-workflow, fig:predict-workflow, fig:valid, fig
 
 
 ]
-<figures/gc-plot.pdf, id=833, 462.52798pt x 346.89601pt>
+<figures/gc-plot.pdf, id=842, 462.52798pt x 346.89601pt>
 File: figures/gc-plot.pdf Graphic file (type pdf)
 <use figures/gc-plot.pdf>
 Package pdftex.def Info: figures/gc-plot.pdf  used on input line 76.
@@ -917,12 +917,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [31]) (chapters/c5/gene-finding-results.tex
-<figures/gene-counts-barplot.pdf, id=903, 693.06927pt x 346.89601pt>
+<figures/gene-counts-barplot.pdf, id=912, 693.06927pt x 346.89601pt>
 File: figures/gene-counts-barplot.pdf Graphic file (type pdf)
 <use figures/gene-counts-barplot.pdf>
 Package pdftex.def Info: figures/gene-counts-barplot.pdf  used on input line 37.
 (pdftex.def)             Requested size: 424.82523pt x 212.63313pt.
-<figures/cds-counts-barplot.pdf, id=904, 687.28767pt x 346.89601pt>
+<figures/cds-counts-barplot.pdf, id=913, 687.28767pt x 346.89601pt>
 File: figures/cds-counts-barplot.pdf Graphic file (type pdf)
 <use figures/cds-counts-barplot.pdf>
 Package pdftex.def Info: figures/cds-counts-barplot.pdf  used on input line 43.
@@ -932,22 +932,22 @@ Package pdftex.def Info: figures/cds-counts-barplot.pdf  used on input line 43.
 [32]
 
 [33 <./figures/gene-counts-barplot.pdf> <./figures/cds-counts-barplot.pdf>]
-<figures/dc1-cdf-lengths-log.pdf, id=1014, 722.7pt x 361.35pt>
+<figures/dc1-cdf-lengths-log.pdf, id=1023, 722.7pt x 361.35pt>
 File: figures/dc1-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/dc1-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 32.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
-<figures/tsth20-cdf-lengths-log.pdf, id=1015, 722.7pt x 361.35pt>
+<figures/tsth20-cdf-lengths-log.pdf, id=1024, 722.7pt x 361.35pt>
 File: figures/tsth20-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/tsth20-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/tsth20-cdf-lengths-log.pdf  used on input line 36.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
-<figures/t-reesei-cdf-lengths-log.pdf, id=1016, 722.7pt x 361.35pt>
+<figures/t-reesei-cdf-lengths-log.pdf, id=1025, 722.7pt x 361.35pt>
 File: figures/t-reesei-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-reesei-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-reesei-cdf-lengths-log.pdf  used on input line 47.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
-<figures/t-harzianum-cdf-lengths-log.pdf, id=1017, 722.7pt x 361.35pt>
+<figures/t-harzianum-cdf-lengths-log.pdf, id=1026, 722.7pt x 361.35pt>
 File: figures/t-harzianum-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-harzianum-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-harzianum-cdf-lengths-log.pdf  used on input line 51.
@@ -962,7 +962,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 57--57
 \OT1/cmr/m/n/10 be each gene find-ing tool ap-plied to \OT1/cmr/m/it/10 T. ree-sei \OT1/cmr/m/n/10 (GCF[]000167675.1[]v2.0) and \OT1/cmr/m/it/10 T. harzianum.
  []
 
-<figures/t-virens-cdf-lengths-log.pdf, id=1018, 722.7pt x 361.35pt>
+<figures/t-virens-cdf-lengths-log.pdf, id=1027, 722.7pt x 361.35pt>
 File: figures/t-virens-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-virens-cdf-lengths-log.pdf>
 Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input line 63.
@@ -976,12 +976,12 @@ Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input lin
 [36 <./figures/t-reesei-cdf-lengths-log.pdf> <./figures/t-harzianum-cdf-lengths-log.pdf>]) (chapters/c5/busco-results.tex
 
 [37 <./figures/t-virens-cdf-lengths-log.pdf>]
-<figures/busco-complete-counts.pdf, id=1238, 734.98589pt x 433.62pt>
+<figures/busco-complete-counts.pdf, id=1247, 734.98589pt x 433.62pt>
 File: figures/busco-complete-counts.pdf Graphic file (type pdf)
 <use figures/busco-complete-counts.pdf>
 Package pdftex.def Info: figures/busco-complete-counts.pdf  used on input line 21.
 (pdftex.def)             Requested size: 424.82523pt x 250.63301pt.
-<figures/busco-missing-counts.pdf, id=1239, 722.7pt x 433.62pt>
+<figures/busco-missing-counts.pdf, id=1248, 722.7pt x 433.62pt>
 File: figures/busco-missing-counts.pdf Graphic file (type pdf)
 <use figures/busco-missing-counts.pdf>
 Package pdftex.def Info: figures/busco-missing-counts.pdf  used on input line 26.
@@ -999,27 +999,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) (chapters/c5/regions.tex
 
 [41]
-<figures/dc1-region-breakdown.png, id=1360, 659.46375pt x 242.9075pt>
+<figures/dc1-region-breakdown.png, id=1369, 659.46375pt x 242.9075pt>
 File: figures/dc1-region-breakdown.png Graphic file (type png)
 <use figures/dc1-region-breakdown.png>
 Package pdftex.def Info: figures/dc1-region-breakdown.png  used on input line 21.
 (pdftex.def)             Requested size: 424.82523pt x 156.48325pt.
-<figures/tsth20-region-breakdown.png, id=1361, 648.4225pt x 217.81375pt>
+<figures/tsth20-region-breakdown.png, id=1370, 648.4225pt x 217.81375pt>
 File: figures/tsth20-region-breakdown.png Graphic file (type png)
 <use figures/tsth20-region-breakdown.png>
 Package pdftex.def Info: figures/tsth20-region-breakdown.png  used on input line 25.
 (pdftex.def)             Requested size: 424.82523pt x 142.70726pt.
-<figures/t-reesei-region-breakdown.png, id=1362, 586.19pt x 233.87375pt>
+<figures/t-reesei-region-breakdown.png, id=1371, 586.19pt x 233.87375pt>
 File: figures/t-reesei-region-breakdown.png Graphic file (type png)
 <use figures/t-reesei-region-breakdown.png>
 Package pdftex.def Info: figures/t-reesei-region-breakdown.png  used on input line 29.
 (pdftex.def)             Requested size: 424.82523pt x 169.49165pt.
-<figures/t-harzianum-region-breakdown.png, id=1363, 596.2275pt x 233.87375pt>
+<figures/t-harzianum-region-breakdown.png, id=1372, 596.2275pt x 233.87375pt>
 File: figures/t-harzianum-region-breakdown.png Graphic file (type png)
 <use figures/t-harzianum-region-breakdown.png>
 Package pdftex.def Info: figures/t-harzianum-region-breakdown.png  used on input line 37.
 (pdftex.def)             Requested size: 424.82523pt x 166.64032pt.
-<figures/t-virens-region-breakdown.png, id=1364, 587.19376pt x 233.87375pt>
+<figures/t-virens-region-breakdown.png, id=1373, 587.19376pt x 233.87375pt>
 File: figures/t-virens-region-breakdown.png Graphic file (type png)
 <use figures/t-virens-region-breakdown.png>
 Package pdftex.def Info: figures/t-virens-region-breakdown.png  used on input line 41.
@@ -1031,7 +1031,7 @@ Package pdftex.def Info: figures/t-virens-region-breakdown.png  used on input li
 [43 <./figures/dc1-region-breakdown.png> <./figures/tsth20-region-breakdown.png> <./figures/t-reesei-region-breakdown.png>]
 
 [44 <./figures/t-harzianum-region-breakdown.png> <./figures/t-virens-region-breakdown.png>]
-<figures/igv/igv-uncertain-regions.png, id=1385, 1446.40375pt x 698.61pt>
+<figures/igv/igv-uncertain-regions.png, id=1394, 1446.40375pt x 698.61pt>
 File: figures/igv/igv-uncertain-regions.png Graphic file (type png)
 <use figures/igv/igv-uncertain-regions.png>
 Package pdftex.def Info: figures/igv/igv-uncertain-regions.png  used on input line 113.
@@ -1039,7 +1039,7 @@ Package pdftex.def Info: figures/igv/igv-uncertain-regions.png  used on input li
 
 
 [45 <./figures/igv/igv-uncertain-regions.png>]
-<figures/igv/igv-opposing-strands.png, id=1393, 1448.41125pt x 702.625pt>
+<figures/igv/igv-opposing-strands.png, id=1402, 1448.41125pt x 702.625pt>
 File: figures/igv/igv-opposing-strands.png Graphic file (type png)
 <use figures/igv/igv-opposing-strands.png>
 Package pdftex.def Info: figures/igv/igv-opposing-strands.png  used on input line 138.
@@ -1050,7 +1050,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [46 <./figures/igv/igv-opposing-strands.png>]
-<figures/interproscan-barplot.pdf, id=1404, 722.7pt x 433.62pt>
+<figures/interproscan-barplot.pdf, id=1413, 722.7pt x 433.62pt>
 File: figures/interproscan-barplot.pdf Graphic file (type pdf)
 <use figures/interproscan-barplot.pdf>
 Package pdftex.def Info: figures/interproscan-barplot.pdf  used on input line 31.
@@ -1059,7 +1059,7 @@ Package pdftex.def Info: figures/interproscan-barplot.pdf  used on input line 31
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/igv/ips-basic-agree.png, id=1405, 1551.7975pt x 839.135pt>
+<figures/igv/ips-basic-agree.png, id=1414, 1551.7975pt x 839.135pt>
 File: figures/igv/ips-basic-agree.png Graphic file (type png)
 <use figures/igv/ips-basic-agree.png>
 Package pdftex.def Info: figures/igv/ips-basic-agree.png  used on input line 64.
@@ -1073,7 +1073,7 @@ Underfull \vbox (badness 5862) has occurred while \output is active []
 
 
 [47 <./figures/interproscan-barplot.pdf>]
-<figures/igv/ips-model-disagree2.png, id=1464, 1390.19376pt x 764.8575pt>
+<figures/igv/ips-model-disagree2.png, id=1473, 1390.19376pt x 764.8575pt>
 File: figures/igv/ips-model-disagree2.png Graphic file (type png)
 <use figures/igv/ips-model-disagree2.png>
 Package pdftex.def Info: figures/igv/ips-model-disagree2.png  used on input line 97.
@@ -1082,7 +1082,7 @@ Package pdftex.def Info: figures/igv/ips-model-disagree2.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/igv/ips-braker-genemark-norefseq.png, id=1465, 1448.41125pt x 701.62125pt>
+<figures/igv/ips-braker-genemark-norefseq.png, id=1474, 1448.41125pt x 701.62125pt>
 File: figures/igv/ips-braker-genemark-norefseq.png Graphic file (type png)
 <use figures/igv/ips-braker-genemark-norefseq.png>
 Package pdftex.def Info: figures/igv/ips-braker-genemark-norefseq.png  used on input line 106.
@@ -1090,7 +1090,7 @@ Package pdftex.def Info: figures/igv/ips-braker-genemark-norefseq.png  used on i
 ) (chapters/c5/blast-results.tex
 
 [48]
-<figures/blast-total-counts.pdf, id=1474, 722.7pt x 433.62pt>
+<figures/blast-total-counts.pdf, id=1483, 722.7pt x 433.62pt>
 File: figures/blast-total-counts.pdf Graphic file (type pdf)
 <use figures/blast-total-counts.pdf>
 Package pdftex.def Info: figures/blast-total-counts.pdf  used on input line 22.
@@ -1101,17 +1101,17 @@ Underfull \vbox (badness 2951) has occurred while \output is active []
 
 
 [49 <./figures/igv/ips-basic-agree.png>]
-<figures/blast-tatroviride.pdf, id=1486, 691.62387pt x 438.67891pt>
+<figures/blast-tatroviride.pdf, id=1495, 691.62387pt x 438.67891pt>
 File: figures/blast-tatroviride.pdf Graphic file (type pdf)
 <use figures/blast-tatroviride.pdf>
 Package pdftex.def Info: figures/blast-tatroviride.pdf  used on input line 73.
 (pdftex.def)             Requested size: 401.22942pt x 254.49417pt.
-<figures/blast-fgraminarium.pdf, id=1487, 693.06927pt x 433.62pt>
+<figures/blast-fgraminarium.pdf, id=1496, 693.06927pt x 433.62pt>
 File: figures/blast-fgraminarium.pdf Graphic file (type pdf)
 <use figures/blast-fgraminarium.pdf>
 Package pdftex.def Info: figures/blast-fgraminarium.pdf  used on input line 78.
 (pdftex.def)             Requested size: 401.22942pt x 251.03pt.
-<figures/blast-scerevisiae.pdf, id=1488, 691.62387pt x 433.62pt>
+<figures/blast-scerevisiae.pdf, id=1497, 691.62387pt x 433.62pt>
 File: figures/blast-scerevisiae.pdf Graphic file (type pdf)
 <use figures/blast-scerevisiae.pdf>
 Package pdftex.def Info: figures/blast-scerevisiae.pdf  used on input line 85.
@@ -1125,7 +1125,7 @@ Package pdftex.def Info: figures/blast-scerevisiae.pdf  used on input line 85.
 [52 <./figures/blast-tatroviride.pdf> <./figures/blast-fgraminarium.pdf>]
 
 [53 <./figures/blast-scerevisiae.pdf>]
-<figures/atrich-regions-barplot.pdf, id=1701, 722.7pt x 433.62pt>
+<figures/atrich-regions-barplot.pdf, id=1710, 722.7pt x 433.62pt>
 File: figures/atrich-regions-barplot.pdf Graphic file (type pdf)
 <use figures/atrich-regions-barplot.pdf>
 Package pdftex.def Info: figures/atrich-regions-barplot.pdf  used on input line 27.
@@ -1136,7 +1136,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [54 <./figures/atrich-regions-barplot.pdf>]
-<figures/atrich-genes-barplot.pdf, id=1756, 722.7pt x 433.62pt>
+<figures/atrich-genes-barplot.pdf, id=1765, 722.7pt x 433.62pt>
 File: figures/atrich-genes-barplot.pdf Graphic file (type pdf)
 <use figures/atrich-genes-barplot.pdf>
 Package pdftex.def Info: figures/atrich-genes-barplot.pdf  used on input line 64.
@@ -1170,8 +1170,8 @@ Chapter 6.
 
 
 ]
-Overfull \hbox (53.03818pt too wide) in paragraph at lines 156--158
-[]\OT1/cmr/m/n/10 The NCBI Eu-kary-otic Genome An-no-ta-tion Pipeline.  https://www.ncbi.nlm.nih.gov/refseq/annotation[]euk/process/. 
+Overfull \hbox (53.03818pt too wide) in paragraph at lines 154--157
+[]\OT1/cmr/m/n/10 The NCBI Eu-kary-otic Genome An-no-ta-tion Pipeline.  https://www.ncbi.nlm.nih.gov/refseq/annotation[]euk/process/,
  []
 
 
@@ -1193,17 +1193,17 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: AFC731D82F08B350641BED8742F8DF4D;12332.
  ) 
 Here is how much of TeX's memory you used:
- 24146 strings out of 468221
- 458440 string characters out of 5432891
- 845101 words of memory out of 5000000
- 51962 multiletter control sequences out of 15000+600000
+ 24147 strings out of 468221
+ 458463 string characters out of 5432891
+ 844160 words of memory out of 5000000
+ 51963 multiletter control sequences out of 15000+600000
  632461 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,17n,93p,2365b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (73 pages, 1574162 bytes).
+Output written on thesis.pdf (73 pages, 1576777 bytes).
 PDF statistics:
- 1984 PDF objects out of 2073 (max. 8388607)
+ 1993 PDF objects out of 2073 (max. 8388607)
  235 named destinations out of 1000 (max. 500000)
  665 words of extra memory for PDF output out of 10000 (max. 10000000)
 

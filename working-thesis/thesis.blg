@@ -20,43 +20,43 @@ Database file #1: ./refs/full-bib.bib
 Warning--empty author in 2008
 You've used 54 entries,
             1791 wiz_defined-function locations,
-            765 strings with 15546 characters,
-and the built_in function-call counts, 14790 in all, are:
-= -- 1169
+            768 strings with 15626 characters,
+and the built_in function-call counts, 14867 in all, are:
+= -- 1181
 > -- 987
 < -- 5
 + -- 349
 - -- 295
-* -- 1343
-:= -- 2457
-add.period$ -- 161
+* -- 1359
+:= -- 2470
+add.period$ -- 163
 call.type$ -- 54
 change.case$ -- 54
 chr.to.int$ -- 0
 cite$ -- 55
-duplicate$ -- 511
-empty$ -- 1271
+duplicate$ -- 512
+empty$ -- 1276
 format.name$ -- 295
-if$ -- 3109
+if$ -- 3126
 int.to.chr$ -- 0
 int.to.str$ -- 54
 missing$ -- 49
-newline$ -- 268
+newline$ -- 270
 num.names$ -- 57
-pop$ -- 95
+pop$ -- 100
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 230
+skip$ -- 217
 stack$ -- 0
-substring$ -- 1053
+substring$ -- 1062
 swap$ -- 87
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 137
+while$ -- 138
 width$ -- 56
-write$ -- 582
+write$ -- 589
 (There was 1 warning)
