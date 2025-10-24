@@ -4,7 +4,7 @@
 %contains the fundamental set of `rules' used to create what we know as
 %life. One can think of a genome as a set of instructions that our
 %cells use in order to complete the tasks that make us function. A
-%genome is comprised of tightly bundled sequences of DNA, which are
+%genome consists of tightly bundled sequences of DNA, which are
 %stored in the nucleus of cells. These bundles of DNA contain sections
 %known as genes, which can be thought of as the tools described by the
 %set of instructions. These tools carry out a vast number of processes
@@ -15,33 +15,122 @@
 %opportunities to understand other `omics' within cells, such as
 %proteomics, metabolomics, transcriptomics and epidemics.
 
-This chapter provides a brief background on \textit{Trichoderma} and gene prediction tools, providing context for this research. Section~\ref{lit:evolution} discusses the evolutionary mechanisms that may have led to the increased production of secondary metabolites in \textit{Trichoderma} species, such as horizontal gene transfer, gene duplication, and transposable elements. Section~\ref{lit:novel-genomes} discusses the novel \textit{Trichoderma} genomes that were sequenced and assembled as part of this work, and how they relate to the research questions. Section~\ref{lit:similarity-searches} discusses the structure of eukaryotic genes as well as a background of gene finding tools and methods, while Section~\ref{lit:secondary-metabolites} provides an overview of secondary metabolites and their importance in \textit{Trichoderma} species. Finally, Section~\ref{lit:comp-motiv} provides an overview of comparative studies of gene prediction tools in \textit{Trichoderma} species, and how this work aims to fill the gap in literature.
+This chapter provides a brief background on \textit{Trichoderma} and
+gene prediction tools, providing context for this
+research. Section~\ref{lit:evolution} discusses the evolutionary
+mechanisms that may have led to the increased production of secondary
+metabolites in \textit{Trichoderma} species, such as horizontal gene
+transfer, gene duplication, and transposable
+elements. Section~\ref{lit:novel-genomes} discusses the
+novel \textit{Trichoderma} genomes that were sequenced and assembled
+as part of this work, and how they relate to the research
+questions. Section~\ref{lit:similarity-searches} discusses the
+structure of eukaryotic genes as well as a background of gene finding
+tools and methods, while Section~\ref{lit:secondary-metabolites}
+provides an overview of secondary metabolites and their importance
+in \textit{Trichoderma} species. Finally, Section~\ref{lit:comp-motiv}
+provides an overview of comparative studies of gene prediction tools
+in \textit{Trichoderma} species, and how this work aims to fill the
+gap in literature.
 
 \section{\textit{Trichoderma} Species and their Features}\label{lit:features}
 
-\textit{Trichoderma} species are a group of fungi in the \textit{Hypocreaceae} family and are found in a wide variety of soils, being well-known for their use in biomanufacturing
-of cellulases and hemicellulases and also known for their roles as non-toxic,
-avirulent, opportunistic plant symbionts~\cite{woo2023a, kubicek2019a}. 
-Many of these features of \textit{Trichoderma}
-can be attributed to the large number of secondary metabolites
-produced by these fungi, which are used to interact with plants and other organisms in the soil~\cite{Mukherjee2012}. \textit{Trichoderma} species differ in the number of secondary metabolites they produce, with some species producing more than others~\cite{Mukherjee2012}. This variation in secondary metabolite production is of great interest to researchers, as it can provide insight into how these fungi can confer benefits to plants, and how they can be used in agriculture and industry. In addition, the study of secondary metabolites in \textit{Trichoderma} species can help us better understand
-the evolutionary processes that have shaped \textit{Trichoderma} species over time.
+\textit{Trichoderma} species are a group of fungi in the \textit{Hypocreaceae}
+family and are found in a wide variety of soils, being well-known for
+their use in biomanufacturing of cellulases and hemicellulases and
+also known for their roles as non-toxic, avirulent, opportunistic
+plant symbionts~\cite{woo2023a, kubicek2019a}.  Many of these features
+of \textit{Trichoderma} can be attributed to the large number of
+secondary metabolites produced by these fungi, which are used to
+interact with plants and other organisms in the
+soil~\cite{Mukherjee2012}. \textit{Trichoderma} species differ in the
+number of secondary metabolites they produce, with some species
+producing more than others~\cite{Mukherjee2012}. This variation in
+secondary metabolite production is of great interest to researchers,
+as it can provide insight into how these fungi can confer benefits to
+plants, and how they can be used in agriculture and industry. In
+addition, the study of secondary metabolites in \textit{Trichoderma}
+species can help us better understand the evolutionary processes that
+have shaped \textit{Trichoderma} species over time.
 
-There are many mechanisms that organisms may leverage that result in gain or loss of gene function, and ultimately the evolution of a species. One well-studied mechanism is that of horizontal gene transfer (HGT), which is the process of acquiring genetic material from another organism, rather than through inheritance from a parent organism~\cite{goncalves2024}. HGT is a common mechanism in bacteria, but it has also been observed in fungi, including \textit{Trichoderma} species~\cite{goncalves2024}. Another mechanism of interest is the duplication of genes, which can result in the production of more than one copy of a gene, leading to increased expression of that gene~\cite{goncalves2024}. This is particularly relevant in the case of secondary metabolite production, as many \textit{Trichoderma} species have been shown to have multiple copies of genes involved in secondary metabolite production~\cite{Mukherjee2012}. Lastly, transposable elements (TEs) are another mechanism of interest, as they can insert themselves into the genome and disrupt or enhance the expression of genes~\cite{goncalves2024}. TEs have been shown to play a role in the evolution of \textit{Trichoderma} species, particularly in the case of secondary metabolite production~\cite{goncalves2024}. 
+There are many mechanisms that organisms may leverage that result in
+gain or loss of gene function, and ultimately the evolution of a
+species. One well-studied mechanism is that of horizontal gene
+transfer (HGT), which is the process of acquiring genetic material
+from another organism, rather than through inheritance from a parent
+organism~\cite{goncalves2024}. HGT is a common mechanism in bacteria,
+but it has also been observed in fungi, including \textit{Trichoderma}
+species~\cite{goncalves2024}. Another mechanism of interest is the
+duplication of genes, which can result in the production of more than
+one copy of a gene, leading to increased expression of that
+gene~\cite{goncalves2024}. This is particularly relevant in the case
+of secondary metabolite production, as many \textit{Trichoderma}
+species have been shown to have multiple copies of genes involved in
+secondary metabolite production~\cite{Mukherjee2012}. Lastly,
+transposable elements (TEs) are another mechanism of interest, as they
+can insert themselves into the genome and disrupt or enhance the
+expression of genes~\cite{goncalves2024}. TEs have been shown to play
+a role in the evolution of \textit{Trichoderma} species, particularly
+in the case of secondary metabolite production~\cite{goncalves2024}.
 
-Interestingly, both HGT and TEs tend to present themselves in regions where GC content differs from the rest of the genome~\cite{goncalves2024}. Abnormal GC content is also associated with other genomic features, such as centromeres~\cite{plohl2014a} and repetitive regions~\cite{winter2018}, both of which may have an effect on the production of secondary metabolites. As a result, it is important to consider the GC content of a genome when studying \textit{Trichoderma} species, which forms the basis of the Research Question~\ref{rq:anomalous-sequence-content}. Some studies have shown that \textit{Trichoderma} species contain very few, if any transposable elements, which is unusual for fungi~\cite{kubicek2011}. It is hypothesized that TEs were lost in \textit{Trichoderma} due to repeat induced point mutations (RIP), which is a process that occurs in fungi where TEs are silenced and eventually lost from the genome~\cite{kubicek2011}. Genes responsible for RIP mutations also tend to target GC nucleotide pairs, converting them to AT nucleotides, which explains the low GC content observed in some regions of \textit{Trichoderma} genomes~\cite{goncalves2024}. These conversions usually occur when a C nucleotide is adjacent to a downstream A nucleotide.
+Interestingly, both HGT and TEs tend to present themselves in regions
+where GC content differs from the rest of the
+genome~\cite{goncalves2024}. Abnormal GC content is also associated
+with other genomic features, such as centromeres~\cite{plohl2014a} and
+repetitive regions~\cite{winter2018}, both of which may have an effect
+on the production of secondary metabolites. As a result, it is
+important to consider the GC content of a genome when
+studying \textit{Trichoderma} species, which forms the basis of the
+Research Question~\ref{rq:anomalous-sequence-content}. Some studies
+have shown that \textit{Trichoderma} species contain very few, if any
+transposable elements, which is unusual for
+fungi~\cite{kubicek2011}. It is hypothesized that TEs were lost
+in \textit{Trichoderma} due to repeat induced point mutations (RIP),
+which is a process that occurs in fungi where TEs are silenced and
+eventually lost from the genome~\cite{kubicek2011}. Genes responsible
+for RIP mutations also tend to target GC nucleotide pairs, converting
+them to AT nucleotides, which explains the low GC content observed in
+some regions of \textit{Trichoderma}
+genomes~\cite{goncalves2024}. These conversions usually occur when a C
+nucleotide is adjacent to a downstream A nucleotide.
 
 %One common theory for the increase in secondary metabolites is that \textit%{Trichoderma} initially evolved as a parasite or saprotroph of plants, due to their abundant production of cellulases and plant wall degrading enzymes~\cite{kubicek2019a}. In addition to saprotrophy, \textit{Trichoderma} species are also mycoparasitic, feeding on other Ascomycete and closely related fungal species~\cite{Druzhinina2018}. As a result, it is hypothesized that the elevated production of secondary metabolites in \textit{Trichoderma} arose from the constant change and competition for resources in the environments in which they evolved.~\cite{Mukherjee2012}. While many studies have been conducted on the mechanisms behind fungal evolutionary processes, the process of horizontal gene transfer (HGT), is of particular interest in the case of \textit{Trichoderma}~\cite{goncalves2024}.
 
-Given the proximity of \textit{Trichoderma} species to other fungi, bacteria, and plants in soils, it is possible that \textit{Trichoderma} species acquired genes which are involved in response to antagonistic or sympathetic intercellular interactions from other organisms. While difficult to prove, studies have shown that HGT events have occurred in a number of fungal species~\cite{fitzpatrick2012}. It is also important to note that some \textit{Trichoderma} species have higher numbers of genes involved in secondary metabolite production than others, indicating an evolutionary divergence, making comparative analysis of \textit{Trichoderma} species and strains a useful tool for understanding the mechanisms behind secondary metabolite production~\cite{Mukherjee2012}.
+Given the proximity of \textit{Trichoderma} species to other fungi,
+bacteria, and plants in soils, it is possible
+that \textit{Trichoderma} species acquired genes which are involved in
+response to antagonistic or sympathetic intercellular interactions
+from other organisms. While difficult to prove, studies have shown
+that HGT events have occurred in a number of fungal
+species~\cite{fitzpatrick2012}. It is also important to note that
+some \textit{Trichoderma} species have higher numbers of genes
+involved in secondary metabolite production than others, indicating an
+evolutionary divergence, making comparative analysis
+of \textit{Trichoderma} species and strains a useful tool for
+understanding the mechanisms behind secondary metabolite
+production~\cite{Mukherjee2012}.
 
 \section{Novel \textit{Trichoderma} Genomes}\label{lit:novel-genomes}
 
-Recently, two strains of \textit{Trichoderma}
-have been identified in the prairie regions of Alberta and
-Saskatchewan. These two strains, named Tsth20 and DC1, have been found
-to have beneficial properties when used as an inoculant for plants in soils. Tsth20 has been classified into a clade with \textit{Trichoderma harzianum}, and may act as a bioremediation tool in soils contaminated with hydrocarbon content. DC1, while not yet classified, is believed to confer salt and drought tolerance to plants in dry, salty soils. While bioremediation and resistance to drought tolerance have been investigated in other strains of
-\textit{Trichoderma}~\cite{senizza2023}, the study of new strains is still useful in the effort of discovering unique mechanisms used by \textit{Trichoderma}. Little is known about these strains, so DC1 and Tsth20 were sequenced at the Global Institute for Food Security in an initial attempt to better understand the mechanisms at work in these genomes. While this research does not explicitly identify genomic elements related to the beneficial properties of their genomes, it may serve as a foundation for future research of \textit{Trichoderma}. The assembly of these genomes come as a result of Research Question~\ref{rq:assembly-results}.
+Recently, two strains of \textit{Trichoderma} have been identified in
+the prairie regions of Alberta and Saskatchewan. These two strains,
+named Tsth20 and DC1, have been found to have beneficial properties
+when used as an inoculant for plants in soils. Tsth20 has been
+classified into a clade with \textit{Trichoderma harzianum}, and may
+act as a bioremediation tool in soils contaminated with hydrocarbon
+content. DC1, while not yet classified, is believed to confer salt and
+drought tolerance to plants in dry, salty soils. While bioremediation
+and resistance to drought tolerance have been investigated in other
+strains of \textit{Trichoderma}~\cite{senizza2023}, the study of new
+strains is still useful in the effort of discovering unique mechanisms
+used by \textit{Trichoderma}. Little is known about these strains, so
+DC1 and Tsth20 were sequenced at the Global Institute for Food
+Security in an initial attempt to better understand the mechanisms at
+work in these genomes. While this research does not explicitly
+identify genomic elements related to the beneficial properties of
+their genomes, it may serve as a foundation for future research
+of \textit{Trichoderma}. The assembly of these genomes come as a
+result of Research Question~\ref{rq:assembly-results}.
 
 \section{Evolutionary Landscape of \textit{Trichoderma}}\label{lit:evolution}
 

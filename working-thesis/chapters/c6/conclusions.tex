@@ -8,11 +8,12 @@ datasets. Observations from the results portion of this work have been
 converted to scores relative to the other gene finders. Scores range
 from zero to three, with values being: 0 \- failing performance, 1 \-
 passing performance, 2 \- good performance, and 3 \- excellent
-performance. Results from this work are summarized in Table~\ref{table:final-score}. Ignoring availability and use of the gene
-finding tools, it would appear that RefSeq performs the best in the
-remaining categories, earning top marks in every category except in
-its ability to predict very short genes. Braker2 earns second place;
-however, this does not capture Braker2's failure in predicting
+performance. Results from this work are summarized in
+Table~\ref{table:final-score}. Ignoring availability and use of the
+gene finding tools, it would appear that RefSeq performs the best in
+the remaining categories, earning top marks in every category except
+in its ability to predict very short genes. Braker2 earns second
+place; however, this does not capture Braker2's failure in predicting
 accurate numbers of genes in DC1, Tsth20, \textit{T. harzianum} and
 \textit{T. virens}. GeneMark comes in last, excelling only in number
 of genes predicted and Pfam support for the genes that it predicts.
@@ -98,10 +99,52 @@ evidence.
 
 \section{Future Work}
 
-While this work is extensive, there are still many areas that could be expanded on. The sheer number of gene finding tools available means that many more could be compared to the ones presented here. In addition, supplying more training data to Braker2 may improve gene finding performance, and training on RNAseq from different organisms could be used to improve the performance of Braker2. It is clear from the results that Braker2 performed worse than GeneMark and the RefSeq predictions, which was likely due to the training data being used from \textit{T. reesei}. Different types of training data such as RNAseq, expressed sequence tags (ESTs), and protein sequences could also be used to train models that support external evidence. Another limitation of this work is that the gene finders were run with default parameters, and it is possible that tuning the parameters of the gene finders could improve performance.
+While this work is extensive, there are still many areas that could be
+expanded on. The sheer number of gene finding tools available means
+that many more could be compared to the ones presented here. In
+addition, supplying more training data to Braker2 may improve gene
+finding performance, and training on RNAseq from different organisms
+could be used to improve the performance of Braker2. It is clear from
+the results that Braker2 performed worse than GeneMark and the RefSeq
+predictions, which was likely due to the training data being used from
+\textit{T. reesei}. Different types of training data such as RNAseq,
+expressed sequence tags (ESTs), and protein sequences could also be
+used to train models that support external evidence. Another
+limitation of this work is that the gene finders were run with default
+parameters, and it is possible that tuning the parameters of the gene
+finders could improve performance.
 
-Following the gene prediction process, there are a number of different analyses that could be performed on the predicted genes. For example, functional annotation of the predicted genes could be performed using tools such as BLAST2GO to assign Gene Ontology (GO) terms and KEGG pathways to the predicted genes. This could provide further insight into the functional roles of the predicted genes and their potential applications. More importantly in the context of this work, analysis of predicted genes with a tool like antiSMASH could be used to identify biosynthetic gene clusters (BGCs) in the predicted genes. 
+Following the gene prediction process, there are a number of different
+analyses that could be performed on the predicted genes. For example,
+functional annotation of the predicted genes could be performed using
+tools such as BLAST2GO to assign Gene Ontology (GO) terms and KEGG
+pathways to the predicted genes. This could provide further insight
+into the functional roles of the predicted genes and their potential
+applications. More importantly in the context of this work, analysis
+of predicted genes with a tool like antiSMASH could be used to
+identify biosynthetic gene clusters (BGCs) in the predicted genes.
 
-Expanding the number of genomes used in this work would also be beneficial, as the results presented here are based on a limited number of genomes. Including more genomes from different species and strains of \textit{Trichoderma} could provide a more comprehensive understanding of gene finding performance across the genus. Additionally, comparing the performance of gene finders on other fungal genomes could provide insights into whether the findings are generalizable. Examining the performance of gene finders on different assemblies of the same genome could also be useful, as different assemblies may have different levels of completeness and accuracy. This could help to identify tangible benefits of using one assembly over another, and could also provide insights into the limitations of gene finders when applied to different assemblies.
+Expanding the number of genomes used in this work would also be
+beneficial, as the results presented here are based on a limited
+number of genomes. Including more genomes from different species and
+strains of \textit{Trichoderma} could provide a more comprehensive
+understanding of gene finding performance across the
+genus. Additionally, comparing the performance of gene finders on
+other fungal genomes could provide insights into whether the findings
+are generalizable. Examining the performance of gene finders on
+different assemblies of the same genome could also be useful, as
+different assemblies may have different levels of completeness and
+accuracy. This could help to identify tangible benefits of using one
+assembly over another, and could also provide insights into the
+limitations of gene finders when applied to different assemblies.
 
-Finally, the results of this work could be used to inform future research in the field of fungal genomics, particularly in the case of the DC1 and Tsth20 genome assemblies. The results of these genome assemblies are high-quality, and contain near-chromosomal scale sequences. The predicted genes from these genomes are a rich resource for future research, and could be used to identify novel genes and gene families in DC1 and Tsth20. Further understanding of the mechanisms behind salt and drought tolerance as well as degradation of hydrocarbon in sub-optimal environments could be achieved by studying the predicted genes in these genomes. 
+Finally, the results of this work could be used to inform future
+research in the field of fungal genomics, particularly in the case of
+the DC1 and Tsth20 genome assemblies. The results of these genome
+assemblies are high-quality, and contain near-chromosomal scale
+sequences. The predicted genes from these genomes are a rich resource
+for future research, and could be used to identify novel genes and
+gene families in DC1 and Tsth20. Further understanding of the
+mechanisms behind salt and drought tolerance as well as degradation of
+hydrocarbon in suboptimal environments could be achieved by studying
+the predicted genes in these genomes.

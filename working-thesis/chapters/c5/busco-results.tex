@@ -1,18 +1,32 @@
 \section{BUSCO Results}\label{section:busco}
 
-Results of BUSCO analysis using the sordariomycetes\_Odb12 dataset provided by BUSCO are presented in Figure~\ref{fig:busco-counts}, and Table~\ref{table:busco}. The results 
-indicate that all gene sets considered in this analysis have a BUSCO
-completeness of 94.1\% or higher, with a maximum completeness of
-98.4\% in the case of Braker2 and DC1. In general, Braker2 and RefSeq have the
-most BUSCO complete sets of gene predictions of the three tools
-considered. Interestingly, Braker2 produces far more duplicated BUSCO
-matches than both GeneMark and RefSeq. Examining the BUSCO output
-logs, this appears to be due to Braker2 predicting more than one
-coding sequence for some genes predictions, resulting in multiple
-similar proteins. Interestingly, the coding sequences in the RefSeq annotations seem to miss more genes than the other two gene finders while also having a higher number of fragmented BUSCO genes. This may be due to human curation of the RefSeq datasets, or the Gnomon gene prediction pipeline used by NCBI to produce these annotations. Further investigation is required to determine the exact cause of this discrepancy. Finally, it appears that \textit{T. reesei} tends to have slightly lower BUSCO completeness than the other \textit{Trichoderma} species considered in this analysis, regardless of gene finder used. Why this is the case is unknown, but may be due to the evolutionary distance between \textit{T. reesei}, the Gnomon annotation process, or potentially the fragmented nature of the \textit{T. reesei} assembly used in this analysis. While these results do not
-capture the entire set of genes possibly present in these
-\textit{Trichoderma} assemblies, they do confirm that the gene finders
-are at minimum predicting many evolutionarily conserved fungal genes.
+Results of BUSCO analysis using the sordariomycetes\_Odb12 dataset
+provided by BUSCO are presented in Figure~\ref{fig:busco-counts}, and
+Table~\ref{table:busco}. The results indicate that all gene sets
+considered in this analysis have a BUSCO completeness of 94.1\% or
+higher, with a maximum completeness of 98.4\% in the case of Braker2
+and DC1. In general, Braker2 and RefSeq have the most BUSCO complete
+sets of gene predictions of the three tools considered. Interestingly,
+Braker2 produces far more duplicated BUSCO matches than both GeneMark
+and RefSeq. Examining the BUSCO output logs, this appears to be due to
+Braker2 predicting more than one coding sequence for some genes
+predictions, resulting in multiple similar proteins. Interestingly,
+the coding sequences in the RefSeq annotations seem to miss more genes
+than the other two gene finders while also having a higher number of
+fragmented BUSCO genes. This may be due to human curation of the
+RefSeq datasets, or the Gnomon gene prediction pipeline used by NCBI
+to produce these annotations. Further investigation is required to
+determine the exact cause of this discrepancy. Finally, it appears
+that \textit{T. reesei} tends to have slightly lower BUSCO
+completeness than the other \textit{Trichoderma} species considered in
+this analysis, regardless of gene finder used. Why this is the case is
+unknown, but may be due to the evolutionary distance between
+\textit{T. reesei}, the Gnomon annotation process, or potentially the
+fragmented nature of the \textit{T. reesei} assembly used in this
+analysis. While these results do not capture the entire set of genes
+possibly present in these \textit{Trichoderma} assemblies, they do
+confirm that the gene finders are at minimum predicting many
+evolutionarily conserved fungal genes.
 
 \begin{figure}
   \centering
