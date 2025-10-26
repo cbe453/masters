@@ -39,7 +39,7 @@ evolutionarily conserved fungal genes.
     \centering
     \includegraphics[width=\textwidth]{figures/busco-missing-counts.pdf}
   \end{subfigure}
-  \caption[BUSCO counts]{BUSCO complete and missing gene counts for each gene finder across all \textit{Trichoderma} genome assemblies. There were a total of 4492 markers in the selected BUSCO dataset. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0. The selected sordariomycetes\_Odb12 dataset contains 4492 markers.}\label{fig:busco-counts}
+  \caption[BUSCO counts]{BUSCO complete and missing gene counts for each gene finder across all \textit{Trichoderma} genome assemblies. There were a total of 4492 markers in the sordariomycetes\_Odb12 BUSCO dataset. For DC1 and Tsth20, RefSeq annotations are not available, so their values are set to 0.}\label{fig:busco-counts}
 \end{figure}
 
 \begin{table}
@@ -87,11 +87,12 @@ evolutionarily conserved fungal genes.
   \caption[BUSCO results]{Results from BUSCO using the fungal analysis option
     organized by gene finding tool. The sordariomycetes\_Odb12 dataset
     contains 4492 markers. For more information on the categories
-    assigned by BUSCO, please refer to the documentation.}\label{table:busco}
+    assigned by BUSCO, please refer to the \href{https://busco.ezlab.org/busco\_userguide.html\#interpreting-the-results}{BUSCO user guide}.}
+    \label{table:busco}
 \end{table}
 
 While BUSCO matches are a good metric for general performance of gene
-finders, it is also important to investigate BUSCO proteins that were missing from the gene predictions. Of interest are BUSCO proteins that are systematically missed by a gene finder in multiple or all assemblies, and whether these BUSCO proteins are also missed by other gene finders. Table~\ref{table:missed-busco-all} lists BUSCO IDs and their corresponding annotations that were not found in any set of predictions from Braker2, GeneMark or RefSeq. There are 17 BUSCO proteins that were not found by any of the three gene finders in any of the five \textit{Trichoderma} assemblies. The annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by all three gene finders, and further investigation is required to determine why these genes are not being predicted. It is possible that these genes are simply not present in these \textit{Trichoderma} species, but this may be unlikely given the evolutionary conservation of BUSCO proteins. Each gene finder also has one or more BUSCO proteins that are missed in all assemblies but not by one or both of the other gene finders. These genes are presented in Table~\ref{table:missed-all-gf}. Again, the annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by a particular gene finder, and further investigation is required to determine why these genes are not being predicted. While not presented here, we also identified a number of other genes that are missed by the gene finders which may provide insight into their performance and the evolution of \textit{Trichoderma}. Overall, it appears that there are very few BUSCO proteins that are systematically missed by all gene finders, indicating that the gene finders are generally capable of predicting the majority of conserved fungal genes.
+finders, it is also important to investigate BUSCO proteins that were missing from the gene predictions. Of interest are BUSCO proteins that are systematically missed by a gene finder in multiple or all assemblies, and whether these BUSCO proteins are also missed by other gene finders. Table~\ref{table:missed-busco-all} lists 17 BUSCO proteins and their corresponding annotations that were not found in any set of predictions from Braker2, GeneMark or RefSeq. The annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by all three gene finders, and further investigation is required to determine why these genes are not being predicted. It is possible that these genes are simply not present in these \textit{Trichoderma} species, but this may be unlikely given the evolutionary conservation of BUSCO proteins. Each gene finder also has one or more BUSCO proteins that are missed in all assemblies but not by one or both of the other gene finders. These genes are presented in Table~\ref{table:missed-all-gf}. Again, the annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by a particular gene finder, and further investigation is required to determine why these genes are not being predicted. While not presented here, we also identified a number of other genes that are missed by the gene finders which may provide insight into their performance and the evolution of \textit{Trichoderma}. Overall, it appears that there are very few BUSCO proteins that are systematically missed by all gene finders, indicating that the gene finders are generally capable of predicting the majority of conserved fungal genes.
 
 
 \begin{table}[h]
@@ -131,9 +132,9 @@ finders, it is also important to investigate BUSCO proteins that were missing fr
     632579at147550 & RefSeq & Cyanate hydratase \\ \hline
     672871at147550 & RefSeq & MAU2 chromatid cohesion factor \\ \hline
     677279at147550 & RefSeq & Pentatricopeptide repeat domain-containing \\ \hline
-    688724at147550 & GeneMark/Braker2 & Putative protein of unknown function \\ \hline
+    688724at147550 & GeneMark \&Braker2 & Putative protein of unknown function \\ \hline
   \end{tabular}
-  \caption[Additional missing BUSCO IDs]{Additional BUSCO IDs along with their corresponding annotations not found in any set of predictions by some tools. The tools that missed each BUSCO ID are also listed.}\label{table:missed-all-gf}
+  \caption[Additional missing BUSCO IDs]{Additional BUSCO IDs along with their corresponding annotations not found in any set of predictions by one or more tools but not all. The tools that missed each BUSCO ID are also listed.}\label{table:missed-all-gf}
 \end{table}
 
 %\begin{center}

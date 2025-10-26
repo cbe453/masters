@@ -14,20 +14,20 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces GC content distribution for each Trichoderma genome assembly}}{30}{figure.caption.23}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Number of genes predicted}}{33}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Number of coding sequences predicted}}{33}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Number of coding sequences predicted}}{34}{figure.caption.25}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots for DC1 and Tsth20}}{35}{figure.caption.27}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces CDF plots for \textit {T. harzianum} and \textit {T. reesei}}}{36}{figure.caption.28}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces CDF plots for \textit {T. virens}}}{37}{figure.caption.29}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces BUSCO counts}}{39}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Breakdown of identified regions}}{44}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Example of a region with many gene calls}}{45}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Breakdown of identified regions}}{43}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Example of a region with many gene calls}}{46}{figure.caption.37}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Predictions on opposing strands}}{46}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Percentage of proteins with Pfam matches}}{47}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Agreeing Pfam matches}}{49}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Split Pfam matches}}{50}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces RefSeq absence with IPS evidence}}{51}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Total tblastn hits}}{51}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Results from tblastn by reference}}{53}{figure.caption.47}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Regions of agreement in AT-rich genomic sequence}}{54}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Percentage of proteins with Pfam matches}}{48}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Agreeing Pfam matches}}{51}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Split Pfam matches}}{52}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces RefSeq absence with IPS evidence}}{53}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Total tblastn hits}}{53}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Results from tblastn by reference}}{55}{figure.caption.47}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Regions of agreement in AT-rich genomic sequence}}{55}{figure.caption.49}%
 \contentsline {figure}{\numberline {5.18}{\ignorespaces Gene counts in AT-rich regions}}{56}{figure.caption.51}%
 \addvspace {10\p@ }

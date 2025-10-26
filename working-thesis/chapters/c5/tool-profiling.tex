@@ -7,14 +7,14 @@ is different, requiring more or less effort to install and run than
 other tools. This section discusses the implementations, installation
 procedures and execution of GeneMark and Braker2 in more detail. For
 more information on the versions and parameters used in this
-processing, please see Section~\ref{met:braker2}. The computing
+processing, please see Section~\ref{met:genemark} and Section~\ref{met:braker2}. The computing
 platform used in this research is hosted and managed by University of
 Saskatchewan services, which is modelled around the HPC platform used
 by the Digital Research Alliance of Canada and software is managed
 similarly.
 
 GeneMark~\cite{borodovsky2011a} is a gene finding tool developed by
-the Georgia Institute of Technology with packages prepared for Linux
+the Georgia Institute of Technology with installation packages prepared for Linux
 and macOS. It is provided as licensed product in the form of a package
 which can be downloaded from their website after submitting a
 form. Once the necessary information is submitted, the user is
@@ -22,7 +22,7 @@ provided with a key that must be placed in the appropriate location
 once the software is downloaded and unpacked. The core controlling
 methods of GeneMark are written in Perl, accompanied by several Python
 scripts and compiled executables. GeneMark was tested by the
-developers with Perl version 5.10, and Python 3.3. A number of Perl
+developers with Perl version 5.10 and Python 3.3. A number of Perl
 dependencies are also required, which can be installed via CPAN. The
 user will have to know which implementation of GeneMark they are
 wanting to use for their application, as GeneMark has several
@@ -31,18 +31,15 @@ work, the GeneMark-ES variant of GeneMark was executed, as it is the
 self-training \textit{ab initio} GeneMark method for eukaryotic
 organisms. Options required by GeneMark at runtime are documented in
 the help message, and simple enough that any user with familiarity of
-bioinformatics tools should be able to run GeneMark, although
-documentation for use is only provided by the help message when
-running the program and not online. In regard to run-time, running
+bioinformatics tools should be able to run GeneMark. When running the program, we note that documentation is only provided by the help message, and we were unable to find any additional resources online. In regard to run-time, running
 the GeneMark-ES pipeline on DC1 with 56 threads finished in 16
-minutes. GeneMark's outputs consist of a GTF or GFF file of predicted
+minutes. Applying the GeneMark prediction pipeline to Tsth20 took a similar amount of time. GeneMark's outputs consist of a GTF or GFF file of predicted
 genes as well as a number of other outputs related to the run.
 
 % CPAN here: https://www.cpan.org/modules/INSTALL.html
 
 Braker2~\cite{bruna2021a} is hosted on GitHub as a repository that
-receives relatively frequent updates with Braker3 being released while
-working before the completion of this work. Braker is maintained by
+receives relatively frequent updates with Braker3 being released before the completion of this work. Braker is maintained by
 Katharina Hoff from the University of Greifswald and is available
 under the Open Source Artistic License. Installation of the repository
 is a straightforward pull from GitHub. As with GeneMark, Braker2 uses
@@ -60,20 +57,20 @@ satisfied by modules already included in the environment, making
 installation relatively simple if one is familiar with the Digital
 Research Alliance of Canada's software stack. This case still required
 installation of some Perl modules in addition to loading necessary
-modules. Alternatively, one could use a package manager like Conda to
-handle installation of packages. This is perfectly reasonable, but
+modules. Installation of the Perl modules is straightforward, with documentation available online, and loading modules is also simple, but may be less familiar to users that are unfamiliar with HPC environments. Alternatively, one could use a package manager like Conda to
+handle installation of Perl modules and other dependencies. This is perfectly reasonable, but
 also requires knowledge specific to Conda, which can be complicated
 and frustrating for users with little software management
-experience. Once installation is finished, the Braker2 pipeline is
+experience. Installation using Conda may also result in duplicate copies of software being installed, wasting disk space and potentially causing conflicts.
+Once installation is finished, the Braker2 pipeline is
 relatively straightforward to run as well, with excellent
-documentation included both online and through the built-in help
+documentation included both online and through the help
 message. The training, including RNAseq alignments, and gene finding
 pipeline in this case took 1 hour and 17 minutes using 60
 threads. Applying the Braker2 trained gene finding model to DC1 with
-60 threads took 21 minutes to complete. Run times will of course vary
+60 threads took 21 minutes to complete. Applying the Braker2 pipeline to Tsth20 took a similar amount of time. Run times will of course vary
 depending on processing power available to the end user, but in the
-case of \textit{Trichoderma} genomes, users can expect quick results
-with relatively little computing power. Once annotation is complete,
+case of \textit{Trichoderma} genomes, users can expect quick results. Once annotation is complete,
 Braker2 produces a GFF file containing predicted genes along with CDS
 sequences and amino acid sequences their protein products.
 
@@ -92,9 +89,9 @@ software, however Braker2's dependencies may require additional
 compilation and attention. Once installed, both tools are relatively
 simple to use with documentation available for both on the command-line
 and excellent documentation available for Braker2 on their GitHub
-page. Outputs from both tools are similar although Braker2 has the
+page. In these results, GeneMark runs faster than Braker2, and for Braker2, the training step took roughly three times as long as the gene prediction step. Outputs from both tools are similar although Braker2 has the
 ability to output coding and amino acid sequences for downstream
 processing. Both tools run in reasonable amounts of time, where in the
-case of smaller genomes such as \textit{Trichoderma}, users can expect
+case of smaller genomes such as DC1 and Tsth20, users can expect
 results within a few hours to a day depending on number of computing
 cycles available to them.
