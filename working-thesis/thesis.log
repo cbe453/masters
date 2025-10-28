@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  26 OCT 2025 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  27 OCT 2025 20:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1084,11 +1084,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [47]
-<figures/igv/ips-model-disagree2.png, id=1424, 1390.19376pt x 764.8575pt>
+<figures/igv/ips-model-disagree2.png, id=1424, 882.29625pt x 837.1275pt>
 File: figures/igv/ips-model-disagree2.png Graphic file (type png)
 <use figures/igv/ips-model-disagree2.png>
 Package pdftex.def Info: figures/igv/ips-model-disagree2.png  used on input line 98.
-(pdftex.def)             Requested size: 472.03123pt x 259.69798pt.
+(pdftex.def)             Requested size: 472.03123pt x 447.86517pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1133,48 +1133,49 @@ File: figures/atrich-regions-barplot.pdf Graphic file (type pdf)
 <use figures/atrich-regions-barplot.pdf>
 Package pdftex.def Info: figures/atrich-regions-barplot.pdf  used on input line 30.
 (pdftex.def)             Requested size: 424.82523pt x 254.89404pt.
-
-
-[52 <./figures/igv/ips-model-disagree2.png>]
-
-[53 <./figures/igv/ips-braker-genemark-norefseq.png> <./figures/blast-total-counts.pdf>]
-
-[54 <./figures/blast-tatroviride.pdf> <./figures/blast-fgraminarium.pdf>]
-
-[55 <./figures/blast-scerevisiae.pdf> <./figures/atrich-regions-barplot.pdf>]
-<figures/atrich-genes-barplot.pdf, id=1772, 722.7pt x 433.62pt>
+<figures/atrich-genes-barplot.pdf, id=1518, 722.7pt x 433.62pt>
 File: figures/atrich-genes-barplot.pdf Graphic file (type pdf)
 <use figures/atrich-genes-barplot.pdf>
 Package pdftex.def Info: figures/atrich-genes-barplot.pdf  used on input line 67.
 (pdftex.def)             Requested size: 424.82523pt x 254.89404pt.
 
-Underfull \vbox (badness 2735) has occurred while \output is active []
+Underfull \vbox (badness 2310) has occurred while \output is active []
 
 
 
-[56 <./figures/atrich-genes-barplot.pdf>]))
+[52]))
 
-[57]
+[53]
+
+[54 <./figures/igv/ips-model-disagree2.png>]
+
+[55 <./figures/igv/ips-braker-genemark-norefseq.png> <./figures/blast-total-counts.pdf>]
+
+[56 <./figures/blast-tatroviride.pdf> <./figures/blast-fgraminarium.pdf>]
+
+[57 <./figures/blast-scerevisiae.pdf> <./figures/atrich-regions-barplot.pdf>]
+
+[58 <./figures/atrich-genes-barplot.pdf>]
 \openout2 = `chapter-6.aux'.
 
  (chapter-6.tex
 Chapter 6.
 (chapters/c6/conclusions.tex
 
-[58
+[59
 
 
 
 
 ]
 
-[59]
+[60]
 
-[60]))
+[61]))
 
-[61] (thesis.bbl
+[62] (thesis.bbl
 
-[62
+[63
 
 
 
@@ -1185,11 +1186,11 @@ Overfull \hbox (53.03818pt too wide) in paragraph at lines 154--157
 
 
 
-[63]
+[64]
 
-[64])
+[65])
 
-[65] (thesis.aux (intro.aux) (chapter-2.aux) (chapter-3.aux) (chapter-4.aux) (chapter-5.aux) (chapter-6.aux))
+[66] (thesis.aux (intro.aux) (chapter-2.aux) (chapter-3.aux) (chapter-4.aux) (chapter-5.aux) (chapter-6.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
@@ -1202,17 +1203,17 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: AFC731D82F08B350641BED8742F8DF4D;12332.
  ) 
 Here is how much of TeX's memory you used:
- 24148 strings out of 468221
- 458470 string characters out of 5432891
+ 24149 strings out of 468221
+ 458477 string characters out of 5432891
  847160 words of memory out of 5000000
  51963 multiletter control sequences out of 15000+600000
  632461 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,17n,93p,2365b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (74 pages, 1578694 bytes).
+Output written on thesis.pdf (75 pages, 1631843 bytes).
 PDF statistics:
- 2000 PDF objects out of 2073 (max. 8388607)
- 236 named destinations out of 1000 (max. 500000)
+ 2004 PDF objects out of 2073 (max. 8388607)
+ 237 named destinations out of 1000 (max. 500000)
  665 words of extra memory for PDF output out of 10000 (max. 10000000)
 

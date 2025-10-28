@@ -53,7 +53,7 @@
 \contentsline {section}{\numberline {5.8}InterProScan as Supporting Evidence for Predicted Genes}{47}{section.5.8}%
 \contentsline {section}{\numberline {5.9}BLAST Results}{48}{section.5.9}%
 \contentsline {section}{\numberline {5.10}Genes in Regions of Anomalous GC Content}{51}{section.5.10}%
-\contentsline {chapter}{\numberline {6}Conclusions}{58}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Selection of Gene Finding Tool}{58}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Future Work}{59}{section.6.2}%
-\contentsline {chapter}{References}{62}{section*.55}%
+\contentsline {chapter}{\numberline {6}Conclusions}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Selection of Gene Finding Tool}{59}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Future Work}{60}{section.6.2}%
+\contentsline {chapter}{References}{63}{section*.55}%

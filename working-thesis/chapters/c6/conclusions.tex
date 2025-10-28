@@ -5,7 +5,7 @@ which gene finding tool one should choose for optimal gene prediction
 performance. Comparisons drawn in this section are made in the context
 of \textit{Trichoderma} assemblies and may not extend to other
 datasets. Observations from the results portion of this work have been
-converted to scores relative to the other gene finders. Scores range
+converted to scores for each gene finder, relative to the other gene finders. Scores range
 from zero to three, with values being: 0 \- failing performance, 1 \-
 passing performance, 2 \- good performance, and 3 \- excellent
 performance. Results from this work are summarized in
@@ -16,15 +16,14 @@ in its ability to predict very short genes. Braker2 earns second
 place; however, this does not capture Braker2's failure in predicting
 accurate numbers of genes in DC1, Tsth20, \textit{T. harzianum} and
 \textit{T. virens}. GeneMark comes in last, excelling only in number
-of genes predicted and Pfam support for the genes that it predicts.
+of genes predicted and Pfam support for the genes that it predicts. We do note that these criteria are somewhat arbitrary and subjective in some cases, however they do provide a useful framework for comparing the gene finders, and are based on objective results presented in this work. 
 
-Relating these observations to use-case scenarios, in the case that
-your organism of interest has a RefSeq annotation associated with it,
+Relating these observations to use-case scenarios, in the case a researcher's organism of interest has a RefSeq annotation associated with it,
 the RefSeq gene prediction process appears to produce the best set of
 predictions. If users also have experimental evidence, such as RNAseq
 data under experimental conditions, it may be worthwhile training a
 Braker2 model and predicting genes with Braker2 to supplement the
-already well performing RefSeq gene predictions. In a similar case, if
+already well performing RefSeq gene predictions. We note that users should take the quality of the RefSeq assembly into account and investigate the input data and assembly protocols to ensure high-quality predictions. In a similar case, if
 the organism is of RefSeq status, but the assembly in question is
 novel to the work being performed, training and prediction using a
 Braker2 model with experimental evidence either from the novel genome
@@ -85,7 +84,7 @@ still a reasonable option even with the previously identified caveats.
     definitions for performance are as follows: 0 \- fail, 1 \- pass, 2
     \- good, 3 \- excellent. Since RefSeq is not publicly available, it is
     marked as N/A in the publicly available final scores. The dashed
-    line separates categories associated with availability and use
+    line separates categories associated with operation and use
     from categories describing gene prediction performance.}\label{table:final-score}
 \end{table}
 
@@ -104,10 +103,7 @@ expanded on. The sheer number of gene finding tools available means
 that many more could be compared to the ones presented here. In
 addition, supplying more training data to Braker2 may improve gene
 finding performance, and training on RNAseq from different organisms
-could be used to improve the performance of Braker2. It is clear from
-the results that Braker2 performed worse than GeneMark and the RefSeq
-predictions, which was likely due to the training data being used from
-\textit{T. reesei}. Different types of training data such as RNAseq,
+could be used to improve the performance of Braker2. With more data in mind, different types of training data such as RNAseq,
 expressed sequence tags (ESTs), and protein sequences could also be
 used to train models that support external evidence. Another
 limitation of this work is that the gene finders were run with default
