@@ -7,13 +7,13 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces Number of genes and coding sequences predicted}}{33}{table.caption.26}%
 \contentsline {table}{\numberline {5.3}{\ignorespaces Results of Kolmogorov-Smirnov tests}}{38}{table.caption.30}%
 \contentsline {table}{\numberline {5.4}{\ignorespaces BUSCO results}}{40}{table.caption.32}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Missing BUSCO IDs}}{44}{table.caption.33}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces Additional missing BUSCO IDs}}{45}{table.caption.34}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces InterProScan Pfam Evidence}}{49}{table.caption.40}%
-\contentsline {table}{\numberline {5.8}{\ignorespaces Overview of tblastn alignments}}{49}{table.caption.45}%
-\contentsline {table}{\numberline {5.9}{\ignorespaces Counts of transcripts in regions with tblastn hits}}{50}{table.caption.48}%
-\contentsline {table}{\numberline {5.10}{\ignorespaces Agreement of gene predictions in AT-rich regions}}{52}{table.caption.50}%
-\contentsline {table}{\numberline {5.11}{\ignorespaces Number of genes predicted in AT-rich regions}}{52}{table.caption.52}%
-\contentsline {table}{\numberline {5.12}{\ignorespaces Binomial test results}}{53}{table.caption.53}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Missing BUSCO IDs}}{42}{table.caption.33}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Additional missing BUSCO IDs}}{44}{table.caption.34}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces InterProScan Pfam Evidence}}{50}{table.caption.41}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Overview of tblastn alignments}}{51}{table.caption.46}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Counts of transcripts in regions with tblastn hits}}{52}{table.caption.49}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces Agreement of gene predictions in AT-rich regions}}{53}{table.caption.51}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces Number of genes predicted in AT-rich regions}}{54}{table.caption.53}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces Binomial test results}}{54}{table.caption.54}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Final scoring table}}{61}{table.caption.54}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Final scoring table}}{62}{table.caption.55}%

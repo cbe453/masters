@@ -286,15 +286,15 @@ Coding sequences from the previous stage were evaluated and validated
 using several tools. Firstly, protein products from predicted CDSs
 were processed with InterProScan to identify Pfam domains as evidence
 for the validity of gene predictions. Secondly, CDSs were analyzed
-with BUSCO to assess prediction of conserved fungal genes. Finally,
+with BUSCO to assess prediction of conserved fungal genes. Thirdly,
 RefSeq proteins from related fungal species were used in tblastn
 searches of the five \textit{Trichoderma} assemblies selected for the
-main body of this work.
+main body of this work. Finally, gene predictions from Braker2 and GeneMark were supplied to the antiSMASH tool for the identification of secondary metabolite biosynthetic gene clusters.
 
 BUSCO evaluation, InterProScan Annotation, and BLAST alignments
 processes are described in more detail in Subsections~\ref{met:busco},
-~\ref{met:interproscan}, and~\ref{met:blast}, respectively. The mentioned subsections align with Research Questions~\ref{rq:busco-completeness},~\ref{rq:interproscan}, and~\ref{rq:tblastn}, respectively.  
-Results from these processes are also used as inputs in the region
+~\ref{met:interproscan}, and~\ref{met:blast}, respectively. The mentioned subsections align with Research Questions~\ref{rq:busco-completeness},~\ref{rq:interproscan}, and~\ref{rq:tblastn}, respectively. Identification of secondary metabolite biosynthetic gene clusters using antiSMASH is described in Section~\ref{met:antismash} and aligns with Research Question~\ref{rq:secondary-metabolites}.
+Results from some of these processes are also used as inputs in the region
 identification workflow later.
 
 \begin{figure}
@@ -343,6 +343,10 @@ identification algorithm in Section~\ref{section:region-met}.
 
 The \textit{Trichoderma} assemblies chosen for comparison were used as
 the subject sequences in tblastn~\cite{gertz2006} searches with the query proteins discussed in Section~\ref{met:datasets}. Default parameters were used in the tblastn searches. Hits from the tblastn alignments were then filtered for alignments with a minimum of 30\% query coverage and 30\% identity. These criteria were selected as they filter out spurious alignments while also retaining short alignments that capture functional or conserved protein coding sequence. Remaining alignments were then processed using the region identification algorithm in~\ref{section:region-met}. 
+
+\subsection{Identification of Secondary Metabolite Biosynthetic Gene Clusters Using antiSMASH}\label{met:antismash}
+
+Secondary metabolite biosynthetic gene clusters (BGCs) are groups of co-located genes that work together to produce secondary metabolites, which are compounds not directly involved in normal growth, development, or reproduction of an organism. Identification of BGCs is important for understanding the metabolic potential of an organism and for discovering novel natural products. Due to time constraints, the following analysis was only performed on the Tsth20 assembly, as it contains the fewest number of contigs and has been observed interacting with plants in soil. To identify candidate BGCs in the Tsth20 assembly, the antiSMASH v7.0.0 fungal version~\cite{blin2023} was used with default parameters, using the Tsth20 genome assembly and associated gene predictions as inputs.
 
 \section{Region Identification Overview}\label{section:region-overview}
 

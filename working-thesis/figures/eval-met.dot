@@ -25,6 +25,11 @@ digraph G {
                  "Braker2 Gene Calls" -> "BUSCO Evaluation";
 		 "BUSCO Results" [shape = tab];
 		 "BUSCO Evaluation" -> "BUSCO Results";
+		 "antiSMASH Analysis" [shape = box3d];
+		 "GeneMark Gene Calls" -> "antiSMASH Analysis";
+		 "Braker2 Gene Calls" -> "antiSMASH Analysis";
+		 "antiSMASH Hits" [shape = tab];
+		 "antiSMASH Analysis" -> "antiSMASH Hits";
 	}
 
 	subgraph cluster_1 {

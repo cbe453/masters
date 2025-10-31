@@ -48,7 +48,7 @@ option, and users can be confident that the tool predicts a reasonably
 accurate number of genes with supporting Pfam matches. It is also
 important to note that GeneMark does not perform as well in AT-rich
 regions as Braker2 and RefSeq, does not predict isoforms, and
-systematically fails to predict some BUSCO orthologs.
+systematically fails to predict some BUSCO orthologs. Identification of secondary metabolite biosynthetic gene clusters may also be impacted by the choice of gene finder, as GeneMark predicted more genes in the Tsth20 assembly, leading to the identification of more candidate clusters by antiSMASH, however further analysis is required to determine the accuracy of these predictions.
 
 When availability of a gene finding tool becomes a concern and RefSeq
 is not considered, the scores drop significantly for Braker2 and
@@ -116,7 +116,7 @@ functional annotation of the predicted genes could be performed using
 tools such as BLAST2GO to assign Gene Ontology (GO) terms and KEGG
 pathways to the predicted genes. This could provide further insight
 into the functional roles of the predicted genes and their potential
-applications. More importantly in the context of this work, analysis
+applications. More importantly in the context of this work, further analysis
 of predicted genes with a tool like antiSMASH could be used to
 identify biosynthetic gene clusters (BGCs) in the predicted genes.
 
