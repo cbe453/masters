@@ -42,8 +42,8 @@
 \contentsline {subsection}{\numberline {4.4.4}Identification of Secondary Metabolite Biosynthetic Gene Clusters Using antiSMASH}{23}{subsection.4.4.4}%
 \contentsline {section}{\numberline {4.5}Region Identification Overview}{24}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Region Identification Algorithm}{24}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Regions in AT-rich Genomic Sequence}{27}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Visualization of Identified Regions}{27}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.2}Regions in AT-rich Genomic Sequence}{26}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Visualization of Identified Regions}{26}{subsection.4.5.3}%
 \contentsline {chapter}{\numberline {5}Results and Discussion}{28}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Overview}{28}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Assemblies of DC1 and Tsth20}{28}{section.5.2}%

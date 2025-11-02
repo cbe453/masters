@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  31 OCT 2025 13:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  2 NOV 2025 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -875,22 +875,22 @@ File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 399.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 441.
 
 
 [24]
 
 [25 <./figures/region-workflow.pdf>]
-
-[26]
-<figures/igv/igv-agreement-thin-number.png, id=826, 1308.89pt x 437.635pt>
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 441.
+<figures/igv/igv-agreement-thin-number.png, id=819, 1308.89pt x 437.635pt>
 File: figures/igv/igv-agreement-thin-number.png Graphic file (type png)
 <use figures/igv/igv-agreement-thin-number.png>
 Package pdftex.def Info: figures/igv/igv-agreement-thin-number.png  used on input line 457.
 (pdftex.def)             Requested size: 424.82523pt x 142.04271pt.
 ))
 
-[27 <./figures/igv/igv-agreement-thin-number.png>]
+[26 <./figures/igv/igv-agreement-thin-number.png>]
+
+[27]
 \openout2 = `chapter-5.aux'.
 
  (chapter-5.tex
@@ -1022,17 +1022,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures/braker-antismash-tsth20.png, id=1394, 752.0597pt x 234.8775pt>
 File: figures/braker-antismash-tsth20.png Graphic file (type png)
 <use figures/braker-antismash-tsth20.png>
-Package pdftex.def Info: figures/braker-antismash-tsth20.png  used on input line 13.
+Package pdftex.def Info: figures/braker-antismash-tsth20.png  used on input line 14.
 (pdftex.def)             Requested size: 424.82523pt x 132.68094pt.
 <figures/genemark-antismash-tsth20.png, id=1395, 742.27313pt x 284.56313pt>
 File: figures/genemark-antismash-tsth20.png Graphic file (type png)
 <use figures/genemark-antismash-tsth20.png>
-Package pdftex.def Info: figures/genemark-antismash-tsth20.png  used on input line 18.
+Package pdftex.def Info: figures/genemark-antismash-tsth20.png  used on input line 19.
 (pdftex.def)             Requested size: 424.82523pt x 162.86699pt.
 ) (chapters/c5/regions.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [42]
 
@@ -1231,13 +1228,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  24181 strings out of 468221
  459577 string characters out of 5432891
- 845565 words of memory out of 5000000
+ 845787 words of memory out of 5000000
  51987 multiletter control sequences out of 15000+600000
  632461 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,17n,93p,2365b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (76 pages, 1687667 bytes).
+Output written on thesis.pdf (76 pages, 1688550 bytes).
 PDF statistics:
  2036 PDF objects out of 2073 (max. 8388607)
  242 named destinations out of 1000 (max. 500000)
