@@ -18,45 +18,45 @@ The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: ./refs/full-bib.bib
 Warning--empty author in 2008
-You've used 54 entries,
+You've used 55 entries,
             1791 wiz_defined-function locations,
-            768 strings with 15626 characters,
-and the built_in function-call counts, 14867 in all, are:
-= -- 1181
-> -- 987
+            772 strings with 15864 characters,
+and the built_in function-call counts, 14996 in all, are:
+= -- 1192
+> -- 991
 < -- 5
-+ -- 349
-- -- 295
-* -- 1359
-:= -- 2470
-add.period$ -- 163
-call.type$ -- 54
-change.case$ -- 54
++ -- 351
+- -- 296
+* -- 1362
+:= -- 2494
+add.period$ -- 166
+call.type$ -- 55
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 55
-duplicate$ -- 512
-empty$ -- 1276
-format.name$ -- 295
-if$ -- 3126
+cite$ -- 56
+duplicate$ -- 520
+empty$ -- 1290
+format.name$ -- 296
+if$ -- 3154
 int.to.chr$ -- 0
-int.to.str$ -- 54
-missing$ -- 49
-newline$ -- 270
-num.names$ -- 57
-pop$ -- 100
+int.to.str$ -- 55
+missing$ -- 50
+newline$ -- 275
+num.names$ -- 58
+pop$ -- 103
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 217
+skip$ -- 220
 stack$ -- 0
 substring$ -- 1062
-swap$ -- 87
+swap$ -- 88
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 138
-width$ -- 56
-write$ -- 589
+while$ -- 139
+width$ -- 57
+write$ -- 599
 (There was 1 warning)
