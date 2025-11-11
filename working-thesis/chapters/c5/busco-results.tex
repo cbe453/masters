@@ -1,11 +1,11 @@
 \section{BUSCO Results}\label{section:busco}
 
 Results of BUSCO analysis using the sordariomycetes\_Odb12 dataset
-provided by BUSCO are presented in Figure~\ref{fig:busco-counts}, and
+provided by BUSCO are presented in Figure~\ref{fig:busco-counts} and
 Table~\ref{table:busco}. The results indicate that all gene sets
 considered in this analysis have a BUSCO completeness of 94.1\% or
 higher, with a maximum completeness of 98.4\% in the case of Braker2
-and DC1. In general, Braker2 and RefSeq have the most BUSCO complete
+and DC1. In general, Braker2 and GeneMark have the most BUSCO complete
 sets of gene predictions of the three tools considered. Interestingly,
 Braker2 produces far more duplicated BUSCO matches than both GeneMark
 and RefSeq. Examining the BUSCO output logs, this appears to be due to
@@ -20,10 +20,8 @@ determine the exact cause of this discrepancy. Finally, it appears
 that \textit{T. reesei} tends to have slightly lower BUSCO
 completeness than the other \textit{Trichoderma} species considered in
 this analysis, regardless of gene finder used. Why this is the case is
-unknown, but may be due to the evolutionary distance between
-\textit{T. reesei}, the Gnomon annotation process, or potentially the
-fragmented nature of the \textit{T. reesei} assembly used in this
-analysis. While these results do not capture the entire set of genes
+unknown, but may be due to the Gnomon annotation process used, the fragmented nature of the \textit{T. reesei} assembly used in this
+analysis, or that \textit{T. reesei} may not possess some of the missed orthologs. While these results do not capture the entire set of genes
 possibly present in these \textit{Trichoderma} assemblies, they do
 confirm that the gene finders are at minimum predicting many
 evolutionarily conserved fungal genes.
@@ -92,7 +90,7 @@ evolutionarily conserved fungal genes.
 \end{table}
 
 While BUSCO matches are a good metric for general performance of gene
-finders, it is also important to investigate BUSCO proteins that were missing from the gene predictions. Of interest are BUSCO proteins that are systematically missed by a gene finder in multiple or all assemblies, and whether these BUSCO proteins are also missed by other gene finders. Table~\ref{table:missed-busco-all} lists 17 BUSCO proteins and their corresponding annotations that were not found in any set of predictions from Braker2, GeneMark or RefSeq. The annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by all three gene finders, and further investigation is required to determine why these genes are not being predicted. It is possible that these genes are simply not present in these \textit{Trichoderma} species, but this may be unlikely given the evolutionary conservation of BUSCO proteins. Each gene finder also has one or more BUSCO proteins that are missed in all assemblies but not by one or both of the other gene finders. These genes are presented in Table~\ref{table:missed-all-gf}. Again, the annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by a particular gene finder, and further investigation is required to determine why these genes are not being predicted. While not presented here, we also identified a number of other genes that are missed by the gene finders which may provide insight into their performance and the evolution of \textit{Trichoderma}. Overall, it appears that there are very few BUSCO proteins that are systematically missed by all gene finders, indicating that the gene finders are generally capable of predicting the majority of conserved fungal genes.
+finders, it is also important to investigate BUSCO proteins that were missing from the gene predictions. Of interest are BUSCO proteins that are systematically missed by a gene finder in multiple or all assemblies, and whether these BUSCO proteins are also missed by other gene finders. Table~\ref{table:missed-busco-all} lists 17 BUSCO proteins and their corresponding annotations that were not found in any set of predictions from Braker2, GeneMark or RefSeq. The annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by all three gene finders, and further investigation is required to determine why these genes are not being predicted. It is possible that these genes are simply not present in these \textit{Trichoderma} species, but this may be unlikely given the evolutionary conservation of BUSCO proteins. Each gene finder also has one or more BUSCO proteins that are missed in all assemblies but not by one or both of the other gene finders. These genes are presented in Table~\ref{table:missed-all-gf}. Again, the annotations of these BUSCO proteins do not indicate any obvious reason why they would be systematically missed by a particular gene finder, and further investigation is required to determine why these genes are not being predicted. While not presented here, we also identified a number of other genes that were missed by the gene finders which may provide insight into their performance and the evolution of \textit{Trichoderma}. Overall, it appears that there are very few BUSCO proteins that are systematically missed by all gene finders, indicating that the gene finders are generally capable of predicting the majority of conserved fungal genes.
 
 
 \begin{table}[h]

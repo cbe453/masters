@@ -8,8 +8,9 @@ the definition could be expanded in the future to include introns,
 exons and potential up and downstream sequences as well. Gene finders
 may also predict isoforms, or alternative splice variants of a gene
 based on evidence provided in training, resulting in multiple
-potential coding sequences for a gene. In this work, we refer to
-coding sequences as the set of all coding sequences predicted by a
+potential coding sequences for a gene. A coding sequence in this context is a sequence of nucleotides transcribed from a gene.
+In this work, we refer to
+\textit{coding sequences} as the set of all coding sequences predicted by a
 gene finder for a given input genome.
 
 Counts of genes and coding sequences predicted by Braker2, GeneMark
@@ -25,10 +26,8 @@ always indicative of gene content. Regardless, we observe a difference
 in the number of genes predicted by Braker2 in comparison to GeneMark
 and RefSeq. The number of genes predicted by GeneMark and RefSeq are
 similar, except in the case of \textit{T. harzianum}, in which RefSeq
-predicts roughly 17\% more genes than GeneMark. Braker2 consistently
-predicts more coding sequences than GeneMark and RefSeq. RefSeq also
-appears to predict multiple coding sequences for each gene but in
-fewer numbers than Braker2. Coding sequence prediction counts in
+predicts roughly 17\% more genes than GeneMark. Both Braker2 and RefSeq
+appear to predict multiple coding sequences for some genes. Coding sequence prediction counts in
 \textit{T. harzianum} from RefSeq are also interesting, with RefSeq
 predicting fewer coding sequences than genes. Why this occurs is
 unknown but may warrant further investigation.
@@ -49,7 +48,7 @@ unknown but may warrant further investigation.
   \centering
   \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
-    Assembly & Braker2 & & GeneMark & & RefSeq & \\ \hline
+    Assembly & \multicolumn{2}{c|}{Braker2} & \multicolumn{2}{c|}{GeneMark} & \multicolumn{2}{c|}{RefSeq} \\ \hline
      & Genes & CDS & Genes & CDS & Genes & CDS \\ \hline
     DC1 & 8546 & 8637 & 11353 & 11353 & N/A & N/A \\ \hline
     Tsth20 & 8784 & 8858 & 12362 & 12362 & N/A & N/A \\ \hline

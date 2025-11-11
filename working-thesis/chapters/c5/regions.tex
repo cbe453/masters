@@ -71,11 +71,8 @@ percent of the regions are fully or partially supported by Braker2,
 GeneMark and RefSeq, with only 10 percent of the regions being single
 tool predictions. The most interesting observation here is the extent
 to which fully supported regions disagree on start and stop positions
-of the gene(s) in each region. There is clearly a difference in the
-gene models being produced by these gene finders. Also, if there is
-more disagreement on the start and stop positions of a gene, then
-there is likely disagreement on the number and location of exons and
-introns within the gene model as well. In the case of partially
+of the gene(s) in each region. There is potential for disagreement on the number and location of exons and
+introns within the gene model as well, although we do not explore this in detail. In the case of partially
 supported regions, there is roughly 50\% to 60\% agreement on start
 and stop positions, but that may come as less of a surprise as there
 is already disagreement on presence by definition. Gene finding
@@ -142,7 +139,7 @@ sense and anti-sense genes exist naturally~\cite{wright2022a}.
 In summary, gene finders agree partially or completely on the presence
 of a gene in the vast majority of cases. While gene finders generally
 agree on the presence of a gene, they tend to disagree on the
-underlying gene model more often than they agree, except in the
+start and stop positions of a gene more often than they agree, except in the
 case of DC1 and Tsth20. This is likely due to only including two gene
 finders in their analysis rather than three, resulting in fewer
 opportunities for disagreement. This observation is true when applied

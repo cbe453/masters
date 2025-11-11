@@ -24,7 +24,7 @@ methods of GeneMark are written in Perl, accompanied by several Python
 scripts and compiled executables. GeneMark was tested by the
 developers with Perl version 5.10 and Python 3.3. A number of Perl
 dependencies are also required, which can be installed via CPAN. The
-user will have to know which implementation of GeneMark they are
+user has to know which implementation of GeneMark they are
 wanting to use for their application, as GeneMark has several
 variations it can run depending on the desired application. In this
 work, the GeneMark-ES variant of GeneMark was executed, as it is the
@@ -51,9 +51,9 @@ BamTools~\cite{barnett2011a},
 BedTools~\cite{quinlan2010},
 GeneMark~\cite{borodovsky2011a}, StringTie~\cite{pertea2015a},
 GFFRead~\cite{pertea2020a} and several others. Manual installation of
-these dependencies would be difficult, time-consuming and in general
-advised against. In this case, many of Braker2's requirements are
-satisfied by modules already included in the environment, making
+these dependencies could be difficult, time-consuming and in general
+would be advised against. In this case, many of Braker2's requirements are
+satisfied by modules already included in the utilized computational environment, making
 installation relatively simple if one is familiar with the Digital
 Research Alliance of Canada's software stack. This case still required
 installation of some Perl modules in addition to loading necessary
@@ -66,9 +66,9 @@ Once installation is finished, the Braker2 pipeline is
 relatively straightforward to run as well, with excellent
 documentation included both online and through the help
 message. The training, including RNAseq alignments, and gene finding
-pipeline in this case took 1 hour and 17 minutes using 60
+pipeline had a run time of 1 hour and 17 minutes using 60
 threads. Applying the Braker2 trained gene finding model to DC1 with
-60 threads took 21 minutes to complete. Applying the Braker2 pipeline to Tsth20 took a similar amount of time. Run times will of course vary
+60 threads had a run time of 21 minutes. Applying the Braker2 pipeline to Tsth20 took a similar amount of time. Run times will of course vary
 depending on processing power available to the end user, but in the
 case of \textit{Trichoderma} genomes, users can expect quick results. Once annotation is complete,
 Braker2 produces a GFF file containing predicted genes along with CDS

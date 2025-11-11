@@ -2,7 +2,7 @@
 
 To better understand and compare the distributions of CDS sequences
 predicted by Braker2, GeneMark, and RefSeq, the cumulative
-distribution function for the lengths of CDS sequences for each gene
+distribution function (CDF) for the lengths of CDS sequences for each gene
 finding tool are shown in Figures~\ref{fig:cdf-lengths-1},
 ~\ref{fig:cdf-lengths-2} and~\ref{fig:cdf-lengths-3}. The $\log_{10}$
 values of gene lengths were used as the abscissa for a better
@@ -67,11 +67,11 @@ three gene finding methods.
     applied to \textit{T. virens} (GCF\_000170995.1\_TRIVI\_v2.0).}\label{fig:cdf-lengths-3}
 \end{figure}
 
-To confirm that CDF curves differ, two-sided two-sample
+To confirm that the CDF curves differ, two-sided two-sample
 Kolmogorov-Smirnov\cite{2008} tests were performed using the
 $\log_{10}$ transformed gene lengths, with the null hypothesis being
 that the difference between the distributions of frequencies of gene lengths predicted by
- any two tools can be explained by random chance. Results are presented in Table~\ref{table:ks-2s}. In the cases of DC1 and Tsth20, we see that in
+ any two tools can be explained by random chance. We set a \textit{p-}value threshold of 0.005 for statistical significance. Results are presented in Table~\ref{table:ks-2s}. In the cases of DC1 and Tsth20, we see that in
 agreement with Figure~\ref{fig:cdf-lengths-1}, Braker2 and GeneMark do
 not produce statistically different lengths of genes, which is
 interesting considering that the Braker2 includes experimental
@@ -81,9 +81,8 @@ different from both RefSeq and GeneMark, which is also evident in the
 CDF plots. The same cannot be said for \textit{T. harzianum} and
 \textit{T. virens}, where RefSeq is significantly different from both
 GeneMark and Braker2, which are not significantly different from each
-other. It is also notable that RefSeq and GeneMark predict similar
-gene lengths in \textit{T. reesei}, but not in \textit{T. harzianum}
-and \textit{T. virens.}
+other. It is also notable that RefSeq and GeneMark do not predict similar
+gene lengths in \textit{T. harzianum}, \textit{T. harzianum}, and \textit{T. virens}, although the \textit{p-}value of their comparison in \textit{T. reesei} is close to the significance threshold.
 
 \begin{table}
   \begin{center}
@@ -107,16 +106,13 @@ and \textit{T. virens.}
     Kolmogorov-Smirnov tests between gene finding tools.}\label{table:ks-2s}
 \end{table}
 
-It can clearly be stated that these gene finding tools predict
-different distributions of gene lengths, particularly in
+It can be stated that there are differences between some of the distributions of gene lengths predicted by these tools, particularly in
 \textit{T. reesei, T. harzianum} and \textit{T. virens}. Why that may
 be the case is difficult to answer, but warrants further investigation. There
 is clearly an underlying difference between RefSeq and the other gene
 finding tools. Braker2 and GeneMark tend to be in agreement, except in
 the case of \textit{T. reesei}, for which Braker2 was specifically
-trained. We observe that when Braker2 is applied to an assembly from
-which the training data originated, Braker2 predicts a larger fraction
-of shorter genes. Conversely, we observe that when Braker2 is trained
+trained. Conversely, we observe that when Braker2 is trained
 with experimental evidence and applied to a \textit{Trichoderma}
 assembly from which the training data did not originate, the
 distributions of predicted genes lengths do not significantly differ
