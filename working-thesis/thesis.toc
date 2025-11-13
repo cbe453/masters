@@ -59,4 +59,4 @@
 \contentsline {chapter}{\numberline {6}Conclusions}{60}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Selection of Gene Finding Tool}{60}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Future Work}{61}{section.6.2}%
-\contentsline {chapter}{References}{64}{section*.56}%
+\contentsline {chapter}{References}{63}{section*.56}%

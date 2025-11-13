@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  10 NOV 2025 20:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  12 NOV 2025 22:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1118,16 +1118,16 @@ Package pdftex.def Info: figures/igv/ips-model-disagree2.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/igv/ips-braker-genemark-norefseq.png, id=1524, 1448.41125pt x 701.62125pt>
+<figures/igv/ips-braker-genemark-norefseq.png, id=1524, 1086.30844pt x 526.21594pt>
 File: figures/igv/ips-braker-genemark-norefseq.png Graphic file (type png)
 <use figures/igv/ips-braker-genemark-norefseq.png>
 Package pdftex.def Info: figures/igv/ips-braker-genemark-norefseq.png  used on input line 107.
-(pdftex.def)             Requested size: 472.03123pt x 228.64514pt.
+(pdftex.def)             Requested size: 472.03123pt x 228.65317pt.
 ) (chapters/c5/blast-results.tex
 <figures/blast-total-counts.pdf, id=1528, 722.7pt x 433.62pt>
 File: figures/blast-total-counts.pdf Graphic file (type pdf)
 <use figures/blast-total-counts.pdf>
-Package pdftex.def Info: figures/blast-total-counts.pdf  used on input line 22.
+Package pdftex.def Info: figures/blast-total-counts.pdf  used on input line 23.
 (pdftex.def)             Requested size: 401.22942pt x 240.73473pt.
 
 
@@ -1140,27 +1140,27 @@ Underfull \vbox (badness 2951) has occurred while \output is active []
 <figures/blast-tatroviride.pdf, id=1545, 691.62387pt x 438.67891pt>
 File: figures/blast-tatroviride.pdf Graphic file (type pdf)
 <use figures/blast-tatroviride.pdf>
-Package pdftex.def Info: figures/blast-tatroviride.pdf  used on input line 73.
+Package pdftex.def Info: figures/blast-tatroviride.pdf  used on input line 74.
 (pdftex.def)             Requested size: 401.22942pt x 254.49417pt.
 <figures/blast-fgraminarium.pdf, id=1546, 693.06927pt x 433.62pt>
 File: figures/blast-fgraminarium.pdf Graphic file (type pdf)
 <use figures/blast-fgraminarium.pdf>
-Package pdftex.def Info: figures/blast-fgraminarium.pdf  used on input line 78.
+Package pdftex.def Info: figures/blast-fgraminarium.pdf  used on input line 79.
 (pdftex.def)             Requested size: 401.22942pt x 251.03pt.
 <figures/blast-scerevisiae.pdf, id=1547, 691.62387pt x 433.62pt>
 File: figures/blast-scerevisiae.pdf Graphic file (type pdf)
 <use figures/blast-scerevisiae.pdf>
-Package pdftex.def Info: figures/blast-scerevisiae.pdf  used on input line 85.
+Package pdftex.def Info: figures/blast-scerevisiae.pdf  used on input line 86.
 (pdftex.def)             Requested size: 401.22942pt x 251.55933pt.
 ) (chapters/c5/gc-regions.tex
 
 [52]
-<figures/atrich-regions-barplot.pdf, id=1559, 722.7pt x 433.62pt>
+<figures/atrich-regions-barplot.pdf, id=1560, 722.7pt x 433.62pt>
 File: figures/atrich-regions-barplot.pdf Graphic file (type pdf)
 <use figures/atrich-regions-barplot.pdf>
 Package pdftex.def Info: figures/atrich-regions-barplot.pdf  used on input line 30.
 (pdftex.def)             Requested size: 424.82523pt x 254.89404pt.
-<figures/atrich-genes-barplot.pdf, id=1562, 722.7pt x 433.62pt>
+<figures/atrich-genes-barplot.pdf, id=1563, 722.7pt x 433.62pt>
 File: figures/atrich-genes-barplot.pdf Graphic file (type pdf)
 <use figures/atrich-genes-barplot.pdf>
 Package pdftex.def Info: figures/atrich-genes-barplot.pdf  used on input line 67.
@@ -1196,13 +1196,11 @@ Chapter 6.
 
 ]
 
-[61]
+[61]))
 
-[62]))
+[62] (thesis.bbl
 
-[63] (thesis.bbl
-
-[64
+[63
 
 
 
@@ -1213,11 +1211,11 @@ Overfull \hbox (53.03818pt too wide) in paragraph at lines 161--164
 
 
 
-[65]
+[64]
 
-[66])
+[65])
 
-[67] (thesis.aux (intro.aux) (chapter-2.aux) (chapter-3.aux) (chapter-4.aux) (chapter-5.aux) (chapter-6.aux))
+[66] (thesis.aux (intro.aux) (chapter-2.aux) (chapter-3.aux) (chapter-4.aux) (chapter-5.aux) (chapter-6.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
@@ -1226,20 +1224,20 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 7003BA5E56018F3CC83AD04B327EC957;13608.
  ) 
 Here is how much of TeX's memory you used:
- 24198 strings out of 468221
- 459715 string characters out of 5432891
+ 24197 strings out of 468221
+ 459708 string characters out of 5432891
  846141 words of memory out of 5000000
  51996 multiletter control sequences out of 15000+600000
  634284 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,17n,93p,2365b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,93p,2365b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (76 pages, 1716200 bytes).
+Output written on thesis.pdf (75 pages, 1714628 bytes).
 PDF statistics:
- 2056 PDF objects out of 2073 (max. 8388607)
- 244 named destinations out of 1000 (max. 500000)
+ 2052 PDF objects out of 2073 (max. 8388607)
+ 243 named destinations out of 1000 (max. 500000)
  699 words of extra memory for PDF output out of 10000 (max. 10000000)
 
