@@ -221,11 +221,10 @@ Jiang Hu, Junpeng Fan, Zongyi Sun, and Shanlin Liu.
   long-read assembly.
 \newblock {\em Bioinformatics}, 36(7):2253--2255, April 2020.
 
-\bibitem{andrews}
-Simon Andrews.
-\newblock Babraham {{Bioinformatics}} - {{FastQC A Quality Control}} tool for
-  {{High Throughput Sequence Data}}.
-\newblock https://www.bioinformatics.babraham.ac.uk/projects/fastqc/.
+\bibitem{fastqc}
+Steven~W. Wingett and Simon Andrews.
+\newblock Fastq screen: A tool for multi-genome mapping and quality control.
+\newblock {\em F1000Research}, 7:1338, 2018.
 
 \bibitem{gurevich2013a}
 Alexey Gurevich, Vladislav Saveliev, Nikolay Vyahhi, and Glenn Tesler.
@@ -323,7 +322,7 @@ Derek~W. Barnett, Erik~K. Garrison, Aaron~R. Quinlan, Michael~P. Str{\"o}mberg,
   and Gabor~T. Marth.
 \newblock {{BamTools}}: A {{C}}++ {{API}} and toolkit for analyzing and
   managing {{BAM}} files.
-\newblock {\em Bioinformatics (Oxford, England)}, 27(12):1691--1692, June 2011.
+\newblock {\em Bioinformatics}, 27(12):1691--1692, June 2011.
 
 \bibitem{quinlan2010}
 Aaron~R. Quinlan and Ira~M. Hall.
@@ -351,6 +350,6 @@ Bradley~W. Wright, Mark~P. Molloy, and Paul~R. Jaschke.
 \bibitem{altschul1990a}
 S.~F. Altschul, W.~Gish, W.~Miller, E.~W. Myers, and D.~J. Lipman.
 \newblock Basic local alignment search tool.
-\newblock {\em Journal of molecular biology}, 215(3):403--410, October 1990.
+\newblock {\em Journal of Molecular Biology}, 215(3):403--410, October 1990.
 
 \end{thebibliography}

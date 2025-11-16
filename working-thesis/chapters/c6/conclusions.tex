@@ -12,7 +12,7 @@ In both the publicly available and non-publicly available scenarios, Braker2 com
 GeneMark comes in last, excelling only in number 
 of genes predicted and Pfam support for the genes that it predicts. We do note that these criteria are loosely objective, however they do provide a useful framework for comparing the gene finders, and are based on observations presented in this work. 
 
-Relating these observations to use-case scenarios requires consideration of the data available to the user. In the case that a user has access to RefSeq annotation data for their organism, the gene predictions will likely be of good quality, although if new training data is available for the organism, Braker2 can supplement those predictions. We note that users should always investigate the quality of the RefSeq assemblies, as some assemblies may be of low quality despite their status as a RefSeq genome assembly, which could affect gene finding performance. If the case that no RefSeq data is available, Braker2 is the best option, provided that relevant training data can be found. If no training data is available, GeneMark is a reasonable choice, and although its performance is not as good as the other gene finders, it still predicts genes with known functional domains.
+Relating these observations to use-case scenarios requires consideration of the data available to the user. In the case that a user has access to RefSeq annotation data for their organism, the gene predictions will likely be of good quality, although if new training data is available for the organism, gene predictions from a trained Braker2 model will supplement the RefSeq predictions. We note that users should always investigate the quality of the RefSeq assemblies, as some assemblies may be of low quality despite their status as a RefSeq genome assembly, which could affect gene finding performance. In the case that the organism of interest is not a RefSeq organism and no RefSeq annotation is available, Braker2 is the best option, provided that relevant training data can be found. If no training data is available, GeneMark is a reasonable choice, and although its performance is not as good as the other gene finders, it still predicts a useful set of genes. 
 
 \begin{table}
   \centering
@@ -51,7 +51,9 @@ expressed sequence tags (ESTs), and protein sequences --- could also be
 used to train models that support external evidence. Another
 limitation of this work is that the gene finders were run with default
 parameters, and it is possible that tuning the parameters of the gene
-finders could improve performance.
+finders could improve performance. Exploration of newer gene finding models, such as those based on deep learning techniques, could also be
+performed to see how they compare to the more established gene finding
+tools.
 
 Following the gene prediction process, there are a number of different
 analyses that could be performed on the predicted genes. For example,
@@ -60,8 +62,8 @@ tools such as BLAST2GO to assign Gene Ontology (GO) terms and KEGG
 pathways to the predicted genes. This could provide further insight
 into the functional roles of the predicted genes and their potential
 applications. More importantly in the context of this work, further analysis
-of predicted genes with a tool like antiSMASH could be used to
-identify biosynthetic gene clusters (BGCs) in the predicted genes.
+of predicted genes with the antiSMASH tool could be used to
+identify biosynthetic gene clusters (BGCs) from the predicted genes.
 
 Expanding the number of genomes used in this work would also be
 beneficial, as the results presented here are based on a limited
@@ -77,6 +79,8 @@ accuracy. This could help to identify tangible benefits of using one
 assembly over another, and could also provide insights into the
 limitations of gene finders when applied to different assemblies.
 
+We also encourage the developers of gene finding tools to consider expanding the selection of genomes used in their testing and training datasets to include a more diverse set of fungal genomes. This could help to improve the performance of gene finders on fungal genomes, and may improve performance of gene finder in AT-rich regions, which are common in fungal genomes. In addition, we encourage developers to continue to improve the documentation and the usability of their tools, as ease of installation and use are important factors for many users. 
+
 Finally, the results of this work could be used to inform future
 research in the field of fungal genomics, particularly in the case of
 the DC1 and Tsth20 genome assemblies. The results of these genome
@@ -86,4 +90,4 @@ for future research, and could be used to identify novel genes and
 gene families in DC1 and Tsth20. Further understanding of the
 mechanisms behind salt and drought tolerance as well as degradation of
 hydrocarbon in suboptimal environments could be achieved by studying
-the predicted genes in these genomes.
+the predicted genes in these genomes. 

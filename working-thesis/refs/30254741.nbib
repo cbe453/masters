@@ -1,0 +1,64 @@
+PMID- 30254741
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20191118
+LR  - 20200511
+IS  - 2046-1402 (Electronic)
+IS  - 2046-1402 (Linking)
+VI  - 7
+DP  - 2018
+TI  - FastQ Screen: A tool for multi-genome mapping and quality control.
+PG  - 1338
+LID - 10.12688/f1000research.15931.2 [doi]
+LID - 1338
+AB  - DNA sequencing analysis typically involves mapping reads to just one reference 
+      genome. Mapping against multiple genomes is necessary, however, when the genome 
+      of origin requires confirmation. Mapping against multiple genomes is also 
+      advisable for detecting contamination or for identifying sample swaps which, if 
+      left undetected, may lead to incorrect experimental conclusions. Consequently, we 
+      present FastQ Screen, a tool to validate the origin of DNA samples by quantifying 
+      the proportion of reads that map to a panel of reference genomes. FastQ Screen is 
+      intended to be used routinely as a quality control measure and for analysing 
+      samples in which the origin of the DNA is uncertain or has multiple sources.
+FAU - Wingett, Steven W
+AU  - Wingett SW
+AUID- ORCID: 0000-0002-2343-0711
+AD  - Bioinformatics, Babraham Institute, Cambridge, CB22 3AT, UK.
+FAU - Andrews, Simon
+AU  - Andrews S
+AD  - Bioinformatics, Babraham Institute, Cambridge, CB22 3AT, UK.
+LA  - eng
+GR  - G0801156/Medical Research Council/United Kingdom
+GR  - BBS/E/B/000C05/Biotechnology and Biological Sciences Research Council/United 
+      Kingdom
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20180824
+PL  - England
+TA  - F1000Res
+JT  - F1000Research
+JID - 101594320
+SB  - IM
+MH  - Chromosome Mapping
+MH  - Genome
+MH  - *High-Throughput Nucleotide Sequencing
+MH  - Quality Control
+MH  - Sequence Analysis, DNA
+MH  - *Software
+PMC - PMC6124377
+OTO - NOTNLM
+OT  - Bioinformatics Contamination FastQC Illumina Metagenomics NGS QC Sequencing
+COIS- No competing interests were disclosed.
+EDAT- 2018/09/29 06:00
+MHDA- 2019/11/19 06:00
+PMCR- 2018/09/17
+CRDT- 2018/09/29 06:00
+PHST- 2018/09/12 00:00 [accepted]
+PHST- 2018/09/29 06:00 [entrez]
+PHST- 2018/09/29 06:00 [pubmed]
+PHST- 2019/11/19 06:00 [medline]
+PHST- 2018/09/17 00:00 [pmc-release]
+AID - 10.12688/f1000research.15931.2 [doi]
+PST - epublish
+SO  - F1000Res. 2018 Aug 24;7:1338. doi: 10.12688/f1000research.15931.2. eCollection 
+      2018.
