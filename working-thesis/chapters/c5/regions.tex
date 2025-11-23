@@ -89,12 +89,12 @@ of unusual gene calls in regions. One such case is when a region
 contains more than three individual predicted genes. The null
 hypothesis, so to speak, is that if all gene finders agree exactly on
 the presence and position of a gene in a region, then one should
-expect exactly three predictions in that region. We observe that this
-is not always true. Cases of more than three gene predictions in a
+expect exactly three predictions, one from each gene finder, in that region. We observe that this
+is not always true, and some regions contain more than one gene prediction from a single gene finder. Cases of more than three gene predictions in a
 region were present in regions from all processed assemblies. Figure
 ~\ref{fig:uncertain-regions} shows an example of one of these unusual regions,
 in which the single gene predicted by RefSeq spans multiple gene
-predictions from both Braker2 and GeneMark. In the case of DC1 and
+predictions from both Braker2 and GeneMark, resulting in a single region with five features. In the case of DC1 and
 Tsth20, there were very few regions with more than three gene predictions, with DC1 having 19 and Tsth20 having 6. Conversely, \textit{T. reesei, T.harzianum and T.virens}
 contain many such regions, with assemblies reporting 546, 899 and 521
 regions with greater than three gene predictions, respectively. While

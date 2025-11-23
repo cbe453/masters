@@ -20,7 +20,7 @@ predictions. An example of agreement between Braker2, GeneMark, RefSeq
 and InterProScan is shown in Figure ~\ref{fig:basic-agree}. It is
 important to note that the position of the Pfam match in IGV does not
 indicate the true position of the Pfam match in the gene, but provides
-an indication of the presence of Pfam matches. Pfam matches are offset
+an indication of the presence of Pfam matches. In the IGV screenshots, Pfam matches are offset
 from the start of the gene based on the start and end position of the
 Pfam match in the protein sequence. For example, if a Pfam match has a
 start position 10 amino acids into the protein sequence, the
@@ -81,9 +81,7 @@ proteins, but the gene models in the region do not agree. There are
 even cases such as the region shown in Figure
 ~\ref{fig:agree-bizarre2}, where Braker2 and GeneMark agree that two
 genes and their associated proteins and Pfam matches are separate, but
-RefSeq only reports one gene with multiple Pfam hits. There are also
-several cases where two tools are in agreement with proteins
-containing Pfam hits while another is not. Even more interesting are
+RefSeq only reports one gene with multiple Pfam hits. Even more interesting are
 cases such as the one shown in Figure~\ref{fig:ips-no-refseq}, in
 which Braker2 and GeneMark predictions contain Pfam matches while
 RefSeq does not report a gene at all. This may be the due to

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  17 NOV 2025 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  22 NOV 2025 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -950,37 +950,37 @@ Underfull \vbox (badness 2626) has occurred while \output is active []
 <figures/dc1-cdf-lengths-log.pdf, id=1008, 722.7pt x 361.35pt>
 File: figures/dc1-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/dc1-cdf-lengths-log.pdf>
-Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 31.
+Package pdftex.def Info: figures/dc1-cdf-lengths-log.pdf  used on input line 29.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
 <figures/tsth20-cdf-lengths-log.pdf, id=1009, 722.7pt x 361.35pt>
 File: figures/tsth20-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/tsth20-cdf-lengths-log.pdf>
-Package pdftex.def Info: figures/tsth20-cdf-lengths-log.pdf  used on input line 35.
+Package pdftex.def Info: figures/tsth20-cdf-lengths-log.pdf  used on input line 33.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
 <figures/t-reesei-cdf-lengths-log.pdf, id=1010, 722.7pt x 361.35pt>
 File: figures/t-reesei-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-reesei-cdf-lengths-log.pdf>
-Package pdftex.def Info: figures/t-reesei-cdf-lengths-log.pdf  used on input line 46.
+Package pdftex.def Info: figures/t-reesei-cdf-lengths-log.pdf  used on input line 44.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
 <figures/t-harzianum-cdf-lengths-log.pdf, id=1011, 722.7pt x 361.35pt>
 File: figures/t-harzianum-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-harzianum-cdf-lengths-log.pdf>
-Package pdftex.def Info: figures/t-harzianum-cdf-lengths-log.pdf  used on input line 50.
+Package pdftex.def Info: figures/t-harzianum-cdf-lengths-log.pdf  used on input line 48.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
 
-Underfull \hbox (badness 1708) in paragraph at lines 56--56
-[]\OT1/cmr/bx/n/10 Figure 5.5: |\OT1/cmr/m/n/10 Plots of the cu-mu-la-tive dis-tri-bu-tion func-tion for CDS lengths pro-duced be
+Underfull \hbox (badness 1688) in paragraph at lines 54--54
+[]\OT1/cmr/bx/n/10 Figure 5.5: |\OT1/cmr/m/n/10 Plots of the cu-mu-la-tive dis-tri-bu-tion func-tion for CDS lengths pro-duced by
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 56--56
+Underfull \hbox (badness 2050) in paragraph at lines 54--54
 \OT1/cmr/m/n/10 each gene find-ing tool ap-plied to \OT1/cmr/m/it/10 T. ree-sei \OT1/cmr/m/n/10 (GCF[]000167675.1[]v2.0)(a) and \OT1/cmr/m/it/10 T. harzianum.
  []
 
 <figures/t-virens-cdf-lengths-log.pdf, id=1012, 722.7pt x 361.35pt>
 File: figures/t-virens-cdf-lengths-log.pdf Graphic file (type pdf)
 <use figures/t-virens-cdf-lengths-log.pdf>
-Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input line 62.
+Package pdftex.def Info: figures/t-virens-cdf-lengths-log.pdf  used on input line 60.
 (pdftex.def)             Requested size: 519.23723pt x 259.62042pt.
 
 Underfull \vbox (badness 2126) has occurred while \output is active []
@@ -1084,6 +1084,9 @@ File: figures/igv/igv-opposing-strands.png Graphic file (type png)
 Package pdftex.def Info: figures/igv/igv-opposing-strands.png  used on input line 133.
 (pdftex.def)             Requested size: 424.82523pt x 206.08252pt.
 ) (chapters/c5/interproscan-results.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [48 <./figures/igv/igv-opposing-strands.png>]
 <figures/interproscan-barplot.pdf, id=1463, 722.7pt x 433.62pt>
@@ -1104,7 +1107,7 @@ Package pdftex.def Info: figures/igv/ips-basic-agree.png  used on input line 65.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5862) has occurred while \output is active []
 
 
 
@@ -1112,7 +1115,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <figures/igv/ips-model-disagree2.png, id=1523, 882.29625pt x 837.1275pt>
 File: figures/igv/ips-model-disagree2.png Graphic file (type png)
 <use figures/igv/ips-model-disagree2.png>
-Package pdftex.def Info: figures/igv/ips-model-disagree2.png  used on input line 98.
+Package pdftex.def Info: figures/igv/ips-model-disagree2.png  used on input line 96.
 (pdftex.def)             Requested size: 472.03123pt x 447.86517pt.
 
 
@@ -1121,17 +1124,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures/igv/ips-braker-genemark-norefseq.png, id=1524, 1086.30844pt x 526.21594pt>
 File: figures/igv/ips-braker-genemark-norefseq.png Graphic file (type png)
 <use figures/igv/ips-braker-genemark-norefseq.png>
-Package pdftex.def Info: figures/igv/ips-braker-genemark-norefseq.png  used on input line 107.
+Package pdftex.def Info: figures/igv/ips-braker-genemark-norefseq.png  used on input line 105.
 (pdftex.def)             Requested size: 472.03123pt x 228.65317pt.
 ) (chapters/c5/blast-results.tex
-<figures/blast-total-counts.pdf, id=1528, 722.7pt x 433.62pt>
+
+[50]
+<figures/blast-total-counts.pdf, id=1533, 722.7pt x 433.62pt>
 File: figures/blast-total-counts.pdf Graphic file (type pdf)
 <use figures/blast-total-counts.pdf>
 Package pdftex.def Info: figures/blast-total-counts.pdf  used on input line 23.
 (pdftex.def)             Requested size: 401.22942pt x 240.73473pt.
 
-
-[50]
 Underfull \vbox (badness 2951) has occurred while \output is active []
 
 
@@ -1153,21 +1156,21 @@ File: figures/blast-scerevisiae.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/blast-scerevisiae.pdf  used on input line 86.
 (pdftex.def)             Requested size: 401.22942pt x 251.55933pt.
 ) (chapters/c5/gc-regions.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [52]
-<figures/atrich-regions-barplot.pdf, id=1560, 722.7pt x 433.62pt>
+<figures/atrich-regions-barplot.pdf, id=1559, 722.7pt x 433.62pt>
 File: figures/atrich-regions-barplot.pdf Graphic file (type pdf)
 <use figures/atrich-regions-barplot.pdf>
-Package pdftex.def Info: figures/atrich-regions-barplot.pdf  used on input line 30.
+Package pdftex.def Info: figures/atrich-regions-barplot.pdf  used on input line 29.
 (pdftex.def)             Requested size: 424.82523pt x 254.89404pt.
-<figures/atrich-genes-barplot.pdf, id=1563, 722.7pt x 433.62pt>
+<figures/atrich-genes-barplot.pdf, id=1562, 722.7pt x 433.62pt>
 File: figures/atrich-genes-barplot.pdf Graphic file (type pdf)
 <use figures/atrich-genes-barplot.pdf>
-Package pdftex.def Info: figures/atrich-genes-barplot.pdf  used on input line 67.
+Package pdftex.def Info: figures/atrich-genes-barplot.pdf  used on input line 66.
 (pdftex.def)             Requested size: 424.82523pt x 254.89404pt.
-
-Underfull \vbox (badness 4193) has occurred while \output is active []
-
 
 
 [53]))
@@ -1235,9 +1238,9 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\cbe45\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (75 pages, 1714628 bytes).
+Output written on thesis.pdf (75 pages, 1714730 bytes).
 PDF statistics:
- 2052 PDF objects out of 2073 (max. 8388607)
+ 2051 PDF objects out of 2073 (max. 8388607)
  243 named destinations out of 1000 (max. 500000)
  699 words of extra memory for PDF output out of 10000 (max. 10000000)
 

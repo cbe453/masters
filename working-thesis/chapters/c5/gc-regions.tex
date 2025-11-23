@@ -4,10 +4,9 @@ Figure~\ref{fig:gc-regions} and Table~\ref{table:gc-regions} shows the
 results of applying the same region finding process as described in Section~\ref{section:region-met} to
 segments of the genome identified as AT-rich. AT-rich is defined as a
 region of genomic sequence with percent GC composition less than 28\%
-as determined in Section~\ref{section:assemblies}. In comparison to
-results from Section~\ref{section:regions}, we see that overall there
-are far fewer regions with gene predictions in AT-rich genomic
-segments. In DC1, Tsth20, there are very few regions with full support
+as determined in Section~\ref{section:assemblies}. We see that there
+are fewer regions with gene predictions in AT-rich genomic
+segments. In DC1 and Tsth20, there are very few regions with full support
 from both Braker2 and GeneMark, but more singletons. Again, as in
 Section~\ref{section:regions}, there are no regions with partial
 support as only two gene finding tools were applied to those
@@ -35,7 +34,7 @@ Section~\ref{section:regions}.
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|}
       \hline
-      Assembly & Full Support & Partial Support & Singletons & No. Genes \\ \hline
+      Assembly & Full Support & Partial Support & Singletons & Total Genes \\ \hline
       DC1 & 11 & N/A & 20 & 42  \\ \hline
       Tsth20 & 2 & N/A & 9 & 13  \\ \hline
       \textit{T. reesei} & 25 & 18 & 54 & 194  \\ \hline
@@ -43,7 +42,7 @@ Section~\ref{section:regions}.
       \textit{T. virens} & 8 & 11 & 0 & 49  \\ \hline
     \end{tabular}
   \end{center}
-  \caption[Agreement of gene predictions in AT-rich regions]{Regions of full and partial agreement as well as singleton regions in AT-rich genomic sequence. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2.}\label{table:gc-regions}
+  \caption[Agreement of gene predictions in AT-rich regions]{Regions of full and partial agreement as well as singleton regions in AT-rich genomic sequence. It is important to note that in the cases of DC1 and Tsth20, full support indicates supporting gene predictions from both GeneMark and Braker2. Column five shows the total number of genes from all gene finders in AT-rich regions for each assembly.}\label{table:gc-regions}
 \end{table}
 
 In addition to a breakdown of regions in AT-rich genomic sequence,

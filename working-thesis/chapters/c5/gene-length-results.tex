@@ -9,18 +9,16 @@ values of gene lengths were used as the abscissa for a better
 visualization of the distributions. In DC1, the curves from Braker2 and
 GeneMark follow each other closely, with the only variation being
 genes of short length, where Braker2's curve extends beyond that of
-GeneMark, indicating that Braker2 predicts the shortest genes in all
-assemblies except \textit{T. virens}. In the case of Tsth20, the
+GeneMark. In the case of Tsth20, the
 curves are nearly identical. In \textit{T. reesei}, we see
 disagreement in the curves for shorter genes, with Braker2 appearing
 to predict a larger fraction of shorter genes than GeneMark and
 RefSeq. The right sides of the curves trend toward similar predicted
-gene lengths. In \textit{T. harzianum}, RefSeq deviates from GeneMark
-and Braker2, predicting more genes of short length, while Braker2 and
-GeneMark appear to be in near-complete agreement except in the case of
-very short genes. Finally, in \textit{T. virens}, we see that RefSeq predicts a larger fraction of shorter genes once again,
-although the deviation is not as drastic as in
-\textit{T. harzianum}. From these plots, we can say that visually, gene
+gene lengths. In \textit{T. harzianum}, Braker2 deviates from GeneMark
+and RefSeq, predicting more genes of short length, while GeneMark and
+RefSeq appear to be in near-complete agreement except in the case of
+very short genes. Finally, in \textit{T. virens}, we see that RefSeq predicts a larger fraction of shorter genes than Braker2 and GeneMark. Interestingly, Braker2 does not predict the shortest genes in\textit{T. virens}, but why this is the case is unclear.
+From these plots, we can say that visually, gene
 finding tools appear to predict different lengths of genes. We also
 observe that Braker2 typically predicts the shortest genes of all
 three gene finding methods.
@@ -36,7 +34,7 @@ three gene finding methods.
     \caption{Tsth20}
   \end{subfigure}
   \caption[CDF plots for DC1 and Tsth20]{Plots of the cumulative distribution
-    function for CDS lengths produced be each gene finding tool
+    function for CDS lengths produced by each gene finding tool
     applied to DC1 (a) and Tsth20 (b)}\label{fig:cdf-lengths-1}
 \end{figure}
 
@@ -51,7 +49,7 @@ three gene finding methods.
     \caption{\textit{T. harzianum}}
   \end{subfigure}
   \caption[CDF plots for \textit{T. harzianum} and \textit{T. reesei}]{Plots of the cumulative distribution
-    function for CDS lengths produced be each gene finding tool
+    function for CDS lengths produced by each gene finding tool
     applied to \textit{T. reesei} (GCF\_000167675.1\_v2.0)(a) and
     \textit{T. harzianum.} (GCF\_003025095.1\_Triha\_v1.0)(b)}\label{fig:cdf-lengths-2}
 \end{figure}

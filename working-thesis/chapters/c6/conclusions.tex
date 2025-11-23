@@ -2,10 +2,10 @@
 
 With all of these results, it makes sense to explore the question of
 which gene finding tool one should choose for optimal gene prediction
-performance. Comparisons drawn in this section are made in the context
+performance in a given application. Comparisons drawn in this section are made in the context
 of \textit{Trichoderma} assemblies and may not extend to other
 datasets. Observations from the results portion of this work have been
-converted to scores for each gene finder, relative to the other gene finders. Scores for each category are ranked from 0 to 3, with 0 indicating that a feature was unavailable or not applicable, and scores 1 through 3 indicating increasing levels of performance relative to each other. Categories considered include availability of the gene finding tool, ease of installation, ease of use, number of genes predicted, number of isoforms predicted, BUSCO performance, performance in AT-rich sequence, and predictions with InterProScan support.
+converted to a ranking for each gene finder, relative to the other gene finders. Values for each category are ranked from 0 to 3, with 0 indicating that a feature was unavailable or not applicable, and ranks 1 through 3 when there are three gene finders being considered, but 1 or 2 whether there are two gene finders being considered, indicating performance relative to the other gene finder(s). Ties are allowed if the performance of two gene finders are similar. Categories considered include availability of the gene finding tool, ease of installation, ease of use, number of genes predicted, number of isoforms predicted, BUSCO performance, performance in AT-rich sequence, and predictions with InterProScan support.
 Results for these categories are summarized in
 Table~\ref{table:final-score}. We note that not all results are included in this table, most notably the region analysis in Section~\ref{section:regions}, as more exploration of those results is needed. The assembly results are also not included, as they do not affect the characteristics of the gene finders themselves.
 In both the publicly available and non-publicly available scenarios, Braker2 comes out on top, with RefSeq coming in second when availability is not considered. While Braker2 does perform the best, it is important to note that its performance is highly dependent on the quality and relevance of the training data provided. RefSeq performs well across most categories, particularly when considering number of genes predicted, isoform prediction, and predictions in AT-rich sequence, but if the user's organism is not closely represented in RefSeq, it is not an option.
@@ -19,22 +19,20 @@ Relating these observations to use-case scenarios requires consideration of the 
   \begin{tabular}{|c|c|c|c|}
     \hline
     Category & Braker2 & GeneMark & RefSeq \\ \hline
-    Availability & 3 & 3 & 0 \\ \hline
+    Availability & 2 & 2 & 0 \\ \hline
     Ease of install & 1 & 2 & 0 \\ \hline
-    Ease of use & 3 & 3 & 0 \\ \hdashline
+    Ease of use & 2 & 2 & 0 \\ \hdashline
     Number of genes predicted & 1 & 3 & 3 \\ \hline
     Number of isoforms predicted & 3 & 0 & 2 \\ \hline
     BUSCO Performance & 3 & 2 & 1 \\ \hline
     Performance in AT-rich sequence & 2 & 1 & 3 \\ \hline
     Predictions with InterProScan support & 2 & 3 & 1 \\ \hline
-    Final Score (Considering Availability) & 18 & 17 & N/A \\ \hline
-    Final Score (Ignoring Availability) & 11 & 9 & 10 \\ \hline
+    Cumulative Rank (Considering Availability) & 16 & 15 & N/A \\ \hline
+    Cumulative Score (Ignoring Availability) & 11 & 9 & 10 \\ \hline
   \end{tabular}
-  \caption[Final scoring table]{Table with scores attributed to
-    performance of each gene finder in several categories. The score
-    definitions for performance are 0 being not applicable, and 1 through 3 being increasing levels of performance. Since RefSeq is not publicly available, it is
-    marked as N/A in the publicly available final scores. The dashed
-    line separates categories associated with operation and use
+  \caption[Final scoring table]{Table with ranks attributed to
+    performance of each gene finder in several categories. The ranks
+    for performance are 0 being not applicable, and 1 through 3 being increasing levels of performance. Since RefSeq is not publicly available, it is marked as N/A in the cumulative rank when considering availability. The dashed line separates categories associated with operation and use
     from categories describing gene prediction performance.}\label{table:final-score}
 \end{table}
 
