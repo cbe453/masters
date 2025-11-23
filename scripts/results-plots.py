@@ -274,11 +274,11 @@ def blast_region_counts():
 
         ax.set_xticks(x)
         ax.set_xticklabels(fungi, rotation=45, ha='right', fontsize=14)
-        ax.set_title(f'Number of transcripts in regions with {ref} tblastn hits', fontsize=16)
+        ax.set_title(f'Number of genes in regions with {ref} tblastn hits', fontsize=16)
         ax.bar_label(rects1, padding=3)
         ax.bar_label(rects2, padding=3)
         ax.bar_label(rects3, padding=3)
-        ax.set_ylabel('Number of transcripts', fontsize=16)
+        ax.set_ylabel('Number of genes', fontsize=16)
         ax.legend(fontsize=14, ncol=3, loc='upper left')
 
         ymax = max(max(braker2), max(genemark), max(refseq))
@@ -334,13 +334,13 @@ def basic_counts():
 
 def main():
     ### gene/CDS counts
-    basic_counts()
+    #basic_counts()
     ### BLAST counts
     #blast_region_counts()
     #blast_total_counts()
     #interproscan_counts()
     #busco_counts()
-    #at_counts()
+    at_counts()
 
 if __name__ == "__main__":
     print("This is a script for generating result plots.")

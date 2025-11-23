@@ -1,11 +1,26 @@
 \section{Genes in Regions of Anomalous GC Content}\label{section:gc-regions}
 
+To better understand the characteristics of AT-rich sequences in these assemblies, the same sliding window approach described in Section~\ref{section:assemblies} was used to identify segments of genomic sequence with greater than 72\% AT nucleotide content (less than 28\% GC content). Table~\ref{table:gc-content} shows the total length of AT-rich sequence identified in each assembly along with the number of segments identified and the proportion of the assembly comprised of AT-rich sequence. From these results, we see that DC1 and \textit{T. harzianum} have the largest proportion of AT-rich sequence, while Tsth20 and \textit{T. reesei} have moderate amounts of AT-rich sequence. \textit{T. virens} has very little AT-rich sequence compared to the other assemblies.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+      \hline
+      Genome & Total Length (bp) & Low GC Segments & Low GC Length (bp) & Proportion (\%) \\ \hline
+      DC1 & 38,616,239 & 610 & 2,064,202 & 5.35 \\ \hline
+      Tsth20 & 41,588,851 & 245 & 891,216 & 2.14 \\ \hline
+      \textit{T. reesei} & 33,395,713 & 689 & 1,269,347 & 3.80 \\ \hline
+      \textit{T. harzianum} & 40,980,648 & 1,311 & 2,527,773 & 6.17 \\ \hline
+      \textit{T. virens} & 39,022,666 & 96 & 162,356 & 0.42 \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption[AT-rich sequence content in Trichoderma assemblies]{AT-rich sequence content (windows with $>$ 72\% AT nucleotides) in each \textit{Trichoderma} genome assembly.}\label{table:gc-content}
+\end{table}
+
 Figure~\ref{fig:gc-regions} and Table~\ref{table:gc-regions} shows the
 results of applying the same region finding process as described in Section~\ref{section:region-met} to
-segments of the genome identified as AT-rich. AT-rich is defined as a
-region of genomic sequence with percent GC composition less than 28\%
-as determined in Section~\ref{section:assemblies}. We see that there
-are fewer regions with gene predictions in AT-rich genomic
+segments of the genome identified as AT-rich. We see that there
+are few regions with gene predictions in AT-rich genomic
 segments. In DC1 and Tsth20, there are very few regions with full support
 from both Braker2 and GeneMark, but more singletons. Again, as in
 Section~\ref{section:regions}, there are no regions with partial
@@ -15,14 +30,7 @@ regions in AT-rich genomic sequence than the other assemblies, but
 with the majority of regions belonging to the singleton
 category. \textit{T. virens} is an interesting case, reporting a
 similar number of regions and genes in AT-rich genomic sequence as DC1
-and Tsth20. \textit{T. virens} is also the only assembly to report
-zero singleton gene predictions. Why \textit{T. virens} differs from
-the other RefSeq assemblies is unclear. In general, there are few
-regions with gene predictions in AT-rich genomic segments, and within
-these regions, the majority of cases are isolated singleton gene
-predictions. These observations differ greatly from those made in
-nucleotide composition agnostic approach in
-Section~\ref{section:regions}.
+and Tsth20. The likely reason for this can be seen in Table~\ref{table:gc-content}, where \textit{T. virens} is shown to have very little AT-rich genomic sequence compared to the other assemblies, which may lead to fewer opportunities for singleton predictions. \textit{T. virens} is also the only assembly to report zero singleton gene predictions.
 
 \begin{figure}
   \centering
@@ -57,9 +65,7 @@ genes predicted by each gene finding tool in regions of AT-rich
 genomic sequence. GeneMark appears to predict the fewest genes in
 AT-rich regions, while RefSeq appears to predict the most. Braker2
 lies somewhere in the middle. Again, \textit{T. virens} appears as an
-odd case, with very few predictions from all gene finders. Why
-\textit{T. virens} differs from the other RefSeq assemblies is
-unclear.
+odd case, with very few predictions from all gene finders, which is likely a result of the very small amount of AT-rich genomic sequence present in that assembly.
 
 \begin{figure}
   \centering
@@ -87,7 +93,7 @@ Finally, to test the probability of any given gene prediction falling
 in an AT-rich genomic sequence, a two-sided binomial test was
 performed to determine if the number of genes predicted in AT-rich
 sequences is proportional to the fraction of genomic sequence they
-comprise. The null hypothesis in this case is that the gene finding tools predict the same proportion of genes in AT-rich genomic sequences as they do in typical genomic sequence. The results of the test are shown in Table~\ref{table:gc-binomial}. In all cases, it appears that the null hypothesis is rejected.
+comprise. The null hypothesis in this case is that the gene finding tools predict the same proportion of genes in AT-rich genomic sequences as they do in typical genomic sequence. The results of the test are shown in Table~\ref{table:gc-binomial}. In all cases, it appears that the null hypothesis is rejected, meaning that the gene finders do not predict genes in AT-rich genomic sequence at the same rate as they do in typical genomic sequence. 
 
 \begin{table}
   \begin{center}
@@ -108,6 +114,4 @@ AT-rich genomic sequence. Additionally, genes predicted in these
 regions tend to be isolated and not supported by other gene finders,
 although some agreement is observed. In terms of number of genes
 predicted, RefSeq tends to predict the most genes in these AT-rich
-regions while GeneMark predicts the fewest. Lastly, the selected gene
-finding tools do not predict genes in AT-rich sequences in proportion
-to the fraction of genomic sequence they comprise.
+regions while GeneMark predicts the fewest. It was also observed that the proportion of genes predicted in AT-rich genomic sequence is not proportional to the amount of AT-rich genomic sequence present in the assemblies. In addition, the number of genes predicted in AT-rich genomic sequence varies among the different assemblies, even when the proportions of AT-rich sequence content are similar, as in the case of DC1 and \textit{T. harzianum}, although only two gene finding tools were applied to DC1. These observations suggest that gene prediction in AT-rich genomic sequence is a challenging task, and further research is required to better understand the factors influencing gene prediction in these regions.
