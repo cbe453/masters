@@ -1,0 +1,8 @@
+comments on comments - 2025-11-17
+
+Things I need to think about or ask:
+
+- no page numbers given in citation
+- IGV figure in methodology
+- comment on refseq organisms being selected for the relative distance to one another. virens and harzianum are close though
+

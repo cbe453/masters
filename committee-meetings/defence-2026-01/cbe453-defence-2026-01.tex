@@ -1,0 +1,155 @@
+\documentclass[t]{beamer}
+\usepackage{lmodern} % Need to use this package for proper font encoding.
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{bookmark}
+\usepackage[table]{xcolor}
+% Title slide information
+\title{Thesis Defence: Evaluation of Gene Finding Tools When Applied to \textit{Trichoderma} Genomes}
+\date{January, 2026} 
+\author{Connor Burbridge}
+\titlegraphic{UsaskAerial.jpg} 
+\institute{Department of Computer Science} 
+\usetheme{usask}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Outline} 
+
+	\begin{itemize}
+		\item \textit{Trichoderma} fungi.
+		\item Novel \textit{Trichoderma} genomes.
+		\item Motivation.
+		\item Research objectives.
+		\item Workflow overview.
+		\item Results.
+		\item Conclusions and recommendations.
+		\item Questions.
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+	\frametitle{What is \textit{Trichoderma}?}
+	\begin{itemize}
+		\item \textit{Trichoderma} is a genus of filamentous fungi that is ubiquitous in soil and plays a significant role in nutrient cycling.
+		\item They are also used in biocontrol and as biofertilizers.
+		\item Known for their production of plant cell wall degrading enzymes, and \textbf{secondary metabolites}.
+		\item Further genomic studies can help in understanding their biology and potential applications.
+	\end{itemize}
+	\vspace{0.05cm}
+	\centering
+	%\includegraphics[width=0.2\textwidth]{./Trichoderma_harzianum.jpg}
+
+	\begin{figure}
+		\centering
+		\begin{minipage}{0.5\textwidth}
+			\centering
+			\includegraphics[width=0.35\linewidth]{./Trichoderma_harzianum.jpg}
+			\caption{\textit{T. harzianum}}
+		\end{minipage}\hfill
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=0.6\linewidth]{./Trichoderma_petri.jpg}
+			\caption{\textit{Trichoderma} colony}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Novel \textit{Trichoderma} Genomes}
+	\begin{itemize}
+		\item \textit{Trichoderma} species are diverse, with many species not yet fully characterized.
+		\item DC1 and Tsth20, shown to improve drought and salt tolerance when applied to crops, and have been shown to breakdown hydrocarbons in soils.
+		\item Recent advances in sequencing technology have made it possible to generate high-quality genomes for these species.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Motivation} 
+	\begin{itemize}
+		\item To better understand the biological mechanisms at work in \textit{Trichoderma} spp., we first need to understand their genomes by identifying genes within them.
+		\item Various tools exist for gene prediction, but their implementations and performance can vary significantly.
+		\item \textbf{Few studies have compared these tools in fungi, and even fewer in \textit{Trichoderma}}.
+		\item In addition, increased accessibility to high-quality sequencing services has led to the generation of many new \textit{Trichoderma} genomes, including DC1 and Tsth20.
+		\item These genomes provide an opportunity to evaluate gene finding tools in a comparative context, and contribute to the understanding of \textit{Trichoderma} biology. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Research Objectives}
+	\begin{itemize}
+		\item Assemble and evaluate novel assemblies of DC1 and Tsth20.
+		\item Apply gene finders Braker2 and GeneMark in DC1, Tsth20, and three other RefSeq assemblies - \textit{T. reesei, T.harzianum} and \textit{T. virens}.
+		\item Compare gene finding tools based on relevant criteria, including:
+		\begin{itemize}
+			 \item Proportions of gene lengths predicted.
+			 \item Presence of functional domains and closely related protein sequences.
+			 \item Presence of genes in AT-rich sequence.
+			 \item Agreement of gene finders on start and stop positions of a gene. 
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Workflow Overview}
+	\centering
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/workflow-simple.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Acknowledgements}
+	\begin{itemize}
+		\item My supervisors for their committed support through COVID and other challenges.
+		\item The Global Institute for Food Security for providing the data for this project as well as a portion of my funding.
+		\item My committee members for their feedback and support.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Datasets and Tools}
+	\begin{itemize}
+		\item \textbf{Datasets:}
+		\begin{itemize}
+			\item Novel \textit{Trichoderma} genomes: DC1 and Tsth20.
+			\item Reference genomes and annotations: \textit{T. reesei, T. harzianum, T.virens}.
+			\item RNAseq training data from \textit{T. reesei}. 
+			\item Benchmarking Universal Single-Copy Orthologs (BUSCO) fungal database.
+			\item Protein sequence queries for tblastn from \textit{T. atroviride, Fusarium graminearum, and Saccharomyces cerevisiae}.	
+		\end{itemize}
+		\item \textbf{Tools:}
+		\begin{itemize}
+			\item Sequence processing: FastQC, Trimmomatic, Hisat2.
+			\item Genome assembly: NextDenovo and NextPolish.
+			\item Gene finding tools: Braker2 and GeneMark-ES.
+			\item Evaluation tools: BUSCO, tblastn, InterProScan, and custom scripts.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\vspace{0.75cm}
+	\centering
+	\includegraphics[width=0.5\textwidth]{../../working-thesis/figures/conclusion-snip.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Image Credits}
+	\begin{itemize}
+		\item \textit{T. harzianum} image: \url{https://en.wikipedia.org/wiki/Trichoderma}
+		\item \textit{Trichoderma colony} image:\url{https://biocontrol.entomology.cornell.edu/pathogens/trichoderma.php}
+	\end{itemize}
+\end{frame}
+
+\end{document}
