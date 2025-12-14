@@ -79,19 +79,43 @@
 \begin{frame}
 	\frametitle{Motivation} 
 	\begin{itemize}
-		\item To better understand the biological mechanisms at work in \textit{Trichoderma} spp., we first need to understand their genomes by identifying genes within them.
-		\item Various tools exist for gene prediction, but their implementations and performance can vary significantly.
-		\item \textbf{Few studies have compared these tools in fungi, and even fewer in \textit{Trichoderma}}.
-		\item In addition, increased accessibility to high-quality sequencing services has led to the generation of many new \textit{Trichoderma} genomes, including DC1 and Tsth20.
-		\item These genomes provide an opportunity to evaluate gene finding tools in a comparative context, and contribute to the understanding of \textit{Trichoderma} biology. 
+		\item To understand \textit{Trichoderma} biology, we must identify genes within their genomes.
+		\item Gene prediction tools vary significantly in implementation and performance.
+		\item \textbf{Few comparative studies exist for these tools in fungi, particularly in \textit{Trichoderma}}.
+		\item New high-quality \textit{Trichoderma} genomes (DC1 and Tsth20) enable comparative evaluation of gene finding tools. 
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Small but Significant Details}
+	\begin{itemize}
+		\item Before diving too deep, how can we confirm that gene finders predictions are different?
+		\item Kolmogorov-Smirnov (KS) tests were performed on gene length distributions from preliminary gene predictions.
+		\begin{center}
+			\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf}
+		\end{center}
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Gene Finding is still Challenging}
+	\begin{columns}
+		\column{0.38\linewidth}
+			\centering
+			\includegraphics[height=4cm, width=5cm]{../../working-thesis/figures/gc-plot.pdf}
+		\column{0.54\linewidth}
+			We've been finding genes for decades. What's going on?
+			Sure, exons and introns as well as start and stop positions make gene finding tricky.
+			Inherent properties of genomes also complicate gene finding.
+
+	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Research Objectives}
 	\begin{itemize}
 		\item Assemble and evaluate novel assemblies of DC1 and Tsth20.
-		\item Apply gene finders Braker2 and GeneMark in DC1, Tsth20, and three other RefSeq assemblies - \textit{T. reesei, T.harzianum} and \textit{T. virens}.
+		\item Apply gene finders Braker2 and GeneMark in DC1, Tsth20, and three other RefSeq assemblies.
 		\item Compare gene finding tools based on relevant criteria, including:
 		\begin{itemize}
 			 \item Proportions of gene lengths predicted.
@@ -101,6 +125,8 @@
 		\end{itemize}
 	\end{itemize}
 \end{frame}
+
+
 
 \begin{frame}
 	\frametitle{Workflow Overview}

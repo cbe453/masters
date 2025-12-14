@@ -1,6 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1765417391.328 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" "cbe453-defence-2026-01.pdf" "cbe453-defence-2026-01" 1765417393.69828 0
+["pdflatex"] 1765749246.01073 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" "cbe453-defence-2026-01.pdf" "cbe453-defence-2026-01" 1765749248.42161 0
   "../../working-thesis/figures/conclusion-snip.png" 1753661992 96906 a5d10fca31ae1c9f42596f7e81ae32f5 ""
+  "../../working-thesis/figures/gc-plot.pdf" 1763929178 19861 94b498b9cca112abea390f066cc114bf ""
+  "../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf" 1752192669 23119 74a3a201271a764a9c3cd63a1cf48004 ""
   "../../working-thesis/figures/workflow-simple.pdf" 1753156763 26723 b8eb7c0c6bc95168db419346fffc889a ""
   "C:/Users/cbe45/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1754668936 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/cbe45/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1752198246 13235208 6a99ba7a7edda16751e321c23f7d7000 ""
@@ -235,10 +237,10 @@
   "beamerinnerthemeusask.sty" 1753470774 1716 cef013ce5da465ab607f3b2ca55d249d ""
   "beamerouterthemeusask.sty" 1753470774 254 0d27c7d349668f7c4bb8c70b5f1c26aa ""
   "beamerthemeusask.sty" 1753470774 349 8543ab80154c3d56b5c69b8ded9adcbb ""
-  "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" 1765417390 5751 e0cbad1091b476258b36ceb460cdf3df ""
-  "cbe453-defence-2026-01.aux" 1765417393 1882 3fb58fca9b21550386a5b9de7aa81f9d "pdflatex"
-  "cbe453-defence-2026-01.nav" 1765417393 1202 a971439ba5eedf62b158aa4c3f07763d "pdflatex"
-  "cbe453-defence-2026-01.tex" 1765417390 5751 e0cbad1091b476258b36ceb460cdf3df ""
+  "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" 1765749245 6296 fb6943d44123ea5b345e92fb4f7b7e13 ""
+  "cbe453-defence-2026-01.aux" 1765749248 2140 9d08489eca93e005a36ffdc010762b92 "pdflatex"
+  "cbe453-defence-2026-01.nav" 1765749248 1388 37fb167c90003b6656a249083ce3750a "pdflatex"
+  "cbe453-defence-2026-01.tex" 1765749245 6296 fb6943d44123ea5b345e92fb4f7b7e13 ""
   (generated)
   "cbe453-defence-2026-01.aux"
   "cbe453-defence-2026-01.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  10 DEC 2025 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.10)  14 DEC 2025 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1025,235 +1025,308 @@ Package pdftex.def Info: UsaskBullet.jpg  used on input line 77.
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 88.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 87.
 
 
 File: UsaskAerial.jpg Graphic file (type jpg)
 <use UsaskAerial.jpg>
-Package pdftex.def Info: UsaskAerial.jpg  used on input line 88.
+Package pdftex.def Info: UsaskAerial.jpg  used on input line 87.
 (pdftex.def)             Requested size: 353.40025pt x 142.76338pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 88.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 87.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 88.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 87.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 88.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 87.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 88.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 87.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskBullet.jpg Graphic file (type jpg)
 <use UsaskBullet.jpg>
-Package pdftex.def Info: UsaskBullet.jpg  used on input line 88.
+Package pdftex.def Info: UsaskBullet.jpg  used on input line 87.
 (pdftex.def)             Requested size: 4.51686pt x 7.22575pt.
 [5
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 103.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 103.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 103.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 103.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 103.
+<../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf, id=151, 722.7pt x 361.35pt>
+File: ../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf Graphic file (type pdf)
+<use ../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf>
+Package pdftex.def Info: ../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf  used on input line 98.
+(pdftex.def)             Requested size: 276.559pt x 138.27933pt.
 
 
 File: UsaskAerial.jpg Graphic file (type jpg)
 <use UsaskAerial.jpg>
-Package pdftex.def Info: UsaskAerial.jpg  used on input line 103.
+Package pdftex.def Info: UsaskAerial.jpg  used on input line 98.
 (pdftex.def)             Requested size: 353.40025pt x 142.76338pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 103.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 98.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 103.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 98.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 103.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 98.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 103.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 98.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskBullet.jpg Graphic file (type jpg)
 <use UsaskBullet.jpg>
-Package pdftex.def Info: UsaskBullet.jpg  used on input line 103.
+Package pdftex.def Info: UsaskBullet.jpg  used on input line 98.
 (pdftex.def)             Requested size: 4.51686pt x 7.22575pt.
 [6
 
-]
+ <../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf>]
+<../../working-thesis/figures/gc-plot.pdf, id=217, 462.52798pt x 346.89601pt>
+File: ../../working-thesis/figures/gc-plot.pdf Graphic file (type pdf)
+<use ../../working-thesis/figures/gc-plot.pdf>
+Package pdftex.def Info: ../../working-thesis/figures/gc-plot.pdf  used on input line 112.
+(pdftex.def)             Requested size: 142.26709pt x 113.80908pt.
 
-pdfTeX warning: pdflatex (file ../../working-thesis/figures/workflow-simple.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<../../working-thesis/figures/workflow-simple.pdf, id=176, 523.9575pt x 397.485pt>
-File: ../../working-thesis/figures/workflow-simple.pdf Graphic file (type pdf)
-<use ../../working-thesis/figures/workflow-simple.pdf>
-Package pdftex.def Info: ../../working-thesis/figures/workflow-simple.pdf  used on input line 109.
-(pdftex.def)             Requested size: 307.28987pt x 233.11913pt.
-
-Overfull \vbox (24.19275pt too high) detected at line 109
+Overfull \hbox (25.49545pt too wide) in paragraph at lines 112--112
+ [][] 
  []
 
 
 
 File: UsaskAerial.jpg Graphic file (type jpg)
 <use UsaskAerial.jpg>
-Package pdftex.def Info: UsaskAerial.jpg  used on input line 109.
+Package pdftex.def Info: UsaskAerial.jpg  used on input line 112.
 (pdftex.def)             Requested size: 353.40025pt x 142.76338pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 109.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 112.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 109.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 112.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 109.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 112.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 109.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 112.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskBullet.jpg Graphic file (type jpg)
 <use UsaskBullet.jpg>
-Package pdftex.def Info: UsaskBullet.jpg  used on input line 109.
+Package pdftex.def Info: UsaskBullet.jpg  used on input line 112.
 (pdftex.def)             Requested size: 4.51686pt x 7.22575pt.
 [7
 
- <../../working-thesis/figures/workflow-simple.pdf>]
+ <../../working-thesis/figures/gc-plot.pdf>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 127.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 127.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 127.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 127.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 127.
+
 
 File: UsaskAerial.jpg Graphic file (type jpg)
 <use UsaskAerial.jpg>
-Package pdftex.def Info: UsaskAerial.jpg  used on input line 118.
+Package pdftex.def Info: UsaskAerial.jpg  used on input line 127.
 (pdftex.def)             Requested size: 353.40025pt x 142.76338pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 118.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 127.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 118.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 127.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 118.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 127.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 118.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 127.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskBullet.jpg Graphic file (type jpg)
 <use UsaskBullet.jpg>
-Package pdftex.def Info: UsaskBullet.jpg  used on input line 118.
+Package pdftex.def Info: UsaskBullet.jpg  used on input line 127.
 (pdftex.def)             Requested size: 4.51686pt x 7.22575pt.
 [8
 
 ]
 
+pdfTeX warning: pdflatex (file ../../working-thesis/figures/workflow-simple.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<../../working-thesis/figures/workflow-simple.pdf, id=306, 523.9575pt x 397.485pt>
+File: ../../working-thesis/figures/workflow-simple.pdf Graphic file (type pdf)
+<use ../../working-thesis/figures/workflow-simple.pdf>
+Package pdftex.def Info: ../../working-thesis/figures/workflow-simple.pdf  used on input line 135.
+(pdftex.def)             Requested size: 307.28987pt x 233.11913pt.
+
+Overfull \vbox (24.19275pt too high) detected at line 135
+ []
+
+
+
 File: UsaskAerial.jpg Graphic file (type jpg)
 <use UsaskAerial.jpg>
-Package pdftex.def Info: UsaskAerial.jpg  used on input line 139.
+Package pdftex.def Info: UsaskAerial.jpg  used on input line 135.
 (pdftex.def)             Requested size: 353.40025pt x 142.76338pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 139.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 135.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 139.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 135.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 139.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 135.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 139.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 135.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskBullet.jpg Graphic file (type jpg)
 <use UsaskBullet.jpg>
-Package pdftex.def Info: UsaskBullet.jpg  used on input line 139.
+Package pdftex.def Info: UsaskBullet.jpg  used on input line 135.
 (pdftex.def)             Requested size: 4.51686pt x 7.22575pt.
 [9
 
+ <../../working-thesis/figures/workflow-simple.pdf>]
+
+File: UsaskAerial.jpg Graphic file (type jpg)
+<use UsaskAerial.jpg>
+Package pdftex.def Info: UsaskAerial.jpg  used on input line 144.
+(pdftex.def)             Requested size: 353.40025pt x 142.76338pt.
+File: UsaskLogo.jpg Graphic file (type jpg)
+<use UsaskLogo.jpg>
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 144.
+(pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
+File: TitleBullet.jpg Graphic file (type jpg)
+<use TitleBullet.jpg>
+Package pdftex.def Info: TitleBullet.jpg  used on input line 144.
+(pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
+File: UsaskLogo.jpg Graphic file (type jpg)
+<use UsaskLogo.jpg>
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 144.
+(pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
+File: TitleBullet.jpg Graphic file (type jpg)
+<use TitleBullet.jpg>
+Package pdftex.def Info: TitleBullet.jpg  used on input line 144.
+(pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
+File: UsaskBullet.jpg Graphic file (type jpg)
+<use UsaskBullet.jpg>
+Package pdftex.def Info: UsaskBullet.jpg  used on input line 144.
+(pdftex.def)             Requested size: 4.51686pt x 7.22575pt.
+[10
+
 ]
-<../../working-thesis/figures/conclusion-snip.png, id=261, 338.01282pt x 498.36188pt>
+
+File: UsaskAerial.jpg Graphic file (type jpg)
+<use UsaskAerial.jpg>
+Package pdftex.def Info: UsaskAerial.jpg  used on input line 165.
+(pdftex.def)             Requested size: 353.40025pt x 142.76338pt.
+File: UsaskLogo.jpg Graphic file (type jpg)
+<use UsaskLogo.jpg>
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 165.
+(pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
+File: TitleBullet.jpg Graphic file (type jpg)
+<use TitleBullet.jpg>
+Package pdftex.def Info: TitleBullet.jpg  used on input line 165.
+(pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
+File: UsaskLogo.jpg Graphic file (type jpg)
+<use UsaskLogo.jpg>
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 165.
+(pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
+File: TitleBullet.jpg Graphic file (type jpg)
+<use TitleBullet.jpg>
+Package pdftex.def Info: TitleBullet.jpg  used on input line 165.
+(pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
+File: UsaskBullet.jpg Graphic file (type jpg)
+<use UsaskBullet.jpg>
+Package pdftex.def Info: UsaskBullet.jpg  used on input line 165.
+(pdftex.def)             Requested size: 4.51686pt x 7.22575pt.
+[11
+
+]
+<../../working-thesis/figures/conclusion-snip.png, id=390, 338.01282pt x 498.36188pt>
 File: ../../working-thesis/figures/conclusion-snip.png Graphic file (type png)
 <use ../../working-thesis/figures/conclusion-snip.png>
-Package pdftex.def Info: ../../working-thesis/figures/conclusion-snip.png  used on input line 145.
+Package pdftex.def Info: ../../working-thesis/figures/conclusion-snip.png  used on input line 171.
 (pdftex.def)             Requested size: 153.64493pt x 226.53447pt.
 
 
 File: UsaskAerial.jpg Graphic file (type jpg)
 <use UsaskAerial.jpg>
-Package pdftex.def Info: UsaskAerial.jpg  used on input line 145.
+Package pdftex.def Info: UsaskAerial.jpg  used on input line 171.
 (pdftex.def)             Requested size: 353.40025pt x 142.76338pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 145.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 171.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 145.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 171.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 145.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 171.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 145.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 171.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskBullet.jpg Graphic file (type jpg)
 <use UsaskBullet.jpg>
-Package pdftex.def Info: UsaskBullet.jpg  used on input line 145.
+Package pdftex.def Info: UsaskBullet.jpg  used on input line 171.
 (pdftex.def)             Requested size: 4.51686pt x 7.22575pt.
-[10
+[12
 
  <../../working-thesis/figures/conclusion-snip.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 153.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 179.
  (C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 File: UsaskAerial.jpg Graphic file (type jpg)
 <use UsaskAerial.jpg>
-Package pdftex.def Info: UsaskAerial.jpg  used on input line 153.
+Package pdftex.def Info: UsaskAerial.jpg  used on input line 179.
 (pdftex.def)             Requested size: 353.40025pt x 142.76338pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 153.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 179.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 153.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 179.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskLogo.jpg Graphic file (type jpg)
 <use UsaskLogo.jpg>
-Package pdftex.def Info: UsaskLogo.jpg  used on input line 153.
+Package pdftex.def Info: UsaskLogo.jpg  used on input line 179.
 (pdftex.def)             Requested size: 72.26999pt x 16.72447pt.
 File: TitleBullet.jpg Graphic file (type jpg)
 <use TitleBullet.jpg>
-Package pdftex.def Info: TitleBullet.jpg  used on input line 153.
+Package pdftex.def Info: TitleBullet.jpg  used on input line 179.
 (pdftex.def)             Requested size: 18.06749pt x 12.94667pt.
 File: UsaskBullet.jpg Graphic file (type jpg)
 <use UsaskBullet.jpg>
-Package pdftex.def Info: UsaskBullet.jpg  used on input line 153.
+Package pdftex.def Info: UsaskBullet.jpg  used on input line 179.
 (pdftex.def)             Requested size: 4.51686pt x 7.22575pt.
-[11
+[13
 
 ]
 \tf@nav=\write5
@@ -1272,17 +1345,17 @@ L3 programming layer <2025-06-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25694 strings out of 468221
- 510335 string characters out of 5432891
+ 25724 strings out of 468221
+ 511468 string characters out of 5432891
  879326 words of memory out of 5000000
- 53661 multiletter control sequences out of 15000+600000
+ 53687 multiletter control sequences out of 15000+600000
  711974 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,123p,553b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on cbe453-defence-2026-01.pdf (11 pages, 609122 bytes).
+Output written on cbe453-defence-2026-01.pdf (13 pages, 663316 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 481 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
