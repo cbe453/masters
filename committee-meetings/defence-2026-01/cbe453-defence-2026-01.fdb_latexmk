@@ -1,7 +1,15 @@
 # Fdb version 4
-["pdflatex"] 1765749246.01073 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" "cbe453-defence-2026-01.pdf" "cbe453-defence-2026-01" 1765749248.42161 0
-  "../../working-thesis/figures/conclusion-snip.png" 1753661992 96906 a5d10fca31ae1c9f42596f7e81ae32f5 ""
+["pdflatex"] 1765940760.02087 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" "cbe453-defence-2026-01.pdf" "cbe453-defence-2026-01" 1765940763.34717 0
+  "../../working-thesis/figures/assembly-met.pdf" 1760836791 31130 9d7c5bf857e372fbf4c3ec3410b9578c ""
+  "../../working-thesis/figures/conclusion-snip.png" 1765934817 108304 f7d2295cb4af63472297153692397199 ""
+  "../../working-thesis/figures/dc1-low-gc-fastqc.png" 1752192669 28129 9b6f21a7ba17944f317c68f2a2a6931c ""
+  "../../working-thesis/figures/eval-met.pdf" 1761938341 31363 fee8feba4b60cdf5ed15f526354797ab ""
   "../../working-thesis/figures/gc-plot.pdf" 1763929178 19861 94b498b9cca112abea390f066cc114bf ""
+  "../../working-thesis/figures/gene-finding-met.pdf" 1753160078 29735 b69c3ebf354885be97a514843130f53b ""
+  "../../working-thesis/figures/igv/igv-agreement.png" 1752192669 47212 a8b8658f694a0f4efed523501ccbcf3e ""
+  "../../working-thesis/figures/igv/igv-complicated-thin.png" 1752192669 39752 767260f051e418663e71a3b9fb2a995e ""
+  "../../working-thesis/figures/igv/ips-model-disagree.png" 1752192669 141281 722e6a9925ecead51cda7372933fb1ce ""
+  "../../working-thesis/figures/region-workflow.pdf" 1753231626 29951 eb38beb5b425447ba988e30d23fbf270 ""
   "../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf" 1752192669 23119 74a3a201271a764a9c3cd63a1cf48004 ""
   "../../working-thesis/figures/workflow-simple.pdf" 1753156763 26723 b8eb7c0c6bc95168db419346fffc889a ""
   "C:/Users/cbe45/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1754668936 81088 29d6fa367ac022d1b69251d68c0742e6 ""
@@ -237,10 +245,11 @@
   "beamerinnerthemeusask.sty" 1753470774 1716 cef013ce5da465ab607f3b2ca55d249d ""
   "beamerouterthemeusask.sty" 1753470774 254 0d27c7d349668f7c4bb8c70b5f1c26aa ""
   "beamerthemeusask.sty" 1753470774 349 8543ab80154c3d56b5c69b8ded9adcbb ""
-  "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" 1765749245 6296 fb6943d44123ea5b345e92fb4f7b7e13 ""
-  "cbe453-defence-2026-01.aux" 1765749248 2140 9d08489eca93e005a36ffdc010762b92 "pdflatex"
-  "cbe453-defence-2026-01.nav" 1765749248 1388 37fb167c90003b6656a249083ce3750a "pdflatex"
-  "cbe453-defence-2026-01.tex" 1765749245 6296 fb6943d44123ea5b345e92fb4f7b7e13 ""
+  "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" 1765940756 8455 733ca69f01442970553575080aaec0a1 ""
+  "cbe453-defence-2026-01.aux" 1765940762 3172 748490ffb7fbfff09ad6f29000af1bc1 "pdflatex"
+  "cbe453-defence-2026-01.nav" 1765940762 2132 9ecbcfc9f7de68c052dc9846a033acac "pdflatex"
+  "cbe453-defence-2026-01.tex" 1765940756 8455 733ca69f01442970553575080aaec0a1 ""
+  "subcellular-localization.jpg" 1765939811 66442 58f0a8a4a62665748962c34deac52ecf ""
   (generated)
   "cbe453-defence-2026-01.aux"
   "cbe453-defence-2026-01.log"

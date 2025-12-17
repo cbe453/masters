@@ -87,28 +87,51 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{Gene Finding is Still Challenging}
+	\begin{itemize}
+		\item We've been finding genes for decades. What's going on?
+		\item Exons and introns as well as start and stop positions make gene finding tricky
+		\item Inherent properties of genomes also complicate gene finding.
+	\end{itemize}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+			\centering
+			\includegraphics[scale=0.175]{../../working-thesis/figures/dc1-low-gc-fastqc.png}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\includegraphics[scale=0.325]{../../working-thesis/figures/gc-plot.pdf}
+		\end{column}
+		
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Genes are Sensitive}
+	\begin{itemize}
+		\item Minor changes in start/stop positions can have major impacts on predicted protein sequences.
+		\item Ex. The subcellular localization process relies heavily on N-terminal sequences. 
+	\end{itemize}
+	\vspace{0.3cm}
+	\centering
+	\includegraphics[width=0.6\textwidth]{./subcellular-localization.jpg}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Uncertainty in Gene Predictions}
+	\centering
+	\includegraphics[width=0.7\textwidth]{../../working-thesis/figures/igv/igv-complicated-thin.png}
+	\includegraphics[width=0.7\textwidth]{../../working-thesis/figures/igv/ips-model-disagree.png}
+\end{frame}
+
+\begin{frame}
 	\frametitle{Small but Significant Details}
 	\begin{itemize}
-		\item Before diving too deep, how can we confirm that gene finders predictions are different?
+		\item Before diving too deep, how can we objectively confirm that gene finding tools predict different genes?
 		\item Kolmogorov-Smirnov (KS) tests were performed on gene length distributions from preliminary gene predictions.
 		\begin{center}
 			\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf}
 		\end{center}
 	\end{itemize}	
-\end{frame}
-
-\begin{frame}
-	\frametitle{Gene Finding is still Challenging}
-	\begin{columns}
-		\column{0.38\linewidth}
-			\centering
-			\includegraphics[height=4cm, width=5cm]{../../working-thesis/figures/gc-plot.pdf}
-		\column{0.54\linewidth}
-			We've been finding genes for decades. What's going on?
-			Sure, exons and introns as well as start and stop positions make gene finding tricky.
-			Inherent properties of genomes also complicate gene finding.
-
-	\end{columns}
 \end{frame}
 
 \begin{frame}
@@ -126,12 +149,27 @@
 	\end{itemize}
 \end{frame}
 
-
-
 \begin{frame}
 	\frametitle{Workflow Overview}
 	\centering
-	\includegraphics[width=\textwidth]{../../working-thesis/figures/workflow-simple.pdf}
+	\includegraphics[width=0.87\textwidth]{../../working-thesis/figures/workflow-simple.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Overview of Results}
+	\vspace{0.5cm}
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/conclusion-snip.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Key Findings}
+	\begin{itemize}
+		\item Overall performance of gene finders are similar, but vary by specific criteria.
+		\item Braker2 generally performs best, particularly when relevant training data is available.
+		\item Candidate secondary metabolite gene clusters were found in both DC1 and Tsth20 assemblies.
+		\item DC1 and Tsth20 assemblies are of high quality, providing a solid foundation for future genomic studies.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -141,6 +179,30 @@
 		\item The Global Institute for Food Security for providing the data for this project as well as a portion of my funding.
 		\item My committee members for their feedback and support.
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Workflow Details: Assembly}
+	\centering
+	\includegraphics[width=0.6\textwidth]{../../working-thesis/figures/assembly-met.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Workflow Details: Gene Finding}
+	\centering
+	\includegraphics[width=0.78\textwidth]{../../working-thesis/figures/gene-finding-met.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Workflow Details: Evaluation}
+	\centering
+	\includegraphics[width=01\textwidth]{../../working-thesis/figures/eval-met.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Workflow Details: Regions}
+	\centering
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/region-workflow.pdf}
 \end{frame}
 
 \begin{frame}
@@ -165,9 +227,8 @@
 \end{frame}
 
 \begin{frame}
-	\vspace{0.75cm}
-	\centering
-	\includegraphics[width=0.5\textwidth]{../../working-thesis/figures/conclusion-snip.png}
+	\frametitle{Regions}
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/igv/igv-agreement.png}
 \end{frame}
 
 \begin{frame}
