@@ -26,14 +26,12 @@
 	\frametitle{Outline} 
 
 	\begin{itemize}
-		\item \textit{Trichoderma} fungi.
-		\item Novel \textit{Trichoderma} genomes.
+		\item \textbf{\textit{Trichoderma} fungi.}
 		\item Motivation.
 		\item Research objectives.
 		\item Workflow overview.
-		\item Results.
-		\item Conclusions and recommendations.
-		\item Questions.
+		\item Results highlights.
+		\item Conclusions and future work.
 	\end{itemize}
 \end{frame}
 
@@ -43,10 +41,10 @@
 \begin{frame}
 	\frametitle{What is \textit{Trichoderma}?}
 	\begin{itemize}
-		\item \textit{Trichoderma} is a genus of filamentous fungi that is ubiquitous in soil and plays a significant role in nutrient cycling.
-		\item They are also used in biocontrol and as biofertilizers.
-		\item Known for their production of plant cell wall degrading enzymes, and \textbf{secondary metabolites}.
-		\item Further genomic studies can help in understanding their biology and potential applications.
+		\item Filamentous fungi ubiquitous in soil; key role in nutrient cycling.
+		\item Used in biocontrol and as biofertilizers.
+		\item Produce plant cell wall degrading enzymes and \textbf{secondary metabolites}.
+		\item Future genomic studies reveal their biology and potential applications.
 	\end{itemize}
 	\vspace{0.05cm}
 	\centering
@@ -71,8 +69,21 @@
 	\frametitle{Novel \textit{Trichoderma} Genomes}
 	\begin{itemize}
 		\item \textit{Trichoderma} species are diverse, with many species not yet fully characterized.
-		\item DC1 and Tsth20, shown to improve drought and salt tolerance when applied to crops, and have been shown to breakdown hydrocarbons in soils.
+		\item DC1 and Tsth20 both improve salt and drought tolerance.
+		\item Tsth20 shows potential as a bioremediation agent.
 		\item Recent advances in sequencing technology have made it possible to generate high-quality genomes for these species.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\vspace{2cm}
+	\begin{itemize}
+		\item \textcolor{gray}{\textit{Trichoderma} fungi.}
+		\item \textbf{Motivation.}
+		\item Research objectives.
+		\item Workflow overview.
+		\item Results highlights.
+		\item Conclusions and future work.
 	\end{itemize}
 \end{frame}
 
@@ -81,8 +92,8 @@
 	\begin{itemize}
 		\item To understand \textit{Trichoderma} biology, we must identify genes within their genomes.
 		\item Gene prediction tools vary significantly in implementation and performance.
-		\item \textbf{Few comparative studies exist for these tools in fungi, particularly in \textit{Trichoderma}}.
-		\item New high-quality \textit{Trichoderma} genomes (DC1 and Tsth20) enable comparative evaluation of gene finding tools. 
+		\item Novel genomes with novel biology require gene annotation to connect phenotypes to genotypes.
+		\item New high-quality \textit{Trichoderma} genomes (DC1 and Tsth20) enable this comparative evaluation of gene finding tools. 
 	\end{itemize}
 \end{frame}
 
@@ -90,7 +101,8 @@
 	\frametitle{Gene Finding is Still Challenging}
 	\begin{itemize}
 		\item We've been finding genes for decades. What's going on?
-		\item Exons and introns as well as start and stop positions make gene finding tricky
+		\item Exons and introns as well as start and stop positions make gene finding tricky.
+		\item Stop codons in At-rich regions are highly prevalent.
 		\item Inherent properties of genomes also complicate gene finding.
 	\end{itemize}
 	\begin{columns}
@@ -99,25 +111,26 @@
 			\includegraphics[scale=0.175]{../../working-thesis/figures/dc1-low-gc-fastqc.png}
 		\end{column}
 		\begin{column}{0.5\textwidth}
-			\includegraphics[scale=0.325]{../../working-thesis/figures/gc-plot.pdf}
+			\includegraphics[scale=0.33]{../../working-thesis/figures/gc-plot.pdf}
 		\end{column}
 		
 	\end{columns}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Genes are Sensitive}
+	\frametitle{The Details Matter}
 	\begin{itemize}
 		\item Minor changes in start/stop positions can have major impacts on predicted protein sequences.
 		\item Ex. The subcellular localization process relies heavily on N-terminal sequences. 
+		\item Links back to cell wall degrading enzymes and secondary metabolites.
 	\end{itemize}
 	\vspace{0.3cm}
 	\centering
-	\includegraphics[width=0.6\textwidth]{./subcellular-localization.jpg}
+	\includegraphics[width=0.5\textwidth]{./subcellular-localization.jpg}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Uncertainty in Gene Predictions}
+	\frametitle{Variability in Gene Predictions}
 	\centering
 	\includegraphics[width=0.7\textwidth]{../../working-thesis/figures/igv/igv-complicated-thin.png}
 	\includegraphics[width=0.7\textwidth]{../../working-thesis/figures/igv/ips-model-disagree.png}
@@ -127,11 +140,24 @@
 	\frametitle{Small but Significant Details}
 	\begin{itemize}
 		\item Before diving too deep, how can we objectively confirm that gene finding tools predict different genes?
+		\item Gene finders may be biased to predict certain gene lengths.
 		\item Kolmogorov-Smirnov (KS) tests were performed on gene length distributions from preliminary gene predictions.
 		\begin{center}
 			\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf}
 		\end{center}
 	\end{itemize}	
+\end{frame}
+
+\begin{frame}
+	\vspace{2cm}
+	\begin{itemize}
+		\item \textcolor{gray}{\textit{Trichoderma} fungi.}
+		\item \textcolor{gray}{Motivation.}
+		\item \textbf{Research objectives.}
+		\item Workflow overview.
+		\item Results highlights.
+		\item Conclusions and future work.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -151,16 +177,101 @@
 \end{frame}
 
 \begin{frame}
+	\vspace{2cm}
+	\begin{itemize}
+		\item \textcolor{gray}{\textit{Trichoderma} fungi.}
+		\item \textcolor{gray}{Motivation.}
+		\item \textcolor{gray}{Research objectives.}
+		\item \textbf{Workflow overview.}
+		\item Results highlights.
+		\item Conclusions and future work.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
 	\frametitle{Workflow Overview}
 	\centering
 	\includegraphics[width=0.87\textwidth]{../../working-thesis/figures/workflow-simple.pdf}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Overview of Results}
+	\vspace{2cm}
+	\begin{itemize}
+		\item \textcolor{gray}{\textit{Trichoderma} fungi.}
+		\item \textcolor{gray}{Motivation.}
+		\item \textcolor{gray}{Research objectives.}
+		\item \textcolor{gray}{Workflow overview.}
+		\item \textbf{Results highlights.}
+		\item Conclusions and future work.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Assemblies of DC1 and Tsth20}
+	\begin{itemize}
+		\item Both assemblies are of high quality.
+		\item Few contigs, which is good for gene finding.
+		\item BUSCO analysis sees similar benefits.
+		\item RefSeq assemblies are highly fragmented in comparison.
+	\end{itemize}
+	\centering
+	\vspace{0.6cm}
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/assembly-stats-snip.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{AT-rich Sequence Analysis}
+	\begin{itemize}
+		\item GC content varies across genomes.
+		\item Gene finders struggle in AT-rich regions.
+	\end{itemize}
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/gc-percent-snip.png}
+	\vspace{0.2cm}
+	\includegraphics[width=0.45\textwidth]{../../working-thesis/figures/gc-gene-counts-snip.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Regions of Gene Predictions}
+	\begin{itemize}
+		\item Agreement of gene finders assessed by identifying regions of gene predictions.
+		\item Regions classified based on agreement of start and stop positions.
+		\item Transitive closure used to group overlapping predictions.
+	\end{itemize}
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/t-reesei-region-breakdown.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Secondary Metabolite Gene Clusters}
+	\begin{itemize}
+		\item antiSMASH used to identify candidate secondary metabolite gene clusters.
+		\item Tsth20 contains multiple candidate clusters.
+		\item 35 candidates from Braker2 predictions and 58 from GeneMark.
+		\item Limited exploration of predicted clusters performed.
+	\end{itemize}
+	\centering
+	\vspace{0.2cm}
+	\includegraphics[width=0.8\textwidth]{../../working-thesis/figures/braker-antismash-tsth20.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ranking Gene Finders}
 	\vspace{0.5cm}
 	\centering
 	\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/conclusion-snip.png}
+\end{frame}
+
+\begin{frame}
+	\vspace{2cm}
+	\begin{itemize}
+		\item \textcolor{gray}{\textit{Trichoderma} fungi.}
+		\item \textcolor{gray}{Motivation.}
+		\item \textcolor{gray}{Research objectives.}
+		\item \textcolor{gray}{Workflow overview.}
+		\item \textcolor{gray}{Results highlights.}
+		\item \textbf{Conclusions and future work.}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -170,6 +281,18 @@
 		\item Braker2 generally performs best, particularly when relevant training data is available.
 		\item Candidate secondary metabolite gene clusters were found in both DC1 and Tsth20 assemblies.
 		\item DC1 and Tsth20 assemblies are of high quality, providing a solid foundation for future genomic studies.
+		\item Explored a reference-agnostic approach to gene prediction comparisons.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Future Work}
+	\begin{itemize}
+		\item Explore additional gene finding tools.
+		\item Experiment with different types of training data for Braker2.
+		\item Extend analysis of identified regions of gene predictions.
+		\item Explore secondary metabolite gene clusters in more detail.
+		\item Expand the number of \textit{Trichoderma} genomes analyzed
 	\end{itemize}
 \end{frame}
 
