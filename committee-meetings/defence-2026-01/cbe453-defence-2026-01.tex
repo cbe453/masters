@@ -106,8 +106,8 @@
 	\begin{itemize}
 		\item We've been finding genes for decades. What's going on?
 		\item Exons and introns as well as start and stop positions make gene finding tricky.
-		\item Stop codons in AT-rich regions are highly prevalent.
 		\item Inherent properties of genomes also complicate gene finding.
+		\item Stop codons in AT-rich regions are highly prevalent.
 	\end{itemize}
 	\begin{columns}
 		\begin{column}{0.4\textwidth}
@@ -138,18 +138,6 @@
 	\centering
 	\includegraphics[width=0.7\textwidth]{../../working-thesis/figures/igv/igv-complicated-thin.png}
 	\includegraphics[width=0.7\textwidth]{../../working-thesis/figures/igv/ips-model-disagree.png}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Small but Significant Details}
-	\begin{itemize}
-		\item Before diving too deep, how can we objectively confirm that gene finding tools predict different genes?
-		\item Gene finders may be biased to predict certain gene lengths.
-		\item Kolmogorov-Smirnov (KS) tests were performed on gene length distributions from preliminary gene predictions.
-		\begin{center}
-			\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf}
-		\end{center}
-	\end{itemize}	
 \end{frame}
 
 \begin{frame}
@@ -199,6 +187,14 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{Region Identification}
+	\centering
+	\includegraphics[width=0.65\textwidth]{../../working-thesis/figures/igv/igv-agreement.png}
+	\vspace{1cm}
+	\includegraphics[width=0.7\textwidth]{../../working-thesis/figures/igv/igv-complicated-thin.png}
+\end{frame}
+
+\begin{frame}
 	\vspace{2cm}
 	\begin{itemize}
 		\item \textcolor{gray}{\textit{Trichoderma} fungi.}
@@ -224,15 +220,15 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{AT-rich Sequence Analysis}
+	\frametitle{Small but Significant Details}
 	\begin{itemize}
-		\item GC content varies across genomes.
-		\item Gene finders struggle in AT-rich regions.
-	\end{itemize}
-	\centering
-	\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/gc-percent-snip.png}
-	\vspace{0.2cm}
-	\includegraphics[width=0.45\textwidth]{../../working-thesis/figures/gc-gene-counts-snip.png}
+		\item Before diving too deep, how can we objectively confirm that gene finding tools predict different genes?
+		\item Gene finders may be biased to predict certain gene lengths.
+		\item Kolmogorov-Smirnov (KS) tests were performed on gene length distributions from preliminary gene predictions.
+		\begin{center}
+			\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf}
+		\end{center}
+	\end{itemize}	
 \end{frame}
 
 \begin{frame}
@@ -246,6 +242,18 @@
 	\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/t-reesei-region-breakdown.png}
 \end{frame}
 
+\begin{frame}
+	\frametitle{AT-rich Sequence Analysis}
+	\begin{itemize}
+		\item GC content varies across genomes.
+		\item Gene finders struggle in AT-rich (>72\% AT content) regions.
+	\end{itemize}
+	\centering
+	\includegraphics[width=0.9\textwidth]{../../working-thesis/figures/gc-percent-snip.png}
+	\vspace{0.2cm}
+	\includegraphics[width=0.45\textwidth]{../../working-thesis/figures/gc-gene-counts-snip.png}
+\end{frame}
+ 
 \begin{frame}
 	\frametitle{Secondary Metabolite Gene Clusters}
 	\begin{itemize}
@@ -283,7 +291,7 @@
 	\begin{itemize}
 		\item Overall performance of gene finders are similar, but vary by specific criteria.
 		\item Braker2 generally performs best, particularly when relevant training data is available.
-		\item Candidate secondary metabolite gene clusters were found in both DC1 and Tsth20 assemblies.
+		\item Candidate secondary metabolite gene clusters were found in Tsth20 assembly.
 		\item DC1 and Tsth20 assemblies are of high quality, providing a solid foundation for future genomic studies.
 		\item Explored a reference-agnostic approach to gene prediction comparisons.
 	\end{itemize}
@@ -308,6 +316,13 @@
 		\item Global Institute for Food Security for providing a portion of my funding.
 		\item My committee members for their feedback and support.
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\vspace{3cm}
+	\begin{center}
+		\Huge{Questions and Discussion}
+	\end{center}
 \end{frame}
 
 \begin{frame}

@@ -1,0 +1,60 @@
+Defence talking points:
+
+slide 3:
+- breaking down biological matter and other pathogens
+- promote plant growth
+- secondary metabolites are a key component of these phenotypes
+
+slide 4:
+- many novel species remain unstudied although potentially useful
+- improve growth in sandy soils near oils sands
+- illumina and nanopore data
+
+slide 5:
+- different gene prediction methods like de novo and others that include training data
+- what makes Trichoderma tick? 
+
+slide 6:
+- genes can be sliced and put together in many combinations
+
+
+slide 7:
+- in particular stop positions
+- where will products end up if each gene prediction is correct but different?
+
+slide 11: 
+- using hybrid assembly
+- including virens, harzianum and reesei
+
+slide 13:
+- assembling the nanopore sequences and polishing with illumine using nextDenovo and nextPolish
+- apply gene finders to all assemblies
+- evaluate gene predictions with interproscan, busco, blast and whatnot
+- identify regions for further processing
+
+slide 16:
+- much fewer contigs, similar lengths, larger contigs etc.
+- garbage in garbage out 
+
+slide 17:
+- if one were to randomly sample gene lengths from all predictions, we see that they are not being pulled from the same underlying distribution of gene lengths
+
+slide 18:
+- in general for DC1 and Tsth20, predictions agree
+- when three tools are included, most regions contain disagreement
+
+slide 19:
+- these regions contain less than 28% GC content
+- t virens is an odd case
+
+slide 20:
+- these clusters are large and can be spread over 100kb
+- polyketide synthetases and non-ribosomal peptide synthetases, terpenes
+
+slide 21:
+- useful to rank gene finders overall. these are not scores
+- important to note that refseq is included for reference and is not a tool available for use
+- if your genome were to be a refseq, you could expect similar results
+- overall braker2 ranked the highest, with appropriate training data
+- GeneMark ranked lowest, but still useful 
+
