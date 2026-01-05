@@ -14,11 +14,12 @@ slide 5:
 - different gene prediction methods like de novo and others that include training data
 - what makes Trichoderma tick? 
 
-slide 6:
-- genes can be sliced and put together in many combinations
-
-
 slide 7:
+- genes can be sliced and put together in many combinations
+- t.reesei is an odd-ball which we will focus more on later
+
+
+slide 8:
 - in particular stop positions
 - where will products end up if each gene prediction is correct but different?
 
@@ -54,6 +55,7 @@ slide 20:
 slide 21:
 - useful to rank gene finders overall. these are not scores
 - important to note that refseq is included for reference and is not a tool available for use
+- nothing is biologically confirmed, grain of salt needed
 - if your genome were to be a refseq, you could expect similar results
 - overall braker2 ranked the highest, with appropriate training data
 - GeneMark ranked lowest, but still useful 

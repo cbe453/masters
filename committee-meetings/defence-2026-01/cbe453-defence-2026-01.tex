@@ -296,7 +296,7 @@
 	\frametitle{Key Findings}
 	\begin{itemize}
 		\item Overall performance of gene finders are similar, but vary by specific criteria.
-		\item Braker2 generally performs best, particularly when relevant training data is available.
+		\item Braker2 ranks highest, particularly when relevant training data is available.
 		\item Candidate secondary metabolite gene clusters were found in Tsth20 assembly.
 		\item DC1 and Tsth20 assemblies are of high quality, providing a solid foundation for future genomic studies.
 		\item Explored a reference-agnostic approach to gene prediction comparisons.
@@ -305,12 +305,17 @@
 
 \begin{frame}
 	\frametitle{Future Work}
+	\vspace{0.6cm}
 	\begin{itemize}
-		\item Explore additional gene finding tools.
-		\item Experiment with different types of training data for Braker2.
-		\item Extend analysis of identified regions of gene predictions.
-		\item Explore secondary metabolite gene clusters in more detail.
-		\item Expand the number of \textit{Trichoderma} genomes analyzed
+		\item A few of many potential avenues...
+		\begin{itemize}
+			\item Explore additional gene finding tools.
+			\item Adjust parameters of existing tools.
+			\item Experiment with different types of training data for Braker2.
+			\item Extend analysis of identified regions of gene predictions.
+			\item Explore secondary metabolite gene clusters in more detail.
+			\item Expand the number of \textit{Trichoderma} genomes analyzed.
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
@@ -377,8 +382,42 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Regions}
-	\includegraphics[width=\textwidth]{../../working-thesis/figures/igv/igv-agreement.png}
+	\frametitle{Phylogenetics}
+	\centering
+	\includegraphics[width=0.72\textwidth]{../../working-thesis/figures/trichoderma-phylogeny-few-outgroups.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Region Identification Algorithm}
+	\centering
+	\includegraphics[width=0.55\textwidth]{../../working-thesis/figures/pseudocode-snapshot.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{BUSCO Results}
+	\vspace{0.2cm}
+	\centering
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/busco-complete-counts.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{InterProScan Results}
+	\centering
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/interproscan-barplot.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{BLAST Results}
+	\centering
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/blast-tatroviride.pdf}
+\end{frame}
+
+\begin{frame}
+	\frametitle{AT-rich Sequence Localization}
+	\centering
+	\vspace{0.3cm}
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/dc1-atRich-windows.png}
+	\includegraphics[width=\textwidth]{../../working-thesis/figures/t-reesei-atRich-window-snapshot.png}
 \end{frame}
 
 \end{document}
