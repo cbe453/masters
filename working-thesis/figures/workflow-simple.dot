@@ -28,4 +28,5 @@ digraph G{
 	"2. Gene Prediction and Processing" -> "4. Region Identification";
 	"3. Evaluation and Validation" -> "4. Region Identification";
 	"1. Sequence Processing and Assembly" -> "4. Region Identification"; 
+	"4. Region Identification" -> "3. Evaluation and Validation";
 }

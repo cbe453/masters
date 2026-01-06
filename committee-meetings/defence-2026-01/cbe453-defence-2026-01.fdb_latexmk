@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1767628807.50779 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" "cbe453-defence-2026-01.pdf" "cbe453-defence-2026-01" 1767628812.20831 0
+["pdflatex"] 1767660696.49511 "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" "cbe453-defence-2026-01.pdf" "cbe453-defence-2026-01" 1767660701.28305 0
   "../../working-thesis/figures/assembly-met.pdf" 1760836791 31130 9d7c5bf857e372fbf4c3ec3410b9578c ""
   "../../working-thesis/figures/assembly-stats-snip.png" 1766177258 137681 679f36527644390c0065f1a5a89c5975 ""
   "../../working-thesis/figures/blast-tatroviride.pdf" 1763927040 17417 e6065fd76fdbb44f312f7aa4526a2041 ""
@@ -23,7 +23,7 @@
   "../../working-thesis/figures/t-reesei-cdf-lengths-log.pdf" 1752192669 23119 74a3a201271a764a9c3cd63a1cf48004 ""
   "../../working-thesis/figures/t-reesei-region-breakdown.png" 1752192669 28808 53daaf7e77d1805d88779011291d42c5 ""
   "../../working-thesis/figures/trichoderma-phylogeny-few-outgroups.pdf" 1755662146 33161 7a311a91d92569aeb9d25f2e5fece337 ""
-  "../../working-thesis/figures/workflow-simple.pdf" 1753156763 26723 b8eb7c0c6bc95168db419346fffc889a ""
+  "../../working-thesis/figures/workflow-simple.pdf" 1767660682 26710 5a0aa98b5a1b6f64bdecb77d34bc7d30 ""
   "C:/Users/cbe45/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1754668936 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/cbe45/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1752198246 13235208 6a99ba7a7edda16751e321c23f7d7000 ""
   "C:/Users/cbe45/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -264,10 +264,10 @@
   "beamerinnerthemeusask.sty" 1753470774 1716 cef013ce5da465ab607f3b2ca55d249d ""
   "beamerouterthemeusask.sty" 1753470774 254 0d27c7d349668f7c4bb8c70b5f1c26aa ""
   "beamerthemeusask.sty" 1753470774 349 8543ab80154c3d56b5c69b8ded9adcbb ""
-  "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" 1767628806 14460 423fbd89ea2201a4788f768d56529edc ""
-  "cbe453-defence-2026-01.aux" 1767628811 5236 ad5a3361d87fd9f0cd336faea030bd76 "pdflatex"
-  "cbe453-defence-2026-01.nav" 1767628811 3620 0d24747d224889f3dce48efcb712964f "pdflatex"
-  "cbe453-defence-2026-01.tex" 1767628806 14460 423fbd89ea2201a4788f768d56529edc ""
+  "c:/Users/cbe45/OneDrive/Desktop/Masters/masters/committee-meetings/defence-2026-01/cbe453-defence-2026-01.tex" 1767660695 14456 3204cb85ffdb4e442bdf4c68132fd47f ""
+  "cbe453-defence-2026-01.aux" 1767660700 5236 ad5a3361d87fd9f0cd336faea030bd76 "pdflatex"
+  "cbe453-defence-2026-01.nav" 1767660700 3620 0d24747d224889f3dce48efcb712964f "pdflatex"
+  "cbe453-defence-2026-01.tex" 1767660695 14456 3204cb85ffdb4e442bdf4c68132fd47f ""
   "subcellular-localization.jpg" 1765939811 66442 58f0a8a4a62665748962c34deac52ecf ""
   (generated)
   "cbe453-defence-2026-01.aux"
