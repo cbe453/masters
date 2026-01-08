@@ -227,6 +227,11 @@ INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\changebar\changebar.sty
+INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\changebar\changebar.sty
+OUTPUT thesis.cb2
+INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+OUTPUT thesis.cb
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\thesis.aux
@@ -269,6 +274,8 @@ INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstop
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT thesis.cb2
+INPUT thesis.cb
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\cbe45\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
@@ -648,6 +655,8 @@ INPUT chapters\c6\conclusions.tex
 INPUT .\thesis.bbl
 INPUT .\thesis.bbl
 INPUT thesis.bbl
+INPUT thesis.cb
+INPUT thesis.cb2
 INPUT thesis.aux
 INPUT .\intro.aux
 INPUT .\intro.aux

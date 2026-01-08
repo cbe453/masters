@@ -1,34 +1,34 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces \textit {Trichoderma} Phylogenetic tree}}{6}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Generic gene model}}{7}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \textit {Trichoderma} Phylogenetic tree}}{6}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Generic gene model}}{7}{figure.caption.15}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Workflow overview}}{15}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Sequence assembly and processing workflow}}{17}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces GC content distribution for DC1}}{18}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Gene prediction workflow}}{20}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Gene evaluation and validation workflow}}{23}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Region identification workflow}}{25}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces IGV example}}{26}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Workflow overview}}{15}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Sequence assembly and processing workflow}}{16}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces GC content distribution for DC1}}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Gene prediction workflow}}{20}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gene evaluation and validation workflow}}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Region identification workflow}}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces IGV example}}{27}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces GC content distribution for each Trichoderma genome assembly}}{30}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Number of genes predicted}}{33}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Number of coding sequences predicted}}{34}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots for DC1 and Tsth20}}{35}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces CDF plots for \textit {T. harzianum} and \textit {T. reesei}}}{36}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces CDF plots for \textit {T. virens}}}{37}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces BUSCO counts}}{39}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Example Secondary Metabolite Gene Clusters Identified by antiSMASH}}{43}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Breakdown of identified regions}}{46}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Example of a region with many gene calls}}{47}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Predictions on opposing strands}}{48}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Percentage of proteins with Pfam matches}}{49}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Agreeing Pfam matches}}{51}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Split Pfam matches}}{56}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces RefSeq absence with IPS evidence}}{57}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Total tblastn hits}}{57}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Results from tblastn by reference}}{59}{figure.caption.48}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Regions of agreement in AT-rich genomic sequence}}{60}{figure.caption.51}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Gene counts in AT-rich regions}}{60}{figure.caption.53}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces GC content distribution for each Trichoderma genome assembly}}{30}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Number of genes predicted}}{33}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Number of coding sequences predicted}}{34}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots for DC1 and Tsth20}}{35}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces CDF plots for \textit {T. harzianum} and \textit {T. reesei}}}{36}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces CDF plots for \textit {T. virens}}}{37}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces BUSCO counts}}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Example Secondary Metabolite Gene Clusters Identified by antiSMASH}}{43}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Breakdown of identified regions}}{46}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Example of a region with many gene calls}}{47}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Predictions on opposing strands}}{48}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Percentage of proteins with Pfam matches}}{49}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Agreeing Pfam matches}}{51}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Split Pfam matches}}{56}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces RefSeq absence with IPS evidence}}{57}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Total tblastn hits}}{57}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Results from tblastn by reference}}{59}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Regions of agreement in AT-rich genomic sequence}}{60}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Gene counts in AT-rich regions}}{60}{figure.caption.54}%
 \addvspace {10\p@ }

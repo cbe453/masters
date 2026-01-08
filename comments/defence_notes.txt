@@ -1,0 +1,31 @@
+Ian
+ - thesis needs a statement that explicitly states whether and how generative AI was used
+ - have a list of research objectives earlier.  Use point form.
+ - remove research questions that weren't actually answered.  Reword the research question
+   where it was just partially answered
+ - in Section 2.6 site any comparison studies of gene finders
+ - 4th last line on page 16, answer the question "increase relative to what?"
+ - regarding Figure 4.3, what would one expect?  Perhaps give a figure.
+ - reword the sentence "We refer to a gene as a set of start and stop coordinates 
+   in a genomic sequence" on page 32
+ - if you can add more details about the tools underlying the RefSeq pipeline that
+   are relevant to the thesis, please do so
+ - replace the summary table in your thesis with the one in your presentation
+
+Lingling
+ - have a list of research questions earlier
+ - in the Abstract make it clearer how you decided which was best
+ - make it clearer what you mean by "ease of use" in the Results section.
+ - used the term "biological validation".  However there is little actual biological validation.
+   Adjust wording.
+ - add a little of discussion about hits (genes) which are not in InterProScan.  They might be
+   false positives or they might be novel genes.
+ - add some links in the thesis document to materials on github
+
+Dave
+ - use the word bimodal to describe the distribution of GC content
+ - all the tools in the RefSeq pipeline should be available.  Unknown is how they are put
+   together and parameters used.
+
+Tony
+ - 
