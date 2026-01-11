@@ -3,7 +3,7 @@
 The general processing steps performed in this work can be grouped
 into four processing stages, or workflows. A simplified overview of
 these stages and the flow of data between them is shown in Figure~\ref{fig:simple-work}. In ascending order, each processing stage is
-discussed in more detail in Sections~\ref{met:seq-workflow},~\ref{met:predict-workflow},~\ref{met:valid-workflow}, and~\ref{section:region-met}.
+discussed in more detail in Sections~\ref{met:seq-workflow},~\ref{met:predict-workflow},~\ref{met:valid-workflow}, and~\ref{section:region-met}. \cbstart~Scripts and commands used in this work are available on GitHub at the following link: \url{https://github.com/cbe453/masters}\cbend
 
 \begin{figure}
   \centering
@@ -66,17 +66,21 @@ process is described later in Section~\ref{met:atrich}, and was used to answer R
 % The training was performed using roughly 145 million Illumina
 % paired end RNAseq reads on the \textit{Trichoderma reesei} genome.
 
-Genomic sequences used for assembly were generated for DC1 and Tsth20 using Nanopore~\cite{wang2021a} and Illumina~\cite{bennett2004a} sequencing technologies by Brendan Ashby at the Global Institute for Food Security at the University of Saskatchewan. Short-read sequences were first examined with the FastQC tool~\cite{fastqc} (default parameters) to evaluate sequencing quality and general metrics associated with the sequencing run. The short-read sequences were then trimmed to remove adapter content or low-quality sequences, as these may lead to fragmented assemblies and erroneous base calls. Illumina sequencing data was filtered using Trimmomatic v0.38~\cite{bolger2014a} with the following criteria: SLIDINGWINDOW:4:28, LEADING:28, TRAILING:28, MINLEN:75. Only surviving paired-end reads were used for further analysis. After filtering, 5.57 million paired-end Illumina reads between the lengths of 75bp and 250bp remained for DC1, while Tsth20 had 7.94 million paired-end Illumina reads between the lengths of 75bp and 250bp. Single reads that lost their pair during filtering were discarded.
+\cbstart
+Genomic sequences used for assembly were generated for DC1 and Tsth20 using Nanopore~\cite{wang2021a} and Illumina~\cite{bennett2004a} sequencing technologies. Short-read sequences were first examined with the FastQC tool~\cite{andrews} (default parameters) to evaluate sequencing quality and general metrics associated with the sequencing run. The short-read sequences were then trimmed to remove adapter content or low-quality sequences, as these may lead to fragmented assemblies and erroneous base calls. Details these processes are described below.
+\cbend
+
+Illumina sequencing data was filtered using Trimmomatic v0.38~\cite{bolger2014a} with the following criteria: SLIDINGWINDOW:4:28, LEADING:28, TRAILING:28, MINLEN:75. Only surviving paired-end reads were used for further analysis. After filtering, 5.57 million paired-end Illumina reads between the lengths of 75bp and 250bp remained for DC1, while Tsth20 had 7.94 million paired-end Illumina reads between the lengths of 75bp and 250bp. Single reads that lost their pair during filtering were discarded.
 
 Nanopore sequencing for DC1 and Tsth20 was also performed by Brendan Ashby. For DC1, 6.25 million reads were obtained with a mean quality of 9.9 and a mean length of 1,062bp. For Tsth20, 1.27 million reads were obtained with a mean quality of 10.2 and mean length of 4,788bp. All Nanopore reads used were of Nanopore's Q quality score of 7 or higher, and no additional filtering or trimming was performed.
 
-It has been shown that assemblies that use both short-read and long-read sequencing data during the assembly are of higher quality and less fragmented than assemblies using only one form of sequencing. Genomic Nanopore and Illumina sequences from DC1 and Tsth20 were assembled into contigs using the hybrid assembly tool NextDenovo~\cite{hu2024a} v2.5.0 with default parameters. Although hybrid genome assemblies are of higher quality, they may still contain base calling errors after assembly. The highly accurate short-reads can be used to correct base calling errors after assembly. To do this, the hybrid assemblies were polished with Illumina sequences using NextPolish~\cite{hu2020a} v1.4.1 and default parameters. Final assembly metrics were calculated using QUAST v5.0.2~\cite{gurevich2013a} with default parameters.
+It has been shown that assemblies that use both short-read and long-read sequencing data during the assembly are of higher quality and less fragmented than assemblies using only one form of sequencing. Genomic Nanopore and Illumina sequences from DC1 and Tsth20 were assembled into contigs using the hybrid assembly tool NextDenovo~\cite{hu2024a} v2.5.0 with default parameters\cbstart~\cite{zhu2025}~\cite{zhang2024}\cbend. Although hybrid genome assemblies are of higher quality, they may still contain base calling errors after assembly. The highly accurate short-reads can be used to correct base calling errors after assembly. To do this, the hybrid assemblies were polished with Illumina sequences using NextPolish~\cite{hu2020a} v1.4.1 and default parameters. Final assembly metrics were calculated using QUAST v5.0.2~\cite{gurevich2013a} with default parameters.
 
 \subsection{Identifying AT-rich Genomic Sequence}\label{met:atrich}
 
 Initial exploration of the Illumina sequence data generated for DC1
 and Tsth20 showed bi-modal distributions of GC content in the
-reads. An example of the distribution of GC content from Illumina sequences for DC1 is shown in Figure~\ref{fig:dc1-low-gc}. We can see that there is an increase in AT-rich (GC-poor) sequences around 16\% GC content, which is unexpected in comparison to the expected peak around 50\% GC content. Because of this observation, we extended the GC content analysis further to identify
+reads. An example of the distribution of GC content from Illumina sequences for DC1 is shown in Figure~\ref{fig:dc1-low-gc}.\cbstart We can see a bimodal distribution with a peak corresponding to AT-rich (GC-poor) sequences around 16\% GC content. Generally, after trimming the Illumina sequences, we would expect a normal distribution of GC content centered around the average GC content of the organism's genome, which is approximately 47-49\% for \textit{Trichoderma} species~\cite{kubicek2011}. The presence of a second peak around 16\% GC content indicates a significant amount of AT-rich sequence in the genomic data\cbend. Because of this observation, we extended the GC content analysis further to identify
  regions of AT-rich genomic sequence in both DC1, Tsth20, and the other assemblies discussed in Section~\ref{met:datasets}. This extended analysis is described below.
  
 AT-rich genomic sequences were identified using sliding windows of GC
@@ -141,7 +145,7 @@ are depicted as arrows outside the green sub-graph.
 
 First, RefSeq assemblies and their associated annotations of closely
 related \textit{Trichoderma} species were selected from the National Center for Biotechnology Information (NCBI) for
-training and comparison. Both \textit{ab initio}
+training and comparison.\cbstart~RefSeq assemblies and annotations were included as a useful point of comparison, as they are considered high-quality. Since the RefSeq pipeline for gene prediction is not publicly available, we cannot recommend it as tool available to researchers, but we can use it as a point of comparison for other gene finders. The RefSeq pipeline itself consists of both publicly available tools such as ProSplign~\cite{zotero-item-387}, MiniMap2~\cite{li2018} and RepeatMasker~\cite{smit2013repeatmasker} as well as proprietary tools such as NCBI's own gene prediction tool Gnomon~\cite{zotero-item-392}. RefSeq also includes a human curation component, although it is unclear to what extent this was applied to the \textit{Trichoderma} species used in this work\cbend. Both \textit{ab initio}
 (GeneMark~\cite{borodovsky2011a}) and evidence-based
 (Braker2~\cite{bruna2021a}) gene finders were selected for comparison to
 evaluate gene prediction behavior in the context of
@@ -186,7 +190,7 @@ be used as training data for various tools, such as the
 evidence-based training used by Braker2. In this work, four forms of
 these inputs were selected from NCBI for comparison and training. The
 first two datasets selected were assemblies and associated gene
-predictions of three RefSeq \textit{Trichoderma} organisms, \textit{T. virens}, \textit{T. harzianum}, and
+predictions of three RefSeq \textit{Trichoderma} organisms, \textit{T. reesei}, \textit{T. harzianum}, and
 \textit{T. virens}. NCBI RefSeq accession IDs for those assemblies are
 GCF\_000167675.1\_v2.0, GCF\_003025095.1\_Triha\_v1.0, and
 GCF\_000170995.1\_TRIVI\_v2.0, respectively. \textit{T. reesei} was
@@ -215,7 +219,6 @@ GCF\_000240135.3, and GCF\_000146045.2, respectively.
 
 \subsection{Gene Prediction Using GeneMark-ES}\label{met:genemark}
 
-
 \textit{Ab initio} gene finding was performed using GeneMark-ES
 v4.71~\cite{borodovsky2011a} with DC1, Tsth20 and selected RefSeq
 \textit{Trichoderma} assemblies used as input. Default parameters were
@@ -235,7 +238,7 @@ organism for
 training. Illumina~\cite{bennett2004a}
 RNAseq datasets from \textit{T. reesei} were downloaded from the NCBI
 short-read archive using the SRA-toolkit~\cite{zotero-item-326} and were not
-trimmed or filtered prior to their use in Braker2 training. Default
+trimmed or filtered prior to their use in Braker2 training as they had already been trimmed prior to download. Default
 parameters were used to train a Braker2 model on \textit{T.
   reesei} data except the addition of the fungal option, which was used
 for improved gene-finding performance in fungi. The
@@ -341,7 +344,7 @@ identification algorithm in Section~\ref{section:region-met}.
 \subsection{Ground-truthing with the Basic Local Alignment Search Tool (BLAST)}\label{met:blast}
 
 The \textit{Trichoderma} assemblies chosen for comparison were used as
-the subject sequences in tblastn~\cite{gertz2006} searches with the query proteins discussed in Section~\ref{met:datasets}. Default parameters were used in the tblastn searches. Hits from the tblastn alignments were then filtered for alignments with a minimum of 30\% query coverage and 30\% identity. These criteria were selected as they filter out spurious alignments while also retaining short alignments that capture functional or conserved protein coding sequence. Remaining alignments were then processed using the region identification algorithm in~\ref{section:region-met}. 
+the subject sequences in tblastn~\cite{gertz2006} searches with the query proteins discussed in Section~\ref{met:datasets}. Default parameters were used in the tblastn searches. Hits from the tblastn alignments were then filtered for alignments with a minimum of 30\% query coverage and 30\% identity. These criteria were selected as they filter out spurious alignments while also retaining short alignments that may capture functional or conserved protein coding sequence. Remaining alignments were then processed using the region identification algorithm in\cbstart~Section~\ref{section:region-met}\cbend. 
 
 \subsection{Identification of Secondary Metabolite Biosynthetic Gene Clusters Using antiSMASH}\label{met:antismash}
 
@@ -381,21 +384,19 @@ in Section~\ref{section:igv-met}.
 
 \subsection{Region Identification Algorithm}\label{section:region-met}
 
-The gene predictions from Subsections~\ref{met:datasets},~\ref{met:genemark},~\ref{met:braker2} and the additional datasets from Subsections~\ref{met:atrich},~\ref{met:blast},~\ref{met:interproscan} were processed into regions of overlapping gene predictions. A region is defined as a pair of genomic coordinates containing one $5'$ coordinate and a subsequent $3'$ coordinate, between which are one or more overlapping features.
+The gene predictions from Subsections~\ref{met:datasets},~\ref{met:genemark},~\ref{met:braker2} and the additional datasets from\cbstart Subsections~\ref{met:atrich}, \ref{met:blast},~\ref{met:interproscan} were processed into regions of overlapping gene predictions\cbend. A region is defined as a pair of genomic coordinates containing one $5'$ coordinate and a subsequent $3'$ coordinate, between which are one or more overlapping features.
 We define a feature as a pair of genomic
 coordinates containing one start and one stop coordinate that is
 associated with a gene prediction, annotation, or other information of
 interest.
 
-Overlapping features were processed into regions using a concept
-similar to Allen's interval algebra~\cite{dechter2003}. The
-algorithm first sorts all features on each contig by start coordinate
+The region identification algorithm first sorts all features on each contig by start coordinate
 and then iterates over each feature, identifying overlaps with
 previous features to identify regions of overlapping features. We
 approached this as a graph problem, where features make up a set of
 nodes \textit{V}, and spatial overlaps between features make up a set
-of edges \textit{E}, forming the graph \textit{G} = \textit{\{V,
-    E\}}. This algorithm performs a transitive closure
+of edges \textit{E}, forming the graph\cbstart \textit{G} = \textit{(V,
+    E)}\cbend. This algorithm performs a transitive closure
 \textit{R}\textsuperscript{+} of \textit{G}, resulting in sub-graphs,
 or regions of features in which each node has a path to each other
 node in that sub-graph. Pseudocode for the algorithm is shown in

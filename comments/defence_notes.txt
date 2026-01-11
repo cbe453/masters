@@ -1,9 +1,9 @@
 Ian
- - thesis needs a statement that explicitly states whether and how generative AI was used
- - have a list of research objectives earlier.  Use point form.
+ DONE - thesis needs a statement that explicitly states whether and how generative AI was used
+ DONE - have a list of research objectives earlier.  Use point form.
  - remove research questions that weren't actually answered.  Reword the research question
    where it was just partially answered
- - in Section 2.6 site any comparison studies of gene finders
+ DONE - in Section 2.6 site any comparison studies of gene finders
  - 4th last line on page 16, answer the question "increase relative to what?"
  - regarding Figure 4.3, what would one expect?  Perhaps give a figure.
  - reword the sentence "We refer to a gene as a set of start and stop coordinates 

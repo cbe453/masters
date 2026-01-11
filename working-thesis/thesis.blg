@@ -17,46 +17,47 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: ./refs/full-bib.bib
+Warning--I didn't find a database entry for "tsth20-hydrocarbon"
 Warning--empty author in 2008
-You've used 55 entries,
+You've used 61 entries,
             1791 wiz_defined-function locations,
-            770 strings with 15737 characters,
-and the built_in function-call counts, 15066 in all, are:
-= -- 1199
-> -- 995
-< -- 5
-+ -- 352
-- -- 297
-* -- 1374
-:= -- 2508
-add.period$ -- 166
-call.type$ -- 55
-change.case$ -- 55
+            795 strings with 17138 characters,
+and the built_in function-call counts, 16419 in all, are:
+= -- 1262
+> -- 1148
+< -- 4
++ -- 406
+- -- 345
+* -- 1512
+:= -- 2744
+add.period$ -- 178
+call.type$ -- 61
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 524
-empty$ -- 1292
-format.name$ -- 297
-if$ -- 3167
+cite$ -- 62
+duplicate$ -- 549
+empty$ -- 1403
+format.name$ -- 345
+if$ -- 3429
 int.to.chr$ -- 0
-int.to.str$ -- 55
-missing$ -- 51
-newline$ -- 275
-num.names$ -- 58
-pop$ -- 99
+int.to.str$ -- 61
+missing$ -- 53
+newline$ -- 300
+num.names$ -- 60
+pop$ -- 113
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 219
+skip$ -- 247
 stack$ -- 0
-substring$ -- 1074
-swap$ -- 88
-text.length$ -- 5
+substring$ -- 1129
+swap$ -- 85
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 140
-width$ -- 57
-write$ -- 601
-(There was 1 warning)
+while$ -- 146
+width$ -- 63
+write$ -- 647
+(There were 2 warnings)

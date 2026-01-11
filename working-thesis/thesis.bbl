@@ -2,8 +2,8 @@
 
 \bibitem{woo2023a}
 Sheridan~L. Woo, Rosa Hermosa, Matteo Lorito, and Enrique Monte.
-\newblock \emph{Trichoderma}: A multipurpose, plant-beneficial microorganism
-  for eco-sustainable agriculture.
+\newblock Trichoderma: A multipurpose, plant-beneficial microorganism for
+  eco-sustainable agriculture.
 \newblock {\em Nature Reviews Microbiology}, 21(5):312--326, 2023.
 
 \bibitem{kubicek2019a}
@@ -12,14 +12,13 @@ Christian~P. Kubicek, Andrei~S. Steindorff, Komal Chenthamara, Gelsomina
   Eva~M. Kubicek, Alan Kuo, Riccardo Baroncelli, Sabrina Sarrocco,
   Eliane~Ferreira Noronha, Giovanni Vannacci, Qirong Shen, Igor~V. Grigoriev,
   and Irina~S. Druzhinina.
-\newblock Evolution and comparative genomics of the most common
-  {{\emph{Trichoderma}}} species.
+\newblock Evolution and comparative genomics of the most common {{Trichoderma}}
+  species.
 \newblock {\em BMC Genomics}, 20(1):485, 2019.
 
 \bibitem{Mukherjee2012}
 Prasun~K. Mukherjee, Benjamin~A. Horwitz, and Charles~M. Kenerley.
-\newblock Secondary metabolism in {{\emph{Trichoderma}}} -- a genomic
-  perspective.
+\newblock Secondary metabolism in {{Trichoderma}} -- a genomic perspective.
 \newblock {\em Microbiology}, 158(1):35--45, 2012.
 
 \bibitem{goncalves2024}
@@ -27,7 +26,8 @@ Carla Gon{\c c}alves, Chris~Todd Hittinger, and Antonis Rokas.
 \newblock Horizontal {{Gene Transfer}} in {{Fungi}} and {{Its Ecological
   Importance}}.
 \newblock In Yen-Ping Hsueh and Meredith Blackwell, editors, {\em Fungal
-  {{Associations}}}, pages 59--81. Springer International Publishing, 2024.
+  {{Associations}}}, pages 59--81. Springer International Publishing, Cham,
+  2024.
 
 \bibitem{plohl2014a}
 Miroslav Plohl, Nevenka Me{\v s}trovi{\'c}, and Brankica Mravinac.
@@ -39,8 +39,7 @@ David~J. Winter, Austen R.~D. Ganley, Carolyn~A. Young, Ivan Liachko,
   Christopher~L. Schardl, Pierre-Yves Dupont, Daniel Berry, Arvina Ram, Barry
   Scott, and Murray~P. Cox.
 \newblock Repeat elements organise {{3D}} genome structure and mediate
-  transcription in the filamentous fungus {{\emph{Epichlo{\"e}}
-  \emph{festucae}}}.
+  transcription in the filamentous fungus {{Epichlo\"e}} festucae.
 \newblock {\em PLOS Genetics}, 14(10):1--29, 2018.
 
 \bibitem{kubicek2011}
@@ -62,7 +61,7 @@ Christian~P. Kubicek, Alfredo {Herrera-Estrella}, Verena {Seidl-Seiboth},
   Michael Zhang, Pedro~M. Coutinho, Charles~M. Kenerley, Enrique Monte,
   Scott~E. Baker, and Igor~V. Grigoriev.
 \newblock Comparative genome sequence analysis underscores mycoparasitism as
-  the ancestral life style of {{\emph{Trichoderma}}}.
+  the ancestral life style of {{Trichoderma}}.
 \newblock {\em Genome Biology}, 12(4):R40, April 2011.
 
 \bibitem{fitzpatrick2012}
@@ -70,27 +69,20 @@ David~A. Fitzpatrick.
 \newblock Horizontal gene transfer in fungi.
 \newblock {\em FEMS Microbiology Letters}, 329(1):1--8, 2012.
 
-\bibitem{tsth20-hydrocarbon}
-Timothy~S. Repas.
-\newblock Plant growth promotion on and phytoremediation of athabasca oil sands
-  coarse tailings using the endophytic fungus, \emph{Trichoderma harzianum}
-  tsth20-1.
-\newblock {\em University of Saskatchewan Theses and Dissertations}, 2014.
-
 \bibitem{senizza2023}
 Biancamaria Senizza, Fabrizio Araniti, Simon Lewin, Sonja Wende, Steffen Kolb,
   and Luigi Lucini.
 \newblock Trichoderma spp.-mediated mitigation of heat, drought, and their
-  combination on the \emph{{{Arabidopsis}} thaliana} holobiont: A metabolomics
-  and metabarcoding approach.
+  combination on the {{Arabidopsis}} thaliana holobiont: A metabolomics and
+  metabarcoding approach.
 \newblock {\em Frontiers in Plant Science}, 14, 2023.
 
 \bibitem{an2022}
 Xiao-Ya An, Guo-Hui Cheng, Han-Xing Gao, Xue-Fei Li, Yang Yang, Dan Li, and
   Yu~Li.
-\newblock Phylogenetic {{Analysis}} of {{\emph{Trichoderma} Species
-  Associated}} with {{Green Mold Disease}} on {{Mushrooms}} and {{Two New
-  Pathogens}} on \emph{{{Ganoderma}} Sichuanense}.
+\newblock Phylogenetic {{Analysis}} of {{Trichoderma Species Associated}} with
+  {{Green Mold Disease}} on {{Mushrooms}} and {{Two New Pathogens}} on
+  {{Ganoderma}} sichuanense.
 \newblock {\em Journal of Fungi}, 8(7):704, July 2022.
 
 \bibitem{Saitou1987}
@@ -101,8 +93,8 @@ N~Saitou and M~Nei.
 
 \bibitem{Felsenstein1985}
 Joseph Felsenstein.
-\newblock {{Confidence Limits On Phylogenies}}: {{An Approach Using The
-  Bootstrap}}.
+\newblock {{CONFIDENCE LIMITS ON PHYLOGENIES}}: {{AN APPROACH USING THE
+  BOOTSTRAP}}.
 \newblock {\em Evolution; International Journal of Organic Evolution},
   39(4):783--791, July 1985.
 
@@ -117,7 +109,7 @@ Brendan Loftus.
 Girum~Fitihamlak Ejigu and Jaehee Jung.
 \newblock Review on the {{Computational Genome Annotation}} of {{Sequences
   Obtained}} by {{Next-Generation Sequencing}}.
-\newblock {\em Biology}, 9(9):295, September 2020.
+\newblock {\em Biology}, 9(9), September 2020.
 
 \bibitem{borodovsky2011a}
 Mark Borodovsky and Alex Lomsadze.
@@ -141,14 +133,15 @@ W.~H. Majoros, M.~Pertea, and S.~L. Salzberg.
 Mario Stanke and Stephan Waack.
 \newblock Gene prediction with a hidden {{Markov}} model and a new intron
   submodel.
-\newblock {\em Bioinformatics}, 19 Suppl 2:ii215--225, October 2003.
+\newblock {\em Bioinformatics (Oxford, England)}, 19 Suppl 2:ii215--225,
+  October 2003.
 
 \bibitem{bruna2021a}
 Tom{\'a}{\v s} Br{\r u}na, Katharina~J. Hoff, Alexandre Lomsadze, Mario Stanke,
   and Mark Borodovsky.
 \newblock {{BRAKER2}}: Automatic eukaryotic genome annotation with
   {{GeneMark-EP}}+ and {{AUGUSTUS}} supported by a protein database.
-\newblock {\em NAR Genomics and Bioinformatics}, 3(1):lqaa108, March 2021.
+\newblock {\em NAR genomics and bioinformatics}, 3(1):lqaa108, March 2021.
 
 \bibitem{cantarel2008}
 Brandi~L. Cantarel, Ian Korf, Sofia~M.C. Robb, Genis Parra, Eric Ross, Barry
@@ -159,8 +152,7 @@ Brandi~L. Cantarel, Ian Korf, Sofia~M.C. Robb, Genis Parra, Eric Ross, Barry
 
 \bibitem{zotero-item-367}
 The {{NCBI Eukaryotic Genome Annotation Pipeline}}.
-\newblock https://www.ncbi.nlm.nih.gov/refseq/annotation\_euk/process/, August
-  2025.
+\newblock https://www.ncbi.nlm.nih.gov/refseq/annotation\_euk/process/.
 
 \bibitem{manni2021a}
 Mos{\`e} Manni, Matthew~R. Berkeley, Mathieu Seppey, and Evgeny~M. Zdobnov.
@@ -185,6 +177,20 @@ Kai Blin, Simon Shaw, Hannah~E Augustijn, Zachary~L Reitz, Friederike Biermann,
 \newblock {{antiSMASH}} 7.0: New and improved predictions for detection,
   regulation, chemical structures~and visualisation.
 \newblock {\em Nucleic Acids Research}, 51(W1):W46--W50, July 2023.
+
+\bibitem{ter-hovhannisyan2008}
+Vardges {Ter-Hovhannisyan}, Alexandre Lomsadze, Yury~O. Chernoff, and Mark
+  Borodovsky.
+\newblock Gene prediction in novel fungal genomes using an ab initio algorithm
+  with unsupervised training.
+\newblock {\em Genome Research}, 18(12):1979--1990, December 2008.
+
+\bibitem{keilwagen2018}
+Jens Keilwagen, Frank Hartung, Michael Paulini, Sven~O. Twardziok, and Jan
+  Grau.
+\newblock Combining {{RNA-seq}} data and homology-based gene prediction for
+  plants, animals and fungi.
+\newblock {\em BMC Bioinformatics}, 19(1):189, May 2018.
 
 \bibitem{min2017}
 Byoungnam Min, Igor~V Grigoriev, and In-Geol Choi.
@@ -221,25 +227,61 @@ Jiang Hu, Junpeng Fan, Zongyi Sun, and Shanlin Liu.
   long-read assembly.
 \newblock {\em Bioinformatics}, 36(7):2253--2255, April 2020.
 
-\bibitem{fastqc}
-Steven~W. Wingett and Simon Andrews.
-\newblock Fastq screen: A tool for multi-genome mapping and quality control.
-\newblock {\em F1000Research}, 7:1338, 2018.
+\bibitem{andrews}
+Simon Andrews.
+\newblock Babraham {{Bioinformatics}} - {{FastQC A Quality Control}} tool for
+  {{High Throughput Sequence Data}}.
+\newblock https://www.bioinformatics.babraham.ac.uk/projects/fastqc/.
+
+\bibitem{zhu2025}
+Jin-Pi Zhu, Zheng-Feng Wang, Fang Cheng, En-Ping Yu, Lin Fu, Yan-Na Zeng,
+  Yun-Mei Huang, Xin-Gui Chen, Sheng-Wen Deng, Yue Zhang, Jie-Ming Deng,
+  Hao-Han Lin, Wei-Guang Zhu, Feng-Xia Xu, and Hong-Lin Cao.
+\newblock A chromosome-scale assembly of {{Ormosia}} boluoensis ({{Fabaceae}}).
+\newblock {\em Scientific Data}, 12(1):1659, October 2025.
+
+\bibitem{zhang2024}
+Anqi Zhang, Tangchao Kong, Baiquan Sun, Shizheng Qiu, Jiahe Guo, Shuyong Ruan,
+  Yu~Guo, Jirui Guo, Zhishuai Zhang, Yue Liu, Zheng Hu, Tao Jiang, Yadong Liu,
+  Shuqi Cao, Shi Sun, Tingting Wu, Huilong Hong, Bingjun Jiang, Maoxiang Yang,
+  Xiangyu Yao, Yang Hu, Bo~Liu, Tianfu Han, and Yadong Wang.
+\newblock A telomere-to-telomere genome assembly of {{Zhonghuang}} 13, a
+  widely-grown soybean variety from the original center of
+  {{{\emph{Glycine}}}}{\emph{ max}}.
+\newblock {\em The Crop Journal}, 12(1):142--153, February 2024.
 
 \bibitem{gurevich2013a}
 Alexey Gurevich, Vladislav Saveliev, Nikolay Vyahhi, and Glenn Tesler.
 \newblock {{QUAST}}: Quality assessment tool for genome assemblies.
-\newblock {\em Bioinformatics}, 29(8):1072--1075, April 2013.
+\newblock {\em Bioinformatics (Oxford, England)}, 29(8):1072--1075, April 2013.
 
 \bibitem{rice2000a}
 P.~Rice, I.~Longden, and A.~Bleasby.
 \newblock {{EMBOSS}}: The {{European Molecular Biology Open Software Suite}}.
-\newblock {\em Trends in Genetics}, 16(6):276--277, June 2000.
+\newblock {\em Trends in genetics : TIG}, 16(6):276--277, June 2000.
+
+\bibitem{zotero-item-387}
+{{ProSplign}}.
+\newblock https://www.ncbi.nlm.nih.gov/sutils/static/prosplign/prosplign.html.
+
+\bibitem{li2018}
+Heng Li.
+\newblock Minimap2: Pairwise alignment for nucleotide sequences.
+\newblock {\em Bioinformatics (Oxford, England)}, 34(18):3094--3100, September
+  2018.
+
+\bibitem{smit2013repeatmasker}
+AFA Smit, R~Hubley, and P~Green.
+\newblock Repeatmasker open-4.0, 2013--2015.
+
+\bibitem{zotero-item-392}
+Gnomon - the {{NCBI}} eukaryotic gene prediction tool.
+\newblock https://www.ncbi.nlm.nih.gov/refseq/annotation\_euk/gnomon/.
 
 \bibitem{gupta2016}
 Vijai~Kumar Gupta, Andrei~Stecca Steindorff, Renato~Graciano de~Paula, Rafael
   {Silva-Rocha}, Astrid~R. {Mach-Aigner}, Robert~L. Mach, and Roberto~N. Silva.
-\newblock The {{Post-genomic Era}} of {{\emph{Trichoderma}}} reesei: {{What}}'s
+\newblock The {{Post-genomic Era}} of {{Trichoderma}} reesei: {{What}}'s
   {{Next}}?
 \newblock {\em Trends in Biotechnology}, 34(12):970--982, December 2016.
 
@@ -250,7 +292,7 @@ Chengzhi Liang, Long Mao, Doreen Ware, and Lincoln Stein.
 
 \bibitem{zotero-item-326}
 {{SRA-Toolkit}}.
-\newblock https://hpc.nih.gov/apps/sratoolkit.html, June 2025.
+\newblock https://hpc.nih.gov/apps/sratoolkit.html.
 
 \bibitem{2008}
 Kolmogorov--{{Smirnov Test}}.
@@ -284,21 +326,13 @@ E.~Michael Gertz, Yi-Kuo Yu, Richa Agarwala, Alejandro~A. Sch{\"a}ffer, and
   {{Improving}} the {{TBLASTN}} module of {{BLAST}}.
 \newblock {\em BMC Biology}, 4(1):41, December 2006.
 
-\bibitem{dechter2003}
-Rina Dechter.
-\newblock Chapter 12 - {{Temporal Constraint Networks}}.
-\newblock In Rina Dechter, editor, {\em Constraint {{Processing}}}, pages
-  333--362. Morgan Kaufmann, 2003.
-
 \bibitem{foundationa}
 Python~Software Foundation.
 \newblock Python.
-\newblock https://www.python.org/psf-landing/, October 2025.
 
 \bibitem{chapmana}
 Brad Chapman.
 \newblock {{BCBio Python Package}}.
-\newblock https://github.com/chapmanb/bcbb/tree/master/gff, August 2025.
 
 \bibitem{robinson2011a}
 James~T. Robinson, Helga Thorvaldsd{\'o}ttir, Wendy Winckler, Mitchell Guttman,
@@ -322,7 +356,7 @@ Derek~W. Barnett, Erik~K. Garrison, Aaron~R. Quinlan, Michael~P. Str{\"o}mberg,
   and Gabor~T. Marth.
 \newblock {{BamTools}}: A {{C}}++ {{API}} and toolkit for analyzing and
   managing {{BAM}} files.
-\newblock {\em Bioinformatics}, 27(12):1691--1692, June 2011.
+\newblock {\em Bioinformatics (Oxford, England)}, 27(12):1691--1692, June 2011.
 
 \bibitem{quinlan2010}
 Aaron~R. Quinlan and Ira~M. Hall.
@@ -350,6 +384,6 @@ Bradley~W. Wright, Mark~P. Molloy, and Paul~R. Jaschke.
 \bibitem{altschul1990a}
 S.~F. Altschul, W.~Gish, W.~Miller, E.~W. Myers, and D.~J. Lipman.
 \newblock Basic local alignment search tool.
-\newblock {\em Journal of Molecular Biology}, 215(3):403--410, October 1990.
+\newblock {\em Journal of molecular biology}, 215(3):403--410, October 1990.
 
 \end{thebibliography}

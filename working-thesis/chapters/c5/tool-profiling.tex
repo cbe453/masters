@@ -11,7 +11,7 @@ processing, please see Section~\ref{met:genemark} and Section~\ref{met:braker2}.
 platform used in this research is hosted and managed by University of
 Saskatchewan high-performance computing services, which is modelled around the HPC platform used
 by the Digital Research Alliance of Canada and software is managed
-similarly.
+similarly.\cbstart~Qualitative metrics such as ease of installation, ease of use, documentation, and availability are also discussed. Ease of installation is defined as the amount of effort required to get the software up and running, while ease of use is defined as the amount of effort required to run the software once it is installed.\cbend
 
 GeneMark~\cite{borodovsky2011a} is a gene finding tool developed by
 the Georgia Institute of Technology with installation packages prepared for Linux
@@ -79,6 +79,8 @@ sequences and amino acid sequences their protein products.
 % containerized version of the software, allowing users to build and
 % execute Braker3 with ease in its own environment. Can also touch on
 % UTR stuff as well
+
+The RefSeq annotation pipeline is proprietary combination of public and proprietary software developed and maintained by NCBI. While some tools included in the pipeline such as RepeatMasker and MiniMap2 are publicly available, details of the implementation and parameters used by the pipeline as well as the use of the proprietary Gnomon gene prediction software~\cite{zotero-item-392} are not publicly available. The RefSeq annotation pipeline also includes a human curation step, which further improves the quality of the annotations. Since the RefSeq pipeline is not publicly available, installation and execution details are not discussed here.
 
 In summation, Braker2 and GeneMark are not direct plug-and-play
 software packages. Users should expect to encounter issues when

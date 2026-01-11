@@ -8,17 +8,17 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Sequence assembly and processing workflow}}{16}{figure.caption.17}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces GC content distribution for DC1}}{18}{figure.caption.18}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Gene prediction workflow}}{20}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Gene evaluation and validation workflow}}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gene evaluation and validation workflow}}{23}{figure.caption.20}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Region identification workflow}}{25}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces IGV example}}{27}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces IGV example}}{26}{figure.caption.22}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces GC content distribution for each Trichoderma genome assembly}}{30}{figure.caption.24}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Number of genes predicted}}{33}{figure.caption.25}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Number of coding sequences predicted}}{34}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots for DC1 and Tsth20}}{35}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces CDF plots for \textit {T. harzianum} and \textit {T. reesei}}}{36}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces CDF plots for \textit {T. virens}}}{37}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces BUSCO counts}}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces CDF plots for DC1 and Tsth20}}{36}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces CDF plots for \textit {T. harzianum} and \textit {T. reesei}}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces CDF plots for \textit {T. virens}}}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces BUSCO counts}}{40}{figure.caption.32}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Example Secondary Metabolite Gene Clusters Identified by antiSMASH}}{43}{figure.caption.36}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Breakdown of identified regions}}{46}{figure.caption.38}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Example of a region with many gene calls}}{47}{figure.caption.39}%
