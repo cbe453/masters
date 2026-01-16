@@ -5,18 +5,15 @@ which gene finding tool one should choose for optimal gene prediction
 performance in a given application. Comparisons drawn in this section are made in the context
 of \textit{Trichoderma} assemblies and may not extend to other
 datasets. Observations from the results portion of this work have been
-converted to a ranking for each gene finder, relative to the other gene finders. Values for each category are ranked from 0 to 3, with 0 indicating that a feature was unavailable or not applicable, and ranks 1 through 3 when there are three gene finders being considered, but 1 or 2 whether there are two gene finders being considered, indicating performance relative to the other gene finder(s).\cbstart~Rank 3 is the highest rank\cbend. Ties are allowed if the performance of two gene finders are similar. Categories considered include availability of the gene finding tool, ease of installation, ease of use, number of genes predicted, number of isoforms predicted, BUSCO performance, performance in AT-rich sequence, and predictions with InterProScan support.
+converted to a ranking for each gene finder, relative to the other gene finders. Values for each category are ranked from 0 to 3, with 0 indicating that a feature was unavailable or not applicable, and ranks 1 through 3 when there are three gene finders being considered, but 1 or 2 whether there are two gene finders being considered, indicating performance relative to the other gene finder(s). Rank 3 is the highest rank. Ties are allowed if the performance of two gene finders are similar. Categories considered include availability of the gene finding tool, ease of installation, ease of use, number of genes predicted, number of isoforms predicted, BUSCO performance, performance in AT-rich sequence, and predictions with InterProScan support.
 Results for these categories are summarized in
 Table~\ref{table:final-score}. We note that not all results are included in this table, most notably the region analysis in Section~\ref{section:regions}, as more exploration of those results is needed. The assembly results are also not included, as they are not reflective of the characteristics of the gene finders themselves.
 In both the publicly available and non-publicly available scenarios, Braker2 comes out on top, with RefSeq coming in second when availability is not considered. While Braker2 does perform the best, it is important to note that its performance is highly dependent on the quality and relevance of the training data provided. RefSeq performs well across most categories, particularly when considering number of genes predicted, isoform prediction, and predictions in AT-rich sequence, but if the user's organism is not closely represented in RefSeq, it is not an option.
 GeneMark comes in last, performing well in terms 
 of genes predicted, BUSCO coverage, and Pfam support for the genes that it predicts. We do note that these criteria are not fully objective; however they do provide a useful framework for comparing the gene finders, and are based on observations presented in this work. 
 
-\cbstart
 Relating these observations to use-case scenarios requires consideration of the data available to the user. If relevant high-quality training data is available, Braker2 is the best option. If no training data is available, GeneMark is a reasonable choice, and although its performance is not as good as Braker2, it still predicts a useful set of genes with InterProScan support. If your organism were to be annotated by the RefSeq pipeline, then you can expect good performance from their annotations as well, although RefSeq ranks lowest in BUSCO and InterProScan categories from these results.
-\cbend
 
-\cbstart
 \begin{table}
   \centering
   \begin{tabular}{|c|c|c|c|}
@@ -38,7 +35,6 @@ Relating these observations to use-case scenarios requires consideration of the 
     for performance are 0 being not applicable, and 1 through 3 being increasing levels of performance. Since RefSeq is not publicly available, it is marked as N/A in the cumulative rank when considering availability. The dashed line separates categories associated with operation and use
     from categories describing gene prediction performance.}\label{table:final-score}
 \end{table}
-\cbend
 
 \section{Future Work}
 

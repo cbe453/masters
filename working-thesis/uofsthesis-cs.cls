@@ -705,11 +705,9 @@ Saskatoon, Saskatchewan S7N 5C9 Canada
 %\noindent The [name of company/corporation/brand name and website] were exclusively created to meet the thesis and/or exhibition requirements for the degree of [title of degree] at the University of Saskatchewan.  
 \noindent Reference  in this \doctype\ to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by the University of Saskatchewan. The views and opinions of the author expressed herein do not state or reflect those of the University of Saskatchewan, and shall not be used for advertising or product endorsement purposes.
 
-\cbstart
 {\let\clearpage\relax\vspace*{1.5cm} \chapter*{Generative AI}}
 
 \noindent Generative AI was used as a writing aid in the preparation of this thesis. Specifically, it was used to help improve the clarity and readability of the text.  The use of generative AI was limited to language editing and did not involve the generation of original content, ideas, or research findings.  All substantive content, analysis, and conclusions presented in this thesis are solely those of the author. GitHub Copilot was the generative AI software used for this purpose.
-\cbend
 
 \bigskip
 
