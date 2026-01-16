@@ -1,9 +1,10 @@
 \section{Methodology Overview}
-
+\cbcolor{orange}
 The general processing steps performed in this work can be grouped
 into four processing stages, or workflows. A simplified overview of
 these stages and the flow of data between them is shown in Figure~\ref{fig:simple-work}. In ascending order, each processing stage is
-discussed in more detail in Sections~\ref{met:seq-workflow},~\ref{met:predict-workflow},~\ref{met:valid-workflow}, and~\ref{section:region-met}. \cbstart~Scripts and commands used in this work are available on GitHub at the following link: \url{https://github.com/cbe453/masters}\cbend
+discussed in more detail in Sections~\ref{met:seq-workflow},~\ref{met:predict-workflow},~\ref{met:valid-workflow}, and~\ref{section:region-met}.\cbstart~Original data and processed results are stored on the USask Roots Datastore share. Scripts and commands used in this work are available on GitHub at the following link: \url{https://github.com/cbe453/masters}\cbend
+\cbcolor{blue}
 
 \begin{figure}
   \centering
@@ -143,9 +144,10 @@ and datasets that were not produced in this work are represented by
 cylinders. Other workflows that use datasets produced by this workflow
 are depicted as arrows outside the green sub-graph.
 
+\cbcolor{orange}
 First, RefSeq assemblies and their associated annotations of closely
 related \textit{Trichoderma} species were selected from the National Center for Biotechnology Information (NCBI) for
-training and comparison.\cbstart~RefSeq assemblies and annotations were included as a useful point of comparison, as they are considered high-quality. Since the RefSeq pipeline for gene prediction is not publicly available, we cannot recommend it as tool available to researchers, but we can use it as a point of comparison for other gene finders. The RefSeq pipeline itself consists of both publicly available tools such as ProSplign~\cite{zotero-item-387}, MiniMap2~\cite{li2018} and RepeatMasker~\cite{smit2013repeatmasker} as well as proprietary tools such as NCBI's own gene prediction tool Gnomon~\cite{zotero-item-392}. RefSeq also includes a human curation component, although it is unclear to what extent this was applied to the \textit{Trichoderma} species used in this work\cbend. Both \textit{ab initio}
+training and comparison.\cbstart~RefSeq assemblies and annotations were included as a useful point of comparison, as they are considered high-quality. Since the RefSeq pipeline for gene prediction is not publicly available, we cannot recommend it as tool available to researchers, but we can use it as a point of comparison for other gene finders. The RefSeq pipeline itself consists of both publicly available tools such as ProSplign~\cite{zotero-item-387}, MiniMap2~\cite{li2018} and RepeatMasker~\cite{smit2013repeatmasker} as well as proprietary tools such as NCBI's own gene prediction tool Gnomon~\cite{zotero-item-392}.\cbstart~While many of the tools included are openly available, the exact parameters and details of their implementation in the RefSeq pipeline are unclear\cbend. RefSeq also includes a human curation component, although it is unclear to what extent this was applied to the \textit{Trichoderma} species used in this work\cbend. Both \textit{ab initio}
 (GeneMark~\cite{borodovsky2011a}) and evidence-based
 (Braker2~\cite{bruna2021a}) gene finders were selected for comparison to
 evaluate gene prediction behavior in the context of
@@ -156,6 +158,7 @@ examined to better understand distributions of CDS lengths produced by
 different gene finders. Finally, all gene predictions were
 supplied to the evaluation and validation stage as well as the region
 identification stage.
+\cbcolor{blue}
 
 Datasets from the National Center for Biotechnology Information (NCBI) were selected for training and comparison, and are further
 discussed in Subsection~\ref{met:datasets}. The GeneMark gene prediction

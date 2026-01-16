@@ -13,18 +13,15 @@ NCBI, but are they? In addition, what are the quantitative features of these ass
 
 \section{Profiling of Gene Finding Tools}
 \label{rq:gene-finding-tools}
-Different gene finding tools may predict different types of features
-associated with gene structures. The question arises: \textbf{which
-  (if any) gene finders predict additional features outside the
-  standard gene model?} Additional features in this case include
-promoter sequences, transcription binding sites, activating sequences
-and other upstream or downstream sequences. In addition, different
-gene finding tools employ differing programming languages and
-algorithms which raises several questions. \textbf{How are these gene
-  finding tools implemented? Is the software straightforward to
-  install? Are the tools user-friendly? What is the processing time
-  of different gene finding tools in the
+\cbcolor{orange}
+\cbstart
+Gene finding tools vary widely in their implementation, ease of use, and computational requirements. Before delving into the performance of these tools, it is important to profile their characteristics. We ask:
+\textbf{How are these gene
+  finding tools implemented? Are the tools easy to install and use? What is the processing time of different gene finding tools in the
   context of \textit{Trichoderma}?}
+\cbend
+\cbcolor{blue}
+
 
 \section{Number of Features Predicted}
 \label{rq:number-of-features}  
@@ -76,6 +73,7 @@ from which we can ask: \textbf{do gene finders agree on their
 \label{rq:anomalous-sequence-content}
 Results from the assembly process show that AT-rich (GC-poor) sequence content is prevalent in most \textit{Trichoderma} assemblies we selected. These regions of assemblies present an interesting opportunity to assess gene finding performance
 in regions of anomalous GC content, since features such as transposable elements and repetitive sequences are often found in these regions. We ask: \textbf{do gene finders perform differently in AT-rich regions of \textit{Trichoderma} genomes? How well do gene finders perform in these regions?}   
+
 
 \section{Selection of a Gene Finding Tool}
 
